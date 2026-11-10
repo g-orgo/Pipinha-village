@@ -97,7 +97,7 @@ const getStackBonusValueTooltips = (text, number, item, attribute, quality) => {
   value = Math.round(value * item.count * attributeMult);
   const seasonalMult = global.getSeasonalMultiplier(item, getTooltipSeason());
   if (seasonalMult > 1) {
-    const before = value;
+    let before = value;
     value = Math.round(value * seasonalMult);
     bonusTooltips.push(
       getSeasonalBonusText(

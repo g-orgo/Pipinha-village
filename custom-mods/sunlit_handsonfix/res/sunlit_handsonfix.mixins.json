@@ -1,0 +1,8 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.sunlit.handsonfix.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": ["HandsOnEmiPluginMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

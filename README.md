@@ -8,6 +8,12 @@ O que muda em relação ao Sunlit normal está no changelog do menu inicial: `co
 
 Feche o Minecraft e o app do CurseForge antes de começar. No CurseForge, instale o Society: Sunlit Valley normal e abra a pasta dele (clique com o botão direito no perfil > Open Folder).
 
+O jeito recomendado é instalar pelo `Modpack.zip`, que é o pacote oficial de distribuição do modpack: basta um clique duplo no `install.bat`. O zip do GitHub e o clone ficam como alternativa.
+
+**Pelo Modpack.zip (recomendado)**
+
+1. Coloque o `Modpack.zip` e o `install.bat` na pasta da instância e dê dois cliques no `install.bat`.
+
 **Pelo zip do GitHub**
 
 1. Em **Code > Download ZIP**, baixe o zip deste repositório.
@@ -18,10 +24,6 @@ Feche o Minecraft e o app do CurseForge antes de começar. No CurseForge, instal
 
 1. `git clone git@github.com:g-orgo/Pipinha-village.git`
 2. Arraste a pasta da instância para cima do `install.bat` que está no clone.
-
-**Pelo Modpack.zip**
-
-1. Coloque o `Modpack.zip` e o `install.bat` na pasta da instância e dê dois cliques no `install.bat`.
 
 Nos três casos, o script apaga as pastas `mods`, `resourcepacks` e `kubejs` da instância e copia tudo por cima, sobrescrevendo o que já existe. Ele não mexe nos argumentos do Java: o perfil usa o coletor padrão do CurseForge (G1). Mais detalhes e a instalação manual estão em `READ_FIRST_PT-BR.txt` (e, em inglês, em `READ_FIRST.txt`).
 

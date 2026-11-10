@@ -345,3 +345,9 @@ Uma decisão por entrada, em ordem cronológica. As regras em vigor estão em `c
 - Os arquivos de tradução dos mods ficam nos jars (só não aparecem nem carregam). Um `lang:` salvo fora da lista cai para `en_us` pelo próprio jogo.
 - Mixin só no cliente (`"client"` no mixins.json), `displayTest="IGNORE_ALL_VERSION"`: servidor não precisa do mod.
 - **Build**: `JDK=/caminho/jdk17 custom-mods/sunlit_langfilter/build.sh`, sem JDK na máquina usar o container `eclipse-temurin:17-jdk` com `docker run -d`.
+
+## 2026-11-10: Dificuldade sempre Difícil e botão de mobs hostis ao lado dela (pedido do dono)
+- **Decisão**: ninguém troca a dificuldade. Mundo novo nasce Difícil e travado (como antes); todo mundo, novo ou antigo, volta para Difícil a cada segundo se algo mudar (o `/difficulty` ignora a trava). Saves antigos não são travados no `level.dat`: o botão de dificuldade só fica cinza (`server_scripts/worldCreationLock.js`).
+- No lugar da escolha de dificuldade, um botão 20x20 ao lado dela liga ou desliga o nascimento de mobs hostis: nas Opções dentro do mundo (dificuldade 110 + cadeado + botão, mesma largura da linha) e na aba Jogo de Criar Mundo (escolha gravada no mundo novo no primeiro load).
+- A escolha fica em `server.persistentData.sunlitHostileSpawnsOff` (ausente = nascem). Desligado, mobs da categoria MONSTER são cancelados no `MobSpawnEvent$FinalizeSpawn` para NATURAL, CHUNK_GENERATION, SPAWNER, STRUCTURE, PATROL, REINFORCEMENT, JOCKEY e MOB_SUMMONED; ovo, comando, balde, dispenser, conversão e raid continuam. Mobs que já existem não somem.
+- Textura com versão vanilla e Excalibur (autorizada pelo dono) em `kubejs/assets/kubejs/textures/gui/`, escolhida pelo pack selecionado; geradas por `sunlit_tools/gen_hostile_toggle_icons.py`. Teste fora do jogo: `sunlit_tools/js_harness/run_hostile_toggle.sh`.

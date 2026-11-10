@@ -6,6 +6,8 @@
 Welcome to Pipinha's Village! This changelog summarizes what differs from the normal Sunlit Valley, by category.
 
 ### New
++ Difficulty is always Hard, with a button next to it to turn hostile mob spawning on or off, in Options and when creating a world
++ Languages: the list only shows English (US) and Portuguese (Brazil)
 + Hands-On Delight: cook in Farmer's Delight with your own hands, right at the stations in the world instead of the menus
 + Eating animations made for the pack: every food has its own animation in first and third person, bitten little by little until only the bone or stick is left
 + Bowls eaten with a spoon, plates with a fork, and mayonnaise, preserve and jam jars that open their lid and are drunk in sips

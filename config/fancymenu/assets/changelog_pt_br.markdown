@@ -6,6 +6,8 @@
 Bem-vindo à Vila da Pipinha! Este changelog resume o que é diferente do Sunlit Valley normal, por categoria.
 
 ### Novidades
++ Dificuldade sempre no Difícil, com um botão ao lado dela para ligar ou desligar o nascimento de mobs hostis, nas Opções e na criação do mundo
++ Idiomas: a lista mostra só Inglês (EUA) e Português (Brasil)
 + Hands-On Delight: cozinhar no Farmer's Delight com as próprias mãos, direto nas estações do mundo em vez das telas
 + Animações de comer feitas para o pack: toda comida tem animação própria em primeira e terceira pessoa, mordida aos poucos até sobrar o osso ou o palito
 + Tigelas comidas de colher, pratos de garfo e potes de maionese, conserva e geleia que abrem a tampa e são tomados em goles

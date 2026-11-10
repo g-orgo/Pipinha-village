@@ -1,0 +1,1 @@
+{"palette":[{"char":"a","block":"minecraft:lantern[hanging=false]"},{"char":"b","blocks":[{"random":22,"block":"buildersdelight:lantern_4[facing=south,face=ceiling]"},{"random":106,"block":"minecraft:air"}]},{"char":"c","blocks":[{"random":22,"block":"buildersdelight:lantern_4[facing=west,face=ceiling]"},{"random":106,"block":"minecraft:air"}]}]}

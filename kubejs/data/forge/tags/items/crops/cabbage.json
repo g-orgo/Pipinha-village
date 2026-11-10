@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:vegetables/cabbage",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:lettuce",
+      "required": false
+    }
+  ]
+}

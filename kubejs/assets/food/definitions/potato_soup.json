@@ -1,0 +1,10 @@
+{
+ "item": "farm_and_charm:potato_soup",
+ "invisible": [
+  "utensil"
+ ],
+ "sounds": {
+  "eating": "food:eat",
+  "soup": "food:soup"
+ }
+}

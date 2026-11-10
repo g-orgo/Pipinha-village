@@ -1,0 +1,60 @@
+SOCIETY: SUNLIT VALLEY - PIPINHA'S VILLAGE EDITION
+=====================================
+
+This package replaces the default Society: Sunlit Valley mods and resource packs
+with the Pipinha's Village Edition set (extra furniture/decoration mods, Sunlit Towns for
+Lost Cities, KubeJS scripts and configs).
+
+
+MANUAL INSTALL
+--------------
+
+1) Delete the default Sunlit "mods", "resourcepacks" and "kubejs" folders
+   inside your instance folder.
+   (CurseForge: right click the profile > Open Folder.)
+
+2) Unzip this file into the instance folder, keeping the folder structure
+   (mods/, resourcepacks/, config/, kubejs/, moonlight-global-datapacks/ ...).
+   Overwrite existing files when asked.
+
+
+IMPORT INTO CURSEFORGE (MODPACK ZIP)
+------------------------------------
+
+This modpack zip (manifest.json) is smaller: the mods are downloaded from
+CurseForge by the app at install time. Use the zip generated in dist/ by
+sunlit_tools/export_curseforge.py (details in docs/PUBLICAR.md).
+
+1) In the CurseForge app click "Create Custom Profile".
+2) Click "Import" and choose the .zip file.
+3) Confirm the profile name and wait for the app to download the mods.
+4) Open the profile and join the world. Config and kubejs files are in the zip.
+
+
+AUTOMATIC INSTALL (WINDOWS)
+---------------------------
+
+1) Put this zip inside the instance folder.
+2) Open the zip and copy "install.bat" into the same instance folder.
+3) Double click "install.bat" (or drag the zip onto it if the zip is not
+   named Modpack.zip). The zip from GitHub (Code > Download ZIP of
+   github.com/g-orgo/Pipinha-village) works the same way. From a clone of
+   that repository, drag the instance folder onto the clone's "install.bat".
+
+The script deletes "mods", "resourcepacks" and "kubejs" and extracts the zip into the
+instance folder. It does not change Java settings (default G1 garbage
+collector). Close Minecraft and the CurseForge app before running it.
+
+
+NOTES
+-----
+
+- options.txt in this zip carries the resource pack order of the Pipinha's Village Edition.
+  Extracting it replaces your current options.txt (key binds, video settings).
+- Java uses the default G1 garbage collector (ZGC was removed on 2026-10-14:
+  it needs too much RAM). If you added -XX:+UseZGC manually before, remove it
+  under CurseForge > right click the profile > Profile Options >
+  Additional Arguments (the Distant Horizons "G1 detected" warning can be ignored).
+- Existing worlds keep their old terrain. New chunks use the new towns.
+- If Windows says a path is too long, extract the zip to a shorter folder
+  (for example C:\Sunlit) and copy the extracted folders into the instance.

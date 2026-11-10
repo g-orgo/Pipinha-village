@@ -1,0 +1,1 @@
+{"palette": [{"char": "G", "block": "minecraft:dirt"}, {"char": "!", "block": "minecraft:dark_oak_slab[type=bottom]"}, {"char": "#", "block": "minecraft:oak_leaves[distance=7,persistent=true,waterlogged=false]"}, {"char": "$", "block": "minecraft:acacia_slab[type=bottom]"}]}

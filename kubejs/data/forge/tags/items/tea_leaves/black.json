@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersrespite:black_tea_leaves",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:black_tea_leaves",
+      "required": false
+    }
+  ]
+}

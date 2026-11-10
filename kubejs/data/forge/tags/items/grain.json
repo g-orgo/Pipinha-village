@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:grain/barley",
+      "required": false
+    },
+    {
+      "id": "#forge:grain/corn",
+      "required": false
+    },
+    {
+      "id": "#forge:grain/oat",
+      "required": false
+    },
+    {
+      "id": "#forge:grain/rice",
+      "required": false
+    },
+    {
+      "id": "#forge:grain/wheat",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:corn",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:oat",
+      "required": false
+    },
+    {
+      "id": "hauntedharvest:corn",
+      "required": false
+    },
+    {
+      "id": "vintagedelight:oat",
+      "required": false
+    }
+  ]
+}

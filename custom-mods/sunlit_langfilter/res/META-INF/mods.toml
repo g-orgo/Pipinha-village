@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="sunlit_langfilter"
+version="1.0.0"
+displayName="Sunlit Language Filter"
+description="Limits the language list to English (US) and Brazilian Portuguese."
+displayTest="IGNORE_ALL_VERSION"
+
+[[dependencies.sunlit_langfilter]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.sunlit_langfilter]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="CLIENT"

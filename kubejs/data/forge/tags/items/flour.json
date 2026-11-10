@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farm_and_charm:flour",
+      "required": false
+    },
+    {
+      "id": "create:wheat_flour",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:flour",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:wheat_flour",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "FED10F862CA4415C": {
+    "definition": "kitchen_basics",
+    "x": -320,
+    "y": 0,
+    "root": true
+  },
+  "09962A45BB3F8C95": {
+    "definition": "sharp_1",
+    "x": -224,
+    "y": -128,
+    "root": false
+  },
+  "3D5D7F32ACA972B3": {
+    "definition": "extra_portions",
+    "x": -128,
+    "y": -128,
+    "root": false
+  },
+  "04CFE647EC84568A": {
+    "definition": "clean_cut",
+    "x": -32,
+    "y": -128,
+    "root": false
+  },
+  "B2A9930AE5D4BF3C": {
+    "definition": "master_cutter",
+    "x": 64,
+    "y": -128,
+    "root": false
+  },
+  "D91CF2C2BADD88F4": {
+    "definition": "simmer_1",
+    "x": -224,
+    "y": 0,
+    "root": false
+  },
+  "851989956D2C6DB9": {
+    "definition": "stock_pot",
+    "x": -128,
+    "y": 0,
+    "root": false
+  },
+  "B97DC2F1D4BE2A21": {
+    "definition": "seasoning",
+    "x": -32,
+    "y": 0,
+    "root": false
+  },
+  "823A9A07FE037C84": {
+    "definition": "pot_master",
+    "x": 64,
+    "y": 0,
+    "root": false
+  },
+  "EA7E0EB80A21CB6A": {
+    "definition": "feast_1",
+    "x": -224,
+    "y": 128,
+    "root": false
+  },
+  "E050E515B14356A6": {
+    "definition": "feast_2",
+    "x": -128,
+    "y": 128,
+    "root": false
+  },
+  "1683D8F77FCEBC34": {
+    "definition": "feast_3",
+    "x": -32,
+    "y": 128,
+    "root": false
+  },
+  "20AD5D77E79223B5": {
+    "definition": "double_harvest",
+    "x": 64,
+    "y": 128,
+    "root": false
+  },
+  "56555708F0186C23": {
+    "definition": "specialty_1",
+    "x": -128,
+    "y": 64,
+    "root": false
+  },
+  "D8A747B93FA64BA1": {
+    "definition": "specialty_2",
+    "x": 160,
+    "y": 0,
+    "root": false
+  }
+}

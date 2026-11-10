@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="sunlit_sortfix"
+version="1.0.0"
+displayName="Sunlit Sort Fix"
+description="Makes Quark inventory sorting work on Refurbished Furniture storage."
+
+[[dependencies.sunlit_sortfix]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.sunlit_sortfix]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.sunlit_sortfix]]
+modId="refurbished_furniture"
+mandatory=true
+versionRange="*"
+ordering="NONE"
+side="BOTH"

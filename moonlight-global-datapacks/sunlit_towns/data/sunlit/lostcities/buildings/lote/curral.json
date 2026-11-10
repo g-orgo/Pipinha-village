@@ -1,0 +1,1 @@
+{"filler": "G", "rubber": " ", "allowDoors": false, "allowFillers": false, "overrideFloors": true, "minfloors": 1, "maxfloors": 1, "mincellars": 0, "maxcellars": 0, "parts": [{"top": false, "cellar": false, "ground": true, "part": "sunlit:lote/curral_ground"}, {"top": true, "cellar": false, "ground": false, "part": "sunlit:lote/curral_top"}]}

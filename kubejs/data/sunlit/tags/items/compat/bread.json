@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:bread",
+      "required": false
+    },
+    {
+      "id": "bakery:bread",
+      "required": false
+    }
+  ]
+}

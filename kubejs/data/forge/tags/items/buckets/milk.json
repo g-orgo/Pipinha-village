@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersdelight:milk_bottle",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:goat_milk_bottle",
+      "required": false
+    },
+    {
+      "id": "miners_delight:milk_cup",
+      "required": false
+    },
+    {
+      "id": "vintagedelight:nut_milk_bottle",
+      "required": false
+    }
+  ]
+}

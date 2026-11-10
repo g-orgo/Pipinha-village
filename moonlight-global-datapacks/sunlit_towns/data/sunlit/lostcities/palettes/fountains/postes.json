@@ -1,0 +1,1 @@
+{"palette": [{"char": " ", "block": "minecraft:air"}, {"char": "L", "block": "furniture:street_lantern[facing=south]"}, {"char": "B", "block": "furniture:oak_bench[facing=north]"}, {"block": "simplylight:lamp_post[position=bottom]", "char": "#"}, {"block": "simplylight:lamp_post[position=middle]", "char": "$"}, {"block": "simplylight:lamp_post[position=top]", "char": "&"}]}

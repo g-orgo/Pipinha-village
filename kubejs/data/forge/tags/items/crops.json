@@ -1,0 +1,77 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:crops/beetroot",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/carrot",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/potato",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/coconut",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:cucumber",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:eggplant",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:ginger",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:lettuce",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:onion",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:tomato",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:onion",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:tomato",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:lettuce",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:tomato",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:ginger",
+      "required": false
+    },
+    {
+      "id": "society:eggplant",
+      "required": false
+    },
+    {
+      "id": "vintagedelight:cucumber",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:cucumber",
+      "required": false
+    }
+  ]
+}

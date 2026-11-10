@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "snowyspirit:gingerbread_cookie",
+      "required": false
+    },
+    {
+      "id": "windswept:gingerbread_cookie",
+      "required": false
+    }
+  ]
+}

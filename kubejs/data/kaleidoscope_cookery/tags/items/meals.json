@@ -1,0 +1,57 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "brewery:dumplings",
+      "required": false
+    },
+    {
+      "id": "cuisinedelight:fried_egg",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:lettuce",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:tomato",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:cooked_rice",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:dumplings",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:fried_egg",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:tomato",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:cooked_rice",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:dumpling",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:fried_egg",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:lettuce",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:tomato",
+      "required": false
+    }
+  ]
+}

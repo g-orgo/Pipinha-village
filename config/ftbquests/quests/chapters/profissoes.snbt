@@ -1,0 +1,926 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "profissoes"
+	group: "457DCF55318282CA"
+	icon: {
+		Count: 1
+		id: "vinery:straw_hat"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "08FC159E7158BF7A"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{ftbquests.chapter.profissoes.questC99D677431A0387C.description1}"
+				""
+				"{ftbquests.chapter.profissoes.questC99D677431A0387C.description2}"
+				""
+				"{ftbquests.chapter.profissoes.questC99D677431A0387C.description3}"
+				""
+				"{ftbquests.chapter.profissoes.questC99D677431A0387C.description4}"
+				""
+				"{ftbquests.chapter.profissoes.questC99D677431A0387C.description5}"
+				""
+				"{ftbquests.chapter.profissoes.questC99D677431A0387C.description6}"
+			]
+			icon: {
+				Count: 1
+				id: "vinery:straw_hat"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0056C1BBCA79C58A"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.profissoes.questC99D677431A0387C.subtitle}"
+			tasks: [{
+				id: "16B7C4A36BCE5EC0"
+				title: "{ftbquests.chapter.profissoes.questC99D677431A0387C.task.852C2077583C2F49.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.profissoes.questC99D677431A0387C.title}"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B1F0A3C7D2E4F61"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest4A3D0ECF43D497AD.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest4A3D0ECF43D497AD.description2}"
+			]
+			id: "4A3D0ECF43D497AD"
+			rewards: [{
+				id: "32F1C4D058E7142B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest4A3D0ECF43D497AD.subtitle}"
+			tasks: [{
+				count: 32L
+				id: "67CC87DF4B066501"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:crops"
+					}
+				}
+				title: "{ftbquests.chapter.profissoes.quest4A3D0ECF43D497AD.task.67CC87DF4B066501.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest4A3D0ECF43D497AD.title}"
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4A3D0ECF43D497AD"]
+			description: [
+				"{ftbquests.chapter.profissoes.questBD8EFE92BE03E3AF.description1}"
+				""
+				"{ftbquests.chapter.profissoes.questBD8EFE92BE03E3AF.description2}"
+			]
+			id: "1E770B7E4C47E045"
+			rewards: [{
+				id: "3B0A23E492CD59E6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.questBD8EFE92BE03E3AF.subtitle}"
+			tasks: [{
+				id: "2CAD9F5CCE1B8462"
+				item: "dew_drop_farmland_growth:iron_sprinkler"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.questBD8EFE92BE03E3AF.title}"
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			description: [
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F61.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F61.description2}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F61.description3}"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5B1F0A3C7D2E4F61"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F61.subtitle}"
+			tags: ["sunlit_profession_farmer"]
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "6C85CC8060BA68C2"
+				title: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F61.task.97A6D957B3EBBE69.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F61.title}"
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1E770B7E4C47E045"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest827250DFE9007E36.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest827250DFE9007E36.description2}"
+			]
+			id: "628376D35C63F871"
+			rewards: [{
+				id: "7BF3C51F908ABCD2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest827250DFE9007E36.subtitle}"
+			tasks: [{
+				id: "5B770A2254472A60"
+				item: "society:seed_maker"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest827250DFE9007E36.title}"
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["628376D35C63F871"]
+			description: [
+				"{ftbquests.chapter.profissoes.questE4052A730AB9CFC5.description1}"
+				""
+				"{ftbquests.chapter.profissoes.questE4052A730AB9CFC5.description2}"
+			]
+			id: "388B7AC34F183492"
+			rewards: [{
+				id: "406615C6BD281E73"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.questE4052A730AB9CFC5.subtitle}"
+			tasks: [{
+				id: "643C45FC5D217C27"
+				item: "society:preserves_jar"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.questE4052A730AB9CFC5.title}"
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["388B7AC34F183492"]
+			description: [
+				"{ftbquests.chapter.profissoes.questF56C839E8DA64096.description1}"
+				""
+				"{ftbquests.chapter.profissoes.questF56C839E8DA64096.description2}"
+			]
+			id: "671D48C83400A1F2"
+			rewards: [{
+				count: 2
+				id: "1A06FACA758A5A90"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.questF56C839E8DA64096.subtitle}"
+			tasks: [{
+				id: "691DBC026D1E6AB4"
+				item: "dew_drop_farmland_growth:gold_sprinkler"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.questF56C839E8DA64096.title}"
+			x: 9.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5B1F0A3C7D2E4F62"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest8E8CF752F243D4FE.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest8E8CF752F243D4FE.description2}"
+			]
+			id: "6EE15AF255859EE6"
+			rewards: [{
+				id: "39741BD6C8F72A30"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest8E8CF752F243D4FE.subtitle}"
+			tasks: [{
+				count: 8L
+				id: "666335C34E401362"
+				item: "society:animal_feed"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest8E8CF752F243D4FE.title}"
+			x: 3.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["6EE15AF255859EE6"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest58A7FD66EAB3C2F7.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest58A7FD66EAB3C2F7.description2}"
+			]
+			id: "58A7FD66EAB3C2F7"
+			rewards: [{
+				id: "3A3A9A869B206951"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest58A7FD66EAB3C2F7.subtitle}"
+			tasks: [{
+				id: "6E87C1CAA7643595"
+				item: "society:milk_pail"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest58A7FD66EAB3C2F7.title}"
+			x: 5.0d
+			y: -2.25d
+		}
+		{
+			description: [
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F62.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F62.description2}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F62.description3}"
+			]
+			icon: "society:milk_pail"
+			id: "5B1F0A3C7D2E4F62"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F62.subtitle}"
+			tags: ["sunlit_profession_rancher"]
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "4B71DBBC6FB0D822"
+				title: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F62.task.4B71DBBC6FB0D822.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F62.title}"
+			x: 2.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["58A7FD66EAB3C2F7"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest2F304AC4BE932E53.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest2F304AC4BE932E53.description2}"
+			]
+			id: "2F304AC4BE932E53"
+			rewards: [{
+				id: "50BA3EF3D1F5B15F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest2F304AC4BE932E53.subtitle}"
+			tasks: [{
+				id: "2AC12D0EFFB1813F"
+				item: "society:feeding_trough"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest2F304AC4BE932E53.title}"
+			x: 6.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["2F304AC4BE932E53"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest242F2DECF4CB1F2C.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest242F2DECF4CB1F2C.description2}"
+			]
+			id: "242F2DECF4CB1F2C"
+			rewards: [{
+				id: "255E4D5CD1A86D35"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest242F2DECF4CB1F2C.subtitle}"
+			tasks: [{
+				id: "644CD9C9FAAED87D"
+				item: "society:mayonnaise_machine"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest242F2DECF4CB1F2C.title}"
+			x: 8.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["242F2DECF4CB1F2C"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest4AA0016E87063724.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest4AA0016E87063724.description2}"
+			]
+			id: "4AA0016E87063724"
+			rewards: [{
+				count: 2
+				id: "42514C8FC88139C0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest4AA0016E87063724.subtitle}"
+			tasks: [{
+				id: "2377A24026FC6D53"
+				item: "society:cheese_press"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest4AA0016E87063724.title}"
+			x: 9.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["5B1F0A3C7D2E4F63"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest571A7B93095B5124.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest571A7B93095B5124.description2}"
+			]
+			id: "571A7B93095B5124"
+			rewards: [{
+				id: "50622AD751235B7A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest571A7B93095B5124.subtitle}"
+			tasks: [{
+				id: "6D020925DEC7B01D"
+				item: "aquaculture:tackle_box"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest571A7B93095B5124.title}"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["571A7B93095B5124"]
+			description: [
+				"{ftbquests.chapter.profissoes.questAAA34CCC3A2F19BB.description1}"
+				""
+				"{ftbquests.chapter.profissoes.questAAA34CCC3A2F19BB.description2}"
+			]
+			id: "36129E4D479D09E3"
+			rewards: [{
+				id: "7F37934C4B0E5921"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.questAAA34CCC3A2F19BB.subtitle}"
+			tasks: [{
+				count: 10L
+				id: "6FDABEB70564BBA4"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:fishes"
+					}
+				}
+				title: "{ftbquests.chapter.profissoes.questAAA34CCC3A2F19BB.task.90CB503543A2642C.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.questAAA34CCC3A2F19BB.title}"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F63.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F63.description2}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F63.description3}"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:fishing_rod"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5B1F0A3C7D2E4F63"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F63.subtitle}"
+			tags: ["sunlit_profession_fisher"]
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "41A9A408D04E2F1F"
+				title: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F63.task.41A9A408D04E2F1F.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F63.title}"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36129E4D479D09E3"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest93E828A6AE3E04EB.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest93E828A6AE3E04EB.description2}"
+			]
+			id: "34CFEFA22A31572C"
+			rewards: [{
+				id: "32C0A36A1583C8E5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest93E828A6AE3E04EB.subtitle}"
+			tasks: [{
+				id: "5804F39C434CE02A"
+				item: "crabbersdelight:crab_trap"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest93E828A6AE3E04EB.title}"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["34CFEFA22A31572C"]
+			description: [
+				"{ftbquests.chapter.profissoes.questEC0B6E384B1DACBD.description1}"
+				""
+				"{ftbquests.chapter.profissoes.questEC0B6E384B1DACBD.description2}"
+			]
+			id: "76189DAB8B8C3B6F"
+			rewards: [{
+				id: "112D43B99833329C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.questEC0B6E384B1DACBD.subtitle}"
+			tasks: [{
+				id: "0CC23159B68CE822"
+				item: "society:fish_smoker"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.questEC0B6E384B1DACBD.title}"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["76189DAB8B8C3B6F"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest79DAA7A7F95B9192.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest79DAA7A7F95B9192.description2}"
+			]
+			id: "79DAA7A7F95B9192"
+			rewards: [{
+				count: 2
+				id: "30F297CC1914575D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest79DAA7A7F95B9192.subtitle}"
+			tasks: [{
+				id: "5DA996070AD5BFAE"
+				item: "society:fish_pond"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest79DAA7A7F95B9192.title}"
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B1F0A3C7D2E4F64"]
+			description: [
+				"{ftbquests.chapter.profissoes.questD7DF8466DAB4076E.description1}"
+				""
+				"{ftbquests.chapter.profissoes.questD7DF8466DAB4076E.description2}"
+			]
+			id: "22E91DAAE230FF19"
+			rewards: [{
+				id: "107B084B39BF10E5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.questD7DF8466DAB4076E.subtitle}"
+			tasks: [{
+				count: 16L
+				id: "118E7A1D3DA7789D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kaleidoscope_tavern:grape"
+							}
+							{
+								Count: 1b
+								id: "vinery:white_grape"
+							}
+							{
+								Count: 1b
+								id: "kaleidoscope_tavern:grape"
+							}
+							{
+								Count: 1b
+								id: "kaleidoscope_tavern:green_grape"
+							}
+							{
+								Count: 1b
+								id: "kaleidoscope_tavern:gold_grape"
+							}
+							{
+								Count: 1b
+								id: "kaleidoscope_tavern:ice_grape"
+							}
+						]
+					}
+				}
+				title: "{ftbquests.chapter.profissoes.questD7DF8466DAB4076E.task.9E00C28F16F9BE7F.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.questD7DF8466DAB4076E.title}"
+			x: 3.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["22E91DAAE230FF19"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest485072AF01F49763.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest485072AF01F49763.description2}"
+			]
+			id: "485072AF01F49763"
+			rewards: [{
+				id: "65E6AACA8848F3AA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest485072AF01F49763.subtitle}"
+			tasks: [{
+				id: "2B400817E78EC38D"
+				item: "vinery:fermentation_barrel"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest485072AF01F49763.title}"
+			x: 5.0d
+			y: 2.25d
+		}
+		{
+			description: [
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F64.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F64.description2}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F64.description3}"
+			]
+			icon: {
+				Count: 1
+				id: "vinery:winemaker_apron"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5B1F0A3C7D2E4F64"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F64.subtitle}"
+			tags: ["sunlit_profession_winemaker"]
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "38E09E8437EEF861"
+				title: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F64.task.38E09E8437EEF861.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F64.title}"
+			x: 2.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["485072AF01F49763"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest395579558A43E479.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest395579558A43E479.description2}"
+			]
+			id: "395579558A43E479"
+			rewards: [{
+				id: "1958FC6EBA8E814F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest395579558A43E479.subtitle}"
+			tasks: [{
+				id: "4AE3DB71103DD79D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "society:wine"
+					}
+				}
+				title: "{ftbquests.chapter.profissoes.quest395579558A43E479.task.87096FBCF0371B63.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest395579558A43E479.title}"
+			x: 6.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["395579558A43E479"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest4AB1091C7A14C042.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest4AB1091C7A14C042.description2}"
+			]
+			id: "4AB1091C7A14C042"
+			rewards: [{
+				id: "7E0364DA3BC7CCD4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest4AB1091C7A14C042.subtitle}"
+			tasks: [{
+				id: "772CB5BBF8AB624C"
+				item: "society:wine_keg"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest4AB1091C7A14C042.title}"
+			x: 8.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["4AB1091C7A14C042"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest67561B36311854CB.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest67561B36311854CB.description2}"
+			]
+			id: "67561B36311854CB"
+			rewards: [{
+				count: 2
+				id: "6232088E9DD33118"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest67561B36311854CB.subtitle}"
+			tasks: [{
+				id: "2505C1AA62F6804E"
+				item: "society:aging_cask"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest67561B36311854CB.title}"
+			x: 9.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["67561B36311854CB"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest067A0D952D78E540.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest067A0D952D78E540.description2}"
+			]
+			id: "067A0D952D78E540"
+			rewards: [{
+				count: 2
+				id: "7739C07A81D8002D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest067A0D952D78E540.subtitle}"
+			tasks: [{
+				count: 16L
+				id: "6551044FA6624200"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "society:wine"
+					}
+				}
+				title: "{ftbquests.chapter.profissoes.quest067A0D952D78E540.task.D07DB6FF86DC8516.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest067A0D952D78E540.title}"
+			x: 11.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["067A0D952D78E540"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest7564EAD68EED5C46.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest7564EAD68EED5C46.description2}"
+			]
+			id: "7564EAD68EED5C46"
+			rewards: [{
+				count: 4
+				id: "7CDDDBF494C1A347"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest7564EAD68EED5C46.subtitle}"
+			tasks: [{
+				id: "0C12E35BBA8A9C60"
+				item: "society:ancient_cask"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest7564EAD68EED5C46.title}"
+			x: 12.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["5B1F0A3C7D2E4F65"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest96B8B43441F42601.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest96B8B43441F42601.description2}"
+			]
+			id: "3BBAD726303D346F"
+			rewards: [{
+				id: "6AB8AFB4B2F5427B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest96B8B43441F42601.subtitle}"
+			tasks: [{
+				id: "41B9CB2C68E2AF49"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest96B8B43441F42601.title}"
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3BBAD726303D346F"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest9C0519D082490B90.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest9C0519D082490B90.description2}"
+			]
+			id: "7054C737873985E4"
+			rewards: [{
+				id: "44A2E22BC2CB3B3D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest9C0519D082490B90.subtitle}"
+			tasks: [{
+				id: "1E3210616763D0B9"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest9C0519D082490B90.title}"
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F65.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F65.description2}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F65.description3}"
+			]
+			icon: "farmersdelight:cooking_pot"
+			id: "5B1F0A3C7D2E4F65"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F65.subtitle}"
+			tags: ["sunlit_profession_cook"]
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "1AA7B4ABC5E7426A"
+				title: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F65.task.A2B5708666F55C7A.title}"
+				type: "custom"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F65.title}"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7054C737873985E4"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest77F3B2AD2F373995.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest77F3B2AD2F373995.description2}"
+			]
+			id: "77F3B2AD2F373995"
+			rewards: [{
+				id: "463917F7B4066FB0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest77F3B2AD2F373995.subtitle}"
+			tasks: [{
+				count: 4L
+				id: "6CFA4C97F92CE0C9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "society:dish"
+					}
+				}
+				title: "{ftbquests.chapter.profissoes.quest77F3B2AD2F373995.task.6CFA4C97F92CE0C9.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest77F3B2AD2F373995.title}"
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["77F3B2AD2F373995"]
+			description: [
+				"{ftbquests.chapter.profissoes.quest8AEDA6E2DBA27983.description1}"
+				""
+				"{ftbquests.chapter.profissoes.quest8AEDA6E2DBA27983.description2}"
+			]
+			id: "596C020E3951F2F1"
+			rewards: [{
+				id: "2C049E1CBA04EE4E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.quest8AEDA6E2DBA27983.subtitle}"
+			tasks: [{
+				id: "46859833892C8712"
+				item: {
+					Count: 1
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.quest8AEDA6E2DBA27983.title}"
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["596C020E3951F2F1"]
+			description: [
+				"{ftbquests.chapter.profissoes.questE30CF9C1433F1E22.description1}"
+				""
+				"{ftbquests.chapter.profissoes.questE30CF9C1433F1E22.description2}"
+			]
+			id: "48AE3ECA47A7A52B"
+			rewards: [{
+				count: 2
+				id: "407A63B01D866012"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.questE30CF9C1433F1E22.subtitle}"
+			tasks: [{
+				id: "38E5ED3B784EFADD"
+				item: "cozycafe:plating_station"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.questE30CF9C1433F1E22.title}"
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["48AE3ECA47A7A52B"]
+			description: [
+				"{ftbquests.chapter.profissoes.questD98B42477F62E69C.description1}"
+				""
+				"{ftbquests.chapter.profissoes.questD98B42477F62E69C.description2}"
+			]
+			id: "63B8857324997ED2"
+			rewards: [{
+				count: 4
+				id: "1001745599DD8DC9"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.questD98B42477F62E69C.subtitle}"
+			tasks: [{
+				id: "29AED1BBEE203711"
+				item: "cozycafe:cafe_manager"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.questD98B42477F62E69C.title}"
+			x: 11.0d
+			y: 4.5d
+		}
+	]
+	title: "{ftbquests.chapter.profissoes.title}"
+}

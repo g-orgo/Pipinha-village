@@ -1,0 +1,64 @@
+SOCIETY: SUNLIT VALLEY - PIPINHA'S VILLAGE EDITION
+=====================================
+
+Este pacote substitui os mods e resource packs padrao do Society: Sunlit Valley
+pelo conjunto da Pipinha's Village Edition (mods extras de moveis/decoracao, Sunlit Towns
+para o Lost Cities, scripts KubeJS e configs).
+
+
+INSTALACAO MANUAL
+-----------------
+
+1) Apague as pastas "mods", "resourcepacks" e "kubejs" padrao do Sunlit dentro
+   da pasta da instancia.
+   (CurseForge: clique com o botao direito no perfil > Open Folder.)
+
+2) Descompacte este arquivo na pasta da instancia, mantendo a estrutura de
+   pastas (mods/, resourcepacks/, config/, kubejs/, moonlight-global-datapacks/ ...).
+   Substitua os arquivos existentes quando perguntado.
+
+
+IMPORTAR NO CURSEFORGE (ZIP DE MODPACK)
+---------------------------------------
+
+Este zip de modpack (manifest.json) e um arquivo menor: os mods vem do CurseForge
+e o app baixa tudo na instalacao. Use o zip gerado em dist/ pelo
+sunlit_tools/export_curseforge.py (detalhes em docs/PUBLICAR.md).
+
+1) No app do CurseForge clique em "Create Custom Profile".
+2) Clique em "Import" e escolha o arquivo .zip.
+3) Confirme o nome do perfil e espere o app baixar os mods.
+4) Abra o perfil e entre no mundo. Os arquivos de config e kubejs ja vem no zip.
+
+
+INSTALACAO AUTOMATICA (WINDOWS)
+-------------------------------
+
+1) Coloque este zip dentro da pasta da instancia.
+2) Abra o zip e copie o "install.bat" para a mesma pasta da instancia.
+3) De dois cliques no "install.bat" (ou arraste o zip para cima dele se o zip
+   nao se chamar Modpack.zip). O zip do GitHub (Code > Download ZIP de
+   github.com/g-orgo/Pipinha-village) funciona do mesmo jeito. Num clone desse
+   repositorio, arraste a pasta da instancia para cima do "install.bat" do clone.
+
+O script apaga "mods", "resourcepacks" e "kubejs" e extrai o zip na pasta da instancia.
+Ele nao muda as configuracoes Java (coletor padrao G1). Feche o
+Minecraft e o app do CurseForge antes de executar.
+
+
+OBSERVACOES
+-----------
+
+- O options.txt deste zip traz a ordem dos resource packs da Pipinha's Village Edition.
+  Extrai-lo substitui o seu options.txt atual (teclas, configuracoes de video).
+- O Java usa o coletor padrao G1 (o ZGC foi removido em 2026-10-14:
+  exige RAM demais). Se voce adicionou -XX:+UseZGC manualmente antes, remova em
+  CurseForge > botao direito no perfil > Profile Options >
+  Additional Arguments (o aviso "G1 detected" do Distant Horizons pode ser ignorado).
+- Recomendado: reserve 8 GB de memoria (Allocated Memory) no perfil.
+  Em um PC com 16 GB de RAM, mais do que isso joga o sistema no swap e o
+  mundo fica minutos em 0% ao carregar. Feche apps pesados (navegador,
+  apps de streaming) antes de entrar no mundo.
+- Mundos existentes mantem o terreno antigo. Chunks novos usam as novas cidades.
+- Se o Windows disser que o caminho e muito longo, extraia o zip em uma pasta
+  mais curta (por exemplo C:\Sunlit) e copie as pastas extraidas para a instancia.

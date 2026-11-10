@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bakery:sweetberry_cake_slice",
+      "required": false
+    },
+    {
+      "id": "create_central_kitchen:sweet_berry_cake_slice",
+      "required": false
+    }
+  ]
+}

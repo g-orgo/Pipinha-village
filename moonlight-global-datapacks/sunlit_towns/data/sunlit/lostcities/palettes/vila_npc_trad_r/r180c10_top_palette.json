@@ -1,0 +1,1 @@
+{"palette": [{"char": "G", "block": "minecraft:dirt"}, {"char": "!", "block": "minecraft:white_wool"}, {"char": "#", "block": "moreminecarts:wooden_rail[shape=ascending_east]"}, {"char": "$", "block": "moreminecarts:wooden_rail[shape=ascending_west]"}, {"char": "%", "block": "minecraft:light_gray_wool"}, {"char": "&", "block": "moreminecarts:wooden_rail[shape=east_west]"}]}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "kaleidoscope_cookery:fresh_tea_leaves",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:tea_leaves",
+      "required": false
+    }
+  ]
+}

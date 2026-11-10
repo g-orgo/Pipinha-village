@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "vintagedelight:pickled_onion",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:pickled_onions",
+      "required": false
+    }
+  ]
+}

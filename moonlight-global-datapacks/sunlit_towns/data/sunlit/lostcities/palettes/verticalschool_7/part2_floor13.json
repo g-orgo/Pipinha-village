@@ -1,0 +1,1 @@
+{"palette":[{"char":"a","block":"create:redstone_contact[powered=true,facing=south]"},{"char":"b","block":"create:redstone_contact[powered=true,facing=north]"},{"char":"c","block":"create:redstone_contact[powered=false,facing=north]"}]}

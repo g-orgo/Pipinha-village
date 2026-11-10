@@ -1,0 +1,67 @@
+{
+  "experience_per_level": {
+    "type": "values",
+    "data": {
+      "values": [
+        500,
+        1000,
+        2000,
+        4000,
+        7000,
+        9000,
+        10000,
+        12000,
+        18000,
+        20000,
+        22000,
+        26000,
+        30000,
+        34000
+      ]
+    }
+  },
+  "sources": [
+    {
+      "type": "puffish_skills:increase_stat",
+      "data": {
+        "variables": {
+          "breeding": {
+            "operations": [
+              {
+                "type": "get_stat"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "stat": "minecraft.custom:minecraft.animals_bred"
+                }
+              }
+            ]
+          },
+          "profession": {
+            "operations": [
+              {
+                "type": "get_player"
+              },
+              {
+                "type": "as_entity"
+              },
+              {
+                "type": "puffish_skills:get_score",
+                "data": {
+                  "objective": "sunlit_prof_husbandry"
+                }
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "breeding",
+            "expression": "(40) * (1 + 0.5 * profession)"
+          }
+        ]
+      }
+    }
+  ]
+}

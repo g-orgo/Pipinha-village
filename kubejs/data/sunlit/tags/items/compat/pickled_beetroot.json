@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "vintagedelight:pickled_beetroot",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:pickled_beetroots",
+      "required": false
+    }
+  ]
+}

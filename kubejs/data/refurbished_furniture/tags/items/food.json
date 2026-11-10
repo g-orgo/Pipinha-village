@@ -1,0 +1,77 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bakery:dough",
+      "required": false
+    },
+    {
+      "id": "bakery:glowberry_jam",
+      "required": false
+    },
+    {
+      "id": "bakery:sweetberry_jam",
+      "required": false
+    },
+    {
+      "id": "bakery:toast",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:sweet_berry_jam",
+      "required": false
+    },
+    {
+      "id": "candlelight:dough",
+      "required": false
+    },
+    {
+      "id": "create:dough",
+      "required": false
+    },
+    {
+      "id": "create:wheat_flour",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:dough",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:glow_berry_jam",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:sweet_berry_jam",
+      "required": false
+    },
+    {
+      "id": "meadow:cheese_sandwich",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:cheese_sandwich",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:dough",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:glow_berry_jam",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:sweet_berry_jam",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:toast",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:wheat_flour",
+      "required": false
+    }
+  ]
+}

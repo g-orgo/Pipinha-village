@@ -1,0 +1,20 @@
+[
+  {
+    "properties": {
+      "heat": "lit"
+    },
+    "temperature": 6.0
+  },
+  {
+    "properties": {
+      "heat": "weak"
+    },
+    "temperature": 3.0
+  },
+  {
+    "properties": {
+      "heat": "off"
+    },
+    "temperature": 0.0
+  }
+]

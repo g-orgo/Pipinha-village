@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersrespite:yellow_tea_leaves",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:yellow_tea_leaves",
+      "required": false
+    }
+  ]
+}

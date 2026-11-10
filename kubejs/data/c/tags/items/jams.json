@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bakery:apple_jam",
+      "required": false
+    },
+    {
+      "id": "bakery:glowberry_jam",
+      "required": false
+    },
+    {
+      "id": "bakery:sweetberry_jam",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:sweet_berry_jam",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:apple_jam",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:glow_berry_jam",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:sweet_berry_jam",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:glow_berry_jam",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:sweet_berry_jam",
+      "required": false
+    }
+  ]
+}

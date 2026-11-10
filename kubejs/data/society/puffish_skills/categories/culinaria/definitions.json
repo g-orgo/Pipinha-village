@@ -1,0 +1,380 @@
+{
+  "kitchen_basics": {
+    "title": {
+      "translate": "society_skills.culinaria.kitchen_basics"
+    },
+    "description": {
+      "translate": "society_skills.culinaria.kitchen_basics.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "farmersdelight:cooking_pot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "sharp_1": {
+    "title": {
+      "translate": "society_skills.culinaria.sharp_1"
+    },
+    "description": {
+      "translate": "society_skills.culinaria.sharp_1.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "farmersdelight:flint_knife"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.luck",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "extra_portions": {
+    "title": {
+      "translate": "society_skills.culinaria.extra_portions"
+    },
+    "description": {
+      "translate": "society_skills.culinaria.extra_portions.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "farmersdelight:iron_knife"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s culinaria_extra",
+          "lock_command": "kubejs stages remove @s culinaria_extra"
+        }
+      }
+    ]
+  },
+  "clean_cut": {
+    "title": {
+      "translate": "society_skills.culinaria.clean_cut"
+    },
+    "description": {
+      "translate": "society_skills.culinaria.clean_cut.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "farmersdelight:golden_knife"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "master_cutter": {
+    "title": {
+      "translate": "society_skills.culinaria.master_cutter"
+    },
+    "description": {
+      "translate": "society_skills.culinaria.master_cutter.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "farmersdelight:diamond_knife"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    }
+  },
+  "simmer_1": {
+    "title": {
+      "translate": "society_skills.culinaria.simmer_1"
+    },
+    "description": {
+      "translate": "society_skills.culinaria.simmer_1.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "farmersdelight:cooking_pot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "stock_pot": {
+    "title": {
+      "translate": "society_skills.culinaria.stock_pot"
+    },
+    "description": {
+      "translate": "society_skills.culinaria.stock_pot.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "farmersdelight:cooking_pot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.luck",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "seasoning": {
+    "title": {
+      "translate": "society_skills.culinaria.seasoning"
+    },
+    "description": {
+      "translate": "society_skills.culinaria.seasoning.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "farmersdelight:cooking_pot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "pot_master": {
+    "title": {
+      "translate": "society_skills.culinaria.pot_master"
+    },
+    "description": {
+      "translate": "society_skills.culinaria.pot_master.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "farmersdelight:cooking_pot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:healing",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    }
+  },
+  "feast_1": {
+    "title": {
+      "translate": "society_skills.culinaria.feast_1"
+    },
+    "description": {
+      "translate": "society_skills.culinaria.feast_1.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cooked_beef"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "feast_2": {
+    "title": {
+      "translate": "society_skills.culinaria.feast_2"
+    },
+    "description": {
+      "translate": "society_skills.culinaria.feast_2.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cooked_beef"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "feast_3": {
+    "title": {
+      "translate": "society_skills.culinaria.feast_3"
+    },
+    "description": {
+      "translate": "society_skills.culinaria.feast_3.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cooked_beef"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:healing",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "double_harvest": {
+    "title": {
+      "translate": "society_skills.culinaria.double_harvest"
+    },
+    "description": {
+      "translate": "society_skills.culinaria.double_harvest.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cooked_beef"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s culinaria_double",
+          "lock_command": "kubejs stages remove @s culinaria_double"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    }
+  },
+  "specialty_1": {
+    "title": {"translate": "society_skills.culinaria.specialty_1"},
+    "description": {"translate": "society_skills.culinaria.specialty_1.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "farmersdelight:skillet"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s specialty_culinaria_1",
+          "lock_command": "kubejs stages remove @s specialty_culinaria_1"
+        }
+      }
+    ]
+  },
+  "specialty_2": {
+    "title": {"translate": "society_skills.culinaria.specialty_2"},
+    "description": {"translate": "society_skills.culinaria.specialty_2.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "farmersdelight:cooking_pot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s specialty_culinaria_2",
+          "lock_command": "kubejs stages remove @s specialty_culinaria_2"
+        }
+      }
+    ]
+  }
+}

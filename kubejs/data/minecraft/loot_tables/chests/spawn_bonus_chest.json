@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [{ "type": "minecraft:item", "name": "minecraft:iron_pickaxe" }]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [{ "type": "minecraft:item", "name": "minecraft:iron_axe" }]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [{ "type": "minecraft:item", "name": "sophisticatedbackpacks:copper_backpack" }]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bread",
+          "functions": [{ "function": "minecraft:set_count", "count": 3 }]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [{ "type": "minecraft:item", "name": "legendarysurvivaloverhaul:canteen" }]
+    }
+  ]
+}

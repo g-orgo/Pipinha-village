@@ -1,0 +1,37 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bakery:apple_pie_slice",
+      "required": false
+    },
+    {
+      "id": "create_central_kitchen:pumpkin_pie_slice",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:apple_pie_slice",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:pumpkin_pie_slice",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:carrot_cake",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:carrot_cake_slice",
+      "required": false
+    },
+    {
+      "id": "veggiesdelight:carrot_cake",
+      "required": false
+    },
+    {
+      "id": "veggiesdelight:carrot_cake_slice",
+      "required": false
+    }
+  ]
+}

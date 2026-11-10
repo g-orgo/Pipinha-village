@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:crops/cucumber",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:cucumber",
+      "required": false
+    },
+    {
+      "id": "vintagedelight:cucumber",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:cucumber",
+      "required": false
+    }
+  ]
+}

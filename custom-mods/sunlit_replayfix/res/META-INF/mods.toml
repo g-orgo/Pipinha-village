@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="sunlit_replayfix"
+version="1.0.0"
+displayName="Sunlit Replay Fix"
+displayTest="IGNORE_ALL_VERSION"
+description="Loads the registry IDs of the recorded world so singleplayer replays open correctly, and keeps Replay Mod's hidden screens from hiding the TrashSlot slot."
+
+[[dependencies.sunlit_replayfix]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.sunlit_replayfix]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.sunlit_replayfix]]
+modId="replaymod"
+mandatory=true
+versionRange="*"
+ordering="AFTER"
+side="CLIENT"

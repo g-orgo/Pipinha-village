@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "kaleidoscope_tavern:grape",
+      "required": false
+    },
+    {
+      "id": "vinery:red_grape",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:red_grape",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:red_grapes",
+      "required": false
+    }
+  ]
+}

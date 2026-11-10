@@ -1,0 +1,149 @@
+{
+  "trade_basics": {
+    "title": {
+      "translate": "society_skills.mercantil.trade_basics"
+    },
+    "description": {
+      "translate": "society_skills.mercantil.trade_basics.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "numismatics:spur"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "haggle_1": {
+    "title": {
+      "translate": "society_skills.mercantil.haggle_1"
+    },
+    "description": {
+      "translate": "society_skills.mercantil.haggle_1.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "numismatics:cog"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mercantil_haggle_1",
+          "lock_command": "kubejs stages remove @s mercantil_haggle_1"
+        }
+      }
+    ]
+  },
+  "haggle_2": {
+    "title": {
+      "translate": "society_skills.mercantil.haggle_2"
+    },
+    "description": {
+      "translate": "society_skills.mercantil.haggle_2.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "numismatics:crown"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mercantil_haggle_2",
+          "lock_command": "kubejs stages remove @s mercantil_haggle_2"
+        }
+      }
+    ]
+  },
+  "haggle_3": {
+    "title": {
+      "translate": "society_skills.mercantil.haggle_3"
+    },
+    "description": {
+      "translate": "society_skills.mercantil.haggle_3.description"
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "numismatics:sun"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s mercantil_haggle_3",
+          "lock_command": "kubejs stages remove @s mercantil_haggle_3"
+        }
+      }
+    ]
+  },
+  "ledger_1": {
+    "title": {
+      "translate": "society_skills.mercantil.ledger_1"
+    },
+    "description": {
+      "translate": "society_skills.mercantil.ledger_1.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:book"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "ledger_2": {
+    "title": {
+      "translate": "society_skills.mercantil.ledger_2"
+    },
+    "description": {
+      "translate": "society_skills.mercantil.ledger_2.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:writable_book"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "unlocked_by_default": true,
+  "title": {
+    "translate": "society_skills.mercantil.category.title"
+  },
+  "icon": {
+    "type": "item",
+    "data": {
+      "item": "numismatics:crown"
+    }
+  },
+  "background": "textures/block/birch_planks.png",
+  "spent_points_limit": 6
+}

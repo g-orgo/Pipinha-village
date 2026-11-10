@@ -1,0 +1,1 @@
+{"palette": [{"char": "G", "block": "minecraft:dirt"}, {"char": "!", "block": "minecraft:cherry_stairs[facing=east,half=top,shape=outer_right]"}, {"char": "#", "block": "minecraft:cherry_stairs[facing=south,half=top,shape=straight]"}, {"char": "$", "block": "minecraft:cherry_planks"}, {"char": "%", "block": "minecraft:cherry_stairs[facing=north,half=bottom,shape=straight]"}]}

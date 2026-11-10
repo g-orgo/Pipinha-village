@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:crops/oat",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:oat",
+      "required": false
+    },
+    {
+      "id": "vintagedelight:oat",
+      "required": false
+    }
+  ]
+}

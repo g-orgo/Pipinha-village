@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "kaleidoscope_tavern:green_grape",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:green_grapes",
+      "required": false
+    }
+  ]
+}

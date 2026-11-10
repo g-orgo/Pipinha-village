@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bakery:toast",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:toast",
+      "required": false
+    }
+  ]
+}

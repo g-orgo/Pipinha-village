@@ -1,0 +1,380 @@
+{
+  "vineyard_basics": {
+    "title": {
+      "translate": "society_skills.vinicultura.vineyard_basics"
+    },
+    "description": {
+      "translate": "society_skills.vinicultura.vineyard_basics.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "kaleidoscope_tavern:grape"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "harvest_1": {
+    "title": {
+      "translate": "society_skills.vinicultura.harvest_1"
+    },
+    "description": {
+      "translate": "society_skills.vinicultura.harvest_1.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "vinery:white_grape"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.luck",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "generous_barrels": {
+    "title": {
+      "translate": "society_skills.vinicultura.generous_barrels"
+    },
+    "description": {
+      "translate": "society_skills.vinicultura.generous_barrels.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:wine_keg"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s vinicultura_extra",
+          "lock_command": "kubejs stages remove @s vinicultura_extra"
+        }
+      }
+    ]
+  },
+  "harvest_2": {
+    "title": {
+      "translate": "society_skills.vinicultura.harvest_2"
+    },
+    "description": {
+      "translate": "society_skills.vinicultura.harvest_2.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "kaleidoscope_tavern:grape"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "master_vintner": {
+    "title": {
+      "translate": "society_skills.vinicultura.master_vintner"
+    },
+    "description": {
+      "translate": "society_skills.vinicultura.master_vintner.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "vinery:winemaker_apron"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:healing",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    }
+  },
+  "cellar_1": {
+    "title": {
+      "translate": "society_skills.vinicultura.cellar_1"
+    },
+    "description": {
+      "translate": "society_skills.vinicultura.cellar_1.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:aging_cask"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "cellar_2": {
+    "title": {
+      "translate": "society_skills.vinicultura.cellar_2"
+    },
+    "description": {
+      "translate": "society_skills.vinicultura.cellar_2.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:aging_cask"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.luck",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "cellar_3": {
+    "title": {
+      "translate": "society_skills.vinicultura.cellar_3"
+    },
+    "description": {
+      "translate": "society_skills.vinicultura.cellar_3.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:aging_cask"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "cellar_master": {
+    "title": {
+      "translate": "society_skills.vinicultura.cellar_master"
+    },
+    "description": {
+      "translate": "society_skills.vinicultura.cellar_master.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:ancient_cask"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:healing",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    }
+  },
+  "tasting_1": {
+    "title": {
+      "translate": "society_skills.vinicultura.tasting_1"
+    },
+    "description": {
+      "translate": "society_skills.vinicultura.tasting_1.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "vinery:wine_bottle"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "tasting_2": {
+    "title": {
+      "translate": "society_skills.vinicultura.tasting_2"
+    },
+    "description": {
+      "translate": "society_skills.vinicultura.tasting_2.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "vinery:apple_wine"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "tasting_3": {
+    "title": {
+      "translate": "society_skills.vinicultura.tasting_3"
+    },
+    "description": {
+      "translate": "society_skills.vinicultura.tasting_3.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "vinery:red_wine"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.luck",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "grand_cru": {
+    "title": {
+      "translate": "society_skills.vinicultura.grand_cru"
+    },
+    "description": {
+      "translate": "society_skills.vinicultura.grand_cru.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "vinery:red_wine"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s vinicultura_double",
+          "lock_command": "kubejs stages remove @s vinicultura_double"
+        }
+      }
+    ],
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    }
+  },
+  "specialty_1": {
+    "title": {"translate": "society_skills.vinicultura.specialty_1"},
+    "description": {"translate": "society_skills.vinicultura.specialty_1.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "vinery:wine_bottle"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s specialty_vinicultura_1",
+          "lock_command": "kubejs stages remove @s specialty_vinicultura_1"
+        }
+      }
+    ]
+  },
+  "specialty_2": {
+    "title": {"translate": "society_skills.vinicultura.specialty_2"},
+    "description": {"translate": "society_skills.vinicultura.specialty_2.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "kaleidoscope_tavern:grape"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s specialty_vinicultura_2",
+          "lock_command": "kubejs stages remove @s specialty_vinicultura_2"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "experience_per_level": {
+    "type": "values",
+    "data": {
+      "values": [
+        400,
+        800,
+        1600,
+        3200,
+        6000,
+        10000
+      ]
+    }
+  },
+  "sources": []
+}

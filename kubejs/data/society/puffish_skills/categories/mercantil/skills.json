@@ -1,0 +1,38 @@
+{
+  "5D2E8A71C4B9F036": {
+    "definition": "trade_basics",
+    "x": -320,
+    "y": 0,
+    "root": true
+  },
+  "A1C47E9B2D0F5863": {
+    "definition": "haggle_1",
+    "x": -224,
+    "y": 0,
+    "root": false
+  },
+  "3F86B0D5E91A7C24": {
+    "definition": "haggle_2",
+    "x": -128,
+    "y": 0,
+    "root": false
+  },
+  "C7E2194A6B3D8F50": {
+    "definition": "haggle_3",
+    "x": -32,
+    "y": 0,
+    "root": false
+  },
+  "92B5F3C0A8E6D147": {
+    "definition": "ledger_1",
+    "x": -224,
+    "y": -128,
+    "root": false
+  },
+  "E4A09D7B13C6F582": {
+    "definition": "ledger_2",
+    "x": -224,
+    "y": 128,
+    "root": false
+  }
+}

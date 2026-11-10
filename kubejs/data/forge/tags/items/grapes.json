@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hearthandharvest:red_grapes",
+      "required": false
+    },
+    {
+      "id": "vinery:red_grape",
+      "required": false
+    },
+    {
+      "id": "vinery:white_grape",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:red_grape",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:white_grape",
+      "required": false
+    }
+  ]
+}

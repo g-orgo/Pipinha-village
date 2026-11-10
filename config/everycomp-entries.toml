@@ -1,0 +1,354 @@
+
+#Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
+[types]
+
+	[types.leaves_type]
+
+		[types.leaves_type.autumnity]
+			maple = true
+			yellow_maple = true
+			orange_maple = true
+			red_maple = true
+
+		[types.leaves_type.vinery]
+			grapevine = true
+			dark_cherry = true
+			apple = true
+
+		[types.leaves_type.beachparty]
+			palm = true
+
+		[types.leaves_type.meadow]
+			pine = true
+
+		[types.leaves_type.atmospheric]
+			rosewood = true
+			morado = true
+			flowering_morado = true
+			yucca = true
+			aspen = true
+			green_aspen = true
+			laurel = true
+			dry_laurel = true
+			kousa = true
+			currant = true
+			grimwood = true
+
+		[types.leaves_type.quark]
+			ancient = true
+			blue_blossom = true
+			lavender_blossom = true
+			orange_blossom = true
+			yellow_blossom = true
+			red_blossom = true
+
+		[types.leaves_type.windswept]
+			holly = true
+			chestnut = true
+			pine = true
+			flowering_acacia = true
+
+		[types.leaves_type.cluttered]
+			willow = true
+			flowering_willow = false
+			poplar = true
+			flowering_poplar = false
+			crabapple = false
+			flowering_crabapple = false
+			sycamore = true
+			fluorescent_maple = false
+			flowering_fluorescent_maple = true
+
+		[types.leaves_type.minecraft]
+			pale_oak = true
+
+		[types.leaves_type.rainbowoaks]
+			rainbow = true
+
+		[types.leaves_type.faunaandorchestra]
+			gingko_biloba = true
+
+		[types.leaves_type.culturaldelights]
+			fruiting_avocado = true
+			avocado = true
+
+	[types.wood_type]
+
+		[types.wood_type.autumnity]
+			maple = true
+
+		[types.wood_type.quark]
+			azalea = true
+			ancient = true
+			blossom = true
+
+		[types.wood_type.vinery]
+			dark_cherry = true
+
+		[types.wood_type.beachparty]
+			palm = true
+
+		[types.wood_type.meadow]
+			pine = true
+
+		[types.wood_type.atmospheric]
+			rosewood = true
+			morado = true
+			yucca = true
+			aspen = true
+			laurel = true
+			kousa = true
+			grimwood = true
+
+		[types.wood_type.betterarcheology]
+			rotten = true
+
+		[types.wood_type.botania]
+			livingwood = true
+			dreamwood = true
+
+		[types.wood_type.windswept]
+			holly = true
+			chestnut = true
+			pine = true
+
+		[types.wood_type.cluttered]
+			willow = true
+			flowering_willow = false
+			poplar = true
+			flowering_poplar = false
+			crabapple = false
+			flowering_crabapple = false
+			sycamore = true
+			fluorescent_maple = false
+			blue_mushroom = false
+			red_mushroom = false
+
+		[types.wood_type.minecraft]
+			pale_oak = true
+
+	[types.cake]
+
+		[types.cake.veggiesdelight]
+			carrot_cake = true
+
+		[types.cake.farmersrespite]
+			coffee_cake = true
+
+		[types.cake.youkaishomecoming]
+			red_velvet_cake = true
+
+		[types.cake.hearthandharvest]
+			carrot_cake = true
+
+#Disables specific entries
+[entries]
+
+	[entries.leaves_type]
+
+		[entries.leaves_type.quark]
+			hedge = false
+			leaf_carpet = true
+
+		[entries.leaves_type.refurbished_furniture]
+			hedge = true
+
+		[entries.leaves_type.cfm]
+			hedge = true
+
+	[entries.wood_type]
+
+		[entries.wood_type.quark]
+			vertical_planks = true
+			post = true
+			trapped_chest = false
+			bookshelf = true
+			chest = false
+			stripped_post = true
+			ladder = true
+			hollow_log = true
+			vertical_slab = true
+
+		[entries.wood_type.decorative_blocks]
+			beam = true
+			support = true
+			seat = true
+			palisade = true
+
+		[entries.wood_type.create]
+			window = true
+			window_pane = true
+
+		[entries.wood_type.farmersdelight]
+			cabinet = true
+
+		[entries.wood_type.refurbished_furniture]
+			cutting_board = false
+			drawer = true
+			storage_cabinet = true
+			table = true
+			mail_box = true
+			dark_ceiling_fan = false
+			kitchen_sink = true
+			toilet = false
+			storage_jar = false
+			lattice_fence = true
+			basin = false
+			kitchen_drawer = true
+			lattice_fence_gate = true
+			kitchen_cabinetry = true
+			bath = false
+			crate = true
+			desk = true
+			chair = true
+			light_ceiling_fan = false
+			kitchen_storage_cabinet = true
+
+		[entries.wood_type.functionalstorage]
+			1 = true
+			4 = true
+			2 = true
+
+		[entries.wood_type.twigs]
+			table = false
+
+		[entries.wood_type.beautify]
+			trellis = true
+			blinds = true
+			picture_frame = false
+
+		[entries.wood_type.dramaticdoors]
+			short_door = true
+			tall_door = true
+
+		[entries.wood_type.kaleidoscope_cookery]
+			cook_stool = true
+			chair = true
+			table = true
+
+		[entries.wood_type.youkaishomecoming]
+			dining_chair = true
+			dining_table = true
+			handrail = true
+
+		[entries.wood_type.buildersdelight]
+			stairs_4 = true
+			stairs_5 = true
+			stairs_6 = true
+			stairs_7 = true
+			stairs_1 = true
+			stairs_2 = true
+			frame_7 = true
+			stairs_3 = true
+			frame_8 = true
+			frame_5 = true
+			frame_6 = true
+			frame_3 = true
+			frame_4 = true
+			frame_1 = true
+			frame_2 = true
+			chair_2 = true
+			chair_1 = true
+			slab_5 = true
+			slab_4 = true
+			slab_7 = true
+			slab_6 = true
+			slab_1 = true
+			slab_3 = true
+			slab_2 = true
+			planks_3 = true
+			planks_4 = true
+			planks_1 = true
+			planks_2 = true
+			planks_7 = true
+			planks_5 = true
+			planks_6 = true
+			table_1 = true
+			table_2 = true
+			glass_8 = true
+			glass_2 = true
+			glass_3 = true
+			glass_1 = true
+			glass_6 = true
+			glass_7 = true
+			glass_4 = true
+			glass_5 = true
+			glass_pane_7 = true
+			glass_pane_8 = true
+			furniture_kit = true
+			glass_pane_5 = true
+			glass_pane_6 = true
+			glass_pane_3 = true
+			glass_pane_4 = true
+			glass_pane_1 = true
+			glass_pane_2 = true
+
+		[entries.wood_type.cfm]
+			stripped_kitchen_sink_light = true
+			table = true
+			coffee_table = true
+			park_bench = true
+			stripped_kitchen_counter = true
+			stripped_bedside_cabinet = true
+			desk_cabinet = true
+			upgraded_fence = true
+			kitchen_counter = true
+			upgraded_gate = true
+			stripped_park_bench = true
+			cabinet = true
+			mail_box = true
+			crate = true
+			chair = true
+			stripped_mail_box = true
+			stripped_blinds = true
+			bedside_cabinet = true
+			stripped_upgraded_fence = true
+			stripped_cabinet = true
+			kitchen_drawer = true
+			desk = true
+			stripped_kitchen_drawer = true
+			kitchen_sink_dark = true
+			stripped_desk_cabinet = true
+			stripped_table = true
+			blinds = true
+			stripped_chair = true
+			stripped_kitchen_sink_dark = true
+			stripped_desk = true
+			kitchen_sink_light = true
+			stripped_coffee_table = true
+			stripped_crate = true
+			stripped_upgraded_gate = true
+
+		[entries.wood_type.redeco]
+			polished_planks = true
+			polished_slab = true
+			display_case = true
+			side_table = true
+			table = true
+			sword_mount = true
+			polished_stairs = true
+			pedestal = true
+			drawer_counter = true
+			cabinet = true
+			stool = true
+			chair = true
+			counter = true
+			crate = true
+			coffee_table = true
+			drawers = true
+			cabinet_counter = true
+			plank_fence = true
+			plank_gate = true
+			bench = true
+			lattice = true
+			shelf = true
+
+		[entries.wood_type.another_furniture]
+			flower_box = true
+			shutter = true
+			drawer = true
+			shelf = true
+			bench = true
+			table = true
+			chair = true
+

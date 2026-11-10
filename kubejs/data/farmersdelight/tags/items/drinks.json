@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersdelight:melon_juice",
+      "required": false
+    },
+    {
+      "id": "legendarysurvivaloverhaul:carrot_juice",
+      "required": false
+    },
+    {
+      "id": "legendarysurvivaloverhaul:melon_juice",
+      "required": false
+    },
+    {
+      "id": "veggiesdelight:carrot_juice",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "hearthandharvest:raisins",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:raisin",
+      "required": false
+    }
+  ]
+}

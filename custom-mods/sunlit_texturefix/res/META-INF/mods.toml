@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="sunlit_texturefix"
+version="1.0.0"
+displayName="Sunlit Texture Fix"
+displayTest="IGNORE_ALL_VERSION"
+description="Runs texture registrations from other threads on the render thread, fixing a crash right after joining a world."
+
+[[dependencies.sunlit_texturefix]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.sunlit_texturefix]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="CLIENT"

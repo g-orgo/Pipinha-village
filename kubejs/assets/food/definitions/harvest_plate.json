@@ -1,0 +1,10 @@
+{
+ "item": "candlelight:harvest_plate",
+ "invisible": [
+  "utensil"
+ ],
+ "sounds": {
+  "eating": "food:eat",
+  "soup": "food:soup"
+ }
+}

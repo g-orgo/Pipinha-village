@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+MixinConfigs: sunlit_replayfix.mixins.json,sunlit_replayfix.trashslot.mixins.json

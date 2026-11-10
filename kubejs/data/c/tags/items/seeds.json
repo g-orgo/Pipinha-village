@@ -1,0 +1,65 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "culturaldelights:corn_kernels",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:kernels",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:lettuce_seeds",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:oat_seeds",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:onion",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:tomato_seeds",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:onion",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:tomato_seeds",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:lettuce_seed",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:tomato_seed",
+      "required": false
+    },
+    {
+      "id": "vinery:red_grape_seeds",
+      "required": false
+    },
+    {
+      "id": "vinery:white_grape_seeds",
+      "required": false
+    },
+    {
+      "id": "vintagedelight:oat_seeds",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:red_grape_seeds",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:white_grape_seeds",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "normal": {
+    "bidirectional": [
+      [
+        "5D2E8A71C4B9F036",
+        "A1C47E9B2D0F5863"
+      ],
+      [
+        "A1C47E9B2D0F5863",
+        "3F86B0D5E91A7C24"
+      ],
+      [
+        "3F86B0D5E91A7C24",
+        "C7E2194A6B3D8F50"
+      ],
+      [
+        "5D2E8A71C4B9F036",
+        "92B5F3C0A8E6D147"
+      ],
+      [
+        "5D2E8A71C4B9F036",
+        "E4A09D7B13C6F582"
+      ]
+    ]
+  },
+  "exclusive": {
+    "bidirectional": []
+  }
+}

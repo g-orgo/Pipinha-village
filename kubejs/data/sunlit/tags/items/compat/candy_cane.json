@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "snowyspirit:candy_cane",
+      "required": false
+    },
+    {
+      "id": "windswept:candy_cane",
+      "required": false
+    }
+  ]
+}

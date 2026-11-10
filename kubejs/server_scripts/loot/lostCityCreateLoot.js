@@ -1,0 +1,66 @@
+console.info("[SOCIETY] lostCityCreateLoot.js loaded");
+
+LootJS.modifiers((e) => {
+  // Baús da Lost City (perfil sunlit_cozy) passam a conter peças do Create
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.5)
+    .addLoot("create:andesite_alloy");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.35)
+    .addLoot("create:shaft");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.35)
+    .addLoot("create:cogwheel");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.3)
+    .addLoot("create:zinc_ingot");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.22)
+    .addLoot("create:brass_ingot");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.2)
+    .addLoot("create:iron_sheet");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.18)
+    .addLoot("create:large_cogwheel");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.18)
+    .addLoot("create:andesite_casing");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.18)
+    .addLoot("create:brass_sheet");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.15)
+    .addLoot("create:belt_connector");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.12)
+    .addLoot("create:electron_tube");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.1)
+    .addLoot("create:brass_hand");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.07)
+    .addLoot("create:precision_mechanism");
+  // Blocos/máquinas (para montar a base com o que achou na cidade)
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.15)
+    .addLoot("create:depot");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.15)
+    .addLoot("create:basin");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.12)
+    .addLoot("create:millstone");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.12)
+    .addLoot("create:toolbox");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.1)
+    .addLoot("create:deployer");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.1)
+    .addLoot("create:fluid_tank");
+  e.addLootTableModifier("lostcities:chests/lostcitychest")
+    .randomChance(0.08)
+    .addLoot("create:mechanical_arm");
+});

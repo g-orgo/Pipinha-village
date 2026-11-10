@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "culturaldelights:regular_eggplants",
+      "required": false
+    },
+    {
+      "id": "croptopia:eggplant",
+      "required": false
+    }
+  ]
+}

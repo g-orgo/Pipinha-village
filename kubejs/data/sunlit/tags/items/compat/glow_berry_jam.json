@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bakery:glowberry_jam",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:glow_berry_jam",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:glow_berry_jam",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "kaleidoscope_cookery:mantou",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:mantou",
+      "required": false
+    }
+  ]
+}

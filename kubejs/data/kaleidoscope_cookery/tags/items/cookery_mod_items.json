@@ -1,0 +1,113 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "brewery:dumplings",
+      "required": false
+    },
+    {
+      "id": "cuisinedelight:fried_egg",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:flour",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:lettuce",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:lettuce_seeds",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:tomato",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:tomato_seeds",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:cooked_rice",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:dumplings",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:fried_egg",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:rice",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:rice_panicle",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:tomato",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:tomato_seeds",
+      "required": false
+    },
+    {
+      "id": "farmersrespite:tea_seeds",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:cooked_rice",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:dumpling",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:flour",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:fried_egg",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:lettuce",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:lettuce_seed",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:rice",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:rice_panicle",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:tea_seed",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:tomato",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:tomato_seed",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:tea_seeds",
+      "required": false
+    }
+  ]
+}

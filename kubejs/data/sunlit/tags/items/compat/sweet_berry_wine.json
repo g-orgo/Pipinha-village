@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "kaleidoscope_tavern:sweet_berry_wine",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:sweet_berry_wine",
+      "required": false
+    }
+  ]
+}

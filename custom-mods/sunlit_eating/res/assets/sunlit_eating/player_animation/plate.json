@@ -1,0 +1,75 @@
+{
+ "name": "plate",
+ "author": "Sunlit",
+ "description": "Sunlit eating pose",
+ "emote": {
+  "isLoop": true,
+  "returnTick": 7,
+  "beginTick": 0,
+  "endTick": 23,
+  "stopTick": 28,
+  "degrees": true,
+  "moves": [
+   {
+    "tick": 0,
+    "easing": "INOUTSINE",
+    "turn": 0,
+    "rightArm": {
+     "pitch": -30,
+     "yaw": 0,
+     "roll": 0
+    },
+    "leftArm": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    }
+   },
+   {
+    "tick": 7,
+    "easing": "INOUTSINE",
+    "turn": 0,
+    "rightArm": {
+     "pitch": -58,
+     "yaw": -16,
+     "roll": 6
+    },
+    "leftArm": {
+     "pitch": -105,
+     "yaw": 24,
+     "roll": -10
+    }
+   },
+   {
+    "tick": 15,
+    "easing": "INOUTSINE",
+    "turn": 0,
+    "rightArm": {
+     "pitch": -54,
+     "yaw": -16,
+     "roll": 6
+    },
+    "leftArm": {
+     "pitch": -82,
+     "yaw": 20,
+     "roll": -8
+    }
+   },
+   {
+    "tick": 23,
+    "easing": "INOUTSINE",
+    "turn": 0,
+    "rightArm": {
+     "pitch": -58,
+     "yaw": -16,
+     "roll": 6
+    },
+    "leftArm": {
+     "pitch": -105,
+     "yaw": 24,
+     "roll": -10
+    }
+   }
+  ]
+ }
+}

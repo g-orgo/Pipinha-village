@@ -32,6 +32,9 @@ Uso: python3 regen_chunks.py "../saves/Nosso mapa" [--dry] [--radius N] [--so-jo
                    current chunk, force loaded chunks and chunks with player storage
   --apenas-forceload  mantem somente os chunks com forceload FTB (nem jogador, nem baus)
   --fazendas       mantem chunk com terra arada onde o jogador ficou >= 1 min (InhabitedTime)
+  --so-predio      sem a area inteira do Lost Cities (8x8/7x7) em volta de cada chunk mantido: so o
+                   predio que cruza a borda segue junto (regen_continuity). 2026-11-10, pedido do dono:
+                   a area em cascata segurava cidades inteiras velhas (21 chunks base -> 2624 mantidos)
 """
 import sys, os, glob, gzip, json, re, struct, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -288,7 +291,8 @@ def main():
     # any neighbour a building still crosses into (see regen_continuity.py).
     exists = {c for m in present.values() for c in m.values()}
     base = {c for c in keep if c in exists}
-    for c in sorted(base):
+    so_predio = '--so-predio' in sys.argv
+    for c in ([] if so_predio else sorted(base)):
         for area in lc_areas(c):
             for a in area:
                 if a in exists and a not in keep:
@@ -298,7 +302,7 @@ def main():
     # building-crossing check can touch new areas, so both run until nothing changes.
     while True:
         m = MULTI_AREA
-        for c in sorted(keep & exists):
+        for c in ([] if so_predio else sorted(keep & exists)):
             mx, mz = c[0] // m * m, c[1] // m * m
             for a in ((mx + i, mz + j) for i in range(m) for j in range(m)):
                 if a in exists and a not in keep:

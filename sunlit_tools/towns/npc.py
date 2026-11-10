@@ -335,6 +335,49 @@ LOOSE_SUPPORTS = collections.Counter()
 RE_HANGING = re.compile(r'hanging=true|:chain\b|hanging_pot|hanging_sign')
 
 
+FLOOR_SUPPORTS = collections.Counter()
+
+
+def _is_support(s):
+    return s.split('[')[0].endswith('_support')
+
+
+def supports_as_floor(g, name=''):
+    """2026-11-10 (owner request: "a house that is only supports on the floor must never happen"). Some
+    blueprints lay Decorative Blocks supports side by side as a floor (trader basic ground floor, tudor
+    upper floors, coops, witch pinecone): in game it reads as a carpet of brackets. In each layer, a
+    4-connected group of supports holding a 2x2 square of supports is a surface, not a beam, so the whole
+    group becomes planks of the same wood. Lines, rings and T/cross junctions of timber-frame beams (witch
+    rural, banker rural walls) have no 2x2 square and stay supports."""
+    for y, layer in enumerate(g):
+        L, W = len(layer), len(layer[0])
+        seen = set()
+        for z in range(L):
+            for x in range(W):
+                if (z, x) in seen or not _is_support(layer[z][x]):
+                    continue
+                stack, group, surface = [(z, x)], [], False
+                seen.add((z, x))
+                while stack:
+                    a, b = stack.pop()
+                    group.append((a, b))
+                    for da, db in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                        p = (a + da, b + db)
+                        if 0 <= p[0] < L and 0 <= p[1] < W and _is_support(layer[p[0]][p[1]]) and p not in seen:
+                            seen.add(p)
+                            stack.append(p)
+                    surface = surface or (a + 1 < L and b + 1 < W and all(
+                        _is_support(layer[a + i][b + j]) for i, j in ((0, 1), (1, 0), (1, 1))))
+                if not surface:
+                    continue
+                for a, b in group:
+                    bid = layer[a][b].split('[')[0]
+                    mod, sup = bid.split(':', 1)
+                    w = sup[:-len('_support')]
+                    layer[a][b] = _first(f'minecraft:{_vanilla(w)}_planks', f'{mod}:{w}_planks', 'minecraft:spruce_planks')
+                    FLOOR_SUPPORTS[name] += 1
+
+
 def drop_loose_supports(g, name=''):
     """2026-11-08 (owner request): a Decorative Blocks support with nothing on top is a bracket stuck on
     the wall holding nothing; in game it reads as a shelf (market basic: rows above the windows).
@@ -420,6 +463,7 @@ def build_grid(bid_name):
                 tag = tags.get((x, y, z))
                 bid, props = repair(bid, props, tag)
                 g[y][z][x] = M.fmt(bid, props)
+    supports_as_floor(g, bid_name)
     g = lift_onto_ground(g, bid_name)
     H = len(g)
     # chao em volta da casa vira gramado (o .bp so tem os blocos construidos)
@@ -589,6 +633,8 @@ def main():
     if LIFTED:
         print('casa sobre o gramado (camada 0 era a primeira acima do chao), chao solto afundado: '
               + ', '.join(f'{k} {v}' for k, v in sorted(LIFTED.items())))
+    if FLOOR_SUPPORTS:
+        print('piso de suportes virou tabua: ' + ', '.join(f'{k} {v}' for k, v in sorted(FLOOR_SUPPORTS.items())))
     if LOOSE_SUPPORTS:
         print('suporte solto (sem nada em cima) removido: ' + ', '.join(f'{k} {v}' for k, v in sorted(LOOSE_SUPPORTS.items())))
     if UNRESOLVED:

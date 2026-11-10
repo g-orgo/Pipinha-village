@@ -294,3 +294,9 @@ Verificacao: --check PASS; jogo sem janela (sunlit_tools/headless_client) e prev
 - FEITO validate.py (so o grape_juice antigo), Modpack.zip (datapack + scripts), regen de Solito solamente (840 apagados) e townFixClimbers no retrofit.
 - PENDENTE: sync_repo.py depois que as sessoes paralelas terminarem.
 - Sessoes paralelas (prompt-splitter): scavenger-tree, skill-xp-balance (depois), parcool-heat, day-night-clock. Elas nao rodam sync_repo; o sync final fica aqui.
+
+## 2026-11-10: pendencias das sessoes paralelas (todas pararam no limite de uso)
+- Curva de XP (split-skill-xp-balance): NAO FEITO, nenhum experience.json mudou. Se mudar a Mercantil, copiar a curva para catador/experience.json.
+- Dia/noite: dia 20 min confirmado em teste headless; noite continua 10 min (relogio nao desacelera a noite). Investigar sunlitLongerDay.js; conferir mixin do sunlit_clockfix (AM/PM) no log; corrigir changelog, decisions/state/history.
+- Catador: falta linha no changelog (pt_br/en_us) e state/history; conferir logs/kubejs/server.log na proxima sessao.
+- Calor ParCool: falta state/history; conferir "parkourExerciseHeat.js loaded" no server.log.

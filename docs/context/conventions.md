@@ -36,6 +36,11 @@ Apenas o save `Solito solamente` é regenerado; `Nosso mapa` não entra nessa re
   sempre que blocos de construção atravessam a borda em 3+ alturas, e toda área 8x8 tocada
   passa a ficar inteira, até estabilizar. Motivos no `--dry`: `area_lc:` e `predio_cruza:`.
   Efeito: perto de base, cidade inteira fica na versão antiga; o resto regenera.
+  2026-11-10 (pedido do dono, "deleta TUDO que não estiver forceloaded ou que tenha um animal meu"):
+  a área 8x8 em cascata segurava cidades inteiras velhas (21 chunks base viravam 2624 mantidos) e o
+  regen parecia não atualizar nada. Regen do `Solito solamente` agora é
+  `--apenas-forceload --so-predio`: mantém só forceload + animais do jogador + o prédio que cruza a
+  borda de um chunk mantido (`regen_continuity`), sem a área inteira do Lost Cities.
 
 ### Como fazer (jogo FECHADO)
 
@@ -44,7 +49,8 @@ Apenas o save `Solito solamente` é regenerado; `Nosso mapa` não entra nessa re
 2. Faça backup de cada save antes:
    `zip -qr "saves/<save> backup-antes-regen-<versao>-<data>.zip" "saves/<save>"`.
 3. Rode a partir de `saves/`, primeiro com `--dry` para conferir os números:
-   `python3 ../sunlit_tools/regen_chunks.py "<save>" --politica-solo`
+   `python3 ../sunlit_tools/regen_chunks.py "<save>" --apenas-forceload --so-predio`
+   (padrão desde 2026-11-10; o `--politica-solo` antigo continua disponível)
    (`--politica-solo` preserva só o chunk do jogador, os chunks force loaded do
    FTB Chunks e os chunks com armazenamento do jogador: inventário sem
    `LootTable`, InhabitedTime >= 1200, ignorando prateleiras, dispensers e

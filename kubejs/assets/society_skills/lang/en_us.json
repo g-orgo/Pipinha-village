@@ -283,5 +283,18 @@
   "society_skills.mercantil.haggle_2": "Haggle II",
   "society_skills.mercantil.haggle_2.description": "Shops sell the goods of your trade for less:\n§6Farmer§7: seeds, saplings, fertilizers and farm tools.\n§6Rancher§7: animal feed, livestock, care tools and Miracle Potions.\n§6Fisher§7: rods, hooks, bobbers, bait and fishing machines.\n§6Winemaker§7: grape seeds from the Wandering Winemaker.\n§6Cook§7: sugar, salt, bottles, lunchboxes, cookbooks and Miracle Potions.\n\n§7Discount: §a15%%\n\n§8Replaces the Haggle I discount.",
   "society_skills.mercantil.haggle_3": "Haggle III",
-  "society_skills.mercantil.haggle_3.description": "Shops sell the goods of your trade for less:\n§6Farmer§7: seeds, saplings, fertilizers and farm tools.\n§6Rancher§7: animal feed, livestock, care tools and Miracle Potions.\n§6Fisher§7: rods, hooks, bobbers, bait and fishing machines.\n§6Winemaker§7: grape seeds from the Wandering Winemaker.\n§6Cook§7: sugar, salt, bottles, lunchboxes, cookbooks and Miracle Potions.\n\n§7Discount: §a25%%\n\n§8Replaces the Haggle II discount."
+  "society_skills.mercantil.haggle_3.description": "Shops sell the goods of your trade for less:\n§6Farmer§7: seeds, saplings, fertilizers and farm tools.\n§6Rancher§7: animal feed, livestock, care tools and Miracle Potions.\n§6Fisher§7: rods, hooks, bobbers, bait and fishing machines.\n§6Winemaker§7: grape seeds from the Wandering Winemaker.\n§6Cook§7: sugar, salt, bottles, lunchboxes, cookbooks and Miracle Potions.\n\n§7Discount: §a25%%\n\n§8Replaces the Haggle II discount.",
+  "society_skills.catador.category.title": "Scavenger",
+  "society_skills.catador.scavenge_basics": "Scavenger's Eye",
+  "society_skills.catador.scavenge_basics.description": "Every corner nobody has visited hides something for those who know how to look.\n§8Earn Scavenger experience by opening loot chests for the first time, entering structures you have never been in and setting foot on land nobody has explored yet.",
+  "society_skills.catador.rummage_1": "Rummage I",
+  "society_skills.catador.rummage_1.description": "When you open a loot chest for the first time, §e20%%§7 chance to find an extra portion of one of its items.",
+  "society_skills.catador.rummage_2": "Rummage II",
+  "society_skills.catador.rummage_2.description": "When you open a loot chest for the first time, §e35%%§7 chance to find an extra portion of one of its items.",
+  "society_skills.catador.rummage_3": "Rummage III",
+  "society_skills.catador.rummage_3.description": "When you open a loot chest for the first time, §e50%%§7 chance to find an extra portion of one of its items.",
+  "society_skills.catador.keen_nose_1": "Treasure Nose",
+  "society_skills.catador.keen_nose_1.description": "Every new structure you discover is worth §e1 Bevel§7 (8 spurs).",
+  "society_skills.catador.keen_nose_2": "Sharp Nose",
+  "society_skills.catador.keen_nose_2.description": "Every new structure you discover is worth §e1 more Bevel§7 (8 spurs)."
 }

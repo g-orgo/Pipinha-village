@@ -68,7 +68,7 @@
 	"Player On Fire Modifier" = 12.5
 	# How much of an effect sprinting has on a player's temperature.
 	#Range: -1000.0 ~ 1000.0
-	"Player Sprint Modifier" = 1.5
+	"Player Sprint Modifier" = 0.0
 	# How much of an effect altitude has on player's temperature.
 	# Each 64 blocks further from sea level will impact player's temperature by this value.
 	# The sea level can be defined via datapack under the dimension's temperature.

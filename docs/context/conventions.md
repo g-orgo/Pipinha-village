@@ -119,7 +119,13 @@ plantação de cenoura madura e deixava slots vazios. Porta do cercado é o char
 `E` (2026-10-09: `G` colidia com o alho no dict da `horta` e as porteiras
 nasciam como alho, que quebrava e deixava vãos). Perda em jogo é reposta
 sozinha (`sunlitTownsLife.js:townRefillGarden` replanta a cultura vizinha em
-toda farmland com ar em cima, em parques e prédios). Mudou as hortas? Rebuild
+toda farmland com ar em cima, em parques e prédios; só copia cultura do ano todo e, sem
+nenhuma no chunk, usa nabo, brócolis, couve-flor ou alho). Parque ou horta de lote cujo
+pós-processamento nunca rodou (fila perdida ao fechar o jogo, chunk gerado pelo Distant
+Horizons) ficava 1 bloco acima do gramado: a fila agora é salva no mundo
+(`persistentData` do overworld, `sunlitTownPending*`) e o retrofit de cada chunk carregado
+reenfileira o parque com terra arada/caminho 1 bloco acima e nenhum no nível do gramado
+(`townNeverLowered`, 2026-11-10). Mudou as hortas? Rebuild
 completo (`houses.py` + `cozy_expansion.py` + `vila.py` +
 `remodel.py` + `schematics.py` + `finalize.py` + `polish.py` + `complexes.py` +
 `validate.py`), `Modpack.zip` e regen dos saves.

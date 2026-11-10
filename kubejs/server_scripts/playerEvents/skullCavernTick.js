@@ -6,8 +6,10 @@ PlayerEvents.tick((e) => {
     const timeModulo = player.level.dayTime() % 24000;
     const server = player.getServer();
     // 11 PM
+    // Night runs at 2/3 speed (sunlitLongerDay.js), so a 133-tick window spans the
+    // same 200 server ticks as this check and the warning still fires once.
     if (timeModulo >= 17000) {
-      if (timeModulo <= 17200) {
+      if (timeModulo <= 17133) {
         server.runCommandSilent(
           `playsound minecraft:ambient.cave block @a ${e.player.x} ${e.player.y} ${e.player.z}`
         );
@@ -23,7 +25,7 @@ PlayerEvents.tick((e) => {
     }
     // 2 AM
     if (timeModulo >= 20000) {
-      if (timeModulo <= 20200) {
+      if (timeModulo <= 20133) {
         server.runCommandSilent(
           global.getEmbersTextAPICommand(player.username,
             `{anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-40}`,

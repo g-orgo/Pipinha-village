@@ -42,5 +42,9 @@
   {
     "regex": "^\\Qmercantil\\E$",
     "icon": "numismatics:crown"
+  },
+  {
+    "regex": "^\\Qcatador\\E$",
+    "icon": "minecraft:brush"
   }
 ]

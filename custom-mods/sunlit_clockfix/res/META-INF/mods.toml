@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="sunlit_clockfix"
+version="1.0.0"
+displayName="Sunlit Clock Fix"
+description="Fixes the FTB Chunks minimap clock showing 12 PM to 17 PM between midnight and 6 AM."
+
+[[dependencies.sunlit_clockfix]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.sunlit_clockfix]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.sunlit_clockfix]]
+modId="ftbchunks"
+mandatory=true
+versionRange="*"
+ordering="NONE"
+side="BOTH"

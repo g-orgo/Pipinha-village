@@ -33,5 +33,18 @@
   "society_skills.mercantil.haggle_2": "Pechincha II",
   "society_skills.mercantil.haggle_2.description": "As lojas vendem mais barato os itens do seu ofício:\n§6Fazendeiro§7: sementes, mudas, fertilizantes e ferramentas de fazenda.\n§6Rancheiro§7: ração, animais, ferramentas de cuidado e Poções Milagrosas.\n§6Pescador§7: varas, anzóis, boias, iscas e máquinas de pesca.\n§6Dono de Vinícola§7: sementes de uva do Vinicultor Errante.\n§6Cozinheiro§7: açúcar, sal, garrafas, marmitas, livros de receita e Poções Milagrosas.\n\n§7Desconto: §a15%%\n\n§8Substitui o desconto da Pechincha I.",
   "society_skills.mercantil.haggle_3": "Pechincha III",
-  "society_skills.mercantil.haggle_3.description": "As lojas vendem mais barato os itens do seu ofício:\n§6Fazendeiro§7: sementes, mudas, fertilizantes e ferramentas de fazenda.\n§6Rancheiro§7: ração, animais, ferramentas de cuidado e Poções Milagrosas.\n§6Pescador§7: varas, anzóis, boias, iscas e máquinas de pesca.\n§6Dono de Vinícola§7: sementes de uva do Vinicultor Errante.\n§6Cozinheiro§7: açúcar, sal, garrafas, marmitas, livros de receita e Poções Milagrosas.\n\n§7Desconto: §a25%%\n\n§8Substitui o desconto da Pechincha II."
+  "society_skills.mercantil.haggle_3.description": "As lojas vendem mais barato os itens do seu ofício:\n§6Fazendeiro§7: sementes, mudas, fertilizantes e ferramentas de fazenda.\n§6Rancheiro§7: ração, animais, ferramentas de cuidado e Poções Milagrosas.\n§6Pescador§7: varas, anzóis, boias, iscas e máquinas de pesca.\n§6Dono de Vinícola§7: sementes de uva do Vinicultor Errante.\n§6Cozinheiro§7: açúcar, sal, garrafas, marmitas, livros de receita e Poções Milagrosas.\n\n§7Desconto: §a25%%\n\n§8Substitui o desconto da Pechincha II.",
+  "society_skills.catador.category.title": "Catador",
+  "society_skills.catador.scavenge_basics": "Olho de Catador",
+  "society_skills.catador.scavenge_basics.description": "Todo canto ainda não visitado esconde alguma coisa para quem sabe procurar.\n§8Ganhe experiência de Catador abrindo baús de loot pela primeira vez, entrando em estruturas onde você nunca esteve e pisando em terras que ninguém explorou ainda.",
+  "society_skills.catador.rummage_1": "Garimpo I",
+  "society_skills.catador.rummage_1.description": "Ao abrir um baú de loot pela primeira vez, §e20%%§7 de chance de achar uma porção extra de um dos itens dele.",
+  "society_skills.catador.rummage_2": "Garimpo II",
+  "society_skills.catador.rummage_2.description": "Ao abrir um baú de loot pela primeira vez, §e35%%§7 de chance de achar uma porção extra de um dos itens dele.",
+  "society_skills.catador.rummage_3": "Garimpo III",
+  "society_skills.catador.rummage_3.description": "Ao abrir um baú de loot pela primeira vez, §e50%%§7 de chance de achar uma porção extra de um dos itens dele.",
+  "society_skills.catador.keen_nose_1": "Faro de Tesouro",
+  "society_skills.catador.keen_nose_1.description": "Cada estrutura nova que você descobre rende §e1 Bevel§7 (8 spurs).",
+  "society_skills.catador.keen_nose_2": "Faro Apurado",
+  "society_skills.catador.keen_nose_2.description": "Cada estrutura nova que você descobre rende mais §e1 Bevel§7 (8 spurs)."
 }

@@ -376,14 +376,18 @@ const townRefillGarden = (level, cx, cz, lawn) => {
       for (let z = 0; z < 16 && !model; z++) {
         let st = level.getBlockState(new $TownBlockPos((cx << 4) + x, y, (cz << 4) + z));
         let id = String(st.getBlock().getDescriptionId());
-        if (/crop$|carrots|potatoes|beetroots|wheat|eggplants|_bush$|grape/.test(id) && id.indexOf("onion") < 0 && id.indexOf("wild_") < 0) model = st;
+        // 2026-11-10: only all-year crops are copied (conventions.md#hortas): wheat/beetroots are seasonal and
+        // carrots/potatoes are blacklisted, so a leftover one no longer spreads over the whole garden
+        if (/crop$|eggplants|_bush$|grape/.test(id) && !/onion|wild_|wheat|beetroot|carrot|potato/.test(id)) model = st;
       }
     }
   }
   if (!model) {
-    // chunk sem planta nenhuma: cultura de ano todo da lista do polish.py (carrots/potatoes), uma por horta
-    let pick = townRandom(cx, cz)() < 0.5 ? $TownBlocks.CARROTS : $TownBlocks.POTATOES;
-    model = pick.defaultBlockState();
+    // chunk sem planta nenhuma: cultura do ano todo (mix.py), uma por horta
+    let ids = ["veggiesdelight:turnip_crop", "veggiesdelight:broccoli_crop", "veggiesdelight:cauliflower_crop", "veggiesdelight:garlic_crop"];
+    let blk = $TownBlockReg.getValue(new $TownRL(ids[Math.floor(townRandom(cx, cz)() * ids.length)]));
+    if (!blk || blk.defaultBlockState().isAir()) return 0;
+    model = blk.defaultBlockState();
   }
   let refilled = 0;
   for (let y = lawn - 2; y <= lawn + 8; y++) {
@@ -541,6 +545,7 @@ const townSpawnId = (level, ids, spot, rnd) => {
 // Armor stands: clutter.py writes minecraft:structure_void where a stand goes (Lost Cities cannot place
 // entities). Here the marker becomes a stand dressed by the house theme (house name suffix).
 const $TownItems = Java.loadClass("net.minecraftforge.registries.ForgeRegistries").ITEMS;
+const $TownBlockReg = Java.loadClass("net.minecraftforge.registries.ForgeRegistries").BLOCKS;
 const $TownSlot = Java.loadClass("net.minecraft.world.entity.EquipmentSlot");
 const TOWN_ARMOR_SETS = [
   [/fer$|fer\//, [["minecraft:iron_helmet", "minecraft:iron_chestplate", "minecraft:iron_leggings", "minecraft:iron_boots", "minecraft:iron_sword"],
@@ -763,8 +768,99 @@ const townWaystones = (level, cx, cz, ground) => {
   console.info(`[Sunlit Towns] waystone em ${cx},${cz} removido: outro a menos de ${TOWN_WAYSTONE_MIN} chunks`);
 };
 
+// 2026-11-10: a town chunk whose post-processing never ran (the in-memory queue was lost when the game closed,
+// or Distant Horizons generated it and it never loaded in that session) keeps its park or lot garden one block
+// above the lawn: farmland/path one block up and none at lawn height. Lowered chunks never look like that (the
+// park parts keep ground blocks only in slice 0), so this cannot lower a park twice.
+const TOWN_BED = /(farmland|dirt_path)$/;
+const townNeverLowered = (level, cx, cz) => {
+  let lc = global.sunlitLostCities;
+  if (!lc) return false;
+  let info = lc.getLostInfo(level);
+  if (!info) return false;
+  let ci = info.getChunkInfo(cx, cz);
+  if (!ci || !ci.isCity()) return false;
+  let ground = info.getRealHeight(ci.getCityLevel());
+  let building = ci.getBuildingType();
+  let lawn;
+  if (!building && ci.parkType && String(ci.streetType) == "PARK" && ci.getStreetSlopeDirection() == null) lawn = ground;
+  else {
+    let key = building ? String(building) : "";
+    let lote = !!(building && global.sunlitLoteBuildings && (global.sunlitLoteBuildings[key] || global.sunlitLoteBuildings[key.replace(/_c[0-9]+(?=\/|$)/, "")]));
+    if (!lote) return false;
+    lawn = ground - 1;
+  }
+  let up = 0, at = 0;
+  for (let x = 0; x < 16; x++) {
+    for (let z = 0; z < 16; z++) {
+      let px = (cx << 4) + x, pz = (cz << 4) + z;
+      if (TOWN_BED.test(String(level.getBlockState(new $TownBlockPos(px, lawn + 1, pz)).getBlock().getDescriptionId()))) up++;
+      if (TOWN_BED.test(String(level.getBlockState(new $TownBlockPos(px, lawn, pz)).getBlock().getDescriptionId()))) at++;
+    }
+  }
+  return up >= 6 && at == 0;
+};
+
+// 2026-11-10: the town queue and the chunks it gave up on (not loaded yet) lived only in memory, so closing the
+// game dropped them and those chunks were never populated. They are kept in the overworld persistentData,
+// which is written with the chunks at each world save, and come back when the server starts.
+const TOWN_PENDING_KEY = "sunlitTownPending";
+const TOWN_PENDING_PART = 60000;
+let townPendingLast = null;
+const townPendingSave = (server) => {
+  let keys = {};
+  let queue = global.sunlitTownQueue, pending = global.sunlitTownPending;
+  if (queue) queue.forEach((item) => {
+    let f = String(item).split("|");
+    keys[`${f[0]}|${f[1]}|${f[2]}`] = true;
+  });
+  if (pending) pending.keySet().forEach((k) => (keys[String(k)] = true));
+  let all = Object.keys(keys).join(";");
+  if (all === townPendingLast) return;
+  let data = server.getOverworld().persistentData;
+  let old = data.getInt(TOWN_PENDING_KEY + "N");
+  let n = 0;
+  for (let i = 0; i < all.length; i += TOWN_PENDING_PART) data.putString(TOWN_PENDING_KEY + n++, all.substring(i, i + TOWN_PENDING_PART));
+  for (let i = n; i < old; i++) data.remove(TOWN_PENDING_KEY + i);
+  data.putInt(TOWN_PENDING_KEY + "N", n);
+  townPendingLast = all;
+};
+
+ServerEvents.loaded((e) => {
+  try {
+    let data = e.server.getOverworld().persistentData;
+    let n = data.getInt(TOWN_PENDING_KEY + "N"), all = "";
+    for (let i = 0; i < n; i++) all += String(data.getString(TOWN_PENDING_KEY + i));
+    let back = 0;
+    all.split(";").forEach((k) => {
+      if (!k || !global.sunlitTownQueue) return;
+      if (global.sunlitTownSeen.putIfAbsent(k, true) == null) {
+        global.sunlitTownQueue.add(`${k}|0`);
+        back++;
+      }
+    });
+    if (back) console.info(`[Sunlit Towns] ${back} chunks pendentes da sessao anterior voltaram para a fila`);
+  } catch (err) {
+    console.warn(`[Sunlit Towns] falha ao ler chunks pendentes: ${err}`);
+  }
+});
+
+ServerEvents.unloaded((e) => {
+  try {
+    townPendingSave(e.server);
+  } catch (err) {}
+});
+
 ServerEvents.tick((e) => {
   if (e.server.getTickCount() % 2) return;
+  if (e.server.getTickCount() % 100 == 0) {
+    try {
+      townPendingSave(e.server);
+    } catch (psErr) {
+      if (!global.sunlitPendingWarned) console.warn(`[Sunlit Towns] falha ao gravar chunks pendentes: ${psErr}`);
+      global.sunlitPendingWarned = true;
+    }
+  }
   let queue = global.sunlitTownQueue;
   if (queue && !queue.isEmpty()) {
   let levels = {};
@@ -985,6 +1081,43 @@ const townCapLoot = (level, cx, cz, yMin, yMax, bandFn) => {
   return cut;
 };
 
+// 2026-11-10: NPC houses generated before the npc.py fix have every swapped trellis/ladder facing north, sticking
+// out of the wall. A climber with no wall behind it and exactly one full-block wall beside it is turned to face away
+// from that wall (the rule every fixed blueprint follows). Idempotent: a climber already facing its only (or its row's) wall is left alone.
+const TOWN_CLIMBER = /(_trellis|ladder)$/;
+// a row along a wall: more climbers, or the window they frame (curtain, glass)
+const TOWN_CLIMBER_ROW = /(_trellis|ladder|curtain_[a-z_]+|glass|_pane)$/;
+const townFixClimbers = (level, cx, cz, yMin, yMax) => {
+  let fixed = 0;
+  let solid = (p) => {
+    let st = level.getBlockState(p);
+    return !st.isAir() && !TOWN_CLIMBER.test(String(st.getBlock().getDescriptionId())) && st.isCollisionShapeFullBlock(level, p);
+  };
+  for (let x = 0; x < 16; x++) {
+    for (let z = 0; z < 16; z++) {
+      for (let y = yMin; y <= yMax; y++) {
+        let pos = new $TownBlockPos((cx << 4) + x, y, (cz << 4) + z);
+        let st = level.getBlockState(pos);
+        if (st.isAir() || !TOWN_CLIMBER.test(String(st.getBlock().getDescriptionId()))) continue;
+        let prop = st.getBlock().getStateDefinition().getProperty("facing");
+        if (!prop) continue;
+        let cur = st.getValue(prop);
+        let cands = TOWN_DIRS.filter((d) => solid(pos.relative(d.getOpposite())) && prop.getPossibleValues().contains(d));
+        if (cands.length > 1) {
+          // corner: two walls touch it; the row of climbers runs along its own wall
+          let row = (d) => [d.getClockWise(), d.getCounterClockWise()].filter((s) => TOWN_CLIMBER_ROW.test(String(level.getBlockState(pos.relative(s)).getBlock().getDescriptionId()))).length;
+          let best = Math.max.apply(null, cands.map(row));
+          cands = cands.filter((d) => row(d) == best);
+        }
+        if (cands.length != 1 || String(cands[0]) == String(cur)) continue;
+        level.setBlock(pos, st.setValue(prop, cands[0]), 18);
+        fixed++;
+      }
+    }
+  }
+  return fixed;
+};
+
 const townRetrofitChunk = (level, cx, cz) => {
   let yMin = null, yMax = null, bandFn = (y) => Math.floor(y / 6);
   try {
@@ -1021,6 +1154,10 @@ const townRetrofitChunk = (level, cx, cz) => {
   try {
     c = townCapLoot(level, cx, cz, yMin, yMax, bandFn);
   } catch (err) {}
+  try {
+    let k = townFixClimbers(level, cx, cz, yMin, yMax);
+    if (k) console.info(`[Sunlit Towns] retrofit ${cx},${cz}: ${k} trelicas/escadas viradas para a parede`);
+  } catch (err) {}
   return [f, c];
 };
 
@@ -1038,6 +1175,15 @@ const sunlitRetrofitTick = (e) => {
     if (!level) continue;
     let x = parseInt(f[1]), z = parseInt(f[2]);
     if (!level.hasChunk(x, z)) continue;
+    try {
+      let townKey = `${f[0]}|${x}|${z}`;
+      if (!global.sunlitTownSeen.containsKey(townKey) && townNeverLowered(level, x, z) && global.sunlitTownSeen.putIfAbsent(townKey, true) == null) {
+        global.sunlitTownQueue.add(`${townKey}|0`);
+        console.info(`[Sunlit Towns] chunk ${x},${z} nunca foi povoado (parque/horta 1 bloco acima): volta para a fila`);
+      }
+    } catch (nlErr) {
+      console.warn(`[Sunlit Towns] falha ao conferir parque ${x},${z}: ${nlErr}`);
+    }
     try {
       let r = townRetrofitChunk(level, x, z);
       if (r[0] + r[1] > 0) console.info(`[Sunlit Towns] retrofit ${x},${z}: ${r[0]} geladeiras, ${r[1]} baus sem loot`);

@@ -285,3 +285,12 @@ Status: CONCLUIDO 2026-11-06 (detalhes em docs/context/decisions.md). Modpack.zi
 2. Ensopado de carneiro com cenoura sem pedacos -> gen_ie_dishes.py (tigela redonda, caldo, ingredientes da receita). FEITO.
 3. Colher escondida pela tigela -> inclinada 30 graus, mergulho com giro e recuo (UTENSIL_DIP*). FEITO.
 Verificacao: --check PASS; jogo sem janela (sunlit_tools/headless_client) e preview.py. Detalhes em docs/context/decisions.md.
+
+## 2026-11-10: hortas 1 bloco acima + orientacao das casas de NPC
+- FEITO npc.py:repair mantem as propriedades do bloco trocado (everycomp/diagonal -> equivalente); antes virava facing=north/axis=y (trelicas, escadas, suportes, bancos, portoes, vigas). Backup npc.py.v39bak.
+- FEITO npc.py:lift_onto_ground afunda canteiro com flor/planta baixa junto com a planta.
+- FEITO sunlitTownsLife.js (backup .v39bak): fila de povoamento persistida em overworld persistentData (sunlitTownPending0..N); retrofit detecta parque/horta de lote nunca rebaixado (townNeverLowered) e reenfileira; townRefillGarden so copia cultura do ano todo, padrao nabo/brocolis/couve-flor/alho.
+- FEITO docs (conventions#hortas, history, state) e Modpack.zip com npc.py, sunlitTownsLife.js e docs.
+- FEITO validate.py (so o grape_juice antigo), Modpack.zip (datapack + scripts), regen de Solito solamente (840 apagados) e townFixClimbers no retrofit.
+- PENDENTE: sync_repo.py depois que as sessoes paralelas terminarem.
+- Sessoes paralelas (prompt-splitter): scavenger-tree, skill-xp-balance (depois), parcool-heat, day-night-clock. Elas nao rodam sync_repo; o sync final fica aqui.

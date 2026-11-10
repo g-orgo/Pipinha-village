@@ -1,0 +1,147 @@
+{
+  "scavenge_basics": {
+    "title": {
+      "translate": "society_skills.catador.scavenge_basics"
+    },
+    "description": {
+      "translate": "society_skills.catador.scavenge_basics.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:spyglass"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "rummage_1": {
+    "title": {
+      "translate": "society_skills.catador.rummage_1"
+    },
+    "description": {
+      "translate": "society_skills.catador.rummage_1.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:chest"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s catador_rummage_1",
+          "lock_command": "kubejs stages remove @s catador_rummage_1"
+        }
+      }
+    ]
+  },
+  "rummage_2": {
+    "title": {
+      "translate": "society_skills.catador.rummage_2"
+    },
+    "description": {
+      "translate": "society_skills.catador.rummage_2.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:barrel"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s catador_rummage_2",
+          "lock_command": "kubejs stages remove @s catador_rummage_2"
+        }
+      }
+    ]
+  },
+  "rummage_3": {
+    "title": {
+      "translate": "society_skills.catador.rummage_3"
+    },
+    "description": {
+      "translate": "society_skills.catador.rummage_3.description"
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:chest_minecart"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s catador_rummage_3",
+          "lock_command": "kubejs stages remove @s catador_rummage_3"
+        }
+      }
+    ]
+  },
+  "keen_nose_1": {
+    "title": {
+      "translate": "society_skills.catador.keen_nose_1"
+    },
+    "description": {
+      "translate": "society_skills.catador.keen_nose_1.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:compass"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s catador_keen_nose_1",
+          "lock_command": "kubejs stages remove @s catador_keen_nose_1"
+        }
+      }
+    ]
+  },
+  "keen_nose_2": {
+    "title": {
+      "translate": "society_skills.catador.keen_nose_2"
+    },
+    "description": {
+      "translate": "society_skills.catador.keen_nose_2.description"
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:filled_map"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s catador_keen_nose_2",
+          "lock_command": "kubejs stages remove @s catador_keen_nose_2"
+        }
+      }
+    ]
+  }
+}

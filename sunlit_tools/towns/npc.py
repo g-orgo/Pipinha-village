@@ -219,8 +219,10 @@ UNRESOLVED = collections.Counter()
 
 def repair(bid, props, tag):
     """estado final (existe no registry, com propriedades validas)."""
+    # 2026-11-10: a substitute keeps the source properties (clean_props drops what it does not have); clearing
+    # them turned every swapped trellis, ladder, support, seat and gate to facing=north and every beam to axis=y
     if bid in EXPLICIT:
-        bid, props = EXPLICIT[bid], {}
+        bid = EXPLICIT[bid]
     if 'copycat' in bid and bid not in ('minecraft:',):
         mat = RE_MAT.search(tag or '')
         if mat and M.exists(mat.group(1)):
@@ -239,11 +241,11 @@ def repair(bid, props, tag):
     if not M.exists(bid):
         alt = EXPLICIT.get(bid) or repair_composite(bid)
         if alt:
-            bid, props = alt, {}
+            bid = alt
         elif bid.startswith('everycomp:') is False and '/' in bid.split(':')[-1]:
             alt = repair_composite(bid)
             if alt:
-                bid, props = alt, {}
+                bid = alt
     if not M.exists(bid):
         UNRESOLVED[bid] += 1
         if bid.endswith('_wall'):
@@ -258,7 +260,6 @@ def repair(bid, props, tag):
             bid = 'minecraft:glass_pane'
         else:
             bid = 'minecraft:oak_planks'
-        props = {}
     if 'terracotta' in bid:
         # regra do dono: terracota nao existe nas cidades, vira concreto com cor sorteada
         return 'minecraft:%s_concrete' % M.vary('mat:concrete', M.HOUSE_COLORS), {}
@@ -368,6 +369,15 @@ def is_terrain(s):
     return s.split('[')[0].split(':')[-1].split('/')[-1] in TERRAIN
 
 
+LOW_PLANT = re.compile(r'(flower|tulip|daisy|poppy|dandelion|orchid|allium|bluet|cornflower|lily|clover|campion|foxglove|'
+                       r'bluebells|lupine|mimosa|nightshade|lions_tail|sprouts|(^|_)grass$|fern$|_crop$|crops$|carrots|potatoes|'
+                       r'beetroots|wheat|eggplants|cabbages|onions|sapling$)')
+
+
+def is_low_plant(s):
+    return bool(LOW_PLANT.search(s.split('[')[0].split(':')[-1])) and not re.search(r'large_|tall_|pot|box|crate|sack|bag|basket', s)
+
+
 def lift_onto_ground(g, name=''):
     """2026-11-09 (owner request): the blueprints were saved from the first block ABOVE the ground, so their
     layer 0 holds entry steps, benches, campfires, crates, carpets, flowers and rails. Putting that layer at
@@ -384,9 +394,17 @@ def lift_onto_ground(g, name=''):
     for z in range(L):
         for x in range(W):
             s = g[0][z][x]
-            if is_terrain(s) and (len(g) < 2 or VF.is_air(g[1][z][x])):
+            if not is_terrain(s):
+                continue
+            if len(g) < 2 or VF.is_air(g[1][z][x]):
                 lawn[z][x] = s
                 g[0][z][x] = AIR
+                sunk += 1
+            elif is_low_plant(g[1][z][x]) and (len(g) < 3 or VF.is_air(g[2][z][x])):
+                # 2026-11-10: a bed with a flower or crop on it sinks with its plant (it stood one block proud)
+                lawn[z][x] = s
+                g[0][z][x] = g[1][z][x]
+                g[1][z][x] = AIR
                 sunk += 1
     LIFTED[name] = sunk
     return [lawn] + g

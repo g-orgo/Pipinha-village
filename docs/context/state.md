@@ -93,3 +93,5 @@ Changelog (2026-11-09): `changelog_{pt_br,en_us}.markdown` ganharam as novidades
 Mods do manifesto 4.1.5A fora da instância (2026-11-09, conferido pela API do cfwidget): Diagonal Fences (458048), Diagonal Walls (969422) e Chunky (485681). Complementary Reimagined (627557) saiu como addon, mas continua em `shaderpacks/` (r5.6.1 + Clrwl).
 
 Packs de ícones do JourneyMap (2026-11-09, pedido do dono): Icon Journey 1.1 e JourneyMap Extended Mob Icons v2.0 saíram do `options.txt`, do canônico (41 packs) e do `Modpack.zip`; os arquivos ficam em `resourcepacks/` como `.zip.disabled`, só como fonte do `jm_icons_to_ftbchunks.py`. Os ícones úteis já estão em `kubejs/assets/ftbchunks/`.
+
+Cidades (2026-11-10): fila de povoamento das Sunlit Towns persistida no mundo (`sunlitTownsLife.js:townPendingSave`, restaurada no `ServerEvents.loaded`); retrofit reenfileira parque/horta de lote nunca rebaixado. Casas de NPC regeradas com a orientação dos blocos trocados. `Solito solamente` regenerado em 2026-11-10; casas preservadas são corrigidas pelo retrofit (`townFixClimbers`).

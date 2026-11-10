@@ -1,0 +1,29 @@
+{
+  "normal": {
+    "bidirectional": [
+      [
+        "467592A7E7601CAD",
+        "29BCECAF4FD0F95E"
+      ],
+      [
+        "29BCECAF4FD0F95E",
+        "0B61CFE680411479"
+      ],
+      [
+        "0B61CFE680411479",
+        "BA0D49A41680602C"
+      ],
+      [
+        "467592A7E7601CAD",
+        "BF0C266A80C107B3"
+      ],
+      [
+        "467592A7E7601CAD",
+        "F1F2014D2424DFC2"
+      ]
+    ]
+  },
+  "exclusive": {
+    "bidirectional": []
+  }
+}

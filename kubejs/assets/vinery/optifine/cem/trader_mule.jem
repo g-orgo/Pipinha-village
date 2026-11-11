@@ -14,8 +14,8 @@
           "var.hy": "clamp( 90*sin(torad(head_yaw)), -90, 90 )",
           "var.testing": "0",
           "var.child_scale": "if(is_child, 0, 0)",
-          "var.Nty": "neck.ty",
-          "var.neckx": "round( (  neck.rx  -( 0.5235988 + head_pitch * 0.017453292  +if(limb_speed>0.2, cos(limb_swing * 0.8) * 0.15 * limb_speed, 0) ) -( torad(95) +sin(age)*0.05*0 )*if( body.rx == 0 && var.Nty > if(is_child, 4 +7.110297*var.child_scale, 4), (var.Nty-if(is_child, 4 +7.110297*var.child_scale, 4))/7, 0)  )*100*(1-var.testing) )/100",
+          "var.Nty": "head_parts.ty",
+          "var.neckx": "round( (  head_parts.rx  -( 0.5235988 + head_pitch * 0.017453292  +if(limb_speed>0.2, cos(limb_swing * 0.8) * 0.15 * limb_speed, 0) ) -( torad(95) +sin(age)*0.05*0 )*if( body.rx == 0 && var.Nty > if(is_child, 4 +7.110297*var.child_scale, 4), (var.Nty-if(is_child, 4 +7.110297*var.child_scale, 4))/7, 0)  )*100*(1-var.testing) )/100",
           "var.rearing": "if( var.Nty < if(is_child, 4 +7.110297*var.child_scale, 4), -( var.Nty-if(is_child, 4 +7.110297*var.child_scale, 4) )/if(is_child, 8 * (1-0.5*var.child_scale), 8)*(1-var.testing), 0 )",
           "var.eating": " if( var.Nty > if(is_child, 4 +7.110297*var.child_scale, 4),  ( var.Nty-if(is_child, 4 +7.110297*var.child_scale, 4) )/7                                           *(1-var.testing), 0 )",
           "var.id": "random(id)*pi*4",
@@ -111,9 +111,7 @@
         },
         {
           "var.Nblink": "pow( clamp( (1.5 -abs(sin(var.id+age/10)*6))*clamp(-32 +cos((var.id+age/10)/1.5)*40 +cos((var.id+age/10)/4)*40, 0, 1), 0.5*var.Nshake, 1 ), 2 )",
-          "var.eye_top": "1 +( -1 +clamp(head_pitch/120, -0.2, 0.4)*clamp(sin(var.id+age/130)*8,0,1) +sin(hurt_time/1.5)*1.5*var.hurt +max(0,-3 +death_time/2) )*(1-var.Nblink)",
-          "var.pupil_y": "-( head2.rx +body.rx +neck2.rx-torad(30) ) +0.53 +clamp(torad(head_pitch*1.5), -0.8, 2)*(1-var.Neat)  +sin(hurt_time/1.5)*0.7*var.hurt  -clamp(-24 +sin(var.id+age/100)*40, 0, 1)/10 +torad(65)*var.Neat",
-          "var.pupil_x": "(head2.ry+neck2.ry) -var.hy/90 +clamp(sin(var.id+age/27) +sin(var.id+age/16), -0.1, 0.1)*clamp(-20*2 -cos(var.id+age/125)*30*2, 0, 1)*clamp(59*4 -sin(var.id+age/187)*60*4, 0, 1)"
+          "var.eye_top": "1 +( -1 +clamp(head_pitch/120, -0.2, 0.4)*clamp(sin(var.id+age/130)*8,0,1) +sin(hurt_time/1.5)*1.5*var.hurt +max(0,-3 +death_time/2) )*(1-var.Nblink)"
         },
         {},
         {},

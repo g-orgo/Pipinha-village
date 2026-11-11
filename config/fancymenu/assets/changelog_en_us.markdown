@@ -27,6 +27,7 @@ Welcome to Pipinha's Village! This changelog summarizes what differs from the no
 + The Librarian is now the Artisan: besides her storage stock, she sells every Create machine and part needed to progress (cogs, belts, chains, press, deployer, redstone link and more); power sources unlock after the Boiler Room
 + Create: crushing gravel now gives the nuggets that used to come from tuff, so the basic ore farm works with cobblestone alone (cobblestone turns into gravel in crushing wheels or a millstone)
 + Tom's terminal in a scene: Ctrl+A selects the whole search text, to clear or replace it at once
++ While sneaking, right click no longer eats or drinks (food, drinks, potions, canteens or water by hand), so gifts can be given to villagers without starting to eat
 
 + Longer day: the daylight part goes from 10 to about 15 minutes, and the night does not change
 + Bounty Board: turning in a bounty gives Mercantile tree XP, from 40 to 150 depending on rarity

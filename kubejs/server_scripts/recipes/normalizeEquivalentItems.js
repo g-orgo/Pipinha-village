@@ -2,7 +2,8 @@
 // Equivalent items (not duplicates) are made interchangeable as recipe inputs, without touching outputs:
 // - coal <-> charcoal, in every recipe;
 // - block of coal <-> block of charcoal, in every recipe;
-// - ice <-> ice cube, only in food and drink recipes (ice as an ingredient, not as a block).
+// - ice <-> ice cube, only in food and drink recipes (ice as an ingredient, not as a block);
+// - meat and fish of the same species, only in dish recipes (see the species list below).
 // Each group has the tag sunlit:compat/<group> (kubejs/data/sunlit/tags/items/compat/).
 // Recipes with a KubeJS schema (vanilla types) use replaceInput. Recipes without a schema
 // (Create, Botania, Let's Do, Youkai...) ignore replaceInput in KubeJS 6, so their JSON is rewritten:
@@ -61,7 +62,46 @@ const SUNLIT_EQUIVALENT_GROUPS = [
   },
 ];
 
+// Meat and fish species (tags filled in tags/harmonizeMeatTags.js): a dish that asks for the
+// vanilla item accepts every meat of the same species (duck where chicken goes, bison where
+// beef goes, halibut where cod goes). dishesOnly keeps one-input transforms item-specific:
+// cooking, cutting and mincing a chicken still make chicken products.
+[
+  ["minecraft:chicken", "forge:raw_chicken"],
+  ["minecraft:cooked_chicken", "forge:cooked_chicken"],
+  ["minecraft:beef", "forge:raw_beef"],
+  ["minecraft:cooked_beef", "forge:cooked_beef"],
+  ["minecraft:porkchop", "forge:raw_pork"],
+  ["minecraft:cooked_porkchop", "forge:cooked_pork"],
+  ["minecraft:mutton", "forge:raw_mutton"],
+  ["minecraft:cooked_mutton", "forge:cooked_mutton"],
+  ["minecraft:cod", "forge:raw_fishes/cod"],
+  ["minecraft:cooked_cod", "forge:cooked_fishes/cod"],
+  ["minecraft:salmon", "forge:raw_fishes/salmon"],
+  ["minecraft:cooked_salmon", "forge:cooked_fishes/salmon"],
+  ["youkaishomecoming:raw_tuna", "forge:raw_fishes/tuna"],
+  ["quark:crab_leg", "sunlit:compat/crab_leg"],
+].forEach((pair) => SUNLIT_EQUIVALENT_GROUPS.push({ tag: pair[1], items: [pair[0]], tags: [], dishesOnly: true }));
+
 const SUNLIT_EQUIVALENT_OUTPUT_KEYS = ["result", "results", "output", "outputs"];
+// Keys that are not food inputs when counting the distinct inputs of a dish.
+const SUNLIT_NOT_DISH_INPUT_KEYS = ["tool", "container"];
+
+// Collects the distinct item/tag inputs of a parsed recipe JSON (outputs, tools and containers skipped).
+const sunlitDistinctInputs = (node, acc) => {
+  if (node === null || typeof node !== "object") return acc;
+  if (Array.isArray(node)) {
+    node.forEach((child) => sunlitDistinctInputs(child, acc));
+    return acc;
+  }
+  if (typeof node.item === "string") acc[node.item] = true;
+  if (typeof node.tag === "string") acc["#" + node.tag] = true;
+  Object.keys(node).forEach((key) => {
+    if (SUNLIT_EQUIVALENT_OUTPUT_KEYS.indexOf(key) >= 0 || SUNLIT_NOT_DISH_INPUT_KEYS.indexOf(key) >= 0) return;
+    sunlitDistinctInputs(node[key], acc);
+  });
+  return acc;
+};
 
 // Rewrites the inputs of a parsed recipe JSON in place; returns true when something changed.
 const sunlitRewriteEquivalentInputs = (node, group) => {
@@ -89,6 +129,13 @@ const sunlitRewriteEquivalentInputs = (node, group) => {
   return changed;
 };
 
+// True when the recipe names the item itself and has at least one other distinct input.
+const sunlitIsDishWith = (recipe, item) => {
+  if (recipe.json == null) return false;
+  let found = sunlitDistinctInputs(JSON.parse(String(JsonIO.toString(recipe.json))), {});
+  return found[item] === true && Object.keys(found).length >= 2;
+};
+
 const sunlitEquivalentNeedles = (group) =>
   group.items.concat(group.tags).map((id) => '"' + id + '"');
 
@@ -99,6 +146,11 @@ ServerEvents.recipes((event) => {
     SUNLIT_EQUIVALENT_GROUPS.forEach((group) => {
       if (group.only && group.only.indexOf(id) < 0) return;
       if (group.exclude && group.exclude.indexOf(id) >= 0) return;
+      if (group.dishesOnly) {
+        // Only dishes that name the item itself: replaceInput would also swap broad tags
+        // that merely contain it (forge:raw_meat), and one-input transforms stay as they are.
+        if (!sunlitIsDishWith(recipe, group.items[0])) return;
+      }
       let replaced = false;
       group.items.forEach((item) => {
         if (recipe.replaceInput(item, "#" + group.tag)) replaced = true;

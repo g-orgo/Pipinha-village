@@ -27,6 +27,7 @@ Bem-vindo à Vila da Pipinha! Este changelog resume o que é diferente do Sunlit
 + A Bibliotecária agora é a Artesã: além do estoque de armazenamento, vende todas as máquinas e peças do Create para progredir (engrenagens, esteiras, correntes, prensa, implantador, conexão de redstone e mais); as fontes de força liberam depois da Boiler Room
 + Create: esmagar cascalho agora dá as pepitas que antes vinham do tufo, então a farm de minérios básicos funciona só com pedregulho (pedregulho vira cascalho na roda de esmagar ou no moedor)
 + Terminal do Tom's em cena: Ctrl+A seleciona todo o texto da pesquisa, para apagar ou trocar de uma vez
++ Agachado, o clique direito não come nem bebe (comida, bebida, poção, cantil ou água com a mão), para entregar presentes aos moradores sem começar a comer
 
 + Dia mais longo: a parte clara do dia passa de 10 para cerca de 15 minutos, e a noite não muda
 + Quadro de Recompensas: entregar um contrato dá XP na árvore Mercantil, de 40 a 150 conforme a raridade

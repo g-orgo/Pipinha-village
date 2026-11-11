@@ -1079,15 +1079,15 @@
     },
     {
       "offer": {
-        "item": "create:empty_blaze_burner",
+        "item": "create:blaze_burner",
         "count": 1
       },
       "request": {
         "item": "numismatics:crown",
-        "count": 1
+        "count": 2
       },
-      "numismatics_cost": 512,
-      "trade_id": "librarian_empty_blaze_burner_for_crown"
+      "numismatics_cost": 1024,
+      "trade_id": "librarian_blaze_burner_for_crown"
     },
     {
       "offer": {

@@ -38,7 +38,7 @@ create:sail_frame
 create:white_sail
 create:steam_engine
 create:steam_whistle
-create:empty_blaze_burner
+create:blaze_burner
 create:fluid_tank
 create:rotation_speed_controller
 create:sequenced_gearshift

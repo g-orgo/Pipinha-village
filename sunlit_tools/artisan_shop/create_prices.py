@@ -27,6 +27,8 @@ BASE = {
     'meadow:fire_log': 410,  # carpenter: 10 fire logs for building supplies (4096)
     'minecraft:netherrack': 1, 'minecraft:string': 2, 'minecraft:paper': 2,
     'minecraft:slime_ball': 8, 'supplementaries:rope': 2, 'minecraft:white_wool': 4,
+    # Filled blaze burner has no recipe: (empty burner 512 + captured blaze ~4 rods 256) * 1.35
+    'create:blaze_burner': 1037,
     'minecraft:obsidian': 16, 'minecraft:ender_pearl': 64, 'minecraft:blaze_rod': 64,
     'minecraft:crafting_table': 4, 'minecraft:chest': 8, 'minecraft:barrel': 7,
     'minecraft:lever': 1, 'minecraft:redstone_torch': 17, 'minecraft:observer': 40,

@@ -366,7 +366,7 @@ Uma decisão por entrada, em ordem cronológica. As regras em vigor estão em `c
 - Preço de cada máquina = custo dos ingredientes pela receita ativa no pack (jar do Create + overrides do KubeJS, sem as removidas) x1,35 por etapa em cascata, com base nos preços que o Ferreiro/Carpinteiro já cobram ou 2x o valor de venda da caixa de envio; arredondado para uma só moeda com erro de até 15%. Script: `sunlit_tools/artisan_shop/create_prices.py` (lista em `items.txt`).
 - Itens cuja receita usa a Kinetic Blueprint (roda d'água, grande roda d'água, rolamento de moinho, motor a vapor, rolamento mecânico, rolamento de relógio, montador de carrinho) só liberam com `boiler_room_complete`, igual à blueprint na Bruxa.
 - Broca, serra e colheitadeira mecânicas custam 2 moedas ancestrais (a receita do pack já pede moeda ancestral e netherite).
-- Fora da lista: variantes de cor, blocos decorativos, itens criativos, eixo/engrenagem revestidos (feitos aplicando casing), blaze burner cheio (precisa capturar um blaze), elevator contact (sem receita), ferramentas que outras lojas vendem (chave inglesa já estava aqui; mochila de mergulho no Pescador; caixa de ferramentas no Ferreiro).
+- Fora da lista: variantes de cor, blocos decorativos, itens criativos, eixo/engrenagem revestidos (feitos aplicando casing), blaze burner vazio (a loja vende o cheio, pedido do dono em 2026-11-11: 2 crown = vazio + blaze capturado, com 35% da etapa), elevator contact (sem receita), ferramentas que outras lojas vendem (chave inglesa já estava aqui; mochila de mergulho no Pescador; caixa de ferramentas no Ferreiro).
 
 ## 2026-11-11: regen só preserva claims; claim automático ao construir
 

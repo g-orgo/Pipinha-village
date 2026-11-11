@@ -6,6 +6,7 @@
 Bem-vindo à Vila da Pipinha! Este changelog resume o que é diferente do Sunlit Valley normal, por categoria.
 
 ### Novidades
++ Mula do viajante com animações da Fresh Animations: andar, trote e pescoço da mula do mercador andarilho agora seguem o pack, sem trocar a pele ou o modelo
 + Claim automático: colocar baú, cama, armadilha de caranguejo, máquina ou qualquer bloco que funciona sozinho reivindica e protege o chunk, sem limite de chunks reivindicados ou carregados; abrir baús não reivindica
 + Dificuldade sempre no Difícil, com um botão ao lado dela para ligar ou desligar o nascimento de mobs hostis, nas Opções e na criação do mundo
 + Idiomas: a lista mostra só Inglês (EUA) e Português (Brasil)

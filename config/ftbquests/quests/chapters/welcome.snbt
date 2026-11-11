@@ -44,12 +44,12 @@
 					type: "item"
 				}
 				{
-					id: "F36D0E095804F18E"
+					id: "76B396154BB44855"
 					item: "toms_storage:ts.crafting_terminal"
 					type: "item"
 				}
 				{
-					id: "CB15F2294F10FB7E"
+					id: "0894E6A802FFEC96"
 					item: "toms_storage:ts.inventory_connector"
 					type: "item"
 				}

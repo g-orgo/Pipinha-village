@@ -1,0 +1,348 @@
+{
+  "shop_id": "farm_coop",
+  "name": "shop.society_trading.farm_coop",
+  "texture": "dew_drop_farmland_growth:textures/item/weak_fertilizer",
+  "jei_catalyst": {
+    "item": "dew_drop_farmland_growth:weak_fertilizer"
+  },
+  "stage_required": "profession_farmer",
+  "selector_weight": -94,
+  "trades": [
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:weak_fertilizer",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "farm_coop_weak_fertilizer_x8"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:weak_fertilizer",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 461,
+      "trade_id": "farm_coop_weak_fertilizer_x8_mercantil_1",
+      "stage_required": "mercantil_farming_1",
+      "stage_removed": "mercantil_farming_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:weak_fertilizer",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 435,
+      "trade_id": "farm_coop_weak_fertilizer_x8_mercantil_2",
+      "stage_required": "mercantil_farming_2",
+      "stage_removed": "mercantil_farming_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:weak_fertilizer",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 384,
+      "trade_id": "farm_coop_weak_fertilizer_x8_mercantil_3",
+      "stage_required": "mercantil_farming_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:low_quality_fertilizer",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "farm_coop_low_quality_fertilizer_x8"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:low_quality_fertilizer",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 461,
+      "trade_id": "farm_coop_low_quality_fertilizer_x8_mercantil_1",
+      "stage_required": "mercantil_farming_1",
+      "stage_removed": "mercantil_farming_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:low_quality_fertilizer",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 435,
+      "trade_id": "farm_coop_low_quality_fertilizer_x8_mercantil_2",
+      "stage_required": "mercantil_farming_2",
+      "stage_removed": "mercantil_farming_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:low_quality_fertilizer",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 384,
+      "trade_id": "farm_coop_low_quality_fertilizer_x8_mercantil_3",
+      "stage_required": "mercantil_farming_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:hydrating_fertilizer",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "farm_coop_hydrating_fertilizer_x8"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:hydrating_fertilizer",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 230,
+      "trade_id": "farm_coop_hydrating_fertilizer_x8_mercantil_1",
+      "stage_required": "mercantil_farming_1",
+      "stage_removed": "mercantil_farming_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:hydrating_fertilizer",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 218,
+      "trade_id": "farm_coop_hydrating_fertilizer_x8_mercantil_2",
+      "stage_required": "mercantil_farming_2",
+      "stage_removed": "mercantil_farming_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:hydrating_fertilizer",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 192,
+      "trade_id": "farm_coop_hydrating_fertilizer_x8_mercantil_3",
+      "stage_required": "mercantil_farming_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:strong_fertilizer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 192,
+      "trade_id": "farm_coop_strong_fertilizer_x1"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:strong_fertilizer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 173,
+      "trade_id": "farm_coop_strong_fertilizer_x1_mercantil_1",
+      "stage_required": "mercantil_farming_1",
+      "stage_removed": "mercantil_farming_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:strong_fertilizer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 163,
+      "trade_id": "farm_coop_strong_fertilizer_x1_mercantil_2",
+      "stage_required": "mercantil_farming_2",
+      "stage_removed": "mercantil_farming_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:strong_fertilizer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 144,
+      "trade_id": "farm_coop_strong_fertilizer_x1_mercantil_3",
+      "stage_required": "mercantil_farming_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "farm_coop_deluxe_hydrating_fertilizer_x1"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 461,
+      "trade_id": "farm_coop_deluxe_hydrating_fertilizer_x1_mercantil_1",
+      "stage_required": "mercantil_farming_1",
+      "stage_removed": "mercantil_farming_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 435,
+      "trade_id": "farm_coop_deluxe_hydrating_fertilizer_x1_mercantil_2",
+      "stage_required": "mercantil_farming_2",
+      "stage_removed": "mercantil_farming_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 384,
+      "trade_id": "farm_coop_deluxe_hydrating_fertilizer_x1_mercantil_3",
+      "stage_required": "mercantil_farming_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "minecraft:bone_meal",
+        "count": 16
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "farm_coop_bone_meal_x16"
+    },
+    {
+      "offer": {
+        "item": "minecraft:bone_meal",
+        "count": 16
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 58,
+      "trade_id": "farm_coop_bone_meal_x16_mercantil_1",
+      "stage_required": "mercantil_farming_1",
+      "stage_removed": "mercantil_farming_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "minecraft:bone_meal",
+        "count": 16
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 54,
+      "trade_id": "farm_coop_bone_meal_x16_mercantil_2",
+      "stage_required": "mercantil_farming_2",
+      "stage_removed": "mercantil_farming_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:bone_meal",
+        "count": 16
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 48,
+      "trade_id": "farm_coop_bone_meal_x16_mercantil_3",
+      "stage_required": "mercantil_farming_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    }
+  ]
+}

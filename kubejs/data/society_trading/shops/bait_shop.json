@@ -1,0 +1,292 @@
+{
+  "shop_id": "bait_shop",
+  "name": "shop.society_trading.bait_shop",
+  "texture": "aquaculture:textures/item/worm",
+  "jei_catalyst": {
+    "item": "aquaculture:worm"
+  },
+  "stage_required": "profession_fisher",
+  "selector_weight": -94,
+  "trades": [
+    {
+      "offer": {
+        "item": "aquaculture:worm",
+        "count": 16
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "bait_shop_worm_x16"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:worm",
+        "count": 16
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 230,
+      "trade_id": "bait_shop_worm_x16_mercantil_1",
+      "stage_required": "mercantil_fishing_1",
+      "stage_removed": "mercantil_fishing_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:worm",
+        "count": 16
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 218,
+      "trade_id": "bait_shop_worm_x16_mercantil_2",
+      "stage_required": "mercantil_fishing_2",
+      "stage_removed": "mercantil_fishing_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:worm",
+        "count": 16
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 192,
+      "trade_id": "bait_shop_worm_x16_mercantil_3",
+      "stage_required": "mercantil_fishing_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:minnow",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 96,
+      "trade_id": "bait_shop_minnow_x4"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:minnow",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 86,
+      "trade_id": "bait_shop_minnow_x4_mercantil_1",
+      "stage_required": "mercantil_fishing_1",
+      "stage_removed": "mercantil_fishing_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:minnow",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 82,
+      "trade_id": "bait_shop_minnow_x4_mercantil_2",
+      "stage_required": "mercantil_fishing_2",
+      "stage_removed": "mercantil_fishing_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:minnow",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 72,
+      "trade_id": "bait_shop_minnow_x4_mercantil_3",
+      "stage_required": "mercantil_fishing_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:leech",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 204,
+      "trade_id": "bait_shop_leech_x1"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:leech",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 184,
+      "trade_id": "bait_shop_leech_x1_mercantil_1",
+      "stage_required": "mercantil_fishing_1",
+      "stage_removed": "mercantil_fishing_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:leech",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 173,
+      "trade_id": "bait_shop_leech_x1_mercantil_2",
+      "stage_required": "mercantil_fishing_2",
+      "stage_removed": "mercantil_fishing_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:leech",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 153,
+      "trade_id": "bait_shop_leech_x1_mercantil_3",
+      "stage_required": "mercantil_fishing_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "crabbersdelight:crab_trap_bait",
+        "count": 16
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 96,
+      "trade_id": "bait_shop_crab_trap_bait_x16"
+    },
+    {
+      "offer": {
+        "item": "crabbersdelight:crab_trap_bait",
+        "count": 16
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 86,
+      "trade_id": "bait_shop_crab_trap_bait_x16_mercantil_1",
+      "stage_required": "mercantil_fishing_1",
+      "stage_removed": "mercantil_fishing_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "crabbersdelight:crab_trap_bait",
+        "count": 16
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 82,
+      "trade_id": "bait_shop_crab_trap_bait_x16_mercantil_2",
+      "stage_required": "mercantil_fishing_2",
+      "stage_removed": "mercantil_fishing_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "crabbersdelight:crab_trap_bait",
+        "count": 16
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 72,
+      "trade_id": "bait_shop_crab_trap_bait_x16_mercantil_3",
+      "stage_required": "mercantil_fishing_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:fishing_line",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "bait_shop_fishing_line_x4"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:fishing_line",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 58,
+      "trade_id": "bait_shop_fishing_line_x4_mercantil_1",
+      "stage_required": "mercantil_fishing_1",
+      "stage_removed": "mercantil_fishing_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:fishing_line",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 54,
+      "trade_id": "bait_shop_fishing_line_x4_mercantil_2",
+      "stage_required": "mercantil_fishing_2",
+      "stage_removed": "mercantil_fishing_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "aquaculture:fishing_line",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 48,
+      "trade_id": "bait_shop_fishing_line_x4_mercantil_3",
+      "stage_required": "mercantil_fishing_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    }
+  ]
+}

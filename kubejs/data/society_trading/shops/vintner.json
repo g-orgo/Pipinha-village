@@ -1,0 +1,1324 @@
+{
+  "shop_id": "vintner",
+  "name": "shop.society_trading.vintner",
+  "texture": "vinery:textures/item/red_grape",
+  "jei_catalyst": {
+    "item": "vinery:red_grape"
+  },
+  "stage_required": "profession_winemaker",
+  "selector_weight": -94,
+  "trades": [
+    {
+      "offer": {
+        "item": "vinery:red_grape_seeds",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_red_grape_seeds_x1"
+    },
+    {
+      "offer": {
+        "item": "vinery:red_grape_seeds",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 230,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_red_grape_seeds_x1_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:red_grape_seeds",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 218,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_red_grape_seeds_x1_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:red_grape_seeds",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 192,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_red_grape_seeds_x1_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:white_grape_seeds",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_white_grape_seeds_x1"
+    },
+    {
+      "offer": {
+        "item": "vinery:white_grape_seeds",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 230,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_white_grape_seeds_x1_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:white_grape_seeds",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 218,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_white_grape_seeds_x1_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:white_grape_seeds",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 192,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_white_grape_seeds_x1_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grape_seeds_red",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grape_seeds_red_x1"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grape_seeds_red",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 461,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grape_seeds_red_x1_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grape_seeds_red",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 435,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grape_seeds_red_x1_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grape_seeds_red",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 384,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grape_seeds_red_x1_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grape_seeds_white",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grape_seeds_white_x1"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grape_seeds_white",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 461,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grape_seeds_white_x1_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grape_seeds_white",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 435,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grape_seeds_white_x1_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grape_seeds_white",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 384,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grape_seeds_white_x1_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grape_seeds_red",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grape_seeds_red_x1"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grape_seeds_red",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 461,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grape_seeds_red_x1_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grape_seeds_red",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 435,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grape_seeds_red_x1_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grape_seeds_red",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 384,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grape_seeds_red_x1_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grape_seeds_white",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grape_seeds_white_x1"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grape_seeds_white",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 461,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grape_seeds_white_x1_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grape_seeds_white",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 435,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grape_seeds_white_x1_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grape_seeds_white",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 384,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grape_seeds_white_x1_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grape_seeds_red",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grape_seeds_red_x1"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grape_seeds_red",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 461,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grape_seeds_red_x1_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grape_seeds_red",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 435,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grape_seeds_red_x1_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grape_seeds_red",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 384,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grape_seeds_red_x1_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grape_seeds_white",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grape_seeds_white_x1"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grape_seeds_white",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 461,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grape_seeds_white_x1_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grape_seeds_white",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 435,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grape_seeds_white_x1_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grape_seeds_white",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 384,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grape_seeds_white_x1_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:red_grape",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 84,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_red_grape_x8"
+    },
+    {
+      "offer": {
+        "item": "vinery:red_grape",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 76,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_red_grape_x8_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:red_grape",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 71,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_red_grape_x8_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:red_grape",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 63,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_red_grape_x8_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:white_grape",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 84,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_white_grape_x8"
+    },
+    {
+      "offer": {
+        "item": "vinery:white_grape",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 76,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_white_grape_x8_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:white_grape",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 71,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_white_grape_x8_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:white_grape",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 63,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "vintner_white_grape_x8_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grapes_red",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 84,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grapes_red_x8"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grapes_red",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 76,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grapes_red_x8_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grapes_red",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 71,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grapes_red_x8_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grapes_red",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 63,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grapes_red_x8_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grapes_white",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 84,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grapes_white_x8"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grapes_white",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 76,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grapes_white_x8_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grapes_white",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 71,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grapes_white_x8_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:savanna_grapes_white",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 63,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_savanna_grapes_white_x8_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grapes_red",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 84,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grapes_red_x8"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grapes_red",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 76,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grapes_red_x8_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grapes_red",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 71,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grapes_red_x8_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grapes_red",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 63,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grapes_red_x8_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grapes_white",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 84,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grapes_white_x8"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grapes_white",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 76,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grapes_white_x8_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grapes_white",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 71,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grapes_white_x8_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:jungle_grapes_white",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 63,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "vintner_jungle_grapes_white_x8_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grapes_red",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 84,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grapes_red_x8"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grapes_red",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 76,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grapes_red_x8_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grapes_red",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 71,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grapes_red_x8_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grapes_red",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 63,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grapes_red_x8_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grapes_white",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 84,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grapes_white_x8"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grapes_white",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 76,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grapes_white_x8_mercantil_1",
+      "stage_required": "mercantil_wine_1",
+      "stage_removed": "mercantil_wine_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grapes_white",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 71,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grapes_white_x8_mercantil_2",
+      "stage_required": "mercantil_wine_2",
+      "stage_removed": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vinery:taiga_grapes_white",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 63,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "vintner_taiga_grapes_white_x8_mercantil_3",
+      "stage_required": "mercantil_wine_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    }
+  ]
+}

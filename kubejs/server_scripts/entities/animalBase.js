@@ -580,7 +580,13 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       let mood = global.getOrFetchMood(level, target, day, player, false, true);
       handlePet(name, data, mood, day, peckish, hungry, eventData);
       if (pet) {
-        if (global.applyAffectionPerks) global.applyAffectionPerks(target, player, server);
+        if (global.applyAffectionPerks) {
+          try {
+            global.applyAffectionPerks(target, player, server);
+          } catch (error) {
+            console.error("[SOCIETY] applyAffectionPerks: " + error);
+          }
+        }
         return;
       }
       if (item.hasTag("society:animal_feed") && !pet)
@@ -811,6 +817,10 @@ ItemEvents.entityInteracted((e) => {
     return;
   }
   if (global.sunlitShouldPetFirst(hand, player, item, target, level)) {
+    // Keep only the entries of this tick, so the map never grows.
+    Object.keys(petFirstTicks).forEach((key) => {
+      if (petFirstTicks[key] !== now) delete petFirstTicks[key];
+    });
     petFirstTicks[uuid] = now;
     global.handleHusbandryBase(hand, player, item, target, level, server);
     e.cancel();

@@ -8,6 +8,8 @@ const $EntityMapIcon = Java.loadClass("dev.ftb.mods.ftbchunks.client.mapicon.Ent
 const $EntityIcons = Java.loadClass("dev.ftb.mods.ftbchunks.client.mapicon.EntityIcons");
 const $FTBChunksClientConfig = Java.loadClass("dev.ftb.mods.ftbchunks.client.FTBChunksClientConfig");
 const $FTBIcon = Java.loadClass("dev.ftb.mods.ftblibrary.icon.Icon");
+const $ImageIcon = Java.loadClass("dev.ftb.mods.ftblibrary.icon.ImageIcon");
+const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
 const $Consumer = Java.loadClass("java.util.function.Consumer");
 const $EntityType = Java.loadClass("net.minecraft.world.entity.EntityType");
 const $LivingEntity = Java.loadClass("net.minecraft.world.entity.LivingEntity");
@@ -20,13 +22,17 @@ const SUNLIT_MAP_NPC_SKIN_FALLBACK = "minecraft:textures/entity/player/wide/stev
 const SUNLIT_MAP_SKINNED_NPCS = ["easy_npc:humanoid", "easy_npc:humanoid_slim"];
 
 // Per skin texture id: face + hat icon.
+// ImageIcon is built from the ResourceLocation on purpose: Icon.getIcon(String) only makes an ImageIcon
+// for ids ending in .png/.jpg, and Easy NPC custom skins are DynamicTextures named minecraft:dynamic/...,
+// which getIcon turns into a block atlas sprite (missing texture on the map).
 const sunlitMapSkinFaces = {};
 
 const sunlitMapSkinFace = (texture) => {
   const key = String(texture);
   if (!sunlitMapSkinFaces[key]) {
-    let face = $FTBIcon["getIcon(java.lang.String)"](key).withUV(8 / 64, 8 / 64, 16 / 64, 16 / 64);
-    let hat = $FTBIcon["getIcon(java.lang.String)"](key).withUV(40 / 64, 8 / 64, 48 / 64, 16 / 64);
+    let location = new $ResourceLocation(key);
+    let face = new $ImageIcon(location).withUV(8 / 64, 8 / 64, 16 / 64, 16 / 64);
+    let hat = new $ImageIcon(location).withUV(40 / 64, 8 / 64, 48 / 64, 16 / 64);
     sunlitMapSkinFaces[key] = face.combineWith(hat);
   }
   return sunlitMapSkinFaces[key];

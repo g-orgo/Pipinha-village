@@ -508,3 +508,11 @@ Data da regra: 2026-10-25
 - `global.extractinatorRecipes` é lista de `{ input, output }`, não `Map`; as
   receitas de máquina usam `output`, a prensa de conserva usa `pickle`.
 
+
+## Harmonização de carnes e peixes
+
+- Cada carne ou peixe de mod entra na tag da espécie real dela (`kubejs/server_scripts/tags/harmonizeMeatTags.js`): aves (pato, ganso, peru, pelicano, casuar, galliraptor) em `forge:raw_chicken`/`forge:cooked_chicken`; búfalo, bisão, tribull e veado em `forge:raw_beef`/`forge:cooked_beef`; javali e costeleta congelada em `forge:raw_pork`; cabra e carré de cordeiro em `forge:raw_mutton`; peixe branco (bacalhau do Aquaculture, polaca, halibute) em `forge:raw_fishes/cod`, salmão rosa e trutas em `forge:raw_fishes/salmon`, atum do Aquaculture em `forge:raw_fishes/tuna`. Também nas versões `c:` e `farm_and_charm:` das tags.
+- Prato que pede o item vanilla (`minecraft:chicken`, `minecraft:cod` etc.) passa a pedir a tag da espécie (`recipes/normalizeEquivalentItems.js`, grupos `dishesOnly`). Só vale para receita com pelo menos dois insumos distintos (ferramenta e recipiente não contam): assar, cortar e moer um frango continuam dando produto de frango. Botania e Cluttered ficam de fora (não são comida).
+- Tags genéricas (`forge:raw_meat`, `brewinandchewin:raw_meats`) só têm carne de verdade: inseto, perna de aranha, carne podre, barra crocante e tartare saem. Pratos compostos (goulash, frango recheado etc.) saem das tags de carne cozida simples.
+- Recheio de rolinho de repolho e de asa de morcego: carne vermelha moída (boi, porco, carneiro e equivalentes), vegetal ou cogumelo; nunca qualquer carne nem peixe (`recipes/harmonizeMeatRecipes.js`).
+- Insumo novo de mod: colocar na tag da espécie em `harmonizeMeatTags.js`; se for um item vanilla fixo em receitas, acrescentar o par item/tag em `normalizeEquivalentItems.js`.

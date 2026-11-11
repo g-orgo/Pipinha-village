@@ -389,3 +389,12 @@ Uma decisão por entrada, em ordem cronológica. As regras em vigor estão em `c
 - Prato: item de `global.cooking` com preço de venda, fora caixas de armazenamento, insumos (ingrediente de receita de outro prato, exceto tábua de corte e travessas montadas com pratos prontos), fatias e porções `*_slice`, bebidas alcoólicas (são do Dono de Vinícola) e não comida (no jogo, comestível, bebida ou bloco de banquete). Chás, cafés, sucos e chocolate quente contam: são trabalho de cafeteria.
 - Antiexploit: uma vez por prato por jogador; comprar em loja (o slot de resultado das lojas sobe o stat "crafted") não paga; prato posto numa estação e retirado não paga; pratos feitos antes da mudança não pagam retroativo; não cozinheiro não marca o prato, então paga se virar cozinheiro e preparar de novo.
 - Valor: preço base, sem qualidade nem estação. XP `15 + valor/10`, teto 120.
+
+## 2026-11-11: carnes e peixes por espécie
+
+- Pedido do dono: pato não tinha receita (só caía em `forge:raw_meat`), e qualquer carne ou peixe servia de recheio para rolinhos de repolho e de asa de morcego.
+- Levantamento no jogo real sem janela (35.908 receitas): `forge:raw_meat` só era usada nos rolinhos; pato, ganso, peru, bisão, veado, cabra e javali não entravam em nenhum prato; 56 receitas pediam `minecraft:chicken` fixo, 66 `minecraft:beef`, 61 `minecraft:porkchop`, 71 `minecraft:cod`.
+- Decisão: tag por espécie em vez de grupo genérico. Pato entra onde entra frango, bisão onde entra boi. Transformações de um insumo ficam por item, para o pato assado continuar sendo pato assado.
+- `replaceInput` do KubeJS 6 só é chamado quando a receita cita o item exato, porque ele também troca tags largas que contêm o item (`forge:raw_meat`).
+- Perna de caranguejo: `crabbersdelight:crab_legs` (sai do caranguejo cozido) e as do Quark valem nos pratos de caranguejo do Quark Delight (`sunlit:compat/crab_leg`).
+- Perna de aranha e artrópode continuam nas receitas próprias do Miner's Delight (tag `miners_delight:raw_insect_meat`).

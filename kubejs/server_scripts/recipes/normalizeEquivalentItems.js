@@ -129,9 +129,13 @@ const sunlitRewriteEquivalentInputs = (node, group) => {
   return changed;
 };
 
+// Mods whose recipes using meat or fish are crafts, not food (brews, decoration blocks).
+const SUNLIT_NOT_DISH_NAMESPACES = ["botania", "cluttered"];
+
 // True when the recipe names the item itself and has at least one other distinct input.
 const sunlitIsDishWith = (recipe, item) => {
   if (recipe.json == null) return false;
+  if (SUNLIT_NOT_DISH_NAMESPACES.indexOf(String(recipe.getId()).split(":")[0]) >= 0) return false;
   let found = sunlitDistinctInputs(JSON.parse(String(JsonIO.toString(recipe.json))), {});
   return found[item] === true && Object.keys(found).length >= 2;
 };

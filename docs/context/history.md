@@ -88,3 +88,4 @@
 - 2026-11-11: colher e garfo levados até a boca em primeira pessoa (pulso dobra o talher, ponta voltada para a câmera) e câmera inclinada ~5° para baixo na ida à boca, em 287 tigelas/pratos e 5 comidas base; conferido no cliente sem janela.
 - 2026-11-10: calor do exercício (corrida contínua e ParCool pendurado esquentam aos poucos, suor no limite) em `parkourExerciseHeat.js`; changelog do menu pt_br/en_us.
 - 2026-11-11: agachado + clique direito não come nem bebe (uso vanilla, animação do Immersive Eating via RightClickItem em prioridade HIGH e gole de água com a mão do LSO) em `startup_scripts/forgeEvents/noSneakEating.js`; changelog do menu pt_br/en_us.
+- 2026-11-11: carnes e peixes harmonizados por espécie (pato onde vai frango, bisão onde vai boi, halibute onde vai bacalhau), recheio realista nos rolinhos de repolho e de asa de morcego, sem inseto/podre/tartare nas tags genéricas; conferido no jogo sem janela; changelog do menu pt_br/en_us.

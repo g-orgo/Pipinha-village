@@ -28,6 +28,7 @@ Bem-vindo à Vila da Pipinha! Este changelog resume o que é diferente do Sunlit
 + Create: esmagar cascalho agora dá as pepitas que antes vinham do tufo, então a farm de minérios básicos funciona só com pedregulho (pedregulho vira cascalho na roda de esmagar ou no moedor)
 + Terminal do Tom's em cena: Ctrl+A seleciona todo o texto da pesquisa, para apagar ou trocar de uma vez
 + Agachado, o clique direito não come nem bebe (comida, bebida, poção, cantil ou água com a mão), para entregar presentes aos moradores sem começar a comer
++ Carnes e peixes por espécie: pato, ganso e peru entram onde vai frango, bisão, búfalo e veado onde vai carne bovina, javali onde vai porco, cabra onde vai carneiro, halibute e polaca onde vai bacalhau; rolinhos de repolho e de asa de morcego levam só carne moída, vegetal ou cogumelo
 
 + Dia mais longo: a parte clara do dia passa de 10 para cerca de 15 minutos, e a noite não muda
 + Quadro de Recompensas: entregar um contrato dá XP na árvore Mercantil, de 40 a 150 conforme a raridade

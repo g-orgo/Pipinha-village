@@ -19,7 +19,7 @@ Bem-vindo à Vila da Pipinha! Este changelog resume o que é diferente do Sunlit
 + Slot de lixo volta a aparecer no inventário
 + Novos pacotes de textura: Fresh Animations: Classic Horses, asas de fada na elytra, Create Pipez e Aquaculture
 + Mapa do FTB Chunks com ícones de 24 bichos dos mods, como lontra, panda-vermelho, pato, ganso, hamster, caranguejo e Snuffle
-+ Minimapa: aldeões e moradores das vilas aparecem com o rosto, e todo animal sem ícone próprio aparece com o ovo dele
++ Minimapa: aldeões e moradores das vilas aparecem com o rosto, e os animais de mods sem ícone ganharam o próprio rosto
 
 + Dia mais longo: a parte clara do dia passa de 10 para cerca de 15 minutos, e a noite não muda
 + Quadro de Recompensas: entregar um contrato dá XP na árvore Mercantil, de 40 a 150 conforme a raridade

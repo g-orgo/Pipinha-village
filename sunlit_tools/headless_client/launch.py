@@ -35,7 +35,7 @@ jvm=[S(a) for a in f["arguments"]["jvm"] if isinstance(a,str)]
 java=None
 for root,_,files in os.walk(R+"/java/java-runtime-gamma"):
     if "java" in files and root.endswith("bin"): java=root+"/java"; break
-cmd=[java,"-Xmx5G","-Xms2G","-Djava.library.path="+sub["${natives_directory}"],"-Dorg.lwjgl.librarypath="+sub["${natives_directory}"],"-cp",sub["${classpath}"]]+jvm+[f["mainClass"]]
+cmd=[java,os.environ.get("PROBE_XMX","-Xmx5G"),"-Xms1G","-Djava.library.path="+sub["${natives_directory}"],"-Dorg.lwjgl.librarypath="+sub["${natives_directory}"],"-cp",sub["${classpath}"]]+jvm+[f["mainClass"]]
 cmd+=["--username","SunlitBot","--version","forge-47.4.0","--gameDir",G,"--assetsDir",R+"/assets","--assetIndex",v["assetIndex"]["id"],"--uuid","00000000000000000000000000000001","--accessToken","0","--userType","legacy","--versionType","release","--width","1280","--height","720"]
 cmd+=f["arguments"]["game"]+extra
 print(" ".join(cmd)[:300],flush=True)

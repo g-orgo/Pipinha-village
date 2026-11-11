@@ -36,6 +36,11 @@ GROUPS = {
             "minecraft:farmer_weak_fertilizer_for_cog",
             "minecraft:farmer_pitchfork_for_sun", "farmer_dehydrator_for_sun",
         ],
+        "farm_coop": [
+            "farm_coop_weak_fertilizer_x8", "farm_coop_low_quality_fertilizer_x8",
+            "farm_coop_hydrating_fertilizer_x8", "farm_coop_strong_fertilizer_x1",
+            "farm_coop_deluxe_hydrating_fertilizer_x1", "farm_coop_bone_meal_x16",
+        ],
     },
     "husbandry": {
         "shepherd": [
@@ -45,6 +50,10 @@ GROUPS = {
             "shepherd_cow_spawn_egg_for_crown", "shepherd_sheep_spawn_egg_for_crown",
             "shepherd_duck_sack_for_crown", "shepherd_rabbit_spawn_egg_for_sun",
             "shepherd_pig_spawn_egg_for_sun", "shepherd_goat_spawn_egg_for_sun",
+        ],
+        "feed_store": [
+            "feed_store_animal_feed_x16", "feed_store_animal_feed_x64",
+            "feed_store_hay_block_x1", "feed_store_wheat_x16",
         ],
     },
     "breeding": {
@@ -63,6 +72,10 @@ GROUPS = {
             "fisherman_quality_bobber_for_sun", "fisherman_double_hook_for_crown",
             "fisherman_tackle_box_for_sun", "fisherman_worm_farm_for_crown",
         ],
+        "bait_shop": [
+            "bait_shop_worm_x16", "bait_shop_minnow_x4", "bait_shop_leech_x1",
+            "bait_shop_crab_trap_bait_x16", "bait_shop_fishing_line_x4",
+        ],
     },
     "wine": {
         "wandering_winemaker": [
@@ -71,6 +84,16 @@ GROUPS = {
             "wandering_winemaker_savanna_grape_seeds_red", "wandering_winemaker_savanna_grape_seeds_white",
             "wandering_winemaker_jungle_grape_seeds_red", "wandering_winemaker_jungle_grape_seeds_white",
             "wandering_winemaker_crimson_grape_seeds", "wandering_winemaker_warped_grape_seeds",
+        ],
+        "vintner": [
+            "vintner_red_grape_seeds_x1", "vintner_white_grape_seeds_x1",
+            "vintner_savanna_grape_seeds_red_x1", "vintner_savanna_grape_seeds_white_x1",
+            "vintner_jungle_grape_seeds_red_x1", "vintner_jungle_grape_seeds_white_x1",
+            "vintner_taiga_grape_seeds_red_x1", "vintner_taiga_grape_seeds_white_x1",
+            "vintner_red_grape_x8", "vintner_white_grape_x8", "vintner_savanna_grapes_red_x8",
+            "vintner_savanna_grapes_white_x8", "vintner_jungle_grapes_red_x8",
+            "vintner_jungle_grapes_white_x8", "vintner_taiga_grapes_red_x8",
+            "vintner_taiga_grapes_white_x8",
         ],
     },
     "kitchen": {
@@ -81,6 +104,19 @@ GROUPS = {
         "barkeeper": [
             "barkeeper_lunchbag_for_cog", "barkeeper_lunchbox_for_sun",
             "barkeeper_golden_lunchbox_for_sun",
+        ],
+        "grocer": [
+            "grocer_egg_x8", "grocer_milk_x4", "grocer_flour_x4", "grocer_rice_x8",
+            "grocer_butter_x2", "grocer_beef_x2",
+            "grocer_porkchop_x2", "grocer_chicken_x2", "grocer_mutton_x2", "grocer_cod_x2",
+            "grocer_tomato_x4", "grocer_turnip_x4", "grocer_strawberry_x4", "grocer_onion_x4",
+            "grocer_cauliflower_x4", "grocer_lettuce_x4", "grocer_carrot_x4",
+            "grocer_potato_x4", "grocer_garlic_x4", "grocer_cucumber_x4",
+            "grocer_blueberry_x4", "grocer_wheat_x4", "grocer_bellpepper_x4",
+            "grocer_melon_slice_x8", "grocer_corn_cob_x4", "grocer_oat_x4",
+            "grocer_eggplant_x4", "grocer_cranberry_x4", "grocer_barley_x8",
+            "grocer_beetroot_x4", "grocer_pumpkin_x1", "grocer_cabbage_x2",
+            "grocer_sweet_potato_x4", "grocer_ginger_x4",
         ],
     },
 }

@@ -1083,5 +1083,6 @@
   "society.profession.kit": "Your %s contract came with a starter kit. Check your inventory!",
   "society.profession.already": "You are already a %s.",
   "society.profession.limit": "Profession limit reached (%s). You already follow: %s.",
-  "society.specialty.twins": "Twins! An extra baby was born."
+  "society.specialty.twins": "Twins! An extra baby was born.",
+  "society.cook.first_dish": "First time cooking %1$s! The dish earned you §f●§6 %2$s and %3$s Cooking experience."
 }

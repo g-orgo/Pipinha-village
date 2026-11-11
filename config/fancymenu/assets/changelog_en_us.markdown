@@ -14,6 +14,7 @@ Welcome to Pipinha's Village! This changelog summarizes what differs from the no
 + Bowls eaten with a spoon, plates with a fork, and mayonnaise, preserve and jam jars that open their lid and are drunk in sips
 + Trees with Specialties: the 2 missing points were added, so every skill can be picked now
 + Mercantile: buying from villager shops also gives Mercantile experience, with a daily limit
++ Profession contacts: each profession gets its own contact on the Phone (Grocer for the Cook, with the produce of the season, Bait Shop, Farm Co-op, Feed Store and Vintner), and the Cook quests explain the cafe's 50% bonus and tips
 + Temperature: modded furnaces, stoves and fireplaces give heat while lit
 + Recipes: coal and charcoal work for each other, and so do ice and ice cubes in food and drink recipes
 + Ginger drops from its crop again
@@ -34,6 +35,8 @@ Welcome to Pipinha's Village! This changelog summarizes what differs from the no
 + Cooking quality: automated cooking pots, bowls and the Brewin' and Chewin' keg keep the quality of the ingredients
 + Seasonal bonus also on crops from the cooking mods
 + Seed Maker: turning a crop into seeds no longer gives a profit when selling
++ Pets: the first empty-hand click of the day pets the animal instead of the usual action (riding, sitting) and shows its name and hearts; from 5 hearts affection gives bonuses that grow up to 10: horses run faster and jump higher, dogs and bears deal and withstand more damage, ferrets and axolotls fight better, cats, owls, hamsters, hedgehogs and allays get quicker; wolves at 10 hearts earn Wolf Armor; dogs in follow mode appear at your feet after a teleport (waystone, Via Romana, pearl, portal) or when you get off your horse
++ Cook: the first time you prepare each dish you earn its sell value in coins and Cooking experience, once per dish
 
 ### Professions and skills
 + Professions: Farmer, Rancher, Fisher, Winemaker and Cook, picked by signing a contract in the Professions chapter

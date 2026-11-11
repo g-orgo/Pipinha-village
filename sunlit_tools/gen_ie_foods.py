@@ -16,7 +16,12 @@ OUT = "kubejs/assets/food"
 SIZE = 128
 CELL = 16
 FACES = ("north", "south", "east", "west", "up", "down")
-MOUTH_POS, MOUTH_ROT = (-2.0, 1.0, 3.0), (-24.0, 0.0, 34.0)
+# At the mouth the forearm comes up from below and the wrist bends the utensil back, so its head reaches the
+# mouth (just under the camera) pointing at the player instead of away. Fitted against the mouth point of the
+# Kaleidoscope chopstick animation (about 0, -1, 13 in model space).
+MOUTH_POS, MOUTH_ROT, MOUTH_WRIST = (-2.6, -6.2, 5.0), (-37.0, 11.0, 44.0), (-89.0, 8.0, 23.0)
+# The head bows a little while the utensil comes up, as when eating from a bowl (camera bone pitch, degrees).
+MOUTH_BOW = 5.0
 # The utensil never turns in the grip: the whole arm carries it. Dip lowers the hand over the right rim
 # so the spoon head goes into the stew; scoop drags the hand back toward the player with the head still
 # in the stew, like taking a spoonful (poses checked in the headless client); the vessel tilts toward the camera.
@@ -158,6 +163,7 @@ def animation(food):
     start, end = food.get("start", 0.5), total - 0.7
     step = (end - start) / bites
     arm_pos, arm_rot, shot_scale, sounds, camera = [(0, (0, 0, 0))], [(0, (0, 0, 0))], [(0, (0, 0, 0))], {}, [(0, (0, 0, 0))]
+    wrist = [(0, (0, 0, 0))]
     out = {}
     hand = food["shape"] == "hand"
     for n in range(bites):
@@ -169,12 +175,15 @@ def animation(food):
         if hand:
             arm_pos += [(t, (-6, -3, 2)), (lift, (-3, 0, 3)), (bite, (-2, 2, 4)), (back, (-6, -3, 2))]
             arm_rot += [(t, (-8, 0, 24)), (lift, (-16, 0, 32)), (bite, (-20, 0, 36)), (back, (-8, 0, 24))]
+            camera += [(bite, (0, 0, 0)), (bite + 0.12, (1.2, 0, 0)), (bite + 0.3, (0, 0, 0))]
         else:
             dips = [(DIP_POS, DIP_ROT), (SCOOP_POS, SCOOP_ROT)] if spoon else [(FORK_DIP_POS, FORK_DIP_ROT)]
             arm_pos += [(t, REST_POS)] + [(k, d[0]) for k, d in zip((dip, scoop), dips)] + [(lift, MOUTH_POS), (bite, MOUTH_POS), (back, REST_POS)]
             arm_rot += [(t, REST_ROT)] + [(k, d[1]) for k, d in zip((dip, scoop), dips)] + [(lift, MOUTH_ROT), (bite, MOUTH_ROT), (back, REST_ROT)]
             shot_scale += [(take - 0.01, (0, 0, 0)), (take, (1, 1, 1)), (bite, (1, 1, 1)), (bite + 0.01, (0, 0, 0))]
-        camera += [(bite, (0, 0, 0)), (bite + 0.12, (1.2, 0, 0)), (bite + 0.3, (0, 0, 0))]
+            wrist += [(take, (0, 0, 0)), (lift, MOUTH_WRIST), (bite, MOUTH_WRIST), (back, (0, 0, 0))]
+            bow = (MOUTH_BOW, 0, 0)
+            camera += [(take, (0, 0, 0)), (lift, bow), (bite, bow), (bite + 0.12, (MOUTH_BOW + 1.2, 0, 0)), (bite + 0.3, bow), (back, (0, 0, 0))]
         sounds[f"{bite:.2f}"] = {"effect": food["sound"]}
         out[str(n + 1)] = {"scale": frames([(0, (1, 1, 1)), ((take if not hand else bite) - 0.01, (1, 1, 1)), (take if not hand else bite, (0, 0, 0))])}
     arm_pos += [(total - 0.5, (0, 0, 0))]
@@ -190,6 +199,7 @@ def animation(food):
     out["camera"] = {"rotation": frames(camera)}
     if not hand:
         out["morsel"] = {"scale": frames(shot_scale)}
+        out["utensil"] = {"rotation": frames(wrist)}
         # The utensil resting in the dish only shows in the still pose; the hand takes it from the first frame.
         out["utensil_rest"] = {"scale": frames([(0, (0, 0, 0)), (total, (0, 0, 0))])}
         if food["shape"] in ("soup", "noodles"):

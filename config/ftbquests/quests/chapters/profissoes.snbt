@@ -108,6 +108,8 @@
 				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F61.description2}"
 				""
 				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F61.description3}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F61.description4}"
 			]
 			icon: {
 				Count: 1
@@ -256,6 +258,8 @@
 				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F62.description2}"
 				""
 				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F62.description3}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F62.description4}"
 			]
 			icon: "society:milk_pail"
 			id: "5B1F0A3C7D2E4F62"
@@ -405,6 +409,8 @@
 				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F63.description2}"
 				""
 				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F63.description3}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F63.description4}"
 			]
 			icon: {
 				Count: 1
@@ -585,6 +591,8 @@
 				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F64.description2}"
 				""
 				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F64.description3}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F64.description4}"
 			]
 			icon: {
 				Count: 1
@@ -795,6 +803,8 @@
 				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F65.description2}"
 				""
 				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F65.description3}"
+				""
+				"{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F65.description4}"
 			]
 			icon: "farmersdelight:cooking_pot"
 			id: "5B1F0A3C7D2E4F65"
@@ -903,6 +913,8 @@
 				"{ftbquests.chapter.profissoes.questD98B42477F62E69C.description1}"
 				""
 				"{ftbquests.chapter.profissoes.questD98B42477F62E69C.description2}"
+				""
+				"{ftbquests.chapter.profissoes.questD98B42477F62E69C.description3}"
 			]
 			id: "63B8857324997ED2"
 			rewards: [{

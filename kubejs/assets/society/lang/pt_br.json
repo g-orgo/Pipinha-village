@@ -317,6 +317,7 @@
   "society.husbandry.crowded": "%s está apertado e infeliz...",
   "society.husbandry.peckish": "%s poderia comer alguma coisa...",
   "society.husbandry.starved": "%s ficou tempo demais sem comer...",
+  "society.husbandry.pet.armor_gift": "%s ganhou uma Armadura de Lobo pelo vínculo com você!",
   "society.husbandry.mechanization": "Sua mente foi corrompida e não concede mais Fragmentos Prismáticos...",
   "society.husbandry.emancipation": "Sua mente foi restaurada após deixar de ser uma máquina sem alma!",
   "society.husbandry.action.need_milk_pail": "Você precisa de um Balde de Leite para ordenhar este animal...",
@@ -1203,5 +1204,6 @@
   "society.profession.kit": "Seu contrato de %s veio com um kit inicial. Confira o inventário!",
   "society.profession.already": "Você já é %s.",
   "society.profession.limit": "Limite de profissões atingido (%s). Você já segue: %s.",
-  "society.specialty.twins": "Gêmeos! Nasceu um filhote a mais."
+  "society.specialty.twins": "Gêmeos! Nasceu um filhote a mais.",
+  "society.cook.first_dish": "Primeiro preparo de %1$s! O prato rendeu §f●§6 %2$s e %3$s de experiência em Culinária."
 }

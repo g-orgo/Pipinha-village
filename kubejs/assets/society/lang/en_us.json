@@ -317,6 +317,7 @@
   "society.husbandry.crowded": "%s feels crowded and unhappy...",
   "society.husbandry.peckish": "%s could use something to eat...",
   "society.husbandry.starved": "%s went too long without food...",
+  "society.husbandry.pet.armor_gift": "%s earned Wolf Armor through your bond!",
   "society.husbandry.mechanization": "Its mind was corrupted and no longer gifts Prismatic Shards...",
   "society.husbandry.emancipation": "Its mind was healed from being a souless machine!",
   "society.husbandry.action.need_milk_pail": "You need a Milk Pail to milk this animal...",
@@ -974,5 +975,6 @@
   "society.profession.kit": "Your %s contract came with a starter kit. Check your inventory!",
   "society.profession.already": "You are already a %s.",
   "society.profession.limit": "Profession limit reached (%s). You already follow: %s.",
-  "society.specialty.twins": "Twins! An extra baby was born."
+  "society.specialty.twins": "Twins! An extra baby was born.",
+  "society.cook.first_dish": "First time cooking %1$s! The dish earned you §f●§6 %2$s and %3$s Cooking experience."
 }

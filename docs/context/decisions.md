@@ -374,3 +374,18 @@ Uma decisão por entrada, em ordem cronológica. As regras em vigor estão em `c
 - **Decisão**: `regen_chunks.py --so-claims` vira o padrão: só claim FTB (forceload incluso) + animais do jogador + prédio que cruza a borda (`--so-predio` implícito). Nada de jogador, cama, baú ou InhabitedTime.
 - **Claim automático**: `kubejs/server_scripts/blockEvents/autoClaimChunk.js` faz `FTBChunksAPI.api().claimAsPlayer(...)` quando um jogador real (não fake player) coloca bloco com block entity ou cama; placas e estandartes ficam de fora; abrir baú não faz claim. Mensagem na action bar (`sunlit_claims.auto_claimed`, `kubejs/assets/sunlit_claims/lang`). Teste: `sunlit_tools/js_harness/run_auto_claim.sh`.
 - **Limites**: `max_claimed_chunks` e `max_force_loaded_chunks` = 1000000000 (defaultconfigs + save solo). O FTB soma `extra_*_chunks` do time (o solo tem 999999999 de extra forceload), então o int máximo estouraria.
+
+## 2026-11-11: contato de profissão no telefone
+
+- Pedido do dono: quem segue uma profissão ganha um contato a mais no telefone que facilita o ofício (cozinheiro: fornecedor de insumos que acompanha a estação, como o Market).
+- Como: lojas do society_trading só de telefone (padrão do Barkeeper e da Guilda: ícone de item/bloco, sem villager), escondidas pelo `stage_required` `profession_<id>`; o cristal de reset tira o stage e o contato some junto.
+- Preço: insumo vendável custa `ceil(1,5 * valor de venda * quantidade)`, para que mesmo com Pechincha III (-25%) e o bônus sazonal da Caixa de Envio (+8%) comprar e revender dê prejuízo. Itens não vendáveis (fertilizantes, minhoca, ração, sementes de uva) usam o preço unitário das lojas que já os vendem, só em lotes maiores.
+- Fora: espantalho do Farm and Charm (receita removida pelo pack), fertilizante de alta qualidade (exige sucata de netherite, progressão), garrafa de vinho (o Market já vende barato a todos), queijo (é produto do rancheiro).
+- O Grocer segue o calendário das sementes do Market: cada colheita só aparece nas estações em que a semente dela está à venda.
+
+## 2026-11-11: o que conta como prato no bônus de primeiro preparo
+
+- Pedido do dono: fazer um prato pela primeira vez dá XP e o valor do prato em moedas ao Cozinheiro.
+- Prato: item de `global.cooking` com preço de venda, fora caixas de armazenamento, insumos (ingrediente de receita de outro prato, exceto tábua de corte e travessas montadas com pratos prontos), fatias e porções `*_slice`, bebidas alcoólicas (são do Dono de Vinícola) e não comida (no jogo, comestível, bebida ou bloco de banquete). Chás, cafés, sucos e chocolate quente contam: são trabalho de cafeteria.
+- Antiexploit: uma vez por prato por jogador; comprar em loja (o slot de resultado das lojas sobe o stat "crafted") não paga; prato posto numa estação e retirado não paga; pratos feitos antes da mudança não pagam retroativo; não cozinheiro não marca o prato, então paga se virar cozinheiro e preparar de novo.
+- Valor: preço base, sem qualidade nem estação. XP `15 + valor/10`, teto 120.

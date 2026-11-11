@@ -231,7 +231,15 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
         )
       );
     }
-  } else if (item === "minecraft:air" || item === 'society:mood_scanner') {
+  }
+  let petted = day > ageLastPet && !player.isFake();
+  if (petted || item === "minecraft:air" || item === 'society:mood_scanner') {
+    // Petting always shows the status (name and hearts), not only on empty-hand clicks.
+    let shownHearts = hearts;
+    if (petted) {
+      shownHearts = Math.floor(Math.min(data.getInt("affection"), 1000) / 100);
+      if (shownHearts < 0) shownHearts = 0;
+    }
     let nameColor;
     if (peckish) {
       nameColor = "#FFAA00";
@@ -239,7 +247,7 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
     if (hungry) {
       nameColor = "#FF5555";
     }
-    checkAnimal(player, level, server, data, name, mood, hearts, nameColor);
+    checkAnimal(player, level, server, data, name, mood, shownHearts, nameColor);
   }
   // Raise Max health
   let affectionHealth = hearts * 4;
@@ -571,7 +579,10 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       player.swing();
       let mood = global.getOrFetchMood(level, target, day, player, false, true);
       handlePet(name, data, mood, day, peckish, hungry, eventData);
-      if (pet) return;
+      if (pet) {
+        if (global.applyAffectionPerks) global.applyAffectionPerks(target, player, server);
+        return;
+      }
       if (item.hasTag("society:animal_feed") && !pet)
         handleFeed(data, day, eventData);
       if (!lostProduce) {
@@ -786,9 +797,25 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
   });
 };
 
+// Game time of the last pet-first click per animal UUID. The off-hand event of the
+// same click is cancelled too, so the vanilla/mod interaction never runs.
+const petFirstTicks = {};
+
 ItemEvents.entityInteracted((e) => {
   let { hand, player, item, target, level, server } = e;
   if (item === 'moblassos:diamond_lasso') return;
+  let uuid = String(target.uuid);
+  let now = Number(level.getLevelData().getGameTime());
+  if (String(hand) === "OFF_HAND" && petFirstTicks[uuid] === now) {
+    e.cancel();
+    return;
+  }
+  if (global.sunlitShouldPetFirst(hand, player, item, target, level)) {
+    petFirstTicks[uuid] = now;
+    global.handleHusbandryBase(hand, player, item, target, level, server);
+    e.cancel();
+    return;
+  }
   global.handleHusbandryBase(hand, player, item, target, level, server);
 });
 

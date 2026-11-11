@@ -14,6 +14,7 @@ Bem-vindo à Vila da Pipinha! Este changelog resume o que é diferente do Sunlit
 + Tigelas comidas de colher, pratos de garfo e potes de maionese, conserva e geleia que abrem a tampa e são tomados em goles
 + Árvores com Especialidade: os 2 pontos que faltavam foram adicionados, agora dá para pegar todas as habilidades
 + Mercantil: comprar nas lojas dos moradores também dá experiência Mercantil, com limite por dia
++ Contatos de profissão: cada profissão ganha um contato próprio no Telefone (Grocer para o Cozinheiro, com os insumos da estação, Bait Shop, Farm Co-op, Feed Store e Vintner), e as missões do Cozinheiro explicam o bônus de 50% e as gorjetas do café
 + Temperatura: fornos, fogões e lareiras dos mods aquecem quando estão acesos
 + Receitas: carvão e carvão vegetal valem um pelo outro, e gelo e cubo de gelo também nas receitas de comida e bebida
 + Gengibre volta a cair da plantação
@@ -34,6 +35,8 @@ Bem-vindo à Vila da Pipinha! Este changelog resume o que é diferente do Sunlit
 + Qualidade na cozinha: panelas automatizadas, tigelas e o barril do Brewin' and Chewin' mantêm a qualidade dos ingredientes
 + Bônus de estação também nas colheitas dos mods de culinária
 + Seed Maker: transformar colheita em semente não dá mais lucro na venda
++ Pets: o primeiro clique de mão vazia do dia faz carinho em vez da ação normal (montar, sentar) e mostra nome e corações; a partir de 5 corações a afinidade dá bônus que crescem até 10: cavalos correm mais e pulam mais alto, cães e ursos causam e aguentam mais dano, furões e axolotes lutam melhor, gatos, corujas, hamsters, ouriços e allays ficam mais ágeis; lobos com 10 corações ganham Armadura de Lobo; cães em modo seguir aparecem aos seus pés depois de um teleporte (waystone, Via Romana, pérola, portal) ou ao descer do cavalo
++ Cozinheiro: o primeiro preparo de cada prato rende o valor de venda dele em moedas e experiência em Culinária, uma vez por prato
 
 ### Profissões e habilidades
 + Profissões: Fazendeiro, Rancheiro, Pescador, Dono de Vinícola e Cozinheiro, escolhidas por contrato no capítulo Profissões

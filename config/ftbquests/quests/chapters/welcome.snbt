@@ -43,6 +43,16 @@
 					item: "minecraft:bundle"
 					type: "item"
 				}
+				{
+					id: "F36D0E095804F18E"
+					item: "toms_storage:ts.crafting_terminal"
+					type: "item"
+				}
+				{
+					id: "CB15F2294F10FB7E"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
 			]
 			size: 2.0d
 			subtitle: "{ftbquests.chapter.welcome.quest2B6877708A709B5C.subtitle}"

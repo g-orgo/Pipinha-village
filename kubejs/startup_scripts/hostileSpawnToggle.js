@@ -51,8 +51,9 @@ global.setHostileSpawnsOff = function (server, off) {
 };
 
 // Choice made on the create world screen, applied by the server script on the
-// new world's first load. null = nothing pending.
-global.pendingHostileSpawnsOff = null;
+// new world's first load. "none" = nothing pending. Never store null: global is a Java map and
+// reading a key whose value is null throws in KubeJS's Rhino (NativeJavaMap.get).
+global.pendingHostileSpawnsOff = "none";
 
 ForgeEvents.onEvent("net.minecraftforge.event.entity.living.MobSpawnEvent$FinalizeSpawn", (e) => {
   if (hostileToggleSpawnFailed) return;

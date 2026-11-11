@@ -7,10 +7,10 @@ console.info("[SOCIETY] hostileSpawnToggle.js loaded");
 const HOSTILE_TOGGLE_NEW_WORLD_MAX_TIME = 100;
 
 ServerEvents.loaded((e) => {
-  let pending = global.pendingHostileSpawnsOff;
-  global.pendingHostileSpawnsOff = null;
   try {
-    if (pending === null || pending === undefined) return;
+    let pending = global.pendingHostileSpawnsOff;
+    global.pendingHostileSpawnsOff = "none";
+    if (pending !== true && pending !== false) return;
     if (e.server.overworld().dayTime > HOSTILE_TOGGLE_NEW_WORLD_MAX_TIME) return;
     global.setHostileSpawnsOff(e.server, pending === true);
   } catch (err) {

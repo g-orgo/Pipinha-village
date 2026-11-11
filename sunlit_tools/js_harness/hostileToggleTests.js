@@ -102,9 +102,9 @@ check('create: back on Game tab, realigned, off shown', diffC.x === 100 && added
 SERVER.dayTime = 5;
 SERVER_HANDLERS.loaded({ server: SERVER });
 check('server: new world gets spawns off', SERVER.persistentData.getBoolean('sunlitHostileSpawnsOff') === true);
-check('server: pending cleared', global.pendingHostileSpawnsOff === null);
+check('server: pending cleared', global.pendingHostileSpawnsOff === "none");
 SERVER.persistentData.putBoolean('sunlitHostileSpawnsOff', false);
 global.pendingHostileSpawnsOff = true;
 SERVER.dayTime = 50000;
 SERVER_HANDLERS.loaded({ server: SERVER });
-check('server: old world untouched', SERVER.persistentData.getBoolean('sunlitHostileSpawnsOff') === false && global.pendingHostileSpawnsOff === null);
+check('server: old world untouched', SERVER.persistentData.getBoolean('sunlitHostileSpawnsOff') === false && global.pendingHostileSpawnsOff === "none");

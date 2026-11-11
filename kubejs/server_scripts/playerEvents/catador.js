@@ -37,7 +37,15 @@ const catadorRummageChance = (player) => {
   return 0;
 };
 
-const catadorLootedCount = (player) => player.stats.get(CATADOR_LOOTED_STAT);
+// The custom stat registry looks values up by identity, so a new ResourceLocation equal to the
+// Lootr id has no key (NPE in Stat.buildName). Use the instance Lootr registered.
+const $CatadorBuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
+const catadorLootedStatId = () => $CatadorBuiltInRegistries.CUSTOM_STAT.get(CATADOR_LOOTED_STAT);
+
+const catadorLootedCount = (player) => {
+  let id = catadorLootedStatId();
+  return id ? player.stats.get(id) : 0;
+};
 
 // Extra portion: copies half (rounded up) of a random stack of the container
 // into an empty slot of it, or into the player's inventory when it is full.

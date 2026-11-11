@@ -17,15 +17,15 @@ SIZE = 128
 CELL = 16
 FACES = ("north", "south", "east", "west", "up", "down")
 # At the mouth the forearm comes up from below and the wrist bends the utensil back, so its head reaches the
-# mouth (just under the camera) pointing at the player instead of away. Fitted against the mouth point of the
-# Kaleidoscope chopstick animation (about 0, -1, 13 in model space).
-MOUTH_POS, MOUTH_ROT, MOUTH_WRIST = (-2.6, -6.2, 5.0), (-37.0, 11.0, 44.0), (-89.0, 8.0, 23.0)
-# The head bows a little while the utensil comes up, as when eating from a bowl (camera bone pitch, degrees).
+# mouth pointing at the player instead of away. Fitted so the head stops at the bottom middle of the view, about
+# (0, 2.5, 6) in model space; the first person camera sits near (0, 6, 15) (measured in the headless client).
+MOUTH_POS, MOUTH_ROT, MOUTH_WRIST = (-2.4, -4.3, -3.9), (-45.0, 20.0, 50.0), (-77.5, 13.0, 21.5)
+# The head bows a little while the utensil comes up, as when eating from a bowl (camera bone x, degrees; positive looks down, measured in the headless client).
 MOUTH_BOW = 5.0
-# The utensil never turns in the grip: the whole arm carries it. Dip lowers the hand over the right rim
+# In the bowl the utensil does not turn in the grip (only on the way to the mouth): the arm carries it. Dip lowers the hand over the right rim
 # so the spoon head goes into the stew; scoop drags the hand back toward the player with the head still
 # in the stew, like taking a spoonful (poses checked in the headless client); the vessel tilts toward the camera.
-# The forearm turns in toward the bowl and the fist stays at its right rim, in view; only arm keyframes move the spoon.
+# The forearm turns in toward the bowl and the fist stays at its right rim, in view.
 DIP_POS, DIP_ROT = (-12.0, 9.4, -2.5), (-42.2, -65.6, 62.0)
 SCOOP_POS, SCOOP_ROT = (-15.4, 9.0, -4.5), (-54.1, -78.5, 70.1)
 # A fork on a plate keeps its fist at the right rim and picks the bite there.

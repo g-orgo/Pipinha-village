@@ -174,8 +174,8 @@ def main():
     ap.add_argument("name")
     ap.add_argument("out")
     ap.add_argument("times", nargs="?", default="0.6,1.2,2.0,3.0")
-    ap.add_argument("--cam", default="0,2,20")
-    ap.add_argument("--pitch", type=float, default=-20)
+    ap.add_argument("--cam", default="0,6,15")  # measured against the headless client, 2026-11-11
+    ap.add_argument("--pitch", type=float, default=-3)
     ap.add_argument("--fov", type=float, default=70)
     a = ap.parse_args()
     render(a.name, [float(t) for t in a.times.split(",")], np.array([float(v) for v in a.cam.split(",")]),

@@ -612,6 +612,1592 @@
       },
       "numismatics_cost": 67108864,
       "trade_id": "leatherworker_inception_upgrade_for_prismatic_coin"
+    },
+    {
+      "offer": {
+        "item": "create:andesite_alloy",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 3
+      },
+      "numismatics_cost": 24,
+      "trade_id": "librarian_andesite_alloy_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:brass_ingot",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 6
+      },
+      "numismatics_cost": 3072,
+      "trade_id": "librarian_brass_ingot_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:iron_sheet",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 5
+      },
+      "numismatics_cost": 80,
+      "trade_id": "librarian_iron_sheet_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:copper_sheet",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 3
+      },
+      "numismatics_cost": 24,
+      "trade_id": "librarian_copper_sheet_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:golden_sheet",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 5
+      },
+      "numismatics_cost": 320,
+      "trade_id": "librarian_golden_sheet_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:brass_sheet",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "librarian_brass_sheet_for_sun"
+    },
+    {
+      "offer": {
+        "item": "create:sturdy_sheet",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "trade_id": "librarian_sturdy_sheet_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:polished_rose_quartz",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "librarian_polished_rose_quartz_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:electron_tube",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_electron_tube_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:precision_mechanism",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "librarian_precision_mechanism_for_sun"
+    },
+    {
+      "offer": {
+        "item": "create:andesite_casing",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 32,
+      "trade_id": "librarian_andesite_casing_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:brass_casing",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "librarian_brass_casing_for_sun"
+    },
+    {
+      "offer": {
+        "item": "create:copper_casing",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_copper_casing_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:railway_casing",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 6
+      },
+      "numismatics_cost": 96,
+      "trade_id": "librarian_railway_casing_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:propeller",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_propeller_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:whisk",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 10
+      },
+      "numismatics_cost": 640,
+      "trade_id": "librarian_whisk_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:brass_hand",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 8
+      },
+      "numismatics_cost": 32768,
+      "trade_id": "librarian_brass_hand_for_sun"
+    },
+    {
+      "offer": {
+        "item": "create:transmitter",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 6
+      },
+      "numismatics_cost": 384,
+      "trade_id": "librarian_transmitter_for_cog"
+    },
+    {
+      "offer": {
+        "item": "minecraft:chain",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 7
+      },
+      "numismatics_cost": 112,
+      "trade_id": "librarian_chain_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:shaft",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:spur",
+        "count": 5
+      },
+      "numismatics_cost": 5,
+      "trade_id": "librarian_shaft_for_spur"
+    },
+    {
+      "offer": {
+        "item": "create:cogwheel",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "librarian_cogwheel_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:large_cogwheel",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:spur",
+        "count": 10
+      },
+      "numismatics_cost": 10,
+      "trade_id": "librarian_large_cogwheel_for_spur"
+    },
+    {
+      "offer": {
+        "item": "create:gearbox",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 6
+      },
+      "numismatics_cost": 96,
+      "trade_id": "librarian_gearbox_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:vertical_gearbox",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 6
+      },
+      "numismatics_cost": 96,
+      "trade_id": "librarian_vertical_gearbox_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:clutch",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 5
+      },
+      "numismatics_cost": 80,
+      "trade_id": "librarian_clutch_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:gearshift",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 5
+      },
+      "numismatics_cost": 80,
+      "trade_id": "librarian_gearshift_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:encased_chain_drive",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 5
+      },
+      "numismatics_cost": 80,
+      "trade_id": "librarian_encased_chain_drive_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:adjustable_chain_gearshift",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "librarian_adjustable_chain_gearshift_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:chain_conveyor",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "librarian_chain_conveyor_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:belt_connector",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 3
+      },
+      "numismatics_cost": 24,
+      "trade_id": "librarian_belt_connector_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:hand_crank",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 32,
+      "trade_id": "librarian_hand_crank_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:water_wheel",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 5
+      },
+      "numismatics_cost": 2560,
+      "stage_required": "boiler_room_complete",
+      "unlock_description": "jei.society_trading.boiler_room_complete",
+      "trade_id": "librarian_water_wheel_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:large_water_wheel",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 11
+      },
+      "numismatics_cost": 5632,
+      "stage_required": "boiler_room_complete",
+      "unlock_description": "jei.society_trading.boiler_room_complete",
+      "trade_id": "librarian_large_water_wheel_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:windmill_bearing",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "stage_required": "boiler_room_complete",
+      "unlock_description": "jei.society_trading.boiler_room_complete",
+      "trade_id": "librarian_windmill_bearing_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:sail_frame",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "trade_id": "librarian_sail_frame_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:white_sail",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "trade_id": "librarian_white_sail_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:steam_engine",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 3
+      },
+      "numismatics_cost": 1536,
+      "stage_required": "boiler_room_complete",
+      "unlock_description": "jei.society_trading.boiler_room_complete",
+      "trade_id": "librarian_steam_engine_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:steam_whistle",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_steam_whistle_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:empty_blaze_burner",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_empty_blaze_burner_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:fluid_tank",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 6
+      },
+      "numismatics_cost": 384,
+      "trade_id": "librarian_fluid_tank_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:rotation_speed_controller",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 20
+      },
+      "numismatics_cost": 10240,
+      "trade_id": "librarian_rotation_speed_controller_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:sequenced_gearshift",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 12
+      },
+      "numismatics_cost": 6144,
+      "trade_id": "librarian_sequenced_gearshift_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:speedometer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_speedometer_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:stressometer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_stressometer_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:gantry_shaft",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 3
+      },
+      "numismatics_cost": 24,
+      "trade_id": "librarian_gantry_shaft_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:gantry_carriage",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "librarian_gantry_carriage_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:turntable",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "librarian_turntable_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:millstone",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "librarian_millstone_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:crushing_wheel",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "librarian_crushing_wheel_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:mechanical_press",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 13
+      },
+      "numismatics_cost": 832,
+      "trade_id": "librarian_mechanical_press_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:mechanical_mixer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "librarian_mechanical_mixer_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:basin",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 10
+      },
+      "numismatics_cost": 160,
+      "trade_id": "librarian_basin_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:encased_fan",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "librarian_encased_fan_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:deployer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 11
+      },
+      "numismatics_cost": 45056,
+      "trade_id": "librarian_deployer_for_sun"
+    },
+    {
+      "offer": {
+        "item": "create:mechanical_crafter",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 11
+      },
+      "numismatics_cost": 5632,
+      "trade_id": "librarian_mechanical_crafter_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:mechanical_drill",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:ancient_coin",
+        "count": 2
+      },
+      "numismatics_cost": 524288,
+      "trade_id": "librarian_mechanical_drill_for_ancient_coin"
+    },
+    {
+      "offer": {
+        "item": "create:mechanical_saw",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:ancient_coin",
+        "count": 2
+      },
+      "numismatics_cost": 524288,
+      "trade_id": "librarian_mechanical_saw_for_ancient_coin"
+    },
+    {
+      "offer": {
+        "item": "create:mechanical_harvester",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:ancient_coin",
+        "count": 2
+      },
+      "numismatics_cost": 524288,
+      "trade_id": "librarian_mechanical_harvester_for_ancient_coin"
+    },
+    {
+      "offer": {
+        "item": "create:mechanical_plough",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_mechanical_plough_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:mechanical_roller",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "librarian_mechanical_roller_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:mechanical_bearing",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 5
+      },
+      "numismatics_cost": 2560,
+      "stage_required": "boiler_room_complete",
+      "unlock_description": "jei.society_trading.boiler_room_complete",
+      "trade_id": "librarian_mechanical_bearing_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:clockwork_bearing",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 12
+      },
+      "numismatics_cost": 6144,
+      "stage_required": "boiler_room_complete",
+      "unlock_description": "jei.society_trading.boiler_room_complete",
+      "trade_id": "librarian_clockwork_bearing_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:mechanical_piston",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "librarian_mechanical_piston_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:sticky_mechanical_piston",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 6
+      },
+      "numismatics_cost": 96,
+      "trade_id": "librarian_sticky_mechanical_piston_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:piston_extension_pole",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:spur",
+        "count": 11
+      },
+      "numismatics_cost": 11,
+      "trade_id": "librarian_piston_extension_pole_for_spur"
+    },
+    {
+      "offer": {
+        "item": "create:rope_pulley",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 192,
+      "trade_id": "librarian_rope_pulley_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:elevator_pulley",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 11
+      },
+      "numismatics_cost": 5632,
+      "trade_id": "librarian_elevator_pulley_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:linear_chassis",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 3
+      },
+      "numismatics_cost": 24,
+      "trade_id": "librarian_linear_chassis_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:secondary_linear_chassis",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 3
+      },
+      "numismatics_cost": 24,
+      "trade_id": "librarian_secondary_linear_chassis_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:radial_chassis",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 3
+      },
+      "numismatics_cost": 24,
+      "trade_id": "librarian_radial_chassis_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:super_glue",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 48,
+      "trade_id": "librarian_super_glue_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:cart_assembler",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "stage_required": "boiler_room_complete",
+      "unlock_description": "jei.society_trading.boiler_room_complete",
+      "trade_id": "librarian_cart_assembler_for_sun"
+    },
+    {
+      "offer": {
+        "item": "create:contraption_controls",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 13
+      },
+      "numismatics_cost": 832,
+      "trade_id": "librarian_contraption_controls_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:portable_storage_interface",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 10
+      },
+      "numismatics_cost": 160,
+      "trade_id": "librarian_portable_storage_interface_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:portable_fluid_interface",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 12
+      },
+      "numismatics_cost": 768,
+      "trade_id": "librarian_portable_fluid_interface_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:sticker",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 6
+      },
+      "numismatics_cost": 96,
+      "trade_id": "librarian_sticker_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:depot",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 5
+      },
+      "numismatics_cost": 80,
+      "trade_id": "librarian_depot_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:weighted_ejector",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 6
+      },
+      "numismatics_cost": 384,
+      "trade_id": "librarian_weighted_ejector_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:mechanical_arm",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 7
+      },
+      "numismatics_cost": 28672,
+      "trade_id": "librarian_mechanical_arm_for_sun"
+    },
+    {
+      "offer": {
+        "item": "create:item_vault",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "librarian_item_vault_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:chute",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 5
+      },
+      "numismatics_cost": 80,
+      "trade_id": "librarian_chute_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:smart_chute",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 12
+      },
+      "numismatics_cost": 6144,
+      "trade_id": "librarian_smart_chute_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:andesite_funnel",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 3
+      },
+      "numismatics_cost": 24,
+      "trade_id": "librarian_andesite_funnel_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:brass_funnel",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 5
+      },
+      "numismatics_cost": 2560,
+      "trade_id": "librarian_brass_funnel_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:andesite_tunnel",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 48,
+      "trade_id": "librarian_andesite_tunnel_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:brass_tunnel",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "librarian_brass_tunnel_for_sun"
+    },
+    {
+      "offer": {
+        "item": "create:filter",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "librarian_filter_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:attribute_filter",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "librarian_attribute_filter_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:package_filter",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "librarian_package_filter_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:packager",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 7
+      },
+      "numismatics_cost": 3584,
+      "trade_id": "librarian_packager_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:repackager",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 7
+      },
+      "numismatics_cost": 3584,
+      "trade_id": "librarian_repackager_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:package_frogport",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 4
+      },
+      "numismatics_cost": 2048,
+      "trade_id": "librarian_package_frogport_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:white_postbox",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 48,
+      "trade_id": "librarian_white_postbox_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:stock_link",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 13
+      },
+      "numismatics_cost": 832,
+      "trade_id": "librarian_stock_link_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:stock_ticker",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 3
+      },
+      "numismatics_cost": 1536,
+      "trade_id": "librarian_stock_ticker_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:redstone_requester",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 19
+      },
+      "numismatics_cost": 1216,
+      "trade_id": "librarian_redstone_requester_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:factory_gauge",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 6
+      },
+      "numismatics_cost": 3072,
+      "trade_id": "librarian_factory_gauge_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:item_hatch",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_item_hatch_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:cardboard",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "librarian_cardboard_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:fluid_pipe",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "librarian_fluid_pipe_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:mechanical_pump",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 6
+      },
+      "numismatics_cost": 96,
+      "trade_id": "librarian_mechanical_pump_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:fluid_valve",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 192,
+      "trade_id": "librarian_fluid_valve_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:smart_fluid_pipe",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 12
+      },
+      "numismatics_cost": 6144,
+      "trade_id": "librarian_smart_fluid_pipe_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:item_drain",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 11
+      },
+      "numismatics_cost": 704,
+      "trade_id": "librarian_item_drain_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:spout",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 11
+      },
+      "numismatics_cost": 704,
+      "trade_id": "librarian_spout_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:hose_pulley",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 11
+      },
+      "numismatics_cost": 704,
+      "trade_id": "librarian_hose_pulley_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:redstone_link",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "trade_id": "librarian_redstone_link_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:redstone_contact",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 128,
+      "trade_id": "librarian_redstone_contact_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:analog_lever",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 48,
+      "trade_id": "librarian_analog_lever_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:powered_latch",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "librarian_powered_latch_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:powered_toggle_latch",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 32,
+      "trade_id": "librarian_powered_toggle_latch_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:pulse_repeater",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 11
+      },
+      "numismatics_cost": 5632,
+      "trade_id": "librarian_pulse_repeater_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:pulse_extender",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 11
+      },
+      "numismatics_cost": 5632,
+      "trade_id": "librarian_pulse_extender_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:pulse_timer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 11
+      },
+      "numismatics_cost": 5632,
+      "trade_id": "librarian_pulse_timer_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:content_observer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 12
+      },
+      "numismatics_cost": 6144,
+      "trade_id": "librarian_content_observer_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:stockpile_switch",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 12
+      },
+      "numismatics_cost": 6144,
+      "trade_id": "librarian_stockpile_switch_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:display_link",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 11
+      },
+      "numismatics_cost": 5632,
+      "trade_id": "librarian_display_link_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:display_board",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 5
+      },
+      "numismatics_cost": 320,
+      "trade_id": "librarian_display_board_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:nixie_tube",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 6
+      },
+      "numismatics_cost": 384,
+      "trade_id": "librarian_nixie_tube_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:linked_controller",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 192,
+      "trade_id": "librarian_linked_controller_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:track",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 3
+      },
+      "numismatics_cost": 24,
+      "trade_id": "librarian_track_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:track_station",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "librarian_track_station_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:track_signal",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "librarian_track_signal_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:track_observer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 64,
+      "trade_id": "librarian_track_observer_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:controls",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 10
+      },
+      "numismatics_cost": 640,
+      "trade_id": "librarian_controls_for_cog"
+    },
+    {
+      "offer": {
+        "item": "create:schedule",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 5
+      },
+      "numismatics_cost": 40,
+      "trade_id": "librarian_schedule_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:goggles",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_goggles_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:schematic_table",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "librarian_schematic_table_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:schematicannon",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 3
+      },
+      "numismatics_cost": 1536,
+      "trade_id": "librarian_schematicannon_for_crown"
+    },
+    {
+      "offer": {
+        "item": "create:empty_schematic",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "librarian_empty_schematic_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "create:schematic_and_quill",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "librarian_schematic_and_quill_for_sprocket"
     }
   ]
 }

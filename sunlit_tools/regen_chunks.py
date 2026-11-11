@@ -21,8 +21,9 @@ Para cada chunk apagado tambem some a entrada em entities/ e poi/ (senao village
 antigos e pontos de trabalho fantasmas ficariam no chunk novo). Arquivo .mca que fica sem
 chunk nenhum e removido.
 
-Uso: python3 regen_chunks.py "../saves/Nosso mapa" [--dry] [--radius N] [--so-jogadores] [--baus] [--fazendas]
-                                                   [--so-forceload] [--politica-solo] [--apenas-forceload]
+Uso: python3 regen_chunks.py "Solito solamente" --so-claims [--dry]
+     (outros modos: [--radius N] [--so-jogadores] [--baus] [--fazendas] [--so-forceload]
+                    [--politica-solo] [--apenas-forceload] [--so-predio])
   --radius N       raio em chunks em volta de cada jogador/cama (padrao 5; 0 = so o chunk)
   --so-jogadores   ignora o InhabitedTime (mantem apenas os chunks dos jogadores/camas)
   --baus           mantem chunk com container do jogador: InhabitedTime >= MIN_INH_BAUS, algum BE com
@@ -31,6 +32,12 @@ Uso: python3 regen_chunks.py "../saves/Nosso mapa" [--dry] [--radius N] [--so-jo
   --politica-solo  preset = --radius 0 --so-jogadores --baus --so-forceload: keep only the player's
                    current chunk, force loaded chunks and chunks with player storage
   --apenas-forceload  mantem somente os chunks com forceload FTB (nem jogador, nem baus)
+  --so-claims      PADRAO desde 2026-11-11 (pedido do dono): mantem somente chunks com claim FTB
+                   (forceload incluso, pois exige claim) + as regras SEMPRE (animal do jogador, predio
+                   que cruza a borda). Nem jogador, nem cama, nem bau, nem InhabitedTime: abrir um bau
+                   de loot (que perde o LootTable e passa a parecer bau do jogador) nao segura mais o
+                   chunk. Implica --so-predio. Os claims nascem sozinhos ao colocar bau, cama, maquina
+                   etc. (kubejs/server_scripts/blockEvents/autoClaimChunk.js)
   --fazendas       mantem chunk com terra arada onde o jogador ficou >= 1 min (InhabitedTime)
   --so-predio      sem a area inteira do Lost Cities (8x8/7x7) em volta de cada chunk mantido: so o
                    predio que cruza a borda segue junto (regen_continuity). 2026-11-10, pedido do dono:
@@ -246,11 +253,15 @@ def main():
     apenas_forceload = '--apenas-forceload' in sys.argv
     if apenas_forceload:
         baus, fazendas, so_forceload, MIN_INHABITED = False, False, True, float('inf')
+    # --so-claims: keep only FTB claims (forceload included); casual interaction never keeps a chunk
+    so_claims = '--so-claims' in sys.argv
+    if so_claims:
+        baus, fazendas, so_forceload, MIN_INHABITED = False, False, False, float('inf')
     if '--radius' in sys.argv:
         RADIUS = int(sys.argv[sys.argv.index('--radius') + 1])
     if '--so-jogadores' in sys.argv:
         MIN_INHABITED = float('inf')
-    keep, centers = (set(), []) if apenas_forceload else keep_set(save)
+    keep, centers = (set(), []) if apenas_forceload or so_claims else keep_set(save)
     claims, loaded = claimed(save)
     reason = {c: 'player' for c in keep}
     if so_forceload:
@@ -291,7 +302,7 @@ def main():
     # any neighbour a building still crosses into (see regen_continuity.py).
     exists = {c for m in present.values() for c in m.values()}
     base = {c for c in keep if c in exists}
-    so_predio = '--so-predio' in sys.argv
+    so_predio = '--so-predio' in sys.argv or so_claims
     for c in ([] if so_predio else sorted(base)):
         for area in lc_areas(c):
             for a in area:

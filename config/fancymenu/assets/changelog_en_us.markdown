@@ -6,6 +6,7 @@
 Welcome to Pipinha's Village! This changelog summarizes what differs from the normal Sunlit Valley, by category.
 
 ### New
++ Automatic claims: placing a chest, bed, crab trap, machine or any block that works on its own claims and protects the chunk, with no limit on claimed or force loaded chunks; opening chests does not claim
 + Difficulty is always Hard, with a button next to it to turn hostile mob spawning on or off, in Options and when creating a world
 + Languages: the list only shows English (US) and Portuguese (Brazil)
 + Hands-On Delight: cook in Farmer's Delight with your own hands, right at the stations in the world instead of the menus
@@ -20,6 +21,7 @@ Welcome to Pipinha's Village! This changelog summarizes what differs from the no
 + New texture packs: Fresh Animations: Classic Horses, fairy wings on the elytra, Create Pipez and Aquaculture
 + FTB Chunks map with icons for 24 modded creatures, such as otter, red panda, duck, goose, hamster, crab and Snuffle
 + Minimap: villagers and village townsfolk show up with their face, and over 100 modded creatures without an icon now show their own face
++ The Librarian is now the Artisan: besides her storage stock, she sells every Create machine and part needed to progress (cogs, belts, chains, press, deployer, redstone link and more); power sources unlock after the Boiler Room
 + Create: crushing gravel now gives the nuggets that used to come from tuff, so the basic ore farm works with cobblestone alone (cobblestone turns into gravel in crushing wheels or a millstone)
 
 + Longer day: the daylight part goes from 10 to about 15 minutes, and the night does not change

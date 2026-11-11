@@ -360,3 +360,17 @@ Uma decisão por entrada, em ordem cronológica. As regras em vigor estão em `c
 - **Verificado**: cliente sem janela com o filtro de log desligado: antes, `EmiReloadManager.isLoaded()` ficava `false` por 10 min com o NPE; depois, `loaded=true disabled=false` e sem erro crítico.
 - **Junto**: `kubejs/client_scripts/tooltips/addPriceTooltips.js#100` dava "redeclaration of var before" (Rhino, `const` em bloco) ao mostrar tooltip com bônus sazonal; virou `let`.
 - **Build**: `JDK=/caminho/jdk17 custom-mods/sunlit_handsonfix/build.sh`, sem JDK na máquina usar o container `eclipse-temurin:17-jdk` com `docker run -d`.
+
+## 2026-11-11: Artesã vende as máquinas do Create (pedido do dono)
+- A Bibliotecária (Librarian) passou a se chamar Artesã (Artisan). Ids internos (`librarian`, `society:librarian`, trade_ids) não mudaram, para não quebrar saves, quests e diálogos.
+- Preço de cada máquina = custo dos ingredientes pela receita ativa no pack (jar do Create + overrides do KubeJS, sem as removidas) x1,35 por etapa em cascata, com base nos preços que o Ferreiro/Carpinteiro já cobram ou 2x o valor de venda da caixa de envio; arredondado para uma só moeda com erro de até 15%. Script: `sunlit_tools/artisan_shop/create_prices.py` (lista em `items.txt`).
+- Itens cuja receita usa a Kinetic Blueprint (roda d'água, grande roda d'água, rolamento de moinho, motor a vapor, rolamento mecânico, rolamento de relógio, montador de carrinho) só liberam com `boiler_room_complete`, igual à blueprint na Bruxa.
+- Broca, serra e colheitadeira mecânicas custam 2 moedas ancestrais (a receita do pack já pede moeda ancestral e netherite).
+- Fora da lista: variantes de cor, blocos decorativos, itens criativos, eixo/engrenagem revestidos (feitos aplicando casing), blaze burner cheio (precisa capturar um blaze), elevator contact (sem receita), ferramentas que outras lojas vendem (chave inglesa já estava aqui; mochila de mergulho no Pescador; caixa de ferramentas no Ferreiro).
+
+## 2026-11-11: regen só preserva claims; claim automático ao construir
+
+- **Problema**: no `--politica-solo` todo baú de loot aberto (perde o `LootTable`) contava como armazenamento do jogador e segurava o chunk para sempre (ex.: `refurbished_furniture:kitchen_drawer` de cidade em (-644,511)).
+- **Decisão**: `regen_chunks.py --so-claims` vira o padrão: só claim FTB (forceload incluso) + animais do jogador + prédio que cruza a borda (`--so-predio` implícito). Nada de jogador, cama, baú ou InhabitedTime.
+- **Claim automático**: `kubejs/server_scripts/blockEvents/autoClaimChunk.js` faz `FTBChunksAPI.api().claimAsPlayer(...)` quando um jogador real (não fake player) coloca bloco com block entity ou cama; placas e estandartes ficam de fora; abrir baú não faz claim. Mensagem na action bar (`sunlit_claims.auto_claimed`, `kubejs/assets/sunlit_claims/lang`). Teste: `sunlit_tools/js_harness/run_auto_claim.sh`.
+- **Limites**: `max_claimed_chunks` e `max_force_loaded_chunks` = 1000000000 (defaultconfigs + save solo). O FTB soma `extra_*_chunks` do time (o solo tem 999999999 de extra forceload), então o int máximo estouraria.

@@ -42,6 +42,17 @@ Apenas o save `Solito solamente` é regenerado; `Nosso mapa` não entra nessa re
   `--apenas-forceload --so-predio`: mantém só forceload + animais do jogador + o prédio que cruza a
   borda de um chunk mantido (`regen_continuity`), sem a área inteira do Lost Cities.
 
+  2026-11-11 (pedido do dono): abrir um baú de loot de casa (ele perde o `LootTable` e passa a
+  parecer baú do jogador) segurava o chunk para sempre. Padrão agora é `--so-claims`: mantém só os
+  chunks com claim do FTB Chunks (forceload incluso) + animais do jogador + o prédio que cruza a
+  borda; jogador, cama, baú e InhabitedTime não seguram nada. O claim nasce sozinho quando o
+  jogador coloca um bloco com block entity (baú, barril, fornalha, crab trap, máquina do Society,
+  peça do Create...) ou uma cama (`kubejs/server_scripts/blockEvents/autoClaimChunk.js`); placa e
+  estandarte não fazem claim, e abrir baú nunca faz. Claims e forceload sem limite
+  (`max_claimed_chunks`/`max_force_loaded_chunks` = 1000000000 em
+  `defaultconfigs/ftbchunks/ftbchunks-world.snbt` e no `serverconfig` do save solo; não usar o
+  int máximo, o FTB soma o `extra_*_chunks` do time e estoura).
+
 ### Como fazer (jogo FECHADO)
 
 1. Confirme que o Minecraft não está rodando (`logs/latest.log` terminou e não
@@ -49,8 +60,9 @@ Apenas o save `Solito solamente` é regenerado; `Nosso mapa` não entra nessa re
 2. Faça backup de cada save antes:
    `zip -qr "saves/<save> backup-antes-regen-<versao>-<data>.zip" "saves/<save>"`.
 3. Rode a partir de `saves/`, primeiro com `--dry` para conferir os números:
-   `python3 ../sunlit_tools/regen_chunks.py "<save>" --apenas-forceload --so-predio`
-   (padrão desde 2026-11-10; o `--politica-solo` antigo continua disponível)
+   `python3 ../sunlit_tools/regen_chunks.py "<save>" --so-claims`
+   (padrão desde 2026-11-11; `--apenas-forceload --so-predio` e o `--politica-solo` antigos
+   continuam disponíveis, mas o `--politica-solo` segura baú de loot aberto)
    (`--politica-solo` preserva só o chunk do jogador, os chunks force loaded do
    FTB Chunks e os chunks com armazenamento do jogador: inventário sem
    `LootTable`, InhabitedTime >= 1200, ignorando prateleiras, dispensers e

@@ -6,6 +6,7 @@
 Bem-vindo à Vila da Pipinha! Este changelog resume o que é diferente do Sunlit Valley normal, por categoria.
 
 ### Novidades
++ Claim automático: colocar baú, cama, armadilha de caranguejo, máquina ou qualquer bloco que funciona sozinho reivindica e protege o chunk, sem limite de chunks reivindicados ou carregados; abrir baús não reivindica
 + Dificuldade sempre no Difícil, com um botão ao lado dela para ligar ou desligar o nascimento de mobs hostis, nas Opções e na criação do mundo
 + Idiomas: a lista mostra só Inglês (EUA) e Português (Brasil)
 + Hands-On Delight: cozinhar no Farmer's Delight com as próprias mãos, direto nas estações do mundo em vez das telas
@@ -20,6 +21,7 @@ Bem-vindo à Vila da Pipinha! Este changelog resume o que é diferente do Sunlit
 + Novos pacotes de textura: Fresh Animations: Classic Horses, asas de fada na elytra, Create Pipez e Aquaculture
 + Mapa do FTB Chunks com ícones de 24 bichos dos mods, como lontra, panda-vermelho, pato, ganso, hamster, caranguejo e Snuffle
 + Minimapa: aldeões e moradores das vilas aparecem com o rosto, e mais de 100 criaturas de mods sem ícone ganharam o próprio rosto
++ A Bibliotecária agora é a Artesã: além do estoque de armazenamento, vende todas as máquinas e peças do Create para progredir (engrenagens, esteiras, correntes, prensa, implantador, conexão de redstone e mais); as fontes de força liberam depois da Boiler Room
 + Create: esmagar cascalho agora dá as pepitas que antes vinham do tufo, então a farm de minérios básicos funciona só com pedregulho (pedregulho vira cascalho na roda de esmagar ou no moedor)
 
 + Dia mais longo: a parte clara do dia passa de 10 para cerca de 15 minutos, e a noite não muda

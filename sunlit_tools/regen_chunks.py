@@ -21,7 +21,7 @@ Para cada chunk apagado tambem some a entrada em entities/ e poi/ (senao village
 antigos e pontos de trabalho fantasmas ficariam no chunk novo). Arquivo .mca que fica sem
 chunk nenhum e removido.
 
-Uso: python3 regen_chunks.py "Solito solamente" --so-claims [--dry]
+Uso: python3 regen_chunks.py "Solito solamente" --so-claims-estrito [--dry]
      (outros modos: [--radius N] [--so-jogadores] [--baus] [--fazendas] [--so-forceload]
                     [--politica-solo] [--apenas-forceload] [--so-predio])
   --radius N       raio em chunks em volta de cada jogador/cama (padrao 5; 0 = so o chunk)
@@ -32,7 +32,12 @@ Uso: python3 regen_chunks.py "Solito solamente" --so-claims [--dry]
   --politica-solo  preset = --radius 0 --so-jogadores --baus --so-forceload: keep only the player's
                    current chunk, force loaded chunks and chunks with player storage
   --apenas-forceload  mantem somente os chunks com forceload FTB (nem jogador, nem baus)
-  --so-claims      PADRAO desde 2026-11-11 (pedido do dono): mantem somente chunks com claim FTB
+  --so-claims-estrito  PADRAO do modo claims desde 2026-11-11 (pedido do dono): mantem SOMENTE os
+                   chunks com claim FTB (forceload incluso). Nada mais segura terreno: nem predio que
+                   cruza a borda (regen_continuity), nem area_lc, nem jogador/cama, nem animal. Os
+                   animais do jogador de chunk apagado nao seguram o terreno: region e poi somem, mas o
+                   entities/ do chunk e reescrito so com os animais (o resto das entidades some).
+  --so-claims      Mantem somente chunks com claim FTB
                    (forceload incluso, pois exige claim) + as regras SEMPRE (animal do jogador, predio
                    que cruza a borda). Nem jogador, nem cama, nem bau, nem InhabitedTime: abrir um bau
                    de loot (que perde o LootTable e passa a parecer bau do jogador) nao segura mais o
@@ -217,8 +222,54 @@ def chunks_of(raw):
             yield i, off, struct.unpack('>I', raw[off:off + 4])[0]
 
 
-def rewrite(path, raw, drop):
-    """regrava o .mca sem os indices de drop (copia byte a byte o resto)."""
+def _enc_str(s):
+    b = s.encode('utf-8')
+    return struct.pack('>H', len(b)) + b
+
+
+def _enc_payload(tid, v):
+    """Inverse of NBTReader.read_payload for the values it returns."""
+    if tid == 1: return struct.pack('>b', v)
+    if tid == 2: return struct.pack('>h', v)
+    if tid == 3: return struct.pack('>i', v)
+    if tid == 4: return struct.pack('>q', v)
+    if tid == 5: return struct.pack('>f', v)
+    if tid == 6: return struct.pack('>d', v)
+    if tid == 7: return struct.pack('>i', len(v)) + bytes(v)
+    if tid == 8: return _enc_str(v)
+    if tid == 9:
+        et, items = v
+        return bytes([et]) + struct.pack('>i', len(items)) + b''.join(_enc_payload(et, x) for x in items)
+    if tid == 10:
+        return b''.join(bytes([t]) + _enc_str(k) + _enc_payload(t, val) for k, (t, val) in v.items()) + b'\x00'
+    if tid == 11: return struct.pack('>i', len(v)) + b''.join(struct.pack('>i', x) for x in v)
+    if tid == 12: return struct.pack('>i', len(v)) + b''.join(struct.pack('>q', x) for x in v)
+    raise ValueError(f'bad tag {tid}')
+
+
+def animal_only(raw, off, ln):
+    """entities/ chunk re-encoded with only the player animals (Passengers included), or None.
+    Returns (blob, ['id@x,y,z', ...]). Everything else in the chunk (NPCs, items, ...) is dropped."""
+    if raw[off + 4] != 2:
+        return None
+    name, tid, root = NBTReader(zlib.decompress(raw[off + 5:off + 4 + ln])).read_tag()
+    keep, labels = [], []
+    for e in root.get('Entities', (9, (10, [])))[1][1]:
+        if player_animal(e):
+            keep.append(e)
+            x, y, z = (round(v) for v in e['Pos'][1][1])
+            labels.append('%s@%d,%d,%d' % (_val(e.get('id', (8, '?'))), x, y, z))
+    if not keep:
+        return None
+    root['Entities'] = (9, (10, keep))
+    comp = zlib.compress(bytes([tid]) + _enc_str(name or '') + _enc_payload(tid, root))
+    return struct.pack('>I', len(comp) + 1) + bytes([2]) + comp, labels
+
+
+def rewrite(path, raw, drop, repl=None):
+    """regrava o .mca sem os indices de drop (copia byte a byte o resto). repl: {indice: blob
+    completo (length+compression+data)} substitui o chunk daquele indice."""
+    repl = repl or {}
     header = bytearray(8192)
     header[4096:8192] = raw[4096:8192]
     body, cur, kept = bytearray(), 2, 0
@@ -226,7 +277,7 @@ def rewrite(path, raw, drop):
         if i in drop:
             struct.pack_into('>I', header, 4096 + 4 * i, 0)
             continue
-        blob = raw[off:off + 4 + ln]
+        blob = repl.get(i, raw[off:off + 4 + ln])
         nsec = (len(blob) + 4095) // 4096
         blob += b'\x00' * (nsec * 4096 - len(blob))
         struct.pack_into('>I', header, 4 * i, (cur << 8) | nsec)
@@ -254,7 +305,9 @@ def main():
     if apenas_forceload:
         baus, fazendas, so_forceload, MIN_INHABITED = False, False, True, float('inf')
     # --so-claims: keep only FTB claims (forceload included); casual interaction never keeps a chunk
-    so_claims = '--so-claims' in sys.argv
+    # --so-claims-estrito (2026-11-11): claims only; no cascade, no animal keeps terrain
+    strict = '--so-claims-estrito' in sys.argv
+    so_claims = '--so-claims' in sys.argv or strict
     if so_claims:
         baus, fazendas, so_forceload, MIN_INHABITED = False, False, False, float('inf')
     if '--radius' in sys.argv:
@@ -277,12 +330,14 @@ def main():
             continue
         rx, rz = map(int, os.path.basename(path).split('.')[1:3])
         present[path] = {}
-        pets = pet_chunks(save, os.path.basename(path))
+        pets = {} if strict else pet_chunks(save, os.path.basename(path))
         for i, off, ln in chunks_of(raw):
             cx, cz = rx * 32 + (i % 32), rz * 32 + (i // 32)
             present[path][i] = (cx, cz)
             if (cx, cz) in keep:
                 preserved[(cx, cz)] = reason.get((cx, cz), 'player')
+                continue
+            if strict:
                 continue
             if i in pets:
                 keep.add((cx, cz))
@@ -311,7 +366,7 @@ def main():
                     preserved[a] = 'area_lc:%d,%d' % c
     # A city multibuilding never leaves its 8x8 area, so an area is kept whole or not at all; the
     # building-crossing check can touch new areas, so both run until nothing changes.
-    while True:
+    while not strict:
         m = MULTI_AREA
         for c in ([] if so_predio else sorted(keep & exists)):
             mx, mz = c[0] // m * m, c[1] // m * m
@@ -324,22 +379,42 @@ def main():
             preserved[c] = 'predio_cruza:%d,%d' % src
         if not added:
             break
-    kept = dropped = 0
+    kept = dropped = animals = 0
     for path, chunks in present.items():
         drop = {i for i, c in chunks.items() if c not in keep}
         kept += len(chunks) - len(drop)
         dropped += len(drop)
+        name = os.path.basename(path)
+        ent_path = os.path.join(save, 'entities', name)
+        # strict: player animals of a deleted chunk survive in entities/ (region and poi do not)
+        animal_repl = {}
+        if strict and drop and os.path.exists(ent_path) and os.path.getsize(ent_path) >= 8192:
+            raw_e = open(ent_path, 'rb').read()
+            for i, off, ln in chunks_of(raw_e):
+                if i in drop:
+                    found = animal_only(raw_e, off, ln)
+                    if found:
+                        animal_repl[i] = found[0]
+                        for label in found[1]:
+                            animals += 1
+                            if dry:
+                                print(f'[dry] animal_mantido:{label}')
         if drop and not dry:
-            name = os.path.basename(path)
             for sub in ('region', 'entities', 'poi'):
                 p = os.path.join(save, sub, name)
                 if os.path.exists(p) and os.path.getsize(p) >= 8192:
-                    rewrite(p, open(p, 'rb').read(), drop)
+                    raw_p = open(p, 'rb').read()
+                    if sub == 'entities':
+                        rewrite(p, raw_p, drop - set(animal_repl), animal_repl)
+                    else:
+                        rewrite(p, raw_p, drop)
     if dry:
         for (cx, cz), why in sorted(preserved.items()):
             print(f'[dry] preserva chunk ({cx},{cz}) motivo={why}')
     print(('[dry] ' if dry else '') + save, f'centros(chunk)={centers}', f'claims={len(claims)}',
           f'forceloaded={len(loaded)}', f'base={len(base)}', f'preservados={kept}', f'apagados={dropped}')
+    if strict:
+        print(('[dry] ' if dry else '') + f'claims={len(claims)} apagados={dropped} animais_mantidos={animals}')
 
 
 if __name__ == '__main__':

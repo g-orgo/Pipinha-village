@@ -53,6 +53,13 @@ Apenas o save `Solito solamente` é regenerado; `Nosso mapa` não entra nessa re
   `defaultconfigs/ftbchunks/ftbchunks-world.snbt` e no `serverconfig` do save solo; não usar o
   int máximo, o FTB soma o `extra_*_chunks` do time e estoura).
 
+2026-11-11 (pedido do dono, pela terceira vez): ao pedir a regeneração, só o que está claimado
+permanece e todo o resto é apagado. Casas velhas perto da casa do jogador seguravam o terreno pela
+cascata do prédio que cruza a borda (`predio_cruza`) e pelos animais. O modo `--so-claims-estrito`
+mantém somente os chunks com claim (forceload incluso), sem cascata nem animal. Os animais do jogador
+de chunk apagado ficam no `entities/` (o chunk é reescrito só com eles, o resto das entidades some),
+mas region e poi desse chunk são apagados, então o animal não segura o terreno.
+
 ### Como fazer (jogo FECHADO)
 
 1. Confirme que o Minecraft não está rodando (`logs/latest.log` terminou e não
@@ -60,8 +67,8 @@ Apenas o save `Solito solamente` é regenerado; `Nosso mapa` não entra nessa re
 2. Faça backup de cada save antes:
    `zip -qr "saves/<save> backup-antes-regen-<versao>-<data>.zip" "saves/<save>"`.
 3. Rode a partir de `saves/`, primeiro com `--dry` para conferir os números:
-   `python3 ../sunlit_tools/regen_chunks.py "<save>" --so-claims`
-   (padrão desde 2026-11-11; `--apenas-forceload --so-predio` e o `--politica-solo` antigos
+   `python3 ../sunlit_tools/regen_chunks.py "<save>" --so-claims-estrito`
+   (padrão desde 2026-11-11; `--so-claims`, `--apenas-forceload --so-predio` e o `--politica-solo` antigos
    continuam disponíveis, mas o `--politica-solo` segura baú de loot aberto)
    (`--politica-solo` preserva só o chunk do jogador, os chunks force loaded do
    FTB Chunks e os chunks com armazenamento do jogador: inventário sem

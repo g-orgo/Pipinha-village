@@ -273,7 +273,7 @@
   "society_skills.vinicultura.grand_cru.description": "Gives a 1 in 50 chance to double the bottles from each Wine Keg, Aging Cask or Ancient Cask.",
   "society_skills.mercantil.category.title": "Mercantile",
   "society_skills.mercantil.trade_basics": "Trade Basics",
-  "society_skills.mercantil.trade_basics.description": "Every coin dropped in the shipping bin teaches you a little more about the market.\n§8Earn Mercantile experience by selling goods in a Shipping Bin, giving gifts to villagers, talking to each of them once a day and turning in bounties at the Bounty Board.",
+  "society_skills.mercantil.trade_basics.description": "Every coin dropped in the shipping bin teaches you a little more about the market.\n§8Earn Mercantile experience by selling goods in a Shipping Bin, giving gifts to villagers, talking to each of them once a day, turning in bounties at the Bounty Board and buying from villager shops (with a daily limit).",
   "society_skills.mercantil.ledger_1": "Tidy Ledger",
   "society_skills.mercantil.ledger_1.description": "Good bookkeeping keeps a merchant on their feet.",
   "society_skills.mercantil.ledger_2": "Balanced Books",

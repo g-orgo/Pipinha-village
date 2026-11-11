@@ -500,8 +500,8 @@ miners_delight:insect_stew_cup|bowl
 miners_delight:onion_soup_cup|bowl
 kaleidoscope_cookery:clay_pot_milk_tea|cup
 kaleidoscope_cookery:tomato|hand
-kaleidoscope_cookery:red_chili|bowl
-kaleidoscope_cookery:green_chili|bowl
+kaleidoscope_cookery:red_chili|hand
+kaleidoscope_cookery:green_chili|hand
 kaleidoscope_cookery:lettuce|hand
 kaleidoscope_cookery:caterpillar|hand
 kaleidoscope_cookery:fried_egg|hand

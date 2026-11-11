@@ -23,7 +23,7 @@
   "society_skills.culinaria.specialty_2.description": "O bônus depende da sua profissão:\n§6Fazendeiro§7: 10%% de chance de +1 prato da panela de cozimento.\n§6Rancheiro§7: 10%% de chance de +1 prato da panela de cozimento.\n§6Pescador§7: 10%% de chance de +1 prato da panela de cozimento.\n§6Dono de Vinícola§7: 10%% de chance de +1 prato da panela de cozimento.\n§6Cozinheiro§7: 25%% de chance de +1 prato da panela de cozimento.\n\n§8Substitui o bônus da Especialidade I.",
   "society_skills.mercantil.category.title": "Mercantil",
   "society_skills.mercantil.trade_basics": "Noções de Comércio",
-  "society_skills.mercantil.trade_basics.description": "Cada moeda que cai na caixa de envio ensina um pouco mais sobre o mercado.\n§8Ganhe experiência Mercantil vendendo itens na Caixa de Envio, dando presentes aos moradores, conversando com cada um deles uma vez por dia e entregando contratos no Quadro de Recompensas.",
+  "society_skills.mercantil.trade_basics.description": "Cada moeda que cai na caixa de envio ensina um pouco mais sobre o mercado.\n§8Ganhe experiência Mercantil vendendo itens na Caixa de Envio, dando presentes aos moradores, conversando com cada um deles uma vez por dia, entregando contratos no Quadro de Recompensas e comprando nas lojas dos moradores (com limite diário).",
   "society_skills.mercantil.ledger_1": "Livro-Caixa em Dia",
   "society_skills.mercantil.ledger_1.description": "Contas em ordem mantêm o comerciante de pé.",
   "society_skills.mercantil.ledger_2": "Balanço Fechado",

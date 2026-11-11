@@ -13,6 +13,7 @@ Bem-vindo à Vila da Pipinha! Este changelog resume o que é diferente do Sunlit
 + Animações de comer feitas para o pack: toda comida tem animação própria em primeira e terceira pessoa, mordida aos poucos até sobrar o osso ou o palito
 + Tigelas comidas de colher, pratos de garfo e potes de maionese, conserva e geleia que abrem a tampa e são tomados em goles
 + Árvores com Especialidade: os 2 pontos que faltavam foram adicionados, agora dá para pegar todas as habilidades
++ Mercantil: comprar nas lojas dos moradores também dá experiência Mercantil, com limite por dia
 + Temperatura: fornos, fogões e lareiras dos mods aquecem quando estão acesos
 + Receitas: carvão e carvão vegetal valem um pelo outro, e gelo e cubo de gelo também nas receitas de comida e bebida
 + Gengibre volta a cair da plantação

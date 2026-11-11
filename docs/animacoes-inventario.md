@@ -600,7 +600,7 @@ O Immersive Eating escolhe o modelo pelo path do item, sem o namespace, mas ante
 | `kaleidoscope_cookery:fried_spring_roll` | kaleidoscope_cookery | comida | bowl | sim | plano | sim |
 | `kaleidoscope_cookery:frost_lamb_chop` | kaleidoscope_cookery | comida | bowl | sim | plano | sim |
 | `kaleidoscope_cookery:golden_salad` | kaleidoscope_cookery | comida | bowl | sim | plano | sim |
-| `kaleidoscope_cookery:green_chili` | kaleidoscope_cookery | comida | bowl | sim | plano | sim |
+| `kaleidoscope_cookery:green_chili` | kaleidoscope_cookery | comida | hand | sim | plano | sim |
 | `kaleidoscope_cookery:hot_dry_noodles` | kaleidoscope_cookery | comida | bowl | sim | plano | sim |
 | `kaleidoscope_cookery:hui_noodle` | kaleidoscope_cookery | comida | bowl | sim | plano | sim |
 | `kaleidoscope_cookery:laba_congee` | kaleidoscope_cookery | comida | bowl | sim | plano | sim |
@@ -622,7 +622,7 @@ O Immersive Eating escolhe o modelo pelo path do item, sem o namespace, mas ante
 | `kaleidoscope_cookery:raw_lamb_chops` | kaleidoscope_cookery | comida | hand | sim | plano | sim |
 | `kaleidoscope_cookery:raw_meatball` | kaleidoscope_cookery | comida | hand | sim | plano | sim |
 | `kaleidoscope_cookery:raw_pork_belly` | kaleidoscope_cookery | comida | hand | sim | plano | sim |
-| `kaleidoscope_cookery:red_chili` | kaleidoscope_cookery | comida | bowl | sim | plano | sim |
+| `kaleidoscope_cookery:red_chili` | kaleidoscope_cookery | comida | hand | sim | plano | sim |
 | `kaleidoscope_cookery:red_mushroom_pot_soup` | kaleidoscope_cookery | comida | bowl | sim | plano | sim |
 | `kaleidoscope_cookery:sakura_fubuki` | kaleidoscope_cookery | outro | cup | não | plano | não |
 | `kaleidoscope_cookery:samsa` | kaleidoscope_cookery | comida | hand | sim | plano | sim |

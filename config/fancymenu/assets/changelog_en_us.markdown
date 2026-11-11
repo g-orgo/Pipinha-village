@@ -13,6 +13,7 @@ Welcome to Pipinha's Village! This changelog summarizes what differs from the no
 + Eating animations made for the pack: every food has its own animation in first and third person, bitten little by little until only the bone or stick is left
 + Bowls eaten with a spoon, plates with a fork, and mayonnaise, preserve and jam jars that open their lid and are drunk in sips
 + Trees with Specialties: the 2 missing points were added, so every skill can be picked now
++ Mercantile: buying from villager shops also gives Mercantile experience, with a daily limit
 + Temperature: modded furnaces, stoves and fireplaces give heat while lit
 + Recipes: coal and charcoal work for each other, and so do ice and ice cubes in food and drink recipes
 + Ginger drops from its crop again

@@ -10,7 +10,9 @@ public enum FoodPose {
 
     private static final String[] BOTTLES = {"bottle", "wine", "sake", "champagne", "vodka", "whisky", "whiskey"};
     private static final String[] PLATES = {"plate", "platter", "saucer", "small_iron_pot", "feast", "dish", "sashimi"};
-    private static final String[] BOWLS = {"bowl", "soup", "stew", "porridge", "congee", "curry", "chili", "ramen",
+    // No "chili" here: raw peppers (red_chili, green_chili) share the word, and every chili dish
+    // already gets BOWL from its bowl remainder.
+    private static final String[] BOWLS = {"bowl", "soup", "stew", "porridge", "congee", "curry", "ramen",
             "noodle", "salad", "broth", "pudding", "gruel"};
     private static final String[] SKEWERS = {"skewer", "kebab", "kabob", "popsicle", "on_a_stick", "lollipop", "candy_apple",
             "corn_dog", "_stick", "barbecue"};

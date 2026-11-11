@@ -16,6 +16,7 @@ Welcome to Pipinha's Village! This changelog summarizes what differs from the no
 + Mercantile: buying from villager shops also gives Mercantile experience, with a daily limit
 + Profession contacts: each profession gets its own contact on the Phone (Grocer for the Cook, with the produce of the season, Bait Shop, Farm Co-op, Feed Store and Vintner), and the Cook quests explain the cafe's 50% bonus and tips
 + Temperature: modded furnaces, stoves and fireplaces give heat while lit
++ Exercise: running nonstop or hanging with ParCool slowly warms you up; staying at the limit for too long makes you sweat
 + Recipes: coal and charcoal work for each other, and so do ice and ice cubes in food and drink recipes
 + Ginger drops from its crop again
 + Village houses no longer have loose wooden supports on the front

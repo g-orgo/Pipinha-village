@@ -16,6 +16,7 @@ Bem-vindo à Vila da Pipinha! Este changelog resume o que é diferente do Sunlit
 + Mercantil: comprar nas lojas dos moradores também dá experiência Mercantil, com limite por dia
 + Contatos de profissão: cada profissão ganha um contato próprio no Telefone (Grocer para o Cozinheiro, com os insumos da estação, Bait Shop, Farm Co-op, Feed Store e Vintner), e as missões do Cozinheiro explicam o bônus de 50% e as gorjetas do café
 + Temperatura: fornos, fogões e lareiras dos mods aquecem quando estão acesos
++ Exercício: correr sem parar ou ficar pendurado com o ParCool esquenta o corpo aos poucos; quem fica muito tempo no limite começa a suar
 + Receitas: carvão e carvão vegetal valem um pelo outro, e gelo e cubo de gelo também nas receitas de comida e bebida
 + Gengibre volta a cair da plantação
 + Casas das vilas sem suportes de madeira soltos na fachada

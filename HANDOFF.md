@@ -299,4 +299,4 @@ Verificacao: --check PASS; jogo sem janela (sunlit_tools/headless_client) e prev
 - Curva de XP (split-skill-xp-balance): NAO FEITO, nenhum experience.json mudou. Se mudar a Mercantil, copiar a curva para catador/experience.json.
 - Dia/noite: dia 20 min confirmado em teste headless; noite continua 10 min (relogio nao desacelera a noite). Investigar sunlitLongerDay.js; conferir mixin do sunlit_clockfix (AM/PM) no log; corrigir changelog, decisions/state/history.
 - Catador: falta linha no changelog (pt_br/en_us) e state/history; conferir logs/kubejs/server.log na proxima sessao.
-- Calor ParCool: falta state/history; conferir "parkourExerciseHeat.js loaded" no server.log.
+- Calor ParCool: FEITO 2026-11-11 (state, history, changelog; script carrega sem erro no server.log).

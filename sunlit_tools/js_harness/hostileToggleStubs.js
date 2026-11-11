@@ -31,7 +31,27 @@ var SERVER = {
   runQueue: function () { while (this.queued.length) this.queued.shift()(); },
   dayTime: 0,
   overworld: function () { return { dayTime: SERVER.dayTime }; },
+  levels: [],
+  getAllLevels: function () { var l = this.levels; return { forEach: function (f) { l.forEach(f); } }; },
 };
+
+// Mob stub for the removal of hostile mobs: category, id and the persistence checks.
+function mob(category, id, opts) {
+  opts = opts || {};
+  return {
+    type: id,
+    removed: false,
+    getType: function () { return { id: id, getCategory: function () { return enumv(category); } }; },
+    isPersistenceRequired: function () { return opts.persistent === true; },
+    requiresCustomPersistence: function () { return opts.raid === true; },
+    hasCustomName: function () { return opts.named === true; },
+    isLeashed: function () { return opts.leashed === true; },
+    discard: function () { this.removed = true; },
+  };
+}
+function mobLevel(mobs) {
+  return { getAllEntities: function () { return { forEach: function (f) { mobs.forEach(f); } }; } };
+}
 var SELECTED_PACKS = ['vanilla', 'file/Excalibur_V1.20.zip'];
 var MC = {
   level: {},
@@ -68,6 +88,7 @@ var Java = {
     if (name === 'net.minecraft.client.gui.components.Tooltip') return { create: function (c) { return { text: c }; } };
     if (name === 'net.minecraft.client.gui.components.ImageButton') return ImageButtonStub;
     if (name === 'net.minecraft.resources.ResourceLocation') return ResourceLocationStub;
+    if (name === 'net.minecraft.world.entity.EntityType') return { getKey: function (t) { return t.id; } };
     throw new Error('unexpected class: ' + name);
   },
 };

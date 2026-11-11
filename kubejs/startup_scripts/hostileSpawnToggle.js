@@ -12,6 +12,9 @@
 // spawn reasons in HOSTILE_TOGGLE_BLOCKED_TYPES (natural, chunk generation,
 // spawners, structures, patrols, reinforcements, jockeys, summons). Spawn eggs,
 // commands, buckets, dispensers, conversions and raids stay allowed.
+// Turning it on also clears the hostile mobs already in the world, like Peaceful:
+// the loaded ones at once, the ones in unloaded chunks when those chunks load.
+// Named, leashed and persistent mobs (raids included) and bosses are kept.
 //
 // The button texture follows the active resource packs: with Excalibur selected
 // it uses hostile_spawns_excalibur.png, otherwise the vanilla styled
@@ -32,6 +35,12 @@ var HOSTILE_TOGGLE_BLOCKED_TYPES = [
   "JOCKEY",
   "MOB_SUMMONED",
 ];
+var HOSTILE_TOGGLE_KEEP_TYPES = [
+  "minecraft:wither",
+  "minecraft:ender_dragon",
+  "minecraft:elder_guardian",
+  "minecraft:warden",
+];
 var HOSTILE_TOGGLE_OPTIONS_SCREEN = "net.minecraft.client.gui.screens.OptionsScreen";
 var HOSTILE_TOGGLE_CREATE_SCREEN = "net.minecraft.client.gui.screens.worldselection.CreateWorldScreen";
 var HOSTILE_TOGGLE_LOCK_BUTTON = "net.minecraft.client.gui.components.LockIconButton";
@@ -39,15 +48,45 @@ var HOSTILE_TOGGLE_DIFFICULTY = "net.minecraft.world.Difficulty";
 var HOSTILE_TOGGLE_SIZE = 20;
 var hostileToggleSpawnFailed = false;
 var hostileToggleUiFailed = false;
+var hostileToggleJoinFailed = false;
 var hostileToggleCreate = null;
 
 global.isHostileSpawnsOff = function (server) {
   return server != null && server.persistentData.getBoolean(HOSTILE_TOGGLE_KEY);
 };
 
+// A hostile mob that goes away when spawns are off: MONSTER category mob, not a boss,
+// not named, leashed or persistent (picked up items, raid members).
+function hostileToggleRemovable(entity) {
+  if (entity == null || String(entity.getType().getCategory().name()) !== "MONSTER") return false;
+  var id = String(Java.loadClass("net.minecraft.world.entity.EntityType").getKey(entity.getType()));
+  if (HOSTILE_TOGGLE_KEEP_TYPES.indexOf(id) >= 0) return false;
+  if (typeof entity.isPersistenceRequired !== "function") return false;
+  if (entity.isPersistenceRequired() || entity.requiresCustomPersistence()) return false;
+  if (entity.hasCustomName() || entity.isLeashed()) return false;
+  return true;
+}
+
+global.removeHostileMobs = function (server) {
+  var doomed = [];
+  server.getAllLevels().forEach((level) => {
+    level.getAllEntities().forEach((entity) => {
+      if (hostileToggleRemovable(entity)) doomed.push(entity);
+    });
+  });
+  doomed.forEach((entity) => entity.discard());
+  console.info("[hostileSpawnToggle] removed " + doomed.length + " hostile mobs");
+};
+
 global.setHostileSpawnsOff = function (server, off) {
   server.persistentData.putBoolean(HOSTILE_TOGGLE_KEY, off);
   console.info("[hostileSpawnToggle] hostile spawns " + (off ? "OFF" : "ON"));
+  if (!off) return;
+  try {
+    global.removeHostileMobs(server);
+  } catch (err) {
+    console.error("[hostileSpawnToggle] removing hostile mobs failed: " + err);
+  }
 };
 
 // Choice made on the create world screen, applied by the server script on the
@@ -65,6 +104,21 @@ ForgeEvents.onEvent("net.minecraftforge.event.entity.living.MobSpawnEvent$Finali
   } catch (err) {
     hostileToggleSpawnFailed = true;
     console.error("[hostileSpawnToggle] spawn check failed: " + err);
+  }
+});
+
+// Hostile mobs saved in chunks that were unloaded when spawns went off: dropped as they load.
+ForgeEvents.onEvent("net.minecraftforge.event.entity.EntityJoinLevelEvent", (e) => {
+  if (hostileToggleJoinFailed) return;
+  try {
+    if (!e.loadedFromDisk()) return;
+    var level = e.getLevel();
+    if (level.isClientSide()) return;
+    if (!global.isHostileSpawnsOff(level.getServer())) return;
+    if (hostileToggleRemovable(e.getEntity())) e.setCanceled(true);
+  } catch (err) {
+    hostileToggleJoinFailed = true;
+    console.error("[hostileSpawnToggle] loaded mob check failed: " + err);
   }
 });
 

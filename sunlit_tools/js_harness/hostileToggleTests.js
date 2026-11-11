@@ -108,3 +108,47 @@ global.pendingHostileSpawnsOff = true;
 SERVER.dayTime = 50000;
 SERVER_HANDLERS.loaded({ server: SERVER });
 check('server: old world untouched', SERVER.persistentData.getBoolean('sunlitHostileSpawnsOff') === false && global.pendingHostileSpawnsOff === "none");
+
+// Turning spawns off clears loaded hostile mobs, keeping bosses, named, leashed and persistent ones.
+var zombie = mob('MONSTER', 'minecraft:zombie');
+var creeper = mob('MONSTER', 'minecraft:creeper');
+var cow = mob('CREATURE', 'minecraft:cow');
+var named = mob('MONSTER', 'minecraft:skeleton', { named: true });
+var leashed = mob('MONSTER', 'minecraft:zombie', { leashed: true });
+var looter = mob('MONSTER', 'minecraft:zombie', { persistent: true });
+var raider = mob('MONSTER', 'minecraft:pillager', { raid: true });
+var wither = mob('MONSTER', 'minecraft:wither');
+var dragon = mob('MONSTER', 'minecraft:ender_dragon');
+SERVER.levels = [mobLevel([zombie, cow, named, leashed]), mobLevel([creeper, looter, raider, wither, dragon])];
+SERVER.persistentData.putBoolean('sunlitHostileSpawnsOff', false);
+global.setHostileSpawnsOff(SERVER, true);
+check('sweep: zombie and creeper in both levels removed', zombie.removed && creeper.removed);
+check('sweep: cow, named, leashed, persistent, raid, wither and dragon kept',
+  [cow, named, leashed, looter, raider, wither, dragon].every(function (m) { return !m.removed; }));
+var zombie2 = mob('MONSTER', 'minecraft:zombie');
+SERVER.levels = [mobLevel([zombie2])];
+global.setHostileSpawnsOff(SERVER, false);
+check('turning spawns on removes nothing', !zombie2.removed);
+
+// Mobs loaded from disk while spawns are off are dropped; fresh spawns are left to FinalizeSpawn.
+var JOIN = 'net.minecraftforge.event.entity.EntityJoinLevelEvent';
+function joinEvent(entity, fromDisk, client) {
+  var ev = {
+    cancelled: false,
+    loadedFromDisk: function () { return fromDisk; },
+    getLevel: function () { return { isClientSide: function () { return client === true; }, getServer: function () { return SERVER; } }; },
+    getEntity: function () { return entity; },
+    setCanceled: function (v) { this.cancelled = v; },
+  };
+  HANDLERS[JOIN](ev);
+  return ev.cancelled;
+}
+check('join handler registered', !!HANDLERS[JOIN]);
+check('spawns on: loaded zombie kept', joinEvent(mob('MONSTER', 'minecraft:zombie'), true) === false);
+SERVER.persistentData.putBoolean('sunlitHostileSpawnsOff', true);
+check('spawns off: loaded zombie dropped', joinEvent(mob('MONSTER', 'minecraft:zombie'), true) === true);
+check('spawns off: fresh zombie (egg/command) kept', joinEvent(mob('MONSTER', 'minecraft:zombie'), false) === false);
+check('spawns off: loaded named zombie kept', joinEvent(mob('MONSTER', 'minecraft:zombie', { named: true }), true) === false);
+check('spawns off: loaded cow kept', joinEvent(mob('CREATURE', 'minecraft:cow'), true) === false);
+check('spawns off: client side ignored', joinEvent(mob('MONSTER', 'minecraft:zombie'), true, true) === false);
+SERVER.persistentData.putBoolean('sunlitHostileSpawnsOff', false);

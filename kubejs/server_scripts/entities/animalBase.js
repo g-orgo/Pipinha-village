@@ -823,6 +823,11 @@ ItemEvents.entityInteracted((e) => {
     });
     petFirstTicks[uuid] = now;
     global.handleHusbandryBase(hand, player, item, target, level, server);
+    // Safety net: a petting click never leaves the player riding the animal.
+    server.scheduleInTicks(1, () => {
+      let vehicle = player.getVehicle();
+      if (vehicle && String(vehicle.uuid) === uuid) player.stopRiding();
+    });
     e.cancel();
     return;
   }

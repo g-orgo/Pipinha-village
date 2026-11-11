@@ -26,6 +26,20 @@ var Java = {
     if (name === 'net.minecraft.world.phys.AABB') {
       return function (x1, y1, z1, x2, y2, z2) { this.minX = x1; this.minY = y1; this.minZ = z1; this.maxX = x2; this.maxY = y2; this.maxZ = z2; };
     }
+    if (name === 'net.minecraft.nbt.CompoundTag') return function () { this.entity = null; };
+    if (name === 'net.minecraft.nbt.ListTag') {
+      return function () {
+        var items = [];
+        this.add = function (t) { items.push(t); };
+        this.size = function () { return items.length; };
+        this.getCompound = function (i) { return items[i]; };
+      };
+    }
+    if (name === 'net.minecraft.world.entity.Entity$RemovalReason') return { UNLOADED_WITH_PLAYER: 'UNLOADED_WITH_PLAYER' };
+    if (name === 'net.minecraft.world.entity.EntityType') {
+      // Rebuilds the saved stub entity (same object, flagged as restored) and runs the callback.
+      return { loadEntityRecursive: function (tag, level, fn) { var e = tag.entity; e.removed = null; e.level = level; return fn(e); } };
+    }
     throw new Error('unknown class ' + name);
   },
 };
@@ -45,11 +59,24 @@ function makeLevel(dim, entities) {
   return {
     dimension: dim,
     entities: entities || [],
+    added: [],
+    tryAddFreshEntityWithPassengers: function (e) { this.added.push(e); this.entities.push(e); return true; },
     getEntitiesWithin: function (box) {
       return this.entities.filter(function (e) {
-        return e.x >= box.minX && e.x <= box.maxX && e.y >= box.minY && e.y <= box.maxY && e.z >= box.minZ && e.z <= box.maxZ;
+        return !e.removed && e.x >= box.minX && e.x <= box.maxX && e.y >= box.minY && e.y <= box.maxY && e.z >= box.minZ && e.z <= box.maxZ;
       });
     },
+  };
+}
+
+// Player data stub: a CompoundTag with contains/getList/put/remove.
+function makeData() {
+  var v = {};
+  return {
+    contains: function (k) { return v[k] !== undefined; },
+    getList: function (k, type) { return v[k]; },
+    put: function (k, t) { v[k] = t; },
+    remove: function (k) { delete v[k]; },
   };
 }
 

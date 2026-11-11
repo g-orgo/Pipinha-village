@@ -159,14 +159,55 @@ console.info("[SOCIETY] animalAffectionPerks.js loaded");
     maybeGiveWolfArmor(target, hearts, player, server);
   };
 
-  // True when a click should pet the animal before any other interaction: a real
-  // player with an empty main hand, on a pet or husbandry animal not petted yet today.
+  // Items a pet or the pack reacts to on a click (taming, feeding, saddling, naming,
+  // leashing, dyeing, catching, pack tools). Holding one keeps its normal use.
+  const PET_USE_ITEMS = [
+    "minecraft:lead",
+    "minecraft:name_tag",
+    "minecraft:saddle",
+    "minecraft:chest",
+    "minecraft:bowl",
+    "minecraft:shears",
+    "minecraft:brush",
+    "society:magic_shears",
+    "society:milk_pail",
+    "society:mood_scanner",
+    "society:sunlit_crystal",
+    "society:miracle_potion",
+    "society:animal_cracker",
+    "society:friendship_necklace",
+    "splendid_slimes:slime_ticket",
+    "numismatics:crown",
+    "create:precision_mechanism",
+    "quark:diamond_heart",
+  ];
+  const PET_USE_TAGS = [
+    "society:animal_feed",
+    "society:plushies",
+    "minecraft:flowers",
+    "forge:tools/fishing_rods",
+  ];
+
+  const isPetUseItem = (item, target) => {
+    let id = String(item.id);
+    if (PET_USE_ITEMS.indexOf(id) !== -1) return true;
+    if (/bucket|lasso|armor|_dye$|spawn_egg/.test(id)) return true;
+    if (typeof item.hasTag === "function" && PET_USE_TAGS.some((tag) => item.hasTag(tag))) return true;
+    if (typeof target.isFood === "function" && target.isFood(item)) return true;
+    return false;
+  };
+
+  // True when a click should pet the animal before any other interaction, on a pet or
+  // husbandry animal not petted yet today, by a real player's main hand. Husbandry
+  // animals need an empty hand; pets also accept any held item that is not a pet use
+  // item, so the first click of the day never mounts a horse or toggles sitting.
   global.sunlitShouldPetFirst = (hand, player, item, target, level) => {
     if (String(hand) !== "MAIN_HAND") return false;
     if (player.isFake()) return false;
     let empty = !item || (typeof item.isEmpty === "function" ? item.isEmpty() : String(item) === "minecraft:air");
-    if (!empty) return false;
-    if (!global.checkEntityTag(target, "society:pet_animal") && !global.checkEntityTag(target, "society:husbandry_animal")) return false;
+    let pet = global.checkEntityTag(target, "society:pet_animal");
+    if (!pet && !global.checkEntityTag(target, "society:husbandry_animal")) return false;
+    if (!empty && (!pet || isPetUseItem(item, target))) return false;
     return Number(target.persistentData.getInt("ageLastPet")) !== Number(global.getDay(level));
   };
 })();

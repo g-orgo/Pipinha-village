@@ -13,7 +13,22 @@ var empty = { isEmpty: function () { return true; } };
 var held = { isEmpty: function () { return false; } };
 check('pet first: empty main hand, not petted today', global.sunlitShouldPetFirst(HAND.MAIN, PLAYER, empty, pet, {}) === true);
 check('pet first: off hand is ignored', global.sunlitShouldPetFirst(HAND.OFF, PLAYER, empty, pet, {}) === false);
-check('pet first: held item is ignored', global.sunlitShouldPetFirst(HAND.MAIN, PLAYER, held, pet, {}) === false);
+function heldItem(id, tags) {
+  return { id: id, isEmpty: function () { return false; }, hasTag: function (t) { return (tags || []).indexOf(t) !== -1; } };
+}
+check('pet first: pet with any plain held item is petted', global.sunlitShouldPetFirst(HAND.MAIN, PLAYER, heldItem('minecraft:stone'), pet, {}) === true);
+['minecraft:lead', 'minecraft:saddle', 'minecraft:name_tag', 'minecraft:diamond_horse_armor', 'minecraft:red_dye', 'minecraft:water_bucket', 'moblassos:golden_lasso', 'society:mood_scanner']
+  .forEach(function (id) { check('pet first: pet use item keeps its use (' + id + ')', global.sunlitShouldPetFirst(HAND.MAIN, PLAYER, heldItem(id), pet, {}) === false); });
+check('pet first: feed tag keeps its use', global.sunlitShouldPetFirst(HAND.MAIN, PLAYER, heldItem('x:y', ['society:animal_feed']), pet, {}) === false);
+var foodPet = makeEntity('minecraft:horse', {});
+foodPet.tags = ['society:pet_animal'];
+foodPet.isFood = function (item) { return item.id === 'minecraft:golden_carrot'; };
+check('pet first: food the pet eats keeps its use', global.sunlitShouldPetFirst(HAND.MAIN, PLAYER, heldItem('minecraft:golden_carrot'), foodPet, {}) === false);
+check('pet first: horse with a sword is petted', global.sunlitShouldPetFirst(HAND.MAIN, PLAYER, heldItem('minecraft:iron_sword'), foodPet, {}) === true);
+var cow = makeEntity('minecraft:cow', {});
+cow.tags = ['society:husbandry_animal'];
+check('pet first: husbandry animal with held item is ignored', global.sunlitShouldPetFirst(HAND.MAIN, PLAYER, heldItem('minecraft:stone'), cow, {}) === false);
+check('pet first: husbandry animal with empty hand is petted', global.sunlitShouldPetFirst(HAND.MAIN, PLAYER, empty, cow, {}) === true);
 check('pet first: fake player is ignored', global.sunlitShouldPetFirst(HAND.MAIN, { isFake: function () { return true; } }, empty, pet, {}) === false);
 var petted = makeEntity('minecraft:cat', { ageLastPet: 10 });
 petted.tags = ['society:pet_animal'];
@@ -84,7 +99,7 @@ check('null attack attribute: armor still applied', near(amountOf(noAttack, 'gen
 var SENT_MARK = SENT.length;
 function tickPlayers(list) { server.players = list; global.sunlitDogFollowTick(server); }
 function makePlayer(uuid, level, x, y, z) {
-  var p = { uuid: uuid, level: level, x: x, y: y, z: z, riding: false, alive: true };
+  var p = { uuid: uuid, level: level, x: x, y: y, z: z, riding: false, alive: true, persistentData: makeData() };
   p.isPassenger = function () { return p.riding; };
   p.isAlive = function () { return p.alive; };
   return p;
@@ -98,6 +113,11 @@ function makeDog(uuid, type, level, x, y, z, opts) {
   d.isPassenger = function () { return false; };
   d.isLeashed = function () { return opts.leashed === true; };
   d.getCommand = function () { return opts.command === undefined ? 2 : opts.command; };
+  d.save = function (tag) { tag.entity = d; return true; };
+  d.remove = function (reason) { d.removed = reason; };
+  d.moveTo = function (x2, y2, z2) { d.x = x2; d.y = y2; d.z = z2; };
+  d.getYRot = function () { return 0; };
+  d.getXRot = function () { return 0; };
   level.entities.push(d);
   return d;
 }
@@ -143,6 +163,35 @@ makeDog('D5', 'minecraft:wolf', lvA, 5, 64, 5, { owner: 'P3' });
 owner3.riding = false;
 tickPlayers([owner3]);
 check('dismount: following dog placed at the owner feet', sentFor('D5').length === 1 && sentFor('D5')[0] === 'execute in minecraft:overworld run tp D5 0 64 0');
+
+// Mount hides following dogs; dismount far away brings them back at the owner's feet.
+var owner5 = makePlayer('P5', lvA, 0, 64, 0);
+tickPlayers([owner5]);
+var d7 = makeDog('D7', 'minecraft:wolf', lvA, 3, 64, 3, { owner: 'P5' });
+var d7s = makeDog('D7s', 'minecraft:wolf', lvA, 4, 64, 4, { owner: 'P5', sit: true });
+owner5.riding = true;
+tickPlayers([owner5]);
+check('mount: following dog removed from the world', d7.removed === 'UNLOADED_WITH_PLAYER');
+check('mount: sitting dog stays', !d7s.removed);
+check('mount: dog saved in the owner data', owner5.persistentData.contains('sunlitHiddenDogs'));
+owner5.x = 10; owner5.z = 10; tickPlayers([owner5]);
+owner5.x = 20; owner5.z = 20; tickPlayers([owner5]);
+check('riding: hidden dog is not teleported', sentFor('D7').length === 0);
+owner5.x = 500; owner5.z = 500;
+tickPlayers([owner5]);
+owner5.riding = false;
+tickPlayers([owner5]);
+check('dismount: hidden dog respawned at the owner feet', !d7.removed && d7.x === 500 && d7.z === 500 && lvA.added.indexOf(d7) !== -1);
+check('dismount: owner data cleared', !owner5.persistentData.contains('sunlitHiddenDogs'));
+
+// Login with dogs left hidden (session ended mid-ride) and not riding: dogs come back.
+var owner6 = makePlayer('P6', lvB, 7, 70, 7);
+var d8 = makeDog('D8', 'minecraft:wolf', lvA, 0, 64, 0, { owner: 'P6' });
+var saved = new (Java.loadClass('net.minecraft.nbt.ListTag'))();
+var savedTag = {}; d8.save(savedTag); d8.remove('UNLOADED_WITH_PLAYER'); saved.add(savedTag);
+owner6.persistentData.put('sunlitHiddenDogs', saved);
+tickPlayers([owner6]);
+check('login: hidden dog restored in the owner level', !d8.removed && d8.level === lvB && d8.x === 7);
 
 // Dead player is skipped.
 var owner4 = makePlayer('P4', lvA, 0, 64, 0);

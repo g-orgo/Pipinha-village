@@ -74,6 +74,25 @@ ServerEvents.recipes((e) => {
       tag: "forge:tools/knives",
     },
   });
+  // Tuff cannot be made with Create alone here, so the basic ore farm
+  // (cobblestone -> gravel -> nuggets) gets the tuff nugget drops on gravel.
+  e.remove({ id: "create:crushing/tuff" });
+  e.remove({ id: "create:crushing/tuff_recycling" });
+  e.remove({ id: "create:crushing/gravel" });
+  e.custom({
+    type: "create:crushing",
+    ingredients: [{ item: "minecraft:gravel" }],
+    processingTime: 250,
+    results: [
+      { item: "minecraft:sand" },
+      { chance: 0.1, item: "minecraft:flint" },
+      { chance: 0.05, item: "minecraft:clay_ball" },
+      { chance: 0.1, item: "minecraft:gold_nugget" },
+      { chance: 0.1, item: "create:copper_nugget" },
+      { chance: 0.1, item: "create:zinc_nugget" },
+      { chance: 0.1, item: "minecraft:iron_nugget" },
+    ],
+  }).id("society:crushing/gravel");
   const spoutingRecipes = [
     { input: "create:crushed_raw_iron", output: ["minecraft:raw_iron"] },
     { input: "minecraft:raw_copper", output: ["create:crushed_raw_copper"] },

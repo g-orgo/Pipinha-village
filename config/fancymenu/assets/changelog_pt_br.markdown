@@ -20,6 +20,7 @@ Bem-vindo à Vila da Pipinha! Este changelog resume o que é diferente do Sunlit
 + Novos pacotes de textura: Fresh Animations: Classic Horses, asas de fada na elytra, Create Pipez e Aquaculture
 + Mapa do FTB Chunks com ícones de 24 bichos dos mods, como lontra, panda-vermelho, pato, ganso, hamster, caranguejo e Snuffle
 + Minimapa: aldeões e moradores das vilas aparecem com o rosto, e mais de 100 criaturas de mods sem ícone ganharam o próprio rosto
++ Create: esmagar cascalho agora dá as pepitas que antes vinham do tufo, então a farm de minérios básicos funciona só com pedregulho (pedregulho vira cascalho na roda de esmagar ou no moedor)
 
 + Dia mais longo: a parte clara do dia passa de 10 para cerca de 15 minutos, e a noite não muda
 + Quadro de Recompensas: entregar um contrato dá XP na árvore Mercantil, de 40 a 150 conforme a raridade

@@ -20,6 +20,7 @@ Welcome to Pipinha's Village! This changelog summarizes what differs from the no
 + New texture packs: Fresh Animations: Classic Horses, fairy wings on the elytra, Create Pipez and Aquaculture
 + FTB Chunks map with icons for 24 modded creatures, such as otter, red panda, duck, goose, hamster, crab and Snuffle
 + Minimap: villagers and village townsfolk show up with their face, and over 100 modded creatures without an icon now show their own face
++ Create: crushing gravel now gives the nuggets that used to come from tuff, so the basic ore farm works with cobblestone alone (cobblestone turns into gravel in crushing wheels or a millstone)
 
 + Longer day: the daylight part goes from 10 to about 15 minutes, and the night does not change
 + Bounty Board: turning in a bounty gives Mercantile tree XP, from 40 to 150 depending on rarity

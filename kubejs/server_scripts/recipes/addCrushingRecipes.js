@@ -87,10 +87,10 @@ ServerEvents.recipes((e) => {
       { item: "minecraft:sand" },
       { chance: 0.1, item: "minecraft:flint" },
       { chance: 0.05, item: "minecraft:clay_ball" },
-      { chance: 0.1, item: "minecraft:gold_nugget" },
-      { chance: 0.1, item: "create:copper_nugget" },
-      { chance: 0.1, item: "create:zinc_nugget" },
-      { chance: 0.1, item: "minecraft:iron_nugget" },
+      { chance: 0.1, item: "minecraft:gold_nugget", nbt: "{SunlitArtificial:1b}" },
+      { chance: 0.1, item: "create:copper_nugget", nbt: "{SunlitArtificial:1b}" },
+      { chance: 0.1, item: "create:zinc_nugget", nbt: "{SunlitArtificial:1b}" },
+      { chance: 0.1, item: "minecraft:iron_nugget", nbt: "{SunlitArtificial:1b}" },
     ],
   }).id("society:crushing/gravel");
   const spoutingRecipes = [

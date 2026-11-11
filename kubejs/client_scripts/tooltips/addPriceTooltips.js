@@ -212,16 +212,25 @@ global.addPriceTooltip = (tooltip, sellable, attribute) => {
           Text.translatable("key.keyboard.shift").gray()
         ).darkGray(),
       ]);
+      let nextLine = 2;
       if (seasonal > 1) {
-        text.add(2, [
+        text.add(nextLine, [
           getSeasonalBonusText(
             seasonal,
             seasonalBonusCoins(adjustedValue, seasonal, quality, false, item.id)
           ),
         ]);
+        nextLine++;
+      }
+      // Gravel nuggets and their crafted metal carry SunlitArtificial: sell value is cut by 30%
+      if (item.nbt && item.nbt.SunlitArtificial) {
+        text.add(nextLine, [
+          Text.translatable("item.society.artificial_penalty").red(),
+        ]);
+        nextLine++;
       }
       const subprocess = getSubprocessBonusText(item.id);
-      if (subprocess) text.add(seasonal > 1 ? 3 : 2, [subprocess]);
+      if (subprocess) text.add(nextLine, [subprocess]);
     }
   });
 };

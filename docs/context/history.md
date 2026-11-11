@@ -94,3 +94,4 @@
 - 2026-11-11: carinho primeiro em pets vale com item comum na mão (cavalo não monta no primeiro clique do dia; rede de segurança desmonta se montar) e cães em modo seguir somem ao montar e reaparecem aos pés do dono ao desmontar (`entities/animalAffectionPerks.js`, `entities/animalBase.js`, `entities/dogFollowOwner.js`; harness `run_affection_perks.sh` 51 OK).
 - 2026-11-11: arrasto vanilla (direito 1 por célula, esquerdo divide igual) no grid da cena do terminal de crafting do Tom's (`TerminalStation` do addon sunlit_cinematic_toms; build Docker ok).
 - 2026-11-11: toggle de mobs hostis remove os hostis já carregados e os que voltam do disco (`startup_scripts/hostileSpawnToggle.js`; harness 42 OK).
+- 2026-11-11: incentivos do mineiro para farms do Create (preços dos metais processados, XP na venda, habilidade Minerador Industrial +25%) e pepitas de cascalho marcadas como artificiais com -30% na venda (validator PASS).

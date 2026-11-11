@@ -125,6 +125,8 @@
   "society_skills.mining.melee_damage": "+2 Melee Damage",
   "society_skills.mining.gem_seller": "Gem Seller",
   "society_skills.mining.gem_seller.description": "🎣 Geologist products worth 25%% more.",
+  "society_skills.mining.industrial_miner": "Industrial Miner",
+  "society_skills.mining.industrial_miner.description": "Create-processed ores (crushed ores, nuggets, ingots and blocks of iron, gold, copper and zinc) sell for +25%%.",
   "society_skills.mining.furniture_archaeologist": "Furniture Archaeologist",
   "society_skills.mining.furniture_archaeologist.description": "Chance to find §6Furniture Boxes§7 when mining ore.",
   "society_skills.mining.excavator": "Excavator",

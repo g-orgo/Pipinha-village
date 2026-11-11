@@ -107,6 +107,31 @@
       }
     ]
   },
+  "industrial_miner": {
+    "title": {"translate": "society_skills.mining.industrial_miner"},
+    "description": {"translate": "society_skills.mining.industrial_miner.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "create:crushed_raw_iron"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s industrial_miner",
+          "lock_command": "kubejs stages remove @s industrial_miner"
+        }
+      }
+    ]
+  },
   "excavator": {
     "title": {"translate": "society_skills.mining.excavator"},
     "description": {"translate": "society_skills.mining.excavator.description"},

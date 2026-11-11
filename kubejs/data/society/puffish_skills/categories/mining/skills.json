@@ -142,5 +142,11 @@
     "x": -32,
     "y": 96,
     "root": false
+  },
+  "ind7m3rk0q2vz8lw": {
+    "definition": "industrial_miner",
+    "x": -96,
+    "y": 160,
+    "root": false
   }
 }

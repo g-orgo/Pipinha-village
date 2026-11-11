@@ -300,3 +300,11 @@ Verificacao: --check PASS; jogo sem janela (sunlit_tools/headless_client) e prev
 - Dia/noite: dia 20 min confirmado em teste headless; noite continua 10 min (relogio nao desacelera a noite). Investigar sunlitLongerDay.js; conferir mixin do sunlit_clockfix (AM/PM) no log; corrigir changelog, decisions/state/history.
 - Catador: falta linha no changelog (pt_br/en_us) e state/history; conferir logs/kubejs/server.log na proxima sessao.
 - Calor ParCool: FEITO 2026-11-11 (state, history, changelog; script carrega sem erro no server.log).
+
+## 2026-11-11: incentivos do mineiro para farms de minério do Create (em andamento)
+Decisões do dono: (1) preço de venda para triturados, lingotes, pepitas e blocos de ferro/ouro/cobre/zinco;
+(2) XP de mineração ao vender esses itens; (3) nova habilidade "Minerador Industrial" (+25% na venda deles);
+(4) "moagem com bônus" por jogador NÃO é viável (máquinas do Create não têm dono), reportar ao dono;
+(5) penalidade -30% no valor de venda dos itens vindos das pepitas da moagem de cascalho, marca NBT
+`SunlitArtificial:1b` + tooltip, herdada em pepita<->lingote<->bloco por receitas `_manual_only` com modifyResult.
+Status: FEITO (validator PASS). Pendente só teste no jogo; moagem com bônus inviável.

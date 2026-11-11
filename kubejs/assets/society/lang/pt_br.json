@@ -1031,6 +1031,7 @@
   "item.society.the_quality_of_the_earth.price_modifier": "Impulsionado por Qualidade da Terra",
   "item.society.seasonal_bonus": "Colheita sazonal: %s moedas (+%s%%)",
   "item.society.seasonal_bonus_only": "Colheita sazonal: +%s%%",
+  "item.society.artificial_penalty": "Artificial: -30%%",
   "item.society.subprocess_bonus": "Subprocessos: %s moedas (+%s%%)",
   "item.society.frogs_bounty_bazaar.description": "Tickets de prêmio rendem o dobro",
   "item.society.bullfish_jobs.description": "Qualidade dos peixes do Lago de Peixes escala com a população",

@@ -790,6 +790,7 @@
   "item.society.the_quality_of_the_earth.price_modifier": "Boosted by The Quality of the Earth",
   "item.society.seasonal_bonus": "Seasonal crop: %s coins (+%s%%)",
   "item.society.seasonal_bonus_only": "Seasonal crop: +%s%%",
+  "item.society.artificial_penalty": "Artificial: -30%%",
   "item.society.subprocess_bonus": "Sub-processes: %s coins (+%s%%)",
   "item.society.frogs_bounty_bazaar.description": "Prize Tickets give double the prizes.",
   "item.society.bullfish_jobs.description": "The quality of fish taken out of Fish Ponds scales with population.",

@@ -173,6 +173,29 @@ global.getAttributeMultiplier = (attributes, multiplier) => {
   );
 };
 
+// Sunlit "artificial" mark: NBT SunlitArtificial:1b. Marked stacks sell for 70% of the stack total.
+global.isSunlitArtificial = (nbt) => {
+  if (!nbt) return false;
+  return nbt.contains("SunlitArtificial") && nbt.getByte("SunlitArtificial") === 1;
+};
+
+// Stack total: the penalty applies to the total (count included), not per item.
+global.createStackSaleValue = (itemValue, count, attributeMultiplier, nbt) => {
+  const total = itemValue * count * attributeMultiplier;
+  return global.isSunlitArtificial(nbt) ? Math.round(total * 0.7) : Math.round(total);
+};
+
+// industrial_miner stage: +25% per item on the Create metals (global.createMetalItems).
+global.createMetalStageValue = (itemValue, itemId, stages) => {
+  if (
+    stages.toString().includes("industrial_miner") &&
+    (global.createMetalItems || []).includes(String(itemId))
+  ) {
+    return Math.round(itemValue * 1.25);
+  }
+  return itemValue;
+};
+
 global.processShippingBinInventory = (
   inventory,
   inventorySlots,
@@ -184,6 +207,8 @@ global.processShippingBinInventory = (
   let calculatedValue = 0;
   let itemValue = 0;
   let removedItems = [];
+  // Coins from Create metals in this bin, read by processValueOutput for the mining XP
+  global.lastCreateMetalSaleValue = 0;
   // Season of the last bin that was cached (see cacheShippingBin); undefined means no seasonal bonus
   const binSeason = global.shippingBinLevel ? global.getSeasonFromLevel(global.shippingBinLevel) : undefined;
   let slotItem;
@@ -245,6 +270,7 @@ global.processShippingBinInventory = (
       ) {
         itemValue *= 2;
       }
+      itemValue = global.createMetalStageValue(itemValue, slotItem.id, stages);
       if (isLongwing) {
         let size = 1.0;
         if (slotNbt.nbt) {
@@ -258,10 +284,11 @@ global.processShippingBinInventory = (
           itemValue += Math.round((size / 0.01) * 4)
         }
       }
-      let additionalValue = Math.round(
-        itemValue *
-        inventory.getStackInSlot(i).count *
-        global.getAttributeMultiplier(attributes, trade.multiplier)
+      let additionalValue = global.createStackSaleValue(
+        itemValue,
+        inventory.getStackInSlot(i).count,
+        global.getAttributeMultiplier(attributes, trade.multiplier),
+        slotNbt
       );
       if (isNaN(additionalValue)) {
         console.log("SHIPPING BIN VALUE IS NAN! DEBUG LOG:")
@@ -271,6 +298,9 @@ global.processShippingBinInventory = (
         calculatedValue += itemValue * inventory.getStackInSlot(i).count
       } else {
         calculatedValue += additionalValue
+        if ((global.createMetalItems || []).includes(String(slotItem.id))) {
+          global.lastCreateMetalSaleValue += additionalValue;
+        }
       }
 
     }
@@ -392,6 +422,14 @@ global.processValueOutput = (
       extenalOutput ? global.coinMap : basicCoinMap
     );
 
+    // Create metals sold here grant mining XP: 1 XP per 5 coins of metal actually paid out (once per bin run)
+    let createMetalCoins = Math.min(global.lastCreateMetalSaleValue || 0, value);
+    global.lastCreateMetalSaleValue = 0;
+    let createMetalXp = Math.floor(createMetalCoins / 5);
+    if (createMetalXp > 0 && player) {
+      global.giveExperience(server, player, "mining", createMetalXp);
+    }
+
     if (!outputs) outputs = [];
 
     if (debugValueProcess) {
@@ -509,7 +547,8 @@ global.cacheShippingBin = (entity) => {
     "phenomenology_of_treasure",
     "brine_and_punishment",
     "the_quality_of_the_earth",
-    "the_metamorphosize"
+    "the_metamorphosize",
+    "industrial_miner"
   ];
   let binPlayer;
   level.getServer().players.forEach((p) => {

@@ -143,3 +143,12 @@ Data da regra: 2026-10-03
 - Toda mudança no pack (quests, itens, textos, lojas, receitas, estruturas, telas) tem que parecer conteúdo original do modpack Society: Sunlit Valley.
 - Mesmo estilo de texto e tom, mesmos ícones, mesmo layout e espaçamento das quests, mesma formatação de cores e títulos.
 - Antes de criar algo novo, copiar o padrão de um item equivalente que já existe no pack.
+
+# REGRA OBRIGATÓRIA: HARMONIZAÇÃO ENTRE MODS (2026-11-11, pedido do dono)
+
+- Todos os mods devem parecer partes de um único mod: itens equivalentes de mods
+  diferentes entram nas mesmas receitas, tags e lojas, sem duplicatas soltas.
+- Insumos coerentes com a vida real: carne de pato/ganso entra onde entra frango;
+  tags genéricas (ex.: "qualquer carne") só onde a receita real aceita qualquer carne.
+- Todo insumo novo (de mod ou do pack) precisa de uso prático: se não tem receita,
+  entra nas receitas do equivalente mais próximo.

@@ -19,7 +19,7 @@ Welcome to Pipinha's Village! This changelog summarizes what differs from the no
 + The trash slot shows up in the inventory again
 + New texture packs: Fresh Animations: Classic Horses, fairy wings on the elytra, Create Pipez and Aquaculture
 + FTB Chunks map with icons for 24 modded creatures, such as otter, red panda, duck, goose, hamster, crab and Snuffle
-+ Minimap: villagers and village townsfolk show up with their face, and modded animals without an icon now show their own face
++ Minimap: villagers and village townsfolk show up with their face, and over 100 modded creatures without an icon now show their own face
 
 + Longer day: the daylight part goes from 10 to about 15 minutes, and the night does not change
 + Bounty Board: turning in a bounty gives Mercantile tree XP, from 40 to 150 depending on rarity

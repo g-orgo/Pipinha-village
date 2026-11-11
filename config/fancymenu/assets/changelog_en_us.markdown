@@ -41,6 +41,9 @@ Welcome to Pipinha's Village! This changelog summarizes what differs from the no
 + Seed Maker: turning a crop into seeds no longer gives a profit when selling
 + Pets: the first empty-hand click of the day pets the animal instead of the usual action (riding, sitting) and shows its name and hearts; from 5 hearts affection gives bonuses that grow up to 10: horses run faster and jump higher, dogs and bears deal and withstand more damage, ferrets and axolotls fight better, cats, owls, hamsters, hedgehogs and allays get quicker; wolves at 10 hearts earn Wolf Armor; dogs in follow mode appear at your feet after a teleport (waystone, Via Romana, pearl, portal) or when you get off your horse
 + Cook: the first time you prepare each dish you earn its sell value in coins and Cooking experience, once per dish
++ Taller terrain: Lithosphere gives the world much taller mountains
++ Third-person animations with Punchy Moves: character posture, shoulder camera, expressions and emotes (replaces Not Enough Animations)
++ 3D inventory and container screens with Spatial GUI, drawn as a plane in space
 
 ### Professions and skills
 + Professions: Farmer, Rancher, Fisher, Winemaker and Cook, picked by signing a contract in the Professions chapter

@@ -398,3 +398,10 @@ Uma decisão por entrada, em ordem cronológica. As regras em vigor estão em `c
 - `replaceInput` do KubeJS 6 só é chamado quando a receita cita o item exato, porque ele também troca tags largas que contêm o item (`forge:raw_meat`).
 - Perna de caranguejo: `crabbersdelight:crab_legs` (sai do caranguejo cozido) e as do Quark valem nos pratos de caranguejo do Quark Delight (`sunlit:compat/crab_leg`).
 - Perna de aranha e artrópode continuam nas receitas próprias do Miner's Delight (tag `miners_delight:raw_insect_meat`).
+
+## 2026-11-11: Lithosphere, Punchy Moves e Spatial GUI; regen manda o jogador para a cama
+
+- Lithosphere (terreno em estilo datapack, de Jayzet) sobe a overworld para 576 blocos (`min_y` -64, altura lógica 512). Chunks já gerados mantêm o terreno antigo; os heightmaps são recalculados (aviso "Ignoring heightmap data" no log é esperado).
+- Primeiro login depois de um regen gera o entorno com o terreno novo, o que pode demorar; o regen agora termina mandando cada jogador para a cama (`sunlit_tools/send_to_bed.py`, também roda sozinho), para o jogador acordar dentro de chunks mantidos.
+- Punchy Moves entra no lugar da Not Enough Animations, que foi desativada pelo dono (animação em terceira pessoa duplicada).
+- Spatial GUI é só cliente: inventário e telas de contêiner viram um plano 3D.

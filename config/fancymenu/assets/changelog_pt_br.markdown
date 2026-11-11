@@ -41,6 +41,9 @@ Bem-vindo à Vila da Pipinha! Este changelog resume o que é diferente do Sunlit
 + Seed Maker: transformar colheita em semente não dá mais lucro na venda
 + Pets: o primeiro clique de mão vazia do dia faz carinho em vez da ação normal (montar, sentar) e mostra nome e corações; a partir de 5 corações a afinidade dá bônus que crescem até 10: cavalos correm mais e pulam mais alto, cães e ursos causam e aguentam mais dano, furões e axolotes lutam melhor, gatos, corujas, hamsters, ouriços e allays ficam mais ágeis; lobos com 10 corações ganham Armadura de Lobo; cães em modo seguir aparecem aos seus pés depois de um teleporte (waystone, Via Romana, pérola, portal) ou ao descer do cavalo
 + Cozinheiro: o primeiro preparo de cada prato rende o valor de venda dele em moedas e experiência em Culinária, uma vez por prato
++ Terreno mais alto: o Lithosphere deixa o mundo com montanhas bem mais altas
++ Animações em terceira pessoa com Punchy Moves: postura do personagem, câmera de ombro, expressões e emotes (substitui a Not Enough Animations)
++ Inventário e telas de baús em 3D com Spatial GUI, desenhados como um plano no espaço
 
 ### Profissões e habilidades
 + Profissões: Fazendeiro, Rancheiro, Pescador, Dono de Vinícola e Cozinheiro, escolhidas por contrato no capítulo Profissões

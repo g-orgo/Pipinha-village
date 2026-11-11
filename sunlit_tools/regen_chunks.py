@@ -52,6 +52,7 @@ import sys, os, glob, gzip, json, re, struct, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from nbtmini import NBTReader
 from regen_continuity import grow
+from send_to_bed import send_to_bed
 
 RADIUS = 5
 MIN_INHABITED = 12000  # ticks = 10 min
@@ -415,6 +416,8 @@ def main():
           f'forceloaded={len(loaded)}', f'base={len(base)}', f'preservados={kept}', f'apagados={dropped}')
     if strict:
         print(('[dry] ' if dry else '') + f'claims={len(claims)} apagados={dropped} animais_mantidos={animals}')
+    # Every mode (2026-11-11, owner's request): players wake up in their bed, inside kept terrain
+    send_to_bed(save, dry)
 
 
 if __name__ == '__main__':

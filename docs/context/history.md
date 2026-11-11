@@ -95,3 +95,4 @@
 - 2026-11-11: arrasto vanilla (direito 1 por célula, esquerdo divide igual) no grid da cena do terminal de crafting do Tom's (`TerminalStation` do addon sunlit_cinematic_toms; build Docker ok).
 - 2026-11-11: toggle de mobs hostis remove os hostis já carregados e os que voltam do disco (`startup_scripts/hostileSpawnToggle.js`; harness 42 OK).
 - 2026-11-11: incentivos do mineiro para farms do Create (preços dos metais processados, XP na venda, habilidade Minerador Industrial +25%) e pepitas de cascalho marcadas como artificiais com -30% na venda (validator PASS).
+- 2026-11-11: mods Lithosphere, Punchy Moves e Spatial GUI adicionados e NEA desativada (documentado em `conventions.md#mods-desativados`); regen manda os jogadores para a cama via `send_to_bed.py`.

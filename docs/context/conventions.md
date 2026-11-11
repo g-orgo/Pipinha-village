@@ -79,6 +79,9 @@ mas region e poi desse chunk são apagados, então o animal não segura o terren
    de longe.
 5. Informe no chat quantos chunks foram preservados/apagados em cada save e
    onde ficaram os backups.
+6. O regen termina mandando cada jogador para a cama dele com `sunlit_tools/send_to_bed.py`
+   (também roda sozinho: `python3 sunlit_tools/send_to_bed.py "Solito solamente" [--dry]`);
+   quem não tem cama fica onde está.
 
 Se o usuário pedir para preservar mais (ex.: uma base sem claim), use
 `--radius N` ou rode sem `--so-jogadores` (mantém chunks com 10+ minutos de
@@ -341,7 +344,7 @@ Farmer's Delight, `rich_soil_farmland` (REMOVIDO) e sementes/loot bloqueados em
   `isEnabled: false` em `minecraftinstance.json` (padrão do CurseForge). Não
   reativar nem atualizar esses mods sem pedido do dono. No `Modpack.zip` vai o
   `.jar.disabled` no lugar do `.jar`.
-- Lista atual (2026-10-24):
+- Lista atual (2026-11-11):
   - `vminus-3.1.2-forge-1.20.1.jar.disabled` (V-Minus). Motivo: a flag
     `hasExecuted` do `LevelLoadEventHandler` é zerada a cada unload de
     dimensão, e o mod chama `server.reloadResources` uma vez por dimensão ao
@@ -356,6 +359,7 @@ Farmer's Delight, `rich_soil_farmland` (REMOVIDO) e sementes/loot bloqueados em
   - `xaeroworldmap-forge-1.20.1-1.46.0.jar.disabled`: um mapa só (FTB Chunks).
   - `ConstructionSticks-1.20.1-1.2.7.jar.disabled`: Construction Wand + FTB Ultimine já cobrem.
   - `animal_pen-forge-1.20-2.4.3.jar.disabled`: desativado pelo dono em 2026-10.
+  - `notenoughanimations-forge-1.12.6-mc1.20.1.jar.disabled` (Not Enough Animations): substituído pelo Punchy Moves (animação em terceira pessoa), desativado pelo dono em 2026-11-11.
 - Ao adicionar mods novos, conferir que nenhum exige `vminus` como dependência
   obrigatória (`META-INF/mods.toml`, `mandatory=true`).
 

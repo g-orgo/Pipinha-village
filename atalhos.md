@@ -1,6 +1,6 @@
 # Backup das configurações (atalhos + resourcepacks + vídeo/geral)
 
-> Padrão definido pelo dono em 2026-10-26. Gerado em 2026-11-09 a partir de
+> Padrão definido pelo dono em 2026-10-26. Gerado em 2026-11-11 a partir de
 > `sunlit_tools/options_canonical.txt` por `sunlit_tools/restore_options.py --md`.
 > Quando o options.txt for resetado por erro, restaurar com `restore_options.py --apply`
 > (jogo fechado). Para mudar o padrão: ajustar no jogo, fechar e rodar `--save` e `--md`.
@@ -21,7 +21,7 @@
 - chatVisibility: `0`
 - mouseSensitivity: `0.3204225352112676`
 
-## Resource packs (41, base em cima, topo embaixo)
+## Resource packs (42, base em cima, topo embaixo)
 
 1. `vanilla`
 2. `mod_resources`
@@ -64,8 +64,9 @@
 39. `file/Lopy-Create-Pipez.zip`
 40. `file/updated_aquaculture-1.1.zip`
 41. `file/FA+Classic_Horses-v1.5.zip`
+42. `vanillabackport:freshly_animated`
 
-## key (162 ativos, 77 sem tecla)
+## key (167 ativos, 81 sem tecla)
 
 - attack: **Botão esq. mouse**
 - use: **Botão dir. mouse**
@@ -102,7 +103,6 @@
 - replaymod playeroverview: **b**
 - replaymod lighting: **z**
 - replaymod quickmode: **q**
-- replaymod marker: **m**
 - replaymod thumbnail: **n**
 - replaymod playpause: **p**
 - replaymod rollclockwise: **l**
@@ -145,8 +145,8 @@
 - sophisticatedcore transfer to storage: **left.bracket**
 - sophisticatedcore transfer to inventory: **right.bracket**
 - sophisticatedbackpacks open backpack: **b**
-- sophisticatedbackpacks toggle upgrade 1: **z + Alt**
 - sophisticatedbackpacks toggle upgrade 2: **x + Alt**
+- sophisticatedbackpacks toggle upgrade 1: **z + Alt**
 - carry desc: **Shift esq.**
 - refinedstorage clearGridCraftingMatrix: **x + Control**
 - moreoverlays lightoverlay desc: **f7**
@@ -157,29 +157,29 @@
 - betteradvancedtooltips view tags: **Shift esq.**
 - betteradvancedtooltips view nbt: **Alt esq.**
 - cycleLeft: **g**
-- jei nextRecipePage: **PageDown**
-- jei previousSearch: **Seta cima**
-- jei cheatItemStack2: **Botão meio mouse**
-- jei toggleCheatModeConfigButton: **Botão esq. mouse + Control**
-- jei focusSearch: **f + Control**
-- jei bookmark: **a**
-- jei previousCategory: **PageUp + Shift**
-- jei toggleWildcardHideIngredient: **Botão dir. mouse + Control**
-- jei recipeBack: **Backspace**
-- jei nextCategory: **PageDown + Shift**
-- jei cheatOneItem2: **Botão dir. mouse**
-- jei clearSearchBar: **Botão dir. mouse**
-- jei maxTransferRecipeBookmark: **Botão esq. mouse + Control**
-- jei toggleOverlay: **o + Control**
-- jei transferRecipeBookmark: **Botão esq. mouse + Shift**
-- jei nextSearch: **Seta baixo**
-- jei showUses: **u**
-- jei cheatItemStack: **Botão esq. mouse + Shift**
 - jei previousRecipePage: **PageUp**
+- jei cheatOneItem2: **Botão dir. mouse**
+- jei cheatItemStack: **Botão esq. mouse + Shift**
 - jei cheatOneItem: **Botão esq. mouse**
 - jei showRecipe: **r**
-- jei toggleHideIngredient: **Botão esq. mouse + Control**
+- jei previousSearch: **Seta cima**
+- jei nextRecipePage: **PageDown**
+- jei showUses: **u**
+- jei recipeBack: **Backspace**
+- jei nextCategory: **PageDown + Shift**
+- jei toggleCheatModeConfigButton: **Botão esq. mouse + Control**
+- jei maxTransferRecipeBookmark: **Botão esq. mouse + Control**
+- jei clearSearchBar: **Botão dir. mouse**
+- jei nextSearch: **Seta baixo**
+- jei toggleWildcardHideIngredient: **Botão dir. mouse + Control**
 - jei closeRecipeGui: **Esc**
+- jei transferRecipeBookmark: **Botão esq. mouse + Shift**
+- jei previousCategory: **PageUp + Shift**
+- jei bookmark: **a**
+- jei toggleOverlay: **o + Control**
+- jei focusSearch: **f + Control**
+- jei cheatItemStack2: **Botão meio mouse**
+- jei toggleHideIngredient: **Botão esq. mouse + Control**
 - extend: **Seta cima**
 - retract: **Seta baixo**
 - plonk place: **r**
@@ -192,6 +192,8 @@
 - legendarysurvivaloverhaul added desc: **Shift esq.**
 - legendarysurvivaloverhaul body health: **h**
 - curios open desc: **Tab**
+- spatial-gui toggle mouse free: **Alt esq.**
+- spatial-gui open profile picker: **Acento grave**
 - ftbultimine: **Acento grave**
 - findme search: **y**
 - findme pull one: **keypad.0**
@@ -227,10 +229,14 @@
 - paraglider paragliderSettings: **p + Control**
 - ponder ponder: **w**
 - refinedstorageaddons openWirelessCraftingGrid: **g + Control**
+- punchy moves camera toggle v: **v**
+- punchy moves camera editor: **f7**
+- punchy moves free camera: **b**
+- punchy moves emote menu: **c**
 - punchy triggerable punchy sword inspect old: **j**
 - punchy triggerable punchy sword inspect rework: **g**
 
-Sem tecla: `playerlist`, `socialInteractions`, `smoothCamera`, `spectatorOutlines`, `saveToolbarActivator`, `loadToolbarActivator`, `modernfix config`, `replaymod settings`, `replaymod positiononlykeyframe`, `replaymod bothkeyframes`, `exposure camera controls`, `botania corporea request`, `togglecleanview`, `shouldersurfing toggle third person front`, `shouldersurfing toggle third person back`, `shouldersurfing toggle camera coupling`, `shouldersurfing toggle x offset presets`, `shouldersurfing toggle y offset presets`, `shouldersurfing toggle z offset presets`, `open muffler gui`, `craftingtweaks rotate`, `craftingtweaks rotate counter clockwise`, `craftingtweaks balance`, `craftingtweaks spread`, `craftingtweaks clear`, `craftingtweaks force clear`, `craftingtweaks compress stack`, `craftingtweaks decompress one`, `craftingtweaks decompress stack`, `craftingtweaks decompress all`, `craftingtweaks refill last`, `craftingtweaks refill last stack`, `craftingtweaks transfer stack`, `trashslot toggle lock`, `sophisticatedbackpacks inventory interaction`, `sophisticatedbackpacks tool swap`, `sophisticatedbackpacks toggle upgrade 5`, `sophisticatedbackpacks toggle upgrade 4`, `sophisticatedbackpacks toggle upgrade 3`, `refinedstorage focusSearchBar`, `refinedstorage openWirelessGrid`, `refinedstorage openWirelessFluidGrid`, `refinedstorage openWirelessCraftingMonitor`, `refinedstorage openPortableGrid`, `buildinggadgets2 anchor`, `buildinggadgets2 range`, `toggleVisualItemContents`, `toggleSelectedItemTooltips`, `toggleCarriedItemTooltips`, `cycleRight`, `jei copy recipe id`, `jei toggleEditMode`, `jei previousPage`, `jei toggleCheatMode`, `jei toggleBookmarkOverlay`, `jei showUses2`, `jei nextPage`, `jei showRecipe2`, `solonion open food book`, `ok zoomer decrease zoom`, `ok zoomer increase zoom`, `ok zoomer reset zoom`, `ftbteams open gui`, `ftbchunks toggle minimap`, `ftbchunks claim manager`, `golemoverhaul netherite golem summon`, `ftbquests quests`, `smallships ship sail`, `toolbelt open`, `toolbelt cycle left`, `toolbelt cycle right`, `parcool Dodge`, `parcool QuickTurn`, `parcool Flipping`, `pickup item`, `createrailwaysnavigator route overlay options`, `observable profile`
+Sem tecla: `playerlist`, `socialInteractions`, `smoothCamera`, `spectatorOutlines`, `saveToolbarActivator`, `loadToolbarActivator`, `modernfix config`, `replaymod settings`, `replaymod marker`, `replaymod positiononlykeyframe`, `replaymod bothkeyframes`, `exposure camera controls`, `botania corporea request`, `togglecleanview`, `shouldersurfing toggle third person front`, `shouldersurfing toggle third person back`, `shouldersurfing toggle camera coupling`, `shouldersurfing toggle x offset presets`, `shouldersurfing toggle y offset presets`, `shouldersurfing toggle z offset presets`, `open muffler gui`, `craftingtweaks rotate`, `craftingtweaks rotate counter clockwise`, `craftingtweaks balance`, `craftingtweaks spread`, `craftingtweaks clear`, `craftingtweaks force clear`, `craftingtweaks compress stack`, `craftingtweaks decompress one`, `craftingtweaks decompress stack`, `craftingtweaks decompress all`, `craftingtweaks refill last`, `craftingtweaks refill last stack`, `craftingtweaks transfer stack`, `trashslot toggle lock`, `sophisticatedbackpacks inventory interaction`, `sophisticatedbackpacks tool swap`, `sophisticatedbackpacks toggle upgrade 5`, `sophisticatedbackpacks toggle upgrade 4`, `sophisticatedbackpacks toggle upgrade 3`, `refinedstorage focusSearchBar`, `refinedstorage openWirelessGrid`, `refinedstorage openWirelessFluidGrid`, `refinedstorage openWirelessCraftingMonitor`, `refinedstorage openPortableGrid`, `buildinggadgets2 anchor`, `buildinggadgets2 range`, `toggleVisualItemContents`, `toggleSelectedItemTooltips`, `toggleCarriedItemTooltips`, `cycleRight`, `jei toggleCheatMode`, `jei showRecipe2`, `jei showUses2`, `jei copy recipe id`, `jei toggleEditMode`, `jei nextPage`, `jei toggleBookmarkOverlay`, `jei previousPage`, `solonion open food book`, `ok zoomer decrease zoom`, `ok zoomer increase zoom`, `ok zoomer reset zoom`, `spatial-gui open config`, `spatial-gui reload profiles`, `spatial-gui open editor`, `ftbteams open gui`, `golemoverhaul netherite golem summon`, `ftbchunks toggle minimap`, `ftbchunks claim manager`, `ftbquests quests`, `smallships ship sail`, `toolbelt open`, `toolbelt cycle left`, `toolbelt cycle right`, `parcool Dodge`, `parcool QuickTurn`, `parcool Flipping`, `pickup item`, `createrailwaysnavigator route overlay options`, `observable profile`
 
 ## simplemagnets (0 ativos, 1 sem tecla)
 

@@ -64,9 +64,15 @@ Origem (só leitura): `../Society: Sunlit Valley`.
 - Depois: resto do client_scripts, um operador por lote do batches.json (startup e server), resto do client, e o dono abre
   o jogo para o agente ler `logs/kubejs/*.log`.
 
+- Options (2026-11-12, autorizado pelo dono): `options.txt` recebeu o padrão do Sunlit
+  (`../Society: Sunlit Valley/sunlit_tools/options_canonical.txt`), inclusive os packs; `version` mantido (3955).
+  Os 31 packs `file/` foram copiados para `resourcepacks/`; os 18 de formato antigo estão em
+  `incompatibleResourcePacks` para carregarem na 1.21.1. Backup do anterior só na sessão (era o padrão do jogo).
+
 ## Pendente, em ordem
 
-1. F5 KubeJS (374 arquivos): pesquisar mudanças KubeJS 6 -> 2101, portar startup, server, client.
+1. F5 KubeJS: port estático PRONTO (379/379 sintaxe OK, commit 10f2eb5e na branch 1.21.1). Falta: o dono abre
+   o jogo uma vez e o agente corrige o que aparecer em `logs/kubejs/*.log` e `logs/latest.log`.
 2. F6 FTB Quests (30 capítulos), tirando conteúdo de Botania/Slimes.
 3. F7 o que o mod `society` (Society Tweaks) fazia: VillageLootModifier, EmbersTextAPI, serializer patch.
 4. F8 Lost Cities: profiles, estruturas e trocar nas paletas os blocos de mods que saíram

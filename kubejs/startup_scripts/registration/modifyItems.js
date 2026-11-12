@@ -1,16 +1,85 @@
 ItemEvents.modification((event) => {
   const e = global.guardItemEvent(event);
+
+  // 1.21.1 data-component helpers: KJS 7 exposes no setters for mining speed,
+  // attack damage or armor, so they are written through data components
+  const DataComponents = Java.loadClass("net.minecraft.core.component.DataComponents");
+  const Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes");
+  const Tool = Java.loadClass("net.minecraft.world.item.component.Tool");
+  const ToolRule = Java.loadClass("net.minecraft.world.item.component.Tool$Rule");
+  const AttributeModifier = Java.loadClass("net.minecraft.world.entity.ai.attributes.AttributeModifier");
+  const AttributeEntry = Java.loadClass("net.minecraft.world.item.component.ItemAttributeModifiers$Entry");
+  const ArrayList = Java.loadClass("java.util.ArrayList");
+  const JavaFloat = Java.loadClass("java.lang.Float");
+  const JavaOptional = Java.loadClass("java.util.Optional");
+
+  // Multiplies the max durability by factor, skipping items without durability
+  const scaleMaxDamage = (item, factor) => {
+    const maxDamage = item.getComponentMap().get(DataComponents.MAX_DAMAGE);
+    if (maxDamage != null && maxDamage > 0) {
+      item.setMaxDamage(Math.round(maxDamage * factor));
+    }
+  };
+
+  // Applies fn to the mining speed of every Tool rule that defines one
+  const setMiningSpeed = (item, fn) => {
+    const tool = item.getComponentMap().get(DataComponents.TOOL);
+    if (tool == null) return;
+    const rules = new ArrayList();
+    for (let i = 0; i < tool.rules().size(); i++) {
+      const rule = tool.rules().get(i);
+      const speed = rule.speed();
+      const newSpeed = speed.isPresent()
+        ? JavaOptional.of(JavaFloat.valueOf(String(fn(speed.get()))))
+        : speed;
+      rules.add(new ToolRule(rule.blocks(), newSpeed, rule.correctForDrops()));
+    }
+    item.setTool(new Tool(rules, tool.defaultMiningSpeed(), tool.damagePerBlock()));
+  };
+
+  // Replaces the amount of every modifier of the given attribute, keeping id, operation and slot
+  const mapAttributeAmount = (item, attribute, fn) => {
+    const entries = item.getAttributeModifiers().modifiers();
+    const newEntries = new ArrayList();
+    for (let i = 0; i < entries.size(); i++) {
+      const entry = entries.get(i);
+      if (entry.attribute().equals(attribute)) {
+        const old = entry.modifier();
+        const modifier = new AttributeModifier(old.id(), fn(old.amount()), old.operation());
+        newEntries.add(new AttributeEntry(entry.attribute(), modifier, entry.slot()));
+      } else {
+        newEntries.add(entry);
+      }
+    }
+    item.setAttributeModifiers(newEntries);
+  };
+
+  // Armor points are the ARMOR modifier amount directly
+  const setArmorPoints = (item, points) => {
+    mapAttributeAmount(item, Attributes.ARMOR, () => points);
+  };
+
+  // Vanilla attack damage is a modifier on top of the player base of 1.0,
+  // so a total damage value maps to total - 1 on the modifier
+  const setAttackDamage = (item, total) => {
+    mapAttributeAmount(item, Attributes.ATTACK_DAMAGE, () => total - 1);
+  };
+
+  const addAttackDamage = (item, delta) => {
+    mapAttributeAmount(item, Attributes.ATTACK_DAMAGE, (amount) => amount + delta);
+  };
+
   e.modify("*", (item) => {
-    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 3;
+    scaleMaxDamage(item, 3);
   });
   e.modify("gag:energized_hearthstone", (item) => {
-    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage = 2;
+    item.setMaxDamage(2);
   });
   e.modify("gag:hearthstone", (item) => {
-    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage = 2;
+    item.setMaxDamage(2);
   });
   e.modify("gag:escape_rope", (item) => {
-    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage = 1024;
+    item.setMaxDamage(1024);
   });
   global.geodeList.forEach((geodeItem) => {
     const { item } = geodeItem;
@@ -118,7 +187,7 @@ ItemEvents.modification((event) => {
   ];
   goldVanillaTools.forEach((tool) => {
     e.modify(tool, (item) => {
-      // 1.21.1: KJS 7 has no item.digSpeed on ItemModifications, disabled (see report): item.digSpeed = 7;
+      setMiningSpeed(item, () => 7);
       item.setTier((tier) => {
         tier.setIncorrectBlocksForDropsTag("minecraft:incorrect_for_diamond_tool");
         tier.setSpeed(7);
@@ -134,7 +203,7 @@ ItemEvents.modification((event) => {
   ];
   goldHammers.forEach((tool) => {
     e.modify(tool, (item) => {
-      // 1.21.1: KJS 7 has no item.digSpeed on ItemModifications, disabled (see report): item.digSpeed = 7;
+      setMiningSpeed(item, () => 7);
       item.setTier((tier) => {
         tier.setIncorrectBlocksForDropsTag("minecraft:incorrect_for_diamond_tool");
         tier.setSpeed(7);
@@ -142,10 +211,10 @@ ItemEvents.modification((event) => {
     });
   });
   e.modify("minecraft:golden_sword", (item) => {
-    // 1.21.1: KJS 7 has no item.setAttackDamage on ItemModifications, disabled (see report): item.setAttackDamage(5.5);
+    setAttackDamage(item, 5.5);
   });
   e.modify("minecraft:golden_axe", (item) => {
-    // 1.21.1: KJS 7 has no item.setAttackDamage on ItemModifications, disabled (see report): item.setAttackDamage(8);
+    setAttackDamage(item, 8);
   });
   const goldTools = [
     "farmersdelight:golden_knife",
@@ -165,24 +234,25 @@ ItemEvents.modification((event) => {
   ];
   goldTools.forEach((tool) => {
     e.modify(tool, (item) => {
-      // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= tool.namespace === "justhammers" ? 2 : 16;
+      // 1.20.1 had a justhammers x2 branch that never matched (tool is a string), so every gold tool got x16; keep that.
+      scaleMaxDamage(item, 16);
     });
   });
   e.modify("minecraft:golden_helmet", (item) => {
-    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 3;
-    item.setArmorProtection(2.5);
+    scaleMaxDamage(item, 3);
+    setArmorPoints(item, 2.5);
   });
   e.modify("minecraft:golden_chestplate", (item) => {
-    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 3;
-    item.setArmorProtection(7);
+    scaleMaxDamage(item, 3);
+    setArmorPoints(item, 7);
   });
   e.modify("minecraft:golden_leggings", (item) => {
-    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 3;
-    item.setArmorProtection(5.5);
+    scaleMaxDamage(item, 3);
+    setArmorPoints(item, 5.5);
   });
   e.modify("minecraft:golden_boots", (item) => {
-    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 3;
-    item.setArmorProtection(2.5);
+    scaleMaxDamage(item, 3);
+    setArmorPoints(item, 2.5);
   });
   e.modify("twigs:twig", (item) => (item.burnTime = 200));
   const netheriteTools = [
@@ -193,30 +263,63 @@ ItemEvents.modification((event) => {
   ];
   netheriteTools.forEach((armor) => {
     e.modify(armor, (item) => {
-      // 1.21.1: KJS 7 has no item.setDigSpeed on ItemModifications, disabled (see report): item.setDigSpeed(item.digSpeed + 1);
-      // 1.21.1: KJS 7 has no item.setAttackDamage on ItemModifications, disabled (see report): item.setAttackDamage(item.attackDamage + 2);
+      setMiningSpeed(item, (speed) => speed + 1);
+      addAttackDamage(item, 2);
     });
   });
   e.modify("minecraft:netherite_sword", (item) => {
-    // 1.21.1: KJS 7 has no item.setAttackDamage on ItemModifications, disabled (see report): item.setAttackDamage(10);
+    setAttackDamage(item, 10);
   });
   e.modify("minecraft:netherite_helmet", (item) => {
-    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 1.5;
-    item.setArmorProtection(4);
+    scaleMaxDamage(item, 1.5);
+    setArmorPoints(item, 4);
   });
   e.modify("minecraft:netherite_chestplate", (item) => {
-    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 1.5;
-    item.setArmorProtection(9);
+    scaleMaxDamage(item, 1.5);
+    setArmorPoints(item, 9);
   });
   e.modify("minecraft:netherite_leggings", (item) => {
-    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 1.5;
-    item.setArmorProtection(7);
+    scaleMaxDamage(item, 1.5);
+    setArmorPoints(item, 7);
   });
   e.modify("minecraft:netherite_boots", (item) => {
-    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 1.5;
-    item.setArmorProtection(3);
+    scaleMaxDamage(item, 1.5);
+    setArmorPoints(item, 3);
+  });
+  e.modify("botania:terrasteel_helmet", (item) => {
+    scaleMaxDamage(item, 1.5);
+    setArmorPoints(item, 4);
+  });
+  e.modify("botania:terrasteel_chestplate", (item) => {
+    scaleMaxDamage(item, 1.5);
+    setArmorPoints(item, 9);
+  });
+  e.modify("botania:terrasteel_leggings", (item) => {
+    scaleMaxDamage(item, 1.5);
+    setArmorPoints(item, 7);
+  });
+  e.modify("botania:terrasteel_boots", (item) => {
+    scaleMaxDamage(item, 1.5);
+    setArmorPoints(item, 3);
+  });
+
+  e.modify("botania:manasteel_sword", (item) => {
+    setAttackDamage(item, 7);
+  });
+  e.modify("botania:elementium_sword", (item) => {
+    setAttackDamage(item, 8);
   });
   e.modify("oreganized:electrum_sword", (item) => {
-    // 1.21.1: KJS 7 has no item.setAttackDamage on ItemModifications, disabled (see report): item.setAttackDamage(8);
+    setAttackDamage(item, 8);
+  });
+  // Netherite Tier
+  e.modify("botania:terra_sword", (item) => {
+    setAttackDamage(item, 10);
+  });
+  e.modify("botania:star_sword", (item) => {
+    setAttackDamage(item, 10);
+  });
+  e.modify("botania:thunder_sword", (item) => {
+    setAttackDamage(item, 10);
   });
 });

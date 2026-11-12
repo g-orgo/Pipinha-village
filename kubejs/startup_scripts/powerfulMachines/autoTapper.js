@@ -17,7 +17,7 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.translatable("block.society.auto_tapper.description").gray());
-      itemitem.parentModel("society:block/kubejs/auto_tapper");
+      item.parentModel("society:block/kubejs/auto_tapper");
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ Fluid: 0, FluidType: "" });

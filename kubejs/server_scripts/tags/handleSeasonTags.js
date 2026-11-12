@@ -409,6 +409,9 @@ ServerEvents.tags("item", (e) => {
 
 ServerEvents.tags("block", (e) => {
   springCrops.forEach((crop) => {
+    // The strawberry plant is a block only as farm_and_charm:strawberry_crop (listed
+    // in springCrops too); the bare item id stays in the item tags above.
+    if (crop === "farm_and_charm:strawberry") return;
     e.add("sereneseasons:spring_crops", crop);
   });
   summerCrops.forEach((crop) => {

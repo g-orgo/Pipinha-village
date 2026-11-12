@@ -4,13 +4,37 @@ const artMachineTickRate = 200;
 
 const artMachineProgTime = 20;
 
-const booleanProperty = Java.loadClass(
+const $BooleanProperty = Java.loadClass(
   "net.minecraft.world.level.block.state.properties.BooleanProperty"
 );
 
-const integerProperty = Java.loadClass(
+const $IntegerProperty = Java.loadClass(
   "net.minecraft.world.level.block.state.properties.IntegerProperty"
 );
+
+// BlockState.setValue looks properties up by object identity in 1.21.1, so
+// every create() call with the same name must return the same instance.
+const _kjsPropertyCache = {};
+
+const booleanProperty = {
+  create(name) {
+    const key = "bool:" + name;
+    if (!_kjsPropertyCache[key]) {
+      _kjsPropertyCache[key] = $BooleanProperty.create(name);
+    }
+    return _kjsPropertyCache[key];
+  },
+};
+
+const integerProperty = {
+  create(name, min, max) {
+    const key = "int:" + name + ":" + min + ":" + max;
+    if (!_kjsPropertyCache[key]) {
+      _kjsPropertyCache[key] = $IntegerProperty.create(name, min, max);
+    }
+    return _kjsPropertyCache[key];
+  },
+};
 
 const directionProperty = Java.loadClass(
   "net.minecraft.world.level.block.state.properties.DirectionProperty"
@@ -1105,7 +1129,7 @@ global.cropList = [
   "herbalbrews:yerba_mate_plant",
   "minecraft:sweet_berry_bush",
   "farm_and_charm:tomato_crop",
-  "farm_and_charm:strawberry",
+  "farm_and_charm:strawberry_crop",
   "farm_and_charm:lettuce_crop",
   "farm_and_charm:barley_crop",
   "farm_and_charm:onion_crop",

@@ -29,7 +29,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .item((item) => {
       item.tooltip(Text.translatable("tooltip.society.shipping_bin").gray());
-      itemitem.parentModel("shippingbin:block/shipping_bin");
+      item.parentModel("shippingbin:block/shipping_bin");
     })
     .parentModel("shippingbin:block/shipping_bin")
     .blockEntity((blockInfo) => {

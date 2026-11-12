@@ -91,7 +91,7 @@ function placeReplayButton(screen) {
     var widget = children.get(i);
     var className = null;
     try {
-      className = "" + widget.getClass().getName();
+      className = String(widget).split("@")[0];
     } catch (error) {
       continue;
     }
@@ -151,7 +151,7 @@ function placeReplayButton(screen) {
         "," +
         replayButton.getY() +
         " (tela " +
-        screen.getClass().getName() +
+        String(screen).split("@")[0] +
         ", ancora " +
         anchor.getX() +
         "," +

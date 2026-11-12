@@ -71,27 +71,6 @@ StartupEvents.registry("block", (e) => {
     });
 
   e
-    .create("farm_and_charm:strawberry", "crop")
-    .age(5, (builder) => {
-      builder
-        .shape(0, 0, 0, 0, 16, 2, 16)
-        .shape(1, 0, 0, 0, 16, 4, 16)
-        .shape(2, 0, 0, 0, 16, 6, 16)
-        .shape(3, 0, 0, 0, 16, 8, 16)
-        .shape(4, 0, 0, 0, 16, 10, 16)
-        .shape(5, 0, 0, 0, 16, 12, 16);
-    })
-    .survive((state, level, pos) => global.surviveCheck(level, pos))
-    .noSeeds()
-    .crop("farm_and_charm:strawberry", 2)
-    .tagBlock("minecraft:mineable/hoe")
-    .tagBlock("minecraft:crops")
-    .randomTick((tick) => {})
-    .item((seedItem) => {
-      seedItem.texture("farm_and_charm:item/strawberry_seeds");
-    });
-
-  e
     .create("brewery:hop_trellis", "crop")
     .age(6, (builder) => {
       builder
@@ -298,7 +277,7 @@ StartupEvents.registry("block", (e) => {
     .property(integerProperty.create("type", 0, 4))
     .defaultCutout()
     .item((item) => {
-      itemitem.parentModel("society:block/kubejs/berry_bush/base");
+      item.parentModel("society:block/kubejs/berry_bush/base");
     })
     .defaultState((state) => {
       state.set(integerProperty.create("type", 0, 4), 0);

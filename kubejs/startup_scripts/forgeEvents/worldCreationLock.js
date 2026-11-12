@@ -13,7 +13,7 @@ let worldCreationLockFailed = false;
 global.enforceWorldCreationDefaults = (screen) => {
   if (worldCreationLockFailed) return;
   try {
-    if (String(screen.getClass().getName()) !== CREATE_WORLD_SCREEN) return;
+    if (!(screen instanceof Java.type(CREATE_WORLD_SCREEN))) return;
     let Difficulty = Java.loadClass("net.minecraft.world.Difficulty");
     let ui = screen.getUiState();
     if (String(ui.getDifficulty()) !== "HARD") ui.setDifficulty(Difficulty.HARD);

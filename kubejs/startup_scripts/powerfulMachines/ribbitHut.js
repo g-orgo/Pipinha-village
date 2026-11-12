@@ -1,6 +1,6 @@
 console.info("[SOCIETY] ribbitHut.js loaded");
 
-const Block = Java.loadClass("net.minecraft.world.level.block.Block");
+const $RibbitBlock = Java.loadClass("net.minecraft.world.level.block.Block");
 const getDrops = (block, blockState, level, pos, player) => {
   if (block.id.includes("vinery")) {
     let grape = block.getProperties().get("grape").split("_");
@@ -20,7 +20,7 @@ const getDrops = (block, blockState, level, pos, player) => {
   if (block.id.equals("autumnity:tall_foul_berry_bush")) {
     return [Item.of(`2x autumnity:foul_berries`)];
   }
-  return Block.getDrops(
+  return $RibbitBlock.getDrops(
     blockState,
     level,
     pos,
@@ -218,7 +218,7 @@ StartupEvents.registry("block", (e) => {
       item.tooltip(
         Text.translatable("tooltip.society.area", `15x3x15`).green()
       );
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/ribbit_hut_item");
       });
@@ -277,7 +277,7 @@ StartupEvents.registry("block", (e) => {
     .resistance(3600000)
     .unbreakable()
     .item((item) => {
-      itemitem.parentModel("ribbits:item/toadstool");
+      item.parentModel("ribbits:item/toadstool");
     })
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")

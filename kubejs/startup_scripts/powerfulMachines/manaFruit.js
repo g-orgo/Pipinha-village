@@ -85,29 +85,12 @@ StartupEvents.registry("block", (e) => {
       blockInfo.tickFrequency(20);
       blockInfo.tickOffset(0);
       global.portBeTicks["society:mana_fruit_crop"] = (entity) => global.handleManaFruit(entity);
-        blockInfo.attachCapability(
-          BotaniaCapabilityBuilder.MANA.blockEntity()
-            .canReceiveManaFromBurst((be) => {
-              let mana = be.persistentData.getInt("mana");
-              return mana < FRUIT_MAX_MANA;
-            })
-            .receiveMana((be, amount) => {
-              let currentMana = be.persistentData.getInt("mana");
-              let received = Math.min(FRUIT_MAX_MANA - currentMana, amount);
-              be.persistentData.putInt("mana", currentMana + received);
-            })
-            .getCurrentMana((be) => be.persistentData.getInt("mana"))
-            .isFull((be) => {
-              let mana = be.persistentData.getInt("mana");
-              return mana >= FRUIT_MAX_MANA;
-            })
-        );
     })
     .item((item) => {
       item.tooltip(
         Text.translatable("society.working_block_entity.need_mana").aqua()
       );
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/mana_fruit_seed");
       });

@@ -41,9 +41,10 @@ var HOSTILE_TOGGLE_KEEP_TYPES = [
   "minecraft:elder_guardian",
   "minecraft:warden",
 ];
-var HOSTILE_TOGGLE_OPTIONS_SCREEN = "net.minecraft.client.gui.screens.OptionsScreen";
+var HOSTILE_TOGGLE_OPTIONS_SCREEN = "net.minecraft.client.gui.screens.options.OptionsScreen";
 var HOSTILE_TOGGLE_CREATE_SCREEN = "net.minecraft.client.gui.screens.worldselection.CreateWorldScreen";
 var HOSTILE_TOGGLE_LOCK_BUTTON = "net.minecraft.client.gui.components.LockIconButton";
+var HOSTILE_TOGGLE_CYCLE_BUTTON = "net.minecraft.client.gui.components.CycleButton";
 var HOSTILE_TOGGLE_DIFFICULTY = "net.minecraft.world.Difficulty";
 var HOSTILE_TOGGLE_SIZE = 20;
 var hostileToggleSpawnFailed = false;
@@ -172,9 +173,9 @@ function hostileTogglePair(event, isOff, onChange) {
 
 function hostileToggleIsDifficulty(widget) {
   try {
-    if (String(widget.getClass().getName()).indexOf("CycleButton") < 0) return false;
+    if (!(widget instanceof Java.type(HOSTILE_TOGGLE_CYCLE_BUTTON))) return false;
     var value = widget.getValue();
-    return value != null && String(value.getClass().getName()) === HOSTILE_TOGGLE_DIFFICULTY;
+    return value != null && value instanceof Java.type(HOSTILE_TOGGLE_DIFFICULTY);
   } catch (err) {
     return false;
   }
@@ -188,7 +189,7 @@ function hostileToggleOptionsInit(event, screen) {
   var lock = null;
   screen.children().forEach((widget) => {
     if (hostileToggleIsDifficulty(widget)) difficulty = widget;
-    else if (String(widget.getClass().getName()) === HOSTILE_TOGGLE_LOCK_BUTTON) lock = widget;
+    else if (widget instanceof Java.type(HOSTILE_TOGGLE_LOCK_BUTTON)) lock = widget;
   });
   if (difficulty == null) return;
 
@@ -228,7 +229,7 @@ function hostileToggleCreateRender(screen) {
   var reference = null;
   screen.children().forEach((widget) => {
     if (hostileToggleIsDifficulty(widget)) difficulty = widget;
-    else if (String(widget.getClass().getName()).indexOf("CycleButton") >= 0 && reference == null) reference = widget;
+    else if (widget instanceof Java.type(HOSTILE_TOGGLE_CYCLE_BUTTON) && reference == null) reference = widget;
   });
   var pair = hostileToggleCreate.pair;
   if (difficulty == null || reference == null) {
@@ -249,9 +250,8 @@ if (Platform.isClientEnvironment()) {
     if (hostileToggleUiFailed) return;
     try {
       var screen = e.getScreen();
-      var name = String(screen.getClass().getName());
-      if (name === HOSTILE_TOGGLE_OPTIONS_SCREEN) hostileToggleOptionsInit(e, screen);
-      else if (name === HOSTILE_TOGGLE_CREATE_SCREEN) hostileToggleCreateInit(e, screen);
+      if (screen instanceof Java.type(HOSTILE_TOGGLE_OPTIONS_SCREEN)) hostileToggleOptionsInit(e, screen);
+      else if (screen instanceof Java.type(HOSTILE_TOGGLE_CREATE_SCREEN)) hostileToggleCreateInit(e, screen);
     } catch (err) {
       hostileToggleUiFailed = true;
       console.error("[hostileSpawnToggle] screen init failed: " + err);

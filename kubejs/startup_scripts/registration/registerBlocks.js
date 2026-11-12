@@ -21,7 +21,7 @@ StartupEvents.registry("block", (e) => {
     .parentModel("society:block/kubejs/earth_crystal")
     .lightLevel(0.5)
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/geode/earth_crystal");
       });
@@ -39,7 +39,7 @@ StartupEvents.registry("block", (e) => {
     .lightLevel(0.8)
     .parentModel("society:block/kubejs/fire_quartz")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/magma_geode/fire_quartz");
       });
@@ -310,7 +310,7 @@ StartupEvents.registry("block", (e) => {
     .hardness(1.0)
     .resistance(1.0)
     .item((item) => {
-      itemitem.parentModel("society:block/kubejs/sturdy_bamboo_block");
+      item.parentModel("society:block/kubejs/sturdy_bamboo_block");
     })
     .requiresTool(true)
     .tagBlock("minecraft:mineable/axe");
@@ -323,7 +323,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .parentModel("society:block/kubejs/espresso_cup_block")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/espresso");
       });
@@ -342,7 +342,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .parentModel("society:block/kubejs/drinks/steamed_milk")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/steamed_milk");
       });
@@ -362,7 +362,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .parentModel("society:block/kubejs/drinks/mocha")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/mocha");
       });
@@ -381,7 +381,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .parentModel("society:block/kubejs/drinks/latte")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/latte");
       });
@@ -400,7 +400,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .parentModel("society:block/kubejs/drinks/dirty_chai")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/dirty_chai");
       });
@@ -420,7 +420,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .parentModel("society:block/kubejs/drinks/bowl_of_soul")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/bowl_of_soul");
       });
@@ -439,7 +439,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .parentModel("society:block/kubejs/drinks/truffle_tea")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/truffle_tea");
       });
@@ -457,7 +457,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .parentModel("society:block/kubejs/drinks/beer_london")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/beer_london");
       });
@@ -475,7 +475,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .parentModel("society:block/kubejs/drinks/beer_attunecore")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/beer_attunecore");
       });
@@ -494,7 +494,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .parentModel("society:block/kubejs/drinks/ancient_cider")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/ancient_cider");
       });
@@ -512,7 +512,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .parentModel("society:block/kubejs/drinks/ancient_vespertine")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/ancient_vespertine");
       });
@@ -530,7 +530,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .parentModel("society:block/kubejs/drinks/dewy_star")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/dewy_star");
       });
@@ -548,7 +548,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .parentModel("society:block/kubejs/drinks/starcardi")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/starcardi");
       });
@@ -566,7 +566,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .parentModel("society:block/kubejs/drinks/star_coquito")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/star_coquito");
       });
@@ -584,7 +584,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .parentModel("society:block/kubejs/drinks/dewy_star")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/violet_moon");
       });
@@ -602,7 +602,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .parentModel("society:block/kubejs/drinks/ancient_vespertine")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/sparkling_le_roy");
       });
@@ -620,7 +620,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .parentModel("society:block/kubejs/drinks/ancient_vespertine")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/laputa_franc");
       });
@@ -637,7 +637,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .parentModel("society:block/kubejs/drinks/ancient_vespertine")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/mana_king");
       });
@@ -654,7 +654,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .parentModel("society:block/kubejs/drinks/forks_of_blue")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/forks_of_blue");
       });
@@ -672,7 +672,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .parentModel("society:block/kubejs/drinks/good_catawba")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/good_catawba");
       });
@@ -690,7 +690,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .parentModel("society:block/kubejs/drinks/nutty_basil")
     .item((item) => {
-      itemitem.modelGenerator((m) => {
+      item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
         m.texture("layer0", "society:item/drinks/nutty_basil");
       });

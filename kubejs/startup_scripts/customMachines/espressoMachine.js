@@ -37,7 +37,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.espresso_machine.description").gray());
-      itemitem.parentModel("society:block/kubejs/espresso_machine");
+      item.parentModel("society:block/kubejs/espresso_machine");
     })
     .defaultState((state) => {
       state

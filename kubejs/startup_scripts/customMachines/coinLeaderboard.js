@@ -27,7 +27,7 @@ StartupEvents.registry("block", (e) => {
       item.tooltip(
         Text.translatable("block.society.coin_leaderboard.description").gray()
       );
-      itemitem.parentModel("society:block/kubejs/coin_leaderboard");
+      item.parentModel("society:block/kubejs/coin_leaderboard");
     })
     .blockEntity((be) => {
       be.serverTicking();

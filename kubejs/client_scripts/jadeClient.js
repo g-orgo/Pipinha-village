@@ -66,7 +66,7 @@ global.runtime["JadeFishPondClientCallback"] = (tooltip, accessor, pluginConfig)
 
   if (nbt.type.equals("")) return;
   let fish = nbt.type;
-  const upgraded = properties.getValue($BooleanProperty.create("upgraded"));
+  const upgraded = properties.getValue(properties.getBlock().getStateDefinition().getProperty("upgraded"));
   let fishIcons = "";
 
   for (let index = 0; index < nbt.max_population; index++) {
@@ -110,7 +110,7 @@ global.runtime["JadeArtisanMachineClientCallback"] = (
   })[0];
   if (!machine) return;
   const isChargingRod = accessor.getBlock().id === "society:charging_rod";
-  const working = properties.getValue($BooleanProperty.create("working"));
+  const working = properties.getValue(properties.getBlock().getStateDefinition().getProperty("working"));
   if (!working || (nbt.recipe.equals("") && !isChargingRod)) return;
 
   const recipe = isChargingRod
@@ -119,7 +119,7 @@ global.runtime["JadeArtisanMachineClientCallback"] = (
       }
     : machine.recipes.get(nbt.recipe);
   const stage = nbt.stage;
-  const upgraded = properties.getValue($BooleanProperty.create("upgraded"));
+  const upgraded = properties.getValue(properties.getBlock().getStateDefinition().getProperty("upgraded"));
   let duration = recipe.time || machine.stageCount;
   if (accessor.getBlock().id == "society:aging_cask" && upgraded) {
     duration = Math.round(duration / 2);

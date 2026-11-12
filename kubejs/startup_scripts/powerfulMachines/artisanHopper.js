@@ -563,7 +563,7 @@ StartupEvents.registry("block", (event) => {
           "block.society.artisan_hopper.description.fuel"
         ).lightPurple()
       );
-      itemitem.parentModel("society:block/kubejs/artisan_hopper");
+      item.parentModel("society:block/kubejs/artisan_hopper");
     })
     .soundType("copper")
     .parentModel("society:block/kubejs/artisan_hopper")
@@ -617,7 +617,7 @@ StartupEvents.registry("block", (event) => {
           "block.society.artisan_hopper.description.fuel"
         ).lightPurple()
       );
-      itemitem.parentModel("society:block/kubejs/mini_artisan_hopper");
+      item.parentModel("society:block/kubejs/mini_artisan_hopper");
     })
     .soundType("copper")
     .parentModel("society:block/kubejs/mini_artisan_hopper")

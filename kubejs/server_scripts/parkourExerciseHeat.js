@@ -48,7 +48,7 @@ console.info("[SOCIETY] parkourExerciseHeat.js loaded");
     const list = pk.getActions().listForIteration();
     for (let i = 0; i < list.size(); i++) {
       let action = list.get(i);
-      if (action.isDoing()) doing[String(action.getClass().getSimpleName())] = true;
+      if (action.isDoing()) doing[String(action).split("@")[0].split(".").pop()] = true;
     }
     return doing;
   };

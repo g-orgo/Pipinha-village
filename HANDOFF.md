@@ -77,7 +77,9 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   Desligado em modifyItems.js (sem API no KJS 7): maxDamage/digSpeed/attackDamage de 21 itens (dono avaliar).
   Assets do jar `society-1.22` (mod que não existe na 1.21.1) copiados para `kubejs/assets` sem sobrescrever:
   1546 arquivos (lista em `tools/kjsport/society_jar_assets.txt`), som `the_box` no sounds.json.
-  Em curso: `tools/kjsport/port_models.py` (modelJson/model -> parentModel/modelGenerator, blockstateJson ->
+  Commit 6f678ad8 (branch 1.21.1): tudo abaixo pronto, Rhino 380/380; dados podados por
+  `tools/dataport/prune_removed.py`. Removido sem substituto (dono decidir): tapper da wise oak (dava lótus negra).
+  Esperando o 2º launch do dono. Pronto: `tools/kjsport/port_models.py` (modelJson/model -> parentModel/modelGenerator, blockstateJson ->
   arquivos estáticos em `kubejs/assets`, serverTick -> serverTicking + `global.portBeTicks` +
   `server_scripts/zz_port_be_ticks.js` com BlockEvents.blockEntityTick, fluidos thick/thin, sons botania).
   Erros de cascata esperados a sumir com o registro: `numismatics:neptunium_coin`, `society:neptuna`, `froggy_helm`.

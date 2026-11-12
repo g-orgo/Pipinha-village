@@ -195,7 +195,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.fish_pond_manager.clipboard").gray());
       item.tooltip(Text.translatable("society.working_block_entity.apply_player_skill").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `21x21x21`).green());
-      itemitem.parentModel("society:block/kubejs/fish_pond_manager");
+      item.parentModel("society:block/kubejs/fish_pond_manager");
     })
     .soundType("copper")
     .parentModel("society:block/kubejs/fish_pond_manager")

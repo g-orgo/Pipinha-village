@@ -68,7 +68,7 @@ StartupEvents.registry("block", (e) => {
       item.tooltip(
         Text.translatable("tooltip.society.area", `5x5x5`).green()
       );
-      itemitem.parentModel("society:block/kubejs/auto_petter");
+      item.parentModel("society:block/kubejs/auto_petter");
     })
     .parentModel("society:block/kubejs/auto_petter")
     .blockEntity((blockInfo) => {

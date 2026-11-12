@@ -68,7 +68,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.mana_sprinkler.need_mana").aqua()
       );
-      itemitem.parentModel("society:block/kubejs/mana_sprinkler");
+      item.parentModel("society:block/kubejs/mana_sprinkler");
     })
     .parentModel("society:block/kubejs/mana_sprinkler")
     .blockEntity((blockInfo) => {
@@ -78,22 +78,5 @@ StartupEvents.registry("block", (event) => {
       global.portBeTicks["society:mana_sprinkler"] = (entity) => {
         global.manaSprinklerScan(entity, 2);
       };
-        blockInfo.attachCapability(
-          BotaniaCapabilityBuilder.MANA.blockEntity()
-            .canReceiveManaFromBurst((be) => {
-              let mana = be.persistentData.getInt("mana");
-              return mana < SPRINKLER_MAX_MANA;
-            })
-            .receiveMana((be, amount) => {
-              let currentMana = be.persistentData.getInt("mana");
-              let received = Math.min(SPRINKLER_MAX_MANA - currentMana, amount);
-              be.persistentData.putInt("mana", currentMana + received);
-            })
-            .getCurrentMana((be) => be.persistentData.getInt("mana"))
-            .isFull((be) => {
-              let mana = be.persistentData.getInt("mana");
-              return mana >= SPRINKLER_MAX_MANA;
-            })
-        );
     });
 });

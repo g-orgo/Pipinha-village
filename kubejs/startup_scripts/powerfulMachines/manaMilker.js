@@ -23,7 +23,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("tooltip.society.area", `10x10x10`).green()
       );
-      itemitem.parentModel("society:block/kubejs/mana_milker");
+      item.parentModel("society:block/kubejs/mana_milker");
     })
     .parentModel("society:block/kubejs/mana_milker")
     .blockEntity((blockInfo) => {
@@ -89,23 +89,6 @@ StartupEvents.registry("block", (event) => {
           .getStackInSlot((blockEntity, slot) =>
             blockEntity.inventory.getStackInSlot(slot)
           )
-      );
-      blockInfo.attachCapability(
-        BotaniaCapabilityBuilder.MANA.blockEntity()
-          .canReceiveManaFromBurst((be) => {
-            let mana = be.persistentData.getInt("mana");
-            return mana < MAX_MANA;
-          })
-          .receiveMana((be, amount) => {
-            let currentMana = be.persistentData.getInt("mana");
-            let received = Math.min(MAX_MANA - currentMana, amount);
-            be.persistentData.putInt("mana", currentMana + received);
-          })
-          .getCurrentMana((be) => be.persistentData.getInt("mana"))
-          .isFull((be) => {
-            let mana = be.persistentData.getInt("mana");
-            return mana >= MAX_MANA;
-          })
       );
     });
 });

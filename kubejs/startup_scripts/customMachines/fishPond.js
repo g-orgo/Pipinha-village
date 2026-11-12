@@ -206,7 +206,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      itemitem.parentModel("society:block/kubejs/fish_pond");
+      item.parentModel("society:block/kubejs/fish_pond");
       item.fireResistant(true);
     })
     .defaultState((state) => {

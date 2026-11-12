@@ -24,7 +24,7 @@ StartupEvents.registry("block", (event) => {
           "block.society.ancient_goddess_statue.description.warn"
         ).red()
       );
-      itemitem.parentModel("society:block/kubejs/ancient_goddess_statue");
+      item.parentModel("society:block/kubejs/ancient_goddess_statue");
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;

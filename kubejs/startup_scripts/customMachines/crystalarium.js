@@ -80,7 +80,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.crystalarium.description").gray());
-      itemitem.parentModel("society:block/kubejs/crystalarium/crystalarium");
+      item.parentModel("society:block/kubejs/crystalarium/crystalarium");
     })
     .defaultState((state) => {
       state

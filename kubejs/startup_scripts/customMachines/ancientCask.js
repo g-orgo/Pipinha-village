@@ -149,7 +149,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.ancient_cask.description").gray());
       item.tooltip(Text.translatable("block.society.ancient_cask.description.warn").red());
-      itemitem.parentModel("society:block/kubejs/ancient_cask/ancient_cask");
+      item.parentModel("society:block/kubejs/ancient_cask/ancient_cask");
     })
     .defaultState((state) => {
       state

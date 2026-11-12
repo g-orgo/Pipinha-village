@@ -76,7 +76,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.recycling_machine.description").gray()
       );
-      itemitem.parentModel("society:block/kubejs/recycling_machine/recycling_machine_off");
+      item.parentModel("society:block/kubejs/recycling_machine/recycling_machine_off");
     })
     .defaultState((state) => {
       state

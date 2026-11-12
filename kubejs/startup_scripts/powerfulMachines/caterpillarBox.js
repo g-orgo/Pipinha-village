@@ -44,7 +44,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.caterpillar_box.description").gray());
       item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
-      itemitem.parentModel("society:block/kubejs/caterpillar_box");
+      item.parentModel("society:block/kubejs/caterpillar_box");
     })
     .parentModel("society:block/kubejs/caterpillar_box")
     .blockEntity((blockInfo) => {

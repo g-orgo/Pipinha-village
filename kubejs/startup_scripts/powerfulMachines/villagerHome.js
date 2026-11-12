@@ -10,7 +10,7 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.gray("Brings the invited villager to its housing and sets its home point."));
-      itemitem.parentModel("society:block/kubejs/villager_home");
+      item.parentModel("society:block/kubejs/villager_home");
     })
     .parentModel("society:block/kubejs/villager_home")
     .blockEntity((blockInfo) => {

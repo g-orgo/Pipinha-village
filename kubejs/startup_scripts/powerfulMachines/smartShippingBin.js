@@ -12,7 +12,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("tooltip.society.smart_shipping_bin.warn").red()
       );
-      itemitem.parentModel("society:block/kubejs/smart_shipping_bin");
+      item.parentModel("society:block/kubejs/smart_shipping_bin");
     })
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 6);

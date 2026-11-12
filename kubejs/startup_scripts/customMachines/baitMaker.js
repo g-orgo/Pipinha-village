@@ -104,7 +104,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.bait_maker.description").gray());
-      itemitem.parentModel("society:block/kubejs/bait_maker/bait_maker_off");
+      item.parentModel("society:block/kubejs/bait_maker/bait_maker_off");
     })
     .defaultState((state) => {
       state

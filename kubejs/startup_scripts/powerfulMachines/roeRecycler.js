@@ -101,7 +101,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.roe_recycler.description").gray()
       );
-      itemitem.parentModel("society:block/kubejs/roe_recycler");
+      item.parentModel("society:block/kubejs/roe_recycler");
     })
     .parentModel("society:block/kubejs/roe_recycler")
     .blockEntity((blockInfo) => {

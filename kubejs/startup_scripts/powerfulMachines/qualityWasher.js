@@ -45,7 +45,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.quality_washer.description").gray());
       item.tooltip(Text.translatable("block.society.quality_washer.description.warn").red());
       item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
-      itemitem.parentModel("society:block/kubejs/quality_washer");
+      item.parentModel("society:block/kubejs/quality_washer");
     })
     .parentModel("society:block/kubejs/quality_washer")
     .blockEntity((blockInfo) => {

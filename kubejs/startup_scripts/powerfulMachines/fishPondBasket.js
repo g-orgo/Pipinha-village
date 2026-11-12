@@ -97,7 +97,7 @@ StartupEvents.registry("block", (event) => {
           "block.society.fish_pond_basket.description.fuel"
         ).lightPurple()
       );
-      itemitem.parentModel("society:block/kubejs/fish_pond_basket");
+      item.parentModel("society:block/kubejs/fish_pond_basket");
       item.fireResistant(true);
     })
     .soundType("copper")
@@ -188,7 +188,7 @@ StartupEvents.registry("block", (event) => {
           "block.society.fish_pond_basket.description.fuel"
         ).lightPurple()
       );
-      itemitem.parentModel("society:block/kubejs/fish_pond_hatchery");
+      item.parentModel("society:block/kubejs/fish_pond_hatchery");
       item.fireResistant(true);
     })
     .soundType("copper")

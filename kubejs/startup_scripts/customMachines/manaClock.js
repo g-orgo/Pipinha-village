@@ -44,7 +44,7 @@ StartupEvents.registry("block", (event) => {
         Text.translatable("society.working_block_entity.need_mana").aqua()
       );
       item.tooltip(Text.translatable("tooltip.society.area", `3x3`).green());
-      itemitem.parentModel("society:block/kubejs/mana_clock");
+      item.parentModel("society:block/kubejs/mana_clock");
     })
     .parentModel("society:block/kubejs/mana_clock")
     .blockEntity((blockInfo) => {
@@ -52,22 +52,5 @@ StartupEvents.registry("block", (event) => {
       blockInfo.tickFrequency(200);
       blockInfo.tickOffset(0);
       global.portBeTicks["society:mana_clock"] = (entity) => global.manaClockTick(entity);
-        blockInfo.attachCapability(
-          BotaniaCapabilityBuilder.MANA.blockEntity()
-            .canReceiveManaFromBurst((be) => {
-              let mana = be.persistentData.getInt("mana");
-              return mana < CLOCK_MAX_MANA;
-            })
-            .receiveMana((be, amount) => {
-              let currentMana = be.persistentData.getInt("mana");
-              let received = Math.min(CLOCK_MAX_MANA - currentMana, amount);
-              be.persistentData.putInt("mana", currentMana + received);
-            })
-            .getCurrentMana((be) => be.persistentData.getInt("mana"))
-            .isFull((be) => {
-              let mana = be.persistentData.getInt("mana");
-              return mana >= CLOCK_MAX_MANA;
-            })
-        );
     });
 });

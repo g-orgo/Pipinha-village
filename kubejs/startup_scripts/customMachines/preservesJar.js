@@ -192,7 +192,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.preserves_jar.description").gray());
-      itemitem.parentModel("society:block/kubejs/preserves_jar");
+      item.parentModel("society:block/kubejs/preserves_jar");
     })
     .defaultState((state) => {
       state

@@ -36,7 +36,7 @@ StartupEvents.registry("block", (e) => {
       item.tooltip(Text.translatable("block.society.growth_obelisk.description").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `7x1x7`).green());
       item.tooltip(Text.translatable("block.society.growth_obelisk.description.fuel").lightPurple());
-      itemitem.parentModel("society:block/kubejs/growth_obelisk/display");
+      item.parentModel("society:block/kubejs/growth_obelisk/display");
     })
     .soundType("stone")
     .parentModel("society:block/kubejs/growth_obelisk/lower")

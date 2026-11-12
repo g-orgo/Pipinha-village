@@ -162,7 +162,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.drum_cornucopia.description").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `20x10x20`).green());
-      itemitem.parentModel("society:block/kubejs/drum_cornucopia");
+      item.parentModel("society:block/kubejs/drum_cornucopia");
     })
     .blockEntity((blockInfo) => {
       blockInfo.serverTicking();

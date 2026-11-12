@@ -10,7 +10,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.auto_worm_farm.description").gray());
       item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
-      itemitem.parentModel("society:block/kubejs/auto_worm_farm");
+      item.parentModel("society:block/kubejs/auto_worm_farm");
     })
     .parentModel("society:block/kubejs/auto_worm_farm")
     .blockEntity((blockInfo) => {

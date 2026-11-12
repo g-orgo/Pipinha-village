@@ -105,7 +105,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.golden_clock.description").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `5x5x5`).green());
-      itemitem.parentModel("society:block/kubejs/golden_clock");
+      item.parentModel("society:block/kubejs/golden_clock");
     })
     .parentModel("society:block/kubejs/golden_clock")
     .blockEntity((blockInfo) => {

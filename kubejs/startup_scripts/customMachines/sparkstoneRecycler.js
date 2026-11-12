@@ -82,7 +82,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.sparkstone_recycler.description").gray());
       item.tooltip(Text.translatable("society.working_block_entity.need_mana").aqua());
       item.tooltip(Text.translatable("block.society.sparkstone_recycler.description.compatible").green());
-      itemitem.parentModel("society:block/kubejs/sparkstone_recycler");
+      item.parentModel("society:block/kubejs/sparkstone_recycler");
     })
     .parentModel("society:block/kubejs/sparkstone_recycler")
     .blockEntity((blockInfo) => {
@@ -90,22 +90,5 @@ StartupEvents.registry("block", (event) => {
       blockInfo.tickFrequency(200);
       blockInfo.tickOffset(0);
       global.portBeTicks["society:sparkstone_recycler"] = (entity) => global.sparkstoneRecyclerTick(entity);
-        blockInfo.attachCapability(
-          BotaniaCapabilityBuilder.MANA.blockEntity()
-            .canReceiveManaFromBurst((be) => {
-              let mana = be.persistentData.getInt("mana");
-              return mana < RECYCLER_MAX_MANA;
-            })
-            .receiveMana((be, amount) => {
-              let currentMana = be.persistentData.getInt("mana");
-              let received = Math.min(RECYCLER_MAX_MANA - currentMana, amount);
-              be.persistentData.putInt("mana", currentMana + received);
-            })
-            .getCurrentMana((be) => be.persistentData.getInt("mana"))
-            .isFull((be) => {
-              let mana = be.persistentData.getInt("mana");
-              return mana >= RECYCLER_MAX_MANA;
-            })
-        );
     });
 });

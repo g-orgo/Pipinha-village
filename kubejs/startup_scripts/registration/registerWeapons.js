@@ -7,7 +7,7 @@ ItemEvents.toolTierRegistry((e) => {
     tier.attackDamageBonus = 2.0;
     tier.setIncorrectBlocksForDropsTag("minecraft:incorrect_for_iron_tool");
     tier.enchantmentValue = 14;
-    tier.repairIngredient = "society:prismatic_shard";
+    tier.repairIngredient = "#society:prismatic_repair";
   });
 });
 
@@ -21,7 +21,7 @@ StartupEvents.registry("item", (e) => {
     .attackDamageBaseline(10.0)
     .speed(3.0)
     .modifyTier((tier) => {
-      tier.setRepairIngredient("society:prismatic_shard");
+      tier.setRepairIngredient("#society:prismatic_repair");
     });
   e.create("society:dragontooth_axe", "axe")
     .texture("society:item/dragontooth_axe")
@@ -30,7 +30,7 @@ StartupEvents.registry("item", (e) => {
     .attackDamageBaseline(12.0)
     .speed(5.0)
     .modifyTier((tier) => {
-      tier.setRepairIngredient("society:prismatic_shard");
+      tier.setRepairIngredient("#society:prismatic_repair");
     });
   e.create("society:princess_hairbrush", "sword")
     .texture("society:item/artifacts/princess_hairbrush")
@@ -40,7 +40,7 @@ StartupEvents.registry("item", (e) => {
     .attackDamageBaseline(6.0)
     .speed(3.0)
     .modifyTier((tier) => {
-      tier.setRepairIngredient("society:prismatic_shard");
+      tier.setRepairIngredient("#society:prismatic_repair");
     });
   e.create("society:meowmageddon", "sword")
     .texture("society:item/meowmageddon")
@@ -51,6 +51,6 @@ StartupEvents.registry("item", (e) => {
     .attackDamageBaseline(11.0)
     .speed(4.0)
     .modifyTier((tier) => {
-      tier.setRepairIngredient("society:prismatic_shard");
+      tier.setRepairIngredient("#society:prismatic_repair");
     });
 });

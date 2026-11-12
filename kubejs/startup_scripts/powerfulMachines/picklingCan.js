@@ -86,7 +86,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.prickly_can.description.warn").red());
       item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
       item.tooltip(Text.translatable("society.working_block_entity.preserve_quality").green());
-      itemitem.parentModel("etcetera:block/prickly_can");
+      item.parentModel("etcetera:block/prickly_can");
     })
     .parentModel("etcetera:block/prickly_can")
     .blockEntity((blockInfo) => {

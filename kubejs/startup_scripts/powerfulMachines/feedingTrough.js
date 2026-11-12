@@ -95,7 +95,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.feeding_trough.description").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `13x13x13`).green());
-      itemitem.parentModel("farm_and_charm:block/feeding_trough_size_0");
+      item.parentModel("farm_and_charm:block/feeding_trough_size_0");
     })
     .defaultState((state) => {
       state.set(integerProperty.create("fill", 0, 4), 0);

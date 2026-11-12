@@ -72,7 +72,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.moon_statue.description").gray()
       );
-      itemitem.parentModel("society:block/kubejs/moon_statue");
+      item.parentModel("society:block/kubejs/moon_statue");
     })
     .rightClick((click) => {
       global.handleMoonStatueClick(click);

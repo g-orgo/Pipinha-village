@@ -65,7 +65,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.iridium_clock.description").gray());
       item.tooltip(Text.translatable("block.society.iridium_clock.area").green());
-      itemitem.parentModel("society:block/kubejs/iridium_clock");
+      item.parentModel("society:block/kubejs/iridium_clock");
     })
     .parentModel("society:block/kubejs/iridium_clock")
     .blockEntity((blockInfo) => {

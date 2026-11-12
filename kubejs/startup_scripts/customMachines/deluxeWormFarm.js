@@ -19,7 +19,7 @@ StartupEvents.registry("block", (event) => {
     .parentModel("society:block/kubejs/deluxe_worm_farm")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.deluxe_worm_farm.description").gray());
-      itemitem.parentModel("society:block/kubejs/deluxe_worm_farm");
+      item.parentModel("society:block/kubejs/deluxe_worm_farm");
     })
     .defaultState((state) => {
       state

@@ -232,7 +232,7 @@ def convert_file(fpath):
         ns, path = split_id(nearest_create(code, s))
         keys = set(data.keys())
         if keys == {"parent"} and isinstance(data["parent"], str) and recv is not None:
-            edits.append((s, close_i + 1, f"{recv}.parentModel({json.dumps(data['parent'])})"))
+            edits.append((s, close_i + 1, f".parentModel({json.dumps(data['parent'])})"))
             CHANGED["parent"] += 1
             continue
         if ns is None:
@@ -240,7 +240,7 @@ def convert_file(fpath):
             continue
         if keys == {"parent", "textures"} and isinstance(data["textures"], dict) \
                 and all(isinstance(v, str) for v in data["textures"].values()):
-            lines = [f"{recv}.modelGenerator((m) => {{",
+            lines = [".modelGenerator((m) => {",
                      f"  m.parent({json.dumps(data['parent'])});"]
             for k, v in data["textures"].items():
                 lines.append(f"  m.texture({json.dumps(k)}, {json.dumps(v)});")

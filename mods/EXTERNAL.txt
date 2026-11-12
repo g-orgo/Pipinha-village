@@ -1,0 +1,3 @@
+Jars over the GitHub 100 MB limit. Download them into mods/ manually:
+
+watermedia_binaries-3.0.1.jar  https://cdn.modrinth.com/data/4997XcoK/versions/HTKcN2sw/watermedia_binaries-3.0.1.jar

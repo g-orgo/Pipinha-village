@@ -1,0 +1,442 @@
+status	nome	curseforge_slug	arquivo_1.20.1	loaders_1.21.1
+desativado	Animal Pens	animal-pens	animal_pen-forge-1.20-2.4.3.jar	Fabric,NeoForge
+desativado	Construction Sticks	construction-sticks	ConstructionSticks-1.20.1-1.2.7.jar	NeoForge
+desativado	JourneyMap	journeymap	journeymap-1.20.1-5.10.3-forge.jar	Fabric,Forge,NeoForge,Quilt
+desativado	JourneyMap Integration	journeymap-integration	jmi-forge-1.20.1-0.14-48.jar	Fabric,NeoForge,Quilt
+desativado	Not Enough Animations	not-enough-animations	notenoughanimations-forge-1.12.6-mc1.20.1.jar	Fabric,Forge,NeoForge
+desativado	VMinus	vminus	vminus-3.1.2-forge-1.20.1.jar	
+desativado	Xaero's World Map	xaeros-world-map	xaeroworldmap-forge-1.20.1-1.46.0.jar	Fabric,Forge,NeoForge,Quilt
+faltando	[Let's Do] NetherVinery (unsupported)	lets-do-nethervinery	letsdo-nethervinery-forge-1.2.19.jar	
+faltando	Automobility	automobility	automobility-0.4.2+1.20.1-forge.jar	
+faltando	Balloon Box	balloon-box	BalloonBox1.20.1(Forge)vs.1.0.3.jar	
+faltando	Better Advanced Tooltips Backport	better-advanced-tooltips-backport	betteradvancedtooltips-1.20.1-1.2.1.jar	
+faltando	Bobby Reforged	bobby-reforged	bobby-1.20.1_v5.0.1.jar	
+faltando	Botania	botania	Botania-1.20.1-454-FORGE.jar	
+faltando	Botania Seeds	botania-seeds	botania_seeds-1.1.1.jar	
+faltando	Construction Wand	construction-wand	constructionwand-1.20.1-2.11.jar	
+faltando	Create Utilities (Fabric/Forge)	createutilities	createutilities-0.3.2+1.20.1.jar	
+faltando	Create: Splendid Cogs	create-slime	create_slime-1.0.1.jar	
+faltando	Create: Steam 'n' Rails	create-steam-n-rails	Steam_Rails-1.7.2+forge-mc1.20.1.jar	
+faltando	Creeper Confetti	creeper-confetti	creeperconfetti-4.3.jar	
+faltando	Croptania	croptania	croptania-0.3.jar	
+faltando	Decorative Blocks	decorative-blocks	decorative_blocks-forge-1.20.1-4.1.3.jar	
+faltando	Domestication Innovation Fixed	domestication-innovation-fixed	domesticationinnovation-1.7.2-1.20.1.jar	
+faltando	Dracovita Farm Life	dracovita-farm-life	farmlife-1.20.1-1.1.0.jar	
+faltando	Excalibur Rechiseled Support	excalibur-rechiseled-support	Excalibur Rechiseled Support.zip	
+faltando	Excalibur | [Let's Do] Vinery Support	excalibur-lets-do-vinery-support	Excalibur_Vinery_0.3_1.20.1.zip	
+faltando	Excalibur | Twigs Support	excalibur-twigs-support	Excalibur_Twigs_0.2_1.20.1.zip	
+faltando	Extractinator	extractinator	extractinator-forge-1.20.1-2.3.0.jar	
+faltando	Fantasy's Furniture	fantasys-furniture	fantasyfurniture-1.20.1-9.0.0.jar	
+faltando	Farmer's Delight Compat	farmers-delight-compat	Compat_FarmersDelight.jar	
+faltando	Farmer's Respite	farmers-respite	farmersrespite-1.20.1-2.1.2.jar	
+faltando	Fluid & Foolish	fluid-foolish	Fluid-Foolish-1.0.1.zip	
+faltando	FTB Quest Localizer	ftb-quest-localizer	ftbquestlocalizer-1.20.1-forge-3.2.3.jar	
+faltando	Gensokyo Delight ~ Youkai's Homecoming	youkais-homecoming	youkaishomecoming-2.7.0.jar	
+faltando	Hamsters Plus Lite	hamsters	hamsters-forge-1.0.3-1.20.1.jar	
+faltando	Item Filters	item-filters	item-filters-forge-2001.1.0-build.59.jar	
+faltando	JourneyMap Extended Mob Icons	journeymap-extended-mob-icons	JourneyMap Extended Mob Icons v2.0.zip	
+faltando	Large Meals (An Add-on for Farmer's Delight)	large-meals-an-add-on-for-farmers-delight	largemeals-1.20.1-1.3.0.jar	
+faltando	Legendary Creatures	legendary-creatures	legendarycreatures-1.20.1-1.1.1.3.jar	
+faltando	Libnonymous	libnonymous	libnonymous-1.20.1-2.3.1.jar	
+faltando	Little Tractor	little-tractor	LittleTractor-1.20.1-1.2.jar	
+faltando	Longwing Nuker	longwing-nuker	longwing_nuker.zip	
+faltando	Loot Journal: Pickup Notifier 🧩 Forge	loot-journal	loot_journal-forge-1.20.1-6.1.2.jar	
+faltando	Lopy's Create Style Pipez	create-pipez	Lopy-Create-Pipez.zip	
+faltando	Max Enchant X	max-enchant-x	MaxEnchantX-1.20.X-1.3-Forge.jar	
+faltando	More Minecarts and Rails	more-minecarts	moreminecarts-1.8.3.jar	
+faltando	MrCrayfish's Furniture Mod (Legacy)	mrcrayfish-furniture-mod	cfm-forge-1.20.1-7.0.0-pre36.jar	
+faltando	Oculus	oculus	oculus-mc1.20.1-1.8.0.jar	
+faltando	Online Detector (Forge)	online-detector	online_detector-1.20-6.0.0.jar	
+faltando	Quark Delight	quark-delight	quark_delight_1.0.0_forge_1.20.1.jar	
+faltando	Quests Additions (Forge)	quests-additions	questsadditions-1.4.7.jar	
+faltando	Radiant Gear (Fabric/Forge/Quilt)	radiant-gear	radiantgear-forge-2.2.0+1.20.1.jar	
+faltando	Rainbow Oaks Renewed	rainbow-oaks-3	rainbowoaks-forge-1.20-1.0.0.jar	
+faltando	Re:Deco - Vanilla Furniture	redeco	redeco-1.14.1-forge-1.20.1.jar	
+faltando	Refined Storage (Fixes) Mixin	mct-refined-storage-mixin	MCT-RS-Mixin-1.20.1-1.1.0-b451-release.jar	
+faltando	Refined Storage Addons	refined-storage-addons	refinedstorageaddons-0.10.0.jar	
+faltando	Serene Seasons Fix - Revived	serene-seasons-fix-revived	sereneseasonsfix-1.20.1-1.2.0.jar	
+faltando	SerializerDebug	serializerdebug	serializer_debug-1.0.1.jar	
+faltando	ServerConfig Updater	serverconfig-updater	serverconfigupdater-4.0.2.jar	
+faltando	Society Coins	society-coins	SocietyCoins.zip	
+faltando	Society Tweaks	society-tweaks	society-1.22.jar	
+faltando	Species	species	species-3.5.jar	
+faltando	Splendid Slimes	splendid-slimes	splendid_slimes-0.20.5.jar	
+faltando	Sturdy Farmland - Growth Edition	sturdy-farmland-growth-edition	dew_drop_farmland_growth-9.0.jar	
+faltando	Trials Chambers Reuploaded	trials-chambers-reuploaded	Trials-2.3.3.jar	
+faltando	VerdantVibes	verdantvibes	verdantvibes-1.0.3-1.20.1.jar	
+faltando	Vintage Delight	vintage-delight	vintagedelight-0.1.6.jar	
+ok_neoforge	[EMF] Entity Model Features [Fabric & Forge]	entity-model-features	entity_model_features-3.2.4-1.20.1-forge.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	[ETF] Entity Texture Features - [Fabric & Forge]	entity-texture-features-fabric	entity_texture_features_1.20.1-forge-7.1.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	[Let's Do] API 	do-api	letsdo-API-forge-1.2.15-forge.jar	Fabric,NeoForge
+ok_neoforge	[Let's Do] Bakery - Farm&Charm Compat	lets-do-bakery-farm-charm-compat	letsdo-bakery-forge-2.0.3.jar	Fabric,NeoForge
+ok_neoforge	[Let's Do] Beachparty	lets-do-beachparty	letsdo-beachparty-forge-2.0.3.jar	Fabric,NeoForge
+ok_neoforge	[Let's Do] Brewery - Farm&Charm Compat	lets-do-brewery-farm-charm-compat	letsdo-brewery-forge-2.0.3.jar	Fabric,NeoForge
+ok_neoforge	[Let's Do] Candlelight - Farm&Charm Compat	lets-do-candlelight-farm-charm-compat	letsdo-candlelight-forge-2.0.2.jar	Fabric,NeoForge
+ok_neoforge	[Let's Do] Farm & Charm	lets-do-farm-charm	letsdo-farm_and_charm-forge-1.0.4.jar	Fabric,NeoForge
+ok_neoforge	[Let's Do] Furniture	lets-do-furniture	letsdo-furniture-forge-1.0.4.jar	Fabric,NeoForge
+ok_neoforge	[Let's Do] HerbalBrews	lets-do-herbal-brews	letsdo-herbalbrews-forge-1.0.12.jar	Fabric,NeoForge
+ok_neoforge	[Let's Do] Meadow	lets-do-meadow	letsdo-meadow-forge-1.3.23.jar	Fabric,NeoForge
+ok_neoforge	[Let's Do] Vinery	lets-do-vinery	letsdo-vinery-forge-1.4.41.jar	Fabric,NeoForge
+ok_neoforge	[Let's Do] WilderNature	lets-do-wildernature	letsdo-wildernature-forge-1.0.5.jar	Fabric,NeoForge
+ok_neoforge	Additional Attributes	additional-attributes	additional_attributes-1.20.1-1.3.6-all.jar	NeoForge
+ok_neoforge	Advanced Loot Info (ALI)	advanced-loot-info	AdvancedLootInfo-forge-1.20.1-1.12.0.jar	Fabric,Forge,NeoForge
+ok_neoforge	Advancement Plaques [Neo/Forge]	advancement-plaques	AdvancementPlaques-1.20.1-forge-1.6.7.jar	Forge,NeoForge
+ok_neoforge	AllTheLeaks (Memory Leak Fix)	alltheleaks	alltheleaks-1.1.1+1.20.1-forge.jar	NeoForge
+ok_neoforge	Alternate Current	alternate-current	alternate_current-mc1.20-1.7.0.jar	Fabric,NeoForge,Quilt
+ok_neoforge	AmbientSounds 6	ambientsounds	AmbientSounds_FORGE_v6.1.11_mc1.20.1.jar	Fabric,NeoForge
+ok_neoforge	Amendments	amendments	amendments-1.20-2.2.5.jar	Fabric,NeoForge
+ok_neoforge	Another Furniture	another-furniture	another_furniture-forge-1.20.1-3.0.4.jar	Fabric,NeoForge
+ok_neoforge	AppleSkin	appleskin	appleskin-forge-mc1.20.1-2.5.1.jar	Fabric,NeoForge
+ok_neoforge	Aquaculture 2	aquaculture	Aquaculture-1.20.1-2.5.7.jar	NeoForge
+ok_neoforge	Architectury API	architectury-api	architectury-9.2.14-forge.jar	Fabric,NeoForge
+ok_neoforge	Armor Statues	armor-statues	ArmorStatues-v8.0.6-1.20.1-Forge.jar	Fabric,NeoForge
+ok_neoforge	Atmospheric	atmospheric	atmospheric-1.20.1-6.1.1.jar	NeoForge
+ok_neoforge	AttributeFix	attributefix	AttributeFix-Forge-1.20.1-21.0.4.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Autumnity	autumnity	autumnity-1.20.1-5.0.2.jar	NeoForge
+ok_neoforge	bad packets	badpackets	badpackets-forge-0.4.3.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Bad Wither No Cookie - Reloaded	bad-wither-no-cookie-reloaded	bwncr-forge-1.20.1-3.17.2.jar	Fabric,NeoForge
+ok_neoforge	Balm	balm	balm-forge-1.20.1-7.3.38-all.jar	Fabric,Forge,NeoForge
+ok_neoforge	Beautify!	beautify-decorate	beautify-2.0.2.jar	Forge,NeoForge
+ok_neoforge	Better Advancements	better-advancements	BetterAdvancements-Forge-1.20.1-0.4.2.10.jar	Fabric,Forge,NeoForge
+ok_neoforge	Better Archeology	better-archeology	betterarcheology-1.2.1-1.20.1.jar	Fabric,Forge,NeoForge
+ok_neoforge	Better Compatibility Checker	better-compatibility-checker	BetterCompatibilityChecker-forge-4.0.8+mc1.20.1.jar	Fabric,NeoForge
+ok_neoforge	Biome Spawn Point	biome-spawn-point	biomespawnpoint-1.20.1-2.3.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Blueprint	blueprint	blueprint-1.20.1-7.1.5.jar	NeoForge
+ok_neoforge	Bonsai Trees 4	bonsai-trees	BonsaiTrees3-1.20.1-3.3.2.jar	NeoForge
+ok_neoforge	Bookshelf	bookshelf	Bookshelf-Forge-1.20.1-20.2.13.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Bountiful	bountiful	Bountiful-6.0.4+1.20.1-forge.jar	NeoForge
+ok_neoforge	Brewin' And Chewin'	brewin-and-chewin	BrewinAndChewin-1.20.1-3.2.1.jar	Fabric,NeoForge
+ok_neoforge	Builder's Delight (Forge)	builders-delight-forge	BuildersDelight-1.20.1-v.1.3.jar	NeoForge
+ok_neoforge	Building Gadgets	building-gadgets	buildinggadgets2-1.0.7.jar	NeoForge
+ok_neoforge	Buzzier Bees	buzzier-bees	buzzier_bees-1.20.1-6.0.1.jar	NeoForge
+ok_neoforge	Caelus API	caelus	caelus-forge-3.2.0+1.20.1.jar	Forge,NeoForge
+ok_neoforge	Carry On	carry-on	carryon-forge-1.20.1-2.1.2.7.jar	Fabric,Forge,NeoForge
+ok_neoforge	Certain Questing Additions	certain-questing-additions	certain_questing_additions-forge-1.2.0.2+mc1.20.1.jar	Fabric,NeoForge
+ok_neoforge	CFM Refurbished: Watt About Power?	cfm-wap	cfm_wap-1.20.1-forge-1.2.0.jar	Fabric,NeoForge
+ok_neoforge	Chat Heads	chat-heads	chat_heads-0.13.7-forge-1.20.jar	Fabric,Forge,NeoForge
+ok_neoforge	Cherished Worlds	cherished-worlds	cherishedworlds-forge-6.1.7+1.20.1.jar	Fabric,Forge,NeoForge
+ok_neoforge	Chimes	chimes	Chimes-v2.1.1-1.20.1-Forge.jar	Fabric,Forge,NeoForge
+ok_neoforge	Cinematic Interactions	cinematic-interactions	Cinematic Interaction-Forge-1.20.1-0.18.28.jar	Fabric,NeoForge
+ok_neoforge	Citadel	citadel	citadel-2.6.3-1.20.1.jar	NeoForge
+ok_neoforge	Classic Pipes	classic-pipes	classicpipes-forge-1.20.1-1.1.5.jar	Fabric,Forge,NeoForge
+ok_neoforge	Clayworks	clayworks	clayworks-1.20.1-3.0.4.jar	NeoForge
+ok_neoforge	CleanView	cleanview	cleanview-1.20.1-v1.jar	Forge,NeoForge
+ok_neoforge	Cloth Config API (Fabric/Forge/NeoForge)	cloth-config	cloth-config-11.1.136-forge.jar	Fabric,Forge,NeoForge
+ok_neoforge	Clumps	clumps	Clumps-forge-1.20.1-12.0.0.4.jar	Fabric,Forge,NeoForge
+ok_neoforge	Cluttered	cluttered	cluttered-[Forge]-3.0.3-1.20.1.jar	NeoForge
+ok_neoforge	Collective	collective	collective-1.20.1-7.87.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Colorful Hearts	colorful-hearts	colorfulhearts-forge-1.20.1-4.3.16.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Colorwheel	colorwheel	colorwheel-forge-1.2.9+mc1.20.1.jar	Fabric,NeoForge
+ok_neoforge	Colorwheel Patcher	colorwheel-patcher	colorwheel_patcher-forge-1.0.5+mc1.20.1.jar	Fabric,NeoForge
+ok_neoforge	Comforts	comforts	comforts-forge-6.4.0+1.20.1.jar	Fabric,Forge,NeoForge
+ok_neoforge	Common Network	common-network	common-networking-forge-1.0.5-1.20.1.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Configured Defaults	configured-defaults	ConfiguredDefaults-v8.0.4-1.20.1-Forge.jar	Fabric,NeoForge
+ok_neoforge	Connectivity	connectivity	connectivity-1.20.1-7.2.jar	Fabric,NeoForge
+ok_neoforge	Controllable	controllable	controllable-forge-1.20.1-0.21.9.jar	Fabric,NeoForge
+ok_neoforge	Controlling	controlling	Controlling-forge-1.20.1-12.0.2.jar	Fabric,Forge,NeoForge
+ok_neoforge	CoroUtil	coroutil	coroutil-forge-1.20.1-1.3.7.jar	Fabric,Forge,NeoForge
+ok_neoforge	Cosmetic Armor Reworked	cosmetic-armor-reworked	cosmeticarmorreworked-1.20.1-v1a.jar	Forge,NeoForge
+ok_neoforge	Cozy Cafe	cozy-cafe	cozycafe-1.10-all.jar	NeoForge
+ok_neoforge	Crabber's Delight	crabbers-delight	CrabbersDelight-1.20.1-1.1.7d.jar	NeoForge
+ok_neoforge	Crafting on a stick	crafting-on-a-stick	crafting-on-a-stick-1.20.1-1.1.5.jar	NeoForge
+ok_neoforge	Crafting Tweaks	crafting-tweaks	craftingtweaks-forge-1.20.1-18.2.8.jar	Fabric,Forge,NeoForge
+ok_neoforge	Crash Assistant	crash-assistant	CrashAssistant-forge-1.19-1.20.1-1.11.10.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Crash Utilities	crash-utilities	crashutilities-8.1.4.jar	NeoForge
+ok_neoforge	Create	create	create-1.20.1-6.0.8.jar	NeoForge
+ok_neoforge	Create Deco	create-deco	createdeco-2.0.3-1.20.1-forge.jar	NeoForge
+ok_neoforge	Create Factory Logistics	create-factory-logistics	create_factory_logistics-1.20.1-1.4.7.jar	NeoForge
+ok_neoforge	Create Mechanical Extruder	create-mechanical-extruder	create_mecanical_extruder-1.20.1-1.6.11-6.0.6.jar	NeoForge
+ok_neoforge	Create Railways Navigator	create-railways-navigator	createrailwaysnavigator-forge-1.20.1-beta-0.8.5-C6.jar	NeoForge
+ok_neoforge	Create Slice & Dice	slice-and-dice	sliceanddice-forge-3.6.0.jar	NeoForge
+ok_neoforge	Create: Central Kitchen	create-central-kitchen	create_central_kitchen-1.20.1-for-create-6.0.8-1.5.0.jar	NeoForge
+ok_neoforge	Create: Copycats+	copycats	copycats-3.0.7+mc.1.20.1-forge.jar	NeoForge
+ok_neoforge	Create: Enchantment Industry	create-enchantment-industry	create_enchantment_industry-1.3.3-for-create-6.0.6.jar	NeoForge
+ok_neoforge	Create: Extra Gauges	create-extra-gauges	extra_gauges-2.0.7.jar	NeoForge
+ok_neoforge	Create: Hypertubes	hypertubes	create_hypertube-0.4.0-FORGE.jar	NeoForge
+ok_neoforge	Create: Numismatics	numismatics	CreateNumismatics-1.1.0+forge-mc1.20.1.jar	NeoForge
+ok_neoforge	Create: Numismatics Utils	create-numismatics-utils	numismatics_utils-2.2.jar	NeoForge
+ok_neoforge	Create: Schematic Checker	create-schematicchecker	CreateSchematicChecker-0.21.18-6.0-forge-1.20.1.jar	NeoForge
+ok_neoforge	Create:Entity Control	create-entitycontroller	CreateEntityControl-0.3.8.4-6.0-forge-1.20.1.jar	NeoForge
+ok_neoforge	CreativeCore	creativecore	CreativeCore_FORGE_v2.12.32_mc1.20.1.jar	Fabric,NeoForge
+ok_neoforge	Critters and Companions	critters-and-companions	crittersandcompanions-forge-1.20.1-2.3.5.jar	Fabric,NeoForge
+ok_neoforge	Cuisine Delight	cuisine-delight	cuisinedelight-1.1.20.jar	NeoForge
+ok_neoforge	Cultural Delights	cultural-delights	culturaldelights-0.16.7.jar	Fabric,NeoForge
+ok_neoforge	Cupboard	cupboard	cupboard-1.20.1-2.7.jar	Fabric,NeoForge
+ok_neoforge	Curios API	curios	curios-forge-5.14.1+1.20.1.jar	NeoForge
+ok_neoforge	Curious Armor Stands	curious-armor-stands	curious_armor_stands-1.20-5.1.0.jar	NeoForge
+ok_neoforge	Cyanide	cyanide	cyanide-forge-1.20.1-4.1.1.jar	Fabric,NeoForge
+ok_neoforge	Data Anchor	data-anchor	Data_Anchor-forge-1.20.1-1.0.0.20.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Diegesis	diegesis	diegesis-forge-1.20.1-1.0.0-beta.5.jar	Fabric,NeoForge
+ok_neoforge	Display Delight	display-delight	displaydelight-1.7.0.jar	NeoForge
+ok_neoforge	Distant Horizons: A Level of Detail mod	distant-horizons	DistantHorizons-3.3.3-1.20.1-fabric-forge.jar	Fabric,NeoForge
+ok_neoforge	Dramatic Doors	dramatic-doors	DramaticDoors-QuiFabrge-1.20.1-3.3.3.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Drippy Loading Screen	drippy-loading-screen	drippyloadingscreen_forge_3.0.12_MC_1.20.1.jar	Fabric,Forge,NeoForge
+ok_neoforge	Ears (+ Snouts/Muzzles, Tails, Horns, Wings, and More)	ears	ears-forge-1.19.4-1.4.7.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Easy Anvils	easy-anvils	EasyAnvils-v8.0.2-1.20.1-Forge.jar	Fabric,NeoForge
+ok_neoforge	Easy NPC: Core	easy-npc-core	easy_npc-forge-1.20.1-6.1.0.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Eating Animation [Neo/Forge]	eating-animation-forge	eatinganimation-1.20.1-5.1.0.jar	NeoForge
+ok_neoforge	Embeddium	embeddium	embeddium-0.3.31+mc1.20.1.jar	NeoForge
+ok_neoforge	EmbellishCraft	embellishcraft	embellishcraft-1.20.1-7.0.0.0.jar	NeoForge
+ok_neoforge	Ember's Text API	embers-text-api	emberstextapi-1.4.1.jar	Fabric,NeoForge
+ok_neoforge	EMI	emi	emi-1.1.24+1.20.1+forge.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Emojiful	emojiful	Emojiful-Forge-1.20.1-4.2.0.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Enchantment Descriptions	enchantment-descriptions	EnchantmentDescriptions-Forge-1.20.1-17.1.19.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	EntityJS	entityjs	entityjs-0.6.6-1.20.1.jar	NeoForge
+ok_neoforge	Etcetera	etcetera	Etcetera-1.20.1-1.1.3-Forge.jar	Fabric,NeoForge
+ok_neoforge	Etched	etched	etched-3.0.4.jar	NeoForge
+ok_neoforge	Every Compat (Wood Good)	every-compat	everycomp-1.20-2.9.24-forge.jar	Fabric,NeoForge
+ok_neoforge	ExpandAbility	expandability	expandability-9.0.4.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Exposure	exposure	exposure-1.20.1-1.7.16-forge.jar	Fabric,NeoForge
+ok_neoforge	Exposure Catalog	exposure-catalog	exposure_catalog-1.20.1-1.0.3-forge.jar	Fabric,NeoForge
+ok_neoforge	Extreme sound muffler - (Neo)Forge	extreme-sound-muffler	ExtremeSoundMuffler-3.48-forge-1.20.1.jar	Forge,NeoForge
+ok_neoforge	Falling Leaves (NeoForge/Forge)	falling-leaves-forge	fallingleaves-1.20.1-2.1.2.jar	Forge,NeoForge
+ok_neoforge	FancyMenu	fancymenu	fancymenu_forge_3.7.0_MC_1.20.1.jar	Fabric,Forge,NeoForge
+ok_neoforge	Farmer's Delight	farmers-delight	FarmersDelight-1.20.1-1.3.4.jar	NeoForge
+ok_neoforge	Farming for Blockheads	farming-for-blockheads	farmingforblockheads-forge-1.20.1-14.0.2.jar	Fabric,Forge,NeoForge
+ok_neoforge	Fast Leaf Decay	fast-leaf-decay	FastLeafDecay-32.jar	NeoForge
+ok_neoforge	Fast Paintings	fast-paintings	fastpaintings-1.20-1.2.7.jar	Fabric,NeoForge
+ok_neoforge	Faster Ladder Climbing	faster-ladder-climbing	FasterLadderClimbing-1.20.1-0.2.10.jar	NeoForge
+ok_neoforge	FastFurnace	fastfurnace	FastFurnace-1.20.1-8.0.2.jar	NeoForge
+ok_neoforge	FastSuite	fastsuite	FastSuite-1.20.1-5.1.2.jar	NeoForge
+ok_neoforge	Fauna & Orchestra	fauna-and-orchestra	faunaandorchestra-forge-1.20.1-3.0.3.jar	NeoForge
+ok_neoforge	FerriteCore ((Neo)Forge)	ferritecore	ferritecore-6.0.1-forge.jar	NeoForge
+ok_neoforge	FindMe	findme	findme-3.2.3-forge.jar	Fabric,NeoForge
+ok_neoforge	Flerovium	flerovium	flerovium-forge-1.20.1-1.2.18-all.jar	NeoForge
+ok_neoforge	Framework	framework	framework-forge-1.20.1-0.7.15.jar	Fabric,Forge,NeoForge
+ok_neoforge	FTB Backups 2	ftb-backups-2	ftbbackups2-forge-1.20-1.0.23.jar	Fabric,NeoForge
+ok_neoforge	FTB Chunks (NeoForge)	ftb-chunks-forge	ftb-chunks-forge-2001.3.6.jar	NeoForge
+ok_neoforge	FTB Chunks - Modded Support	ftb-chunks-recoloured	ftb-chunks-modded-1.20+1.1.9.jar	Fabric,Forge,NeoForge
+ok_neoforge	FTB Library (NeoForge)	ftb-library-forge	ftb-library-forge-2001.2.12.jar	NeoForge
+ok_neoforge	FTB Quests (NeoForge)	ftb-quests-forge	ftb-quests-forge-2001.4.17.jar	NeoForge
+ok_neoforge	FTB Teams (NeoForge)	ftb-teams-forge	ftb-teams-forge-2001.3.2.jar	NeoForge
+ok_neoforge	FTB Ultimine (NeoForge)	ftb-ultimine-forge	ftb-ultimine-forge-2001.1.8.jar	NeoForge
+ok_neoforge	FTB XMod Compat	ftb-xmod-compat	ftb-xmod-compat-forge-2.1.3.jar	Fabric,NeoForge
+ok_neoforge	Functional Storage	functional-storage	functionalstorage-1.20.1-1.2.13.jar	NeoForge
+ok_neoforge	Fusion (Connected Textures)	fusion-connected-textures	fusion-1.2.11c-forge-mc1.20.1.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Fzzy Config	fzzy-config	fzzy_config-0.7.7+1.20.1+forge.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Gadgets Against Grind	gag	gag-forge-3.0.0-build.13.jar	NeoForge
+ok_neoforge	Gallery	gallery	gallery-1.20.1-1.0.3.jar	NeoForge
+ok_neoforge	Game Discs	game-discs	gamediscs-0.3.2-forge.jar	NeoForge
+ok_neoforge	GeckoJS	geckojs	GeckoJS-2001forge-1.5.2.jar	NeoForge
+ok_neoforge	GeckoLib	geckolib	geckolib-forge-1.20.1-4.8.4.jar	Fabric,Forge,NeoForge
+ok_neoforge	GlitchCore	glitchcore	GlitchCore-forge-1.20.1-0.0.1.1.jar	Fabric,Forge,NeoForge
+ok_neoforge	Gnetum	gnetum	gnetum-2.4.6.jar	Fabric,NeoForge
+ok_neoforge	Golem Overhaul	golem-overhaul	golemoverhaul-forge-1.20.1-1.1.0.jar	Fabric,NeoForge
+ok_neoforge	GroovyModLoader (GML)	gml	gml-4.0.11-all.jar	NeoForge
+ok_neoforge	GUI Clock	gui-clock	guiclock-1.20.1-4.6.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Hands-On Delight	hands-on-delight	handson_delight-forge-1.20.1-1.1.0.jar	Fabric,NeoForge
+ok_neoforge	Haunted Harvest	haunted-harvest	hauntedharvest-1.20-3.2.0.jar	Fabric,NeoForge
+ok_neoforge	Hearth and Harvest	hearth-and-harvest	hearthandharvest-1.20.1-1.0.12c.jar	NeoForge
+ok_neoforge	Hopo Better Mineshaft	hopo-better-mineshaft	HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2d.jar	Fabric,Forge,NeoForge
+ok_neoforge	Horseman	horseman	horseman-1.20.1-1.3.15-forge.jar	Fabric,NeoForge
+ok_neoforge	HT's TreeChop	treechop	TreeChop-1.20.1-forge-0.19.0-fixed.jar	Fabric,NeoForge
+ok_neoforge	Iceberg [Neo/Forge]	iceberg	Iceberg-1.20.1-forge-1.1.25.jar	Forge,NeoForge
+ok_neoforge	ImmediatelyFast	immediatelyfast	ImmediatelyFast-Forge-1.5.5+1.20.4.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Immersive Paintings	immersive-paintings	immersive_paintings-0.6.13+1.20.1-forge.jar	Fabric,NeoForge
+ok_neoforge	In Control!	in-control	incontrol-1.20-9.4.1.jar	Fabric,NeoForge
+ok_neoforge	Iron's Rpg Tweaks	irons-rpg-tweaks	irons_rpg_tweaks-1.20-1.4.0.jar	NeoForge
+ok_neoforge	ItemPhysic Full	itemphysic	ItemPhysic_FORGE_v1.8.17_mc1.20.1.jar	Fabric,NeoForge
+ok_neoforge	Jade Addons (Neo/Forge)	jade-addons	JadeAddons-1.20.1-Forge-5.5.0.jar	NeoForge
+ok_neoforge	Jade 🔍	jade	Jade-1.20.1-Forge-11.13.2.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Just Enough Effect Descriptions (JEED)	just-enough-effect-descriptions-jeed	jeed-1.20-2.2.5.jar	Fabric,NeoForge
+ok_neoforge	Just Enough Items (JEI)	jei	jei-1.20.1-forge-15.20.0.129.jar	Fabric,Forge,NeoForge
+ok_neoforge	JustHammers	justhammers	justhammers-forge-2.0.3+mc1.20.1.jar	Fabric,NeoForge
+ok_neoforge	Kaleidoscope Cookery	kaleidoscope-cookery	kaleidoscopecookery-1.5.1-forge+mc1.20.1.jar	Fabric,NeoForge
+ok_neoforge	Kaleidoscope Tavern	kaleidoscope-tavern	kaleidoscopetavern-1.2.0-forge+mc1.20.1.jar	NeoForge
+ok_neoforge	Kaleidoscope: Immersive Eating	kaleidoscope-immersive-eating	kaleidoscope_immersiveEating-forge1.20.1-1.4.3.jar	Fabric,NeoForge
+ok_neoforge	Kambrik	kambrik	Kambrik-6.1.1+1.20.1-forge.jar	Fabric,NeoForge
+ok_neoforge	Kiwi 🥝 (Neo/Forge)	kiwi	Kiwi-1.20.1-Forge-11.9.2.jar	NeoForge
+ok_neoforge	Konkrete	konkrete	konkrete_forge_1.8.0_MC_1.20-1.20.1.jar	Forge,NeoForge
+ok_neoforge	Kotlin for Forge	kotlin-for-forge	kotlinforforge-4.12.0-all.jar	Forge,NeoForge
+ok_neoforge	KubeJS	kubejs	kubejs-forge-2001.6.5-build.16.jar	NeoForge
+ok_neoforge	KubeJS Additions	kubejs-additions	kubejsadditions-forge-4.3.3.jar	NeoForge
+ok_neoforge	KubeJS Curios	kubejs-curios	kubejs_curios_forge_1.20.1-1.0.4.jar	NeoForge
+ok_neoforge	Leaves Be Gone	leaves-be-gone	LeavesBeGone-v8.0.0-1.20.1-Forge.jar	Fabric,NeoForge
+ok_neoforge	Legendary Survival Overhaul	legendary-survival-overhaul	legendarysurvivaloverhaul-1.20.1-2.4.7.jar	NeoForge
+ok_neoforge	Lios Hobbit Hill Village	hobbit-hill-village	hobbit_hill_village-0.0.4.jar	Fabric,Forge,NeoForge
+ok_neoforge	Lithosphere	lithosphere	lithosphere 1.6 17.06.2025 (1.20 - 1.20.4).jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Lithostitched	lithostitched	lithostitched-forge-1.20.1-1.4.11.jar	Fabric,NeoForge
+ok_neoforge	Little Joys	little-joys	littlejoys-forge-1.20.1-20.1.14.jar	Fabric,Forge,NeoForge
+ok_neoforge	Load My F***ing Tags	lmft	lmft-1.0.4+1.20.1-forge.jar	Fabric,NeoForge
+ok_neoforge	Log Begone	log-begone	Log-Begone-Forge-1.20.1-1.0.8.jar	Fabric,NeoForge
+ok_neoforge	Longwings	longwings	Longwings-v0.9.5-1.20.1-Forge.jar	Fabric,Forge,NeoForge
+ok_neoforge	LootJS: KubeJS Addon	lootjs	lootjs-forge-1.20.1-2.13.1.jar	NeoForge
+ok_neoforge	Lootr (Forge & NeoForge)	lootr	lootr-forge-1.20-0.7.35.90.jar	NeoForge
+ok_neoforge	Mapper Base	mapper-base	mapperbase-1.20.1-6.0.0.0.jar	NeoForge
+ok_neoforge	McJtyLib	mcjtylib	mcjtylib-1.20-8.0.8.jar	Fabric,NeoForge
+ok_neoforge	Melody	melody	melody_forge_1.0.3_MC_1.20.1-1.20.4.jar	Fabric,Forge,NeoForge
+ok_neoforge	MidnightLib	midnightlib	midnightlib-forge-1.9.2+1.20.1.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Miner's Delight +	miners-delight-plus	miners_delight-1.20.1-1.4.5-backport.jar	NeoForge
+ok_neoforge	Mob Lassos	mob-lassos	MobLassos-v8.0.1-1.20.1-Forge.jar	Fabric,NeoForge
+ok_neoforge	ModernFix	modernfix	modernfix-forge-5.27.8+mc1.20.1.jar	Fabric,NeoForge
+ok_neoforge	Moog's Structure Lib (moogs_structures)	moogs-structure-lib	moogs_structure_lib-1.1.0-1.20-1.20.4-forge.jar	Fabric,Forge,NeoForge
+ok_neoforge	Moonlight Lib	selene	moonlight-1.20-2.16.34-forge.jar	Fabric,NeoForge
+ok_neoforge	More Overlays Updated	more-overlays-updated	moreoverlays-1.24.1-mc1.20.1-forge.jar	Fabric,Forge,NeoForge
+ok_neoforge	MoreJS	morejs	morejs-forge-1.20.1-0.10.1.jar	NeoForge
+ok_neoforge	Mouse Tweaks	mouse-tweaks	MouseTweaks-forge-mc1.20.1-2.25.1.jar	Fabric,Forge,NeoForge
+ok_neoforge	MrCrayfish's Furniture Mod: Refurbished	refurbished-furniture	refurbished_furniture-forge-1.20.1-1.0.20.jar	Fabric,Forge,NeoForge
+ok_neoforge	MVS - Moog's Voyager Structures	moogs-voyager-structures	MoogsVoyagerStructures-1.20-5.0.4.jar	Fabric,Forge,NeoForge
+ok_neoforge	Mystical Oak Tree	mystical-oak-tree	mysticaloaktree-1.20-1.11.jar	Fabric,NeoForge
+ok_neoforge	Nature's Compass	natures-compass	NaturesCompass-1.20.1-1.11.2-forge.jar	Fabric,Forge,NeoForge
+ok_neoforge	NeoAuth	neoauth	NeoAuth-1.20.1-1.0.3.jar	NeoForge
+ok_neoforge	Nether Depths Upgrade	nether-depths-upgrade	netherdepthsupgrade-3.1.5-1.20.jar	Fabric,NeoForge
+ok_neoforge	NetherPortalFix	netherportalfix	netherportalfix-forge-1.20-13.0.1.jar	Fabric,Forge,NeoForge
+ok_neoforge	Night Lights	nightlights	nightlights-1.20.1-1.1.jar	Fabric,Forge,NeoForge
+ok_neoforge	No Chat Reports	no-chat-reports	NoChatReports-FORGE-1.20.1-v2.2.2.jar	Fabric,Forge,NeoForge
+ok_neoforge	No Chat Restrictions	no-chat-restrictions	NoChatRestrictions-Forge-MC1.20.1-v1.0.0.jar	Fabric,Forge,NeoForge
+ok_neoforge	Not Enough Recipe Book [NERB]	notenoughrecipebook	Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Observable	observable	observable-4.4.1.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Ocean's Delight	oceans-delight	oceansdelight-1.0.2-1.20.jar	Fabric,NeoForge
+ok_neoforge	Ok Zoomer - It's Zoom!	ok-zoomer	ok_zoomer-forge-5.4.0-beta.8.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Oreganized	oreganized	Oreganized 1.20.1-4.3.2.jar	NeoForge
+ok_neoforge	Packet Fixer	packet-fixer	packetfixer-3.3.1-1.18-1.20.4-merged.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Pam's HarvestCraft 2 - Trees	pams-harvestcraft-2-trees	pamhc2trees-1.20-1.0.2.jar	NeoForge
+ok_neoforge	Panda's Falling Trees	pandas-falling-trees	fallingtrees-forge-mc1.20-0.13.2-SNAPSHOT.jar	Fabric,NeoForge
+ok_neoforge	PandaLib	pandalib	pandalib-forge-mc1.20-0.5.2-SNAPSHOT.jar	Fabric,NeoForge
+ok_neoforge	Paragliders	paragliders	Paraglider-forge-20.1.3.jar	NeoForge
+ok_neoforge	ParCool! ~ Minecraft Parkour ~	parcool	ParCool-1.20.1-3.4.3.3.jar	NeoForge
+ok_neoforge	ParCool+ / Compatibility Addon	parcool-compatibility-addon	ParCool-CompatibilityAddon-1.20.1-3.4.1.5-1.1.jar	NeoForge
+ok_neoforge	Particle Core	particle-core	particle_core-0.3.3+1.20.1+forge.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Particle Rain	particle-rain	particlerain-4.0.0-beta.10+1.20.1-forge.jar	Fabric,NeoForge
+ok_neoforge	Passable Foliage 🌳 (Neo/Forge)	passable-foliage	PassableFoliage-1.20.1-forge-8.2.1.jar	NeoForge
+ok_neoforge	Patchouli	patchouli	Patchouli-1.20.1-85-FORGE.jar	NeoForge
+ok_neoforge	Perfect Plushies	perfect-plushies	perfectplushies-forge-1.20.1-1.13.3.jar	Fabric,NeoForge
+ok_neoforge	Pipez	pipez	pipez-forge-1.20.1-1.2.21.jar	NeoForge
+ok_neoforge	Placebo	placebo	Placebo-1.20.1-8.6.3.jar	NeoForge
+ok_neoforge	Platform	platform	Platform-forge-1.20.1-1.3.4.jar	Fabric,NeoForge
+ok_neoforge	playerAnimator	playeranimator	player-animation-lib-forge-1.0.2-rc1+1.20.jar	Fabric,NeoForge
+ok_neoforge	Plonk	plonk	plonk-1.20.1-10.0.5-forge.jar	NeoForge
+ok_neoforge	PolyLib	polylib	polylib-forge-2000.0.3-build.143.jar	Fabric,NeoForge
+ok_neoforge	Ponder for KubeJS	ponder-kjs	ponderjs-1.20.1-2.1.0.jar	NeoForge
+ok_neoforge	Portable blueprints	portable-blueprints	portable_blueprints-v2.0.11-mv1.20.1.jar	Forge,NeoForge
+ok_neoforge	Portfolio	portfolio	portfolio-1.20.1-1.5.0-forge.jar	Fabric,Forge,NeoForge
+ok_neoforge	PowerfulJS	powerfuljs	powerfuljs-1.6.1.jar	NeoForge
+ok_neoforge	Pufferfish's Attributes [Fabric & Forge & NeoForge]	puffish-attributes	puffish_attributes-0.7.2-1.20-forge.jar	Fabric,NeoForge
+ok_neoforge	Pufferfish's Skills [Fabric & Forge & NeoForge]	puffish-skills	puffish_skills-0.16.1-1.20-forge.jar	Fabric,NeoForge
+ok_neoforge	Punchy! - First person animations	punchy	punchy-2.8c-forge-1.20.1.jar	Fabric,Forge,NeoForge
+ok_neoforge	Punchy! Moves	punchy-moves	punchy-moves-1.0.8-forge-1.20.1.jar	Fabric,Forge,NeoForge
+ok_neoforge	Puzzles Lib	puzzles-lib	PuzzlesLib-v8.1.33-1.20.1-Forge.jar	Fabric,NeoForge
+ok_neoforge	Quality Food	quality-food	quality_food-1.20.1-2.4.3-all.jar	NeoForge
+ok_neoforge	Quark	quark	Quark-4.0-462.jar	NeoForge
+ok_neoforge	Radium Reforged	radium-reforged	radium-mc1.20.1-0.12.4+git.26c9d8e.jar	NeoForge
+ok_neoforge	Raw's Visual keybinder	raws-visual-keybinder	visual_keybinder-1.20.1 - 0.1.7.jar	Forge,NeoForge
+ok_neoforge	Recipe Essentials	recipe-essentials-forge-fabric	recipeessentials-1.20.1-4.0.jar	Fabric,NeoForge
+ok_neoforge	Refined Storage	refined-storage	refinedstorage-1.12.4.jar	Fabric,NeoForge
+ok_neoforge	ReForgedPlay [replay mod on (neo)forge]	reforgedplay-mod	reforgedplaymod-1.20.1-0.3.1.jar	NeoForge
+ok_neoforge	ReHooked	rehooked	rehooked-1.8.3-1.20.1.jar	NeoForge
+ok_neoforge	Reliable EMI (REMI)	reliable-emi	remi-forge-1.20.1-4.6.8.jar	Fabric,NeoForge
+ok_neoforge	Relics	relics-mod	relics-1.20.1-0.8.0.11.jar	NeoForge
+ok_neoforge	Resource Pack Overrides	resource-pack-overrides	ResourcePackOverrides-v8.0.3-1.20.1-Forge.jar	Fabric,NeoForge
+ok_neoforge	Resourceful Config	resourceful-config	resourcefulconfig-forge-1.20.1-2.1.3.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Resourceful Lib	resourceful-lib	resourcefullib-forge-1.20.1-2.1.29.jar	Fabric,NeoForge
+ok_neoforge	Rhino	rhino	rhino-forge-2001.2.3-build.10.jar	Fabric,Forge,NeoForge
+ok_neoforge	Ribbits	ribbits	Ribbits-1.20.1-Forge-3.0.5.jar	Fabric,NeoForge
+ok_neoforge	Rotten Creatures	rotten-creatures	rottencreatures-forge-1.20.1-1.1.0.jar	Fabric,NeoForge
+ok_neoforge	RSInfinityBooster	rsinfinitybooster	RSInfinityBooster-1.20.1-1.0+41.jar	Fabric,NeoForge
+ok_neoforge	Sawmill	sawmill	sawmill-1.20-1.4.10.jar	Fabric,NeoForge
+ok_neoforge	Scholar	scholar	scholar-1.20.1-1.2.5.1-forge.jar	Fabric,NeoForge
+ok_neoforge	Searchables	searchables	Searchables-forge-1.20.1-1.0.3.jar	Fabric,Forge,NeoForge
+ok_neoforge	SeasonHud	seasonhud	seasonhud-forge-1.20.1-2.0.4.jar	Forge,NeoForge
+ok_neoforge	SelectiveBounds	selectivebounds	selectivebounds-forge-1.20.1-0.0.2.jar	Fabric,Forge,NeoForge
+ok_neoforge	Serene Seasons	serene-seasons	SereneSeasons-forge-1.20.1-9.1.0.2.jar	Fabric,Forge,NeoForge
+ok_neoforge	ServerCore	servercore	servercore-forge-1.5.2+1.20.1.jar	Fabric,NeoForge
+ok_neoforge	Sewing Kit	sewing-kit	SewingKit-1.20.1-1.8.1.jar	NeoForge
+ok_neoforge	ShatterLib | OctoLib	shatterbyte-lib	OctoLib-FORGE-0.5.0.1+1.20.1.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Shipping Bin	shipping-bin	ShippingBin-forge-1.20.1-4.jar	NeoForge
+ok_neoforge	Shoulder Surfing Reloaded	shoulder-surfing-reloaded	ShoulderSurfing-Forge-1.20.1-4.16.0.jar	Fabric,Forge,NeoForge
+ok_neoforge	Simple Discord Rich Presence (Forge /  Fabric)	simple-discord-rich-presence	SimpleDiscordRichPresence-forge-4.0.3-build.40+mc1.20.1.jar	Fabric,NeoForge
+ok_neoforge	Simple Hats	simplehats	simplehats-forge-1.20.1-0.3.2.jar	Fabric,NeoForge
+ok_neoforge	Simple Magnets	simple-magnets	simplemagnets-1.1.12-forge-mc1.20.1.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Simple Recall Potion	simple-recall-potion	simplerecall-1.0.6-1.20.1.jar	NeoForge
+ok_neoforge	Simply Light	simply-light	simplylight-1.20.1-1.4.6-build.50.jar	NeoForge
+ok_neoforge	SkillExpNotifier	skillexpnotifier	skillsexpnotifier-5.4.1-SNAPSHOT.jar	Fabric,NeoForge
+ok_neoforge	Small Ships	small-ships	smallships-forge-1.20.1-2.0.0-b1.4.jar	Fabric,Forge,NeoForge
+ok_neoforge	SmartBrainLib (Forge/Fabric/Quilt)	smartbrainlib	SmartBrainLib-forge-1.20.1-1.15.jar	Fabric,Forge,NeoForge
+ok_neoforge	Snow Pig [Forge]	snow-pig	snowpig-1.20.1-6.0.3.jar	NeoForge
+ok_neoforge	Snow! Real Magic! ⛄ (Neo/Forge)	snow-real-magic	SnowRealMagic-1.20.1-Forge-10.7.0.jar	NeoForge
+ok_neoforge	Snowy Spirit	snowy-spirit	snowyspirit-1.20-3.0.10.jar	Fabric,NeoForge
+ok_neoforge	Snuffles	snuffles	snuffles-1.2.0.1.jar	NeoForge
+ok_neoforge	Society Trading	society-trading	society_trading-1.2.9.jar	NeoForge
+ok_neoforge	Sodium/Embeddium Dynamic Lights	dynamiclights-reforged	sodiumdynamiclights-forge-1.0.10-1.20.1.jar	Fabric,NeoForge
+ok_neoforge	Sodium/Embeddium Options API	sodium-options-api	sodiumoptionsapi-forge-1.0.10-1.20.1.jar	Fabric,NeoForge
+ok_neoforge	Sophisticated Backpacks	sophisticated-backpacks	sophisticatedbackpacks-1.20.1-3.24.60.1982.jar	NeoForge
+ok_neoforge	Sophisticated Core	sophisticated-core	sophisticatedcore-1.20.1-1.3.71.2181.jar	NeoForge
+ok_neoforge	Sophisticated Storage	sophisticated-storage	sophisticatedstorage-1.20.1-1.4.74.1997.jar	NeoForge
+ok_neoforge	Sophisticated Storage Create Integration	sophisticated-storage-create-integration	sophisticatedstoragecreateintegration-1.20.1-0.1.22.190.jar	NeoForge
+ok_neoforge	Sound Physics Remastered	sound-physics-remastered	sound-physics-remastered-forge-1.20.1-1.5.1.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Sounds Be Gone!	sounds-be-gone	soundsbegone-1.2.5.jar	Fabric,NeoForge,Quilt
+ok_neoforge	spark	spark	spark-1.10.53-forge.jar	Fabric,Forge,NeoForge
+ok_neoforge	Spatial GUI	spatial-gui	spatial-gui-1.11.1-hotfix-1.20.1-forge.jar	Fabric,NeoForge
+ok_neoforge	Spice of Life Onion	spice-of-life-onion	SoLOnion_FORGE_v1.4.5_mc1.20.1.jar	NeoForge
+ok_neoforge	Squid No Glitch	squid-no-glitch	squidnoglitch-mc1.20.1-v1.0.3-forge.jar	Fabric,NeoForge,Quilt
+ok_neoforge	Stardew Fishing	stardew-fishing	stardew_fishing-3.7-1.20.1.jar	NeoForge
+ok_neoforge	Storage Labels	labels	labels-1.20-2.0.0.jar	Fabric,NeoForge
+ok_neoforge	Straw Statues	straw-statues	StrawStatues-v8.0.3-1.20.1-Forge.jar	Fabric,NeoForge
+ok_neoforge	Structure Essentials	structure-essentials-forge-fabric	structureessentials-1.20.1-4.8.jar	Fabric,NeoForge
+ok_neoforge	Structurify - Structure Control	structurify	structurify-forge-1.0.21+mc1.20.1.jar	Fabric,NeoForge,Quilt
+ok_neoforge	SuperMartijn642's Config Lib	supermartijn642s-config-lib	supermartijn642configlib-1.1.8-forge-mc1.20.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	SuperMartijn642's Core Lib	supermartijn642s-core-lib	supermartijn642corelib-1.1.26a-forge-mc1.20.1.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Supplementaries	supplementaries	supplementaries-1.20-3.1.43-forge.jar	Fabric,NeoForge
+ok_neoforge	SVDialog	svdialog	SVDialog-0.6.jar	NeoForge
+ok_neoforge	Tanuki Decor	tanukidecor	tanukidecor-20.1.1.0.jar	NeoForge
+ok_neoforge	The Lost Cities	the-lost-cities	lostcities-1.20-7.5.5.jar	NeoForge
+ok_neoforge	Tips	tips	Tips-Forge-1.20.1-12.1.9.jar	Fabric,Forge,NeoForge,Quilt
+ok_neoforge	Titanium	titanium	titanium-1.20.1-3.8.32.jar	NeoForge
+ok_neoforge	Toast Control	toast-control	ToastControl-1.20.1-8.0.3.jar	NeoForge
+ok_neoforge	Tom's Simple Storage Mod	toms-storage	toms_storage-1.20-1.7.1.jar	NeoForge
+ok_neoforge	Too Fast	too-fast	toofast-1.20-0.4.3.5.jar	Fabric,NeoForge
+ok_neoforge	Tool Belt	tool-belt	ToolBelt-1.20.1-1.20.02.jar	NeoForge
+ok_neoforge	Tooltip Overhaul	tooltip-overhaul	tooltipoverhaul-forge-1.20.1-1.5.0.jar	Fabric,Forge,NeoForge
+ok_neoforge	Torchmaster	torchmaster	torchmaster-20.1.9.jar	Fabric,NeoForge
+ok_neoforge	TrashSlot	trashslot	trashslot-forge-1.20.1-15.1.3.jar	Fabric,Forge,NeoForge
+ok_neoforge	Trofers	trofers	trofers-forge-5.0.2.jar	Fabric,NeoForge
+ok_neoforge	Twigs	twigs	Twigs-1.20.1-3.1.0.jar	Fabric,NeoForge
+ok_neoforge	Untitled Duck Mod (Forge)	untitled-duck-mod-forge	untitledduckmod-1.5.2-forge-1.20.1.jar	NeoForge
+ok_neoforge	Unusual Fish	unusual-fish	unusualfishmod-1.1.10.jar	NeoForge
+ok_neoforge	Vanilla Backport	vanillabackport	VanillaBackport-forge-1.20.1-1.1.7.10.jar	Fabric,NeoForge
+ok_neoforge	Veggies Delight (A Farmer's Delight Add-on)	veggies-delight	VeggiesDelight-1.20.1-1.9.3.jar	NeoForge
+ok_neoforge	Via Romana: Infrastructure-Driven Fast Travel	via-romana	via_romana-2.2.2+1.20.1-forge.jar	Fabric,NeoForge
+ok_neoforge	WATERFrAMES: Multimedia Displays	waterframes	waterframes-FORGE-mc1.20.1-v2.1.20.jar	Fabric,NeoForge
+ok_neoforge	Watering Cans [Dew Drop]	watering-cans-dew-drop	dew_drop_watering_cans-1.0.2.jar	NeoForge
+ok_neoforge	WATERMeDIA: Multimedia API	watermedia	watermedia-2.1.34.jar	Fabric,Forge,NeoForge
+ok_neoforge	WATERViSION: Videoplayer	watervision	watervision-FG-mc1.20.1-v0.1.0-alpha.jar	Fabric,Forge,NeoForge
+ok_neoforge	Waystones	waystones	waystones-forge-1.20.1-14.1.21.jar	Fabric,Forge,NeoForge
+ok_neoforge	What Are They Up To (Watut)	what-are-they-up-to	watut-forge-1.20.1-1.2.3.jar	Fabric,NeoForge
+ok_neoforge	Whimsy Deco	whimsy-deco	whimsy_deco-1.2.jar	NeoForge
+ok_neoforge	Windswept!	windsweptmod	windswept-1.20.1-3.0.4.jar	NeoForge
+ok_neoforge	YetAnotherConfigLib	yacl	yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar	Fabric,NeoForge
+ok_neoforge	Zeta	zeta	Zeta-1.0-31.jar	NeoForge
+ok_neoforge	Zetter — Painting Mod	zetter	zetter-1.20.1-0.21.7.jar	NeoForge
+pack_ou_sem_loader	(Bee's) Fancy Crops	fancy-crops	Fancy Crops v1.3.zip	
+pack_ou_sem_loader	Better Cats	better-cats-minecraft	Better_Cats_V0.09.zip	
+pack_ou_sem_loader	Create Style for Refined Storage	create-style-for-refined-storage	Create Style for Refined Storage.zip	
+pack_ou_sem_loader	Create Style Sophisticated Backpacks	create-sophisticated-backpacks	CreateSophBackpacks.zip	
+pack_ou_sem_loader	Derp's Compat for Every Compat	derps-compat-for-every-compat	DerpWood.zip	
+pack_ou_sem_loader	Eating Animations x Farmer's Delight Add-ons	eating-animations-x-farmers-delight-add-ons	EatAnimation Farmer's Delight's Compat 1.20-26.x.zip	
+pack_ou_sem_loader	Eclipse	eclipse	EclipseShaders.zip	
+pack_ou_sem_loader	Enhanced Audio: Ambience (Sound Pack)	enhanced-audio-ambience	Enhanced Audio Ambience r2.zip	
+pack_ou_sem_loader	Excalibur	excalibur	Excalibur_V1.20.zip	
+pack_ou_sem_loader	Excalibur | Create Support	excalibur-create-support	Excalibur_Create-6 Addon_Forge_v2.32.zip	
+pack_ou_sem_loader	Excalibur | Farmer's Delight Support	excalibur-farmers-delight-support	FarmersDelightExcaliburSupport.zip	
+pack_ou_sem_loader	Excalibur | FTB Suite (Library, Chunks, Teams, Quests)	excalibur-ftb-suite-library-chunks-teams-quests	excalibur_ftbsuite.zip	
+pack_ou_sem_loader	Excalibur | Lootr Retextured	excalibur-lootr-retextured	Excalibur_Lootr_v1.1.zip	
+pack_ou_sem_loader	Excalibur | Sophisticated Support	excalibur-sophisticated-support	Excalibur Sophisticated v1.2.zip	
+pack_ou_sem_loader	Excalibur | Supplementaries Support	excalibur-supplementaries-support	Excalibur_Supplementaries_1.1_1.20.1.zip	
+pack_ou_sem_loader	Excalibur | Tom's Simple Storage Support	excalibur-toms-simple-storage-support	Excalibur Tom's Simple Storage 1.3.zip	
+pack_ou_sem_loader	Excalibur | Xaero's World Map Support	excalibur-xaeros-world-map-support	Excalibur - Xaero's World Map.zip	
+pack_ou_sem_loader	Fairy Wings Elytra	fairy-wings-elytra	Fairy Wings Elytra.zip	
+pack_ou_sem_loader	Fresh Animations	fresh-animations	FreshAnimations_v1.10.4.zip	
+pack_ou_sem_loader	Fresh Animations: Classic Horses	fresh-animations-classic-horses	FA+Classic_Horses-v1.5.zip	
+pack_ou_sem_loader	Fresh Moves	fresh-moves	-1.21.2 Fresh Moves v3.1 (With Animated Eyes).zip	
+pack_ou_sem_loader	Glow Up - Emissive Ores	glow-up	glow_up-1.5-1.20.1.zip	
+pack_ou_sem_loader	Icon Journey	icon-journey	Icon Journey 1.1.zip	
+pack_ou_sem_loader	Mob Crates	mob-crates	MobCrates_1.20.1_v1.zip	
+pack_ou_sem_loader	Stardew Valley Theme for Jade	stardew-valley-theme-for-jade	JadeStardewValleyTheme.zip	
+pack_ou_sem_loader	Stardewful Plaques	stardewful-plaques	Stardew_plaques v1.0.zip	
+pack_ou_sem_loader	Updated Aquaculture	aquaculture-updated	updated_aquaculture-1.1.zip	
+so_fabric	XXL Packets	xxl-packets	xlpackets-forge-1.20.1-1.0.5.jar	Fabric
+so_forge	Bot's Lib	bots-lib	bots_lib-4.1.jar	Forge
+so_forge	Daily Weather	daily-weather	dew_drop_daily_weather-1.1.1.jar	Forge
+so_forge	Fragmentum 🧩 Forge	fragmentum	fragmentum-forge-1.20.1-1.1.4.jar	Forge
+so_forge	My Server Is Compatible	my-server-is-compatible	MyServerIsCompatible-1.20-1.0.jar	Forge
+so_forge	YUNG's API (Forge/NeoForge)	yungs-api	YungsApi-1.20-Forge-4.0.6.jar	Forge

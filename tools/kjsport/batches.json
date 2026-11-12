@@ -1,0 +1,838 @@
+{
+  "excluded": [
+    "kubejs/server_scripts/blockEvents/checkAttributes.js",
+    "kubejs/startup_scripts/globalMachineOwnerUtils.js",
+    "kubejs/startup_scripts/globalShippingBinHandlers.js"
+  ],
+  "batches": [
+    {
+      "name": "startup-01",
+      "file_count": 12,
+      "site_count": 32,
+      "files": [
+        {
+          "path": "kubejs/startup_scripts/dogFollowTick.js",
+          "lines": 10,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/entityModification/modifyChicken.js",
+          "lines": 54,
+          "sites": {
+            "nbt": 4
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/entityModification/modifyGolems.js",
+          "lines": 138,
+          "sites": {
+            "nbt": 2,
+            "dropped_manual": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/entityModification/modifyLongwings.js",
+          "lines": 105,
+          "sites": {
+            "nbt": 3
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/entityModification/modifyRibbits.js",
+          "lines": 31,
+          "sites": {
+            "nbt": 5
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/forgeEvents/culinariaSkills.js",
+          "lines": 108,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/forgeEvents/equipBankCard.js",
+          "lines": 31,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/forgeEvents/fishingRodLeveling.js",
+          "lines": 69,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/forgeEvents/fishingSkills.js",
+          "lines": 45,
+          "sites": {
+            "rename": 1,
+            "nbt": 2
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/forgeEvents/husbandryTwins.js",
+          "lines": 36,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/forgeEvents/nerfHero.js",
+          "lines": 40,
+          "sites": {
+            "forge_unresolved": 1,
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/forgeEvents/noSneakEating.js",
+          "lines": 88,
+          "sites": {
+            "rename": 2,
+            "forge_unresolved": 3,
+            "recon_class": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "startup-02",
+      "file_count": 12,
+      "site_count": 27,
+      "files": [
+        {
+          "path": "kubejs/startup_scripts/forgeEvents/parkourSkills.js",
+          "lines": 54,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/forgeEvents/skullCavernChunkManager.js",
+          "lines": 32,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/forgeEvents/sunlitRetrofitChunks.js",
+          "lines": 39,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/forgeEvents/worldCreationLock.js",
+          "lines": 48,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/globalAnimalHandlers.js",
+          "lines": 803,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/globalBlockEntityHandlers.js",
+          "lines": 1387,
+          "sites": {
+            "recon_class": 2,
+            "nbt": 7
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/globalFish.js",
+          "lines": 563,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/globalRegistry.js",
+          "lines": 2174,
+          "sites": {
+            "dropped_manual": 2
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/hostileSpawnToggle.js",
+          "lines": 270,
+          "sites": {
+            "rename": 4
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/powerfulMachines/caterpillarBox.js",
+          "lines": 71,
+          "sites": {
+            "nbt": 3
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/powerfulMachines/picklingCan.js",
+          "lines": 113,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/powerfulMachines/qualityWasher.js",
+          "lines": 70,
+          "sites": {
+            "nbt": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "startup-03",
+      "file_count": 9,
+      "site_count": 27,
+      "files": [
+        {
+          "path": "kubejs/startup_scripts/powerfulMachines/ribbitHut.js",
+          "lines": 287,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/professions/mercantilGlobals.js",
+          "lines": 123,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/professions/professionGlobals.js",
+          "lines": 208,
+          "sites": {
+            "nbt": 3
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/registration/modifyItems.js",
+          "lines": 258,
+          "sites": {
+            "dropped_manual": 9
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/registration/registerBlocks.js",
+          "lines": 846,
+          "sites": {
+            "dropped_manual": 3
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/registration/registerItems.js",
+          "lines": 1220,
+          "sites": {
+            "dropped_manual": 6
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/replayViewerButton.js",
+          "lines": 181,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/skullCavernSleep.js",
+          "lines": 17,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/startup_scripts/sunlitTownsLostCities.js",
+          "lines": 137,
+          "sites": {
+            "rename": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "server-01",
+      "file_count": 12,
+      "site_count": 22,
+      "files": [
+        {
+          "path": "kubejs/server_scripts/blockEvents/carpet.js",
+          "lines": 22,
+          "sites": {
+            "nbt": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/blockEvents/checkCustomManaBlock.js",
+          "lines": 63,
+          "sites": {
+            "dropped_manual": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/blockEvents/compactingDrawerExploit.js",
+          "lines": 18,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/blockEvents/disableQuarkMysticalFlowers.js",
+          "lines": 16,
+          "sites": {
+            "dropped_manual": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/blockEvents/disableSaltSnowball.js",
+          "lines": 6,
+          "sites": {
+            "tag_kept": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/blockEvents/fishPondQuestManagerEvents.js",
+          "lines": 14,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/blockEvents/fruitInstaBreak.js",
+          "lines": 29,
+          "sites": {
+            "tag_kept": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/blockEvents/neptuniumHoe.js",
+          "lines": 22,
+          "sites": {
+            "dropped_manual": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/blockEvents/placeNbtMachine.js",
+          "lines": 66,
+          "sites": {
+            "nbt": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/blockEvents/plushieMechanics.js",
+          "lines": 185,
+          "sites": {
+            "nbt": 5
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/blockEvents/shippingBinRenaming.js",
+          "lines": 41,
+          "sites": {
+            "nbt": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/blockEvents/slimeContainProtect.js",
+          "lines": 25,
+          "sites": {
+            "dropped_manual": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "server-02",
+      "file_count": 12,
+      "site_count": 50,
+      "files": [
+        {
+          "path": "kubejs/server_scripts/datagen/generateCafeDishes.js",
+          "lines": 131,
+          "sites": {
+            "tag_kept": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/datagen/lostCityCreatePalette.js",
+          "lines": 363,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/animalBreeding.js",
+          "lines": 106,
+          "sites": {
+            "nbt": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/animalName.js",
+          "lines": 31,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/animalSunlitCrystal.js",
+          "lines": 86,
+          "sites": {
+            "nbt": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/animalTweaks.js",
+          "lines": 30,
+          "sites": {
+            "nbt": 3
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/cancelEntityInteraction.js",
+          "lines": 13,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/carKey.js",
+          "lines": 46,
+          "sites": {
+            "nbt": 16
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/checkAnimal.js",
+          "lines": 143,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/hamsterBite.js",
+          "lines": 37,
+          "sites": {
+            "dropped_manual": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/moonStatueDamage.js",
+          "lines": 32,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/refreshVillagers.js",
+          "lines": 533,
+          "sites": {
+            "nbt": 20
+          }
+        }
+      ]
+    },
+    {
+      "name": "server-03",
+      "file_count": 12,
+      "site_count": 50,
+      "files": [
+        {
+          "path": "kubejs/server_scripts/entities/slimeTicket.js",
+          "lines": 82,
+          "sites": {
+            "nbt": 1,
+            "dropped_manual": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/spawnBoomcat.js",
+          "lines": 16,
+          "sites": {
+            "nbt": 1,
+            "dropped_manual": 3
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/steadfastSkill.js",
+          "lines": 38,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/vineryMuleToVanilla.js",
+          "lines": 33,
+          "sites": {
+            "nbt": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/itemEvents/pigRacing.js",
+          "lines": 634,
+          "sites": {
+            "nbt": 5
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/itemEvents/professionCrystals.js",
+          "lines": 111,
+          "sites": {
+            "nbt": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/itemEvents/smokeTubasmokeStick.js",
+          "lines": 147,
+          "sites": {
+            "nbt": 13
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/itemEvents/validateFishPondQuests.js",
+          "lines": 132,
+          "sites": {
+            "dropped_manual": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/loot/farmingLoot.js",
+          "lines": 105,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/loot/fishingLoot.js",
+          "lines": 134,
+          "sites": {
+            "nbt": 10
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/loot/generalLoot.js",
+          "lines": 318,
+          "sites": {
+            "dropped_manual": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/loot/miningLoot.js",
+          "lines": 555,
+          "sites": {
+            "tag_kept": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "server-04",
+      "file_count": 12,
+      "site_count": 23,
+      "files": [
+        {
+          "path": "kubejs/server_scripts/npcs/anyaGuideFix.js",
+          "lines": 54,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/npcs/npcInteraction.js",
+          "lines": 227,
+          "sites": {
+            "nbt": 1,
+            "dropped_manual": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/npcs/npcInvite.js",
+          "lines": 32,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/npcs/villagerHomeMechanics.js",
+          "lines": 162,
+          "sites": {
+            "nbt": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/parkourExerciseHeat.js",
+          "lines": 126,
+          "sites": {
+            "recon_class": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/playerEvents/bountyCompatItems.js",
+          "lines": 63,
+          "sites": {
+            "nbt": 4
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/playerEvents/canonicalItemSwap.js",
+          "lines": 16,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/playerEvents/giveSymphonia.js",
+          "lines": 45,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/playerEvents/infiniteDurability.js",
+          "lines": 69,
+          "sites": {
+            "nbt": 4
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/recipes/addFishBaits.js",
+          "lines": 36,
+          "sites": {
+            "rename": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/recipes/addMillingRecipes.js",
+          "lines": 63,
+          "sites": {
+            "tag_kept": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/recipes/addMiscRecipes.js",
+          "lines": 1106,
+          "sites": {
+            "tag_kept": 1,
+            "dropped_manual": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "server-05",
+      "file_count": 12,
+      "site_count": 74,
+      "files": [
+        {
+          "path": "kubejs/server_scripts/recipes/addMixerRecipes.js",
+          "lines": 425,
+          "sites": {
+            "tag_kept": 4
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/recipes/addMysticalFlowerSeedRecipes.js",
+          "lines": 52,
+          "sites": {
+            "dropped_manual": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/recipes/addSlimeRecipes.js",
+          "lines": 91,
+          "sites": {
+            "dropped_manual": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/recipes/addToolRecipes.js",
+          "lines": 221,
+          "sites": {
+            "nbt": 1,
+            "dropped_manual": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/recipes/artificialMetalRecipes.js",
+          "lines": 155,
+          "sites": {
+            "nbt": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/recipes/normalizeEquivalentItems.js",
+          "lines": 174,
+          "sites": {
+            "tag_kept": 5
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/sunlitTownsCheck.js",
+          "lines": 54,
+          "sites": {
+            "recon_class": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/sunlitTownsLoot.js",
+          "lines": 191,
+          "sites": {
+            "forge_unresolved": 1,
+            "dropped_manual": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/tags/canonicalItemTags.js",
+          "lines": 249,
+          "sites": {
+            "tag_kept": 27
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/tags/handleEntityTags.js",
+          "lines": 52,
+          "sites": {
+            "dropped_manual": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/tags/handleItemBlockFluidTags.js",
+          "lines": 934,
+          "sites": {
+            "tag_kept": 12,
+            "dropped_manual": 12
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/tags/handleWorldgenTags.js",
+          "lines": 41,
+          "sites": {
+            "tag_kept": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "server-06",
+      "file_count": 1,
+      "site_count": 6,
+      "files": [
+        {
+          "path": "kubejs/server_scripts/tags/harmonizeMeatTags.js",
+          "lines": 138,
+          "sites": {
+            "tag_kept": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "server-globals",
+      "file_count": 12,
+      "site_count": 43,
+      "files": [
+        {
+          "path": "kubejs/server_scripts/blockEvents/autoClaimChunk.js",
+          "lines": 43,
+          "sites": {
+            "global": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/datagen/generateNpcDialog.js",
+          "lines": 235,
+          "sites": {
+            "global": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/animalAffectionPerks.js",
+          "lines": 212,
+          "sites": {
+            "forge_unresolved": 1,
+            "global": 2
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/animalBase.js",
+          "lines": 967,
+          "sites": {
+            "global": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/dogFollowOwner.js",
+          "lines": 223,
+          "sites": {
+            "global": 1,
+            "nbt": 3
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/entities/globalAnimalVariables.js",
+          "lines": 116,
+          "sites": {
+            "global": 6
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/globalServer.js",
+          "lines": 406,
+          "sites": {
+            "global": 15
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/hostileSpawnToggle.js",
+          "lines": 20,
+          "sites": {
+            "global": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/playerEvents/professions.js",
+          "lines": 134,
+          "sites": {
+            "global": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/serverEvents/updateCoinLeaderboard.js",
+          "lines": 56,
+          "sites": {
+            "global": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/sunlitDummyBeFix.js",
+          "lines": 32,
+          "sites": {
+            "global": 1
+          }
+        },
+        {
+          "path": "kubejs/server_scripts/sunlitTownsLife.js",
+          "lines": 1201,
+          "sites": {
+            "global": 3,
+            "forge_unresolved": 3,
+            "dropped_manual": 1
+          }
+        }
+      ]
+    }
+  ]
+}

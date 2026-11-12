@@ -1,0 +1,8 @@
+{
+ "item": "minecraft:bread",
+ "invisible": [],
+ "sounds": {
+  "eating": "food:eat",
+  "soup": "food:soup"
+ }
+}

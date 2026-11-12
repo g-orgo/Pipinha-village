@@ -266,8 +266,15 @@ def rewrite_forge(node, typ, fn):
     return node
 
 
+# forge names whose standard 1.21 c: tag has a different name (the same-name c: tag exists only in a few mods).
+C_ALIASES = {"tools/knives": "tools/knife"}
+
+
 def forge_ref_handler(R):
     def on_ref(typ, name, original):
+        if name in C_ALIASES:
+            stats["forge_refs_rewritten"] += 1
+            return ("#" if original.startswith("#") else "") + "c:" + C_ALIASES[name]
         if typ is None:
             stats["forge_refs_untyped"] += 1
             return original

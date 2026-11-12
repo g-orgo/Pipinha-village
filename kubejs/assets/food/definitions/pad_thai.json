@@ -1,0 +1,10 @@
+{
+ "item": "vintagedelight:pad_thai",
+ "invisible": [
+  "utensil"
+ ],
+ "sounds": {
+  "eating": "food:eat",
+  "soup": "food:soup"
+ }
+}

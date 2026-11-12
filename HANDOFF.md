@@ -30,10 +30,39 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   2048 ids de namespaces ausentes). Renames comprovados nos jars: ForgeEvents.onEvent->NativeEvents.onEvent,
   EntityEvents.hurt->beforeHurt, ItemEvents.tooltip->modifyTooltips, JEIEvents.addItems/hideItems/
   removeCategories->RecipeViewerEvents.addEntries/removeEntries/removeCategories, highPriorityData->generateData.
-- F5a (backend-operator): copiar scripts + renames mecânicos + checagem de sintaxe com o Rhino 2101
-  (docker detached) + `tools/kjsport/WORKLIST.md` com o trabalho manual por arquivo.
-- Próximo na F5: unidades manuais por pasta a partir do WORKLIST (startup, server, client); depois o dono
-  abre o jogo e o agente corrige pelos `logs/kubejs/*.log`.
+- F5a pronto: scripts copiados para `kubejs/`, renames mecânicos, sintaxe Rhino 2101 OK (374/374).
+  NÃO rodar de novo `tools/kjsport/mechanical.py` (regenera do OLD e apaga o port manual).
+- API verificada (javap/strings): `tools/kjsport/API_NOTES.md`.
+- mechanical2 pronto (370 linhas de mods removidos, hunger->nutrition). Lotes em `tools/kjsport/batches.json`
+  com ordem comum `tools/kjsport/BATCH_ORDER.md`. Em curso: startup-01..03, server-globals;
+  a seguir server-01..06. Também em curso: C1 (addAdvancedTooltips + minimapIcons); C2 (addPriceTooltips +
+  helper `global.getAttributeMultiplier(entity, id)` em 4 arquivos).
+- Lotes fechados (2026-11-12, sintaxe OK em cada um): startup-01, startup-03, server-globals A e B, C1.
+  Parciais com resto já despachado: startup-02 -> startup-02b/02c; C2 -> client-c2b.
+  Em curso: server-globals C, server-01(+06), server-02..05.
+  Decisões novas: `000_port_runtime.js` (priority 10000) e `000_port_quality.js` (qualidade do Quality Food
+  2.x é o componente `quality_food:quality`; helpers `global.getQualityLevel/setQualityLevel`).
+  Funções desligadas até agora (avisar o dono): ícone padrão do minimapa sem cabeças (FTB Chunks sem
+  EntityIcons), bloqueio de beber fluido agachado (noSneakEating), fertilizante do golem de feno (mod ausente),
+  alcance de bloco do NeoForgeMod (no-op). Sono na Skull Cavern usa setProblem.
+  Relatórios que os operadores não puderam gravar: o resumo está aqui e no histórico da sessão.
+- Fechados depois (sintaxe OK): startup-02b, startup-02c, client-c2b, client-tooltips, server-01(+06),
+  server-02, server-03. server-04 refeito como 04a (npcs/player) e 04b (receitas); server-05 refeito como
+  05x e 05y (o primeiro analisou a instância antiga por engano; a antiga foi conferida e está intacta).
+  Mais funções desligadas: tag nos papéis do Bountiful (Bountiful 8 usa componentes), escrita na prancheta
+  do fish pond (create clipboard), fertilizante Dew Drop. Itens a olhar no jogo: tooltips de preço/moeda,
+  textos flutuantes (placar, monitor), chave do carro, plushies, aposta da corrida de porcos, anzol na
+  caixa de pesca, nome do taco de fumaça, `hasBobber` lendo customData da vara.
+- A fazer depois do 1º log: limpar dados ainda ligados a mods que saíram (ex.: `kubejs/data/cozycafe/menu/farmlife/*.json`,
+  pools do Bountiful, processos com ids de splendid_slimes/farmlife/botania): `grep -rl` em `kubejs/data` e packs.
+- Mods que mudaram de id na 1.21.1: `numismatics_utils` -> `numismaticsutils` (já trocado em banker.json e
+  addTooltips.js; falta `config/gnetum.json`), `largemeals` -> `large_meals` (dados já mapeados pelo port_data),
+  `bonsaitrees3` -> `bonsaitrees4` (formato a conferir). `kubejs/assets/` ainda tem pastas com os ids antigos
+  (largemeals, numismatics_utils, bonsaitrees3, forge) e de mods que saíram (botania, farmlife, splendid_slimes,
+  hamsters, liltractor, croptania, legendarycreatures...): renomear/remover na F10.
+- Regra nova no BATCH_ORDER: o shell dos operadores abre na instância antiga; toda ordem usa a raiz nova.
+- Depois: resto do client_scripts, um operador por lote do batches.json (startup e server), resto do client, e o dono abre
+  o jogo para o agente ler `logs/kubejs/*.log`.
 
 ## Pendente, em ordem
 

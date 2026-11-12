@@ -1,0 +1,10 @@
+{
+ "item": "crabbersdelight:clam_chowder",
+ "invisible": [
+  "utensil"
+ ],
+ "sounds": {
+  "eating": "food:eat",
+  "soup": "food:soup"
+ }
+}

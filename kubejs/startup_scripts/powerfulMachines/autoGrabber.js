@@ -288,11 +288,9 @@ StartupEvents.registry("block", (event) => {
           "block.society.auto_grabber.description.fuel"
         ).lightPurple()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/auto_grabber",
-      });
+      itemitem.parentModel("society:block/kubejs/auto_grabber");
     })
-    .model("society:block/kubejs/auto_grabber")
+    .parentModel("society:block/kubejs/auto_grabber")
     .property(booleanProperty.create("upgraded"))
     .defaultState((state) => {
       state.set(booleanProperty.create("upgraded"), false);
@@ -303,7 +301,10 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(600, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(600);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:auto_grabber"] = (entity) => {
         const attachedPlayer = global.cacheOwner(entity, [
           "animal_fancy",
           "animal_whisperer",
@@ -316,7 +317,7 @@ StartupEvents.registry("block", (event) => {
           "shepherd",
         ]);
         global.runAutoGrabber(entity, attachedPlayer);
-      }),
+      };
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
@@ -334,11 +335,5 @@ StartupEvents.registry("block", (event) => {
             blockEntity.inventory.getStackInSlot(slot)
           )
       );
-    }).blockstateJson = {
-    multipart: []
-      .concat(getCardinalMultipartJsonBasicUpgradable("auto_grabber", "false"))
-      .concat(
-        getCardinalMultipartJsonBasicUpgradable("auto_grabber_upgraded", "true")
-      ),
-  };
+    });
 });

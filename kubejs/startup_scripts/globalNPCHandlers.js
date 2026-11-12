@@ -138,6 +138,7 @@ const villagerSpecificGifts = new Map([
     }],
     ["fisher", {
         loved: ["unusualfishmod:cooked_aero_mono_stick", "society:princess_hairbrush", "vintagedelight:century_egg", "society:aquamagical_dust", "society:heart_of_neptunium", "minecraft:heart_of_the_sea"],
+        liked: ["#minecraft:fishes", "minecraft:nautilus_shell", "minecraft:echo_shard", "crittersandcompanions:clam", "#minecraft:decorated_pot_sherds"],
         neutral: [],
         disliked: ["crabbersdelight:pearl_block"],
         hated: [],

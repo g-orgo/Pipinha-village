@@ -11,9 +11,9 @@
 // exactly like vanilla, so there is no free bucket / free water loop.
 ItemEvents.modification((e) => {
   e.modify("minecraft:water_bucket", (item) => {
-    item.craftingRemainder = item;
+    item.setCraftingRemainder(item.item());
   });
   e.modify("meadow:wooden_water_bucket", (item) => {
-    item.craftingRemainder = item;
+    item.setCraftingRemainder(item.item());
   });
 });

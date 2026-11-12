@@ -9,7 +9,10 @@ StartupEvents.registry("block", (e) => {
       info.addAnimation((state) =>
         state.setAndContinue(RawAnimation.begin().thenLoop("rotating"))
       );
-      info.serverTick(artMachineTickRate, 0, (entity) => {
+      info.serverTicking();
+      info.tickFrequency(artMachineTickRate);
+      info.tickOffset(0);
+      global.portBeTicks["whimsy_deco:statue_endless_fortune"] = (entity) => {
         const { level, block } = entity;
         const { x, y, z } = block;
         let dayTime = level.dayTime();
@@ -26,7 +29,7 @@ StartupEvents.registry("block", (e) => {
             mature: true,
           });
         }
-      });
+      };
     })
     .defaultGeoModel()
     .property(BlockProperties.HORIZONTAL_FACING)

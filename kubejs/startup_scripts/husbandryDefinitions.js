@@ -487,17 +487,6 @@ global.husbandryForagingDefinitions = [
     ],
   },
   {
-    forages: [
-      {
-        item: "society:large_galliraptor_egg",
-        countMult: 1,
-        chance: 1,
-        minHearts: 4,
-        hasQuality: true,
-      },
-    ],
-  },
-  {
     animal: "windswept:frostbiter",
     forages: [
       {

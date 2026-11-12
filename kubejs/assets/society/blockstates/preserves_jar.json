@@ -1,0 +1,63 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "upgraded": false
+      },
+      "apply": {
+        "model": "society:block/kubejs/preserves_jar_base"
+      }
+    },
+    {
+      "when": {
+        "working": true
+      },
+      "apply": {
+        "model": "society:block/kubejs/preserves_jar_lid"
+      }
+    },
+    {
+      "when": {
+        "mature": true,
+        "working": false
+      },
+      "apply": {
+        "model": "society:block/kubejs/preserves_jar_lid_done"
+      }
+    },
+    {
+      "when": {
+        "upgraded": true
+      },
+      "apply": {
+        "model": "society:block/kubejs/preserves_jar_base_upgraded"
+      }
+    },
+    {
+      "when": {
+        "working": true,
+        "upgraded": false
+      },
+      "apply": {
+        "model": "society:block/kubejs/preserves_jar_base"
+      }
+    },
+    {
+      "when": {
+        "mature": true,
+        "upgraded": false
+      },
+      "apply": {
+        "model": "society:block/kubejs/preserves_jar_base"
+      }
+    },
+    {
+      "when": {
+        "mature": true
+      },
+      "apply": {
+        "model": "society:block/kubejs/machine_done"
+      }
+    }
+  ]
+}

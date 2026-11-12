@@ -1,7 +1,12 @@
 {
   "blazing_drift_fever_ex": {
     "sounds": [
-        "society:blazing_drift_fever_ex"
+      "society:blazing_drift_fever_ex"
+    ]
+  },
+  "the_box": {
+    "sounds": [
+      "society:the_box"
     ]
   }
 }

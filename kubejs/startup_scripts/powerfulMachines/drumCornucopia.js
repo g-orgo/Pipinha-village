@@ -156,18 +156,19 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .soundType("wood")
     .defaultCutout()
-    .model("society:block/kubejs/drum_cornucopia")
+    .parentModel("society:block/kubejs/drum_cornucopia")
     .box(3, 0, 3, 13, 14, 13)
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.translatable("block.society.drum_cornucopia.description").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `20x10x20`).green());
-      item.modelJson({
-        parent: "society:block/kubejs/drum_cornucopia",
-      });
+      itemitem.parentModel("society:block/kubejs/drum_cornucopia");
     })
     .blockEntity((blockInfo) => {
-      blockInfo.serverTick(artMachineTickRate, 0, (e) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:drum_cornucopia"] = (e) => {
         const { level, block } = e;
         let dayTime = level.dayTime();
         let morningModulo = dayTime % 24000;
@@ -177,6 +178,6 @@ StartupEvents.registry("block", (event) => {
         ) {
           global.handleCornucopia(level.server, level, block.getPos())
         }
-      })
+      };
     })
 });

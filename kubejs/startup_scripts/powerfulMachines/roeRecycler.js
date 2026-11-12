@@ -101,16 +101,17 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.roe_recycler.description").gray()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/roe_recycler",
-      });
+      itemitem.parentModel("society:block/kubejs/roe_recycler");
     })
-    .model("society:block/kubejs/roe_recycler")
+    .parentModel("society:block/kubejs/roe_recycler")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
-      blockInfo.serverTick(20, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(20);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:roe_recycler"] = (entity) => {
         global.handleRoeRecycler(entity);
-      }),
+      };
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()

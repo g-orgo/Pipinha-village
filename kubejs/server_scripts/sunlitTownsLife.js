@@ -504,7 +504,7 @@ const $TownEntities = Java.loadClass("net.minecraft.core.registries.BuiltInRegis
 const $TownRL = Java.loadClass("net.minecraft.resources.ResourceLocation");
 const TOWN_FAUNA_PARK = ["minecraft:chicken", "minecraft:cat", "untitledduckmod:duck", "untitledduckmod:goose",
   "crittersandcompanions:red_panda", "crittersandcompanions:ferret", "autumnity:snail", "autumnity:turkey", "wildernature:squirrel",
-  "minecraft:frog", "minecraft:parrot"];
+  "minecraft:frog", "minecraft:parrot", "wildernature:hedgehog", "faunaandorchestra:butterfly", "longwings:butterfly", "crittersandcompanions:dragonfly"];
 const TOWN_FAUNA_FARM = ["minecraft:cow", "minecraft:sheep", "minecraft:pig", "minecraft:chicken", "minecraft:chicken", "meadow:wooly_cow",
   "meadow:wooly_sheep", "wildernature:minisheep", "untitledduckmod:goose", "untitledduckmod:duck", "autumnity:turkey", "minecraft:goat"];
 // 2026-10-10: coelho fora da rua (come plantacao de cenoura madura e deixava slots vazios;

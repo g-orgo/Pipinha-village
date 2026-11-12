@@ -202,10 +202,6 @@ global.prizeMachineRewards = [
     possibleOutputs: ["pamhc2trees:hazelnut_sapling"],
   },
   {
-    hint: "tickety?",
-    possibleOutputs: ["3x splendid_slimes:slime_ticket"],
-  },
-  {
     hint: "spicy",
     possibleOutputs: [
       "16x vintagedelight:stuffed_burrito",
@@ -387,9 +383,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.prize_machine.description").gray());
-      item.modelJson({
-        parent: "society:block/kubejs/prize_machine",
-      });
+      itemitem.parentModel("society:block/kubejs/prize_machine");
     })
     .defaultState((state) => {
       state.set(
@@ -462,43 +456,5 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ prize: 0 });
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/kubejs/prize_machine_particle" },
-      },
-      {
-        when: { facing: "north" },
-        apply: {
-          model: "society:block/kubejs/prize_machine",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "east" },
-        apply: {
-          model: "society:block/kubejs/prize_machine",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "south" },
-        apply: {
-          model: "society:block/kubejs/prize_machine",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "west" },
-        apply: {
-          model: "society:block/kubejs/prize_machine",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
-  };
+    });
 });

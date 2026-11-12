@@ -1,0 +1,92 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north",
+        "upgraded": "false"
+      },
+      "apply": {
+        "model": "society:block/kubejs/auto_grabber",
+        "y": 0,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "upgraded": "false"
+      },
+      "apply": {
+        "model": "society:block/kubejs/auto_grabber",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "upgraded": "false"
+      },
+      "apply": {
+        "model": "society:block/kubejs/auto_grabber",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "upgraded": "false"
+      },
+      "apply": {
+        "model": "society:block/kubejs/auto_grabber",
+        "y": -90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "upgraded": "true"
+      },
+      "apply": {
+        "model": "society:block/kubejs/auto_grabber_upgraded",
+        "y": 0,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "upgraded": "true"
+      },
+      "apply": {
+        "model": "society:block/kubejs/auto_grabber_upgraded",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "upgraded": "true"
+      },
+      "apply": {
+        "model": "society:block/kubejs/auto_grabber_upgraded",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "upgraded": "true"
+      },
+      "apply": {
+        "model": "society:block/kubejs/auto_grabber_upgraded",
+        "y": -90,
+        "uvlock": false
+      }
+    }
+  ]
+}

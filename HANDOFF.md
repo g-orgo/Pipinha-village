@@ -69,6 +69,20 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   Os 31 packs `file/` foram copiados para `resourcepacks/`; os 18 de formato antigo estão em
   `incompatibleResourcePacks` para carregarem na 1.21.1. Backup do anterior só na sessão (era o padrão do jogo).
 
+- 1º launch do dono (2026-11-12): correções em curso a partir de `logs/kubejs/startup.log` e `client.log`.
+  Feito: JEIEvents -> JEIAddedEvents; globals do client -> `global.runtime`; fragmentos quebrados pelo
+  mechanical2 (casks, husbandry galliraptor, fisher `liked`, seedMaker, manaClock, skullCavernBroken);
+  registro: fastToEat -> eatSeconds(0.8), dropSeed(false) -> noSeeds(), tiers sem `level`
+  (setIncorrectBlocksForDropsTag), Ingredient.custom -> prismatic_shard, craftingRemainder.
+  Desligado em modifyItems.js (sem API no KJS 7): maxDamage/digSpeed/attackDamage de 21 itens (dono avaliar).
+  Assets do jar `society-1.22` (mod que não existe na 1.21.1) copiados para `kubejs/assets` sem sobrescrever:
+  1546 arquivos (lista em `tools/kjsport/society_jar_assets.txt`), som `the_box` no sounds.json.
+  Em curso: `tools/kjsport/port_models.py` (modelJson/model -> parentModel/modelGenerator, blockstateJson ->
+  arquivos estáticos em `kubejs/assets`, serverTick -> serverTicking + `global.portBeTicks` +
+  `server_scripts/zz_port_be_ticks.js` com BlockEvents.blockEntityTick, fluidos thick/thin, sons botania).
+  Erros de cascata esperados a sumir com o registro: `numismatics:neptunium_coin`, `society:neptuna`, `froggy_helm`.
+  Sobra: biomas `kubejs/data/society/worldgen/biome/*.json` ainda spawnam `splendid_slimes:splendid_slime`.
+
 ## Pendente, em ordem
 
 1. F5 KubeJS: port estático PRONTO (379/379 sintaxe OK, commit 10f2eb5e na branch 1.21.1). Falta: o dono abre

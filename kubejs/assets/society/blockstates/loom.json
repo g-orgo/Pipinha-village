@@ -1,0 +1,313 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_particle"
+      }
+    },
+    {
+      "when": {
+        "mature": true
+      },
+      "apply": {
+        "model": "society:block/kubejs/machine_done"
+      }
+    },
+    {
+      "when": {
+        "working": true,
+        "upgraded": false,
+        "facing": "north"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom",
+        "y": 0,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "working": true,
+        "upgraded": false,
+        "facing": "east"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "working": true,
+        "upgraded": false,
+        "facing": "south"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "working": true,
+        "upgraded": false,
+        "facing": "west"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom",
+        "y": -90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "working": true,
+        "upgraded": true,
+        "facing": "north"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_upgraded",
+        "y": 0,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "working": true,
+        "upgraded": true,
+        "facing": "east"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_upgraded",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "working": true,
+        "upgraded": true,
+        "facing": "south"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_upgraded",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "working": true,
+        "upgraded": true,
+        "facing": "west"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_upgraded",
+        "y": -90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "mature": true
+      },
+      "apply": {
+        "model": "society:block/kubejs/machine_done"
+      }
+    },
+    {
+      "when": {
+        "working": false,
+        "upgraded": false,
+        "facing": "north"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_off",
+        "y": 0,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "working": false,
+        "upgraded": false,
+        "facing": "east"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_off",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "working": false,
+        "upgraded": false,
+        "facing": "south"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_off",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "working": false,
+        "upgraded": false,
+        "facing": "west"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_off",
+        "y": -90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "working": false,
+        "upgraded": true,
+        "facing": "north"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_off_upgraded",
+        "y": 0,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "working": false,
+        "upgraded": true,
+        "facing": "east"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_off_upgraded",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "working": false,
+        "upgraded": true,
+        "facing": "south"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_off_upgraded",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "working": false,
+        "upgraded": true,
+        "facing": "west"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_off_upgraded",
+        "y": -90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "mature": true,
+        "upgraded": false,
+        "facing": "north"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_done",
+        "y": 0,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "mature": true,
+        "upgraded": false,
+        "facing": "east"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_done",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "mature": true,
+        "upgraded": false,
+        "facing": "south"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_done",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "mature": true,
+        "upgraded": false,
+        "facing": "west"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_done",
+        "y": -90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "mature": true,
+        "upgraded": true,
+        "facing": "north"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_done_upgraded",
+        "y": 0,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "mature": true,
+        "upgraded": true,
+        "facing": "east"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_done_upgraded",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "mature": true,
+        "upgraded": true,
+        "facing": "south"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_done_upgraded",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "mature": true,
+        "upgraded": true,
+        "facing": "west"
+      },
+      "apply": {
+        "model": "society:block/kubejs/loom/loom_done_upgraded",
+        "y": -90,
+        "uvlock": false
+      }
+    }
+  ]
+}

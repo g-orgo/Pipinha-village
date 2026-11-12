@@ -285,18 +285,6 @@
     },
     {
       "offer": {
-        "item": "splendid_slimes:slime_vac",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 2
-      },
-      "numismatics_cost": 8192,
-      "trade_id": "slime_vac_for_sun"
-    },
-    {
-      "offer": {
         "item": "society:magic_shears",
         "count": 1
       },

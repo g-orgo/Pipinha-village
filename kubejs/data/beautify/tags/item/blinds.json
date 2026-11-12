@@ -29,7 +29,6 @@
 		"everycomp:bd/atmospheric/morado_blinds",
 		"everycomp:bd/atmospheric/yucca_blinds",
 		"everycomp:bd/atmospheric/grimwood_blinds",
-		"everycomp:bd/botania/dreamwood_blinds",
 		"everycomp:bd/cluttered/sycamore_blinds",
 		"everycomp:bd/cluttered/poplar_blinds",
 		"everycomp:bd/atmospheric/rosewood_blinds",
@@ -39,7 +38,6 @@
 		"everycomp:bd/vinery/dark_cherry_blinds",
 		"everycomp:bd/minecraft/pale_oak_blinds",
 		"everycomp:bd/cluttered/blue_mushroom_blinds",
-		"everycomp:bd/botania/livingwood_blinds",
 		"everycomp:bd/atmospheric/laurel_blinds"
 	]
 }

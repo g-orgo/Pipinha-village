@@ -218,11 +218,9 @@ StartupEvents.registry("block", (e) => {
       item.tooltip(
         Text.translatable("tooltip.society.area", `15x3x15`).green()
       );
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/ribbit_hut_item",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/ribbit_hut_item");
       });
     })
     .lightLevel(1)
@@ -234,13 +232,16 @@ StartupEvents.registry("block", (e) => {
       state.set(booleanProperty.create("upgraded"), false);
     })
     .soundType("stone")
-    .model("society:block/kubejs/ribbit_hut/bottom_front_center")
+    .parentModel("society:block/kubejs/ribbit_hut/bottom_front_center")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 3);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:ribbit_hut"] = (entity) => {
         global.runRibbitHut(entity);
-      }),
+      };
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
@@ -276,9 +277,7 @@ StartupEvents.registry("block", (e) => {
     .resistance(3600000)
     .unbreakable()
     .item((item) => {
-      item.modelJson({
-        parent: "ribbits:item/toadstool",
-      });
+      itemitem.parentModel("ribbits:item/toadstool");
     })
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")

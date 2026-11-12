@@ -1,0 +1,16 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "society:block/kubejs/golden_clock",
+	"textures": {
+		"0": "society:block/iridium_clock/base",
+		"2": "society:block/iridium_clock/bottom",
+		"3": "society:block/iridium_clock/clock",
+		"4": "society:block/iridium_clock/glass",
+		"5": "society:block/iridium_clock/pendulum",
+		"6": "society:block/iridium_clock/pillar",
+		"7": "society:block/iridium_clock/pillar2",
+		"9": "society:block/iridium_clock/top",
+		"10": "society:block/iridium_clock/bell_body",
+		"particle": "society:block/iridium_clock/base"
+	}
+}

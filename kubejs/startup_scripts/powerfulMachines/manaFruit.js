@@ -27,7 +27,7 @@ global.handleManaFruit = (e) => {
       block.set(block.id, blockProperties);
       e.persistentData.putInt("mana", mana - MANA_DRAIN);
       level.server.runCommandSilent(
-        `playsound botania:mana_pool_craft block @a ${x} ${y} ${z}`
+        `playsound minecraft:block.enchantment_table.use block @a ${x} ${y} ${z}`
       );
       level.spawnParticles(
         "windswept:will_o_the_wisp",
@@ -45,7 +45,7 @@ global.handleManaFruit = (e) => {
       blockProperties.age = String(age - 1);
       block.set(block.id, blockProperties);
       level.server.runCommandSilent(
-        `playsound botania:virus_infect block @a ${x} ${y} ${z}`
+        `playsound minecraft:entity.evoker.cast_spell block @a ${x} ${y} ${z}`
       );
       level.spawnParticles(
         true,
@@ -81,7 +81,10 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/hoe")
     .tagBlock("minecraft:crops")
     .blockEntity((blockInfo) => {
-      blockInfo.serverTick(20, 0, (entity) => global.handleManaFruit(entity)),
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(20);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:mana_fruit_crop"] = (entity) => global.handleManaFruit(entity);
         blockInfo.attachCapability(
           BotaniaCapabilityBuilder.MANA.blockEntity()
             .canReceiveManaFromBurst((be) => {
@@ -104,46 +107,9 @@ StartupEvents.registry("block", (e) => {
       item.tooltip(
         Text.translatable("society.working_block_entity.need_mana").aqua()
       );
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/mana_fruit_seed",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/mana_fruit_seed");
       });
-    }).blockstateJson = {
-    multipart: [
-      {
-        when: { age: 0 },
-        apply: { model: "society:block/kubejs/crops/mana_fruit_crop_stage0" },
-      },
-      {
-        when: { age: 1 },
-        apply: { model: "society:block/kubejs/crops/mana_fruit_crop_stage1" },
-      },
-      {
-        when: { age: 2 },
-        apply: { model: "society:block/kubejs/crops/mana_fruit_crop_stage1" },
-      },
-      {
-        when: { age: 3 },
-        apply: { model: "society:block/kubejs/crops/mana_fruit_crop_stage2" },
-      },
-      {
-        when: { age: 4 },
-        apply: { model: "society:block/kubejs/crops/mana_fruit_crop_stage2" },
-      },
-      {
-        when: { age: 5 },
-        apply: { model: "society:block/kubejs/crops/mana_fruit_crop_stage3" },
-      },
-      {
-        when: { age: 6 },
-        apply: { model: "society:block/kubejs/crops/mana_fruit_crop_stage4" },
-      },
-      {
-        when: { age: 7 },
-        apply: { model: "society:block/kubejs/crops/mana_fruit_crop_stage5" },
-      },
-    ],
-  };
+    });
 });

@@ -39,15 +39,6 @@ global.seedMakerRecipes = new Map([
   ["veggiesdelight:bellpepper", { output: ["6x veggiesdelight:bellpepper_seeds"] }],
   ["veggiesdelight:cauliflower", { output: ["6x veggiesdelight:cauliflower_seeds"] }],
   ["veggiesdelight:garlic", { output: ["6x veggiesdelight:garlic_seed"] }],
-  [
-    { output: ["6x botania_seeds:light_blue_mystical_flower_seed"] },
-  ],
-  [
-    { output: ["6x botania_seeds:magenta_mystical_flower_seed"] },
-  ],
-  [
-    { output: ["6x botania_seeds:light_gray_mystical_flower_seed"] },
-  ],
   // Rice is also a food priced like its panicle, so it stays unit for unit (see globalPriceBalance.js).
   ["farmersdelight:rice_panicle", { output: ["3x farmersdelight:rice"] }],
   ["minecraft:potato", { output: ["6x society:potato_seed"] }],
@@ -55,7 +46,6 @@ global.seedMakerRecipes = new Map([
   ["farm_and_charm:onion", { output: ["6x society:onion_seed"] }],
   ["vintagedelight:peanut", { output: ["6x society:peanut_seed"] }],
   ["veggiesdelight:sweet_potato", { output: ["6x society:sweet_potato_seed"] }],
-  ["mysticaloaktree:wise_oak", { output: ["1x botania:overgrowth_seed"] }],
   ["atmospheric:currant", { output: ["6x atmospheric:currant_seedling"] }],
   ["atmospheric:aloe_leaves", { output: ["6x atmospheric:aloe_kernels"] }],
   ["veggiesdelight:turnip", { output: ["6x veggiesdelight:turnip_seeds"] }],
@@ -99,9 +89,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.seed_maker.description").gray());
       item.tooltip(Text.translatable("society.working_block_entity.preserve_quality").green());
-      item.modelJson({
-        parent: "society:block/kubejs/seed_maker/seed_maker_off",
-      });
+      itemitem.parentModel("society:block/kubejs/seed_maker/seed_maker_off");
     })
     .defaultState((state) => {
       state
@@ -161,10 +149,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "", quality: 0 });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:seed_maker"] = (entity) => {
         global.handleBETick(entity, global.seedMakerRecipes, 1);
-      });
-    }).blockstateJson = {
-    multipart: getCardinalMultipartJson("seed_maker"),
-  };
+      };
+    });
 });

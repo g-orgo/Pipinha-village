@@ -32,14 +32,12 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("upgraded"))
     .box(4, 0, 2, 12, 14, 14)
     .defaultCutout()
-    .model("society:block/kubejs/espresso_machine")
+    .parentModel("society:block/kubejs/espresso_machine")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.espresso_machine.description").gray());
-      item.modelJson({
-        parent: "society:block/kubejs/espresso_machine",
-      });
+      itemitem.parentModel("society:block/kubejs/espresso_machine");
     })
     .defaultState((state) => {
       state
@@ -86,111 +84,5 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/kubejs/espresso_machine_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/kubejs/machine_done" },
-      },
-      {
-        when: { working: false, mature: true, facing: "north" },
-        apply: {
-          model: "society:block/kubejs/espresso_cup_full",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, mature: true, facing: "east" },
-        apply: {
-          model: "society:block/kubejs/espresso_cup_full",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, mature: true, facing: "south" },
-        apply: {
-          model: "society:block/kubejs/espresso_cup_full",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, mature: true, facing: "west" },
-        apply: {
-          model: "society:block/kubejs/espresso_cup_full",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, mature: false, facing: "north" },
-        apply: {
-          model: "society:block/kubejs/espresso_cup_empty",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, mature: false, facing: "east" },
-        apply: {
-          model: "society:block/kubejs/espresso_cup_empty",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, mature: false, facing: "south" },
-        apply: {
-          model: "society:block/kubejs/espresso_cup_empty",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, mature: false, facing: "west" },
-        apply: {
-          model: "society:block/kubejs/espresso_cup_empty",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "north" },
-        apply: {
-          model: "society:block/kubejs/espresso_machine",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "east" },
-        apply: {
-          model: "society:block/kubejs/espresso_machine",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "south" },
-        apply: {
-          model: "society:block/kubejs/espresso_machine",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "west" },
-        apply: {
-          model: "society:block/kubejs/espresso_machine",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
-  };
+    });
 });

@@ -95,9 +95,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.feeding_trough.description").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `13x13x13`).green());
-      item.modelJson({
-        parent: "farm_and_charm:block/feeding_trough_size_0",
-      });
+      itemitem.parentModel("farm_and_charm:block/feeding_trough_size_0");
     })
     .defaultState((state) => {
       state.set(integerProperty.create("fill", 0, 4), 0);
@@ -108,10 +106,13 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
       blockInfo.initialData({ fill: "0" });
-      blockInfo.serverTick(300, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(300);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:feeding_trough"] = (entity) => {
         const { inventory, block, level } = entity;
         global.runFeedingTrough(entity, inventory, block, level);
-      }),
+      };
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
@@ -125,168 +126,5 @@ StartupEvents.registry("block", (event) => {
           .getSlots((blockEntity) => blockEntity.inventory.slots)
           .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
-    }).blockstateJson = {
-    multipart: [
-      {
-        when: { fill: 0, facing: "north" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_0",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 0, facing: "east" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_0",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 0, facing: "south" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_0",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 0, facing: "west" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_0",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 1, facing: "north" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_1",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 1, facing: "east" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_1",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 1, facing: "south" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_1",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 1, facing: "west" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_1",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 2, facing: "north" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_2",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 2, facing: "east" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_2",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 2, facing: "south" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_2",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 2, facing: "west" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_2",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 3, facing: "north" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_3",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 3, facing: "east" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_3",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 3, facing: "south" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_3",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 3, facing: "west" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_3",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 4, facing: "north" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_4",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 4, facing: "east" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_4",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 4, facing: "south" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_4",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { fill: 4, facing: "west" },
-        apply: {
-          model: "farm_and_charm:block/feeding_trough_size_4",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
-  };
+    });
 });

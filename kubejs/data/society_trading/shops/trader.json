@@ -399,19 +399,6 @@
     },
     {
       "offer": {
-        "item": "society:red_glasses",
-        "count": 1
-      },
-      "request": {
-        "item": "botania:manaweave_cloth",
-        "count": 8
-      },
-      "stage_required": "trader_clothing",
-      "unlock_description": "jei.society_trading.trader_clothing",
-      "trade_id": "trader_red_glasses_for_manaweave_cloth"
-    },
-    {
-      "offer": {
         "item": "society:spiral_glasses",
         "count": 1
       },

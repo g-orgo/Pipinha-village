@@ -243,20 +243,6 @@
     },
     {
       "offer": {
-        "item": "botania:apothecary_default",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 1
-      },
-      "stage_required": "abandoned_farm_complete",
-      "numismatics_cost": 4096,
-      "unlock_description": "jei.society_trading.abandoned_farm_complete",
-      "trade_id": "witch_apothecary_default_for_sun"
-    },
-    {
-      "offer": {
         "item": "society:kinetic_blueprint",
         "count": 1
       },
@@ -268,18 +254,6 @@
       "stage_required": "boiler_room_complete",
       "unlock_description": "jei.society_trading.boiler_room_complete",
       "trade_id": "witch_kinetic_blueprint_for_sun"
-    },
-    {
-      "offer": {
-        "item": "botania:overgrowth_seed",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:ancient_coin",
-        "count": 1
-      },
-      "numismatics_cost": 262144,
-      "trade_id": "witch_overgrowth_seed_for_ancient_coin"
     },
     {
       "offer": {

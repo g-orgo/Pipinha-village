@@ -44,16 +44,17 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.caterpillar_box.description").gray());
       item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
-      item.modelJson({
-        parent: "society:block/kubejs/caterpillar_box",
-      });
+      itemitem.parentModel("society:block/kubejs/caterpillar_box");
     })
-    .model("society:block/kubejs/caterpillar_box")
+    .parentModel("society:block/kubejs/caterpillar_box")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
-      blockInfo.serverTick(6000, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(6000);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:caterpillar_box"] = (entity) => {
         global.handleCaterpillarBox(entity);
-      }),
+      };
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()

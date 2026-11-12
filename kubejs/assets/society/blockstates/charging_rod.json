@@ -1,0 +1,77 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "society:block/kubejs/charging_rod_particle"
+      }
+    },
+    {
+      "when": {
+        "working": false,
+        "upgraded": false,
+        "mature": false
+      },
+      "apply": {
+        "model": "society:block/kubejs/charging_rod_off"
+      }
+    },
+    {
+      "when": {
+        "working": true,
+        "upgraded": false,
+        "mature": false
+      },
+      "apply": {
+        "model": "society:block/kubejs/charging_rod"
+      }
+    },
+    {
+      "when": {
+        "working": false,
+        "upgraded": false,
+        "mature": true
+      },
+      "apply": {
+        "model": "society:block/kubejs/charging_rod_done"
+      }
+    },
+    {
+      "when": {
+        "working": false,
+        "upgraded": true,
+        "mature": false
+      },
+      "apply": {
+        "model": "society:block/kubejs/charging_rod_upgraded_off"
+      }
+    },
+    {
+      "when": {
+        "working": true,
+        "upgraded": true,
+        "mature": false
+      },
+      "apply": {
+        "model": "society:block/kubejs/charging_rod_upgraded"
+      }
+    },
+    {
+      "when": {
+        "working": false,
+        "upgraded": true,
+        "mature": true
+      },
+      "apply": {
+        "model": "society:block/kubejs/charging_rod_upgraded_done"
+      }
+    },
+    {
+      "when": {
+        "mature": true
+      },
+      "apply": {
+        "model": "society:block/kubejs/machine_done"
+      }
+    }
+  ]
+}

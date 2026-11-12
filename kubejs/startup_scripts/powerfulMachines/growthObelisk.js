@@ -36,18 +36,19 @@ StartupEvents.registry("block", (e) => {
       item.tooltip(Text.translatable("block.society.growth_obelisk.description").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `7x1x7`).green());
       item.tooltip(Text.translatable("block.society.growth_obelisk.description.fuel").lightPurple());
-      item.modelJson({
-        parent: "society:block/kubejs/growth_obelisk/display",
-      });
+      itemitem.parentModel("society:block/kubejs/growth_obelisk/display");
     })
     .soundType("stone")
-    .model("society:block/kubejs/growth_obelisk/lower")
+    .parentModel("society:block/kubejs/growth_obelisk/lower")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:growth_obelisk"] = (entity) => {
         global.runGrowthObelisk(entity, 4);
-      }),
+      };
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
@@ -69,5 +70,5 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:needs_stone_tool")
     .defaultCutout()
     .soundType("stone")
-    .model("society:block/kubejs/growth_obelisk/upper");
+    .parentModel("society:block/kubejs/growth_obelisk/upper");
 });

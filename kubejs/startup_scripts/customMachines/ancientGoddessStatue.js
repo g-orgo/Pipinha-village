@@ -10,7 +10,7 @@ StartupEvents.registry("block", (event) => {
     .hardness(4.5)
     .resistance(9.0)
     .requiresTool(false)
-    .model("society:block/kubejs/ancient_goddess_statue")
+    .parentModel("society:block/kubejs/ancient_goddess_statue")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
@@ -24,9 +24,7 @@ StartupEvents.registry("block", (event) => {
           "block.society.ancient_goddess_statue.description.warn"
         ).red()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/ancient_goddess_statue",
-      });
+      itemitem.parentModel("society:block/kubejs/ancient_goddess_statue");
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;

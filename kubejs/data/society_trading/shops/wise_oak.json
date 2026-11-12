@@ -98,28 +98,6 @@
     },
     {
       "offer": {
-        "item": "botania:black_lotus",
-        "count": 1
-      },
-      "request": {
-        "item": "society:blackfish_roe",
-        "count": 8
-      },
-      "trade_id": "wise_oak_blackfish_roe_for_black_lotus"
-    },
-    {
-      "offer": {
-        "item": "botania:blacker_lotus",
-        "count": 1
-      },
-      "request": {
-        "item": "society:aged_blackfish_roe",
-        "count": 1
-      },
-      "trade_id": "wise_oak_aged_blackfish_roe_for_blacker_lotus"
-    },
-    {
-      "offer": {
         "item": "society:fairy_dust",
         "count": 4
       },

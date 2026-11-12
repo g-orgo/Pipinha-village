@@ -1,0 +1,180 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "type": 0,
+        "facing": "north"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/base",
+        "y": 0,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 0,
+        "facing": "east"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/base",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 0,
+        "facing": "south"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/base",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 0,
+        "facing": "west"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/base",
+        "y": -90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 1,
+        "facing": "north"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/fish",
+        "y": 0,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 1,
+        "facing": "east"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/fish",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 1,
+        "facing": "south"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/fish",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 1,
+        "facing": "west"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/fish",
+        "y": -90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 2,
+        "facing": "north"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/twig",
+        "y": 0,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 2,
+        "facing": "east"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/twig",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 2,
+        "facing": "south"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/twig",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 2,
+        "facing": "west"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/twig",
+        "y": -90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 3,
+        "facing": "north"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/swing",
+        "y": 0,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 3,
+        "facing": "east"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/swing",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 3,
+        "facing": "south"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/swing",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "type": 3,
+        "facing": "west"
+      },
+      "apply": {
+        "model": "society:block/kubejs/gnome/swing",
+        "y": -90,
+        "uvlock": false
+      }
+    }
+  ]
+}

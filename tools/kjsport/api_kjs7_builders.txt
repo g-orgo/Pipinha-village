@@ -1,0 +1,406 @@
+Compiled from "BlockBuilder.java"
+public abstract class dev.latvian.mods.kubejs.block.BlockBuilder extends dev.latvian.mods.kubejs.registry.ModelledBuilderBase<net.minecraft.world.level.block.Block> {
+  public transient net.minecraft.world.level.block.Block copyPropertiesFrom;
+  public transient net.minecraft.world.level.block.SoundType soundType;
+  public transient java.util.function.Function<net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.material.MapColor> mapColorFn;
+  public transient float hardness;
+  public transient float resistance;
+  public transient float lightLevel;
+  public transient boolean opaque;
+  public transient boolean fullBlock;
+  public transient boolean requiresTool;
+  public transient dev.latvian.mods.kubejs.block.BlockRenderType renderType;
+  public transient dev.latvian.mods.kubejs.block.BlockTintFunction tint;
+  public transient dev.latvian.mods.kubejs.item.ItemBuilder itemBuilder;
+  public transient java.util.List<net.minecraft.world.phys.AABB> customShape;
+  public transient boolean noCollision;
+  public transient boolean notSolid;
+  public transient float slipperiness;
+  public transient float speedFactor;
+  public transient float jumpFactor;
+  public java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.RandomTickCallback> randomTickCallback;
+  public dev.latvian.mods.kubejs.block.drop.BlockDropSupplier drops;
+  public transient boolean noValidSpawns;
+  public transient boolean suffocating;
+  public transient boolean viewBlocking;
+  public transient boolean redstoneConductor;
+  public transient boolean transparent;
+  public transient net.minecraft.world.level.block.state.properties.NoteBlockInstrument instrument;
+  public transient java.util.Set<net.minecraft.world.level.block.state.properties.Property<?>> blockStateProperties;
+  public transient java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.BlockStateModifyCallback> defaultStateModification;
+  public transient java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.BlockStateModifyPlacementCallback> placementStateModification;
+  public transient java.util.function.Predicate<dev.latvian.mods.kubejs.block.callback.CanBeReplacedCallback> canBeReplacedFunction;
+  public transient java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.EntityBlockCallback> insideCallback;
+  public transient java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.EntityBlockCallback> stepOnCallback;
+  public transient java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.EntityFallenOnBlockCallback> fallOnCallback;
+  public transient java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.AfterEntityFallenOnBlockCallback> afterFallenOnCallback;
+  public transient java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.BlockExplodedCallback> explodedCallback;
+  public transient java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.BlockStateRotateCallback> rotateStateModification;
+  public transient java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.BlockStateMirrorCallback> mirrorStateModification;
+  public transient java.util.function.Consumer<dev.latvian.mods.kubejs.block.BlockRightClickedKubeEvent> rightClick;
+  public transient dev.latvian.mods.kubejs.block.entity.BlockEntityInfo blockEntityInfo;
+  public dev.latvian.mods.kubejs.block.BlockBuilder(net.minecraft.resources.ResourceLocation);
+  public net.minecraft.world.level.block.Block transformObject(net.minecraft.world.level.block.Block);
+  public void createAdditionalObjects(dev.latvian.mods.kubejs.registry.AdditionalObjectRegistry);
+  public dev.latvian.mods.kubejs.registry.BuilderBase<net.minecraft.world.level.block.Block> displayName(net.minecraft.network.chat.Component);
+  public void generateData(dev.latvian.mods.kubejs.generator.KubeDataGenerator);
+  public net.minecraft.world.level.storage.loot.LootTable generateLootTable();
+  public net.minecraft.world.level.storage.loot.LootTable generateLootTable(dev.latvian.mods.kubejs.generator.KubeDataGenerator);
+  public void generateAssets(dev.latvian.mods.kubejs.generator.KubeAssetGenerator);
+  protected void generateBlockModels(dev.latvian.mods.kubejs.generator.KubeAssetGenerator);
+  protected void generateItemModel(dev.latvian.mods.kubejs.client.ModelGenerator);
+  protected boolean useMultipartBlockState();
+  protected void generateBlockState(dev.latvian.mods.kubejs.client.VariantBlockStateGenerator);
+  protected void generateMultipartBlockState(dev.latvian.mods.kubejs.client.MultipartBlockStateGenerator);
+  public dev.latvian.mods.kubejs.block.BlockBuilder copyPropertiesFrom(net.minecraft.world.level.block.Block);
+  public dev.latvian.mods.kubejs.block.BlockBuilder soundType(net.minecraft.world.level.block.SoundType);
+  public dev.latvian.mods.kubejs.block.BlockBuilder noSoundType();
+  public dev.latvian.mods.kubejs.block.BlockBuilder woodSoundType();
+  public dev.latvian.mods.kubejs.block.BlockBuilder stoneSoundType();
+  public dev.latvian.mods.kubejs.block.BlockBuilder gravelSoundType();
+  public dev.latvian.mods.kubejs.block.BlockBuilder grassSoundType();
+  public dev.latvian.mods.kubejs.block.BlockBuilder sandSoundType();
+  public dev.latvian.mods.kubejs.block.BlockBuilder cropSoundType();
+  public dev.latvian.mods.kubejs.block.BlockBuilder glassSoundType();
+  public dev.latvian.mods.kubejs.block.BlockBuilder mapColor(net.minecraft.world.level.material.MapColor);
+  public dev.latvian.mods.kubejs.block.BlockBuilder dynamicMapColor(java.util.function.Function<net.minecraft.world.level.block.state.BlockState, java.lang.Object>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder hardness(float);
+  public dev.latvian.mods.kubejs.block.BlockBuilder resistance(float);
+  public dev.latvian.mods.kubejs.block.BlockBuilder unbreakable();
+  public dev.latvian.mods.kubejs.block.BlockBuilder lightLevel(float);
+  public dev.latvian.mods.kubejs.block.BlockBuilder opaque(boolean);
+  public dev.latvian.mods.kubejs.block.BlockBuilder fullBlock(boolean);
+  public dev.latvian.mods.kubejs.block.BlockBuilder requiresTool(boolean);
+  public dev.latvian.mods.kubejs.block.BlockBuilder requiresTool();
+  public dev.latvian.mods.kubejs.block.BlockBuilder renderType(dev.latvian.mods.kubejs.block.BlockRenderType);
+  public dev.latvian.mods.kubejs.block.BlockBuilder color(int, dev.latvian.mods.kubejs.block.BlockTintFunction);
+  public dev.latvian.mods.kubejs.block.BlockBuilder color(dev.latvian.mods.kubejs.block.BlockTintFunction);
+  public dev.latvian.mods.kubejs.block.BlockBuilder item(java.util.function.Consumer<dev.latvian.mods.kubejs.item.ItemBuilder>);
+  protected dev.latvian.mods.kubejs.item.ItemBuilder getOrCreateItemBuilder();
+  public dev.latvian.mods.kubejs.block.BlockBuilder noItem();
+  public dev.latvian.mods.kubejs.block.BlockBuilder box(double, double, double, double, double, double, boolean);
+  public dev.latvian.mods.kubejs.block.BlockBuilder box(double, double, double, double, double, double);
+  public static net.minecraft.world.phys.shapes.VoxelShape createShape(java.util.List<net.minecraft.world.phys.AABB>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder noCollision();
+  public dev.latvian.mods.kubejs.block.BlockBuilder notSolid();
+  public dev.latvian.mods.kubejs.block.BlockBuilder setWaterlogged(boolean);
+  public boolean getWaterlogged();
+  public dev.latvian.mods.kubejs.block.BlockBuilder waterlogged();
+  public boolean canBeWaterlogged();
+  public dev.latvian.mods.kubejs.block.BlockBuilder drops(dev.latvian.mods.kubejs.block.drop.BlockDropSupplier);
+  public dev.latvian.mods.kubejs.block.BlockBuilder noDrops();
+  public dev.latvian.mods.kubejs.block.BlockBuilder slipperiness(float);
+  public dev.latvian.mods.kubejs.block.BlockBuilder speedFactor(float);
+  public dev.latvian.mods.kubejs.block.BlockBuilder jumpFactor(float);
+  public dev.latvian.mods.kubejs.block.BlockBuilder randomTick(java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.RandomTickCallback>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder noValidSpawns(boolean);
+  public dev.latvian.mods.kubejs.block.BlockBuilder suffocating(boolean);
+  public dev.latvian.mods.kubejs.block.BlockBuilder viewBlocking(boolean);
+  public dev.latvian.mods.kubejs.block.BlockBuilder redstoneConductor(boolean);
+  public dev.latvian.mods.kubejs.block.BlockBuilder transparent(boolean);
+  public dev.latvian.mods.kubejs.block.BlockBuilder defaultCutout();
+  public dev.latvian.mods.kubejs.block.BlockBuilder defaultTranslucent();
+  public dev.latvian.mods.kubejs.block.BlockBuilder instrument(net.minecraft.world.level.block.state.properties.NoteBlockInstrument);
+  public dev.latvian.mods.kubejs.block.BlockBuilder tag(net.minecraft.resources.ResourceLocation[]);
+  public dev.latvian.mods.kubejs.block.BlockBuilder tagBoth(net.minecraft.resources.ResourceLocation[]);
+  public dev.latvian.mods.kubejs.block.BlockBuilder tagBlock(net.minecraft.resources.ResourceLocation[]);
+  public dev.latvian.mods.kubejs.block.BlockBuilder tagItem(net.minecraft.resources.ResourceLocation[]);
+  public dev.latvian.mods.kubejs.block.BlockBuilder defaultState(java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.BlockStateModifyCallback>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder placementState(java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.BlockStateModifyPlacementCallback>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder canBeReplaced(java.util.function.Predicate<dev.latvian.mods.kubejs.block.callback.CanBeReplacedCallback>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder entityInside(java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.EntityBlockCallback>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder steppedOn(java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.EntityBlockCallback>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder fallenOn(java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.EntityFallenOnBlockCallback>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder bounciness(float);
+  public dev.latvian.mods.kubejs.block.BlockBuilder afterFallenOn(java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.AfterEntityFallenOnBlockCallback>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder exploded(java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.BlockExplodedCallback>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder property(net.minecraft.world.level.block.state.properties.Property<?>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder rotateState(java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.BlockStateRotateCallback>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder mirrorState(java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.BlockStateMirrorCallback>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder rightClick(java.util.function.Consumer<dev.latvian.mods.kubejs.block.BlockRightClickedKubeEvent>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder blockEntity(java.util.function.Consumer<dev.latvian.mods.kubejs.block.entity.BlockEntityInfo>);
+  public net.minecraft.world.level.block.state.BlockBehaviour$Properties createProperties();
+  public dev.latvian.mods.kubejs.registry.BuilderBase tag(net.minecraft.resources.ResourceLocation[]);
+  public java.lang.Object transformObject(java.lang.Object);
+  static {};
+}
+Compiled from "BlockItemBuilder.java"
+public class dev.latvian.mods.kubejs.block.BlockItemBuilder extends dev.latvian.mods.kubejs.item.ItemBuilder {
+  public dev.latvian.mods.kubejs.block.BlockBuilder blockBuilder;
+  public dev.latvian.mods.kubejs.block.BlockItemBuilder(net.minecraft.resources.ResourceLocation);
+  public net.minecraft.world.item.Item createObject();
+  public java.lang.String getTranslationKeyGroup();
+  public void generateAssets(dev.latvian.mods.kubejs.generator.KubeAssetGenerator);
+  public java.lang.Object createObject();
+}
+Compiled from "ItemBuilder.java"
+public class dev.latvian.mods.kubejs.item.ItemBuilder extends dev.latvian.mods.kubejs.registry.ModelledBuilderBase<net.minecraft.world.item.Item> implements dev.latvian.mods.kubejs.item.ItemBehaviorFunctions {
+  public transient java.util.Map<java.lang.Object, java.lang.Object> components;
+  public transient int maxStackSize;
+  public transient int maxDamage;
+  public transient int burnTime;
+  public transient java.util.function.Function<net.minecraft.world.item.ItemStack, java.util.Collection<net.minecraft.world.item.ItemStack>> subtypes;
+  public transient net.minecraft.world.item.Rarity rarity;
+  public transient boolean fireResistant;
+  public transient dev.latvian.mods.kubejs.item.ItemTintFunction tint;
+  public transient dev.latvian.mods.kubejs.item.FoodBuilder foodBuilder;
+  public transient net.minecraft.world.item.JukeboxPlayable jukeboxPlayable;
+  public final transient dev.latvian.mods.kubejs.item.ItemBehavior behavior;
+  public transient net.minecraft.world.item.component.Tool tool;
+  public transient net.minecraft.world.item.component.ItemAttributeModifiers itemAttributeModifiers;
+  public transient boolean canRepair;
+  public dev.latvian.mods.kubejs.item.ItemBuilder(net.minecraft.resources.ResourceLocation);
+  public net.minecraft.world.item.Item createObject();
+  public net.minecraft.world.item.Item transformObject(net.minecraft.world.item.Item);
+  public void generateAssets(dev.latvian.mods.kubejs.generator.KubeAssetGenerator);
+  protected void generateItemModels(dev.latvian.mods.kubejs.generator.KubeAssetGenerator);
+  public <T> dev.latvian.mods.kubejs.item.ItemBuilder component(net.minecraft.core.component.DataComponentType<T>, T);
+  public dev.latvian.mods.kubejs.item.ItemBuilder maxStackSize(int);
+  public dev.latvian.mods.kubejs.item.ItemBuilder unstackable();
+  public dev.latvian.mods.kubejs.item.ItemBuilder maxDamage(int);
+  public dev.latvian.mods.kubejs.item.ItemBuilder burnTime(dev.latvian.mods.kubejs.util.TickDuration);
+  public dev.latvian.mods.kubejs.item.ItemBuilder containerItem(net.minecraft.resources.ResourceLocation);
+  public dev.latvian.mods.kubejs.item.ItemBuilder subtypes(java.util.function.Function<net.minecraft.world.item.ItemStack, java.util.Collection<net.minecraft.world.item.ItemStack>>);
+  public dev.latvian.mods.kubejs.item.ItemBuilder rarity(net.minecraft.world.item.Rarity);
+  public dev.latvian.mods.kubejs.item.ItemBuilder group(java.lang.String);
+  public dev.latvian.mods.kubejs.item.ItemBuilder color(int, dev.latvian.mods.kubejs.item.ItemTintFunction);
+  public dev.latvian.mods.kubejs.item.ItemBuilder color(dev.latvian.mods.kubejs.item.ItemTintFunction);
+  public dev.latvian.mods.kubejs.item.ItemBuilder food(java.util.function.Consumer<dev.latvian.mods.kubejs.item.FoodBuilder>);
+  public dev.latvian.mods.kubejs.item.ItemBuilder food(int, float);
+  public dev.latvian.mods.kubejs.item.ItemBuilder fireResistant(boolean);
+  public dev.latvian.mods.kubejs.item.ItemBuilder fireResistant();
+  public dev.latvian.mods.kubejs.item.ItemBehavior kjs$getOrCreateBehavior();
+  public dev.latvian.mods.kubejs.item.ItemBuilder jukeboxPlayable(net.minecraft.resources.ResourceKey<net.minecraft.world.item.JukeboxSong>, boolean);
+  public dev.latvian.mods.kubejs.item.ItemBuilder jukeboxPlayable(net.minecraft.resources.ResourceKey<net.minecraft.world.item.JukeboxSong>);
+  public dev.latvian.mods.kubejs.item.ItemBuilder disableRepair();
+  public net.minecraft.world.item.Item$Properties createItemProperties();
+  public java.lang.Object transformObject(java.lang.Object);
+  public java.lang.Object createObject();
+}
+Compiled from "BuilderBase.java"
+public abstract class dev.latvian.mods.kubejs.registry.BuilderBase<T> implements java.util.function.Supplier<T> {
+  public final net.minecraft.resources.ResourceLocation id;
+  public dev.latvian.mods.kubejs.script.SourceLine sourceLine;
+  public net.minecraft.resources.ResourceKey<net.minecraft.core.Registry<T>> registryKey;
+  protected T object;
+  public java.lang.String translationKey;
+  public net.minecraft.network.chat.Component displayName;
+  public boolean formattedDisplayName;
+  public transient boolean dummyBuilder;
+  public transient java.util.Set<net.minecraft.resources.ResourceLocation> defaultTags;
+  public dev.latvian.mods.kubejs.registry.BuilderBase(net.minecraft.resources.ResourceLocation);
+  public abstract T createObject();
+  public T transformObject(T);
+  public final T get();
+  public void createAdditionalObjects(dev.latvian.mods.kubejs.registry.AdditionalObjectRegistry);
+  public java.lang.String getTranslationKeyGroup();
+  public dev.latvian.mods.kubejs.registry.BuilderBase<T> translationKey(java.lang.String);
+  public dev.latvian.mods.kubejs.registry.BuilderBase<T> displayName(net.minecraft.network.chat.Component);
+  public dev.latvian.mods.kubejs.registry.BuilderBase<T> formattedDisplayName();
+  public dev.latvian.mods.kubejs.registry.BuilderBase<T> formattedDisplayName(net.minecraft.network.chat.Component);
+  public dev.latvian.mods.kubejs.registry.BuilderBase<T> tag(net.minecraft.resources.ResourceLocation[]);
+  public net.minecraft.resources.ResourceLocation newID(java.lang.String, java.lang.String);
+  public void generateData(dev.latvian.mods.kubejs.generator.KubeDataGenerator);
+  public void generateAssets(dev.latvian.mods.kubejs.generator.KubeAssetGenerator);
+  public java.lang.String getBuilderTranslationKey();
+  public void generateLang(dev.latvian.mods.kubejs.client.LangKubeEvent);
+  public T createTransformedObject();
+  public java.lang.String toString();
+}
+Compiled from "BlockEntityInfo.java"
+public class dev.latvian.mods.kubejs.block.entity.BlockEntityInfo implements dev.latvian.mods.kubejs.block.entity.BlockEntityAttachmentHandler {
+  public final transient dev.latvian.mods.kubejs.block.BlockBuilder blockBuilder;
+  public transient net.minecraft.world.level.block.entity.BlockEntityType<?> entityType;
+  public transient net.minecraft.nbt.CompoundTag initialData;
+  public transient boolean serverTicking;
+  public transient boolean clientTicking;
+  public transient boolean attachmentsTicking;
+  public transient int tickFrequency;
+  public transient int tickOffset;
+  public transient boolean sync;
+  public transient java.util.Map<java.lang.String, dev.latvian.mods.kubejs.block.entity.BlockEntityAttachmentInfo> attachments;
+  public transient it.unimi.dsi.fastutil.ints.Int2ObjectMap<dev.latvian.mods.kubejs.block.entity.BlockEntityEventCallback> eventHandlers;
+  public dev.latvian.mods.kubejs.block.entity.BlockEntityInfo(dev.latvian.mods.kubejs.block.BlockBuilder);
+  public void initialData(net.minecraft.nbt.CompoundTag);
+  public void serverTicking();
+  public void clientTicking();
+  public void ticking();
+  public void tickFrequency(int);
+  public void tickOffset(int);
+  public void enableSync();
+  public void attach(java.lang.String, dev.latvian.mods.kubejs.block.entity.BlockEntityAttachmentType, java.util.Set<net.minecraft.core.Direction>, dev.latvian.mods.kubejs.block.entity.BlockEntityAttachmentFactory);
+  public void eventHandler(int, dev.latvian.mods.kubejs.block.entity.BlockEntityEventCallback);
+  public void rightClickOpensInventory(java.lang.String);
+  public void rightClickFillsTank(java.lang.String);
+  public net.minecraft.world.level.block.entity.BlockEntity createBlockEntity(net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+  public <T extends net.minecraft.world.level.block.entity.BlockEntity> net.minecraft.world.level.block.entity.BlockEntityTicker<T> getTicker(net.minecraft.world.level.Level);
+  public java.lang.String toString();
+}
+Compiled from "FluidBuilder.java"
+public class dev.latvian.mods.kubejs.fluid.FluidBuilder extends dev.latvian.mods.kubejs.registry.BuilderBase<net.minecraft.world.level.material.FlowingFluid> {
+  public static final dev.latvian.mods.kubejs.color.KubeColor WATER_COLOR;
+  public transient int slopeFindDistance;
+  public transient int levelDecreasePerBlock;
+  public transient float explosionResistance;
+  public transient int tickRate;
+  public dev.latvian.mods.kubejs.fluid.FluidTypeBuilder fluidType;
+  public dev.latvian.mods.kubejs.fluid.FlowingFluidBuilder flowingFluid;
+  public dev.latvian.mods.kubejs.fluid.FluidBlockBuilder block;
+  public dev.latvian.mods.kubejs.fluid.FluidBucketItemBuilder bucketItem;
+  public dev.latvian.mods.kubejs.fluid.FluidBuilder(net.minecraft.resources.ResourceLocation);
+  public dev.latvian.mods.kubejs.registry.BuilderBase<net.minecraft.world.level.material.FlowingFluid> displayName(net.minecraft.network.chat.Component);
+  public net.neoforged.neoforge.fluids.BaseFlowingFluid$Properties createProperties();
+  public net.minecraft.world.level.material.FlowingFluid createObject();
+  public void createAdditionalObjects(dev.latvian.mods.kubejs.registry.AdditionalObjectRegistry);
+  public dev.latvian.mods.kubejs.registry.BuilderBase<net.minecraft.world.level.material.FlowingFluid> tag(net.minecraft.resources.ResourceLocation[]);
+  public dev.latvian.mods.kubejs.fluid.FluidBuilder type(java.util.function.Consumer<dev.latvian.mods.kubejs.fluid.FluidTypeBuilder>);
+  public dev.latvian.mods.kubejs.fluid.FluidBuilder tint(dev.latvian.mods.kubejs.color.KubeColor);
+  public dev.latvian.mods.kubejs.fluid.FluidBuilder stillTexture(net.minecraft.resources.ResourceLocation);
+  public dev.latvian.mods.kubejs.fluid.FluidBuilder flowingTexture(net.minecraft.resources.ResourceLocation);
+  public dev.latvian.mods.kubejs.fluid.FluidBuilder renderType(dev.latvian.mods.kubejs.block.BlockRenderType);
+  public dev.latvian.mods.kubejs.fluid.FluidBuilder translucent();
+  public dev.latvian.mods.kubejs.fluid.FluidBuilder slopeFindDistance(int);
+  public dev.latvian.mods.kubejs.fluid.FluidBuilder levelDecreasePerBlock(int);
+  public dev.latvian.mods.kubejs.fluid.FluidBuilder explosionResistance(float);
+  public dev.latvian.mods.kubejs.fluid.FluidBuilder tickRate(int);
+  public dev.latvian.mods.kubejs.fluid.FluidBuilder noBucket();
+  public dev.latvian.mods.kubejs.fluid.FluidBuilder noBlock();
+  public void generateAssets(dev.latvian.mods.kubejs.generator.KubeAssetGenerator);
+  public java.lang.Object createObject();
+  static {};
+}
+Compiled from "CropBlockBuilder.java"
+public class dev.latvian.mods.kubejs.block.custom.CropBlockBuilder extends dev.latvian.mods.kubejs.block.BlockBuilder {
+  public static final net.minecraft.resources.ResourceLocation[] CROP_BLOCK_TAGS;
+  public static final net.minecraft.resources.ResourceLocation[] CROP_ITEM_TAGS;
+  public transient int age;
+  protected transient java.util.List<net.minecraft.world.phys.shapes.VoxelShape> shapeByAge;
+  public transient java.util.function.ToDoubleFunction<dev.latvian.mods.kubejs.block.callback.RandomTickCallback> growSpeedCallback;
+  public transient java.util.function.ToIntFunction<dev.latvian.mods.kubejs.block.callback.RandomTickCallback> fertilizerCallback;
+  public transient dev.latvian.mods.kubejs.block.custom.CropBlockBuilder$SurviveCallback surviveCallback;
+  public transient java.util.List<com.mojang.datafixers.util.Pair<net.minecraft.core.Holder<net.minecraft.world.item.Item>, net.minecraft.world.level.storage.loot.providers.number.NumberProvider>> outputs;
+  public transient boolean noSeeds;
+  public dev.latvian.mods.kubejs.block.custom.CropBlockBuilder(net.minecraft.resources.ResourceLocation);
+  public dev.latvian.mods.kubejs.block.BlockBuilder noItem();
+  public dev.latvian.mods.kubejs.block.custom.CropBlockBuilder noSeeds();
+  public dev.latvian.mods.kubejs.block.custom.CropBlockBuilder crop(net.minecraft.core.Holder<net.minecraft.world.item.Item>);
+  public dev.latvian.mods.kubejs.block.custom.CropBlockBuilder crop(net.minecraft.core.Holder<net.minecraft.world.item.Item>, net.minecraft.world.level.storage.loot.providers.number.NumberProvider);
+  public dev.latvian.mods.kubejs.block.custom.CropBlockBuilder age(int);
+  public dev.latvian.mods.kubejs.block.custom.CropBlockBuilder age(int, java.util.function.Consumer<dev.latvian.mods.kubejs.block.custom.CropBlockBuilder$ShapeBuilder>);
+  public dev.latvian.mods.kubejs.block.custom.CropBlockBuilder farmersCanPlant();
+  public dev.latvian.mods.kubejs.block.custom.CropBlockBuilder bonemeal(java.util.function.ToIntFunction<dev.latvian.mods.kubejs.block.callback.RandomTickCallback>);
+  public dev.latvian.mods.kubejs.block.custom.CropBlockBuilder survive(dev.latvian.mods.kubejs.block.custom.CropBlockBuilder$SurviveCallback);
+  public dev.latvian.mods.kubejs.block.custom.CropBlockBuilder growTick(java.util.function.ToDoubleFunction<dev.latvian.mods.kubejs.block.callback.RandomTickCallback>);
+  public dev.latvian.mods.kubejs.block.BlockBuilder randomTick(java.util.function.Consumer<dev.latvian.mods.kubejs.block.callback.RandomTickCallback>);
+  public net.minecraft.world.level.storage.loot.LootTable generateLootTable(dev.latvian.mods.kubejs.generator.KubeDataGenerator);
+  protected void generateBlockState(dev.latvian.mods.kubejs.client.VariantBlockStateGenerator);
+  protected void generateBlockModels(dev.latvian.mods.kubejs.generator.KubeAssetGenerator);
+  protected void generateItemModel(dev.latvian.mods.kubejs.client.ModelGenerator);
+  public net.minecraft.world.level.block.Block createObject();
+  public java.lang.Object createObject();
+  static {};
+}
+Compiled from "FoodBuilder.java"
+public class dev.latvian.mods.kubejs.item.FoodBuilder {
+  public java.util.function.Consumer<dev.latvian.mods.kubejs.item.FoodEatenKubeEvent> eaten;
+  public dev.latvian.mods.kubejs.item.FoodBuilder();
+  public dev.latvian.mods.kubejs.item.FoodBuilder(net.minecraft.world.food.FoodProperties);
+  public dev.latvian.mods.kubejs.item.FoodBuilder nutrition(int);
+  public dev.latvian.mods.kubejs.item.FoodBuilder saturation(float);
+  public dev.latvian.mods.kubejs.item.FoodBuilder alwaysEdible(boolean);
+  public dev.latvian.mods.kubejs.item.FoodBuilder alwaysEdible();
+  public dev.latvian.mods.kubejs.item.FoodBuilder eatSeconds(float);
+  public dev.latvian.mods.kubejs.item.FoodBuilder fastToEat();
+  public dev.latvian.mods.kubejs.item.FoodBuilder usingConvertsTo(net.minecraft.world.item.ItemStack);
+  public dev.latvian.mods.kubejs.item.FoodBuilder effect(net.minecraft.resources.ResourceLocation, int, int, float);
+  public dev.latvian.mods.kubejs.item.FoodBuilder removeEffect(net.minecraft.world.effect.MobEffect);
+  public dev.latvian.mods.kubejs.item.FoodBuilder eaten(java.util.function.Consumer<dev.latvian.mods.kubejs.item.FoodEatenKubeEvent>);
+  public net.minecraft.world.food.FoodProperties build();
+}
+Compiled from "MutableToolTier.java"
+public class dev.latvian.mods.kubejs.item.MutableToolTier implements net.minecraft.world.item.Tier {
+  public final net.minecraft.world.item.Tier parent;
+  public dev.latvian.mods.kubejs.item.MutableToolTier(net.minecraft.world.item.Tier);
+  public int getUses();
+  public void setUses(int);
+  public float getSpeed();
+  public void setSpeed(float);
+  public float getAttackDamageBonus();
+  public void setIncorrectBlocksForDropsTag(net.minecraft.resources.ResourceLocation);
+  public net.minecraft.resources.ResourceLocation getIncorrectBlocksForDropsTag();
+  public net.minecraft.tags.TagKey<net.minecraft.world.level.block.Block> getIncorrectBlocksForDrops();
+  public void setAttackDamageBonus(float);
+  public int getEnchantmentValue();
+  public void setEnchantmentValue(int);
+  public net.minecraft.world.item.crafting.Ingredient getRepairIngredient();
+  public void setRepairIngredient(net.minecraft.world.item.crafting.Ingredient);
+}
+Compiled from "IngredientWrapper.java"
+public interface dev.latvian.mods.kubejs.plugin.builtin.wrapper.IngredientWrapper {
+  public static final dev.latvian.mods.rhino.type.TypeInfo TYPE_INFO;
+  public static final net.minecraft.world.item.crafting.Ingredient none;
+  public static final net.minecraft.world.item.crafting.Ingredient all;
+  public static net.minecraft.world.item.crafting.Ingredient of(net.minecraft.world.item.crafting.Ingredient);
+  public static net.neoforged.neoforge.common.crafting.SizedIngredient of(net.minecraft.world.item.crafting.Ingredient, int);
+  public static net.minecraft.world.item.crafting.Ingredient withData(net.minecraft.core.HolderSet<net.minecraft.world.item.Item>, net.minecraft.core.component.DataComponentMap);
+  public static net.minecraft.world.item.crafting.Ingredient withData(net.minecraft.core.HolderSet<net.minecraft.world.item.Item>, net.minecraft.core.component.DataComponentMap, boolean);
+  public static com.mojang.serialization.DataResult<net.minecraft.world.item.crafting.Ingredient> wrapResult(dev.latvian.mods.rhino.Context, java.lang.Object);
+  public static net.minecraft.world.item.crafting.Ingredient wrap(dev.latvian.mods.rhino.Context, java.lang.Object);
+  public static boolean isIngredientLike(java.lang.Object);
+  public static com.mojang.serialization.DataResult<net.minecraft.world.item.crafting.Ingredient> parseJson(dev.latvian.mods.rhino.Context, com.google.gson.JsonElement);
+  public static com.mojang.serialization.DataResult<net.minecraft.world.item.crafting.Ingredient> parseString(dev.latvian.mods.rhino.Context, java.lang.String);
+  public static com.mojang.serialization.DataResult<net.minecraft.world.item.crafting.Ingredient> read(dev.latvian.mods.rhino.Context, com.mojang.brigadier.StringReader);
+  public static boolean isIngredient(java.lang.Object);
+  public static net.minecraft.world.item.ItemStack first(net.minecraft.world.item.crafting.Ingredient);
+  public static net.minecraft.tags.TagKey<net.minecraft.world.item.Item> tagKeyOf(net.minecraft.world.item.crafting.Ingredient);
+  public static boolean containsAnyTag(net.minecraft.world.item.crafting.Ingredient);
+  static {};
+}
+Compiled from "ModelledBuilderBase.java"
+public abstract class dev.latvian.mods.kubejs.registry.ModelledBuilderBase<T> extends dev.latvian.mods.kubejs.registry.BuilderBase<T> {
+  public transient net.minecraft.resources.ResourceLocation parentModel;
+  public transient java.util.Map<java.lang.String, java.lang.String> textures;
+  public transient java.lang.String baseTexture;
+  public transient java.util.function.Consumer<dev.latvian.mods.kubejs.client.ModelGenerator> modelGenerator;
+  public dev.latvian.mods.kubejs.registry.ModelledBuilderBase(net.minecraft.resources.ResourceLocation);
+  public dev.latvian.mods.kubejs.registry.ModelledBuilderBase<T> texture(java.lang.String);
+  public dev.latvian.mods.kubejs.registry.ModelledBuilderBase<T> texture(java.lang.String[], java.lang.String);
+  public dev.latvian.mods.kubejs.registry.ModelledBuilderBase<T> textures(java.util.Map<java.lang.String, java.lang.String>);
+  public dev.latvian.mods.kubejs.registry.ModelledBuilderBase<T> parentModel(net.minecraft.resources.ResourceLocation);
+  public dev.latvian.mods.kubejs.registry.ModelledBuilderBase<T> modelGenerator(java.util.function.Consumer<dev.latvian.mods.kubejs.client.ModelGenerator>);
+}
+Compiled from "ModelGenerator.java"
+public class dev.latvian.mods.kubejs.client.ModelGenerator {
+  public dev.latvian.mods.kubejs.client.ModelGenerator();
+  public com.google.gson.JsonObject toJson();
+  public void parent(net.minecraft.resources.ResourceLocation);
+  public void texture(java.lang.String, java.lang.String);
+  public void texture(java.lang.String[], java.lang.String);
+  public void textures(java.util.Map<java.lang.String, java.lang.String>);
+  public void element(java.util.function.Consumer<dev.latvian.mods.kubejs.client.ModelGenerator$Element>);
+  public void override(net.minecraft.resources.ResourceLocation, java.util.function.Consumer<dev.latvian.mods.kubejs.client.ModelGenerator$Override>);
+  public void custom(java.util.function.Consumer<com.google.gson.JsonObject>);
+  static {};
+}
+Compiled from "ThickFluidBuilder.java"
+public class dev.latvian.mods.kubejs.fluid.ThickFluidBuilder extends dev.latvian.mods.kubejs.fluid.FluidBuilder {
+  public dev.latvian.mods.kubejs.fluid.ThickFluidBuilder(net.minecraft.resources.ResourceLocation);
+}
+Compiled from "FluidBlockBuilder.java"
+public class dev.latvian.mods.kubejs.fluid.FluidBlockBuilder extends dev.latvian.mods.kubejs.block.BlockBuilder {
+  public final dev.latvian.mods.kubejs.fluid.FluidBuilder fluidBuilder;
+  public dev.latvian.mods.kubejs.fluid.FluidBlockBuilder(dev.latvian.mods.kubejs.fluid.FluidBuilder);
+  public net.minecraft.world.level.block.Block createObject();
+  protected void generateBlockModels(dev.latvian.mods.kubejs.generator.KubeAssetGenerator);
+  public dev.latvian.mods.kubejs.block.BlockBuilder item(java.util.function.Consumer<dev.latvian.mods.kubejs.item.ItemBuilder>);
+  public java.lang.Object createObject();
+}
+Compiled from "CardinalBlockBuilder.java"
+public class dev.latvian.mods.kubejs.block.custom.CardinalBlockBuilder extends dev.latvian.mods.kubejs.block.BlockBuilder {
+  public dev.latvian.mods.kubejs.block.custom.CardinalBlockBuilder(net.minecraft.resources.ResourceLocation);
+  protected void generateBlockState(dev.latvian.mods.kubejs.client.VariantBlockStateGenerator);
+  protected void generateBlockModels(dev.latvian.mods.kubejs.generator.KubeAssetGenerator);
+  public net.minecraft.world.level.block.Block createObject();
+  public java.lang.Object createObject();
+  static {};
+}

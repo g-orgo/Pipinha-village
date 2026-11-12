@@ -124,10 +124,6 @@ global.ancientCaskRecipes = new Map([]);
   { item: "society:dewy_star", name: "Dewy Star", time: 20 },
   { item: "society:ancient_cider", name: "Ancient Cider", time: 20 },
   { item: "society:beer_attunecore", name: "Attunecore Beer", time: 13 },
-  {
-    name: "Tri-Bull Cheese Wheel",
-    time: 13,
-  },
   { item: "society:violet_moon", name: "Violet Moon", time: 10 },
   { item: "society:laputa_franc", name: "Laputa Franc", time: 20 },
   { item: "society:sparkling_le_roy", name: "Sparkling Le Roy", time: 10 },
@@ -153,9 +149,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.ancient_cask.description").gray());
       item.tooltip(Text.translatable("block.society.ancient_cask.description.warn").red());
-      item.modelJson({
-        parent: "society:block/kubejs/ancient_cask/ancient_cask",
-      });
+      itemitem.parentModel("society:block/kubejs/ancient_cask/ancient_cask");
     })
     .defaultState((state) => {
       state
@@ -229,10 +223,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:ancient_cask"] = (entity) => {
         global.handleBETick(entity, global.ancientCaskRecipes, 20);
-      });
-    }).blockstateJson = {
-    multipart: getCardinalMultipartJson("ancient_cask"),
-  };
+      };
+    });
 });

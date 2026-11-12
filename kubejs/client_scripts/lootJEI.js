@@ -31,7 +31,7 @@ const registerLootCategory = (event, title) => {
       });
   });
 };
-JEIEvents.registerCategories((e) => {
+JEIAddedEvents.registerCategories((e) => {
   registerLootCategory(e, Text.translatable("jei.society.category.loot_box"));
 });
 const addLootBoxRecipes = (e, input, outptTag) => {
@@ -53,7 +53,7 @@ const addLootBoxRecipes = (e, input, outptTag) => {
     outputs: output,
   });
 };
-JEIEvents.registerRecipes((e) => {
+JEIAddedEvents.registerRecipes((e) => {
   addLootBoxRecipes(e, "society:furniture_box", "#society:loot_furniture");
   const fantasyBoxes = ["nordic", "dunmer", "venthyr", "bone", "royal", "necrolord"];
   fantasyBoxes.forEach((theme) => {

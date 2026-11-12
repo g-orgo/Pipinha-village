@@ -1,0 +1,44 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "type": "0"
+      },
+      "apply": {
+        "model": "society:block/kubejs/berry_bush/base"
+      }
+    },
+    {
+      "when": {
+        "type": "1"
+      },
+      "apply": {
+        "model": "society:block/kubejs/berry_bush/salmonberry"
+      }
+    },
+    {
+      "when": {
+        "type": "2"
+      },
+      "apply": {
+        "model": "society:block/kubejs/berry_bush/boysenberry"
+      }
+    },
+    {
+      "when": {
+        "type": "3"
+      },
+      "apply": {
+        "model": "society:block/kubejs/berry_bush/cranberry"
+      }
+    },
+    {
+      "when": {
+        "type": "4"
+      },
+      "apply": {
+        "model": "society:block/kubejs/berry_bush/crystalberry"
+      }
+    }
+  ]
+}

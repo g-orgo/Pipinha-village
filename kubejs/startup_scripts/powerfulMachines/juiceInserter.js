@@ -8,15 +8,16 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.translatable("block.society.juice_inserter.description").gray());
-      item.modelJson({
-        parent: "society:block/kubejs/juice_inserter",
-      });
+      itemitem.parentModel("society:block/kubejs/juice_inserter");
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ Fluid: 0, FluidType: "" });
-      blockInfo.serverTick(10, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(10);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:juice_inserter"] = (entity) => {
         global.runJuiceInserter(entity);
-      });
+      };
       blockInfo.attachCapability(
         CapabilityBuilder.FLUID.customBlockEntity()
           .getCapacity(() => 10000)
@@ -24,13 +25,7 @@ StartupEvents.registry("block", (event) => {
           .onFill((blockInfo, fluid, sim) => global.onFill(blockInfo, fluid, sim))
           .onDrain((blockInfo, fluid, sim) => global.onDrain(blockInfo, fluid, sim))
       );
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/kubejs/juice_inserter_particle" },
-      },
-    ].concat(getCardinalMultipartJsonBasic("juice_inserter")),
-  };
+    });
 });
 
 const juiceMap = [

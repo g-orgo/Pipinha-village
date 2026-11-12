@@ -62,15 +62,6 @@ global.tapperRecipes = new Map([
     },
   ],
   [
-    "mysticaloaktree:wise_oak",
-    {
-      leaves: ["minecraft:oak_leaves"],
-      output: ["4x botania:black_lotus"],
-      fluidOutput: "society:oak_resin",
-      time: 2,
-    },
-  ],
-  [
     "minecraft:pale_oak_log",
     {
       leaves: ["minecraft:pale_oak_leaves"],
@@ -114,9 +105,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.tapper.description").gray());
-      item.modelJson({
-        parent: "society:block/kubejs/tapper",
-      });
+      itemitem.parentModel("society:block/kubejs/tapper");
     })
     .defaultState((state) => {
       state
@@ -186,23 +175,12 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:tapper"] = (entity) => {
         if (entity.block.properties.get("error") !== "true")
           global.handleBETick(entity, global.tapperRecipes, 7);
-      });
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/kubejs/tapper_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/kubejs/machine_done" },
-      },
-      {
-        when: { error: true },
-        apply: { model: "society:block/kubejs/error" },
-      },
-    ].concat(getCardinalMultipartJsonBasic("tapper")),
-  };
+      };
+    });
 });

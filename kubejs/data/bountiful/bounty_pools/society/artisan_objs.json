@@ -33,28 +33,6 @@
 			},
 			"unitWorth": 12288
 		},
-		"artisan_mana_string": {
-			"type": "minecraft:item",
-			"content": "botania:mana_string",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 4
-			},
-			"unitWorth": 1152
-		},
-		"artisan_manaweave_cloth": {
-			"type": "minecraft:item",
-			"content": "botania:manaweave_cloth",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 2
-			},
-			"unitWorth": 18432
-		},
 		"artisan_mayonnaise": {
 			"type": "minecraft:item",
 			"content": "society:mayonnaise",
@@ -560,28 +538,6 @@
 				"max": 4
 			},
 			"unitWorth": 1920
-		},
-		"artisan_tribull_cheese_wedge": {
-			"type": "minecraft:item",
-			"content": "farmlife:tribull_cheese_wedge",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 4
-			},
-			"unitWorth": 864
-		},
-		"artisan_tribull_cheese_wheel": {
-			"type": "minecraft:item",
-			"content": "farmlife:tribull_cheese_wheel",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 4
-			},
-			"unitWorth": 3456
 		},
 		"artisan_forks_of_blue": {
 			"type": "minecraft:item",

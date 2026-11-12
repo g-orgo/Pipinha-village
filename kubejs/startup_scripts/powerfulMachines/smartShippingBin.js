@@ -12,14 +12,15 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("tooltip.society.smart_shipping_bin.warn").red()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/smart_shipping_bin",
-      });
+      itemitem.parentModel("society:block/kubejs/smart_shipping_bin");
     })
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 6);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(4000, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(4000);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["shippingbin:smart_shipping_bin"] = (entity) => {
         const { inventory, block, level } = entity;
         if (global.susFunctionLogging) console.log("[SOCIETY-SUSFN] smartShippingBin.js");
         let slots = entity.inventory.getSlots();
@@ -48,7 +49,7 @@ StartupEvents.registry("block", (event) => {
           true,
           ownerUUID
         );
-      }),
+      };
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
@@ -59,40 +60,5 @@ StartupEvents.registry("block", (event) => {
           .getSlots((blockEntity) => blockEntity.inventory.slots)
           .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
-    }).blockstateJson = {
-    multipart: [
-      {
-        when: { facing: "north" },
-        apply: {
-          model: "society:block/kubejs/smart_shipping_bin",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "east" },
-        apply: {
-          model: "society:block/kubejs/smart_shipping_bin",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "south" },
-        apply: {
-          model: "society:block/kubejs/smart_shipping_bin",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { facing: "west" },
-        apply: {
-          model: "society:block/kubejs/smart_shipping_bin",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
-  };
+    });
 });

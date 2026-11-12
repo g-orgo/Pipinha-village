@@ -287,18 +287,6 @@
     },
     {
       "offer": {
-        "item": "refinedstorageaddons:wireless_crafting_grid",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 12
-      },
-      "numismatics_cost": 49152,
-      "trade_id": "librarian_wireless_crafting_grid_for_sun"
-    },
-    {
-      "offer": {
         "item": "refinedstorage:wireless_transmitter",
         "count": 1
       },

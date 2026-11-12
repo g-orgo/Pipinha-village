@@ -22,18 +22,19 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
-    .model("society:block/kubejs/coin_leaderboard")
+    .parentModel("society:block/kubejs/coin_leaderboard")
     .item((item) => {
       item.tooltip(
         Text.translatable("block.society.coin_leaderboard.description").gray()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/coin_leaderboard",
-      });
+      itemitem.parentModel("society:block/kubejs/coin_leaderboard");
     })
     .blockEntity((be) => {
-      be.serverTick(600, 0, (tick) => {
+      be.serverTicking();
+      be.tickFrequency(600);
+      be.tickOffset(0);
+      global.portBeTicks["society:coin_leaderboard"] = (tick) => {
         global.updateLeaderboard(tick.block, tick.level);
-      });
+      };
     });
 });

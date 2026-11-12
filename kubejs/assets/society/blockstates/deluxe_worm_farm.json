@@ -1,0 +1,64 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "upgraded": false
+      },
+      "apply": {
+        "model": "society:block/kubejs/deluxe_worm_farm_base"
+      }
+    },
+    {
+      "when": {
+        "upgraded": true
+      },
+      "apply": {
+        "model": "society:block/kubejs/deluxe_worm_farm_base_upgraded"
+      }
+    },
+    {
+      "when": {
+        "working": true,
+        "upgraded": false
+      },
+      "apply": {
+        "model": "society:block/kubejs/deluxe_worm_farm"
+      }
+    },
+    {
+      "when": {
+        "mature": true,
+        "upgraded": false
+      },
+      "apply": {
+        "model": "society:block/kubejs/deluxe_worm_farm"
+      }
+    },
+    {
+      "when": {
+        "working": true,
+        "upgraded": true
+      },
+      "apply": {
+        "model": "society:block/kubejs/deluxe_worm_farm_upgraded"
+      }
+    },
+    {
+      "when": {
+        "mature": true,
+        "upgraded": true
+      },
+      "apply": {
+        "model": "society:block/kubejs/deluxe_worm_farm_upgraded"
+      }
+    },
+    {
+      "when": {
+        "mature": true
+      },
+      "apply": {
+        "model": "society:block/kubejs/machine_done"
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "society:block/kubejs/auto_petter_particle"
+      }
+    },
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "society:block/kubejs/auto_petter",
+        "y": 0,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "society:block/kubejs/auto_petter",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "society:block/kubejs/auto_petter",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "society:block/kubejs/auto_petter",
+        "y": -90,
+        "uvlock": false
+      }
+    }
+  ]
+}

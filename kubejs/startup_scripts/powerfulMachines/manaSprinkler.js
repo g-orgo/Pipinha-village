@@ -44,7 +44,7 @@ global.manaSprinklerScan = (entity, radius) => {
       `playsound doapi:water_sprinkler block @a ${x} ${y} ${z} 0.5 1`
     );
     level.server.runCommandSilent(
-      `playsound botania:spreader_fire block @a ${x} ${y} ${z} 0.5 1`
+      `playsound minecraft:entity.blaze.shoot block @a ${x} ${y} ${z} 0.5 1`
     );
   }
 };
@@ -68,15 +68,16 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.mana_sprinkler.need_mana").aqua()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/mana_sprinkler",
-      });
+      itemitem.parentModel("society:block/kubejs/mana_sprinkler");
     })
-    .model("society:block/kubejs/mana_sprinkler")
+    .parentModel("society:block/kubejs/mana_sprinkler")
     .blockEntity((blockInfo) => {
-      blockInfo.serverTick(20, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(20);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:mana_sprinkler"] = (entity) => {
         global.manaSprinklerScan(entity, 2);
-      }),
+      };
         blockInfo.attachCapability(
           BotaniaCapabilityBuilder.MANA.blockEntity()
             .canReceiveManaFromBurst((be) => {

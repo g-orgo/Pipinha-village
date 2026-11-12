@@ -102,9 +102,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.fish_smoker.description").gray());
       item.tooltip(Text.translatable("society.working_block_entity.preserve_quality").green());
-      item.modelJson({
-        parent: "society:block/kubejs/fish_smoker/fish_smoker_off",
-      });
+      itemitem.parentModel("society:block/kubejs/fish_smoker/fish_smoker_off");
     })
     .defaultState((state) => {
       state
@@ -162,10 +160,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "", quality: 0 });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:fish_smoker"] = (entity) => {
         global.handleBETick(entity, global.fishSmokerRecipes, 2);
-      });
-    }).blockstateJson = {
-    multipart: getCardinalMultipartJson("fish_smoker", true),
-  };
+      };
+    });
 });

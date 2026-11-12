@@ -3,3 +3,4 @@
 // Server/client scripts keep mutable runtime state inside this container instead:
 // write `global.runtime.someKey = value`, never `global.someKey = value`.
 global.runtime = {};
+global.portBeTicks = {};

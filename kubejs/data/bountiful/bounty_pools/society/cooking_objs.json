@@ -2057,28 +2057,6 @@
 			},
 			"unitWorth": 144
 		},
-		"cooking_cooked_galliraptor": {
-			"type": "minecraft:item",
-			"content": "farmlife:cooked_galliraptor",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 4050
-		},
-		"cooking_cooked_tribull_shank": {
-			"type": "minecraft:item",
-			"content": "farmlife:cooked_tribull_shank",
-			"rarity": "UNCOMMON",
-			"weightMult": 0.5,
-			"amount": {
-				"min": 1,
-				"max": 4
-			},
-			"unitWorth": 8100
-		},
 		"cooking_cooked_bison_meat": {
 			"type": "minecraft:item",
 			"content": "wildernature:cooked_bison_meat",

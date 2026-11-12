@@ -86,16 +86,17 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.prickly_can.description.warn").red());
       item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
       item.tooltip(Text.translatable("society.working_block_entity.preserve_quality").green());
-      item.modelJson({
-        parent: "etcetera:block/prickly_can",
-      });
+      itemitem.parentModel("etcetera:block/prickly_can");
     })
-    .model("etcetera:block/prickly_can")
+    .parentModel("etcetera:block/prickly_can")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
-      blockInfo.serverTick(600, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(600);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:pickling_can"] = (entity) => {
         global.handlePicklingCan(entity);
-      }),
+      };
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()

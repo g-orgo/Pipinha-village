@@ -7,7 +7,6 @@ global.cheesePressRecipes = new Map([
   ["society:buffalo_milk", { output: ["1x meadow:piece_of_buffalo_cheese"] }],
   ["society:goat_milk", { output: ["1x meadow:piece_of_goat_cheese"] }],
   ["society:warped_milk", { output: ["1x meadow:piece_of_warped_cheese"] }],
-  ["society:tri_bull_milk", { output: ["1x farmlife:tribull_cheese_wedge"] }],
   ["society:grain_milk", { output: ["1x meadow:piece_of_grain_cheese"] }],
   ["society:amethyst_milk", { output: ["1x meadow:piece_of_amethyst_cheese"] }],
   ["society:large_sheep_milk", { output: ["1x meadow:sheep_cheese_block"] }],
@@ -18,10 +17,6 @@ global.cheesePressRecipes = new Map([
   ],
   ["society:large_goat_milk", { output: ["1x meadow:goat_cheese_block"] }],
   ["society:large_warped_milk", { output: ["1x meadow:warped_cheese_block"] }],
-  [
-    "society:large_tri_bull_milk",
-    { output: ["1x farmlife:tribull_cheese_wheel"] },
-  ],
   ["society:large_grain_milk", { output: ["1x meadow:grain_cheese_block"] }],
   [
     "society:large_amethyst_milk",
@@ -45,9 +40,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.cheese_press.description").gray());
       item.tooltip(Text.translatable("society.working_block_entity.preserve_quality").green());
-      item.modelJson({
-        parent: "society:block/kubejs/cheese_press/cheese_press_off",
-      });
+      itemitem.parentModel("society:block/kubejs/cheese_press/cheese_press_off");
     })
     .defaultState((state) => {
       state
@@ -109,10 +102,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "", quality: 0 });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:cheese_press"] = (entity) => {
         global.handleBETick(entity, global.cheesePressRecipes, 2);
-      });
-    }).blockstateJson = {
-    multipart: getCardinalMultipartJson("cheese_press"),
-  };
+      };
+    });
 });

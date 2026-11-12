@@ -26,7 +26,6 @@
 		"everycomp:rfm/cluttered/crabapple_storage_cabinet",
 		"everycomp:rfm/windswept/pine_storage_cabinet",
 		"everycomp:rfm/quark/azalea_storage_cabinet",
-		"everycomp:rfm/botania/livingwood_storage_cabinet",
 		"everycomp:rfm/cluttered/flowering_crabapple_storage_cabinet",
 		"everycomp:rfm/cluttered/flowering_willow_storage_cabinet",
 		"everycomp:rfm/cluttered/blue_mushroom_storage_cabinet",
@@ -39,7 +38,6 @@
 		"everycomp:rfm/atmospheric/laurel_storage_cabinet",
 		"everycomp:rfm/atmospheric/yucca_storage_cabinet",
 		"everycomp:rfm/cluttered/poplar_storage_cabinet",
-		"everycomp:rfm/minecraft/pale_oak_storage_cabinet",
-		"everycomp:rfm/botania/dreamwood_storage_cabinet"
+		"everycomp:rfm/minecraft/pale_oak_storage_cabinet"
 	]
 }

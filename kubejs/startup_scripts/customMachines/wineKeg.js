@@ -85,9 +85,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.wine_keg.description").gray()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/wine_keg/wine_keg",
-      });
+      itemitem.parentModel("society:block/kubejs/wine_keg/wine_keg");
     })
     .defaultState((state) => {
       state
@@ -146,10 +144,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:wine_keg"] = (entity) => {
         global.handleBETick(entity, global.wineKegRecipes, 6);
-      });
-    }).blockstateJson = {
-    multipart: getCardinalMultipartJson("wine_keg"),
-  };
+      };
+    });
 });

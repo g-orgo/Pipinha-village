@@ -23,14 +23,15 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("tooltip.society.area", `10x10x10`).green()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/mana_milker",
-      });
+      itemitem.parentModel("society:block/kubejs/mana_milker");
     })
-    .model("society:block/kubejs/mana_milker")
+    .parentModel("society:block/kubejs/mana_milker")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
-      blockInfo.serverTick(1200, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(1200);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:mana_milker"] = (entity) => {
         const { inventory, block, level } = entity;
         let mana = entity.persistentData.getInt("mana");
         inventory.allItems;
@@ -71,7 +72,7 @@ StartupEvents.registry("block", (event) => {
             }
           }
         });
-      }),
+      };
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()

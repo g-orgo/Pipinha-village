@@ -203,13 +203,13 @@ const registerGiftCategory = (event, title) => {
   });
 };
 
-JEIEvents.registerCategories((e) => {
+JEIAddedEvents.registerCategories((e) => {
   registerMilkingCategory(e, "society:milk_pail", Text.translatable("jei.society.category.milking"));
   registerForagingCategory(e, Text.translatable("jei.society.category.foraging"));
   registerGiftCategory(e, Text.translatable("jei.society.category.pet_gifts"));
 });
 
-JEIEvents.registerRecipes((e) => {
+JEIAddedEvents.registerRecipes((e) => {
   global.husbandryMilkingDefinitions.forEach((element) => {
     e.custom("society:milking").add(element);
   });

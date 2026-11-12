@@ -45,16 +45,17 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.quality_washer.description").gray());
       item.tooltip(Text.translatable("block.society.quality_washer.description.warn").red());
       item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
-      item.modelJson({
-        parent: "society:block/kubejs/quality_washer",
-      });
+      itemitem.parentModel("society:block/kubejs/quality_washer");
     })
-    .model("society:block/kubejs/quality_washer")
+    .parentModel("society:block/kubejs/quality_washer")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
-      blockInfo.serverTick(20, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(20);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:quality_washer"] = (entity) => {
         global.handleQualityWasher(entity);
-      }),
+      };
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()

@@ -10,14 +10,15 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.auto_worm_farm.description").gray());
       item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
-      item.modelJson({
-        parent: "society:block/kubejs/auto_worm_farm",
-      });
+      itemitem.parentModel("society:block/kubejs/auto_worm_farm");
     })
-    .model("society:block/kubejs/auto_worm_farm")
+    .parentModel("society:block/kubejs/auto_worm_farm")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
-      blockInfo.serverTick(1200, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(1200);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:auto_worm_farm"] = (entity) => {
         const { x, y, z } = entity.block;
         if (entity.tick < 20) return;
         entity.inventory.insertItem("aquaculture:worm", false);
@@ -36,7 +37,7 @@ StartupEvents.registry("block", (event) => {
           5,
           0.01
         );
-      }),
+      };
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()

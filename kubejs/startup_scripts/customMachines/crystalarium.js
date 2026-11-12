@@ -80,9 +80,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.crystalarium.description").gray());
-      item.modelJson({
-        parent: "society:block/kubejs/crystalarium/crystalarium",
-      });
+      itemitem.parentModel("society:block/kubejs/crystalarium/crystalarium");
     })
     .defaultState((state) => {
       state
@@ -150,10 +148,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:crystalarium"] = (entity) => {
         global.handleBETick(entity, global.crystalariumCrystals, 5);
-      });
-    }).blockstateJson = {
-    multipart: getCardinalMultipartJson("crystalarium"),
-  };
+      };
+    });
 });

@@ -7,22 +7,7 @@ StartupEvents.registry("block", (e) => {
     .hardness(1.0)
     .resistance(1.0)
     .requiresTool(false)
-    .tagBlock("minecraft:mineable/axe").blockstateJson = {
-    variants: {
-      "axis=x": {
-        model: "society:block/kubejs/treated_log_horizontal",
-        x: 90,
-        y: 90,
-      },
-      "axis=y": {
-        model: "society:block/kubejs/treated_log",
-      },
-      "axis=z": {
-        model: "society:block/kubejs/treated_log_horizontal",
-        x: 90,
-      },
-    },
-  };
+    .tagBlock("minecraft:mineable/axe");
   // Ores
   e.create("society:earth_crystal")
     .box(2, 0, 2, 14, 8, 14)
@@ -33,14 +18,12 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
-    .model("society:block/kubejs/earth_crystal")
+    .parentModel("society:block/kubejs/earth_crystal")
     .lightLevel(0.5)
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/geode/earth_crystal",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/geode/earth_crystal");
       });
     });
 
@@ -54,13 +37,11 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_iron_tool")
     .lightLevel(0.8)
-    .model("society:block/kubejs/fire_quartz")
+    .parentModel("society:block/kubejs/fire_quartz")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/magma_geode/fire_quartz",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/magma_geode/fire_quartz");
       });
     });
 
@@ -73,7 +54,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
-    .model("society:block/kubejs/geode_node");
+    .parentModel("society:block/kubejs/geode_node");
 
   e.create("society:magma_geode_node")
     .box(4, 0, 4, 12, 9, 12)
@@ -84,7 +65,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_iron_tool")
-    .model("society:block/kubejs/magma_geode_node");
+    .parentModel("society:block/kubejs/magma_geode_node");
 
   e.create("society:omni_geode_node")
     .box(4, 0, 4, 12, 9, 12)
@@ -95,7 +76,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .model("society:block/kubejs/omni_geode_node");
+    .parentModel("society:block/kubejs/omni_geode_node");
 
   // Skull Cavern
   e.create("society:skull_cavern_teleporter")
@@ -155,7 +136,7 @@ StartupEvents.registry("block", (e) => {
     e.create(`society:${type}_supply_crate`)
       .soundType("wood")
       .tagBlock("minecraft:mineable/axe")
-      .model(path)
+      .parentModel(path)
       .tagBlock("society:supply_crate");
   };
   createSupplyCrate("oak", "refurbished_furniture:block/oak_crate_closed");
@@ -173,7 +154,7 @@ StartupEvents.registry("block", (e) => {
     .box(0, 0, 0, 0, 0, 0)
     .property(integerProperty.create("type", 0, 4))
     .property(integerProperty.create("chunkbit", 0, 1))
-    .model("minecraft:block/air")
+    .parentModel("minecraft:block/air")
     .hardness(-1)
     .resistance(3600000)
     .randomTick((tick) => {
@@ -194,7 +175,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .model("society:block/kubejs/iridium_ore");
+    .parentModel("society:block/kubejs/iridium_ore");
 
   e.create("society:deepslate_iridium_ore")
     .soundType("stone")
@@ -203,7 +184,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .model("society:block/kubejs/deepslate_iridium_ore");
+    .parentModel("society:block/kubejs/deepslate_iridium_ore");
 
   e.create("society:sparkstone_ore")
     .soundType("stone")
@@ -212,7 +193,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .model("society:block/kubejs/sparkstone_ore");
+    .parentModel("society:block/kubejs/sparkstone_ore");
 
   e.create("society:deepslate_sparkstone_ore")
     .soundType("stone")
@@ -221,7 +202,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .model("society:block/kubejs/deepslate_sparkstone_ore");
+    .parentModel("society:block/kubejs/deepslate_sparkstone_ore");
 
   e.create(`society:sparkstone_block`)
     .soundType("amethyst")
@@ -239,7 +220,7 @@ StartupEvents.registry("block", (e) => {
     
   // Compressed Crops block
   e.create("society:animal_feed_sack", "cardinal")
-    .model("society:block/kubejs/animal_feed_sack")
+    .parentModel("society:block/kubejs/animal_feed_sack")
     .mapColor("dirt")
     .soundType("sand")
     .hardness(1.0)
@@ -329,27 +310,10 @@ StartupEvents.registry("block", (e) => {
     .hardness(1.0)
     .resistance(1.0)
     .item((item) => {
-      item.modelJson({
-        parent: "society:block/kubejs/sturdy_bamboo_block",
-      });
+      itemitem.parentModel("society:block/kubejs/sturdy_bamboo_block");
     })
     .requiresTool(true)
-    .tagBlock("minecraft:mineable/axe").blockstateJson = {
-    variants: {
-      "axis=x": {
-        model: "society:block/kubejs/sturdy_bamboo_block_horizontal",
-        x: 90,
-        y: 90,
-      },
-      "axis=y": {
-        model: "society:block/kubejs/sturdy_bamboo_block",
-      },
-      "axis=z": {
-        model: "society:block/kubejs/sturdy_bamboo_block_horizontal",
-        x: 90,
-      },
-    },
-  };
+    .tagBlock("minecraft:mineable/axe");
   // Drinks
   e.create("society:espresso")
     .box(6, 0, 6, 10, 4, 10)
@@ -357,13 +321,11 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .hardness(1.0)
     .requiresTool(false)
-    .model("society:block/kubejs/espresso_cup_block")
+    .parentModel("society:block/kubejs/espresso_cup_block")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/espresso",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/espresso");
       });
       item.food((food) => {
         food.alwaysEdible(true);
@@ -378,13 +340,11 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .hardness(1.0)
     .requiresTool(false)
-    .model("society:block/kubejs/drinks/steamed_milk")
+    .parentModel("society:block/kubejs/drinks/steamed_milk")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/steamed_milk",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/steamed_milk");
       });
       item.food((food) => {
         food.alwaysEdible(true);
@@ -400,13 +360,11 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .hardness(1.0)
     .requiresTool(false)
-    .model("society:block/kubejs/drinks/mocha")
+    .parentModel("society:block/kubejs/drinks/mocha")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/mocha",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/mocha");
       });
       item.food((food) => {
         food.alwaysEdible(true);
@@ -421,13 +379,11 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .hardness(1.0)
     .requiresTool(false)
-    .model("society:block/kubejs/drinks/latte")
+    .parentModel("society:block/kubejs/drinks/latte")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/latte",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/latte");
       });
       item.food((food) => {
         food.alwaysEdible(true);
@@ -442,13 +398,11 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .hardness(1.0)
     .requiresTool(false)
-    .model("society:block/kubejs/drinks/dirty_chai")
+    .parentModel("society:block/kubejs/drinks/dirty_chai")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/dirty_chai",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/dirty_chai");
       });
       item.food((food) => {
         food.alwaysEdible(true);
@@ -464,13 +418,11 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .hardness(1.0)
     .requiresTool(false)
-    .model("society:block/kubejs/drinks/bowl_of_soul")
+    .parentModel("society:block/kubejs/drinks/bowl_of_soul")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/bowl_of_soul",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/bowl_of_soul");
       });
       item.food((food) => {
         food.alwaysEdible(true);
@@ -485,13 +437,11 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .hardness(1.0)
     .requiresTool(false)
-    .model("society:block/kubejs/drinks/truffle_tea")
+    .parentModel("society:block/kubejs/drinks/truffle_tea")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/truffle_tea",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/truffle_tea");
       });
       item.food((food) => {
         food.alwaysEdible(true);
@@ -505,17 +455,15 @@ StartupEvents.registry("block", (e) => {
   e.create("society:beer_london", "cardinal")
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
-    .model("society:block/kubejs/drinks/beer_london")
+    .parentModel("society:block/kubejs/drinks/beer_london")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/beer_london",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/beer_london");
       });
       item.food((food) => {
         food.alwaysEdible(true);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
         food.effect("vinery:jellie", 1200, 1, 1.0);
       });
       item.useAnimation("drink");
@@ -525,17 +473,15 @@ StartupEvents.registry("block", (e) => {
   e.create("society:beer_attunecore", "cardinal")
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
-    .model("society:block/kubejs/drinks/beer_attunecore")
+    .parentModel("society:block/kubejs/drinks/beer_attunecore")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/beer_attunecore",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/beer_attunecore");
       });
       item.food((food) => {
         food.alwaysEdible(true);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
         food.effect("vinery:jellie", 200, 1, 1.0);
       });
       item.useAnimation("drink");
@@ -546,18 +492,16 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .soundType("glass")
     .defaultCutout()
-    .model("society:block/kubejs/drinks/ancient_cider")
+    .parentModel("society:block/kubejs/drinks/ancient_cider")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/ancient_cider",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/ancient_cider");
       });
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("nethervinery:netherite", 400, 1, 1.0);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
       });
       item.useAnimation("drink");
     });
@@ -566,18 +510,16 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .soundType("glass")
     .defaultCutout()
-    .model("society:block/kubejs/drinks/ancient_vespertine")
+    .parentModel("society:block/kubejs/drinks/ancient_vespertine")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/ancient_vespertine",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/ancient_vespertine");
       });
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("vinery:luck_effect", 2400, 1, 1.0);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
       });
       item.useAnimation("drink");
     });
@@ -586,18 +528,16 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
     .soundType("glass")
-    .model("society:block/kubejs/drinks/dewy_star")
+    .parentModel("society:block/kubejs/drinks/dewy_star")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/dewy_star",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/dewy_star");
       });
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("brewery:haley", 2400, 1, 1.0);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
       });
       item.useAnimation("drink");
     });
@@ -606,18 +546,16 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
     .soundType("glass")
-    .model("society:block/kubejs/drinks/starcardi")
+    .parentModel("society:block/kubejs/drinks/starcardi")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/starcardi",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/starcardi");
       });
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("brewery:haley", 2400, 1, 1.0);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
       });
       item.useAnimation("drink");
     });
@@ -626,18 +564,16 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
     .soundType("glass")
-    .model("society:block/kubejs/drinks/star_coquito")
+    .parentModel("society:block/kubejs/drinks/star_coquito")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/star_coquito",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/star_coquito");
       });
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("brewery:haley", 2400, 1, 1.0);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
       });
       item.useAnimation("drink");
     });
@@ -646,18 +582,16 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
     .soundType("glass")
-    .model("society:block/kubejs/drinks/dewy_star")
+    .parentModel("society:block/kubejs/drinks/dewy_star")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/violet_moon",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/violet_moon");
       });
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("brewery:lightning_strike", 2400, 1, 1.0);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
       });
       item.useAnimation("drink");
     });
@@ -666,18 +600,16 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .soundType("glass")
     .defaultCutout()
-    .model("society:block/kubejs/drinks/ancient_vespertine")
+    .parentModel("society:block/kubejs/drinks/ancient_vespertine")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/sparkling_le_roy",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/sparkling_le_roy");
       });
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("windswept:frost_resistance", 2400, 1, 1.0);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
       });
       item.useAnimation("drink");
     });
@@ -686,17 +618,15 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .soundType("glass")
     .defaultCutout()
-    .model("society:block/kubejs/drinks/ancient_vespertine")
+    .parentModel("society:block/kubejs/drinks/ancient_vespertine")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/laputa_franc",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/laputa_franc");
       });
       item.food((food) => {
         food.alwaysEdible(true);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
       });
       item.useAnimation("drink");
     });
@@ -705,17 +635,15 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .soundType("glass")
     .defaultCutout()
-    .model("society:block/kubejs/drinks/ancient_vespertine")
+    .parentModel("society:block/kubejs/drinks/ancient_vespertine")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/mana_king",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/mana_king");
       });
       item.food((food) => {
         food.alwaysEdible(true);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
       });
       item.useAnimation("drink");
     });
@@ -724,18 +652,16 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
     .soundType("glass")
-    .model("society:block/kubejs/drinks/forks_of_blue")
+    .parentModel("society:block/kubejs/drinks/forks_of_blue")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/forks_of_blue",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/forks_of_blue");
       });
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("autumnity:extension", 1200, 1, 1.0);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
       });
       item.useAnimation("drink");
     });
@@ -744,18 +670,16 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
     .soundType("glass")
-    .model("society:block/kubejs/drinks/good_catawba")
+    .parentModel("society:block/kubejs/drinks/good_catawba")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/good_catawba",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/good_catawba");
       });
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("herbalbrews:tough", 2400, 1, 1.0);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
       });
       item.useAnimation("drink");
     });
@@ -764,24 +688,22 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
     .soundType("glass")
-    .model("society:block/kubejs/drinks/nutty_basil")
+    .parentModel("society:block/kubejs/drinks/nutty_basil")
     .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/drinks/nutty_basil",
-        },
+      itemitem.modelGenerator((m) => {
+        m.parent("minecraft:item/generated");
+        m.texture("layer0", "society:item/drinks/nutty_basil");
       });
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("atmospheric:spitting", 1000, 1, 1.0);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
       });
       item.useAnimation("drink");
     });
 
   e.create("society:supreme_mayonnaise", "cardinal")
-    .model("society:block/kubejs/supreme_mayonnaise")
+    .parentModel("society:block/kubejs/supreme_mayonnaise")
     .soundType("stone")
     .defaultCutout()
     .hardness(1.0)
@@ -799,7 +721,7 @@ StartupEvents.registry("block", (e) => {
       item.food((food) => {
         food.alwaysEdible(true);
         food.effect("vinery:creeper_effect", 120, 4, 1.0);
-        food.fastToEat(true);
+        food.eatSeconds(0.8);
       });
       item.useAnimation("drink");
     });
@@ -809,7 +731,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .resistance(1.0)
     .requiresTool(false)
-    .model("society:block/kubejs/tanuki_catalog")
+    .parentModel("society:block/kubejs/tanuki_catalog")
     .displayName("♤ §aTanuki Catalog");
 
   e.create("society:modern_catalog", "cardinal")
@@ -817,7 +739,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .resistance(1.0)
     .requiresTool(false)
-    .model("society:block/kubejs/modern_catalog")
+    .parentModel("society:block/kubejs/modern_catalog")
     .displayName("♧ Modern Catalog");
 
   e.create("society:fantasy_catalog", "cardinal")
@@ -825,7 +747,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .resistance(1.0)
     .requiresTool(false)
-    .model("society:block/kubejs/fantasy_catalog")
+    .parentModel("society:block/kubejs/fantasy_catalog")
     .displayName("♡ §eFantasy Catalog");
 
   e.create("moreminecarts:greenhouse_glass_stairs", "stairs")

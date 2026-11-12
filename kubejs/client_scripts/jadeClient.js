@@ -20,7 +20,7 @@ try {
 }
 const Vec2 = Java.loadClass("net.minecraft.world.phys.Vec2");
 
-global["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) => {
+global.runtime["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) => {
   if (!global.plushies.includes(accessor.getBlock().id)) return;
   const nbt = accessor.getServerData();
 
@@ -49,7 +49,7 @@ global["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) => {
   }
 };
 
-global["JadeShippingBinClientCallback"] = (tooltip, accessor, pluginConfig) => {
+global.runtime["JadeShippingBinClientCallback"] = (tooltip, accessor, pluginConfig) => {
   const blockId = accessor.getBlock().id;
   if (blockId !== "shippingbin:basic_shipping_bin" && blockId !== "shippingbin:smart_shipping_bin") return;
 
@@ -59,7 +59,7 @@ global["JadeShippingBinClientCallback"] = (tooltip, accessor, pluginConfig) => {
   if (customName) tooltip.add(customName);
 };
 
-global["JadeFishPondClientCallback"] = (tooltip, accessor, pluginConfig) => {
+global.runtime["JadeFishPondClientCallback"] = (tooltip, accessor, pluginConfig) => {
   if (accessor.getBlock().id !== "society:fish_pond") return;
   const properties = accessor.getBlockState();
   const nbt = accessor.getServerData();
@@ -96,7 +96,7 @@ global["JadeFishPondClientCallback"] = (tooltip, accessor, pluginConfig) => {
   }
 };
 
-global["JadeArtisanMachineClientCallback"] = (
+global.runtime["JadeArtisanMachineClientCallback"] = (
   tooltip,
   accessor,
   pluginConfig
@@ -166,7 +166,7 @@ global["JadeArtisanMachineClientCallback"] = (
   );
 };
 
-global["JadeSocietyCropClientCallback"] = (
+global.runtime["JadeSocietyCropClientCallback"] = (
   tooltip,
   accessor,
   pluginConfig
@@ -313,17 +313,17 @@ global["JadeSocietyCropClientCallback"] = (
 JadeEvents.onClientRegistration((e) => {
   e.block("society:plushie_jade", $Block).tooltip(
     (tooltip, accessor, pluginConfig) => {
-      global["JadePlushieClientCallback"](tooltip, accessor, pluginConfig);
+      global.runtime["JadePlushieClientCallback"](tooltip, accessor, pluginConfig);
     }
   );
   e.block("society:fish_pond_jade", $Block).tooltip(
     (tooltip, accessor, pluginConfig) => {
-      global["JadeFishPondClientCallback"](tooltip, accessor, pluginConfig);
+      global.runtime["JadeFishPondClientCallback"](tooltip, accessor, pluginConfig);
     }
   );
   e.block("society:artisan_machine_jade", $Block).tooltip(
     (tooltip, accessor, pluginConfig) => {
-      global["JadeArtisanMachineClientCallback"](
+      global.runtime["JadeArtisanMachineClientCallback"](
         tooltip,
         accessor,
         pluginConfig
@@ -332,12 +332,12 @@ JadeEvents.onClientRegistration((e) => {
   );
   e.block("society:crop_growth_jade", $Block).tooltip(
     (tooltip, accessor, pluginConfig) => {
-      global["JadeSocietyCropClientCallback"](tooltip, accessor, pluginConfig);
+      global.runtime["JadeSocietyCropClientCallback"](tooltip, accessor, pluginConfig);
     }
   );
   e.block("kubejs:shipping_bin_jade", $Block).tooltip(
     (tooltip, accessor, pluginConfig) => {
-      global["JadeShippingBinClientCallback"](tooltip, accessor, pluginConfig);
+      global.runtime["JadeShippingBinClientCallback"](tooltip, accessor, pluginConfig);
     }
   );
 });

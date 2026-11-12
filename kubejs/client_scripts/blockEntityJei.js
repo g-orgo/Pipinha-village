@@ -174,7 +174,7 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
       })
       .setDrawHandler(
         (recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
-          global["textDrawHandler"](
+          global.runtime["textDrawHandler"](
             category.jeiHelpers,
             recipe,
             recipeSlotsView,
@@ -206,7 +206,7 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
           .addSlot("INPUT", 2, 2)
           .addItemStack(`${item}`)
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
-        global["textDrawHandler"] = (
+        global.runtime["textDrawHandler"] = (
           jeiHelpers,
           recipe,
           recipeSlotsView,
@@ -247,7 +247,7 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
       });
   });
 };
-JEIEvents.registerCategories((e) => {
+JEIAddedEvents.registerCategories((e) => {
   registerBECategory(e, "seed_making", "seed_maker", Text.translatable("jei.society.category.seed_making"), 3, 1);
   registerBECategory(e, "preserving", "preserves_jar", Text.translatable("jei.society.category.preserving"), 5, 3);
   registerBECategory(e, "wine_making", "wine_keg", Text.translatable("jei.society.category.wine_making"), 3, 6);
@@ -318,7 +318,7 @@ JEIEvents.registerCategories((e) => {
 
 // JEI Catalysts broken on JEI version
 // JEI Catalyst code broken on latest JEI version
-// JEIEvents.registerRecipeCatalysts((e) => {
+// JEIAddedEvents.registerRecipeCatalysts((e) => {
 //   let helper = e.data.getJeiHelpers();
 //   e.data.addRecipeCatalyst(
 //     Item.of("society:seed_maker"),
@@ -358,7 +358,7 @@ JEIEvents.registerCategories((e) => {
 //   );
 // });
 
-JEIEvents.registerRecipes((e) => {
+JEIAddedEvents.registerRecipes((e) => {
   let recipe;
   Array.from(global.seedMakerRecipes.keys()).forEach((element) => {
     recipe = global.seedMakerRecipes.get(element);

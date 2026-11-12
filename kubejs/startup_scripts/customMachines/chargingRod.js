@@ -14,9 +14,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.charging_rod.description").gray());
-      item.modelJson({
-        parent: "society:block/kubejs/charging_rod_off",
-      });
+      itemitem.parentModel("society:block/kubejs/charging_rod_off");
     })
     .defaultState((state) => {
       state
@@ -114,40 +112,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:charging_rod"] = (entity) => {
         global.handleBETick(entity, null, 5);
-      });
-    }).blockstateJson = {
-    multipart: [
-      { apply: { model: "society:block/kubejs/charging_rod_particle" } },
-      {
-        when: { working: false, upgraded: false, mature: false },
-        apply: { model: "society:block/kubejs/charging_rod_off" },
-      },
-      {
-        when: { working: true, upgraded: false, mature: false },
-        apply: { model: "society:block/kubejs/charging_rod" },
-      },
-      {
-        when: { working: false, upgraded: false, mature: true },
-        apply: { model: "society:block/kubejs/charging_rod_done" },
-      },
-      {
-        when: { working: false, upgraded: true, mature: false },
-        apply: { model: "society:block/kubejs/charging_rod_upgraded_off" },
-      },
-      {
-        when: { working: true, upgraded: true, mature: false },
-        apply: { model: "society:block/kubejs/charging_rod_upgraded" },
-      },
-      {
-        when: { working: false, upgraded: true, mature: true },
-        apply: { model: "society:block/kubejs/charging_rod_upgraded_done" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/kubejs/machine_done" },
-      },
-    ],
-  };
+      };
+    });
 });

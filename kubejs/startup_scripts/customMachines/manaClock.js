@@ -20,18 +20,7 @@ global.manaClockTick = (entity) => {
         global.handleProgress(level, scanBlock);
         entity.persistentData.putInt("mana", mana - MANA_PER_AGE);
         level.server.runCommandSilent(
-          `playsound botania:gaia_trap block @a ${x} ${y} ${z}`
-        );
-        level.spawnParticles(
-          true,
-          scanBlock.x,
-          scanBlock.y + 1.5,
-          scanBlock.z,
-          0.1 * rnd(1, 4),
-          0.1 * rnd(1, 4),
-          0.1 * rnd(1, 4),
-          5,
-          0.01
+          `playsound minecraft:block.beacon.activate block @a ${x} ${y} ${z}`
         );
         break;
       }
@@ -55,13 +44,14 @@ StartupEvents.registry("block", (event) => {
         Text.translatable("society.working_block_entity.need_mana").aqua()
       );
       item.tooltip(Text.translatable("tooltip.society.area", `3x3`).green());
-      item.modelJson({
-        parent: "society:block/kubejs/mana_clock",
-      });
+      itemitem.parentModel("society:block/kubejs/mana_clock");
     })
-    .model("society:block/kubejs/mana_clock")
+    .parentModel("society:block/kubejs/mana_clock")
     .blockEntity((blockInfo) => {
-      blockInfo.serverTick(200, 0, (entity) => global.manaClockTick(entity)),
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(200);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:mana_clock"] = (entity) => global.manaClockTick(entity);
         blockInfo.attachCapability(
           BotaniaCapabilityBuilder.MANA.blockEntity()
             .canReceiveManaFromBurst((be) => {

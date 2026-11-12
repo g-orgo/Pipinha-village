@@ -125,10 +125,6 @@ global.ageableProductInputs = [
   { item: "society:dewy_star", name: "Dewy Star", time: 10 },
   { item: "society:ancient_cider", name: "Ancient Cider", time: 10 },
   { item: "society:beer_attunecore", name: "Attunecore Beer", time: 3 },
-  {
-    name: "Tri-Bull Cheese Wheel",
-    time: 3,
-  },
   { item: "society:violet_moon", name: "Violet Moon", time: 5 },
   { item: "society:laputa_franc", name: "Laputa Franc", time: 10 },
   { item: "society:sparkling_le_roy", name: "Sparkling Le Roy", time: 5 },
@@ -155,9 +151,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.aging_cask.description").gray()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/aging_cask/aging_cask",
-      });
+      itemitem.parentModel("society:block/kubejs/aging_cask/aging_cask");
     })
     .defaultState((state) => {
       state
@@ -240,10 +234,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:aging_cask"] = (entity) => {
         global.handleBETick(entity, global.agingCaskRecipes, 10, true);
-      });
-    }).blockstateJson = {
-    multipart: getCardinalMultipartJson("aging_cask"),
-  };
+      };
+    });
 });

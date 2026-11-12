@@ -35,11 +35,11 @@ const registerExtractingCategory = (event, title) => {
       });
   });
 };
-JEIEvents.registerCategories((e) => {
+JEIAddedEvents.registerCategories((e) => {
   registerExtractingCategory(e, Text.translatable("jei.society.category.extracting"));
 });
 
-JEIEvents.registerRecipes((e) => {
+JEIAddedEvents.registerRecipes((e) => {
   global.extractinatorRecipes.forEach((element) => {
     const outputMap = element.output.map((item) => item.drop);
     let drops = [];

@@ -29,15 +29,16 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .item((item) => {
       item.tooltip(Text.translatable("tooltip.society.shipping_bin").gray());
-      item.modelJson({
-        parent: "shippingbin:block/shipping_bin",
-      });
+      itemitem.parentModel("shippingbin:block/shipping_bin");
     })
-    .model("shippingbin:block/shipping_bin")
+    .parentModel("shippingbin:block/shipping_bin")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 4);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(10, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(10);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["shippingbin:basic_shipping_bin"] = (entity) => {
         const { inventory, level, block } = entity;
         let dayTime = level.dayTime();
         let morningModulo = dayTime % 24000;
@@ -72,7 +73,7 @@ StartupEvents.registry("block", (event) => {
             inventory
           );
         }
-      }),
+      };
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()

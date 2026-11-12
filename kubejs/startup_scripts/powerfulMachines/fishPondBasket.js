@@ -97,13 +97,11 @@ StartupEvents.registry("block", (event) => {
           "block.society.fish_pond_basket.description.fuel"
         ).lightPurple()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/fish_pond_basket",
-      });
+      itemitem.parentModel("society:block/kubejs/fish_pond_basket");
       item.fireResistant(true);
     })
     .soundType("copper")
-    .model("society:block/kubejs/fish_pond_basket")
+    .parentModel("society:block/kubejs/fish_pond_basket")
     .property(booleanProperty.create("upgraded"))
     .defaultState((state) => {
       state
@@ -118,7 +116,10 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(600, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(600);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:fish_pond_basket"] = (entity) => {
         const { block, level } = entity;
         const { x, y, z } = block;
         const radius = 1;
@@ -141,7 +142,7 @@ StartupEvents.registry("block", (event) => {
             global.runFishPondBasket(entity, pos.immutable(), attachedPlayer);
           }
         }
-      }),
+      };
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
@@ -159,18 +160,7 @@ StartupEvents.registry("block", (event) => {
             blockEntity.inventory.getStackInSlot(slot)
           )
       );
-    }).blockstateJson = {
-    multipart: [
-      {
-        when: { upgraded: "false" },
-        apply: { model: "society:block/kubejs/fish_pond_basket" },
-      },
-      {
-        when: { upgraded: "true" },
-        apply: { model: "society:block/kubejs/fish_pond_basket_upgraded" },
-      },
-    ],
-  };
+    });
   
   event
     .create("society:fish_pond_hatchery")
@@ -198,13 +188,11 @@ StartupEvents.registry("block", (event) => {
           "block.society.fish_pond_basket.description.fuel"
         ).lightPurple()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/fish_pond_hatchery",
-      });
+      itemitem.parentModel("society:block/kubejs/fish_pond_hatchery");
       item.fireResistant(true);
     })
     .soundType("copper")
-    .model("society:block/kubejs/fish_pond_hatchery")
+    .parentModel("society:block/kubejs/fish_pond_hatchery")
     .property(booleanProperty.create("upgraded"))
     .defaultState((state) => {
       state
@@ -219,7 +207,10 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(600, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(600);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:fish_pond_hatchery"] = (entity) => {
         const { block, level } = entity;
         const { x, y, z } = block;
         let attachedPlayer = global.cacheOwner(entity, [
@@ -241,7 +232,7 @@ StartupEvents.registry("block", (event) => {
             global.runFishPondBasket(entity, pos.immutable(), attachedPlayer);
           }
         }
-      }),
+      };
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
@@ -259,16 +250,5 @@ StartupEvents.registry("block", (event) => {
             blockEntity.inventory.getStackInSlot(slot)
           )
       );
-    }).blockstateJson = {
-    multipart: [
-      {
-        when: { upgraded: "false" },
-        apply: { model: "society:block/kubejs/fish_pond_hatchery" },
-      },
-      {
-        when: { upgraded: "true" },
-        apply: { model: "society:block/kubejs/fish_pond_hatchery_upgraded" },
-      },
-    ],
-  };
+    });
 });

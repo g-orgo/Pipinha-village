@@ -65,15 +65,16 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.iridium_clock.description").gray());
       item.tooltip(Text.translatable("block.society.iridium_clock.area").green());
-      item.modelJson({
-        parent: "society:block/kubejs/iridium_clock",
-      });
+      itemitem.parentModel("society:block/kubejs/iridium_clock");
     })
-    .model("society:block/kubejs/iridium_clock")
+    .parentModel("society:block/kubejs/iridium_clock")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 3);
       blockInfo.initialData({ triggerTimes: 0 });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => global.runIridiumClock(entity))
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:iridium_clock"] = (entity) => global.runIridiumClock(entity);
       blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()

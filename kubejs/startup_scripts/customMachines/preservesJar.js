@@ -192,9 +192,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.preserves_jar.description").gray());
-      item.modelJson({
-        parent: "society:block/kubejs/preserves_jar",
-      });
+      itemitem.parentModel("society:block/kubejs/preserves_jar");
     })
     .defaultState((state) => {
       state
@@ -247,39 +245,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:preserves_jar"] = (entity) => {
         global.handleBETick(entity, global.preservesJarRecipes, 3);
-      });
-    }).blockstateJson = {
-    multipart: [
-      {
-        when: { upgraded: false },
-        apply: { model: "society:block/kubejs/preserves_jar_base" },
-      },
-      {
-        when: { working: true },
-        apply: { model: "society:block/kubejs/preserves_jar_lid" },
-      },
-      {
-        when: { mature: true, working: false },
-        apply: { model: "society:block/kubejs/preserves_jar_lid_done" },
-      },
-      {
-        when: { upgraded: true },
-        apply: { model: "society:block/kubejs/preserves_jar_base_upgraded" },
-      },
-      {
-        when: { working: true, upgraded: false },
-        apply: { model: "society:block/kubejs/preserves_jar_base" },
-      },
-      {
-        when: { mature: true, upgraded: false },
-        apply: { model: "society:block/kubejs/preserves_jar_base" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/kubejs/machine_done" },
-      },
-    ],
-  };
+      };
+    });
 });

@@ -22,9 +22,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.loom.description").gray());
-      item.modelJson({
-        parent: "society:block/kubejs/loom/loom_off",
-      });
+      itemitem.parentModel("society:block/kubejs/loom/loom_off");
     })
     .defaultState((state) => {
       state
@@ -89,10 +87,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:loom"] = (entity) => {
         global.handleBETick(entity, global.loomRecipes, 1);
-      });
-    }).blockstateJson = {
-    multipart: getCardinalMultipartJson("loom"),
-  };
+      };
+    });
 });

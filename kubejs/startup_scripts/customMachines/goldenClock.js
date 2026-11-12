@@ -105,12 +105,13 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.golden_clock.description").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `5x5x5`).green());
-      item.modelJson({
-        parent: "society:block/kubejs/golden_clock",
-      });
+      itemitem.parentModel("society:block/kubejs/golden_clock");
     })
-    .model("society:block/kubejs/golden_clock")
+    .parentModel("society:block/kubejs/golden_clock")
     .blockEntity((blockInfo) => {
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => global.runGoldenClock(entity));
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:golden_clock"] = (entity) => global.runGoldenClock(entity);
     });
 });

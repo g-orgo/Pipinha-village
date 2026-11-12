@@ -563,18 +563,19 @@ StartupEvents.registry("block", (event) => {
           "block.society.artisan_hopper.description.fuel"
         ).lightPurple()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/artisan_hopper",
-      });
+      itemitem.parentModel("society:block/kubejs/artisan_hopper");
     })
     .soundType("copper")
-    .model("society:block/kubejs/artisan_hopper")
+    .parentModel("society:block/kubejs/artisan_hopper")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(600, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(600);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:artisan_hopper"] = (entity) => {
         global.artisanHopperScan(entity, 3);
-      });
+      };
       blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
@@ -616,18 +617,19 @@ StartupEvents.registry("block", (event) => {
           "block.society.artisan_hopper.description.fuel"
         ).lightPurple()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/mini_artisan_hopper",
-      });
+      itemitem.parentModel("society:block/kubejs/mini_artisan_hopper");
     })
     .soundType("copper")
-    .model("society:block/kubejs/mini_artisan_hopper")
+    .parentModel("society:block/kubejs/mini_artisan_hopper")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(600, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(600);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:mini_artisan_hopper"] = (entity) => {
         global.artisanHopperScan(entity, 1);
-      });
+      };
       blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()

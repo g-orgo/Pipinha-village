@@ -29,9 +29,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.translatable("block.society.gnome.description").gray());
-      item.modelJson({
-        parent: "society:block/kubejs/gnome/base",
-      });
+      itemitem.parentModel("society:block/kubejs/gnome/base");
     })
     .defaultState((state) => {
       state.set(integerProperty.create("type", 0, 3), 0);
@@ -57,22 +55,14 @@ StartupEvents.registry("block", (e) => {
           });
         }
       }
-    }).blockstateJson = {
-    multipart: []
-      .concat(getGnomeState("base", 0))
-      .concat(getGnomeState("fish", 1))
-      .concat(getGnomeState("twig", 2))
-      .concat(getGnomeState("swing", 3)),
-  };
+    });
   e
     .create("society:lantern_gnome", "cardinal")
     .property(integerProperty.create("type", 0, 3))
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.translatable("block.society.lantern_gnome.description").gray());
-      item.modelJson({
-        parent: "society:block/kubejs/gnome/lantern",
-      });
+      itemitem.parentModel("society:block/kubejs/gnome/lantern");
     })
     .lightLevel(0.8)
     .rightClick((click) => {
@@ -87,24 +77,5 @@ StartupEvents.registry("block", (e) => {
           type: type == 3 ? "0" : String(type + 1),
         });
       }
-    }).blockstateJson = {
-    multipart: [
-      {
-        when: { facing: "north" },
-        apply: { model: "society:block/kubejs/gnome/lantern", y: 0, uvlock: false },
-      },
-      {
-        when: { facing: "east" },
-        apply: { model: "society:block/kubejs/gnome/lantern", y: 90, uvlock: false },
-      },
-      {
-        when: { facing: "south" },
-        apply: { model: "society:block/kubejs/gnome/lantern", y: 180, uvlock: false },
-      },
-      {
-        when: { facing: "west" },
-        apply: { model: "society:block/kubejs/gnome/lantern", y: -90, uvlock: false },
-      },
-    ],
-  };
+    });
 });

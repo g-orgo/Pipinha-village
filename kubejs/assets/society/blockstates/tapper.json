@@ -1,0 +1,65 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "society:block/kubejs/tapper_particle"
+      }
+    },
+    {
+      "when": {
+        "mature": true
+      },
+      "apply": {
+        "model": "society:block/kubejs/machine_done"
+      }
+    },
+    {
+      "when": {
+        "error": true
+      },
+      "apply": {
+        "model": "society:block/kubejs/error"
+      }
+    },
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "society:block/kubejs/tapper",
+        "y": 0,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "society:block/kubejs/tapper",
+        "y": 90,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "society:block/kubejs/tapper",
+        "y": 180,
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "society:block/kubejs/tapper",
+        "y": -90,
+        "uvlock": false
+      }
+    }
+  ]
+}

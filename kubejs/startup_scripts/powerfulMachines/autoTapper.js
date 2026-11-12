@@ -17,15 +17,16 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.translatable("block.society.auto_tapper.description").gray());
-      item.modelJson({
-        parent: "society:block/kubejs/auto_tapper",
-      });
+      itemitem.parentModel("society:block/kubejs/auto_tapper");
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ Fluid: 0, FluidType: "" });
-      blockInfo.serverTick(200, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(200);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:auto_tapper"] = (entity) => {
         global.runAutoTapper(entity);
-      });
+      };
       blockInfo.attachCapability(
         CapabilityBuilder.FLUID.customBlockEntity()
           .getCapacity(() => 10000)
@@ -33,17 +34,7 @@ StartupEvents.registry("block", (event) => {
           .onFill((blockInfo, fluid, sim) => global.onFill(blockInfo, fluid, sim))
           .onDrain((blockInfo, fluid, sim) => global.onDrain(blockInfo, fluid, sim))
       );
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/kubejs/auto_tapper_particle" },
-      },
-      {
-        when: { error: true },
-        apply: { model: "society:block/kubejs/error" },
-      },
-    ].concat(getCardinalMultipartJsonBasic("auto_tapper")),
-  };
+    });
 });
 global.runAutoTapper = (blockInfo) => {
   const { block, level } = blockInfo;

@@ -1,4 +1,4 @@
-JEIEvents.registerCategories((e) => {
+JEIAddedEvents.registerCategories((e) => {
   const guiHelper = e.data.jeiHelpers.guiHelper;
   e.custom("vinery:manual_juicing", (category) => {
     category
@@ -97,7 +97,7 @@ JEIEvents.registerCategories((e) => {
   });
 });
 
-JEIEvents.registerRecipes((e) => {
+JEIAddedEvents.registerRecipes((e) => {
   const nether = ["crimson", "warped"];
   const juiceJEIRecipe = (juice, grape) => {
     e.custom("vinery:manual_juicing").add({
@@ -185,7 +185,7 @@ JEIEvents.registerRecipes((e) => {
   });
 });
 // // JEI Catalysts broken on JEI version
-// JEIEvents.registerRecipeCatalysts((e) => {
+// JEIAddedEvents.registerRecipeCatalysts((e) => {
 //   let helper = e.data.getJeiHelpers();
 //   let recipeType = helper.getRecipeType("vinery:manual_juicing");
 //   e.data.addRecipeCatalyst(Item.of("vinery:grapevine_pot"), recipeType.get());

@@ -45,7 +45,6 @@
 		"everycomp:rfm/cluttered/red_mushroom_basin",
 		"everycomp:rfm/cluttered/blue_mushroom_basin",
 		"everycomp:rfm/meadow/pine_basin",
-		"everycomp:rfm/botania/dreamwood_basin",
 		"everycomp:rfm/quark/blossom_basin",
 		"everycomp:rfm/atmospheric/morado_basin",
 		"everycomp:rfm/atmospheric/grimwood_basin",
@@ -55,7 +54,6 @@
 		"everycomp:rfm/cluttered/flowering_willow_basin",
 		"everycomp:rfm/cluttered/crabapple_basin",
 		"everycomp:rfm/cluttered/willow_basin",
-		"everycomp:rfm/atmospheric/yucca_basin",
-		"everycomp:rfm/botania/livingwood_basin"
+		"everycomp:rfm/atmospheric/yucca_basin"
 	]
 }

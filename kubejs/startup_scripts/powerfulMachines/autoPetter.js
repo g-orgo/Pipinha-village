@@ -68,20 +68,15 @@ StartupEvents.registry("block", (e) => {
       item.tooltip(
         Text.translatable("tooltip.society.area", `5x5x5`).green()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/auto_petter",
-      });
+      itemitem.parentModel("society:block/kubejs/auto_petter");
     })
-    .model("society:block/kubejs/auto_petter")
+    .parentModel("society:block/kubejs/auto_petter")
     .blockEntity((blockInfo) => {
-      blockInfo.serverTick(autoPetterTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(autoPetterTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:auto_petter"] = (entity) => {
         global.runAutoPetter(entity)
-      })
-    }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/kubejs/auto_petter_particle" },
-      },
-    ].concat(getCardinalMultipartJsonBasic("auto_petter")),
-  };
+      };
+    });
 });

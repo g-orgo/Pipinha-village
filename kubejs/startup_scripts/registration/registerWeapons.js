@@ -5,7 +5,7 @@ ItemEvents.toolTierRegistry((e) => {
     tier.uses = 1000;
     tier.speed = 8;
     tier.attackDamageBonus = 2.0;
-    tier.level = 2;
+    tier.setIncorrectBlocksForDropsTag("minecraft:incorrect_for_iron_tool");
     tier.enchantmentValue = 14;
     tier.repairIngredient = "society:prismatic_shard";
   });
@@ -21,12 +21,7 @@ StartupEvents.registry("item", (e) => {
     .attackDamageBaseline(10.0)
     .speed(3.0)
     .modifyTier((tier) => {
-      tier.setRepairIngredient(
-        Ingredient.custom((item) => {
-          if (item.id == "society:prismatic_shard") return true;
-          return false;
-        })
-      );
+      tier.setRepairIngredient("society:prismatic_shard");
     });
   e.create("society:dragontooth_axe", "axe")
     .texture("society:item/dragontooth_axe")
@@ -35,12 +30,7 @@ StartupEvents.registry("item", (e) => {
     .attackDamageBaseline(12.0)
     .speed(5.0)
     .modifyTier((tier) => {
-      tier.setRepairIngredient(
-        Ingredient.custom((item) => {
-          if (item.id == "society:prismatic_shard") return true;
-          return false;
-        })
-      );
+      tier.setRepairIngredient("society:prismatic_shard");
     });
   e.create("society:princess_hairbrush", "sword")
     .texture("society:item/artifacts/princess_hairbrush")
@@ -50,12 +40,7 @@ StartupEvents.registry("item", (e) => {
     .attackDamageBaseline(6.0)
     .speed(3.0)
     .modifyTier((tier) => {
-      tier.setRepairIngredient(
-        Ingredient.custom((item) => {
-          if (item.id == "society:prismatic_shard") return true;
-          return false;
-        })
-      );
+      tier.setRepairIngredient("society:prismatic_shard");
     });
   e.create("society:meowmageddon", "sword")
     .texture("society:item/meowmageddon")
@@ -66,11 +51,6 @@ StartupEvents.registry("item", (e) => {
     .attackDamageBaseline(11.0)
     .speed(4.0)
     .modifyTier((tier) => {
-      tier.setRepairIngredient(
-        Ingredient.custom((item) => {
-          if (item.id == "society:prismatic_shard") return true;
-          return false;
-        })
-      );
+      tier.setRepairIngredient("society:prismatic_shard");
     });
 });

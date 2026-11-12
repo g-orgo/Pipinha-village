@@ -76,9 +76,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.recycling_machine.description").gray()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/recycling_machine/recycling_machine_off",
-      });
+      itemitem.parentModel("society:block/kubejs/recycling_machine/recycling_machine_off");
     })
     .defaultState((state) => {
       state
@@ -136,10 +134,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:recycling_machine"] = (entity) => {
         global.handleBETick(entity, global.recyclingMachineRecipes, 1);
-      });
-    }).blockstateJson = {
-    multipart: getCardinalMultipartJson("recycling_machine"),
-  };
+      };
+    });
 });

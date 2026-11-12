@@ -1,15 +1,15 @@
 ItemEvents.modification((e) => {
   e.modify("*", (item) => {
-    item.maxDamage *= 3;
+    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 3;
   });
   e.modify("gag:energized_hearthstone", (item) => {
-    item.maxDamage = 2;
+    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage = 2;
   });
   e.modify("gag:hearthstone", (item) => {
-    item.maxDamage = 2;
+    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage = 2;
   });
   e.modify("gag:escape_rope", (item) => {
-    item.maxDamage = 1024;
+    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage = 1024;
   });
   global.geodeList.forEach((geodeItem) => {
     const { item } = geodeItem;
@@ -122,10 +122,11 @@ ItemEvents.modification((e) => {
   ];
   goldVanillaTools.forEach((tool) => {
     e.modify(tool, (item) => {
-      item.digSpeed = 7;
-      item.tier = (tier) => {
-        tier.level = 3;
-      };
+      // 1.21.1: KJS 7 has no item.digSpeed on ItemModifications, disabled (see report): item.digSpeed = 7;
+      item.setTier((tier) => {
+        tier.setIncorrectBlocksForDropsTag("minecraft:incorrect_for_diamond_tool");
+        tier.setSpeed(7);
+      });
     });
   });
   const goldHammers = [
@@ -137,17 +138,18 @@ ItemEvents.modification((e) => {
   ];
   goldHammers.forEach((tool) => {
     e.modify(tool, (item) => {
-      item.digSpeed = 7;
-      item.tier = (tier) => {
-        tier.level = 3;
-      };
+      // 1.21.1: KJS 7 has no item.digSpeed on ItemModifications, disabled (see report): item.digSpeed = 7;
+      item.setTier((tier) => {
+        tier.setIncorrectBlocksForDropsTag("minecraft:incorrect_for_diamond_tool");
+        tier.setSpeed(7);
+      });
     });
   });
   e.modify("minecraft:golden_sword", (item) => {
-    item.setAttackDamage(5.5);
+    // 1.21.1: KJS 7 has no item.setAttackDamage on ItemModifications, disabled (see report): item.setAttackDamage(5.5);
   });
   e.modify("minecraft:golden_axe", (item) => {
-    item.setAttackDamage(8);
+    // 1.21.1: KJS 7 has no item.setAttackDamage on ItemModifications, disabled (see report): item.setAttackDamage(8);
   });
   const goldTools = [
     "farmersdelight:golden_knife",
@@ -167,23 +169,23 @@ ItemEvents.modification((e) => {
   ];
   goldTools.forEach((tool) => {
     e.modify(tool, (item) => {
-      item.maxDamage *= tool.namespace === "justhammers" ? 2 : 16;
+      // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= tool.namespace === "justhammers" ? 2 : 16;
     });
   });
   e.modify("minecraft:golden_helmet", (item) => {
-    item.maxDamage *= 3;
+    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 3;
     item.setArmorProtection(2.5);
   });
   e.modify("minecraft:golden_chestplate", (item) => {
-    item.maxDamage *= 3;
+    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 3;
     item.setArmorProtection(7);
   });
   e.modify("minecraft:golden_leggings", (item) => {
-    item.maxDamage *= 3;
+    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 3;
     item.setArmorProtection(5.5);
   });
   e.modify("minecraft:golden_boots", (item) => {
-    item.maxDamage *= 3;
+    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 3;
     item.setArmorProtection(2.5);
   });
   e.modify("twigs:twig", (item) => (item.burnTime = 200));
@@ -195,30 +197,30 @@ ItemEvents.modification((e) => {
   ];
   netheriteTools.forEach((armor) => {
     e.modify(armor, (item) => {
-      item.setDigSpeed(item.digSpeed + 1);
-      item.setAttackDamage(item.attackDamage + 2);
+      // 1.21.1: KJS 7 has no item.setDigSpeed on ItemModifications, disabled (see report): item.setDigSpeed(item.digSpeed + 1);
+      // 1.21.1: KJS 7 has no item.setAttackDamage on ItemModifications, disabled (see report): item.setAttackDamage(item.attackDamage + 2);
     });
   });
   e.modify("minecraft:netherite_sword", (item) => {
-    item.setAttackDamage(10);
+    // 1.21.1: KJS 7 has no item.setAttackDamage on ItemModifications, disabled (see report): item.setAttackDamage(10);
   });
   e.modify("minecraft:netherite_helmet", (item) => {
-    item.maxDamage *= 1.5;
+    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 1.5;
     item.setArmorProtection(4);
   });
   e.modify("minecraft:netherite_chestplate", (item) => {
-    item.maxDamage *= 1.5;
+    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 1.5;
     item.setArmorProtection(9);
   });
   e.modify("minecraft:netherite_leggings", (item) => {
-    item.maxDamage *= 1.5;
+    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 1.5;
     item.setArmorProtection(7);
   });
   e.modify("minecraft:netherite_boots", (item) => {
-    item.maxDamage *= 1.5;
+    // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 1.5;
     item.setArmorProtection(3);
   });
   e.modify("oreganized:electrum_sword", (item) => {
-    item.setAttackDamage(8);
+    // 1.21.1: KJS 7 has no item.setAttackDamage on ItemModifications, disabled (see report): item.setAttackDamage(8);
   });
 });

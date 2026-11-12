@@ -81,3 +81,4 @@ as property `foo`). Anything not listed here is unverified: check the jar before
   Unbreakable = component `DataComponents.UNBREAKABLE`. KubeJS: `withCustomName(Component)`, `withLore([...])`.
 - Tool tags: there is no `c:tools/pickaxes|shovels|axes` in 1.21.1; use vanilla `#minecraft:pickaxes`,
   `#minecraft:shovels`, `#minecraft:axes`, `#minecraft:hoes`; shears -> `#c:tools/shear`; generic -> `#c:tools/mining_tool`.
+- KubeJS Additions 6.0.0: the JEI event group is `JEIAddedEvents` (not `JEIEvents`); handlers: registerCategories, registerRecipes, registerRecipeCatalysts, registerAdvanced, onRuntimeAvailable... (client).

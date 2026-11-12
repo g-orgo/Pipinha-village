@@ -178,7 +178,7 @@ global.runFishPondQuestManager = (entity) => {
     }
 
     level.server.runCommandSilent(
-      `playsound botania:spreader_fire block @a ${x} ${y} ${z}`
+      `playsound minecraft:entity.blaze.shoot block @a ${x} ${y} ${z}`
     )
   }
 }
@@ -195,18 +195,19 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.fish_pond_manager.clipboard").gray());
       item.tooltip(Text.translatable("society.working_block_entity.apply_player_skill").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `21x21x21`).green());
-      item.modelJson({
-        parent: "society:block/kubejs/fish_pond_manager",
-      });
+      itemitem.parentModel("society:block/kubejs/fish_pond_manager");
     })
     .soundType("copper")
-    .model("society:block/kubejs/fish_pond_manager")
+    .parentModel("society:block/kubejs/fish_pond_manager")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:fish_pond_manager"] = (entity) => {
         global.runFishPondQuestManager(entity);
-      });
+      };
       blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()

@@ -23,9 +23,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.oil_maker.description").gray()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/oil_maker/oil_maker_off",
-      });
+      itemitem.parentModel("society:block/kubejs/oil_maker/oil_maker_off");
     })
     .defaultState((state) => {
       state
@@ -54,10 +52,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:oil_maker"] = (entity) => {
         global.handleBETick(entity, global.oilMakerRecipes, 1);
-      });
-    }).blockstateJson = {
-    multipart: getCardinalMultipartJson("oil_maker"),
-  };
+      };
+    });
 });

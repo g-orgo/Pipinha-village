@@ -26,7 +26,7 @@ global.checkSparkstoneRecyclers = (level, block) => {
         if (mana >= MANA_PER_RECYCLE && rnd10()) {
           scannedBlock.getEntity().persistentData.putInt("mana", mana - MANA_PER_AGE);
           recycled = true;
-          level.server.runCommandSilent(`playsound botania:starcaller block @a ${x} ${y} ${z}`);
+          level.server.runCommandSilent(`playsound minecraft:block.amethyst_block.chime block @a ${x} ${y} ${z}`);
           level.spawnParticles(
             "ribbits:spell",
             true,
@@ -82,13 +82,14 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.sparkstone_recycler.description").gray());
       item.tooltip(Text.translatable("society.working_block_entity.need_mana").aqua());
       item.tooltip(Text.translatable("block.society.sparkstone_recycler.description.compatible").green());
-      item.modelJson({
-        parent: "society:block/kubejs/sparkstone_recycler",
-      });
+      itemitem.parentModel("society:block/kubejs/sparkstone_recycler");
     })
-    .model("society:block/kubejs/sparkstone_recycler")
+    .parentModel("society:block/kubejs/sparkstone_recycler")
     .blockEntity((blockInfo) => {
-      blockInfo.serverTick(200, 0, (entity) => global.sparkstoneRecyclerTick(entity)),
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(200);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:sparkstone_recycler"] = (entity) => global.sparkstoneRecyclerTick(entity);
         blockInfo.attachCapability(
           BotaniaCapabilityBuilder.MANA.blockEntity()
             .canReceiveManaFromBurst((be) => {
@@ -106,60 +107,5 @@ StartupEvents.registry("block", (event) => {
               return mana >= RECYCLER_MAX_MANA;
             })
         );
-    }).blockstateJson = {
-    variants: {
-      "facing=down,powered=false": {
-        model: "society:block/kubejs/sparkstone_recycler",
-        x: 180,
-      },
-      "facing=down,powered=true": {
-        model: "society:block/kubejs/sparkstone_recycler_on",
-        x: 180,
-      },
-      "facing=east,powered=false": {
-        model: "society:block/kubejs/sparkstone_recycler",
-        x: 90,
-        y: 90,
-      },
-      "facing=east,powered=true": {
-        model: "society:block/kubejs/sparkstone_recycler_on",
-        x: 90,
-        y: 90,
-      },
-      "facing=north,powered=false": {
-        model: "society:block/kubejs/sparkstone_recycler",
-        x: 90,
-      },
-      "facing=north,powered=true": {
-        model: "society:block/kubejs/sparkstone_recycler_on",
-        x: 90,
-      },
-      "facing=south,powered=false": {
-        model: "society:block/kubejs/sparkstone_recycler",
-        x: 90,
-        y: 180,
-      },
-      "facing=south,powered=true": {
-        model: "society:block/kubejs/sparkstone_recycler_on",
-        x: 90,
-        y: 180,
-      },
-      "facing=up,powered=false": {
-        model: "society:block/kubejs/sparkstone_recycler",
-      },
-      "facing=up,powered=true": {
-        model: "society:block/kubejs/sparkstone_recycler_on",
-      },
-      "facing=west,powered=false": {
-        model: "society:block/kubejs/sparkstone_recycler",
-        x: 90,
-        y: 270,
-      },
-      "facing=west,powered=true": {
-        model: "society:block/kubejs/sparkstone_recycler_on",
-        x: 90,
-        y: 270,
-      },
-    },
-  };
+    });
 });

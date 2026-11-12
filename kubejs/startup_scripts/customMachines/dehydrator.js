@@ -117,9 +117,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.dehydrator.description").gray());
-      item.modelJson({
-        parent: "society:block/kubejs/dehydrator/dehydrator_off",
-      });
+      itemitem.parentModel("society:block/kubejs/dehydrator/dehydrator_off");
     })
     .defaultState((state) => {
       state
@@ -183,10 +181,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:dehydrator"] = (entity) => {
         global.handleBETick(entity, global.dehydratorRecipes, 1);
-      });
-    }).blockstateJson = {
-    multipart: getCardinalMultipartJson("dehydrator"),
-  };
+      };
+    });
 });

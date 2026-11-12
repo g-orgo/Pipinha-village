@@ -36,14 +36,15 @@ StartupEvents.registry("block", (e) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.snow_melter.description").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `19x5x19`).green());
-      item.modelJson({
-        parent: "society:block/kubejs/snow_melter",
-      });
+      itemitem.parentModel("society:block/kubejs/snow_melter");
     })
-    .model("society:block/kubejs/snow_melter")
+    .parentModel("society:block/kubejs/snow_melter")
     .blockEntity((blockInfo) => {
-      blockInfo.serverTick(600, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(600);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:snow_melter"] = (entity) => {
         global.handleSnowMelter(entity);
-      });
+      };
     });
 });

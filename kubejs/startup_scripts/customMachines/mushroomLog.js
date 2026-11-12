@@ -38,11 +38,6 @@ global.mushroomLogRecipes = new Map([
     ["quark:ancient_log", { output: ["1x verdantvibes:bracket_mushroom"]}],
     ["atmospheric:kousa_log", { output: ["1x verdantvibes:bracket_mushroom"]}],
     ["quark:azalea_log", { output: ["1x verdantvibes:bracket_mushroom"]}],
-    // Shimmering
-    ["atmospheric:watchful_aspen_log", { output: ["1x botania:yellow_mushroom"]}],
-    ["atmospheric:crustose_log", { output: ["1x botania:yellow_mushroom"]}],
-    ["cluttered:flowering_poplar_log", { output: ["1x botania:yellow_mushroom"]}],
-    ["cluttered:flowering_crabapple_log", { output: ["1x botania:pink_mushroom"]}],
     // Glow 
     ["cluttered:fluorescent_maple_log", { output: ["3x quark:glow_shroom"]}],
     ["vintagedelight:magic_vine", { output: ["4x quark:glow_shroom"]}],
@@ -61,8 +56,6 @@ global.mushroomLogRecipes = new Map([
 global.dominantMushroomLogBlocks = new Map([
     ["species:alphacene_mushroom_block", { output: ["2x species:alphacene_mushroom"]}], 
     ["minecraft:birch_log", { output: ["2x verdantvibes:bracket_mushroom"]}], 
-    ["cluttered:willow_log", { output: ["4x botania:magenta_mushroom"]}], 
-    ["cluttered:flowering_willow_log", { output: ["4x botania:purple_mushroom"],}], 
     ["quark:glow_shroom_stem", { output: ["3x quark:glow_shroom"]}], 
     ["minecraft:brown_mushroom_block", { output: ["2x farmersdelight:brown_mushroom_colony"]}], 
     ["minecraft:red_mushroom_block", { output: ["2x farmersdelight:red_mushroom_colony"]}], 
@@ -90,9 +83,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.mushroom_log.description").gray()
       );
-      item.modelJson({
-        parent: "society:block/kubejs/mushroom_log/mushroom_log_off",
-      });
+      itemitem.parentModel("society:block/kubejs/mushroom_log/mushroom_log_off");
     })
     .defaultState((state) => {
       state
@@ -125,10 +116,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "", quality: 0 });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:mushroom_log"] = (entity) => {
           global.handleBETick(entity, global.mushroomLogRecipes, 4);
-      });
-    }).blockstateJson = {
-    multipart: getCardinalMultipartJson("mushroom_log"),
-  };
+      };
+    });
 });

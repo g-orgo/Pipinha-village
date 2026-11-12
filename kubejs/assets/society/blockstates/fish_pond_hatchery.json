@@ -1,0 +1,20 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "upgraded": "false"
+      },
+      "apply": {
+        "model": "society:block/kubejs/fish_pond_hatchery"
+      }
+    },
+    {
+      "when": {
+        "upgraded": "true"
+      },
+      "apply": {
+        "model": "society:block/kubejs/fish_pond_hatchery_upgraded"
+      }
+    }
+  ]
+}

@@ -17,7 +17,7 @@
   },
   "effects": {
     "sound": {
-      "soundEvent": "botania:light_relay"
+      "soundEvent": "minecraft:block.amethyst_block.chime"
     }
   },
   "name": {

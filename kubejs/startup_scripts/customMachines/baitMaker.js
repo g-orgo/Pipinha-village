@@ -104,9 +104,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.bait_maker.description").gray());
-      item.modelJson({
-        parent: "society:block/kubejs/bait_maker/bait_maker_off",
-      });
+      itemitem.parentModel("society:block/kubejs/bait_maker/bait_maker_off");
     })
     .defaultState((state) => {
       state
@@ -125,10 +123,11 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ stage: 0, recipe: "" });
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
+      blockInfo.serverTicking();
+      blockInfo.tickFrequency(artMachineTickRate);
+      blockInfo.tickOffset(0);
+      global.portBeTicks["society:bait_maker"] = (entity) => {
         global.handleBETick(entity, global.baitMakerRecipes, 1);
-      });
-    }).blockstateJson = {
-    multipart: getCardinalMultipartJson("bait_maker"),
-  };
+      };
+    });
 });

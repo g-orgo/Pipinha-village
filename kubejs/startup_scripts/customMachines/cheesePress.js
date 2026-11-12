@@ -9,18 +9,18 @@ global.cheesePressRecipes = new Map([
   ["society:warped_milk", { output: ["1x meadow:piece_of_warped_cheese"] }],
   ["society:grain_milk", { output: ["1x meadow:piece_of_grain_cheese"] }],
   ["society:amethyst_milk", { output: ["1x meadow:piece_of_amethyst_cheese"] }],
-  ["society:large_sheep_milk", { output: ["1x meadow:sheep_cheese_block"] }],
-  ["society:large_milk", { output: ["1x meadow:cheese_block"] }],
+  ["society:large_sheep_milk", { output: ["1x meadow:sheep_cheese_wheel"] }],
+  ["society:large_milk", { output: ["1x meadow:cheese_wheel"] }],
   [
     "society:large_buffalo_milk",
-    { output: ["1x meadow:buffalo_cheese_block"] },
+    { output: ["1x meadow:buffalo_cheese_wheel"] },
   ],
-  ["society:large_goat_milk", { output: ["1x meadow:goat_cheese_block"] }],
-  ["society:large_warped_milk", { output: ["1x meadow:warped_cheese_block"] }],
-  ["society:large_grain_milk", { output: ["1x meadow:grain_cheese_block"] }],
+  ["society:large_goat_milk", { output: ["1x meadow:goat_cheese_wheel"] }],
+  ["society:large_warped_milk", { output: ["1x meadow:warped_cheese_wheel"] }],
+  ["society:large_grain_milk", { output: ["1x meadow:grain_cheese_wheel"] }],
   [
     "society:large_amethyst_milk",
-    { output: ["1x meadow:amethyst_cheese_block"] },
+    { output: ["1x meadow:amethyst_cheese_wheel"] },
   ],
 ]);
 

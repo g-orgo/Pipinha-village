@@ -4,10 +4,6 @@
     {
       "id": "farmersdelight:tomato_sauce",
       "required": false
-    },
-    {
-      "id": "create_central_kitchen:tomato_sauce",
-      "required": false
     }
   ]
 }

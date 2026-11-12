@@ -25,7 +25,7 @@ global.handleParCoolStart = (e) => {
   const player = e.getPlayer();
   const action = e.getAction();
 
-  if (action instanceof Java.type(CHARGE_JUMP_ACTION)) {
+  if (action instanceof Java.loadClass(CHARGE_JUMP_ACTION)) {
     // chargeTick is only updated on the client, so the charge check runs there
     // and the grant is requested from the server via a client-to-server packet.
     // Any charged jump counts (ParCool already requires at least 50% charge to start one).
@@ -38,7 +38,7 @@ global.handleParCoolStart = (e) => {
 
   if (player.level.isClientSide() || player.isFake()) return;
 
-  if (action instanceof Java.type(SLIDE_ACTION)) {
+  if (action instanceof Java.loadClass(SLIDE_ACTION)) {
     const id = String(player.getUuid());
     const last = global.parkourSlideCooldown[id];
     if (last !== undefined && player.age - last < SLIDE_COOLDOWN_TICKS) return;

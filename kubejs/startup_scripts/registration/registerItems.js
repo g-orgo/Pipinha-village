@@ -223,10 +223,12 @@ StartupEvents.registry("item", (e) => {
     .tag("numismatics:coins");
   e.create("numismatics:ancient_coin")
     .texture("society:item/ancient_coin")
-    .tag("numismatics:coins");
+    .tag("numismatics:coins")
+    .rarity("epic");
   e.create("numismatics:prismatic_coin")
     .texture("society:item/prismatic_coin")
-    .tag("numismatics:coins");
+    .tag("numismatics:coins")
+    .rarity("epic");
 
   e.create("society:elytra_wing").texture("society:item/elytra_wing");
   e.create("society:fish_radar").texture("society:item/fish_radar");
@@ -873,31 +875,31 @@ StartupEvents.registry("item", (e) => {
       texture: "bad_omen_wine",
     },
     {
-      item: "meadow:goat_cheese_block",
+      item: "meadow:goat_cheese_wheel",
       texture: "wheel_of_goat_cheese",
     },
     {
-      item: "meadow:cheese_block",
+      item: "meadow:cheese_wheel",
       texture: "wheel_of_cheese",
     },
     {
-      item: "meadow:amethyst_cheese_block",
+      item: "meadow:amethyst_cheese_wheel",
       texture: "wheel_of_amethyst_cheese",
     },
     {
-      item: "meadow:warped_cheese_block",
+      item: "meadow:warped_cheese_wheel",
       texture: "warped_cheese",
     },
     {
-      item: "meadow:sheep_cheese_block",
+      item: "meadow:sheep_cheese_wheel",
       texture: "wheel_of_sheep_cheese",
     },
     {
-      item: "meadow:grain_cheese_block",
+      item: "meadow:grain_cheese_wheel",
       texture: "wheel_of_grain_cheese",
     },
     {
-      item: "meadow:buffalo_cheese_block",
+      item: "meadow:buffalo_cheese_wheel",
       texture: "wheel_of_herb_cheese",
     },
     {
@@ -958,7 +960,7 @@ StartupEvents.registry("item", (e) => {
   });
   const fishTexureMapping = [
     {
-      item: "unusualfishmod:raw_snowflake",
+      item: "unusualfishmod:raw_frosty_fin",
       texture: "raw_snowflake_tail_fish",
       displayId: "frosty_fin",
     },
@@ -1041,7 +1043,7 @@ StartupEvents.registry("item", (e) => {
     { item: "unusualfishmod:raw_duality_damselfish", hex: 0xafb3b6 },
     { item: "unusualfishmod:raw_blind_sailfin", hex: 0xbea39a },
     { item: "unusualfishmod:raw_circus_fish", hex: 0x9b3c2b },
-    { item: "unusualfishmod:raw_snowflake", hex: 0x91b2c8 },
+    { item: "unusualfishmod:raw_frosty_fin", hex: 0x91b2c8 },
     { item: "unusualfishmod:raw_aero_mono", hex: 0x617c92 },
     { item: "unusualfishmod:raw_hatchetfish", hex: 0xb43e5a },
     { item: "unusualfishmod:raw_spindlefish", hex: 0xf575f5 },

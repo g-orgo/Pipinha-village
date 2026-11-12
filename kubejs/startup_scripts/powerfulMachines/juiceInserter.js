@@ -18,13 +18,7 @@ StartupEvents.registry("block", (event) => {
       global.portBeTicks["society:juice_inserter"] = (entity) => {
         global.runJuiceInserter(entity);
       };
-      blockInfo.attachCapability(
-        CapabilityBuilder.FLUID.customBlockEntity()
-          .getCapacity(() => 10000)
-          .getFluid((blockInfo, fl) => global.getFluid(blockInfo))
-          .onFill((blockInfo, fluid, sim) => global.onFill(blockInfo, fluid, sim))
-          .onDrain((blockInfo, fluid, sim) => global.onDrain(blockInfo, fluid, sim))
-      );
+      blockInfo.fluidTank("fluid", Direction.ALL_SET, 10000);
     });
 });
 
@@ -43,26 +37,25 @@ const juiceMap = [
 ];
 global.runJuiceInserter = (blockInfo) => {
   const { block, level } = blockInfo;
-  const fluidHandler = blockInfo.getCapability(ForgeCapabilities.FLUID_HANDLER).orElse(null);
+  const fluidTank = blockInfo.attachments.fluid;
   const fermentationBarrel = global.getFermentingBarrel(level, level.getBlock(block.getPos()));
-  if (!fermentationBarrel.id.equals("vinery:fermentation_barrel")) return;
-  let barrelData = fermentationBarrel.getEntityData();
-  if (!barrelData) return;
-  if (!block.getEntityData()) return;
-  const fluidData = block.getEntityData().ForgeData;
-  if (!barrelData) return;
-  if (Number(barrelData.FluidLevel) + 25 > 100) return;
-  if (fluidData === null || fluidData.Fluid < 250) return;
+  if (String(fermentationBarrel.id) !== "vinery:fermentation_barrel") return;
+  // Vinery's barrel block entity exposes typed getters and setters for its juice state.
+  const barrelEntity = fermentationBarrel.getEntity();
+  if (!barrelEntity || !fluidTank) return;
+  if (Number(barrelEntity.getFluidLevel()) + 25 > 100) return;
+  const storedFluid = fluidTank.getFluid();
+  if (storedFluid.getAmount() < 250) return;
+  const storedFluidId = String(storedFluid.getId());
   juiceMap.forEach((juice) => {
-    if (fluidData.FluidType && fluidData.FluidType.equals(juice.fluid)) {
-      if (barrelData.FluidLevel === 0) {
-        barrelData.JuiceType = juice.barrelFluidId;
-        fermentationBarrel.setEntityData(barrelData);
+    if (storedFluidId === juice.fluid) {
+      if (Number(barrelEntity.getFluidLevel()) === 0) {
+        barrelEntity.setJuiceType(juice.barrelFluidId);
       }
-      if (barrelData.JuiceType.equals(juice.barrelFluidId)) {
-        fluidHandler.drain(Fluid.of(fluidData.FluidType, 250), "execute");
-        barrelData.FluidLevel = barrelData.FluidLevel + 25.0;
-        fermentationBarrel.setEntityData(barrelData);
+      if (String(barrelEntity.getJuiceType()) === juice.barrelFluidId) {
+        fluidTank.drain(Fluid.of(storedFluidId, 250), "execute");
+        barrelEntity.setFluidLevel(Number(barrelEntity.getFluidLevel()) + 25.0);
+        barrelEntity.setChanged();
         level
           .getServer()
           .runCommandSilent(`playsound create:spout block @a ${block.x} ${block.y} ${block.z}`);

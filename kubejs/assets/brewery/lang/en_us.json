@@ -6,5 +6,6 @@
   "advancement.brewery.place_netherite_brewingstation": "Reinforced Brewer",
   "advancement.brewery.place_netherite_brewingstation.desc": "Craft and place a Reinforced Brewingstation",
   "block.brewery.netherite_brewingstation": "Reinforced Brewingstation",
-  "tooltip.brewery.beer_quality": "Effect Rank: %s"
+  "tooltip.brewery.beer_quality": "Effect Rank: %s",
+  "item.brewery.hop_trellis_seed": "Hop Trellis Seed"
 }

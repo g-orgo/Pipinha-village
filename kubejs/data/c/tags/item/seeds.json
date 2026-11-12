@@ -92,6 +92,54 @@
     {
       "id": "youkaishomecoming:tea_seeds",
       "required": false
+    },
+    {
+      "id": "society:ancient_fruit_seed",
+      "required": false
+    },
+    {
+      "id": "society:tubabacco_leaf_seed",
+      "required": false
+    },
+    {
+      "id": "society:blueberry_seed",
+      "required": false
+    },
+    {
+      "id": "society:cranberry_seed",
+      "required": false
+    },
+    {
+      "id": "society:eggplant_seed",
+      "required": false
+    },
+    {
+      "id": "society:carrot_seed",
+      "required": false
+    },
+    {
+      "id": "society:potato_seed",
+      "required": false
+    },
+    {
+      "id": "society:onion_seed",
+      "required": false
+    },
+    {
+      "id": "society:sweet_potato_seed",
+      "required": false
+    },
+    {
+      "id": "society:peanut_seed",
+      "required": false
+    },
+    {
+      "id": "society:sparkpod_seed",
+      "required": false
+    },
+    {
+      "id": "brewery:hop_trellis_seed",
+      "required": false
     }
   ]
 }

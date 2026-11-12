@@ -2306,7 +2306,7 @@ global.fishPondDefinitions = new Map([
           population: 3,
           requestedItems: [
             { item: "society:large_milk", count: 4 },
-            { item: "meadow:cheese_block", count: 1 },
+            { item: "meadow:cheese_wheel", count: 1 },
           ],
         },
         {
@@ -2984,7 +2984,7 @@ global.fishPondDefinitions = new Map([
     },
   ],
   [
-    "unusualfishmod:raw_snowflake",
+    "unusualfishmod:raw_frosty_fin",
     {
       quests: [
         {
@@ -3774,7 +3774,7 @@ global.fishPondDefinitions = new Map([
           requestedItems: [
             { item: "minecraft:amethyst_shard", count: 48 },
             { item: "minecraft:amethyst_block", count: 16 },
-            { item: "meadow:amethyst_cheese_block", count: 1 },
+            { item: "meadow:amethyst_cheese_wheel", count: 1 },
           ],
         },
         {

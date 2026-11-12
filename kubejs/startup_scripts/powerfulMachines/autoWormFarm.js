@@ -14,14 +14,14 @@ StartupEvents.registry("block", (event) => {
     })
     .parentModel("society:block/kubejs/auto_worm_farm")
     .blockEntity((blockInfo) => {
-      blockInfo.inventory(9, 1);
+      blockInfo.inventory("inventory", Direction.ALL_SET, 9, 1);
       blockInfo.serverTicking();
       blockInfo.tickFrequency(1200);
       blockInfo.tickOffset(0);
       global.portBeTicks["society:auto_worm_farm"] = (entity) => {
         const { x, y, z } = entity.block;
         if (entity.tick < 20) return;
-        entity.inventory.insertItem("aquaculture:worm", false);
+        entity.attachments.inventory.insertItem("aquaculture:worm", false);
         entity.level.server.runCommandSilent(
           `playsound minecraft:block.composter.fill block @a ${x} ${y} ${z}`
         );
@@ -38,15 +38,6 @@ StartupEvents.registry("block", (event) => {
           0.01
         );
       };
-        blockInfo.rightClickOpensInventory();
-      blockInfo.attachCapability(
-        CapabilityBuilder.ITEM.blockEntity()
-          .extractItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.extractItem(slot, stack, simulate)
-          )
-          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
-          .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
-      );
+        blockInfo.rightClickOpensInventory("inventory");
     });
 });

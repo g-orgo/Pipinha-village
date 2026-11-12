@@ -29,7 +29,7 @@ PlayerEvents.tick((e) => {
 
   let uuid = String(player.getUuid());
   let menu = player.containerMenu;
-  if (!(menu instanceof Java.type("vectorwing.farmersdelight.common.block.entity.container.CookingPotMenu"))) {
+  if (!(menu instanceof Java.loadClass("vectorwing.farmersdelight.common.block.entity.container.CookingPotMenu"))) {
     delete culinariaPotSnapshots[uuid];
     return;
   }

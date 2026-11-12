@@ -69,28 +69,12 @@ StartupEvents.registry("block", (event) => {
     })
     .parentModel("society:block/kubejs/iridium_clock")
     .blockEntity((blockInfo) => {
-      blockInfo.inventory(9, 3);
+      blockInfo.inventory("inventory", Direction.ALL_SET, 9, 3);
       blockInfo.initialData({ triggerTimes: 0 });
       blockInfo.serverTicking();
       blockInfo.tickFrequency(artMachineTickRate);
       blockInfo.tickOffset(0);
       global.portBeTicks["society:iridium_clock"] = (entity) => global.runIridiumClock(entity);
-      blockInfo.rightClickOpensInventory();
-      blockInfo.attachCapability(
-        CapabilityBuilder.ITEM.blockEntity()
-          .insertItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.insertItem(slot, stack, simulate)
-          )
-          .extractItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.extractItem(slot, stack, simulate)
-          )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
-          )
-          .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
-      );
+      blockInfo.rightClickOpensInventory("inventory");
     })
 });

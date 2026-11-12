@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     {
-      "id": "miners_delight:squid",
+      "id": "minersdelight:squid",
       "required": false
     },
     {

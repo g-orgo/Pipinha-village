@@ -120,7 +120,7 @@ StartupEvents.registry("block", (e) => {
       .soundType("stone")
       .resistance(3600000)
       .requiresTool(true)
-      .textureAll(path)
+      .texture(path)
       .texture("particle", path)
       .unbreakable()
       .tagBlock("society:skull_block");
@@ -209,14 +209,14 @@ StartupEvents.registry("block", (e) => {
     .hardness(2)
     .resistance(1.0)
     .tagBlock("minecraft:mineable/pickaxe")
-    .textureAll("society:block/sparkstone_block");
+    .texture("society:block/sparkstone_block");
 
   e.create(`society:prismatic_shard_block`)
     .soundType("amethyst")
     .hardness(2)
     .resistance(1.0)
     .tagBlock("minecraft:mineable/pickaxe")
-    .textureAll("society:block/prismatic_shard_block");
+    .texture("society:block/prismatic_shard_block");
     
   // Compressed Crops block
   e.create("society:animal_feed_sack", "cardinal")
@@ -242,7 +242,7 @@ StartupEvents.registry("block", (e) => {
     .texture("particle", "quark:block/cocoa_beans_sack");
 
   e.create("herbalbrews:yerba_mate_leaf_block")
-    .textureAll("herbalbrews:block/green_tea_leaf2")
+    .texture("herbalbrews:block/green_tea_leaf2")
     .mapColor("grass")
     .soundType("azalea_leaves")
     .hardness(1.0)
@@ -251,7 +251,7 @@ StartupEvents.registry("block", (e) => {
     .texture("particle", "herbalbrews:block/green_tea_leaf2");
 
   e.create("herbalbrews:rooibos_leaf_block")
-    .textureAll("herbalbrews:block/green_tea_leaf2")
+    .texture("herbalbrews:block/green_tea_leaf2")
     .mapColor("grass")
     .soundType("azalea_leaves")
     .hardness(1.0)
@@ -291,7 +291,7 @@ StartupEvents.registry("block", (e) => {
   });
 
   e.create("society:tubabacco_leaf_block")
-    .textureAll("herbalbrews:block/green_tea_leaf1")
+    .texture("herbalbrews:block/green_tea_leaf1")
     .mapColor("grass")
     .soundType("azalea_leaves")
     .hardness(1.0)
@@ -754,11 +754,11 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .resistance(0.8)
     .renderType("translucent")
-    .textureAll("moreminecarts:block/chiseled_organic_glass");
+    .texture("moreminecarts:block/chiseled_organic_glass");
 
   e.create("moreminecarts:greenhouse_glass_slab", "slab")
     .soundType("glass")
     .resistance(0.8)
     .renderType("translucent")
-    .textureAll("moreminecarts:block/chiseled_organic_glass");
+    .texture("moreminecarts:block/chiseled_organic_glass");
 });

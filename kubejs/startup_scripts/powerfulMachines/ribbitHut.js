@@ -234,7 +234,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("stone")
     .parentModel("society:block/kubejs/ribbit_hut/bottom_front_center")
     .blockEntity((blockInfo) => {
-      blockInfo.inventory(9, 3);
+      blockInfo.inventory("inventory", Direction.ALL_SET, 9, 3);
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTicking();
       blockInfo.tickFrequency(artMachineTickRate);
@@ -242,23 +242,7 @@ StartupEvents.registry("block", (e) => {
       global.portBeTicks["society:ribbit_hut"] = (entity) => {
         global.runRibbitHut(entity);
       };
-        blockInfo.rightClickOpensInventory();
-      blockInfo.attachCapability(
-        CapabilityBuilder.ITEM.blockEntity()
-          .insertItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.insertItem(slot, stack, simulate)
-          )
-          .extractItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.extractItem(slot, stack, simulate)
-          )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
-          )
-          .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
-      );
+        blockInfo.rightClickOpensInventory("inventory");
     });
   e.create("society:ribbit_hut_block", "cardinal")
     .property(integerProperty.create("layer", 0, 2))

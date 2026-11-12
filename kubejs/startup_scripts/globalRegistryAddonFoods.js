@@ -36,7 +36,7 @@ const addon_brewingStationRecipes = [
   { item: "kaleidoscope_tavern:screwdriver", value: 24 },
   { item: "kaleidoscope_tavern:sculk_special", value: 24 },
   { item: "kaleidoscope_tavern:white_lady", value: 42 },
-  { item: "miners_delight:water_cup", value: 30 },
+  { item: "minersdelight:water_cup", value: 30 },
   { item: "youkaishomecoming:affogato", value: 43 },
   { item: "youkaishomecoming:americano", value: 30 },
   { item: "youkaishomecoming:cappuccino", value: 24 },
@@ -120,23 +120,23 @@ const addon_craftingTableRecipes = [
   { item: "kaleidoscope_cookery:teapot", value: 130 },
   { item: "kaleidoscope_cookery:tieguanyin_tea_bag", value: 170 },
   { item: "kaleidoscope_tavern:barrel", value: 90 },
-  { item: "miners_delight:bat_cookie", value: 8 },
-  { item: "miners_delight:cave_carrot", value: 1 },
-  { item: "miners_delight:cave_hamburger", value: 76 },
-  { item: "miners_delight:copper_carrot", value: 161 },
-  { item: "miners_delight:crunchy_bar", value: 35 },
-  { item: "miners_delight:golden_nutritional_bar", value: 220 },
-  { item: "miners_delight:improvised_barbecue_stick", value: 49 },
-  { item: "miners_delight:insect_sandwich", value: 40 },
-  { item: "miners_delight:insect_wrap", value: 75 },
-  { item: "miners_delight:nutritional_bar", value: 60 },
-  { item: "miners_delight:seasoned_arthropods", value: 100 },
-  { item: "miners_delight:squid_sandwich", value: 40 },
-  { item: "miners_delight:tentacles_on_a_stick", value: 60 },
-  { item: "miners_delight:vegan_hamburger", value: 100 },
-  { item: "miners_delight:vegan_steak_and_potatoes", value: 99 },
-  { item: "miners_delight:vegan_wrap", value: 41 },
-  { item: "miners_delight:weird_caviar", value: 70 },
+  { item: "minersdelight:bat_cookie", value: 8 },
+  { item: "minersdelight:cave_carrot", value: 1 },
+  { item: "minersdelight:cave_hamburger", value: 76 },
+  { item: "minersdelight:copper_carrot", value: 161 },
+  { item: "minersdelight:crunchy_bar", value: 35 },
+  { item: "minersdelight:golden_nutritional_bar", value: 220 },
+  { item: "minersdelight:improvised_barbecue_stick", value: 49 },
+  { item: "minersdelight:insect_sandwich", value: 40 },
+  { item: "minersdelight:insect_wrap", value: 75 },
+  { item: "minersdelight:nutritional_bar", value: 60 },
+  { item: "minersdelight:seasoned_arthropods", value: 100 },
+  { item: "minersdelight:squid_sandwich", value: 40 },
+  { item: "minersdelight:tentacles_on_a_stick", value: 60 },
+  { item: "minersdelight:vegan_hamburger", value: 100 },
+  { item: "minersdelight:vegan_steak_and_potatoes", value: 99 },
+  { item: "minersdelight:vegan_wrap", value: 41 },
+  { item: "minersdelight:weird_caviar", value: 70 },
   { item: "oceansdelight:cabbage_wrapped_elder_guardian", value: 80 },
   { item: "oceansdelight:seagrass_salad", value: 74 },
   { item: "oceansdelight:stuffed_cod", value: 84 },
@@ -300,12 +300,12 @@ const addon_furnaceRecipes = [
   { item: "hearthandharvest:roasted_peanuts", value: 1 },
   { item: "kaleidoscope_cookery:samsa", value: 41 },
   { item: "large_meals:cooked_mutton_rack", value: 40 },
-  { item: "miners_delight:baked_cave_carrot", value: 1 },
-  { item: "miners_delight:baked_spider_leg", value: 28 },
-  { item: "miners_delight:baked_squid", value: 28 },
-  { item: "miners_delight:baked_tentacles", value: 28 },
-  { item: "miners_delight:cooked_arthropod", value: 28 },
-  { item: "miners_delight:smoked_bat_wing", value: 28 },
+  { item: "minersdelight:baked_cave_carrot", value: 1 },
+  { item: "minersdelight:baked_spider_leg", value: 28 },
+  { item: "minersdelight:baked_squid", value: 28 },
+  { item: "minersdelight:baked_tentacles", value: 28 },
+  { item: "minersdelight:cooked_arthropod", value: 28 },
+  { item: "minersdelight:smoked_bat_wing", value: 28 },
   { item: "youkaishomecoming:coffee_beans", value: 20 },
   { item: "youkaishomecoming:cooked_flesh", value: 24 },
   { item: "youkaishomecoming:cooked_flesh_slice", value: 10 },
@@ -447,15 +447,15 @@ const addon_cookingPotRecipes = [
   { item: "large_meals:rice_pudding", value: 50 },
   { item: "large_meals:sweet_berry_custard", value: 38 },
   { item: "large_meals:tomato_egg_soup", value: 44 },
-  { item: "miners_delight:bat_rolls", value: 21 },
-  { item: "miners_delight:bat_soup", value: 40 },
-  { item: "miners_delight:cave_soup", value: 25 },
-  { item: "miners_delight:fake_meatloaf", value: 23 },
-  { item: "miners_delight:glow_ink_pasta", value: 74 },
-  { item: "miners_delight:insect_stew", value: 55 },
-  { item: "miners_delight:pasta_with_veggieballs", value: 125 },
-  { item: "miners_delight:stuffed_squid", value: 77 },
-  { item: "miners_delight:takoyaki", value: 80 },
+  { item: "minersdelight:bat_rolls", value: 21 },
+  { item: "minersdelight:bat_soup", value: 40 },
+  { item: "minersdelight:cave_soup", value: 25 },
+  { item: "minersdelight:fake_meatloaf", value: 23 },
+  { item: "minersdelight:glow_ink_pasta", value: 74 },
+  { item: "minersdelight:insect_stew", value: 55 },
+  { item: "minersdelight:pasta_with_veggieballs", value: 125 },
+  { item: "minersdelight:stuffed_squid", value: 77 },
+  { item: "minersdelight:takoyaki", value: 80 },
   { item: "quarkdelight:bucket_of_sweet_gelatine", value: 66 },
   { item: "quarkdelight:cavern_explorer_stew", value: 35 },
   { item: "quarkdelight:cloud_latte", value: 38 },
@@ -637,9 +637,9 @@ const addon_flatFoods = [
   { item: "large_meals:mushroom_pot_pie", value: 30 },
   { item: "large_meals:omurice", value: 30 },
   { item: "large_meals:roasted_mutton_rack", value: 30 },
-  { item: "miners_delight:bowl_of_stuffed_squid", value: 30 },
-  { item: "miners_delight:moss", value: 30 },
-  { item: "miners_delight:plate_of_glazed_arachnid_limbs", value: 30 },
+  { item: "minersdelight:bowl_of_stuffed_squid", value: 30 },
+  { item: "minersdelight:moss", value: 30 },
+  { item: "minersdelight:plate_of_glazed_arachnid_limbs", value: 30 },
   { item: "oceansdelight:baked_tentacle_on_a_stick", value: 30 },
   { item: "oceansdelight:bowl_of_guardian_soup", value: 30 },
   { item: "oceansdelight:braised_sea_pickle", value: 30 },
@@ -753,22 +753,22 @@ global.crops.push({ item: "kaleidoscope_cookery:tomato", value: 12 });
 if (!global.trades.has("kaleidoscope_cookery:tomato")) global.trades.set("kaleidoscope_cookery:tomato", { value: global.getConfiguredValue(12, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
 global.animalProducts.push({ item: "large_meals:raw_mutton_rack", value: 40 });
 if (!global.trades.has("large_meals:raw_mutton_rack")) global.trades.set("large_meals:raw_mutton_rack", { value: global.getConfiguredValue(40, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
-global.crops.push({ item: "miners_delight:arthropod", value: 14 });
-if (!global.trades.has("miners_delight:arthropod")) global.trades.set("miners_delight:arthropod", { value: global.getConfiguredValue(14, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
-global.animalProducts.push({ item: "miners_delight:bat_wing", value: 10 });
-if (!global.trades.has("miners_delight:bat_wing")) global.trades.set("miners_delight:bat_wing", { value: global.getConfiguredValue(10, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
-global.animalProducts.push({ item: "miners_delight:glow_squid", value: 18 });
-if (!global.trades.has("miners_delight:glow_squid")) global.trades.set("miners_delight:glow_squid", { value: global.getConfiguredValue(18, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
-global.animalProducts.push({ item: "miners_delight:silverfish_eggs", value: 10 });
-if (!global.trades.has("miners_delight:silverfish_eggs")) global.trades.set("miners_delight:silverfish_eggs", { value: global.getConfiguredValue(10, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
-global.crops.push({ item: "miners_delight:spider_leg", value: 10 });
-if (!global.trades.has("miners_delight:spider_leg")) global.trades.set("miners_delight:spider_leg", { value: global.getConfiguredValue(10, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
-global.animalProducts.push({ item: "miners_delight:squid", value: 18 });
-if (!global.trades.has("miners_delight:squid")) global.trades.set("miners_delight:squid", { value: global.getConfiguredValue(18, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
-global.crops.push({ item: "miners_delight:tentacles", value: 14 });
-if (!global.trades.has("miners_delight:tentacles")) global.trades.set("miners_delight:tentacles", { value: global.getConfiguredValue(14, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
-global.crops.push({ item: "miners_delight:vegan_patty", value: 24 });
-if (!global.trades.has("miners_delight:vegan_patty")) global.trades.set("miners_delight:vegan_patty", { value: global.getConfiguredValue(24, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
+global.crops.push({ item: "minersdelight:arthropod", value: 14 });
+if (!global.trades.has("minersdelight:arthropod")) global.trades.set("minersdelight:arthropod", { value: global.getConfiguredValue(14, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
+global.animalProducts.push({ item: "minersdelight:bat_wing", value: 10 });
+if (!global.trades.has("minersdelight:bat_wing")) global.trades.set("minersdelight:bat_wing", { value: global.getConfiguredValue(10, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
+global.animalProducts.push({ item: "minersdelight:glow_squid", value: 18 });
+if (!global.trades.has("minersdelight:glow_squid")) global.trades.set("minersdelight:glow_squid", { value: global.getConfiguredValue(18, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
+global.animalProducts.push({ item: "minersdelight:silverfish_eggs", value: 10 });
+if (!global.trades.has("minersdelight:silverfish_eggs")) global.trades.set("minersdelight:silverfish_eggs", { value: global.getConfiguredValue(10, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
+global.crops.push({ item: "minersdelight:spider_leg", value: 10 });
+if (!global.trades.has("minersdelight:spider_leg")) global.trades.set("minersdelight:spider_leg", { value: global.getConfiguredValue(10, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
+global.animalProducts.push({ item: "minersdelight:squid", value: 18 });
+if (!global.trades.has("minersdelight:squid")) global.trades.set("minersdelight:squid", { value: global.getConfiguredValue(18, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
+global.crops.push({ item: "minersdelight:tentacles", value: 14 });
+if (!global.trades.has("minersdelight:tentacles")) global.trades.set("minersdelight:tentacles", { value: global.getConfiguredValue(14, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
+global.crops.push({ item: "minersdelight:vegan_patty", value: 24 });
+if (!global.trades.has("minersdelight:vegan_patty")) global.trades.set("minersdelight:vegan_patty", { value: global.getConfiguredValue(24, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
 global.crops.push({ item: "oceansdelight:cooked_elder_guardian_slice", value: 110 });
 if (!global.trades.has("oceansdelight:cooked_elder_guardian_slice")) global.trades.set("oceansdelight:cooked_elder_guardian_slice", { value: global.getConfiguredValue(110, "crop"), multiplier: "shippingbin:crop_sell_multiplier" });
 global.crops.push({ item: "oceansdelight:tentacles", value: 20 });

@@ -695,7 +695,7 @@
 		},
 		"cooking_roasted_ham": {
 			"type": "minecraft:item",
-			"content": "meadow:roasted_ham",
+			"content": "meadow:roasted_buffalo_ham",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {

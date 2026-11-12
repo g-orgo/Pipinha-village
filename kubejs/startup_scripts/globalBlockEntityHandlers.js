@@ -811,50 +811,6 @@ global.inventoryUseItems = (inventory, id, count) => {
   return 1;
 };
 
-/** All fluid handlers expect the following initialData with a capacity of 10000
- *
- *  blockInfo.initialData({ Fluid: 0, FluidType: "" });
- */
-
-global.getFluid = (blockInfo) => {
-  if (!blockInfo || !blockInfo.persistentData) {
-    return Fluid.of("minecraft:water", 0);
-  }
-  const foundFluid = blockInfo.persistentData.getString("FluidType");
-  if (!foundFluid) return Fluid.of("minecraft:water", 0);
-  if (foundFluid === "minecraft:empty") {
-    return Fluid.of("minecraft:water", 0);
-  }
-  let foundFluidLevel = blockInfo.persistentData.getInt("Fluid");
-  if (!foundFluidLevel) foundFluidLevel = 0;
-  return Fluid.of(foundFluid, foundFluidLevel);
-};
-
-global.onFill = (blockInfo, fluid, sim) => {
-  const fluidData = blockInfo.persistentData.getInt("Fluid");
-  const filled = Math.min(10000 - fluidData, fluid.getAmount());
-  if (!sim) {
-    const storedFluidId = blockInfo.persistentData.getString("FluidType");
-    const incomingFluidId = fluid.getId();
-    if (storedFluidId === "" || fluidData === 0) {
-      blockInfo.persistentData.putString("FluidType", incomingFluidId);
-      blockInfo.persistentData.putInt("Fluid", fluidData + filled);
-    } else if (storedFluidId === incomingFluidId) {
-      blockInfo.persistentData.putInt("Fluid", fluidData + filled);
-    } else {
-      return (filled = 0);
-    }
-  }
-  return filled;
-};
-
-global.onDrain = (blockInfo, fluid, sim) => {
-  const fluidData = blockInfo.persistentData.getInt("Fluid");
-  const drained = Math.min(fluidData, fluid.getAmount());
-  if (!sim) blockInfo.persistentData.putInt("Fluid", fluidData - drained);
-  return drained;
-};
-
 // Text display utils
 global.clearOldTextDisplay = (block, level, id) => {
   const { x, y, z } = block;

@@ -114,7 +114,7 @@ const applyPriceBalance = () => {
     "kaleidoscope_cookery:red_chili",
     "kaleidoscope_cookery:green_chili",
     "culturaldelights:white_eggplant",
-    "miners_delight:cave_carrot",
+    "minersdelight:cave_carrot",
   ];
 
   // Caixas/sacos/fardos que não seguem o nome do item base.
@@ -130,7 +130,7 @@ const applyPriceBalance = () => {
     "kaleidoscope_tavern:grape": ["hearthandharvest:red_grape_crate"],
     "kaleidoscope_tavern:green_grape": ["hearthandharvest:green_grape_crate"],
     "youkaishomecoming:green_coffee_bean": ["youkaishomecoming:coffee_bean_bag"],
-    "miners_delight:cave_carrot": ["miners_delight:cave_carrot_crate"],
+    "minersdelight:cave_carrot": ["minersdelight:cave_carrot_crate"],
   };
 
   const CONTAINER_SUFFIXES = [
@@ -255,7 +255,6 @@ const applyPriceBalance = () => {
     ["hearthandharvest:red_grape_juice", "kaleidoscope_tavern:grape"],
     ["hearthandharvest:green_grape_juice", "kaleidoscope_tavern:green_grape"],
     ["kaleidoscope_tavern:grape_juice", "kaleidoscope_tavern:grape"],
-    ["kaleidoscope_tavern:green_grape_juice", "kaleidoscope_tavern:green_grape"],
   ].forEach((pair) => {
     const fruit = priceOf(pair[1]);
     if (fruit === undefined || sugar === undefined) return;
@@ -309,7 +308,7 @@ const applyPriceBalance = () => {
     changed++;
   });
   // Os sucos da Tavern herdaram preço sem estar em lista nenhuma; sem lista não há tooltip.
-  ["kaleidoscope_tavern:grape_juice", "kaleidoscope_tavern:green_grape_juice"].forEach((id) => {
+  ["kaleidoscope_tavern:grape_juice", "hearthandharvest:green_grape_juice"].forEach((id) => {
     if (newDrinks[id] !== undefined && cocktails[id] === undefined) {
       global.cocktails.push({ item: id, value: newDrinks[id] });
     }

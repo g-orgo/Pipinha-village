@@ -27,7 +27,7 @@ StartupEvents.registry("block", (event) => {
     })
     .parentModel("society:block/kubejs/mana_milker")
     .blockEntity((blockInfo) => {
-      blockInfo.inventory(9, 1);
+      blockInfo.inventory("inventory", Direction.ALL_SET, 9, 1);
       blockInfo.serverTicking();
       blockInfo.tickFrequency(1200);
       blockInfo.tickOffset(0);
@@ -49,7 +49,7 @@ StartupEvents.registry("block", (event) => {
               level, animal, data, null, day, undefined, undefined, global.NO_STAGES
             );
             if (milkItem !== -1) {
-              let success = entity.inventory.insertItem(milkItem, false);
+              let success = entity.attachments.inventory.insertItem(milkItem, false);
               if (success) {
                 entity.persistentData.putInt("mana", mana - MANA_PER_MILK);
 
@@ -73,22 +73,6 @@ StartupEvents.registry("block", (event) => {
           }
         });
       };
-        blockInfo.rightClickOpensInventory();
-      blockInfo.attachCapability(
-        CapabilityBuilder.ITEM.blockEntity()
-          .insertItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.insertItem(slot, stack, simulate)
-          )
-          .extractItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.extractItem(slot, stack, simulate)
-          )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
-          )
-          .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
-      );
+        blockInfo.rightClickOpensInventory("inventory");
     });
 });

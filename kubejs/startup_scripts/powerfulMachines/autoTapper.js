@@ -27,25 +27,19 @@ StartupEvents.registry("block", (event) => {
       global.portBeTicks["society:auto_tapper"] = (entity) => {
         global.runAutoTapper(entity);
       };
-      blockInfo.attachCapability(
-        CapabilityBuilder.FLUID.customBlockEntity()
-          .getCapacity(() => 10000)
-          .getFluid((blockInfo, fl) => global.getFluid(blockInfo))
-          .onFill((blockInfo, fluid, sim) => global.onFill(blockInfo, fluid, sim))
-          .onDrain((blockInfo, fluid, sim) => global.onDrain(blockInfo, fluid, sim))
-      );
+      blockInfo.fluidTank("fluid", Direction.ALL_SET, 10000);
     });
 });
 global.runAutoTapper = (blockInfo) => {
   const { block, level } = blockInfo;
 
-  const fluidHandler = blockInfo.getCapability(ForgeCapabilities.FLUID_HANDLER).orElse(null);
+  const fluidTank = blockInfo.attachments.fluid;
   const fluidData = global.handleTapperRandomTick(
     { block: block, level: level, server: level.getServer() },
     true
   );
   if (global.susFunctionLogging) console.log("[SOCIETY-SUSFN] autoTapper.js");
-  if (fluidData && block.properties.get("error") == "false") {
-    fluidHandler.fill(Fluid.of(fluidData.fluid, Math.round(10 / fluidData.time)), "execute");
+  if (fluidData && fluidTank && block.properties.get("error") == "false") {
+    fluidTank.fill(Fluid.of(fluidData.fluid, Math.round(10 / fluidData.time)), "execute");
   }
 };

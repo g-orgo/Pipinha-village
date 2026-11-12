@@ -30,7 +30,7 @@
           "west": { "texture": "#lit", "cullface": "west" },
           "east": { "texture": "#lit", "cullface": "east" }
         },
-        "forge_data": {
+        "neoforge_data": {
             "color": "FFFFFFFF",
             "block_light": 15,
             "sky_light": 15

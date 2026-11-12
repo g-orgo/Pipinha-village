@@ -185,9 +185,9 @@ global.winterFresh = [
   { fish: "aquaculture:bluegill", weight: 11, night: true },
   { fish: "aquaculture:perch", weight: 9, night: true },
   { fish: "aquaculture:carp", weight: 8, night: true },
-  { fish: "unusualfishmod:raw_snowflake", weight: 8, requiresRain: true },
+  { fish: "unusualfishmod:raw_frosty_fin", weight: 8, requiresRain: true },
   {
-    fish: "unusualfishmod:raw_snowflake",
+    fish: "unusualfishmod:raw_frosty_fin",
     weight: 8,
     night: true,
     requiresRain: true,

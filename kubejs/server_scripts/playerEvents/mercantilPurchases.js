@@ -21,7 +21,7 @@ const mercantilShopSnapshots = {};
 const mercantilShopPickups = {};
 
 const mercantilIsShopMenu = (menu) =>
-  !!menu && MERCANTIL_SHOP_MENUS.some((name) => menu instanceof Java.type(name));
+  !!menu && MERCANTIL_SHOP_MENUS.some((name) => menu instanceof Java.loadClass(name));
 
 const mercantilCountHeld = (player, menu, stack) => {
   let count = player.getInventory().countItem(stack.getItem());

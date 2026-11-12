@@ -189,7 +189,7 @@
 		},
 		"winter_raw_snowflake": {
 			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_snowflake",
+			"content": "unusualfishmod:raw_frosty_fin",
 			"rarity": "UNCOMMON",
 			"weightMult": 0.5,
 			"amount": {

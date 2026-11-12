@@ -4,10 +4,6 @@
     {
       "id": "brewinandchewin:quiche",
       "required": false
-    },
-    {
-      "id": "bakery:quiche",
-      "required": false
     }
   ]
 }

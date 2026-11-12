@@ -42,9 +42,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/hoe")
     .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
-    .item((seedItem) => {
-      seedItem.texture("society:item/ancient_seed");
-    });
+    .noItem();
   e
     .create("society:tubabacco_leaf", "crop")
     .age(9, (builder) => {
@@ -66,9 +64,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/hoe")
     .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
-    .item((seedItem) => {
-      seedItem.texture("society:item/tubabacco_seed");
-    });
+    .noItem();
 
   e
     .create("brewery:hop_trellis", "crop")
@@ -88,9 +84,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/hoe")
     .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
-    .item((seedItem) => {
-      seedItem.texture("brewery:item/hops_seeds");
-    });
+    .noItem();
 
   e
     .create("society:blueberry", "crop")
@@ -111,9 +105,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/hoe")
     .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
-    .item((seedItem) => {
-      seedItem.texture("society:item/blueberry_seeds");
-    });
+    .noItem();
   e
     .create("society:cranberry", "crop")
     .age(5, (builder) => {
@@ -131,9 +123,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/hoe")
     .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
-    .item((seedItem) => {
-      seedItem.texture("society:item/cranberry_seeds");
-    });
+    .noItem();
   e
     .create("society:eggplant", "crop")
     .age(6, (builder) => {
@@ -152,9 +142,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/hoe")
     .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
-    .item((seedItem) => {
-      seedItem.texture("society:item/eggplant_seeds");
-    });
+    .noItem();
 
   e
     .create("society:carrot", "crop")
@@ -175,9 +163,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/hoe")
     .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
-    .item((seedItem) => {
-      seedItem.texture("society:item/carrot_seed");
-    });
+    .noItem();
 
   e
     .create("society:potato", "crop")
@@ -198,9 +184,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/hoe")
     .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
-    .item((seedItem) => {
-      seedItem.texture("society:item/potato_seed");
-    });
+    .noItem();
 
   e
     .create("society:onion", "crop")
@@ -218,9 +202,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/hoe")
     .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
-    .item((seedItem) => {
-      seedItem.texture("society:item/onion_seed");
-    });
+    .noItem();
 
   e
     .create("society:sweet_potato", "crop")
@@ -239,9 +221,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/hoe")
     .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
-    .item((seedItem) => {
-      seedItem.texture("society:item/sweet_potato_seed");
-    });
+    .noItem();
 
   e
     .create("society:peanut", "crop")
@@ -262,9 +242,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/hoe")
     .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
-    .item((seedItem) => {
-      seedItem.texture("society:item/peanut_seed");
-    });
+    .noItem();
 
   e
     .create("society:berry_bush")
@@ -318,7 +296,30 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/hoe")
     .tagBlock("minecraft:crops")
     .randomTick((tick) => {})
-    .item((seedItem) => {
-      seedItem.texture("society:item/sparkpod_spores");
-    });
+    .noItem();
+});
+
+// Seed items keep their 1.20.1 ids (<crop id>_seed). KubeJS 7 would name them <crop id>_seeds,
+// and recipes, shops and quests of the pack use the old ids.
+StartupEvents.registry("item", (e) => {
+  const $ItemNameBlockItem = Java.loadClass("net.minecraft.world.item.ItemNameBlockItem");
+  const $ItemProperties = Java.loadClass("net.minecraft.world.item.Item$Properties");
+  const $BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
+  const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
+  [
+    "society:ancient_fruit",
+    "society:tubabacco_leaf",
+    "brewery:hop_trellis",
+    "society:blueberry",
+    "society:cranberry",
+    "society:eggplant",
+    "society:carrot",
+    "society:potato",
+    "society:onion",
+    "society:sweet_potato",
+    "society:peanut",
+    "society:sparkpod",
+  ].forEach((cropId) => {
+    e.createCustom(cropId + "_seed", () => new $ItemNameBlockItem($BuiltInRegistries.BLOCK.get($ResourceLocation.parse(cropId)), new $ItemProperties()));
+  });
 });

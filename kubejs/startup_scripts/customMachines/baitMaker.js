@@ -68,7 +68,7 @@ const baitFish = [
   "unusualfishmod:raw_duality_damselfish",
   "unusualfishmod:raw_blind_sailfin",
   "unusualfishmod:raw_circus_fish",
-  "unusualfishmod:raw_snowflake",
+  "unusualfishmod:raw_frosty_fin",
   "unusualfishmod:raw_aero_mono",
   "unusualfishmod:raw_hatchetfish",
   "unusualfishmod:raw_spindlefish",

@@ -1,6 +1,6 @@
 console.info("[SOCIETY] addBonemeal.js loaded");
 
-BlockEvents.rightClicked(["meadow:eriophorum_tall", "meadow:small_fir"], (e) => {
+BlockEvents.rightClicked(["meadow:tall_eriophorum", "meadow:small_fir"], (e) => {
   const { player, item, server, block } = e;
   if (
     player.getHeldItem("main_hand") == "minecraft:bone_meal" &&

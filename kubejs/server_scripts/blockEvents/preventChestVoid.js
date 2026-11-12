@@ -20,7 +20,7 @@ BlockEvents.rightClicked(
     "quark:nether_brick_chest",
     "quark:purpur_chest",
     "quark:prismarine_chest",
-    "quark:jungle_trapped_chest",
+    "quark:trapped_jungle_chest",
   ],
   (e) => {
     const { block, player, hand, item, server } = e;

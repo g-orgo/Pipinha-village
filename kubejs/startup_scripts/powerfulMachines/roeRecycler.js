@@ -105,26 +105,13 @@ StartupEvents.registry("block", (event) => {
     })
     .parentModel("society:block/kubejs/roe_recycler")
     .blockEntity((blockInfo) => {
-      blockInfo.inventory(9, 1);
+      blockInfo.inventory("inventory", Direction.ALL_SET, 9, 1);
       blockInfo.serverTicking();
       blockInfo.tickFrequency(20);
       blockInfo.tickOffset(0);
       global.portBeTicks["society:roe_recycler"] = (entity) => {
         global.handleRoeRecycler(entity);
       };
-        blockInfo.rightClickOpensInventory();
-      blockInfo.attachCapability(
-        CapabilityBuilder.ITEM.blockEntity()
-          .insertItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.insertItem(slot, stack, simulate)
-          )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
-          )
-          .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
-      );
+        blockInfo.rightClickOpensInventory("inventory");
     });
 });

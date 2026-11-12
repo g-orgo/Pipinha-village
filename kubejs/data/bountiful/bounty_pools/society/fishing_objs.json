@@ -90,7 +90,7 @@
 		},
 		"fishing_raw_snowflake": {
 			"type": "minecraft:item",
-			"content": "unusualfishmod:raw_snowflake",
+			"content": "unusualfishmod:raw_frosty_fin",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {

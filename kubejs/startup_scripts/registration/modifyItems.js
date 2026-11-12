@@ -37,10 +37,8 @@ ItemEvents.modification((e) => {
   });
   e.modify(
     [
-      "numismatics:ancient_coin",
-      "numismatics:prismatic_coin",
-      "society:ancient_fruit_seed",
       "society:ancient_fruit",
+      "society:ancient_fruit_seed",
       "society:sunlit_crystal",
       "society:plushie_wand",
       "society:treasure_totem",

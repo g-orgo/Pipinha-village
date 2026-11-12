@@ -568,7 +568,7 @@ StartupEvents.registry("block", (event) => {
     .soundType("copper")
     .parentModel("society:block/kubejs/artisan_hopper")
     .blockEntity((blockInfo) => {
-      blockInfo.inventory(9, 2);
+      blockInfo.inventory("inventory", Direction.ALL_SET, 9, 2);
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTicking();
       blockInfo.tickFrequency(600);
@@ -576,23 +576,7 @@ StartupEvents.registry("block", (event) => {
       global.portBeTicks["society:artisan_hopper"] = (entity) => {
         global.artisanHopperScan(entity, 3);
       };
-      blockInfo.rightClickOpensInventory();
-      blockInfo.attachCapability(
-        CapabilityBuilder.ITEM.blockEntity()
-          .insertItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.insertItem(slot, stack, simulate)
-          )
-          .extractItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.extractItem(slot, stack, simulate)
-          )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
-          )
-          .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
-      );
+      blockInfo.rightClickOpensInventory("inventory");
     });
 });
 
@@ -622,7 +606,7 @@ StartupEvents.registry("block", (event) => {
     .soundType("copper")
     .parentModel("society:block/kubejs/mini_artisan_hopper")
     .blockEntity((blockInfo) => {
-      blockInfo.inventory(9, 2);
+      blockInfo.inventory("inventory", Direction.ALL_SET, 9, 2);
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTicking();
       blockInfo.tickFrequency(600);
@@ -630,22 +614,6 @@ StartupEvents.registry("block", (event) => {
       global.portBeTicks["society:mini_artisan_hopper"] = (entity) => {
         global.artisanHopperScan(entity, 1);
       };
-      blockInfo.rightClickOpensInventory();
-      blockInfo.attachCapability(
-        CapabilityBuilder.ITEM.blockEntity()
-          .insertItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.insertItem(slot, stack, simulate)
-          )
-          .extractItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.extractItem(slot, stack, simulate)
-          )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
-          )
-          .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
-      );
+      blockInfo.rightClickOpensInventory("inventory");
     });
 });

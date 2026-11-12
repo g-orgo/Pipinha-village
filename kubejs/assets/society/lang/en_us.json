@@ -978,5 +978,16 @@
   "society.profession.already": "You are already a %s.",
   "society.profession.limit": "Profession limit reached (%s). You already follow: %s.",
   "society.specialty.twins": "Twins! An extra baby was born.",
-  "society.cook.first_dish": "First time cooking %1$s! The dish earned you §f●§6 %2$s and %3$s Cooking experience."
+  "society.cook.first_dish": "First time cooking %1$s! The dish earned you §f●§6 %2$s and %3$s Cooking experience.",
+  "item.society.ancient_fruit_seed": "Ancient Fruit Seed",
+  "item.society.tubabacco_leaf_seed": "Tubabacco Leaf Seed",
+  "item.society.blueberry_seed": "Blueberry Seed",
+  "item.society.cranberry_seed": "Cranberry Seed",
+  "item.society.eggplant_seed": "Eggplant Seed",
+  "item.society.carrot_seed": "Carrot Seed",
+  "item.society.potato_seed": "Potato Seed",
+  "item.society.onion_seed": "Onion Seed",
+  "item.society.sweet_potato_seed": "Sweet Potato Seed",
+  "item.society.peanut_seed": "Peanut Seed",
+  "item.society.sparkpod_seed": "Sparkpod Seed"
 }

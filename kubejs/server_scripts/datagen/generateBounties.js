@@ -150,7 +150,7 @@
 //     "aquaculture:perch",
 //     "farm_and_charm:barley",
 //     "minecraft:cod",
-//     "unusualfishmod:raw_snowflake",
+//     "unusualfishmod:raw_frosty_fin",
 //   ]);
 //   createDecree("cooking", Ingredient.of("#society:dish").itemIds, 3, 256);
 //   createDecree("fishing", Ingredient.of("#minecraft:fishes").itemIds, 4, 128);

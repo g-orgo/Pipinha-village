@@ -104,7 +104,7 @@ StartupEvents.registry("block", (event) => {
       state.set(integerProperty.create("fill", 0, 4), 0);
     })
     .blockEntity((blockInfo) => {
-      blockInfo.inventory(9, 1);
+      blockInfo.inventory("inventory", Direction.ALL_SET, 9, 1);
       blockInfo.initialData({ fill: "0" });
       blockInfo.serverTicking();
       blockInfo.tickFrequency(300);
@@ -113,18 +113,6 @@ StartupEvents.registry("block", (event) => {
         const { inventory, block, level } = entity;
         global.runFeedingTrough(entity, inventory, block, level);
       };
-        blockInfo.rightClickOpensInventory();
-      blockInfo.attachCapability(
-        CapabilityBuilder.ITEM.blockEntity()
-          .insertItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.insertItem(slot, stack, simulate)
-          )
-          .extractItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.extractItem(slot, stack, simulate)
-          )
-          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
-          .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
-      );
+        blockInfo.rightClickOpensInventory("inventory");
     });
 });

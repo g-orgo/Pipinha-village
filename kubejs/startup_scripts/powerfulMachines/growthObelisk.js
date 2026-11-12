@@ -41,7 +41,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("stone")
     .parentModel("society:block/kubejs/growth_obelisk/lower")
     .blockEntity((blockInfo) => {
-      blockInfo.inventory(9, 2);
+      blockInfo.inventory("inventory", Direction.ALL_SET, 9, 2);
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTicking();
       blockInfo.tickFrequency(artMachineTickRate);
@@ -49,19 +49,7 @@ StartupEvents.registry("block", (e) => {
       global.portBeTicks["society:growth_obelisk"] = (entity) => {
         global.runGrowthObelisk(entity, 4);
       };
-        blockInfo.rightClickOpensInventory();
-      blockInfo.attachCapability(
-        CapabilityBuilder.ITEM.blockEntity()
-          .insertItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.insertItem(slot, stack, simulate)
-          )
-          .extractItem((blockEntity, slot, stack, simulate) =>
-            blockEntity.inventory.extractItem(slot, stack, simulate)
-          )
-          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
-          .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
-      );
+        blockInfo.rightClickOpensInventory("inventory");
     });
   e
     .create("society:growth_obelisk_upper", "cardinal")

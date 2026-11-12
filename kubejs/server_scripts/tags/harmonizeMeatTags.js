@@ -86,9 +86,9 @@ const SUNLIT_PLAIN_COOKED_TAGS = [
 
 // Items that are not meat (or are a finished dish) but sat in the generic meat tags.
 const SUNLIT_NOT_GENERIC_MEAT = [
-  "miners_delight:spider_leg",
-  "miners_delight:arthropod",
-  "miners_delight:crunchy_bar",
+  "minersdelight:spider_leg",
+  "minersdelight:arthropod",
+  "minersdelight:crunchy_bar",
   "minecraft:rotten_flesh",
   "candlelight:beef_tartare",
 ];

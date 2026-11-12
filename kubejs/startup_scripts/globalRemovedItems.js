@@ -617,7 +617,7 @@ global.removedItems = [
   "create_central_kitchen:truffle_pie_slice",
   "create_central_kitchen:cherry_pie_slice",
   "create_central_kitchen:mulberry_pie_slice",
-  "create_central_kitchen:chocolate_cake_slice",
+  "bakery:chocolate_cake_slice",
   "create_central_kitchen:pumpkin_cake_slice",
   "create_central_kitchen:honey_cake_slice",
   "create_central_kitchen:aloe_cake_slice",

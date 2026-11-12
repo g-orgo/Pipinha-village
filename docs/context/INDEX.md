@@ -19,3 +19,4 @@
 - `state.md`: o que está implementado e em andamento agora.
 - `../PUBLICAR.md`: como gerar o zip de distribuição e publicar (CurseForge, Modrinth, permissão do autor original).
 - `history.md`: log append-only de unidades concluídas.
+- Migração para 1.21.1: vive na instância `../Pipinha's Village` (`docs/migracao/PLANO.md`); aqui ficam só as tabelas de origem em `../migracao/`.

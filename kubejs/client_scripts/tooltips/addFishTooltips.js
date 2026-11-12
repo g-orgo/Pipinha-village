@@ -1,4 +1,5 @@
-ItemEvents.modifyTooltips((tooltip) => {
+ItemEvents.modifyTooltips((event) => {
+  const tooltip = global.guardItemEvent(event);
   const yearRound = ['aquaculture:minnow', 'aquaculture:carp', 'aquaculture:bluegill', 'society:neptuna']
   let springFish = [];
   let summerFish = [];

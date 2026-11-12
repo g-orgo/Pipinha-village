@@ -1,4 +1,5 @@
-ItemEvents.modification((e) => {
+ItemEvents.modification((event) => {
+  const e = global.guardItemEvent(event);
   e.modify("*", (item) => {
     // 1.21.1: KJS 7 has no item.maxDamage on ItemModifications, disabled (see report): item.maxDamage *= 3;
   });
@@ -64,9 +65,6 @@ ItemEvents.modification((e) => {
       "society:moon_statue",
       "society:roe_recycler",
       "minecraft:enchanting_table",
-      "domesticationinnovation:collar_tag",
-      "domesticationinnovation:wayward_lantern",
-      "domesticationinnovation:drum",
       "society:spinel"
     ],
     (item) => {

@@ -1,4 +1,5 @@
-ItemEvents.modifyTooltips((tooltip) => {
+ItemEvents.modifyTooltips((event) => {
+  const tooltip = global.guardItemEvent(event);
 
   const artifactTooltips = [
     {
@@ -1108,18 +1109,6 @@ ItemEvents.modifyTooltips((tooltip) => {
     Text.translatable("item.society.net_bobber.description").gray()
   );
   tooltip.add(
-    "domesticationinnovation:collar_tag",
-    Text.translatable("item.society.collar_tag.description").gray()
-  );
-  tooltip.add(
-    "domesticationinnovation:drum",
-    Text.translatable("item.society.drum.description").gray()
-  );
-  tooltip.add(
-    "domesticationinnovation:wayward_lantern",
-    Text.translatable("item.society.wayward_lantern.description").gray()
-  );
-  tooltip.add(
     "society:animal_cracker",
     Text.translatable("item.society.animal_cracker.description").gray()
   );
@@ -1158,9 +1147,6 @@ ItemEvents.modifyTooltips((tooltip) => {
   });
   [
     "society:the_red_and_the_black",
-    "domesticationinnovation:drum",
-    "domesticationinnovation:wayward_lantern",
-    "domesticationinnovation:collar_tag",
     "minecraft:enchanting_table",
   ].forEach((item) => {
     getMasteryTooltip(item, "adventuring")

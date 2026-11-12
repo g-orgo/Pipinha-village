@@ -79,7 +79,11 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   1546 arquivos (lista em `tools/kjsport/society_jar_assets.txt`), som `the_box` no sounds.json.
   Commit 6f678ad8 (branch 1.21.1): tudo abaixo pronto, Rhino 380/380; dados podados por
   `tools/dataport/prune_removed.py`. Removido sem substituto (dono decidir): tapper da wise oak (dava lótus negra).
-  Esperando o 2º launch do dono. Pronto: `tools/kjsport/port_models.py` (modelJson/model -> parentModel/modelGenerator, blockstateJson ->
+  Depois: 1507e134 (2º launch: itemitem, cache de propriedades, morango nativo, getClass) e acb72cd2
+  (3º launch: inventário/fluido via attachments do KJS 7 no lugar do PowerfulJS; sementes recriadas com o
+  id antigo `<crop>_seed` porque o KJS 7 força `_seeds`; renomes revisados em `tools/kjsport/IDSCAN.md`).
+  Sobra: ~1400 refs a mods ausentes (fantasyfurniture, nethervinery, species, trials, youkai...) em tabelas;
+  corrigir só o que aparecer no log. Texturas sem par: 221 (IDSCAN). Esperando o 4º launch (com mundo). Pronto: `tools/kjsport/port_models.py` (modelJson/model -> parentModel/modelGenerator, blockstateJson ->
   arquivos estáticos em `kubejs/assets`, serverTick -> serverTicking + `global.portBeTicks` +
   `server_scripts/zz_port_be_ticks.js` com BlockEvents.blockEntityTick, fluidos thick/thin, sons botania).
   Erros de cascata esperados a sumir com o registro: `numismatics:neptunium_coin`, `society:neptuna`, `froggy_helm`.

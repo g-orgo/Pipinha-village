@@ -354,7 +354,8 @@ const getLongwingTooltips = (e) => {
 // Item.of('longwings:moth', '{size:1.0f,variant:"small_emerald"}')
 ItemEvents.dynamicTooltips("pipinha:longwing", (e) => getLongwingTooltips(e));
 
-ItemEvents.modifyTooltips((tooltip) => {
+ItemEvents.modifyTooltips((event) => {
+  const tooltip = global.guardItemEvent(event);
   const coinTooltips = [
     "numismatics:spur",
     "numismatics:bevel",

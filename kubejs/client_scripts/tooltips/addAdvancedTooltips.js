@@ -336,11 +336,11 @@ global.ageableProductInputs.forEach((product) => {
     });
 });
 
-ItemEvents.modifyTooltips((tooltip) => {
+ItemEvents.modifyTooltips((event) => {
+    const tooltip = global.guardItemEvent(event);
     global.plushies.forEach((plush) => {
         tooltip.add(plush, (text) => text.dynamic("pipinha:plushie"));
     });
-    tooltip.add("society:villager_invitation", (text) => text.dynamic("pipinha:villager_invitation"));
     tooltip.add("society:villager_home", (text) => text.dynamic("pipinha:villager_home"));
     tooltip.add("society:fish_pond", (text) => text.dynamic("pipinha:fish_pond"));
     tooltip.add("society:caterpillar_eggs", (text) => text.dynamic("pipinha:caterpillar_eggs"));

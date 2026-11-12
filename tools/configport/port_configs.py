@@ -730,7 +730,13 @@ def merge_simple(old_text, new_text, parser):
     return "".join(lines), changes
 
 
-def merge_toml_text(old_text, new_text, modids):
+# Lists whose format changed in 1.21.1: keep the new default list (Quark refuses 1.20.1-style lists).
+KEEP_NEW_LISTS = {"quark-common.toml"}
+# Lists that gained new safety entries in 1.21.1: keep old entries and add the new defaults.
+UNION_LISTS = {"carryon-common.toml"}
+
+
+def merge_toml_text(old_text, new_text, modids, name=""):
     """Textual TOML merge used by the generic pass and by step 1."""
     old_data = tomllib.loads(old_text)
     new_data = tomllib.loads(new_text)
@@ -750,6 +756,13 @@ def merge_toml_text(old_text, new_text, modids):
             continue
         old_cmp = rename_value(old_val)
         if values_equal(old_cmp, new_val):
+            continue
+        if isinstance(old_val, list) and name in KEEP_NEW_LISTS:
+            continue
+        if isinstance(old_val, list) and name in UNION_LISTS:
+            old_val = old_val + [x for x in new_val if x not in old_val]
+            replacements.append((start, end, toml_literal(old_val)))
+            changes.append((format_path(key), "union", new_raw))
             continue
         if isinstance(old_val, list):
             filtered = filter_list(old_val, modids, dropped, "")
@@ -923,7 +936,7 @@ def main():
         try:
             old_text = read_text(old_path)
             new_text = read_text(common_path)
-            merged, changes, dropped = merge_toml_text(old_text, new_text, modids)
+            merged, changes, dropped = merge_toml_text(old_text, new_text, modids, common_path.name)
         except Exception as exc:
             stats["errors"].append((rel_common, "step1 merge error: " + str(exc)[:100]))
             continue
@@ -1006,7 +1019,7 @@ def main():
                 try:
                     old_text = read_text(old_path)
                     new_text = read_text(new_path)
-                    merged, changes, dropped = merge_toml_text(old_text, new_text, modids)
+                    merged, changes, dropped = merge_toml_text(old_text, new_text, modids, new_path.name)
                 except Exception as exc:
                     stats["errors"].append((rel, "parse error: " + str(exc)[:100]))
                     continue

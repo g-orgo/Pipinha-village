@@ -89,7 +89,7 @@
 	[automation.pistons_move_tile_entities]
 		"Enable Chests Moving Together" = true
 		"Render Blacklist" = ["psi:programmer", "botania:starfield"]
-		"Movement Blacklist" = ["minecraft:spawner", "minecraft:ender_chest", "minecraft:enchanting_table", "minecraft:trapped_chest", "quark:spruce_trapped_chest", "quark:birch_trapped_chest", "quark:jungle_trapped_chest", "quark:acacia_trapped_chest", "quark:dark_oak_trapped_chest"]
+		"Movement Blacklist" = ["minecraft:spawner", "minecraft:trial_spawner", "minecraft:vault", "integrateddynamics:cable", "randomthings:blockbreaker", "minecraft:ender_chest", "minecraft:enchanting_table", "#minecraft:ceiling_hanging_signs", "#c:chests/trapped", "endergetic:bolloom_bud"]
 		"Namespace Movement Blacklist" = []
 		"Delayed Update List" = ["minecraft:dispenser", "minecraft:dropper"]
 
@@ -290,7 +290,7 @@
 		"Check Hotbar" = false
 		"Unstackables Only" = false
 		#Any items you place in this list will be ignored by the restock feature
-		"Ignored Items" = []
+		"Ignored Items" = ["quark:trowel", "botania:exchange_rod", "botania:dirt_rod", "botania:skydirt_rod", "botania:cobble_rod"]
 		#This feature disables itself if any of the following mods are loaded:
 		# - inventorytweaks
 		#This is done to prevent content overlap.
@@ -362,7 +362,7 @@
 		"Normal Upgrade Cost" = 10
 		"Limit Break Upgrade Extra Cost" = 20
 		"Max Limit Break Levels" = 1
-		"Valid Enchantments" = ["minecraft:feather_falling", "minecraft:thorns", "minecraft:sharpness", "minecraft:smite", "minecraft:bane_of_arthropods", "minecraft:knockback", "minecraft:fire_aspect", "minecraft:looting", "minecraft:sweeping", "minecraft:efficiency", "minecraft:unbreaking", "minecraft:fortune", "minecraft:power", "minecraft:punch", "minecraft:luck_of_the_sea", "minecraft:lure", "minecraft:loyalty", "minecraft:riptide", "minecraft:impaling", "minecraft:piercing"]
+		"Valid Enchantments" = ["minecraft:feather_falling", "minecraft:thorns", "minecraft:sharpness", "minecraft:smite", "minecraft:bane_of_arthropods", "minecraft:knockback", "minecraft:fire_aspect", "minecraft:looting", "minecraft:sweeping_edge", "minecraft:efficiency", "minecraft:unbreaking", "minecraft:fortune", "minecraft:power", "minecraft:punch", "minecraft:luck_of_the_sea", "minecraft:lure", "minecraft:loyalty", "minecraft:riptide", "minecraft:impaling", "minecraft:piercing", "minecraft:density", "minecraft:breach", "minecraft:wind_burst"]
 		"Overleveled Books Glow Rainbow" = true
 		#When enabled, Efficiency VI Diamond and Netherite pickaxes can instamine Deepslate when under Haste 2
 		"Deepslate Tweak" = true
@@ -812,7 +812,7 @@
 	[world.big_stone_clusters]
 		#Blocks that stone clusters can replace. If you want to make it so it only replaces in one dimension,
 		#do "block|dimension", as we do for netherrack and end stone by default.
-		"Blocks To Replace" = ["minecraft:stone", "minecraft:andesite", "minecraft:diorite", "minecraft:granite", "minecraft:netherrack|minecraft:the_nether", "minecraft:end_stone|minecraft:the_end", "quark:marble", "quark:limestone", "quark:jasper", "quark:slate"]
+		"Blocks To Replace" = ["minecraft:stone", "minecraft:andesite", "minecraft:diorite", "minecraft:granite", "minecraft:netherrack|minecraft:the_nether", "minecraft:end_stone|minecraft:the_end", "quark:limestone", "quark:jasper", "quark:slate"]
 
 		[world.big_stone_clusters.calcite]
 			Enabled = true
@@ -864,7 +864,7 @@
 
 				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
 				[world.big_stone_clusters.limestone.biomes.tags]
-					"Biome Tags" = ["forge:is_swamp", "minecraft:is_ocean"]
+					"Biome Tags" = ["c:is_swamp", "minecraft:is_ocean"]
 					"Is Blacklist" = false
 
 				#Biome names this should spawn in. Must match both this and 'types' to spawn.
@@ -893,7 +893,7 @@
 
 				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
 				[world.big_stone_clusters.jasper.biomes.tags]
-					"Biome Tags" = ["minecraft:is_badlands", "forge:is_sandy"]
+					"Biome Tags" = ["minecraft:is_badlands", "c:is_sandy"]
 					"Is Blacklist" = false
 
 				#Biome names this should spawn in. Must match both this and 'types' to spawn.
@@ -922,7 +922,7 @@
 
 				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
 				[world.big_stone_clusters.shale.biomes.tags]
-					"Biome Tags" = ["forge:is_snowy"]
+					"Biome Tags" = ["c:is_snowy", "c:is_cold"]
 					"Is Blacklist" = false
 
 				#Biome names this should spawn in. Must match both this and 'types' to spawn.
@@ -973,7 +973,7 @@
 
 				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
 				[world.blossom_trees.blue.biome_config.tags]
-					"Biome Tags" = ["forge:is_snowy"]
+					"Biome Tags" = ["c:is_snowy"]
 					"Is Blacklist" = false
 
 				#Biome names this should spawn in. Must match both this and 'types' to spawn.
@@ -990,7 +990,7 @@
 
 				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
 				[world.blossom_trees.lavender.biome_config.tags]
-					"Biome Tags" = ["forge:is_swamp"]
+					"Biome Tags" = ["c:is_swamp"]
 					"Is Blacklist" = false
 
 				#Biome names this should spawn in. Must match both this and 'types' to spawn.
@@ -1024,7 +1024,7 @@
 
 				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
 				[world.blossom_trees.yellow.biome_config.tags]
-					"Biome Tags" = ["forge:is_plains"]
+					"Biome Tags" = ["c:is_plains"]
 					"Is Blacklist" = false
 
 				#Biome names this should spawn in. Must match both this and 'types' to spawn.
@@ -1124,11 +1124,11 @@
 
 			[world.corundum.generation_settings.dimensions]
 				"Is Blacklist" = false
-				Dimensions = ["society:skull_cavern"]
+				Dimensions = ["minecraft:overworld"]
 
 				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
 				[world.corundum.generation_settings.biomes.tags]
-					"Biome Tags" = ["society:is_skull_cavern"]
+					"Biome Tags" = ["minecraft:is_ocean"]
 					"Is Blacklist" = false
 
 				#Biome names this should spawn in. Must match both this and 'types' to spawn.
@@ -1153,7 +1153,7 @@
 		"On Water Chance" = 0.0
 		"Sparse Biome Rarity" = 12
 		#Tags that define which biomes can have which wood types. These are all biome tags under the Quark namespace
-		"Biome Tags" = ["quark:has_fallen_acacia=minecraft:acacia_log", "quark:has_fallen_birch=minecraft:birch_log", "quark:has_fallen_cherry=minecraft:cherry_log", "quark:has_fallen_dark_oak=minecraft:dark_oak_log", "quark:has_fallen_jungle=minecraft:jungle_log", "quark:has_fallen_mangrove=minecraft:mangrove_log", "quark:has_fallen_oak=minecraft:oak_log", "quark:has_fallen_spruce=minecraft:spruce_log"]
+		"Biome Tags" = ["has_fallen_acacia=minecraft:acacia_log", "has_fallen_birch=minecraft:birch_log", "has_fallen_cherry=minecraft:cherry_log", "has_fallen_dark_oak=minecraft:dark_oak_log", "has_fallen_jungle=minecraft:jungle_log", "has_fallen_mangrove=minecraft:mangrove_log", "has_fallen_oak=minecraft:oak_log", "has_fallen_spruce=minecraft:spruce_log"]
 
 		[world.fallen_logs.dimensions]
 			"Is Blacklist" = false
@@ -1174,7 +1174,7 @@
 
 		[world.monster_box.dimensions]
 			"Is Blacklist" = false
-			Dimensions = ["minecraft:overworld", "society:skull_cavern"]
+			Dimensions = ["minecraft:overworld"]
 
 	[world.nether_obsidian_spikes]
 		#The chance for a chunk to contain spikes (1 is 100%, 0 is 0%)
@@ -1476,7 +1476,7 @@
 
 				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
 				[mobs.stonelings.spawn_config.biomes.tags]
-					"Biome Tags" = ["forge:is_void", "minecraft:is_nether", "minecraft:is_end"]
+					"Biome Tags" = ["c:is_void", "minecraft:is_nether", "minecraft:is_end"]
 					"Is Blacklist" = true
 
 				#Biome names this should spawn in. Must match both this and 'types' to spawn.
@@ -1508,7 +1508,7 @@
 
 				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
 				[mobs.toretoise.spawn_config.biomes.tags]
-					"Biome Tags" = ["forge:is_void", "minecraft:is_nether", "minecraft:is_end"]
+					"Biome Tags" = ["c:is_void", "minecraft:is_nether", "minecraft:is_end"]
 					"Is Blacklist" = true
 
 				#Biome names this should spawn in. Must match both this and 'types' to spawn.
@@ -1519,7 +1519,7 @@
 	[mobs.wraith]
 		#List of sound sets to use with wraiths.
 		#Three sounds must be provided per entry, separated by | (in the format idle|hurt|death). Leave blank for no sound (i.e. if a mob has no ambient noise)
-		"Wraith Sounds" = ["entity.sheep.ambient|entity.sheep.hurt|entity.sheep.death", "entity.cow.ambient|entity.cow.hurt|entity.cow.death", "entity.pig.ambient|entity.pig.hurt|entity.pig.death", "entity.chicken.ambient|entity.chicken.hurt|entity.chicken.death", "entity.horse.ambient|entity.horse.hurt|entity.horse.death", "entity.cat.ambient|entity.cat.hurt|entity.cat.death", "entity.wolf.ambient|entity.wolf.hurt|entity.wolf.death", "entity.villager.ambient|entity.villager.hurt|entity.villager.death", "entity.polar_bear.ambient|entity.polar_bear.hurt|entity.polar_bear.death", "entity.zombie.ambient|entity.zombie.hurt|entity.zombie.death", "entity.skeleton.ambient|entity.skeleton.hurt|entity.skeleton.death", "entity.spider.ambient|entity.spider.hurt|entity.spider.death", "|entity.creeper.hurt|entity.creeper.death", "entity.endermen.ambient|entity.endermen.hurt|entity.endermen.death", "entity.zombie_pig.ambient|entity.zombie_pig.hurt|entity.zombie_pig.death", "entity.witch.ambient|entity.witch.hurt|entity.witch.death", "entity.blaze.ambient|entity.blaze.hurt|entity.blaze.death", "entity.llama.ambient|entity.llama.hurt|entity.llama.death", "|quark:entity.stoneling.cry|quark:entity.stoneling.die", "quark:entity.frog.idle|quark:entity.frog.hurt|quark:entity.frog.die"]
+		"Wraith Sounds" = ["entity.sheep.ambient|entity.sheep.hurt|entity.sheep.death", "entity.cow.ambient|entity.cow.hurt|entity.cow.death", "entity.pig.ambient|entity.pig.hurt|entity.pig.death", "entity.chicken.ambient|entity.chicken.hurt|entity.chicken.death", "entity.horse.ambient|entity.horse.hurt|entity.horse.death", "entity.cat.ambient|entity.cat.hurt|entity.cat.death", "entity.wolf.ambient|entity.wolf.hurt|entity.wolf.death", "entity.villager.ambient|entity.villager.hurt|entity.villager.death", "entity.polar_bear.ambient|entity.polar_bear.hurt|entity.polar_bear.death", "entity.zombie.ambient|entity.zombie.hurt|entity.zombie.death", "entity.skeleton.ambient|entity.skeleton.hurt|entity.skeleton.death", "entity.spider.ambient|entity.spider.hurt|entity.spider.death", "|entity.creeper.hurt|entity.creeper.death", "entity.enderman.ambient|entity.enderman.hurt|entity.enderman.death", "entity.zombified_piglin.ambient|entity.zombified_piglin.hurt|entity.zombified_piglin.death", "entity.witch.ambient|entity.witch.hurt|entity.witch.death", "entity.blaze.ambient|entity.blaze.hurt|entity.blaze.death", "entity.llama.ambient|entity.llama.hurt|entity.llama.death", "|quark:entity.stoneling.cry|quark:entity.stoneling.die", "minecraft:entity.frog.ambient|minecraft:entity.frog.hurt|minecraft:entity.frog.death"]
 
 		[mobs.wraith.spawn_config]
 			"Max Cost" = 0.7
@@ -1581,8 +1581,8 @@
 	[client.greener_grass]
 		"Affect Leaves" = true
 		"Affect Water" = false
-		"Block List" = ["minecraft:large_fern", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:fern", "minecraft:grass", "minecraft:potted_fern", "minecraft:sugar_cane"]
-		"Leaves List" = ["minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:oak_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:dark_oak_leaves", "atmospheric:rosewood_leaves", "atmospheric:morado_leaves", "atmospheric:yucca_leaves", "autumnity:maple_leaves", "minecraft:vine"]
+		"Block List" = ["minecraft:large_fern", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:fern", "minecraft:short_grass", "minecraft:potted_fern", "minecraft:sugar_cane", "environmental:giant_tall_grass", "grassslabs:grass_carpet", "grassslabs:grass_slab", "grassslabs:grass_stairs"]
+		"Leaves List" = ["minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:oak_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:dark_oak_leaves", "atmospheric:rosewood_leaves", "atmospheric:morado_leaves", "atmospheric:yucca_leaves", "autumnity:maple_leaves", "environmental:willow_leaves", "environmental:hanging_willow_leaves", "minecraft:vine", "valhelsia_structures:hanging_vines"]
 
 		[client.greener_grass.color_matrix]
 			R = [0.89, 0.0, 0.0]
@@ -1615,7 +1615,7 @@
 		#If set to false, item attributes will show in white or red if they're negative values.
 		"Show Upgrade Status" = true
 		"Animate Up Down Arrows" = true
-		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "minecraft:shield", "quark:pickarang", "supplementaries:slingshot", "supplementaries:bubble_blower", "farmersdelight:diamond_knife"]
+		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:mace", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "minecraft:shield", "quark:pickarang", "supplementaries:slingshot", "supplementaries:bubble_blower", "farmersdelight:diamond_knife", "the_bumblezone:stinger_spear", "the_bumblezone:crystal_cannon", "the_bumblezone:honey_crystal_shield", "the_bumblezone:honey_bee_leggings_2"]
 		#A list of additional stacks to display on each enchantment
 		#The format is as follows:
 		#enchant_id=item1,item2,item3...
@@ -1721,7 +1721,7 @@
 		"Village Spawn Nerf" = false
 		#Distance at which villages will spawn as normal. Effect scales linearly from world spawn
 		"Village Spawn Nerf Distance" = 7000
-		"Non Griefing Entities" = ["minecraft:enderman"]
+		"Non Griefing Entities" = ["minecraft:creeper", "minecraft:enderman"]
 		"Elytra Allowed Dimensions" = ["minecraft:the_end"]
 
 	[experimental.overlay_shader]
@@ -1909,7 +1909,7 @@
 		#Block/Item IDs to force-allow magnetism on, regardless of their crafting recipe
 		"Magnetic Whitelist" = ["minecraft:chipped_anvil", "minecraft:damaged_anvil", "minecraft:iron_horse_armor", "minecraft:chainmail_helmet", "minecraft:chainmail_boots", "minecraft:chainmail_leggings", "minecraft:chainmail_chestplate", "#minecraft:cauldrons"]
 		#Block/Item IDs to force-disable magnetism on, regardless of their crafting recipe
-		"Magnetic Blacklist" = ["minecraft:tripwire_hook", "minecraft:map"]
+		"Magnetic Blacklist" = ["minecraft:tripwire_hook", "minecraft:map", "#minecraft:all_hanging_signs", "#minecraft:hanging_signs"]
 		"Use Pre End Recipe" = false
 		#When true magnets will never push something that pistons cant push. Disable to have further control. This allows iron rods to break obsidian for example
 		"Use Piston Logic" = true
@@ -1973,7 +1973,7 @@
 		"Disallowed Enchantments" = []
 		#An array of influences each candle should apply. This list must be 16 elements long, and is in order of wool colors.
 		#A minus sign before an enchantment will make the influence decrease the probability of that enchantment.
-		"Influences List" = ["minecraft:unbreaking", "minecraft:fire_protection", "minecraft:knockback,minecraft:punch", "minecraft:feather_falling", "minecraft:looting,minecraft:fortune,minecraft:luck_of_the_sea", "minecraft:blast_protection", "minecraft:silk_touch,minecraft:channeling", "minecraft:bane_of_arthropods", "minecraft:protection", "minecraft:respiration,minecraft:loyalty,minecraft:infinity", "minecraft:sweeping,minecraft:multishot", "minecraft:efficiency,minecraft:sharpness,minecraft:lure,minecraft:power,minecraft:impaling,minecraft:quick_charge", "minecraft:aqua_affinity,minecraft:depth_strider,minecraft:riptide", "minecraft:thorns,minecraft:piercing", "minecraft:fire_aspect,minecraft:flame", "minecraft:smite,minecraft:projectile_protection"]
+		"Influences List" = ["minecraft:unbreaking", "minecraft:fire_protection", "minecraft:knockback,minecraft:punch", "minecraft:feather_falling", "minecraft:looting,minecraft:fortune,minecraft:luck_of_the_sea", "minecraft:blast_protection", "minecraft:silk_touch,minecraft:channeling", "minecraft:bane_of_arthropods", "minecraft:protection", "minecraft:respiration,minecraft:loyalty,minecraft:infinity", "minecraft:sweeping_edge,minecraft:multishot", "minecraft:efficiency,minecraft:sharpness,minecraft:lure,minecraft:power,minecraft:impaling,minecraft:quick_charge", "minecraft:aqua_affinity,minecraft:depth_strider,minecraft:riptide", "minecraft:thorns,minecraft:piercing", "minecraft:fire_aspect,minecraft:flame", "minecraft:smite,minecraft:projectile_protection"]
 		#An array of influences that other blocks should apply.
 		#Format is: "blockstate;strength;color;enchantments", i.e. "minecraft:sea_pickle[pickles=1,waterlogged=false];1;#008000;minecraft:aqua_affinity,minecraft:depth_strider,minecraft:riptide" (etc) or "minecraft:anvil[facing=north];#808080;-minecraft:thorns,minecraft:unbreaking" (etc)
 		"States To Influences" = []

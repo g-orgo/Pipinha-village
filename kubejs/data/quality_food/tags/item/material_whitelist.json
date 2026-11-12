@@ -18,7 +18,6 @@
     "aquaculture:starshell_turtle",
     "netherdepthsupgrade:soulsucker",
     "aquaculture:jellyfish",
-    "species:petrified_egg",
     "herbalbrews:dried_green_tea_leaf_block",
     "herbalbrews:black_tea_leaf_block",
     "herbalbrews:oolong_tea_leaf_block",
@@ -32,10 +31,6 @@
     "meadow:amethyst_cheese_wheel",
     "meadow:buffalo_cheese_wheel",
     "veggiesdelight:garlic_seed",
-    {
-      "id": "species:ichor_bottle",
-      "required": false
-    },
     {
       "id": "society:truffle",
       "required": false

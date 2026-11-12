@@ -30,12 +30,6 @@
         "maxCount": 1
       },
       {
-        "type": "species:wicked",
-        "maxCount": 3,
-        "minCount": 1,
-        "weight": 40
-      },
-      {
         "type": "minecraft:phantom",
         "maxCount": 2,
         "minCount": 1,

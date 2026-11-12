@@ -1,0 +1,26 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = create_world_screen
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1792881241573
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = world_type_button
+  is_hidden = true
+  anchor_point = vanilla
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = customize_world_type_button
+  is_hidden = true
+  anchor_point = vanilla
+}

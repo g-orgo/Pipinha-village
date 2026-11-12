@@ -34,12 +34,6 @@
         "maxCount": 4,
         "minCount": 4,
         "weight": 100
-      },
-      {
-        "type": "species:ghoul",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 25
       }
     ],
     "creature": [],

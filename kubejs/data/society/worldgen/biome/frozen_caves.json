@@ -46,12 +46,6 @@
         "weight": 20,
         "minCount": 1,
         "maxCount": 1
-      },
-      {
-        "type": "species:bewereager",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 30
       }
     ],
     "creature": [],

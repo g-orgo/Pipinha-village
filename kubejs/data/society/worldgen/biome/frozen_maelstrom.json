@@ -36,18 +36,6 @@
         "maxCount": 4
       },
       {
-        "type": "trials:breeze",
-        "weight": 40,
-        "minCount": 1,
-        "maxCount": 4
-      },
-      {
-        "type": "species:quake",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 20
-      },
-      {
         "type": "rottencreatures:immortal",
         "weight": 20,
         "minCount": 1,

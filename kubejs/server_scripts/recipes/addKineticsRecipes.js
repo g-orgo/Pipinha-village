@@ -28,7 +28,7 @@ ServerEvents.recipes((e) => {
   ], {
     B: "society:kinetic_blueprint",
     L: "oreganized:lead_ingot",
-    l: "meadow:fire_log",
+    l: "meadow:firewood",
   }).keepIngredient("society:kinetic_blueprint")
 
   e.shaped("create:steam_engine", [

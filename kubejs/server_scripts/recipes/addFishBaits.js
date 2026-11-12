@@ -1,6 +1,6 @@
 console.info("[SOCIETY] addFishBaits.js loaded");
 
-ServerEvents.generateData((e) => {
+ServerEvents.generateData("after_mods", (e) => {
   const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
   global.fish.forEach((fish) => {
     const splitFish = fish.item.split(":");
@@ -14,7 +14,7 @@ ServerEvents.generateData((e) => {
       else fishId = fishId.substring(4, fishId.length);
     }
     e.json(
-      $ResourceLocation.parse(`crabbersdelight:loot_tables/gameplay/crab_trap_loot/society/${fishId}_bait.json`),
+      $ResourceLocation.parse(`crabbersdelight:loot_table/gameplay/crab_trap_loot/${fishId}_bait.json`),
       {
         type: "minecraft:fishing",
         pools: [

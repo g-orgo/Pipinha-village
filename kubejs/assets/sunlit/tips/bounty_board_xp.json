@@ -1,5 +1,6 @@
 {
-	"tip": {
-		"translate": "sunlit.tip.bounty_board_xp"
-	}
+  "type": "tipsmod:simple",
+  "text": {
+    "translate": "sunlit.tip.bounty_board_xp"
+  }
 }

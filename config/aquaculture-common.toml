@@ -7,7 +7,7 @@
 	"Show Fillet recipes in JEI?" = true
 	# Default: 13
 	# Range: 0 ~ 63
-	"How many blocks below sea level Aquaculture fish can spawn" = 13
+	"How many blocks below sea level Aquaculture fish can spawn" = 0
 
 [neptunium_options]
 	"Enable recipes for Neptunium items?" = true

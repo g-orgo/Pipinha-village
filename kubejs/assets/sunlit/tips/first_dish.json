@@ -1,5 +1,6 @@
 {
-	"tip": {
-		"translate": "sunlit.tip.first_dish"
-	}
+  "type": "tipsmod:simple",
+  "text": {
+    "translate": "sunlit.tip.first_dish"
+  }
 }

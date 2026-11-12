@@ -34,7 +34,7 @@
 	#Should lead ore spawn dust clouds when broken without adjacent water?
 	leadDustCloud = true
 	#Pillagers have a chance to spawn with a lead bolt in their offhand
-	pillagerSpawnWithBolts = true
+	pillagerSpawnWithBolts = false
 	#Time in ticks molten lead waits until flowing downwards
 	# Default: 200
 	# Range: 0 ~ 2000

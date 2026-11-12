@@ -20,7 +20,7 @@ ServerEvents.recipes((e) => {
   e.smelting("society:rubber", "society:sap").xp(0.35);
   e.smelting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7);
   e.blasting("etcetera:bismuth_ingot", "create:crushed_raw_bismuth").xp(0.7);
-  e.smelting("quark:charcoal_block", "meadow:fire_log").xp(4.0);
+  e.smelting("quark:charcoal_block", "meadow:firewood").xp(4.0);
   e.custom({
     type: "farmersdelight:cutting",
     ingredients: [{ item: "herbalbrews:lavender" }],
@@ -196,34 +196,34 @@ ServerEvents.recipes((e) => {
     s: "society:mystic_syrup",
     m: "#society:mineral",
     d: "society:dried_mossberry",
-    f: "meadow:fire_log",
+    f: "meadow:firewood",
   });
   e.shaped("society:bubble_totem", ["fjf", "fsf", "fSf"], {
     s: "society:mystic_syrup",
     j: "society:ocean_jelly",
     S: "unusualfishmod:raw_sneep_snorp",
-    f: "meadow:fire_log",
+    f: "meadow:firewood",
   });
   e.shaped("society:dry_totem", ["ppp", "ptp", "fff"], {
     p: "society:fire_quartz",
     t: "society:truffle_oil",
-    f: "meadow:fire_log",
+    f: "meadow:firewood",
   });
   e.shaped("society:rain_totem", ["ppp", "ptp", "fff"], {
     p: "society:pine_tar",
     t: "society:truffle_oil",
-    f: "meadow:fire_log",
+    f: "meadow:firewood",
   });
   e.shaped("society:thunder_totem", ["ppp", "tat", "fff"], {
     p: "society:oak_resin",
     t: "society:truffle_oil",
     a: "society:amulet_of_light",
-    f: "meadow:fire_log",
+    f: "meadow:firewood",
   });
   // Earth Crystal
   e.shaped("society:tapper", [" C ", "lwl", " e "], {
     w: "meadow:wooden_bucket",
-    l: "meadow:fire_log",
+    l: "meadow:firewood",
     e: "society:earth_crystal",
     C: "minecraft:copper_block",
   });
@@ -232,10 +232,10 @@ ServerEvents.recipes((e) => {
     C: "minecraft:copper_block",
     e: "society:earth_crystal",
     p: "society:pine_tar",
-    f: "meadow:fire_log",
+    f: "meadow:firewood",
   });
   e.shaped("society:cheese_press", [" p ", "fef", "fff"], {
-    f: "meadow:fire_log",
+    f: "meadow:firewood",
     e: "society:earth_crystal",
     p: "society:pine_tar",
   });
@@ -258,7 +258,7 @@ ServerEvents.recipes((e) => {
     s: "meadow:alpine_salt",
   });
   e.shaped("society:loom", ["l  ", "l  ", "ltl"], {
-    l: "meadow:fire_log",
+    l: "meadow:firewood",
     t: "society:treated_log",
   });
   e.shaped("minecraft:beehive", ["ppp", "hhh", "pop"], {
@@ -283,7 +283,7 @@ ServerEvents.recipes((e) => {
   });
   e.shaped("4x farm_and_charm:silo_wood", ["lll", "rbr", "lel"], {
     b: "minecraft:barrel",
-    l: "meadow:fire_log",
+    l: "meadow:firewood",
     r: "society:oak_resin",
     e: "society:earth_crystal",
   });
@@ -303,7 +303,7 @@ ServerEvents.recipes((e) => {
     c: "minecraft:composter",
     f: "society:earth_crystal",
     p: "society:pine_tar",
-    F: "meadow:fire_log",
+    F: "meadow:firewood",
   });
   e.shaped("brewery:copper_brewingstation", ["tct", "cbc", "fcf"], {
     t: "society:pine_tar",
@@ -349,7 +349,7 @@ ServerEvents.recipes((e) => {
     I: "minecraft:gold_block",
     f: "society:battery",
     o: "minecraft:netherite_ingot",
-    F: "meadow:fire_log",
+    F: "meadow:firewood",
   });
   e.shaped("herbalbrews:cauldron", [" C ", "fcf", " f "], {
     c: "minecraft:cauldron",
@@ -361,17 +361,17 @@ ServerEvents.recipes((e) => {
     g: "minecraft:gold_block",
     j: "society:jade",
     s: "supplementaries:jar",
-    f: "meadow:fire_log",
+    f: "meadow:firewood",
   });
   e.shaped("society:preserves_jar", ["LLL", "LbL", "CiC"], {
     b: "minecraft:barrel",
-    L: "meadow:fire_log",
+    L: "meadow:firewood",
     C: "#c:storage_blocks/coal",
     i: "minecraft:copper_block",
   });
   e.shaped("society:dehydrator", ["LGL", "pbp", "LfL"], {
     b: "minecraft:barrel",
-    L: "meadow:fire_log",
+    L: "meadow:firewood",
     G: "society:raisins",
     f: "society:battery",
     p: "society:pine_tar",
@@ -383,12 +383,12 @@ ServerEvents.recipes((e) => {
   });
   e.shaped("society:recycling_machine", ["LIL", "fbf", "LIL"], {
     b: "minecraft:barrel",
-    L: "meadow:fire_log",
+    L: "meadow:firewood",
     f: "society:fire_quartz",
     I: "minecraft:iron_block",
   });
   e.shaped("society:mushroom_log", ["LLL", "LML", "mPm"], {
-    L: "meadow:fire_log",
+    L: "meadow:firewood",
     P: "society:mossberry_preserves",
     m: "society:mossberry",
     M: "farmersdelight:rich_soil",
@@ -530,7 +530,7 @@ ServerEvents.recipes((e) => {
     n: "minecraft:netherite_ingot",
     b: "society:battery",
     s: "society:sparkstone",
-    l: "meadow:fire_log",
+    l: "meadow:firewood",
   });
   e.shaped("society:artisan_hopper", ["zaz", "bhb", "nsn"], {
     a: "numismatics:ancient_coin",
@@ -590,7 +590,7 @@ ServerEvents.recipes((e) => {
     N: "aquaculture:neptunium_ingot",
     a: "society:aquamarine",
     C: "society:sunlit_pearl",
-    l: "meadow:fire_log",
+    l: "meadow:firewood",
   });
   e.shaped("society:bait_maker", [" S ", "asa", "lll"], {
     s: "society:seed_maker",
@@ -625,7 +625,7 @@ ServerEvents.recipes((e) => {
     I: "minecraft:iron_block",
     f: "minecraft:quartz_block",
     o: "society:oak_resin",
-    F: "meadow:fire_log",
+    F: "meadow:firewood",
   });
 
   // Jade
@@ -652,7 +652,7 @@ ServerEvents.recipes((e) => {
     P: "create:precision_mechanism",
   });
   e.shaped("society:juice_inserter", ["fff", "rFb", "fff"], {
-    f: "meadow:fire_log",
+    f: "meadow:firewood",
     F: "create:fluid_tank",
     b: "minecraft:bamboo_block",
     r: "society:rubber",
@@ -966,7 +966,7 @@ ServerEvents.recipes((e) => {
     L: "minecraft:leather",
     c: "society:cornucopia",
     b: "society:magic_bulb",
-    l: "meadow:fire_log"
+    l: "meadow:firewood"
   });
   e.shaped("society:mana_milker", ["rtr", "nMn", "lTl"], {
     t: "society:botanical_tribute",

@@ -4,8 +4,8 @@ console.info("[SOCIETY] lostCityCreatePalette.js loaded");
 // So afeta pecas padrao do Lost Cities (rodovias/pontes/trilhos). As cidades Sunlit usam o datapack
 // moonlight-global-datapacks/sunlit_towns, gerado por sunlit_tools/towns/convert.py.
 // Nunca colocar cobweb com peso 1000 aqui (vira predio abandonado).
-ServerEvents.generateData((e) => {
-  e.addJson(
+ServerEvents.generateData("after_mods", (e) => {
+  e.json(
     "lostcities:lostcities/palettes/common.json",
     {
       "palette": [

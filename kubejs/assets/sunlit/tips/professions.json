@@ -1,5 +1,6 @@
 {
-	"tip": {
-		"translate": "sunlit.tip.professions"
-	}
+  "type": "tipsmod:simple",
+  "text": {
+    "translate": "sunlit.tip.professions"
+  }
 }

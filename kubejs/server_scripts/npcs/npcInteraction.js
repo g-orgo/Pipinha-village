@@ -12,7 +12,11 @@ const dialogLengths = {
     wise_oak: { chatterLengths: [7.0, 5.0, 5.0, 5.0, 5.0, 8.0], giftResponseLengths: { loved: 0.0, liked: 0.0, neutral: 0.0, disliked: 0.0, hated: 0.0 } },
     witch: { chatterLengths: [7.0, 5.0, 6.0, 8.0, 6.0, 5.0], giftResponseLengths: { loved: 5.0, liked: 5.0, neutral: 5.0, disliked: 5.0, hated: 6.0 } },
 }
-const maxGifts = {
+// 1.21.1: enchantments need the server registries, so the table is built on first use, not at script load.
+let maxGiftsCache = null;
+const getMaxGifts = () => {
+  if (maxGiftsCache) return maxGiftsCache;
+  maxGiftsCache = {
     banker: "society:slouching_towards_artistry",
     blacksmith: Item.of(`justhammers:iron_hammer[minecraft:repair_cost=0, minecraft:custom_name='{"translate":"item.justhammers.aidens_hammer"}']`).enchant('minecraft:efficiency', 5).enchant('minecraft:fortune', 3),
     // 1.21.1: the blueprint keys go to minecraft:custom_data, the display text to the text components.
@@ -24,6 +28,8 @@ const maxGifts = {
     trader: "",
     witch: "society:auto_petter",
 }
+  return maxGiftsCache;
+};
 
 const getNpcKey = (customName) => {
     const startIndex = customName.indexOf("dialog.npc.");
@@ -70,7 +76,7 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
             player.stages.add("trader_clothing")
             server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} ${npcId}_unique_five_gift`);
         } else {
-            player.give(maxGifts[npcId])
+            player.give(getMaxGifts()[npcId])
             server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} ${npcId}_unique_five_gift`);
         }
         npcData.maxGifted = true

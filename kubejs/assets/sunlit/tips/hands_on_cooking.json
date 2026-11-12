@@ -1,5 +1,6 @@
 {
-	"tip": {
-		"translate": "sunlit.tip.hands_on_cooking"
-	}
+  "type": "tipsmod:simple",
+  "text": {
+    "translate": "sunlit.tip.hands_on_cooking"
+  }
 }

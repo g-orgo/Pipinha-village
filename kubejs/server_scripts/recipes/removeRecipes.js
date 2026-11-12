@@ -647,6 +647,8 @@ ServerEvents.recipes((e) => {
     "refurbished_furniture:meatlovers_pizza_slice",
   ];
   const removeById = [
+    // 1.21.1 Meadow renamed fire_log to firewood with a new 2 pine log -> 5 recipe; the pack recipe (6 raw logs) is meadow:fire_log
+    "meadow:firewood",
     "minecraft:sugar_from_sugar_cane",
     "minecraft:sugar_from_honey_bottle",
     "veggiesdelight:stuffed_zucchini_boat",

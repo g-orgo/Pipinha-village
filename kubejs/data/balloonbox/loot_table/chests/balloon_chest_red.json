@@ -263,7 +263,7 @@
               "add": false
             }
           ],
-          "name": "meadow:fire_log"
+          "name": "meadow:firewood"
         },
         {
           "type": "minecraft:item",

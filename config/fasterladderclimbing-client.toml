@@ -5,4 +5,4 @@ allowQuickDescension = true
 #Speed modifier. 0 is Vanilla speed, 10 is lightning speed.
 # Default: 4
 # Range: 0 ~ 10
-speedModifier = 4
+speedModifier = 2

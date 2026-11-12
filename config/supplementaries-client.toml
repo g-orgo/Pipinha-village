@@ -138,7 +138,7 @@
 	#Disable incompatible mods warning screen
 	no_incompatible_mods_screen = false
 	#Enable Quark style config button on main menu
-	configs_button = true
+	configs_button = false
 	#Make the config button open Moonlight's mod list, where every installed mod's config can be reached, instead of going straight to Supplementaries' own config
 	configs_button_opens_mod_list = true
 	#Config button Y offset

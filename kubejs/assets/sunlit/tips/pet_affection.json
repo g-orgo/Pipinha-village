@@ -1,5 +1,6 @@
 {
-	"tip": {
-		"translate": "sunlit.tip.pet_affection"
-	}
+  "type": "tipsmod:simple",
+  "text": {
+    "translate": "sunlit.tip.pet_affection"
+  }
 }

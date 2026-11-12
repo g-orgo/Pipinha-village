@@ -30,10 +30,10 @@ ServerEvents.recipes((e) => {
   });
   e.shaped("32x railways:track_oak", ["fif", "f f", "fif"], {
     i: "minecraft:iron_ingot",
-    f: "meadow:fire_log",
+    f: "meadow:firewood",
   });
   e.shaped("32x railways:track_oak", ["fif", "f f", "fif"], {
     i: "create:zinc_ingot",
-    f: "meadow:fire_log",
+    f: "meadow:firewood",
   });
 });

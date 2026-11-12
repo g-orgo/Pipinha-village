@@ -1,5 +1,6 @@
 {
-	"tip": {
-		"translate": "sunlit.tip.mercantile"
-	}
+  "type": "tipsmod:simple",
+  "text": {
+    "translate": "sunlit.tip.mercantile"
+  }
 }

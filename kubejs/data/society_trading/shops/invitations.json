@@ -14,7 +14,7 @@
         "item": "society:face_note"
       },
       "request": {
-        "item": "meadow:fire_log",
+        "item": "meadow:firewood",
         "count": 4
       },
       "stage_required": "invited_market",
@@ -26,7 +26,7 @@
         "item": "furniture:blueprints"
       },
       "request": {
-        "item": "meadow:fire_log",
+        "item": "meadow:firewood",
         "count": 4
       },
       "stage_required": "invited_market",
@@ -40,7 +40,7 @@
         "nbt": "{\"type\":{\"id\":\"society:market\"}}"
       },
       "request": {
-        "item": "meadow:fire_log",
+        "item": "meadow:firewood",
         "count": 4
       },
       "trade_id": "village_management_market"
@@ -52,7 +52,7 @@
         "nbt": "{\"type\":{\"id\":\"society:blacksmith\"}}"
       },
       "request": {
-        "item": "meadow:fire_log",
+        "item": "meadow:firewood",
         "count": 4
       },
       "trade_id": "village_management_blacksmith"
@@ -64,7 +64,7 @@
         "nbt": "{\"type\":{\"id\":\"society:shepherd\"}}"
       },
       "request": {
-        "item": "meadow:fire_log",
+        "item": "meadow:firewood",
         "count": 4
       },
       "trade_id": "village_management_shepherd"
@@ -76,7 +76,7 @@
         "nbt": "{\"type\":{\"id\":\"society:fisher\"}}"
       },
       "request": {
-        "item": "meadow:fire_log",
+        "item": "meadow:firewood",
         "count": 8
       },
       "stage_required": "invited_market",
@@ -90,7 +90,7 @@
         "nbt": "{\"type\":{\"id\":\"society:banker\"}}"
       },
       "request": {
-        "item": "meadow:fire_log",
+        "item": "meadow:firewood",
         "count": 16
       },
       "stage_required": "invited_market",
@@ -104,7 +104,7 @@
         "nbt": "{\"type\":{\"id\":\"society:librarian\"}}"
       },
       "request": {
-        "item": "meadow:fire_log",
+        "item": "meadow:firewood",
         "count": 16
       },
       "stage_required": "invited_market",
@@ -118,7 +118,7 @@
         "nbt": "{\"type\":{\"id\":\"society:witch\"}}"
       },
       "request": {
-        "item": "meadow:fire_log",
+        "item": "meadow:firewood",
         "count": 24
       },
       "stage_required": "entered_nether",
@@ -132,7 +132,7 @@
         "nbt": "{\"type\":{\"id\":\"society:trader\"}}"
       },
       "request": {
-        "item": "meadow:fire_log",
+        "item": "meadow:firewood",
         "count": 24
       },
       "stage_required": "entered_skull_cavern",

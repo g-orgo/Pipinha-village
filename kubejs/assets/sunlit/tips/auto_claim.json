@@ -1,5 +1,6 @@
 {
-	"tip": {
-		"translate": "sunlit.tip.auto_claim"
-	}
+  "type": "tipsmod:simple",
+  "text": {
+    "translate": "sunlit.tip.auto_claim"
+  }
 }

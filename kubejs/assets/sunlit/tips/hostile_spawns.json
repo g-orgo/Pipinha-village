@@ -1,5 +1,6 @@
 {
-	"tip": {
-		"translate": "sunlit.tip.hostile_spawns"
-	}
+  "type": "tipsmod:simple",
+  "text": {
+    "translate": "sunlit.tip.hostile_spawns"
+  }
 }

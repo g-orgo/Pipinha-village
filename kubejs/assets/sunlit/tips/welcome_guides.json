@@ -1,5 +1,6 @@
 {
-	"tip": {
-		"translate": "sunlit.tip.welcome_guides"
-	}
+  "type": "tipsmod:simple",
+  "text": {
+    "translate": "sunlit.tip.welcome_guides"
+  }
 }

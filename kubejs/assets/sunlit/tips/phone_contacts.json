@@ -1,5 +1,6 @@
 {
-	"tip": {
-		"translate": "sunlit.tip.phone_contacts"
-	}
+  "type": "tipsmod:simple",
+  "text": {
+    "translate": "sunlit.tip.phone_contacts"
+  }
 }

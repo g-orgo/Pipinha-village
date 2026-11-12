@@ -1,5 +1,6 @@
 {
-	"tip": {
-		"translate": "sunlit.tip.plonk"
-	}
+  "type": "tipsmod:simple",
+  "text": {
+    "translate": "sunlit.tip.plonk"
+  }
 }

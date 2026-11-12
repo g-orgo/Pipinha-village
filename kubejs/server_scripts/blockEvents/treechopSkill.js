@@ -10,7 +10,7 @@ BlockEvents.broken("treechop:chopped_log", (e) => {
     player.stages.has("wuthering_logs") &&
     block.id === "treechop:chopped_log"
   ) {
-    block.popItem("meadow:fire_log");
+    block.popItem("meadow:firewood");
   }
 
   const season = global.getSeasonFromLevel(level);

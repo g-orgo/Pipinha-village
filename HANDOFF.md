@@ -89,6 +89,20 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   Erros de cascata esperados a sumir com o registro: `numismatics:neptunium_coin`, `society:neptuna`, `froggy_helm`.
   Sobra: biomas `kubejs/data/society/worldgen/biome/*.json` ainda spawnam `splendid_slimes:splendid_slime`.
 
+- 4º launch (2026-11-12, crash ao criar mundo: "Duplicate data file ignored with ID meadow:firewood").
+  Causa NÃO provada: só existe um arquivo meadow:firewood em disco (jar do Meadow); listagem vanilla,
+  collective, bookshelf, blueprint, moonlight (FastSearch), modernfix e KubeJS conferidas no bytecode, sem
+  achar a cópia. Correção candidata: o Meadow 1.21.1 renomeou `fire_log` -> `firewood` (mesmas
+  propriedades facing/stage); rename aplicado em 29 arquivos (74 refs) e `meadow:firewood` (2 pinheiros -> 5)
+  removido por id em removeRecipes.js, já que o pack usa 6 troncos (kubejs/data/meadow/recipe/fire_log.json).
+  Se o crash voltar: próximo suspeito é um pack em memória; testar desligando mods de pack dinâmico.
+  Também: generateData -> alvo "after_mods" + e.json (addFishBaits com caminho 1.21 `loot_table/gameplay/
+  crab_trap_loot/<isca>`, lostCityCreatePalette), npcInteraction com presentes montados no 1º uso
+  (encantamento precisa do registro), disableDispenser com DispenseItemBehavior.NOOP, 131 dicas no formato
+  `tipsmod:simple`. Menu: engrenagem do Create desligada (mainMenuConfigButtonRow=0, na 1.20.1 o layout a
+  escondia pelo id 376322) e botão de configs do Supplementaries desligado (chave renomeada configs_button).
+  Chaves de config renomeadas entre versões: operador aplicando a partir de scratch renamed_keys.txt.
+
 ## Pendente, em ordem
 
 1. F5 KubeJS: port estático PRONTO (379/379 sintaxe OK, commit 10f2eb5e na branch 1.21.1). Falta: o dono abre

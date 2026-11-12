@@ -127,11 +127,14 @@ renderizacao = "Sodium + Iris"   # Embeddium saiu: na 1.21.1 os addons exigem So
 fora = {"Radium": "incompatível com Create 6",
         "Sodium Options API": "a versão 1.21.1 conflita com Reese's Sodium Options",
         "Create: Extra Gauges": "versões 1.21.1 exigem Deployer API, incompatível com Factory Logistics",
-        "Redecorate / Farmer's Cutting: Quark": "não são ports do original"}
+        "Redecorate / Farmer's Cutting: Quark": "não são ports do original",
+        "PowerfulJS": "crash na construção do Create 6.0.10"}
 large_meals_id = "largemeals -> large_meals"   # entra no script de remap da F4/F5
 watermedia = "2.1.37 + YT Plugin"   # o CurseForge troca para 2.x no launch por causa do Waterframes 2.1.23;
 fancymenu  = "3.9.1"               # último sem exigir WaterMedia 3; Drippy fica em 3.1.2 (pede FancyMenu >= 3.9.0)
                                    # WaterMedia Binaries (152 MB) saiu junto com a 3.x
+fora_powerfuljs = "mixin no Spout do Create referencia FluidIngredient, que não existe no Create 6.0.10; o pack não usa"
+checagens = "tools/modcheck (ranges.py e mixscan.py), rodar depois de qualquer troca de jar"
 ```
 
 Próximo passo: o dono abre o jogo uma vez (sem mundo), fecha, e o agente lê `logs/latest.log`.

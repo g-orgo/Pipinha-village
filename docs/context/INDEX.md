@@ -12,6 +12,7 @@
   - `conventions.md#backups-manter-apenas-um`: backups mantidos em uma cópia.
   - `conventions.md#mods-desativados`: lista de mods desativados e motivos.
   - `conventions.md#ajustes-de-gameplay`: durabilidade, Puffish Skills e Quark.
+  - `conventions.md#mula-do-vinery-fora-do-jogo`: mula do Vinery trocada pela vanilla (config, ovo, script de conversão).
   - `conventions.md#preços-e-etapas-de-processamento`: acréscimo por etapa, insumo sazonal e exceções.
   - `conventions.md#harmonização-de-carnes-e-peixes`: tags por espécie, pratos com item vanilla fixo e recheios.
 - `decisions.md`: registro de decisões com data, uma por entrada.

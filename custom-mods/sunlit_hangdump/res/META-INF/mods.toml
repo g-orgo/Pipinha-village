@@ -1,0 +1,16 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="sunlit_hangdump"
+version="1.0.0"
+displayName="Sunlit Hang Dump"
+description="Diagnostic: writes a thread dump to logs/ when the server stops ticking for 90 seconds."
+
+[[dependencies.sunlit_hangdump]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"

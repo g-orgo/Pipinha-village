@@ -1,0 +1,16 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="sunlit_dfhashfix"
+version="1.0.0"
+displayName="Sunlit Density Hash Fix"
+description="Speeds up terrain generation with huge density-function packs (Lithosphere): memoizes density-function hashes and reference mapping."
+
+[[dependencies.sunlit_dfhashfix]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"

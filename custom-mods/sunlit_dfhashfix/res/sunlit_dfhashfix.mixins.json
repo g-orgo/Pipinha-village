@@ -1,0 +1,8 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.sunlit.dfhashfix.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": ["DensityHashMixin", "HolderMapAllMixin"],
+  "injectors": { "defaultRequire": 0 }
+}

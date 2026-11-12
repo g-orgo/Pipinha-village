@@ -1,5 +1,7 @@
 # Jogo real sem janela
 
+> APOSENTADO (2026-11-11, pedido do dono): agentes NÃO rodam mais este cliente. Pesa demais no PC e demora; os testes no jogo são feitos pelo dono (ver `AGENTS.md`). Fica só como referência.
+
 Roda o cliente de verdade, com todos os mods, sob Xvfb e renderização por software, numa cópia isolada da instância. Serve para o agente verificar mudanças sem depender do dono: mixins aplicados, carregamento de assets, consumo de comida, poses e capturas de tela.
 
 ```

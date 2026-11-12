@@ -73,9 +73,14 @@ const checkAnimal = (
   name,
   mood,
   hearts,
-  color
+  color,
+  petted
 ) => {
   let nameColor = color || "#55FF55";
+  // After a real petting, the line above the hearts reads "Petted <name>".
+  let nameText = petted
+    ? Text.translatable("society.husbandry.petted", name.noColor()).toJson()
+    : name.noColor().toJson();
   let heartsToDisplay = 10;
   let icons = [];
   if (mood < 64) icons.push("☹");
@@ -106,7 +111,7 @@ const checkAnimal = (
         type: "text",
         x: 0,
         y: -78,
-        text: `${name.noColor().toJson()}`,
+        text: `${nameText}`,
         color: nameColor,
         alignX: "center",
         alignY: "bottom",
@@ -116,7 +121,7 @@ const checkAnimal = (
         x: 1,
         z: -1,
         y: -77,
-        text: `${name.noColor().toJson()}`,
+        text: `${nameText}`,
         color: "#000000",
         alignX: "center",
         alignY: "bottom",
@@ -247,7 +252,7 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
     if (hungry) {
       nameColor = "#FF5555";
     }
-    checkAnimal(player, level, server, data, name, mood, shownHearts, nameColor);
+    checkAnimal(player, level, server, data, name, mood, shownHearts, nameColor, petted);
   }
   // Raise Max health
   let affectionHealth = hearts * 4;

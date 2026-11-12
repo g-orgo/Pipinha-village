@@ -11,9 +11,13 @@ console.info("[SOCIETY] dogFollowOwner.js loaded");
   const $ListTag = Java.loadClass("net.minecraft.nbt.ListTag");
   const $EntityType = Java.loadClass("net.minecraft.world.entity.EntityType");
   const $RemovalReason = Java.loadClass("net.minecraft.world.entity.Entity$RemovalReason");
+  const $DoubleTag = Java.loadClass("net.minecraft.nbt.DoubleTag");
 
   // Owner data key holding the dogs hidden while riding (list of entity NBT).
   const HIDDEN_KEY = "sunlitHiddenDogs";
+  // Forge copies this sub-tag of the player's Forge data to the new player on respawn,
+  // so hidden dogs survive the owner dying while riding. KubeJS persistentData does not.
+  const PERSISTED_KEY = "PlayerPersisted";
   // Tag type id of a compound inside a ListTag.
   const TAG_COMPOUND = 10;
   // Radius around the owner where following dogs are hidden on mount.
@@ -91,35 +95,77 @@ console.info("[SOCIETY] dogFollowOwner.js loaded");
     });
   };
 
+  // The player's respawn-safe compound (Forge data > PlayerPersisted), created on demand.
+  const persistedData = (player) => {
+    let forgeData = player.getForgePersistentData();
+    if (!forgeData.contains(PERSISTED_KEY)) forgeData.put(PERSISTED_KEY, new $CompoundTag());
+    return forgeData.getCompound(PERSISTED_KEY);
+  };
+
+  // Moves dogs hidden by older versions of this script (KubeJS persistentData) to persistedData.
+  const migrateLegacy = (player) => {
+    let legacy = player.persistentData;
+    if (!legacy.contains(HIDDEN_KEY)) return;
+    let from = legacy.getList(HIDDEN_KEY, TAG_COMPOUND);
+    let data = persistedData(player);
+    let list = data.contains(HIDDEN_KEY) ? data.getList(HIDDEN_KEY, TAG_COMPOUND) : new $ListTag();
+    let count = listSize(from);
+    for (let i = 0; i < count; i++) list.add(from.getCompound(i));
+    data.put(HIDDEN_KEY, list);
+    legacy.remove(HIDDEN_KEY);
+  };
+
+  const hasHiddenDogs = (player) => {
+    migrateLegacy(player);
+    return persistedData(player).contains(HIDDEN_KEY);
+  };
+
   // Saves the following dogs near the owner into its data and removes them from the world.
+  // Each dog leaves the world only after its NBT is stored.
   const hideDogs = (player, level, pos, ownerUuid) => {
     let dogs = followingDogsNear(level, pos, MOUNT_SEARCH, ownerUuid);
     if (dogs.length === 0) return;
-    let data = player.persistentData;
+    let data = persistedData(player);
     let list = data.contains(HIDDEN_KEY) ? data.getList(HIDDEN_KEY, TAG_COMPOUND) : new $ListTag();
+    data.put(HIDDEN_KEY, list);
     dogs.forEach((dog) => {
       let tag = new $CompoundTag();
       if (!dog.save(tag)) return;
       list.add(tag);
       dog.remove($RemovalReason.UNLOADED_WITH_PLAYER);
     });
-    data.put(HIDDEN_KEY, list);
   };
 
   // Brings the hidden dogs back at the owner's feet, in the owner's current level.
+  // The position goes into the NBT before loading: Entity.moveTo is overloaded under
+  // different SRG names and Rhino picks the wrong one. A dog that fails to load stays
+  // in the list and is retried on the next tick; nothing is dropped before it is back.
   const restoreDogs = (player, level, pos) => {
-    let data = player.persistentData;
-    if (!data.contains(HIDDEN_KEY)) return;
+    if (!hasHiddenDogs(player)) return;
+    let data = persistedData(player);
     let list = data.getList(HIDDEN_KEY, TAG_COMPOUND);
-    data.remove(HIDDEN_KEY);
+    let kept = new $ListTag();
     let count = listSize(list);
     for (let i = 0; i < count; i++) {
-      let dog = $EntityType.loadEntityRecursive(list.getCompound(i), level, (entity) => {
-        entity.moveTo(pos.x, pos.y, pos.z, entity.getYRot(), entity.getXRot());
-        return entity;
-      });
-      if (dog) level.tryAddFreshEntityWithPassengers(dog);
+      let tag = list.getCompound(i);
+      try {
+        let where = new $ListTag();
+        where.add($DoubleTag.valueOf(pos.x));
+        where.add($DoubleTag.valueOf(pos.y));
+        where.add($DoubleTag.valueOf(pos.z));
+        tag.put("Pos", where);
+        tag.putFloat("FallDistance", 0);
+        let dog = $EntityType.loadEntityRecursive(tag, level, (entity) => entity);
+        // false here means a dog with that UUID is already in the world: nothing to bring back.
+        if (dog) level.tryAddFreshEntityWithPassengers(dog);
+        else kept.add(tag);
+      } catch (error) {
+        kept.add(tag);
+        logOnce(error);
+      }
     }
+    if (listSize(kept) > 0) data.put(HIDDEN_KEY, kept);
+    else data.remove(HIDDEN_KEY);
   };
 
   const tickPlayer = (server, player) => {
@@ -146,6 +192,10 @@ console.info("[SOCIETY] dogFollowOwner.js loaded");
       }
     } else if (!riding) {
       // First tick after login: dogs left hidden by a session that ended mid-ride.
+      restoreDogs(player, level, pos);
+    }
+    if (!riding && state && !state.riding && hasHiddenDogs(player)) {
+      // On foot with dogs still stored (respawn after dying mounted, or a failed restore).
       restoreDogs(player, level, pos);
     }
     states[uuid] = { dim: dim, x: pos.x, y: pos.y, z: pos.z, riding: riding, level: level };

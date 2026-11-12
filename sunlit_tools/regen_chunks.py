@@ -323,6 +323,14 @@ def main():
     for c in claims:
         reason.setdefault(c, 'forceload' if c in loaded else 'claim')
     keep |= claims
+    # The origin chunks always stay (2026-11-11): at server start the ALI mod builds one of every entity and the
+    # Brewery rope knot reads the block at 0,0,0, so a missing origin chunk is generated synchronously before
+    # the first tick. With Lithosphere that took minutes and the world load sat at 0%.
+    # A full chunk needs its neighbours up to light, so the whole 5x5 around the origin stays.
+    for ox in range(-2, 3):
+        for oz in range(-2, 3):
+            keep.add((ox, oz))
+            reason.setdefault((ox, oz), 'origem_ali')
     preserved = {}
     present = {}  # region path -> {chunk index: (cx, cz)}
     for path in sorted(glob.glob(os.path.join(save, 'region', '*.mca'))):
@@ -416,6 +424,9 @@ def main():
           f'forceloaded={len(loaded)}', f'base={len(base)}', f'preservados={kept}', f'apagados={dropped}')
     if strict:
         print(('[dry] ' if dry else '') + f'claims={len(claims)} apagados={dropped} animais_mantidos={animals}')
+        # The new layout puts 2x2 multibuildings against the claims and their inner part never generates
+        print('depois que o dono jogar perto da base: python3 -I sunlit_tools/fix_cut_houses.py '
+              '"saves/<save>" scan --png <arquivo>.png (casas cortadas na borda dos claims)')
     # Every mode (2026-11-11, owner's request): players wake up in their bed, inside kept terrain
     send_to_bed(save, dry)
 

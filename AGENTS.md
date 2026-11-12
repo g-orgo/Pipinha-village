@@ -7,19 +7,17 @@ Demais regras e detalhes: docs/context/INDEX.md (ler o índice primeiro, depois 
 
 Data da regra: 2026-10-18
 
-# REGRA OBRIGATÓRIA: O AGENTE É O CRIVO FINAL (2026-11-03, pedido do dono)
+# REGRA OBRIGATÓRIA: TESTES NO JOGO SÃO DO DONO (2026-11-11, pedido do dono)
 
-- O agente decide se a mudança funciona. Não pede ao dono para abrir o jogo nem
-  para testar, não passa checklist e não deixa a entrega "aguardando teste", a
-  menos que o dono peça isso ou avise que algo não funciona.
-- Verificar com o que dá para rodar sem o jogo: compilar, `sunlit_tools/js_harness/`
+- Substitui a regra "o agente é o crivo final" (2026-11-03).
+- O agente NÃO roda o jogo: nada de `sunlit_tools/headless_client/` (cliente real
+  sob Xvfb), nem outro launch do Minecraft. Pesa demais no PC do dono e demora.
+- Verificar só com o que é leve e roda sem o jogo: compilar, `sunlit_tools/js_harness/`
   (Rhino do mod), conferir nomes e assinaturas nos jars, validar dados, e ler
-  `logs/kubejs/*.log` e `logs/latest.log` (tail/grep) quando houver sessão de jogo
-  posterior à mudança.
-- Nunca esperar o dono em background (sem Monitor aguardando o jogo abrir).
-- Honestidade no relatório: dizer o que foi verificado e como, sem afirmar que algo
-  foi visto no jogo se não foi. O que só o jogo mostra fica citado em uma linha, sem
-  pedido de teste.
+  `logs/kubejs/*.log` e `logs/latest.log` (tail/grep) de sessões que o dono jogou.
+- O teste no jogo é feito pelo dono. No relatório, dizer o que foi verificado e como,
+  e listar em poucas linhas o que o dono deve olhar no jogo. Não esperar o dono em
+  background nem afirmar que algo foi visto no jogo se não foi.
 - Se o dono avisar que algo não funciona, investigar pelos logs e corrigir.
 
 # REGRA OBRIGATÓRIA: BOM SENSO ANTES DE PERGUNTAR (2026-11-03, pedido do dono)

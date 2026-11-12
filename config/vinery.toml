@@ -62,7 +62,7 @@
 		#Range: 0.0 ~ 1.0
 		spawnChance = 0.2
 		#If true, the trader will spawn with mules.
-		spawnWithMules = true
+		spawnWithMules = false
 		#Spawn delay for the trader in ticks.
 		#Range: > 1
 		spawnDelay = 96000

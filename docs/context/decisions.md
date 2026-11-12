@@ -244,7 +244,7 @@ Uma decisão por entrada, em ordem cronológica. As regras em vigor estão em `c
 - **Primeira pessoa**: lista curta de 6 comidas, de 4 a 6,5 s, com modelo e animação próprios gerados em código, sem derivar dos assets do Immersive Eating (CC BY-NC-ND). Só o formato e os nomes de ossos seguem o addon.
 - **A janela de 0,25 s entre `finished;` e o fim da animação é obrigatória**: com 0,05 s, a trava do addon ficou presa num teste em que a comida seguinte foi colocada na mão logo depois. As animações originais do addon também usam 0,25 s.
 - **`ModifierLayer` nesta versão**: o construtor com modificadores não encadeia a lista e a camada fica inativa. Usar `addModifierLast`.
-- **Verificação**: `sunlit_tools/headless_client/` roda o jogo real sem janela numa cópia isolada, então o crivo final não depende do dono.
+- **Verificação**: `sunlit_tools/headless_client/` roda o jogo real sem janela numa cópia isolada. Aposentado em 2026-11-11 (pedido do dono): os testes no jogo passam a ser do dono.
 
 ## 2026-11-03: Dia mais longo lê o tempo pelo level data
 
@@ -405,3 +405,23 @@ Uma decisão por entrada, em ordem cronológica. As regras em vigor estão em `c
 - Primeiro login depois de um regen gera o entorno com o terreno novo, o que pode demorar; o regen agora termina mandando cada jogador para a cama (`sunlit_tools/send_to_bed.py`, também roda sozinho), para o jogador acordar dentro de chunks mantidos.
 - Punchy Moves entra no lugar da Not Enough Animations, que foi desativada pelo dono (animação em terceira pessoa duplicada).
 - Spatial GUI é só cliente: inventário e telas de contêiner viram um plano 3D.
+
+## 2026-11-11: testes no jogo são do dono
+
+- O dono pediu que os agentes parem de rodar o jogo (cliente headless): pesa demais no PC e demora. Verificação dos agentes fica restrita a checagens leves sem o jogo; o teste no jogo é feito pelo dono. Regra em `AGENTS.md`.
+
+## 2026-11-11: seed nova no Solito solamente por causa do Lithosphere
+
+- Depois do regen estrito, o entorno da base (x -10230, z 8350) nasceu todo oceano profundo. Não era erro: o Lithosphere troca o mapa de continentes (escala de dezenas de milhares de blocos) e, com a seed antiga, a base caiu no meio de um oceano. Regenerar de novo daria o mesmo oceano, porque a geração é determinística.
+- Decisão do dono: manter o Lithosphere e trocar a seed. Seed antiga -2365142878615750770, nova 3306540390856787928 (`level.dat` e `level.dat_old`), escolhida sem rodar o jogo por `sunlit_tools/seed_finder/find_land_seed.py`: nenhum oceano num raio de 64 chunks e terreno entre y 65 e 79 até 32 chunks da base (base em y 72).
+- O avaliador (`seed_finder/litho_continents.py`) porta o ruído do 1.20.1 e as funções de densidade do Lithosphere; com a seed antiga ele reproduziu 487 de 487 chunks gerados (oceano, oceano profundo, terra) e a altura do fundo do mar com 1 a 2 blocos de diferença na maioria.
+
+## 2026-11-11: mod de diagnóstico sunlit_hangdump
+
+- Depois da troca de seed, a entrada no Solito solamente ficou em 0% por mais de 6 minutos: o servidor terminou de iniciar, mas o primeiro tick não terminou. Uma thread de geração (Worker-Main) ficou o tempo todo em 100%; o servidor esperava por ela. Sem `jstack` no Java do CurseForge e sem rodar o jogo, não deu para ver a pilha.
+- `custom-mods/sunlit_hangdump` (jar em `mods/`): se o servidor ficar 90 s sem completar um tick, grava a pilha de todas as threads em `logs/sunlit-hangdump-<data>.txt` (até 5 arquivos, um a cada 2 min). Só diagnóstico; não altera o jogo. Pode sair do pack quando a causa for achada.
+- Contexto: a primeira entrada depois de um regen sempre espera a geração em volta dos chunks com forceload. Antes do Lithosphere levava ~26 s; com Lithosphere e oceano, 94 s; com Lithosphere e terra (cidade do Lost Cities), mais de 6 min.
+- Causa achada pelo dump (21:25 e 21:27): no `ServerStartingEvent` o ALI (Advanced Loot Info) cria uma entidade de cada tipo; o nó de corda do Brewery (`RopeKnotEntity.getYOffset`) lê o bloco em 0,0,0, e o chunk (0,0), apagado pelo regen, é gerado de forma síncrona antes do primeiro tick. A geração fica presa em `hashCode` recursivo dos records de função de densidade (árvore enorme do Lithosphere, sem cache de hash).
+- Correções: `regen_chunks.py` sempre mantém o chunk (0,0) (motivo `origem_ali`); `sunlit_tools/restore_origin_chunk.py` devolve o chunk (0,0) de um backup (jogo fechado); mod `custom-mods/sunlit_dfhashfix` memoriza o hash por instância desses records imutáveis (mixin opcional, mapa de identidade com chave fraca), o que acelera toda geração de terreno com Lithosphere.
+- 2026-11-11 (segunda rodada): com o chunk (0,0) restaurado continuou travando, porque um chunk completo exige os 8 vizinhos iluminados, e gerá-los esbarra no mesmo custo. O dump com o fim da pilha mostrou a causa real: o `AlternateJigsawGenerator` do Lithostitched pede a altura do terreno peça por peça, cada pedido cria um `NoiseChunk`, e `DensityFunctions$HolderHolder.mapAll` (`m_207456_`) re-mapeia cada referência a cada ocorrência, o que é exponencial no grafo do Lithosphere. O `sunlit_dfhashfix` ganhou `HolderMapAllMixin`, que reutiliza o resultado da mesma referência dentro de uma passada do visitor (os visitors memorizam por igualdade, então o valor é o mesmo).
+- 2026-11-11 (terceira rodada): para a inicialização não depender de geração nenhuma, o 5x5 em volta da origem voltou do backup (`restore_origin_chunk.py --radius 2`: o (0,0) completo, o anel 1 em `initialize_light` e o anel 2 em `carvers`, o mesmo estado que bastou com a seed antiga) e o `regen_chunks.py` passa a manter esse 5x5 (motivo `origem_ali`).

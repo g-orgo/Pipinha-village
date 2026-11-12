@@ -6,7 +6,7 @@
 Welcome to Pipinha's Village! This changelog summarizes what differs from the normal Sunlit Valley, by category.
 
 ### New
-+ Wandering trader mule with Fresh Animations movement: its walk, trot and neck now follow the pack, with the same skin and model
++ Minecraft mule instead of the Vinery mule: the mule spawn egg and the mules already in the world become the normal mule, and the wandering winemaker arrives without mules
 + Automatic claims: placing a chest, bed, crab trap, machine or any block that works on its own claims and protects the chunk, with no limit on claimed or force loaded chunks; opening chests does not claim
 + Difficulty is always Hard, with a button next to it to turn hostile mob spawning on or off, in Options and when creating a world
 + Languages: the list only shows English (US) and Portuguese (Brazil)

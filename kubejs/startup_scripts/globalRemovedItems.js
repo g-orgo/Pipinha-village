@@ -1,6 +1,8 @@
 global.removedItems = [
   // TEMP 
   "numismatics:salepoint",
+  // Replaced by the vanilla mule (entities/vineryMuleToVanilla.js)
+  "vinery:mule_spawn_egg",
   // 2.0 TODO - rename to new item
   "veggiesdelight:lasagna_pan",
   'sophisticatedbackpacks:mob_catcher_upgrade',

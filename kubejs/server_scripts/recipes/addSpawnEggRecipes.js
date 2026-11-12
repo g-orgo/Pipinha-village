@@ -11,7 +11,7 @@ ServerEvents.recipes((e) => {
     { egg: "minecraft:squid_spawn_egg", mineral: "society:allanite", coin: "crown" },
     { egg: "minecraft:cow_spawn_egg", mineral: "society:calcite_gem", coin: "cog" },
     { egg: "minecraft:allay_spawn_egg", mineral: "society:celestine", coin: "crown" },
-    { egg: "vinery:mule_spawn_egg", mineral: "society:granite_slate", coin: "crown" },
+    { egg: "minecraft:mule_spawn_egg", mineral: "society:granite_slate", coin: "crown" },
     { egg: "minecraft:horse_spawn_egg", mineral: "society:jagoite", coin: "crown" },
     { egg: "minecraft:llama_spawn_egg", mineral: "society:jamborite", coin: "crown" },
     { egg: "minecraft:chicken_spawn_egg", mineral: "society:limestone_pebble", coin: "bevel" },

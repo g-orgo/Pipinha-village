@@ -82,6 +82,16 @@ mas region e poi desse chunk são apagados, então o animal não segura o terren
 6. O regen termina mandando cada jogador para a cama dele com `sunlit_tools/send_to_bed.py`
    (também roda sozinho: `python3 sunlit_tools/send_to_bed.py "Solito solamente" [--dry]`);
    quem não tem cama fica onde está.
+7. Casas cortadas na borda dos claims (2026-11-11, pedido do dono): o regen estrito mantém os
+   claims com o layout antigo; quando o layout muda (seed nova, pipeline novo), o Lost Cities gera
+   prédios 2x2 em volta e a parte que cairia dentro do claim nunca nasce, sobrando meia casa do
+   lado de fora. Não dá para evitar antes de gerar. Depois que o dono jogar perto da base (jogo
+   fechado): `python3 -I sunlit_tools/fix_cut_houses.py "saves/<save>" scan --png <arq>.png`
+   lista as faces de borda com construção (o PNG mostra a face do vizinho e a do claim lado a lado;
+   parede inteira encostada também aparece, só meia casa é corte). Backup do save e depois
+   `... clear <cx,cz> [--box x0,z0,x1,z1] [--ground 71]`: vira lote de grama no nível da rua, como
+   os lotes vazios das cidades; só `region/` é escrito (luz e heightmap refeitos no load).
+   Restaurar o vizinho do backup não serve: o chão antigo fica em outra altura.
 
 Se o usuário pedir para preservar mais (ex.: uma base sem claim), use
 `--radius N` ou rode sem `--so-jogadores` (mantém chunks com 10+ minutos de
@@ -527,3 +537,17 @@ Data da regra: 2026-10-25
 - Tags genéricas (`forge:raw_meat`, `brewinandchewin:raw_meats`) só têm carne de verdade: inseto, perna de aranha, carne podre, barra crocante e tartare saem. Pratos compostos (goulash, frango recheado etc.) saem das tags de carne cozida simples.
 - Recheio de rolinho de repolho e de asa de morcego: carne vermelha moída (boi, porco, carneiro e equivalentes), vegetal ou cogumelo; nunca qualquer carne nem peixe (`recipes/harmonizeMeatRecipes.js`).
 - Insumo novo de mod: colocar na tag da espécie em `harmonizeMeatTags.js`; se for um item vanilla fixo em receitas, acrescentar o par item/tag em `normalizeEquivalentItems.js`.
+
+### Mula do Vinery fora do jogo
+
+- A mula do Let's Do Vinery (`vinery:mule`) não faz parte do pack (o modelo dela tinha
+  as patas dianteiras na frente do peito, e o patch no `MuleModel` foi revertido).
+  No lugar dela entra a mula vanilla (`minecraft:mule`).
+- `config/vinery.toml`: `spawnWithMules = false` (o mercador andarilho da vinícola chega sem mulas).
+- A receita de ovo com ardósia de granito dá `minecraft:mule_spawn_egg`;
+  `vinery:mule_spawn_egg` está em `global.removedItems`.
+- `kubejs/server_scripts/entities/vineryMuleToVanilla.js` troca qualquer `vinery:mule` que
+  entrar no mundo (ovo antigo, mula salva) por uma mula vanilla com os mesmos dados.
+- Não reaplicar patch no jar da Vinery nem criar `trader_mule.jem`.
+
+Data da regra: 2026-11-11

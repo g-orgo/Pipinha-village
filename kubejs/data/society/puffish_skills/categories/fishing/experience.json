@@ -1,0 +1,181 @@
+{
+  "experience_per_level": {
+    "type": "values",
+    "data": {
+      "values": [
+        500,
+        1000,
+        2000,
+        4000,
+        7000,
+        9000,
+        10000,
+        12000,
+        18000,
+        20000,
+        22000,
+        26000,
+        30000,
+        34000
+      ]
+    }
+  },
+  "sources": [
+    {
+      "type": "puffish_skills:craft_item",
+      "data": {
+        "variables": {
+          "crab_trap": {
+            "operations": [
+              {
+                "type": "get_crafted_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "crabbersdelight:crab_trap"
+                }
+              }
+            ]
+          },
+          "fish_pond": {
+            "operations": [
+              {
+                "type": "get_crafted_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "society:fish_pond"
+                }
+              }
+            ]
+          },
+          "bait_maker": {
+            "operations": [
+              {
+                "type": "get_crafted_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "society:bait_maker"
+                }
+              }
+            ]
+          },
+          "fish_smoker": {
+            "operations": [
+              {
+                "type": "get_crafted_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "society:fish_smoker"
+                }
+              }
+            ]
+          },
+          "deluxe_worm_farm": {
+            "operations": [
+              {
+                "type": "get_crafted_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "society:deluxe_worm_farm"
+                }
+              }
+            ]
+          },
+          "profession": {
+            "operations": [
+              {
+                "type": "get_player"
+              },
+              {
+                "type": "as_entity"
+              },
+              {
+                "type": "puffish_skills:get_score",
+                "data": {
+                  "objective": "sunlit_prof_fishing"
+                }
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "crab_trap",
+            "expression": "(100) * (1 + 0.5 * profession)"
+          },
+          {
+            "condition": "fish_pond",
+            "expression": "(300) * (1 + 0.5 * profession)"
+          },
+          {
+            "condition": "fish_smoker",
+            "expression": "(400) * (1 + 0.5 * profession)"
+          },
+          {
+            "condition": "bait_maker",
+            "expression": "(600) * (1 + 0.5 * profession)"
+          },
+          {
+            "condition": "deluxe_worm_farm",
+            "expression": "(500) * (1 + 0.5 * profession)"
+          }
+        ]
+      }
+    },
+    {
+      "type": "puffish_skills:fish_item",
+      "data": {
+        "variables": {
+          "is_fish": {
+            "operations": [
+              {
+                "type": "get_fished_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "#fishes"
+                }
+              }
+            ]
+          },
+          "profession": {
+            "operations": [
+              {
+                "type": "get_player"
+              },
+              {
+                "type": "as_entity"
+              },
+              {
+                "type": "puffish_skills:get_score",
+                "data": {
+                  "objective": "sunlit_prof_fishing"
+                }
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "is_fish",
+            "expression": "(100) * (1 + 0.5 * profession)"
+          },
+          {
+            "condition": "!is_fish",
+            "expression": "(10) * (1 + 0.5 * profession)"
+          }
+        ]
+      }
+    }
+  ]
+}

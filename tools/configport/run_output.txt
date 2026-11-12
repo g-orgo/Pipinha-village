@@ -1,0 +1,42 @@
+=== run 1 2026-11-12T01:59:17-03:00 ===
+merged files: 70
+keys changed: 287
+copied files: 100
+manual files: 304
+skipped files: 381
+errors: 10
+dropped ids: 131
+toml validation: 117 pass / 0 fail
+json validation: 53 pass / 0 fail
+backup: /var/home/Orgo/Documentos/curseforge/minecraft/Instances/Pipinha's Village/tools/configport/backup-20261112-015917.tar.gz
+=== run 2 2026-11-12T01:59:17-03:00 ===
+merged files: 0
+keys changed: 0
+copied files: 0
+manual files: 337
+skipped files: 381
+errors: 10
+dropped ids: 0
+toml validation: 0 pass / 0 fail
+json validation: 0 pass / 0 fail
+=== F3 run 1 2026-11-12T02:10:24-03:00 ===
+merged files: 10
+keys changed: 22
+copied files: 0
+manual files: 103
+skipped files: 381
+errors: 6
+dropped ids: 0
+toml validation: 1 pass / 0 fail
+json validation: 1 pass / 0 fail
+backup-20261112-021024-f3.tar.gz (step 2 copied 181 files as-is)
+=== F3 run 2 (idempotency) 2026-11-12T02:10:30-03:00 ===
+merged files: 0
+keys changed: 0
+copied files: 0
+manual files: 103
+skipped files: 381
+errors: 6
+toml validation: 0 pass / 0 fail
+json validation: 0 pass / 0 fail
+no backup (no changes)

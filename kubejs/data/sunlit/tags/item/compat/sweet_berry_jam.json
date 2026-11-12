@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "brewinandchewin:sweet_berry_jam",
+      "required": false
+    },
+    {
+      "id": "bakery:sweetberry_jam",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:sweet_berry_jam",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:sweet_berry_jam",
+      "required": false
+    }
+  ]
+}

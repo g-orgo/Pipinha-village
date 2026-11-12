@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "autumnity:syrup_bottle",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:syrup_bottle",
+      "required": false
+    }
+  ]
+}

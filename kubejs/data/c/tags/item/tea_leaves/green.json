@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "herbalbrews:green_tea_leaf",
+      "required": false
+    },
+    {
+      "id": "farmersrespite:green_tea_leaves",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:green_tea_leaves",
+      "required": false
+    }
+  ]
+}

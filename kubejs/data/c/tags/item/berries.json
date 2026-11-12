@@ -1,0 +1,49 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:fruits/strawberries",
+      "required": false
+    },
+    {
+      "id": "#forge:fruits/blueberries",
+      "required": false
+    },
+    {
+      "id": "#forge:fruits/blackberries",
+      "required": false
+    },
+    {
+      "id": "#forge:fruits/raspberries",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:blueberries",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:green_grapes",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:red_grapes",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_tavern:green_grape",
+      "required": false
+    },
+    {
+      "id": "society:blueberry",
+      "required": false
+    },
+    {
+      "id": "vinery:red_grape",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:red_grape",
+      "required": false
+    }
+  ]
+}

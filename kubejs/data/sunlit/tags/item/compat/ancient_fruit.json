@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "society:ancient_fruit",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_fruit",
+      "required": false
+    }
+  ]
+}

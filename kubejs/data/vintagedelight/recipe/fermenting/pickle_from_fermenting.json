@@ -1,0 +1,28 @@
+{
+  "type": "vintagedelight:fermenting",
+  "processingTime": 10000,
+  "ingredients": [
+    {
+      "tag": "forge:cucumber"
+    },
+    {
+      "tag": "forge:cucumber"
+    },
+    {
+      "tag": "forge:cucumber"
+    },
+    {
+      "tag": "forge:cucumber"
+    },
+    {
+      "tag": "forge:cucumber"
+    },
+    {
+      "tag": "c:salt"
+    }
+  ],
+  "output": {
+    "count": 5,
+    "item": "vintagedelight:pickle"
+  }
+}

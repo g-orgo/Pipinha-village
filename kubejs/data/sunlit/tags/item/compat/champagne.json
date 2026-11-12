@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "kaleidoscope_tavern:champagne",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:champagne",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "kaleidoscope_cookery:borscht",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:borscht",
+      "required": false
+    }
+  ]
+}

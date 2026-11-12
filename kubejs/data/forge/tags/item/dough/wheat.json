@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bakery:dough",
+      "required": false
+    },
+    {
+      "id": "candlelight:dough",
+      "required": false
+    },
+    {
+      "id": "create:dough",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:dough",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:dough",
+      "required": false
+    }
+  ]
+}

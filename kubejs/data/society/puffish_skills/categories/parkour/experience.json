@@ -1,0 +1,56 @@
+{
+  "experience_per_level": {
+    "type": "values",
+    "data": {
+      "values": [
+        200,
+        400,
+        800,
+        1500,
+        3000,
+        4500,
+        6000,
+        8000,
+        10000,
+        13000,
+        16000,
+        20000
+      ]
+    }
+  },
+  "sources": [
+    {
+      "type": "puffish_skills:increase_stat",
+      "data": {
+        "variables": {
+          "is_fall": {
+            "operations": [
+              {
+                "type": "get_stat"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "stat": "minecraft.custom:minecraft.fall_one_cm"
+                }
+              }
+            ]
+          },
+          "amount": {
+            "operations": [
+              {
+                "type": "get_increase_amount"
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "is_fall",
+            "expression": "amount * 0.06"
+          }
+        ]
+      }
+    }
+  ]
+}

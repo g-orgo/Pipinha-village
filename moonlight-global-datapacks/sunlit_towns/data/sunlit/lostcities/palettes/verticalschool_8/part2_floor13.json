@@ -1,0 +1,1 @@
+{"palette":[{"char":"a","block":"create:redstone_link[powered=true,receiver=false,facing=up]"},{"char":"b","block":"minecraft:redstone_torch[lit=true]"},{"char":"c","block":"create:redstone_link[powered=false,receiver=false,facing=up]"}]}

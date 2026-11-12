@@ -1,0 +1,28 @@
+{
+  "type": "vintagedelight:fermenting",
+  "processingTime": 10000,
+  "ingredients": [
+    {
+      "item": "society:truffle"
+    },
+    {
+      "item": "society:truffle"
+    },
+    {
+      "item": "society:truffle"
+    },
+    {
+      "item": "society:truffle"
+    },
+    {
+      "item": "vintagedelight:vinegar_bottle"
+    },
+    {
+      "tag": "c:salt"
+    }
+  ],
+  "output": {
+    "count": 4,
+    "item": "society:truffle_oil"
+  }
+}

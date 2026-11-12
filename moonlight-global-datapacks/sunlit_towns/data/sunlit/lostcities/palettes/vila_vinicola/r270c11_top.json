@@ -1,0 +1,1 @@
+{"palette": [{"char": "G", "block": "minecraft:dirt"}, {"char": "!", "block": "minecraft:stone_slab[type=bottom]"}, {"char": "#", "block": "minecraft:stone_slab[type=double]"}, {"char": "$", "block": "minecraft:stone_stairs[facing=north,half=top,shape=straight]"}, {"char": "%", "block": "minecraft:dark_oak_fence"}]}

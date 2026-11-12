@@ -1,0 +1,13 @@
+#Dramatic Doors
+[Experimental]
+	#Development mode ensures that all compat doors are always registered regardless of whether mods are installed or not, for development purposes. Expect a lot of broken recipes due to the corresponding mods not installed! | default: false
+	dev_mode = false
+
+[Mixins]
+	#Allows doors to be waterlogged. Enable to allow waterlogging, disable for compatibility with certain mods.  Requires restart after changing. | default: true
+	waterloggable_doors = true
+	#Allows fence gates to be waterlogged. Enable to allow waterlogging, disable for compatibility with certain mods.  Requires restart after changing. | default: true
+	waterloggable_fence_gates = true
+	#Allows witches to open doors, fixing a bug where they could not open doors.  Requires restart after changing. | default: true
+	witches_open_doors = true
+

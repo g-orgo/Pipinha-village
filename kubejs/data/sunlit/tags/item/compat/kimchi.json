@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "vintagedelight:kimchi",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:kimchi",
+      "required": false
+    }
+  ]
+}

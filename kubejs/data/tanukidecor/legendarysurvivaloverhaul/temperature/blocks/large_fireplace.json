@@ -1,0 +1,14 @@
+[
+  {
+    "properties": {
+      "height": "1"
+    },
+    "temperature": 8.0
+  },
+  {
+    "properties": {
+      "height": "2"
+    },
+    "temperature": 0.0
+  }
+]

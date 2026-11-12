@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersrespite:coffee_berries",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:coffee_berries",
+      "required": false
+    }
+  ]
+}

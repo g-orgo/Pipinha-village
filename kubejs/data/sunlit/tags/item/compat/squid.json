@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "miners_delight:squid",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:squid",
+      "required": false
+    }
+  ]
+}

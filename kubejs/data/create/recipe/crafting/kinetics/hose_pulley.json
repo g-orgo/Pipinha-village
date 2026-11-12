@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "create:copper_casing"
+    },
+    "C": {
+      "item": "create:belt_connector"
+    },
+    "I": {
+      "tag": "c:plates/copper"
+    }
+  },
+  "pattern": [
+    "B",
+    "C",
+    "I"
+  ],
+  "result": {
+    "id": "create:hose_pulley"
+  },
+  "show_notification": true
+}

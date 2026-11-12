@@ -1,0 +1,1 @@
+{"palette":[{"char":"a","block":"minecraft:air"},{"char":"b","block":"create:redstone_contact[powered=false,facing=south]"},{"char":"c","block":"create:redstone_contact[powered=true,facing=east]"},{"char":"d","block":"create:redstone_contact[powered=true,facing=west]"}]}

@@ -1,0 +1,312 @@
+{
+  "traceur": {
+    "title": {"translate": "society_skills.parkour.traceur"},
+    "description": {"translate": "society_skills.parkour.traceur.description"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:feather"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:fall_reduction",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "soft_landing_1": {
+    "title": {"translate": "society_skills.parkour.soft_landing_1"},
+    "description": {"translate": "society_skills.parkour.soft_landing_1.description"},
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:slow_falling"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:fall_reduction",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "soft_landing_2": {
+    "title": {"translate": "society_skills.parkour.soft_landing_2"},
+    "description": {"translate": "society_skills.parkour.soft_landing_2.description"},
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:slow_falling"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:fall_reduction",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "soft_landing_3": {
+    "title": {"translate": "society_skills.parkour.soft_landing_3"},
+    "description": {"translate": "society_skills.parkour.soft_landing_3.description"},
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:slow_falling"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:fall_reduction",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "soft_landing_4": {
+    "title": {"translate": "society_skills.parkour.soft_landing_4"},
+    "description": {"translate": "society_skills.parkour.soft_landing_4.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:slow_falling"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:fall_reduction",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "fast_feet_1": {
+    "title": {"translate": "society_skills.parkour.fast_feet_1"},
+    "description": {"translate": "society_skills.parkour.fast_feet_1.description"},
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:speed"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:sprinting_speed",
+          "value": 0.075,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "fast_feet_2": {
+    "title": {"translate": "society_skills.parkour.fast_feet_2"},
+    "description": {"translate": "society_skills.parkour.fast_feet_2.description"},
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:speed"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:sprinting_speed",
+          "value": 0.075,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "fast_feet_3": {
+    "title": {"translate": "society_skills.parkour.fast_feet_3"},
+    "description": {"translate": "society_skills.parkour.fast_feet_3.description"},
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:speed"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:sprinting_speed",
+          "value": 0.075,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "fast_feet_4": {
+    "title": {"translate": "society_skills.parkour.fast_feet_4"},
+    "description": {"translate": "society_skills.parkour.fast_feet_4.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:speed"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:sprinting_speed",
+          "value": 0.075,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "deep_breath_1": {
+    "title": {"translate": "society_skills.parkour.deep_breath_1"},
+    "description": {"translate": "society_skills.parkour.deep_breath_1.description"},
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:saturation"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stamina",
+          "value": 1,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "value": 0.25,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "deep_breath_2": {
+    "title": {"translate": "society_skills.parkour.deep_breath_2"},
+    "description": {"translate": "society_skills.parkour.deep_breath_2.description"},
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:saturation"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stamina",
+          "value": 1,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "value": 0.25,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "deep_breath_3": {
+    "title": {"translate": "society_skills.parkour.deep_breath_3"},
+    "description": {"translate": "society_skills.parkour.deep_breath_3.description"},
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:saturation"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stamina",
+          "value": 1,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "value": 0.25,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "deep_breath_4": {
+    "title": {"translate": "society_skills.parkour.deep_breath_4"},
+    "description": {"translate": "society_skills.parkour.deep_breath_4.description"},
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:saturation"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stamina",
+          "value": 1,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "value": 0.25,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  }
+}

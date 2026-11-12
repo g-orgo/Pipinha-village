@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "vintagedelight:roasted_peanut",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:roasted_peanuts",
+      "required": false
+    }
+  ]
+}

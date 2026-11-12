@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "veggiesdelight:mashed_potatoes",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:mashed_potatoes",
+      "required": false
+    }
+  ]
+}

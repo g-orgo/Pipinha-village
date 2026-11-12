@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "legendarysurvivaloverhaul:apple_juice",
+      "required": false
+    },
+    {
+      "id": "vinery:apple_juice",
+      "required": false
+    }
+  ]
+}

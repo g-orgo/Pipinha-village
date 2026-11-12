@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "snowyspirit:ginger"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "tag": "society:small_milk"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "id": "snowyspirit:eggnog",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "snowyspirit:flag",
+      "flag": "eggnog"
+    }
+  ]
+}

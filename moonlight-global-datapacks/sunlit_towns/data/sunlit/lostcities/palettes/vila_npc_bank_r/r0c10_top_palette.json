@@ -1,0 +1,1 @@
+{"palette": [{"char": "G", "block": "minecraft:dirt"}, {"char": "!", "block": "quark:gray_shingles_slab[type=bottom]"}, {"char": "#", "block": "quark:gray_shingles_stairs[facing=south,half=bottom,shape=straight]"}, {"char": "$", "block": "supplementaries:daub_frame"}, {"char": "%", "block": "quark:gray_shingles_slab[type=top]"}]}

@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersrespite:coffee_beans",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:coffee_beans",
+      "required": false
+    },
+    {
+      "id": "herbalbrews:coffee_beans",
+      "required": false
+    }
+  ]
+}

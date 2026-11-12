@@ -1,0 +1,38 @@
+{
+  "467592A7E7601CAD": {
+    "definition": "scavenge_basics",
+    "x": -320,
+    "y": 0,
+    "root": true
+  },
+  "29BCECAF4FD0F95E": {
+    "definition": "rummage_1",
+    "x": -224,
+    "y": 0,
+    "root": false
+  },
+  "0B61CFE680411479": {
+    "definition": "rummage_2",
+    "x": -128,
+    "y": 0,
+    "root": false
+  },
+  "BA0D49A41680602C": {
+    "definition": "rummage_3",
+    "x": -32,
+    "y": 0,
+    "root": false
+  },
+  "BF0C266A80C107B3": {
+    "definition": "keen_nose_1",
+    "x": -224,
+    "y": -128,
+    "root": false
+  },
+  "F1F2014D2424DFC2": {
+    "definition": "keen_nose_2",
+    "x": -224,
+    "y": 128,
+    "root": false
+  }
+}

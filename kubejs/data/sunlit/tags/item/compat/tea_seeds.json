@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersrespite:tea_seeds",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:tea_seeds",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:tea_seed",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "pamhc2trees:roastedchestnutitem",
+      "required": false
+    },
+    {
+      "id": "windswept:roasted_chestnuts",
+      "required": false
+    }
+  ]
+}

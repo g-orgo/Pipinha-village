@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "vinery:cherry_wine",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:cherry_wine",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "meadow:cheese_sandwich",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:cheese_sandwich",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersrespite:coffee",
+      "required": false
+    },
+    {
+      "id": "herbalbrews:coffee",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "meadow:cooking",
+  "result": {
+    "id": "bakery:chocolate_jam"
+  },
+  "ingredients": [
+    {
+      "tag": "society:large_milk"
+    },
+    {
+      "tag": "bakery:chocolate"
+    },
+    {
+      "tag": "c:sugar"
+    }
+  ],
+  "container": {
+    "item": "bakery:jar"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "bakery"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "meadow"
+    }
+  ]
+}

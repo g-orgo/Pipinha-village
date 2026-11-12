@@ -1,0 +1,2480 @@
+{
+  "shop_id": "grocer",
+  "name": "shop.society_trading.grocer",
+  "texture": "farmersdelight:textures/block/cabbage_crate_top",
+  "jei_catalyst": {
+    "item": "farmersdelight:cabbage_crate"
+  },
+  "stage_required": "profession_cook",
+  "selector_weight": -94,
+  "trades": [
+    {
+      "offer": {
+        "item": "minecraft:egg",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 48,
+      "trade_id": "grocer_egg_x8"
+    },
+    {
+      "offer": {
+        "item": "minecraft:egg",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 43,
+      "trade_id": "grocer_egg_x8_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "minecraft:egg",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 41,
+      "trade_id": "grocer_egg_x8_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:egg",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 36,
+      "trade_id": "grocer_egg_x8_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "society:milk",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 96,
+      "trade_id": "grocer_milk_x4"
+    },
+    {
+      "offer": {
+        "item": "society:milk",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 86,
+      "trade_id": "grocer_milk_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "society:milk",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 82,
+      "trade_id": "grocer_milk_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "society:milk",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 72,
+      "trade_id": "grocer_milk_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:flour",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 120,
+      "trade_id": "grocer_flour_x4"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:flour",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 108,
+      "trade_id": "grocer_flour_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:flour",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 102,
+      "trade_id": "grocer_flour_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:flour",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 90,
+      "trade_id": "grocer_flour_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:rice",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 4
+      },
+      "numismatics_cost": 60,
+      "trade_id": "grocer_rice_x8"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:rice",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 4
+      },
+      "numismatics_cost": 54,
+      "trade_id": "grocer_rice_x8_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:rice",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 4
+      },
+      "numismatics_cost": 51,
+      "trade_id": "grocer_rice_x8_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:rice",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 4
+      },
+      "numismatics_cost": 45,
+      "trade_id": "grocer_rice_x8_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:butter",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 144,
+      "trade_id": "grocer_butter_x2"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:butter",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 130,
+      "trade_id": "grocer_butter_x2_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:butter",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 122,
+      "trade_id": "grocer_butter_x2_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:butter",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 108,
+      "trade_id": "grocer_butter_x2_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "minecraft:beef",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 48,
+      "trade_id": "grocer_beef_x2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:beef",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 43,
+      "trade_id": "grocer_beef_x2_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "minecraft:beef",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 41,
+      "trade_id": "grocer_beef_x2_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:beef",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 36,
+      "trade_id": "grocer_beef_x2_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "minecraft:porkchop",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 96,
+      "trade_id": "grocer_porkchop_x2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:porkchop",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 86,
+      "trade_id": "grocer_porkchop_x2_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "minecraft:porkchop",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 82,
+      "trade_id": "grocer_porkchop_x2_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:porkchop",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 72,
+      "trade_id": "grocer_porkchop_x2_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "minecraft:chicken",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 24,
+      "trade_id": "grocer_chicken_x2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:chicken",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 22,
+      "trade_id": "grocer_chicken_x2_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "minecraft:chicken",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 20,
+      "trade_id": "grocer_chicken_x2_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:chicken",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 18,
+      "trade_id": "grocer_chicken_x2_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "minecraft:mutton",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 48,
+      "trade_id": "grocer_mutton_x2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:mutton",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 43,
+      "trade_id": "grocer_mutton_x2_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "minecraft:mutton",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 41,
+      "trade_id": "grocer_mutton_x2_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:mutton",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 36,
+      "trade_id": "grocer_mutton_x2_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "minecraft:cod",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 48,
+      "trade_id": "grocer_cod_x2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:cod",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 43,
+      "trade_id": "grocer_cod_x2_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "minecraft:cod",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 41,
+      "trade_id": "grocer_cod_x2_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:cod",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 36,
+      "trade_id": "grocer_cod_x2_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:tomato",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 96,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_tomato_x4"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:tomato",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 86,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_tomato_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:tomato",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 82,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_tomato_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:tomato",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 72,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_summer",
+        "mid_summer",
+        "late_summer",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_tomato_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:turnip",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 144,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_turnip_x4"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:turnip",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 130,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_turnip_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:turnip",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 122,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_turnip_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:turnip",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 108,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_turnip_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:strawberry",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 36,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_strawberry_x4"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:strawberry",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 32,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_strawberry_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:strawberry",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 31,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_strawberry_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:strawberry",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 27,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_strawberry_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:onion",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 48,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_onion_x4"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:onion",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 43,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_onion_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:onion",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 41,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_onion_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:onion",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 36,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_onion_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:cauliflower",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 192,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_cauliflower_x4"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:cauliflower",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 173,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_cauliflower_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:cauliflower",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 163,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_cauliflower_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:cauliflower",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 144,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_cauliflower_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:lettuce",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 96,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_lettuce_x4"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:lettuce",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 86,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_lettuce_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:lettuce",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 82,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_lettuce_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "kaleidoscope_cookery:lettuce",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 72,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_lettuce_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "minecraft:carrot",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 90,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_carrot_x4"
+    },
+    {
+      "offer": {
+        "item": "minecraft:carrot",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 81,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_carrot_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "minecraft:carrot",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 77,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_carrot_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:carrot",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 68,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_carrot_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "minecraft:potato",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 96,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_potato_x4"
+    },
+    {
+      "offer": {
+        "item": "minecraft:potato",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 86,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_potato_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "minecraft:potato",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 82,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_potato_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:potato",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 72,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_potato_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:garlic",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 108,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_garlic_x4"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:garlic",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 97,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_garlic_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:garlic",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 92,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_garlic_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:garlic",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 81,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_garlic_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "vintagedelight:cucumber",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 288,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_cucumber_x4"
+    },
+    {
+      "offer": {
+        "item": "vintagedelight:cucumber",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 259,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_cucumber_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "vintagedelight:cucumber",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 245,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_cucumber_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "vintagedelight:cucumber",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 216,
+      "seasons_required": [
+        "early_spring",
+        "mid_spring",
+        "late_spring"
+      ],
+      "trade_id": "grocer_cucumber_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "society:blueberry",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 48,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_blueberry_x4"
+    },
+    {
+      "offer": {
+        "item": "society:blueberry",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 43,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_blueberry_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "society:blueberry",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 41,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_blueberry_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "society:blueberry",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 36,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_blueberry_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "minecraft:wheat",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 90,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_wheat_x4"
+    },
+    {
+      "offer": {
+        "item": "minecraft:wheat",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 81,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_wheat_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "minecraft:wheat",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 77,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_wheat_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:wheat",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 68,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_wheat_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:bellpepper",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 126,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_bellpepper_x4"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:bellpepper",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 113,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_bellpepper_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:bellpepper",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 107,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_bellpepper_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:bellpepper",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 95,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_bellpepper_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "minecraft:melon_slice",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 72,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_melon_slice_x8"
+    },
+    {
+      "offer": {
+        "item": "minecraft:melon_slice",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 65,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_melon_slice_x8_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "minecraft:melon_slice",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 61,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_melon_slice_x8_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:melon_slice",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 54,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_melon_slice_x8_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "culturaldelights:corn_cob",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 54,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_corn_cob_x4"
+    },
+    {
+      "offer": {
+        "item": "culturaldelights:corn_cob",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 49,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_corn_cob_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "culturaldelights:corn_cob",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 46,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_corn_cob_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "culturaldelights:corn_cob",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 41,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer",
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_corn_cob_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:oat",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 72,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_oat_x4"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:oat",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 65,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_oat_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:oat",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 61,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_oat_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:oat",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 54,
+      "seasons_required": [
+        "early_summer",
+        "mid_summer",
+        "late_summer"
+      ],
+      "trade_id": "grocer_oat_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "society:eggplant",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 168,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_eggplant_x4"
+    },
+    {
+      "offer": {
+        "item": "society:eggplant",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 151,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_eggplant_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "society:eggplant",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 143,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_eggplant_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "society:eggplant",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 3
+      },
+      "numismatics_cost": 126,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_eggplant_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "society:cranberry",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 36,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_cranberry_x4"
+    },
+    {
+      "offer": {
+        "item": "society:cranberry",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 32,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_cranberry_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "society:cranberry",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 31,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_cranberry_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "society:cranberry",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "numismatics_cost": 27,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_cranberry_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:barley",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 48,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn",
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "grocer_barley_x8"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:barley",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 43,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn",
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "grocer_barley_x8_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:barley",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 41,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn",
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "grocer_barley_x8_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "farm_and_charm:barley",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "numismatics_cost": 36,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn",
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "grocer_barley_x8_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "minecraft:beetroot",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 96,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_beetroot_x4"
+    },
+    {
+      "offer": {
+        "item": "minecraft:beetroot",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 86,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_beetroot_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "minecraft:beetroot",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 82,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_beetroot_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:beetroot",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 72,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_beetroot_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "minecraft:pumpkin",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 80,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_pumpkin_x1"
+    },
+    {
+      "offer": {
+        "item": "minecraft:pumpkin",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 72,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_pumpkin_x1_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "minecraft:pumpkin",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 68,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_pumpkin_x1_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "minecraft:pumpkin",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 60,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_pumpkin_x1_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "farmersdelight:cabbage",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 141,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn",
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "grocer_cabbage_x2"
+    },
+    {
+      "offer": {
+        "item": "farmersdelight:cabbage",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 127,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn",
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "grocer_cabbage_x2_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "farmersdelight:cabbage",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 120,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn",
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "grocer_cabbage_x2_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "farmersdelight:cabbage",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 106,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn",
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "grocer_cabbage_x2_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:sweet_potato",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 78,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_sweet_potato_x4"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:sweet_potato",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 70,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_sweet_potato_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:sweet_potato",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 66,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_sweet_potato_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "veggiesdelight:sweet_potato",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "numismatics_cost": 59,
+      "seasons_required": [
+        "early_autumn",
+        "mid_autumn",
+        "late_autumn"
+      ],
+      "trade_id": "grocer_sweet_potato_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    },
+    {
+      "offer": {
+        "item": "snowyspirit:ginger",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 96,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "grocer_ginger_x4"
+    },
+    {
+      "offer": {
+        "item": "snowyspirit:ginger",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 86,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "grocer_ginger_x4_mercantil_1",
+      "stage_required": "mercantil_kitchen_1",
+      "stage_removed": "mercantil_kitchen_2",
+      "unlock_description": "jei.society_trading.mercantil_discount_1"
+    },
+    {
+      "offer": {
+        "item": "snowyspirit:ginger",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 82,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "grocer_ginger_x4_mercantil_2",
+      "stage_required": "mercantil_kitchen_2",
+      "stage_removed": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_2"
+    },
+    {
+      "offer": {
+        "item": "snowyspirit:ginger",
+        "count": 4
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "numismatics_cost": 72,
+      "seasons_required": [
+        "early_winter",
+        "mid_winter",
+        "late_winter"
+      ],
+      "trade_id": "grocer_ginger_x4_mercantil_3",
+      "stage_required": "mercantil_kitchen_3",
+      "unlock_description": "jei.society_trading.mercantil_discount_3"
+    }
+  ]
+}

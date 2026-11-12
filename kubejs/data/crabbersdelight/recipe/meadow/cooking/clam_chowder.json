@@ -1,0 +1,33 @@
+{
+  "type": "meadow:cooking",
+  "result": {
+    "id": "crabbersdelight:clam_chowder"
+  },
+  "ingredients": [
+    {
+      "item": "crabbersdelight:cooked_clam_meat"
+    },
+    {
+      "item": "farm_and_charm:onion"
+    },
+    {
+      "tag": "c:crops/potato"
+    },
+    {
+      "tag": "society:large_milk"
+    }
+  ],
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "crabbersdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "meadow"
+    }
+  ]
+}

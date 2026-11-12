@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "kaleidoscope_cookery:seafood_miso_soup",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:seafood_miso_soup",
+      "required": false
+    }
+  ]
+}

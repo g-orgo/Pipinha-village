@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "kaleidoscope_cookery:raw_dough",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:wheat_dough",
+      "required": false
+    },
+    {
+      "id": "create:dough",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:dough",
+      "required": false
+    },
+    {
+      "id": "bakery:dough",
+      "required": false
+    },
+    {
+      "id": "candlelight:dough",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:dough",
+      "required": false
+    }
+  ]
+}

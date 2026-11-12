@@ -1,0 +1,1 @@
+{"palette":[{"char":"a","block":"minecraft:jungle_leaves[waterlogged=false,persistent=true]"},{"char":"b","block":"minecraft:dark_oak_log[axis=y]"},{"char":"c","block":"minecraft:cocoa[facing=south,age=2]"},{"char":"d","block":"minecraft:cocoa[facing=east,age=2]"},{"char":"e","block":"minecraft:cocoa[facing=west,age=2]"},{"char":"f","block":"simplylight:wall_lamp[facing=down]"}]}

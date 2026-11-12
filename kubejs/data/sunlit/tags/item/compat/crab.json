@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "crabbersdelight:crab",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:crab",
+      "required": false
+    }
+  ]
+}

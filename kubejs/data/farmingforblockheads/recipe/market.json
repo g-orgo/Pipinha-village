@@ -1,0 +1,19 @@
+{
+  "result": {
+    "id": "farmingforblockheads:market"
+  },
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BCB",
+    " B "
+  ],
+  "key": {
+    "C": {
+      "tag": "c:chests"
+    },
+    "B": {
+      "item": "numismatics:bevel"
+    }
+  }
+}

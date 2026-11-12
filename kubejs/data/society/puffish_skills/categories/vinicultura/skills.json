@@ -1,0 +1,92 @@
+{
+  "A73AE1606958809D": {
+    "definition": "vineyard_basics",
+    "x": -320,
+    "y": 0,
+    "root": true
+  },
+  "7BC3F3EBED1919F5": {
+    "definition": "harvest_1",
+    "x": -224,
+    "y": -128,
+    "root": false
+  },
+  "43EE707A6A43AE6A": {
+    "definition": "generous_barrels",
+    "x": -128,
+    "y": -128,
+    "root": false
+  },
+  "739465943F71157E": {
+    "definition": "harvest_2",
+    "x": -32,
+    "y": -128,
+    "root": false
+  },
+  "474C5A3C3286CF97": {
+    "definition": "master_vintner",
+    "x": 64,
+    "y": -128,
+    "root": false
+  },
+  "E3C9F7451B9D0789": {
+    "definition": "cellar_1",
+    "x": -224,
+    "y": 0,
+    "root": false
+  },
+  "C63EC9EA8A5B583A": {
+    "definition": "cellar_2",
+    "x": -128,
+    "y": 0,
+    "root": false
+  },
+  "C86678DB953979E7": {
+    "definition": "cellar_3",
+    "x": -32,
+    "y": 0,
+    "root": false
+  },
+  "40B3E5B41B7E274C": {
+    "definition": "cellar_master",
+    "x": 64,
+    "y": 0,
+    "root": false
+  },
+  "B62D09107053AA88": {
+    "definition": "tasting_1",
+    "x": -224,
+    "y": 128,
+    "root": false
+  },
+  "B4B338633B9C20E7": {
+    "definition": "tasting_2",
+    "x": -128,
+    "y": 128,
+    "root": false
+  },
+  "7BA5801FC7F860E8": {
+    "definition": "tasting_3",
+    "x": -32,
+    "y": 128,
+    "root": false
+  },
+  "FCF1EAC1F05DE161": {
+    "definition": "grand_cru",
+    "x": 64,
+    "y": 128,
+    "root": false
+  },
+  "CB1F6D4A40648ED6": {
+    "definition": "specialty_1",
+    "x": -128,
+    "y": 64,
+    "root": false
+  },
+  "E0762F6716F90855": {
+    "definition": "specialty_2",
+    "x": 160,
+    "y": 0,
+    "root": false
+  }
+}

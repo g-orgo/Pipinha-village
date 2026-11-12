@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "culturaldelights:ginger",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:ginger",
+      "required": false
+    }
+  ]
+}

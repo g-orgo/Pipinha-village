@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "vinery:red_grape_seeds",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:red_grape_seeds",
+      "required": false
+    }
+  ]
+}

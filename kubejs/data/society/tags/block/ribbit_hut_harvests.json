@@ -1,0 +1,28 @@
+{
+  "values": [
+    "#minecraft:crops",
+    "vintagedelight:gearo_berry_bush",
+    "windswept:wild_berry_bush",
+    "minecraft:sweet_berry_bush",
+    "autumnity:tall_foul_berry_bush",
+    "vinery:grapevine_stem",
+    "nethervinery:obsidian_stem",
+    "vinery:oak_lattice",
+    "vinery:spruce_lattice",
+    "vinery:birch_lattice",
+    "vinery:jungle_lattice",
+    "vinery:acacia_lattice",
+    "vinery:dark_oak_lattice",
+    "vinery:mangrove_lattice",
+    "vinery:bamboo_lattice",
+    "vinery:cherry_lattice",
+    "vinery:dark_cherry_lattice",
+    "minecraft:pumpkin",
+    "minecraft:melon",
+    "minecraft:cocoa",
+    "minecraft:nether_wart",
+    "minecraft:torchflower",
+    "minecraft:pitcher_crop",
+    "society:mana_fruit_crop"
+  ]
+}

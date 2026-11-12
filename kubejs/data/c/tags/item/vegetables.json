@@ -1,0 +1,89 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farm_and_charm:corn",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:lettuce",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:onion",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:tomato",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:onion",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:tomato",
+      "required": false
+    },
+    {
+      "id": "hauntedharvest:corn",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:lettuce",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:tomato",
+      "required": false
+    },
+    {
+      "id": "#forge:vegetables/beetroot",
+      "required": false
+    },
+    {
+      "id": "#forge:vegetables/carrot",
+      "required": false
+    },
+    {
+      "id": "#forge:vegetables/potato",
+      "required": false
+    },
+    {
+      "id": "#forge:vegetables/cabbage",
+      "required": false
+    },
+    {
+      "id": "#c:vegetables/cucumber",
+      "required": false
+    },
+    {
+      "id": "#forge:vegetables/eggplant",
+      "required": false
+    },
+    {
+      "id": "#forge:vegetables/garlic",
+      "required": false
+    },
+    {
+      "id": "#c:vegetables/lettuce",
+      "required": false
+    },
+    {
+      "id": "#forge:vegetables/onion",
+      "required": false
+    },
+    {
+      "id": "#c:vegetables/tomato",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:ginger",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:ginger",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farm_and_charm:oat"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "pamhc2trees:roastedhazelnutitem"
+    },
+    {
+      "tag": "c:berries"
+    },
+    {
+      "tag": "c:berries"
+    }
+  ],
+  "result": {
+    "id": "vintagedelight:deluxe_granola_bar",
+    "count": 4
+  }
+}

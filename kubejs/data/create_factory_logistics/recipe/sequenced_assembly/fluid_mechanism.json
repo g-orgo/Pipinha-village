@@ -1,0 +1,93 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:copper_sheet"
+  },
+  "loops": 3,
+  "results": [
+    {
+      "id": "create_factory_logistics:fluid_mechanism",
+      "chance": 250.0
+    },
+    {
+      "id": "create:copper_sheet",
+      "chance": 8.0
+    },
+    {
+      "id": "create:andesite_alloy",
+      "chance": 8.0
+    },
+    {
+      "id": "society:rubber",
+      "chance": 5.0
+    },
+    {
+      "id": "numismatics:crown",
+      "chance": 2.0
+    },
+    {
+      "id": "create:shaft",
+      "chance": 2.0
+    },
+    {
+      "id": "create:crushed_raw_copper",
+      "chance": 2.0
+    },
+    {
+      "id": "create:mechanical_pump"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_factory_logistics:incomplete_fluid_mechanism"
+        },
+        {
+          "item": "society:rubber"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_factory_logistics:incomplete_fluid_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_factory_logistics:incomplete_fluid_mechanism"
+        },
+        {
+          "item": "aquaculture:neptunium_nugget"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_factory_logistics:incomplete_fluid_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_factory_logistics:incomplete_fluid_mechanism"
+        },
+        {
+          "item": "numismatics:crown"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_factory_logistics:incomplete_fluid_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "create_factory_logistics:incomplete_fluid_mechanism"
+  }
+}

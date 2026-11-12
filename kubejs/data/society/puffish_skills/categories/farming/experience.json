@@ -1,0 +1,67 @@
+{
+  "experience_per_level": {
+    "type": "values",
+    "data": {
+      "values": [
+        500,
+        1000,
+        2000,
+        4000,
+        8000,
+        10000,
+        12000,
+        16000,
+        20000,
+        22000,
+        24000,
+        30000,
+        34000,
+        38000
+      ]
+    }
+  },
+  "sources": [
+    {
+      "type": "puffish_skills:eat_food",
+      "data": {
+        "variables": {
+          "is_dish": {
+            "operations": [
+              {
+                "type": "get_eaten_item_stack"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "item": "#society:dish"
+                }
+              }
+            ]
+          },
+          "profession": {
+            "operations": [
+              {
+                "type": "get_player"
+              },
+              {
+                "type": "as_entity"
+              },
+              {
+                "type": "puffish_skills:get_score",
+                "data": {
+                  "objective": "sunlit_prof_farming"
+                }
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "is_dish",
+            "expression": "(20) * (1 + 0.5 * profession)"
+          }
+        ]
+      }
+    }
+  ]
+}

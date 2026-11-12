@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "culturaldelights:cucumber",
+      "required": false
+    },
+    {
+      "id": "vintagedelight:cucumber",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:cucumber",
+      "required": false
+    }
+  ]
+}

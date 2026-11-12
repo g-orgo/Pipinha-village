@@ -1,0 +1,3763 @@
+{
+  "merged": [
+    [
+      "DistantHorizons.toml",
+      11
+    ],
+    [
+      "alltheleaks.json",
+      2
+    ],
+    [
+      "amendments-client.toml",
+      7
+    ],
+    [
+      "atmospheric-common.toml",
+      1
+    ],
+    [
+      "bcc-common.toml",
+      3
+    ],
+    [
+      "buildinggadgets2-common.toml",
+      10
+    ],
+    [
+      "carryon-common.toml",
+      5
+    ],
+    [
+      "citadel-common.toml",
+      1
+    ],
+    [
+      "cluttered-common.toml",
+      1
+    ],
+    [
+      "cozycafe-common.toml",
+      9
+    ],
+    [
+      "craftingtweaks-common.toml",
+      1
+    ],
+    [
+      "createentitycontrol-common.toml",
+      4
+    ],
+    [
+      "curios-common.toml",
+      1
+    ],
+    [
+      "emojiful-client.toml",
+      1
+    ],
+    [
+      "everycomp-common.toml",
+      2
+    ],
+    [
+      "everycomp-entries.toml",
+      24
+    ],
+    [
+      "farmersdelight-common.toml",
+      3
+    ],
+    [
+      "farmingforblockheads-common.toml",
+      3
+    ],
+    [
+      "fastpaintings-common.toml",
+      1
+    ],
+    [
+      "faunaandorchestra-common.toml",
+      1
+    ],
+    [
+      "horseman-client.toml",
+      2
+    ],
+    [
+      "immediatelyfast.json",
+      1
+    ],
+    [
+      "jeed-client.toml",
+      1
+    ],
+    [
+      "libtooltips-client.toml",
+      1
+    ],
+    [
+      "littlejoys-common.toml",
+      5
+    ],
+    [
+      "midnightlib.json",
+      1
+    ],
+    [
+      "moreoverlays.toml",
+      1
+    ],
+    [
+      "netherdepthsupgrade-common.toml",
+      1
+    ],
+    [
+      "numismatics-common.toml",
+      1
+    ],
+    [
+      "paraglider-common.toml",
+      1
+    ],
+    [
+      "perfectplushieapi-common.toml",
+      8
+    ],
+    [
+      "quark-common.toml",
+      65
+    ],
+    [
+      "replaymod.json",
+      3
+    ],
+    [
+      "resourceful-config-web.json",
+      1
+    ],
+    [
+      "rottencreatures-common.toml",
+      9
+    ],
+    [
+      "sawmill-common.toml",
+      2
+    ],
+    [
+      "selectivebounds.json",
+      2
+    ],
+    [
+      "shouldersurfing-client.toml",
+      4
+    ],
+    [
+      "simplerecall-common.toml",
+      3
+    ],
+    [
+      "smallships-client.toml",
+      2
+    ],
+    [
+      "snowyspirit-common.toml",
+      1
+    ],
+    [
+      "sodiumdynamiclights-client.toml",
+      1
+    ],
+    [
+      "sophisticatedcore-common.toml",
+      1
+    ],
+    [
+      "structurify.json",
+      4
+    ],
+    [
+      "supplementaries-client.toml",
+      1
+    ],
+    [
+      "supplementaries-common.toml",
+      6
+    ],
+    [
+      "tanukidecor-common.toml",
+      1
+    ],
+    [
+      "toms_storage-common.toml",
+      2
+    ],
+    [
+      "toolbelt-client.toml",
+      1
+    ],
+    [
+      "toolbelt-common.toml",
+      1
+    ],
+    [
+      "treechop-common.toml",
+      6
+    ],
+    [
+      "vanillabackport-client.toml",
+      2
+    ],
+    [
+      "veggiesdelight-common.toml",
+      9
+    ],
+    [
+      "via_romana.json",
+      2
+    ],
+    [
+      "watut-client.toml",
+      3
+    ],
+    [
+      "watut-server.toml",
+      2
+    ],
+    [
+      "windswept-common.toml",
+      2
+    ],
+    [
+      "CSC/config.toml",
+      3
+    ],
+    [
+      "ali/ali_common.json",
+      4
+    ],
+    [
+      "crash_assistant/config.toml",
+      6
+    ],
+    [
+      "jade/hide-blocks.json",
+      2
+    ],
+    [
+      "jade/hide-entities.json",
+      2
+    ],
+    [
+      "jade/jade.json",
+      2
+    ],
+    [
+      "jade/plugins.json",
+      2
+    ],
+    [
+      "obscuria/loot_journal-client.toml",
+      2
+    ],
+    [
+      "particlerain/config.json",
+      6
+    ],
+    [
+      "punchy/punchy_config.json",
+      3
+    ],
+    [
+      "sereneseasons/fertility.toml",
+      2
+    ],
+    [
+      "sereneseasons/seasons.toml",
+      2
+    ],
+    [
+      "tooltipoverhaul/custom_frames.json",
+      1
+    ]
+  ],
+  "keys_changed": 287,
+  "copied": [
+    "SeasonHUD-client.toml",
+    "additional_attributes-client.toml",
+    "advancementplaques-common.toml",
+    "ambientsounds-client.json",
+    "attributefix.json",
+    "bakery.toml",
+    "balm-client.toml",
+    "balm-common.toml",
+    "beachparty.toml",
+    "betterarcheology-common.toml",
+    "cfm_wap.server.toml",
+    "chimes-client.toml",
+    "chimes-common.toml",
+    "create_mechanical_extruder-common.toml",
+    "creeperconfetti-common.toml",
+    "crittersandcompanions-common.toml",
+    "cuisinedelight-common.toml",
+    "dialog-client.toml",
+    "dramaticdoors-common.toml",
+    "easyanvils-server.toml",
+    "emberstextapi-common.toml",
+    "galena_hats.json",
+    "gnetum.json",
+    "herbalbrews.toml",
+    "immersive_paintings.json",
+    "irons_rpg_tweaks-client.toml",
+    "itemphysic-client.json",
+    "itemphysic.json",
+    "leavesbegone-server.toml",
+    "lmft.json",
+    "logbegone.toml",
+    "mapperbase-client.toml",
+    "meadow.toml",
+    "moblassos-server.toml",
+    "neo_auth-client.toml",
+    "observable.json",
+    "pamhc2trees.toml",
+    "perfectplushies-common.toml",
+    "platform-client.toml",
+    "refinedstorage-client.toml",
+    "refurbished_furniture.server.toml",
+    "ribbits-forge-1_20_1.toml",
+    "sdrp-common.json",
+    "simplehats-client.toml",
+    "simplehats-common.toml",
+    "smallships-common.toml",
+    "solonion-client.json",
+    "solonion.json",
+    "toastcontrol-common.toml",
+    "via_romana-common.toml",
+    "vinery.toml",
+    "wildernature.toml",
+    "SkillExpNotifier/IconMappings.json",
+    "SkillExpNotifier/config.toml",
+    "controllable/radial_menu_items.json",
+    "crash_assistant/modlist.json",
+    "easy_npc/user_defined_npcs.json",
+    "easy_npc/pose/humanoid_slim/humanoid_slim_poses.json",
+    "farmingforblockheads/MarketRegistry.json",
+    "incontrol/areas.json",
+    "incontrol/breakevents.json",
+    "incontrol/effects.json",
+    "incontrol/events.json",
+    "incontrol/experience.json",
+    "incontrol/leftclicks.json",
+    "incontrol/loot.json",
+    "incontrol/phases.json",
+    "incontrol/placeevents.json",
+    "incontrol/rightclicks.json",
+    "incontrol/spawn.json",
+    "incontrol/spawner.json",
+    "incontrol/summonaid.json",
+    "legendarysurvivaloverhaul/legendarysurvivaloverhaul-client.toml",
+    "legendarysurvivaloverhaul/legendarysurvivaloverhaul-common.toml",
+    "lostcities/profiles/sunlit_cozy.json",
+    "ok_zoomer/config.toml",
+    "particlerain/particles.json",
+    "puffish_skills/config.json",
+    "punchy/merged_animation_selection.json",
+    "simplehats/client.toml",
+    "simplehats/common.toml",
+    "spark/activity.json",
+    "spark/config.json",
+    "defaultconfigs/beautify-server.toml",
+    "defaultconfigs/constructionwand-server.toml",
+    "defaultconfigs/create-server.toml",
+    "defaultconfigs/dew_drop_daily_weather-server.toml",
+    "defaultconfigs/dew_drop_watering_cans-server.toml",
+    "defaultconfigs/irons_rpg_tweaks-server.toml",
+    "defaultconfigs/lostcities-server.toml",
+    "defaultconfigs/paraglider-server.toml",
+    "defaultconfigs/pipez-server.toml",
+    "defaultconfigs/portable_blueprints-server.toml",
+    "defaultconfigs/quality_food-server.toml",
+    "defaultconfigs/railways-server.toml",
+    "defaultconfigs/refinedstorage-server.toml",
+    "defaultconfigs/rehooked-server.toml",
+    "defaultconfigs/sophisticatedbackpacks-server.toml",
+    "defaultconfigs/stardew_fishing-server.toml",
+    "defaultconfigs/untitledduckmod-server.toml"
+  ],
+  "manual": [
+    [
+      "CustomNpcs.cfg",
+      false
+    ],
+    [
+      "MouseTweaks.cfg",
+      true
+    ],
+    [
+      "accessories.json5",
+      false
+    ],
+    [
+      "attributeslib.cfg",
+      false
+    ],
+    [
+      "ccl.cfg",
+      false
+    ],
+    [
+      "chat_heads.json5",
+      true
+    ],
+    [
+      "collective.json5",
+      false
+    ],
+    [
+      "custom-micromaterials.cfg",
+      false
+    ],
+    [
+      "embeddium-mixins.properties",
+      false
+    ],
+    [
+      "emi.css",
+      true
+    ],
+    [
+      "everycomp-hazardous.properties",
+      false
+    ],
+    [
+      "extractinator.jsonc",
+      true
+    ],
+    [
+      "fastbench.cfg",
+      false
+    ],
+    [
+      "fastsuite.cfg",
+      true
+    ],
+    [
+      "ftbqoptimizer.snbt",
+      false
+    ],
+    [
+      "ftbxmodcompat.snbt",
+      true
+    ],
+    [
+      "gag.snbt",
+      false
+    ],
+    [
+      "golemoverhaul.jsonc",
+      true
+    ],
+    [
+      "guiclock.json5",
+      false
+    ],
+    [
+      "handson_delight.properties",
+      true
+    ],
+    [
+      "kiwi-client.yaml",
+      true
+    ],
+    [
+      "kiwi-common.yaml",
+      true
+    ],
+    [
+      "lithium.properties",
+      false
+    ],
+    [
+      "modernfix-mixins.properties",
+      true
+    ],
+    [
+      "nerb.yaml",
+      false
+    ],
+    [
+      "oculus.properties",
+      false
+    ],
+    [
+      "packetfixer.properties",
+      true
+    ],
+    [
+      "passablefoliage-common.yaml",
+      true
+    ],
+    [
+      "relics.yaml",
+      true
+    ],
+    [
+      "snowrealmagic-client.yaml",
+      true
+    ],
+    [
+      "snowrealmagic-common.yaml",
+      true
+    ],
+    [
+      "spatial-gui.json5",
+      true
+    ],
+    [
+      "splendid_slimes.cfg",
+      false
+    ],
+    [
+      "sunlit_cinematic_toms_trashslot.txt",
+      false
+    ],
+    [
+      "xaeropatreon.txt",
+      false
+    ],
+    [
+      "yacl.json5",
+      true
+    ],
+    [
+      "CSC/CSC_Warn.log",
+      true
+    ],
+    [
+      "CSC/Data/variables.data",
+      true
+    ],
+    [
+      "CSC/Log/CSC_Record.log",
+      true
+    ],
+    [
+      "NoChatReports/README.md",
+      true
+    ],
+    [
+      "biomespawnpoint/spawnbiomes.txt",
+      false
+    ],
+    [
+      "controllable/bindings.properties",
+      false
+    ],
+    [
+      "controllable/controller.properties",
+      false
+    ],
+    [
+      "controllable/key_adapters.properties",
+      false
+    ],
+    [
+      "crash_assistant/crash_assistant_localization_overrides/README.md",
+      true
+    ],
+    [
+      "crash_assistant/scripts/startup/00_migrated_problematic_mods.jexl",
+      false
+    ],
+    [
+      "doapi/recipebook.json5",
+      false
+    ],
+    [
+      "drippyloadingscreen/options.txt",
+      true
+    ],
+    [
+      "easy_npc/npc_base.cfg",
+      true
+    ],
+    [
+      "easy_npc/render_entity_type_support.cfg",
+      true
+    ],
+    [
+      "easy_npc/spawner_type.cfg",
+      true
+    ],
+    [
+      "easy_npc/preset/humanoid/blacksmith.npc.nbt",
+      false
+    ],
+    [
+      "easy_npc/preset/humanoid/carpenter.npc.nbt",
+      false
+    ],
+    [
+      "easy_npc/preset/humanoid/market.npc.nbt",
+      false
+    ],
+    [
+      "easy_npc/preset/humanoid/trader.npc.nbt",
+      false
+    ],
+    [
+      "easy_npc/preset/humanoid_slim/banker.npc.nbt",
+      false
+    ],
+    [
+      "easy_npc/preset/humanoid_slim/fisher.npc.nbt",
+      false
+    ],
+    [
+      "easy_npc/preset/humanoid_slim/librarian.npc.nbt",
+      false
+    ],
+    [
+      "easy_npc/preset/humanoid_slim/shepherd.npc.nbt",
+      false
+    ],
+    [
+      "easy_npc/preset/humanoid_slim/witch.npc.nbt",
+      false
+    ],
+    [
+      "easy_npc/skin/allay/allay_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/cat/cat_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/chicken/chicken_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/creeper/creeper_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/ender_man/ender_man_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/fairy/fairy_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/fox/fox_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/humanoid/blacksmith.png",
+      false
+    ],
+    [
+      "easy_npc/skin/humanoid/carpenter.png",
+      false
+    ],
+    [
+      "easy_npc/skin/humanoid/humanoid_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/humanoid/market.png",
+      false
+    ],
+    [
+      "easy_npc/skin/humanoid/trader.png",
+      false
+    ],
+    [
+      "easy_npc/skin/humanoid_slim/banker.png",
+      false
+    ],
+    [
+      "easy_npc/skin/humanoid_slim/fisher.png",
+      false
+    ],
+    [
+      "easy_npc/skin/humanoid_slim/humanoid_slim_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/humanoid_slim/librarian.png",
+      false
+    ],
+    [
+      "easy_npc/skin/humanoid_slim/shepherd.png",
+      false
+    ],
+    [
+      "easy_npc/skin/humanoid_slim/witch.png",
+      false
+    ],
+    [
+      "easy_npc/skin/husk/husk_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/illager/illager_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/iron_golem/iron_golem_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/orc/orc_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/pig/pig_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/piglin/piglin_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/skeleton/skeleton_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/spider/spider_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/stray/stray_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/vex/vex_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/villager/villager_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/villager/villager_without_hat_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/witch/witch_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/wolf/wolf_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/zombie/zombie_template.png",
+      true
+    ],
+    [
+      "easy_npc/skin/zombie_villager/zombie_villager_template.png",
+      true
+    ],
+    [
+      "fabric/indigo-renderer.properties",
+      true
+    ],
+    [
+      "jei/blacklist.cfg",
+      false
+    ],
+    [
+      "jei/ingredient-list-mod-sort-order.ini",
+      false
+    ],
+    [
+      "jei/ingredient-list-type-sort-order.ini",
+      false
+    ],
+    [
+      "jei/jei-client.ini",
+      false
+    ],
+    [
+      "jei/jei-colors.ini",
+      false
+    ],
+    [
+      "jei/jei-debug.ini",
+      false
+    ],
+    [
+      "jei/jei-mod-id-format.ini",
+      false
+    ],
+    [
+      "jei/recipe-category-sort-order.ini",
+      false
+    ],
+    [
+      "konkrete/locals/de_de.local",
+      true
+    ],
+    [
+      "konkrete/locals/en_us.local",
+      true
+    ],
+    [
+      "konkrete/locals/pl_pl.local",
+      true
+    ],
+    [
+      "konkrete/locals/pt_br.local",
+      true
+    ],
+    [
+      "maxenchantx/config.ini",
+      false
+    ],
+    [
+      "meadow/config.json5",
+      false
+    ],
+    [
+      "ok_zoomer/config.json5",
+      true
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/banker_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/banker_pineconetown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/banker_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_alpine.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_arid.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_bamboo.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_bavarian.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_cherry.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_entrana.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_floral.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_mason.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_prismarine.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_sakura.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_siberian.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_tudor.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/barn_vibrantown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/blacksmith_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/blacksmith_pineconetown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/blacksmith_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/blockapedia.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/carpenter_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/carpenter_pineconetown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/carpenter_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_alpine.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_arid.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_bamboo.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_bavarian.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_cherry.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_entrana.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_floral.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_mason.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_prismarine.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_sakura.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_siberian.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_tudor.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/coop_vibrantown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_alpine.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_arid.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_bamboo.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_bavarian.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_cherry.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_entrana.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_floral.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_mason.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_prismarine.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_sakura.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_siberian.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_tudor.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_barn_vibrantown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_coop_floral.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_coop_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/deluxe_greenhouse_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/fisher_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/fisher_pineconetown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/fisher_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/fountain_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_alpine.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_arid.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_bamboo.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_bavarian.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_cherry.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_entrana.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_floral.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_mason.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_prismarine.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_sakura.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_siberian.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_tudor.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/greenhouse_vibrantown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_alpine.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_arid.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_bamboo.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_bavarian.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_cherry.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_entrana.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_floral.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_mason.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_prismarine.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_sakura.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_siberian.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_tudor.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/home_vibrantown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_alpine.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_arid.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_bamboo.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_bavarian.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_cherry.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_entrana.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_floral.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_mason.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_prismarine.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_sakura.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_siberian.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_tudor.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/large_shed_vibrantown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/librarian_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/librarian_pineconetown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/librarian_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/market_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/market_pineconetown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/market_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_alpine.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_arid.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_bamboo.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_bavarian.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_cherry.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_entrana.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_floral.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_mason.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_prismarine.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_sakura.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_siberian.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_tudor.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shed_vibrantown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shepherd_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shepherd_pineconetown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/shepherd_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/tavern_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/trader_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/trader_pineconetown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/trader_rural.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/witch_basic.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/witch_pineconetown.bp",
+      false
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/witch_rural.bp",
+      false
+    ],
+    [
+      "punchy_moves/tutorial_seen_v1",
+      false
+    ],
+    [
+      "relics/relics/amphibian_boot.yaml",
+      false
+    ],
+    [
+      "relics/relics/aqua_walker.yaml",
+      false
+    ],
+    [
+      "relics/relics/arrow_quiver.yaml",
+      false
+    ],
+    [
+      "relics/relics/bastion_ring.yaml",
+      false
+    ],
+    [
+      "relics/relics/blazing_flask.yaml",
+      false
+    ],
+    [
+      "relics/relics/chorus_inhibitor.yaml",
+      false
+    ],
+    [
+      "relics/relics/drowned_belt.yaml",
+      false
+    ],
+    [
+      "relics/relics/elytra_booster.yaml",
+      false
+    ],
+    [
+      "relics/relics/enders_hand.yaml",
+      false
+    ],
+    [
+      "relics/relics/holy_locket.yaml",
+      false
+    ],
+    [
+      "relics/relics/horse_flute.yaml",
+      false
+    ],
+    [
+      "relics/relics/hunter_belt.yaml",
+      false
+    ],
+    [
+      "relics/relics/ice_breaker.yaml",
+      false
+    ],
+    [
+      "relics/relics/ice_skates.yaml",
+      false
+    ],
+    [
+      "relics/relics/infinity_ham.yaml",
+      false
+    ],
+    [
+      "relics/relics/jellyfish_necklace.yaml",
+      false
+    ],
+    [
+      "relics/relics/leather_belt.yaml",
+      false
+    ],
+    [
+      "relics/relics/magic_mirror.yaml",
+      false
+    ],
+    [
+      "relics/relics/magma_walker.yaml",
+      false
+    ],
+    [
+      "relics/relics/midnight_robe.yaml",
+      false
+    ],
+    [
+      "relics/relics/rage_glove.yaml",
+      false
+    ],
+    [
+      "relics/relics/reflection_necklace.yaml",
+      false
+    ],
+    [
+      "relics/relics/roller_skates.yaml",
+      false
+    ],
+    [
+      "relics/relics/shadow_glaive.yaml",
+      false
+    ],
+    [
+      "relics/relics/space_dissector.yaml",
+      false
+    ],
+    [
+      "relics/relics/spatial_sign.yaml",
+      false
+    ],
+    [
+      "relics/relics/spore_sack.yaml",
+      false
+    ],
+    [
+      "relics/relics/wool_mitten.yaml",
+      false
+    ],
+    [
+      "servercore/config.yml",
+      true
+    ],
+    [
+      "servercore/optimizations.yml",
+      true
+    ],
+    [
+      "sound_physics_remastered/occlusion.properties",
+      true
+    ],
+    [
+      "sound_physics_remastered/reflectivity.properties",
+      true
+    ],
+    [
+      "sound_physics_remastered/sound_rates.properties",
+      true
+    ],
+    [
+      "sound_physics_remastered/soundphysics.properties",
+      true
+    ],
+    [
+      "spatial-gui/profiles.json5",
+      true
+    ],
+    [
+      "trofers/general.json5",
+      true
+    ],
+    [
+      "vinery/config.json5",
+      false
+    ],
+    [
+      "watermedia/custom_vlc_path.txt",
+      true
+    ],
+    [
+      "watermedia/assets/loading.gif",
+      false
+    ],
+    [
+      "worldedit/worldedit.properties",
+      false
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/.unpack_finished",
+      false
+    ],
+    [
+      "xaero/lib/client.cfg",
+      false
+    ],
+    [
+      "xaero/lib/common.cfg",
+      false
+    ],
+    [
+      "xaero/lib/profiles/default.cfg",
+      false
+    ],
+    [
+      "xaero/lib/server_profiles/default.cfg",
+      false
+    ],
+    [
+      "xaero/world-map/client.cfg",
+      false
+    ],
+    [
+      "xaero/world-map/common.cfg",
+      false
+    ],
+    [
+      "xaero/world-map/profiles/default.cfg",
+      false
+    ],
+    [
+      "xaero/world-map/server_profiles/default.cfg",
+      false
+    ],
+    [
+      "defaultconfigs/certain_questing_additions/client-config.snbt",
+      true
+    ]
+  ],
+  "skipped": [
+    [
+      "animal_pen_config.json",
+      "mod not installed"
+    ],
+    [
+      "balloonbox-common.toml",
+      "mod not installed"
+    ],
+    [
+      "betterdays-client.toml",
+      "mod not installed"
+    ],
+    [
+      "betterdays-common.toml",
+      "mod not installed"
+    ],
+    [
+      "betterthirdperson-common.toml",
+      "mod not installed"
+    ],
+    [
+      "bobby.toml",
+      "mod not installed"
+    ],
+    [
+      "bonsaitrees3-client.toml",
+      "mod not installed"
+    ],
+    [
+      "bonsaitrees3-common.toml",
+      "mod not installed"
+    ],
+    [
+      "botania-client.toml",
+      "mod not installed"
+    ],
+    [
+      "botania-common.toml",
+      "mod not installed"
+    ],
+    [
+      "calmtheleaks-common.toml",
+      "mod not installed"
+    ],
+    [
+      "caxton.json",
+      "mod not installed"
+    ],
+    [
+      "cc-common.toml",
+      "mod not installed"
+    ],
+    [
+      "cfm-client.toml",
+      "mod not installed"
+    ],
+    [
+      "cfm-common.toml",
+      "mod not installed"
+    ],
+    [
+      "champions-client.toml",
+      "mod not installed"
+    ],
+    [
+      "champions-common.toml",
+      "mod not installed"
+    ],
+    [
+      "chloride-client.json",
+      "mod not installed"
+    ],
+    [
+      "companions.toml",
+      "mod not installed"
+    ],
+    [
+      "create_connected-common.toml",
+      "mod not installed"
+    ],
+    [
+      "ctm.toml",
+      "mod not installed"
+    ],
+    [
+      "defaultoptions-common.toml",
+      "mod not installed"
+    ],
+    [
+      "distraction_free_recipes-client.toml",
+      "mod not installed"
+    ],
+    [
+      "domestication-innovation.toml",
+      "mod not installed"
+    ],
+    [
+      "embeddium-fingerprint.json",
+      "mod not installed"
+    ],
+    [
+      "embeddium-options.json",
+      "mod not installed"
+    ],
+    [
+      "entityculling.json",
+      "mod not installed"
+    ],
+    [
+      "extra_gauges-client.toml",
+      "mod not installed"
+    ],
+    [
+      "extra_gauges-common.toml",
+      "mod not installed"
+    ],
+    [
+      "fallingtrees_client.json",
+      "mod not installed"
+    ],
+    [
+      "fallingtrees_common.json",
+      "mod not installed"
+    ],
+    [
+      "farmandcharm.toml",
+      "mod not installed"
+    ],
+    [
+      "flib.toml",
+      "mod not installed"
+    ],
+    [
+      "forge-client.toml",
+      "mod not installed"
+    ],
+    [
+      "gml-script-mods.toml",
+      "mod not installed"
+    ],
+    [
+      "guideme.toml",
+      "mod not installed"
+    ],
+    [
+      "immersivemessages-client.toml",
+      "mod not installed"
+    ],
+    [
+      "jearchaeology-common.toml",
+      "mod not installed"
+    ],
+    [
+      "jeresources-common.toml",
+      "mod not installed"
+    ],
+    [
+      "jeresources.toml",
+      "mod not installed"
+    ],
+    [
+      "jmi-client.toml",
+      "mod not installed"
+    ],
+    [
+      "knightlib.toml",
+      "mod not installed"
+    ],
+    [
+      "longnbtkiller-common.toml",
+      "mod not installed"
+    ],
+    [
+      "marvelous_menagerie.toml",
+      "mod not installed"
+    ],
+    [
+      "missing_mods_checker.json",
+      "mod not installed"
+    ],
+    [
+      "modelfix-client.toml",
+      "mod not installed"
+    ],
+    [
+      "moreminecartsconfig.toml",
+      "mod not installed"
+    ],
+    [
+      "mutil-client.toml",
+      "mod not installed"
+    ],
+    [
+      "netherexp-common.toml",
+      "mod not installed"
+    ],
+    [
+      "notenoughanimations.json",
+      "mod not installed"
+    ],
+    [
+      "numismatics-utils-client.toml",
+      "mod not installed"
+    ],
+    [
+      "okzoomer-client.toml",
+      "mod not installed"
+    ],
+    [
+      "online_detector-client.toml",
+      "mod not installed"
+    ],
+    [
+      "online_detector-common.toml",
+      "mod not installed"
+    ],
+    [
+      "polymorph-integrations.toml",
+      "mod not installed"
+    ],
+    [
+      "puzzlesapi-iteminteractions-client.toml",
+      "mod not installed"
+    ],
+    [
+      "puzzlesapi-iteminteractions-server.toml",
+      "mod not installed"
+    ],
+    [
+      "puzzlesapi-slotcycling-client.toml",
+      "mod not installed"
+    ],
+    [
+      "questsadditions-client.toml",
+      "mod not installed"
+    ],
+    [
+      "rsmixin-common.toml",
+      "mod not installed"
+    ],
+    [
+      "serializer_debug-common.toml",
+      "mod not installed"
+    ],
+    [
+      "serverconfigupdater-common.toml",
+      "mod not installed"
+    ],
+    [
+      "sidebar_buttons.json",
+      "mod not installed"
+    ],
+    [
+      "snowundertrees-common.toml",
+      "mod not installed"
+    ],
+    [
+      "solapplepie-client.toml",
+      "mod not installed"
+    ],
+    [
+      "spanorama-client.toml",
+      "mod not installed"
+    ],
+    [
+      "structure_gel-client.toml",
+      "mod not installed"
+    ],
+    [
+      "structure_gel-common.toml",
+      "mod not installed"
+    ],
+    [
+      "terrablender.toml",
+      "mod not installed"
+    ],
+    [
+      "tips.json",
+      "mod not installed"
+    ],
+    [
+      "tradingpost-server.toml",
+      "mod not installed"
+    ],
+    [
+      "transition.json",
+      "mod not installed"
+    ],
+    [
+      "trender.json",
+      "mod not installed"
+    ],
+    [
+      "unbreakable-common.toml",
+      "mod not installed"
+    ],
+    [
+      "uniqueaccessories-common.toml",
+      "mod not installed"
+    ],
+    [
+      "via_romana_config.toml",
+      "mod not installed"
+    ],
+    [
+      "youkaishomecoming-client.toml",
+      "mod not installed"
+    ],
+    [
+      "youkaishomecoming-common.toml",
+      "mod not installed"
+    ],
+    [
+      "CSC/online/rule_2025_10_01_16_01_43.json",
+      "mod not installed"
+    ],
+    [
+      "chunky/config.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/emixx-client.toml",
+      "mod not installed"
+    ],
+    [
+      "emixx/remi.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/beautify_blinds.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/beautify_flower_lattice.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/botania_mundane_floating_flowers.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/botania_shimmering_mushrooms.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/botania_special_floating_flowers.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/c_foods.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/c_glazed_terracotta.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/create_dyed_table_cloths.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/create_minecraft_block_tracks.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/create_minecraft_block_valve_handles.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/create_postboxes.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/create_seats.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/create_toolboxes.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/create_tracks.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/curios_card.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/decorative_blocks_palisades_that_burn.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/decorative_blocks_seats.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/decorative_blocks_supports_that_burn.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/domesticationinnovation_pet_beds.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/dramaticdoors_short_doors.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/dramaticdoors_short_wooden_doors.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/dramaticdoors_tall_doors.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/etcetera_all_concrete.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/farmersdelight_cabinets.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/forge_bookshelves.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/forge_glass.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/forge_glass_panes.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/functionalstorage_drawer.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/minecraft_bundles.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/minecraft_harnesses.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/minecraft_music_discs.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/minecraft_shulker_boxes.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/minecraft_swords.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/numismatics_authorized_cards.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/numismatics_id_cards.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/quark_hollow_logs.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/quark_ladders.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/quark_leaf_carpets.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/quark_posts.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/quark_seed_pouch.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/quark_stools.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/quark_vertical_slabs.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_coalburner_stack.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_conductor_caps.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_copycat_headstocks.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_filled_paint_pitchers.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_long_stack.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_oilburner_stack.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_cycle_groups_netherite_base.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_boiler.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_brass_wrapped_boiler.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_brass_wrapped_slashed.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_brass_wrapped_smokebox.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_copper_wrapped_boiler.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_copper_wrapped_slashed.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_copper_wrapped_smokebox.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_end_ladder.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_flat_riveted.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_flat_slashed.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_flywheel.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_four_pane_window.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_hazard_stripes_chevron_black.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_hazard_stripes_chevron_white.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_hazard_stripes_diagonal_black.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_hazard_stripes_diagonal_white.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_iron_wrapped_boiler.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_iron_wrapped_slashed.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_iron_wrapped_smokebox.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_pillar.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_plated.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_riveted.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_round_pane_window.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_rung_ladder.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_single_pane_window.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_slashed.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_smokebox.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_two_pane_window.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_palettes_dye_groups_vent.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_streamlined_stack.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_woodburner_stack.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/railways_wooden_headstocks.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_basins.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_baths.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_cabinets.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_ceiling_fans.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_chairs.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_coloured_kitchen_cabinetry.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_coolers.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_crates.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_cutting_boards.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_desks.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_drawers.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_general.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_grills.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_hedges.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_kitchen_furniture.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_lamps.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_lattice_fence.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_lattice_fence_gates.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_multiplayer_mailboxes.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_sofas.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_stools.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_storage_jars.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_tables.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_toilets.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_trampolines.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/refurbished_furniture_wooden_toilets.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/simplehats_hat.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/smallships_briggs.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/smallships_cogs.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/smallships_drakkars.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/smallships_galleys.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/snowyspirit_glow_lights.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/snowyspirit_gumdrops.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/snowyspirit_sleds.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/society_aged_product.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/society_aged_roe.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/society_curtains.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/society_double_aged_product.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/society_mirrors.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/society_pristine_mineral.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/society_roe.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/society_smoked_fish.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/society_targeted_bait.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/sophisticatedstorage_barrel.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/sophisticatedstorage_chest.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/sophisticatedstorage_copper_shulker_box.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/sophisticatedstorage_diamond_chest.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/sophisticatedstorage_iron_barrel.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/sophisticatedstorage_limited_barrel_1.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/sophisticatedstorage_limited_barrel_2.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/sophisticatedstorage_limited_barrel_3.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/sophisticatedstorage_limited_barrel_4.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/sophisticatedstorage_limited_iron_barrel_3.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/sophisticatedstorage_limited_iron_barrel_4.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/sophisticatedstorage_shulker_box.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/supplementaries_bamboo_spikes_tipped.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/supplementaries_candle_holders.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/supplementaries_flags.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/supplementaries_presents.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/supplementaries_sign_posts.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/supplementaries_trapped_presents.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/twigs_packed_silt.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/twigs_packed_silt_full_blocks.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/twigs_silt_pots.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/vintagedelight_salt_lamp.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/woodworks_leaf_piles.json",
+      "mod not installed"
+    ],
+    [
+      "emixx/stack_groups/zetter_frames.json",
+      "mod not installed"
+    ],
+    [
+      "l2_configs/l2damagetracker-common.toml",
+      "mod not installed"
+    ],
+    [
+      "l2_configs/l2library-client.toml",
+      "mod not installed"
+    ],
+    [
+      "l2_configs/l2library-common.toml",
+      "mod not installed"
+    ],
+    [
+      "legendarycreatures/legendarycreatures-common.toml",
+      "mod not installed"
+    ],
+    [
+      "legendarycreatures/json/bullfrog-spawn.json",
+      "mod not installed"
+    ],
+    [
+      "legendarycreatures/json/corpse_eater-spawn.json",
+      "mod not installed"
+    ],
+    [
+      "legendarycreatures/json/desert_mojo-spawn.json",
+      "mod not installed"
+    ],
+    [
+      "legendarycreatures/json/ender_wisp-spawn.json",
+      "mod not installed"
+    ],
+    [
+      "legendarycreatures/json/forest_mojo-spawn.json",
+      "mod not installed"
+    ],
+    [
+      "legendarycreatures/json/hound-spawn.json",
+      "mod not installed"
+    ],
+    [
+      "legendarycreatures/json/nether_wisp-spawn.json",
+      "mod not installed"
+    ],
+    [
+      "legendarycreatures/json/peacock_spider-spawn.json",
+      "mod not installed"
+    ],
+    [
+      "legendarycreatures/json/scarecrow-spawn.json",
+      "mod not installed"
+    ],
+    [
+      "legendarycreatures/json/scorpion-spawn.json",
+      "mod not installed"
+    ],
+    [
+      "legendarycreatures/json/scorpion_baby-spawn.json",
+      "mod not installed"
+    ],
+    [
+      "legendarycreatures/json/wisp-spawn.json",
+      "mod not installed"
+    ],
+    [
+      "obscuria/accents-common.toml",
+      "mod not installed"
+    ],
+    [
+      "pickupnotifier/pickupnotifier-client.toml",
+      "mod not installed"
+    ],
+    [
+      "pickupnotifier/pickupnotifier-server.toml",
+      "mod not installed"
+    ],
+    [
+      "toughasnails/client.toml",
+      "mod not installed"
+    ],
+    [
+      "toughasnails/temperature.toml",
+      "mod not installed"
+    ],
+    [
+      "toughasnails/thirst.toml",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/af/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ar/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ast/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/az/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ba/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/be/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/bg/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/br-FR/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/brb/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/bs/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ca/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/cs/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/cy/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/da/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/de/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/de-AT/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/de-CH/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/el/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/en-AU/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/en-CA/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/en-NZ/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/en-PT/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/en-UD/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/enp/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/eo/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/es-AR/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/es-CL/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/es-ES/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/es-MX/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/es-UY/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/es-VE/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/et/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/eu/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/fa/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/fi/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/fil/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/fo/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/fr/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/fr-CA/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/fra-DE/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/fy-NL/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ga-IE/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/gd/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/gl/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/got/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/gv/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/haw/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/he/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/hi/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/hr/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/hu/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/hy-AM/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/id/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ido/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ig/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/is/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/it/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ja/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/jbo/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ka/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/kab/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/kk/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/kn/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ko/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ksh/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/kw/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/la-LA/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/lb/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/li/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/lol/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/lt/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/lv/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/mi/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/mk/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/mn/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/moh/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ms/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/mt/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/nds/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/nl/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/nl-BE/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/nn-NO/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/no/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/nuk/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/oc/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/oj/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/pl/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/pt-BR/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/pt-PT/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/qya-AA/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ro/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ru/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/se/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/sk/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/sl/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/so/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/sq/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/sr/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/sv-SE/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/swg/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/szl/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/ta/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/th/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/tlh-AA/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/tr/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/tt-RU/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/tzl/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/uk/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/val-ES/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/vec/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/vi/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/yi/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/yo/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/zh-CN/strings.json",
+      "mod not installed"
+    ],
+    [
+      "worldedit/.archive-unpack/2e1dd752/zh-TW/strings.json",
+      "mod not installed"
+    ],
+    [
+      "defaultconfigs/champions-entities.toml",
+      "mod not installed"
+    ],
+    [
+      "defaultconfigs/champions-ranks.toml",
+      "mod not installed"
+    ],
+    [
+      "defaultconfigs/champions-server.toml",
+      "mod not installed"
+    ],
+    [
+      "defaultconfigs/dew_drop_farmland_growth-server.toml",
+      "mod not installed"
+    ],
+    [
+      "defaultconfigs/ftbessentials-server.snbt",
+      "not a .toml file"
+    ],
+    [
+      "defaultconfigs/refinedstorageaddons-server.toml",
+      "mod not installed"
+    ],
+    [
+      "defaultconfigs/ftbchunks/client-config.snbt",
+      "not a .toml file"
+    ],
+    [
+      "defaultconfigs/ftbchunks/ftbchunks-world.snbt",
+      "not a .toml file"
+    ],
+    [
+      "defaultconfigs/ftblibrary/ftblibrary-client.snbt",
+      "not a .toml file"
+    ],
+    [
+      "defaultconfigs/ftbultimine/ftbultimine-client.snbt",
+      "not a .toml file"
+    ],
+    [
+      "defaultconfigs/ftbultimine/ftbultimine-server.snbt",
+      "not a .toml file"
+    ],
+    [
+      "defaultconfigs/ftbxmodcompat/ftbxmodcompat.snbt",
+      "not a .toml file"
+    ],
+    [
+      "defaultconfigs/gag/gag.snbt",
+      "not a .toml file"
+    ]
+  ],
+  "errors": [
+    [
+      "connectivity.json",
+      "invalid JSON: Expecting property name enclosed in double quotes: line 3 column 5 (char 32)"
+    ],
+    [
+      "cupboard.json",
+      "invalid JSON: Expecting property name enclosed in double quotes: line 3 column 5 (char 40)"
+    ],
+    [
+      "ftbbackups2.json",
+      "invalid JSON: Expecting property name enclosed in double quotes: line 2 column 2 (char 3)"
+    ],
+    [
+      "lithostitched.json",
+      "invalid JSON: Expecting property name enclosed in double quotes: line 2 column 3 (char 4)"
+    ],
+    [
+      "recipeessentials.json",
+      "invalid JSON: Expecting property name enclosed in double quotes: line 3 column 5 (char 31)"
+    ],
+    [
+      "structureessentials.json",
+      "invalid JSON: Expecting property name enclosed in double quotes: line 3 column 5 (char 39)"
+    ],
+    [
+      "portable_blueprints/custom_block_propriety_handle/mirror_settings.json",
+      "invalid JSON: 'utf-8' codec can't decode byte 0x92 in position 545: invalid start byte"
+    ],
+    [
+      "portable_blueprints/custom_block_propriety_handle/mirrow_settings.json",
+      "invalid JSON: 'utf-8' codec can't decode byte 0x92 in position 545: invalid start byte"
+    ],
+    [
+      "portable_blueprints/custom_block_propriety_handle/rotation_settings.json",
+      "invalid JSON: Expecting value: line 1 column 1 (char 0)"
+    ],
+    [
+      "portable_blueprints/world_injection_worn_blueprints/settings.json",
+      "invalid JSON: Expecting value: line 1 column 1 (char 0)"
+    ]
+  ],
+  "dropped": [
+    [
+      "carryon-common.toml",
+      "animania:block_trough"
+    ],
+    [
+      "carryon-common.toml",
+      "animania:block_invisiblock"
+    ],
+    [
+      "carryon-common.toml",
+      "embers:block_furnace"
+    ],
+    [
+      "carryon-common.toml",
+      "embers:ember_bore"
+    ],
+    [
+      "carryon-common.toml",
+      "embers:ember_activator"
+    ],
+    [
+      "carryon-common.toml",
+      "embers:mixer"
+    ],
+    [
+      "carryon-common.toml",
+      "embers:heat_coil"
+    ],
+    [
+      "carryon-common.toml",
+      "embers:large_tank"
+    ],
+    [
+      "carryon-common.toml",
+      "embers:crystal_cell"
+    ],
+    [
+      "carryon-common.toml",
+      "embers:alchemy_pedestal"
+    ],
+    [
+      "carryon-common.toml",
+      "embers:boiler"
+    ],
+    [
+      "carryon-common.toml",
+      "embers:combustor"
+    ],
+    [
+      "carryon-common.toml",
+      "embers:catalzyer"
+    ],
+    [
+      "carryon-common.toml",
+      "embers:field_chart"
+    ],
+    [
+      "carryon-common.toml",
+      "embers:inferno_forge"
+    ],
+    [
+      "carryon-common.toml",
+      "storagedrawers:framingtable"
+    ],
+    [
+      "carryon-common.toml",
+      "aquamunda:tank"
+    ],
+    [
+      "carryon-common.toml",
+      "thaumcraft:infernal_furnace"
+    ],
+    [
+      "carryon-common.toml",
+      "thaumcraft:infusion_matrix"
+    ],
+    [
+      "carryon-common.toml",
+      "thaumcraft:golem_builder"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:oil_heater"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:solar_panel"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:steam_engine"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:shelving_unit"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:grinder"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:sieve"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:solar_tower"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:solar_mirror"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:container"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:pumpjack"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:solar_panel"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:refinery"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:oil_heater"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:hydraulic_press"
+    ],
+    [
+      "carryon-common.toml",
+      "magneticraft:multiblock_gap"
+    ],
+    [
+      "carryon-common.toml",
+      "rftools:screen"
+    ],
+    [
+      "carryon-common.toml",
+      "rftools:creative_screen"
+    ],
+    [
+      "carryon-common.toml",
+      "integrateddynamics:cable"
+    ],
+    [
+      "carryon-common.toml",
+      "mekanismgenerators:wind_generator"
+    ],
+    [
+      "carryon-common.toml",
+      "cookingforblockheads:cabinet"
+    ],
+    [
+      "carryon-common.toml",
+      "cookingforblockheads:corner"
+    ],
+    [
+      "carryon-common.toml",
+      "cookingforblockheads:counter"
+    ],
+    [
+      "carryon-common.toml",
+      "cookingforblockheads:oven"
+    ],
+    [
+      "carryon-common.toml",
+      "cookingforblockheads:toaster"
+    ],
+    [
+      "carryon-common.toml",
+      "cookingforblockheads:milk_jar"
+    ],
+    [
+      "carryon-common.toml",
+      "cookingforblockheads:cow_jar"
+    ],
+    [
+      "carryon-common.toml",
+      "cookingforblockheads:fruit_basket"
+    ],
+    [
+      "carryon-common.toml",
+      "cookingforblockheads:cooking_table"
+    ],
+    [
+      "carryon-common.toml",
+      "cookingforblockheads:fridge"
+    ],
+    [
+      "carryon-common.toml",
+      "cookingforblockheads:sink"
+    ],
+    [
+      "carryon-common.toml",
+      "advancementtrophies:trophy"
+    ],
+    [
+      "carryon-common.toml",
+      "mekanismgenerators:heat_generator"
+    ],
+    [
+      "carryon-common.toml",
+      "mna:filler_block"
+    ],
+    [
+      "carryon-common.toml",
+      "splendid_slimes:splendid_slime"
+    ],
+    [
+      "carryon-common.toml",
+      "species:springling"
+    ],
+    [
+      "carryon-common.toml",
+      "hamsters:hamster"
+    ],
+    [
+      "carryon-common.toml",
+      "animania:hamster"
+    ],
+    [
+      "carryon-common.toml",
+      "animania:cart"
+    ],
+    [
+      "carryon-common.toml",
+      "animania:wagon"
+    ],
+    [
+      "carryon-common.toml",
+      "taterzens:npc"
+    ],
+    [
+      "carryon-common.toml",
+      "bodiesbodies:dead_body"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "metalbarrels:obsidian_barrel"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "metalbarrels:diamond_barrel"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "metalbarrels:crystal_barrel"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "metalbarrels:netherite_barrel"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "metalbarrels:gold_barrel"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "metalbarrels:iron_barrel"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "metalbarrels:copper_barrel"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "twilightforest:twilight_oak_chest"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "twilightforest:canopy_chest"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "twilightforest:mangrove_chest"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "twilightforest:dark_chest"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "twilightforest:time_chest"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "twilightforest:transformation_chest"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "twilightforest:mining_chest"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "twilightforest:sorting_chest"
+    ],
+    [
+      "createentitycontrol-common.toml",
+      "ae2:smooth_sky_stone_chest"
+    ],
+    [
+      "quark-common.toml",
+      "integrateddynamics:cable"
+    ],
+    [
+      "quark-common.toml",
+      "randomthings:blockbreaker"
+    ],
+    [
+      "quark-common.toml",
+      "endergetic:bolloom_bud"
+    ],
+    [
+      "quark-common.toml",
+      "botania:exchange_rod"
+    ],
+    [
+      "quark-common.toml",
+      "botania:dirt_rod"
+    ],
+    [
+      "quark-common.toml",
+      "botania:skydirt_rod"
+    ],
+    [
+      "quark-common.toml",
+      "botania:cobble_rod"
+    ],
+    [
+      "quark-common.toml",
+      "environmental:giant_tall_grass"
+    ],
+    [
+      "quark-common.toml",
+      "valhelsia_structures:grass_block"
+    ],
+    [
+      "quark-common.toml",
+      "environmental:willow_leaves"
+    ],
+    [
+      "quark-common.toml",
+      "environmental:hanging_willow_leaves"
+    ],
+    [
+      "quark-common.toml",
+      "the_bumblezone:stinger_spear"
+    ],
+    [
+      "quark-common.toml",
+      "the_bumblezone:crystal_cannon"
+    ],
+    [
+      "quark-common.toml",
+      "the_bumblezone:honey_crystal_shield"
+    ],
+    [
+      "quark-common.toml",
+      "the_bumblezone:honey_bee_leggings_2"
+    ],
+    [
+      "supplementaries-common.toml",
+      "botania:mystical_flower"
+    ],
+    [
+      "supplementaries-common.toml",
+      "mna:chimerite_crystal"
+    ],
+    [
+      "supplementaries-common.toml",
+      "botania:floating_flower"
+    ],
+    [
+      "supplementaries-common.toml",
+      "botania:mushroom"
+    ],
+    [
+      "supplementaries-common.toml",
+      "botania:tall_mystical_flower"
+    ],
+    [
+      "supplementaries-common.toml",
+      "botania:petal_block"
+    ],
+    [
+      "supplementaries-common.toml",
+      "morered:network_cable"
+    ],
+    [
+      "supplementaries-common.toml",
+      "xycraft_world:glowing_shiny_aurey_block"
+    ],
+    [
+      "supplementaries-common.toml",
+      "xycraft_world:shiny_aurey_block"
+    ],
+    [
+      "supplementaries-common.toml",
+      "xycraft_world:rgb_lamp"
+    ],
+    [
+      "supplementaries-common.toml",
+      "xycraft_world:glowing_rgb_viewer"
+    ],
+    [
+      "supplementaries-common.toml",
+      "xycraft_world:glowing_matte_rgb_block"
+    ],
+    [
+      "supplementaries-common.toml",
+      "xycraft_world:rgb_lamp_pole"
+    ],
+    [
+      "treechop-common.toml",
+      "alexscaves:pewen_wood"
+    ],
+    [
+      "treechop-common.toml",
+      "regions_unexplored:brimwood_leaves"
+    ],
+    [
+      "treechop-common.toml",
+      "alexscaves:pewen_pines"
+    ],
+    [
+      "CSC/config.toml",
+      "create_integrated_farming:chicken_roost"
+    ],
+    [
+      "CSC/config.toml",
+      "twilightforest:giant_obsidian"
+    ],
+    [
+      "CSC/config.toml",
+      "twilightforest:giant_leaves"
+    ],
+    [
+      "CSC/config.toml",
+      "twilightforest:giant_log"
+    ],
+    [
+      "CSC/config.toml",
+      "twilightforest:giant_cobblestone"
+    ],
+    [
+      "CSC/config.toml",
+      "twilightforest:huge_lily_pad"
+    ],
+    [
+      "CSC/config.toml",
+      "ae2:creative_item_cell"
+    ],
+    [
+      "CSC/config.toml",
+      "ae2:creative_fluid_cell"
+    ],
+    [
+      "CSC/config.toml",
+      "ae2:creative_energy_cell"
+    ],
+    [
+      "CSC/config.toml",
+      "appmek:creative_chemical_cell"
+    ],
+    [
+      "CSC/config.toml",
+      "vs_clockwork:creative_gravitron"
+    ],
+    [
+      "CSC/config.toml",
+      "createbigcannons:creative_autocannon_ammo_container"
+    ],
+    [
+      "CSC/config.toml",
+      "createaddition:creative_energy"
+    ],
+    [
+      "CSC/config.toml",
+      "create_connected:creative_fluid_vessel"
+    ],
+    [
+      "CSC/config.toml",
+      "destroy:creative_pump"
+    ],
+    [
+      "CSC/config.toml",
+      "immersiveengineering:capacitor_creative"
+    ],
+    [
+      "CSC/config.toml",
+      "mekanism:creative_bin"
+    ],
+    [
+      "CSC/config.toml",
+      "mekanism:creative_fluid_tank"
+    ],
+    [
+      "CSC/config.toml",
+      "mekanism:creative_energy_cube"
+    ],
+    [
+      "CSC/config.toml",
+      "mekanism:creative_chemical_tank"
+    ],
+    [
+      "CSC/config.toml",
+      "mekanism_extras:upgrade_creative"
+    ],
+    [
+      "CSC/config.toml",
+      "the_vmod:physgun"
+    ],
+    [
+      "CSC/config.toml",
+      "the_vmod:toolgun"
+    ]
+  ],
+  "sunlit": [
+    [
+      "bcc-common.toml",
+      8,
+      "replaced display name",
+      "modpackName = \"Society: Sunlit Valley\""
+    ],
+    [
+      "dialog-client.toml",
+      2,
+      "left unchanged (not the display phrase)",
+      "#==== [ Sunlit Dialog Config ] ===="
+    ],
+    [
+      "farmingforblockheads-common.toml",
+      12,
+      "left unchanged (not the display phrase)",
+      "merchantNames = [\"Pierre\", \"Pierre\", \"Pierre\", \"Pierre\", \"Pierre\", \"Seed Merchant\", \"Cultivator\", \"Money Machine\", \"Try "
+    ],
+    [
+      "SkillExpNotifier/IconMappings.json",
+      24,
+      "left unchanged (not the display phrase)",
+      "\"icon\": \"society:sunlit_pearl\""
+    ],
+    [
+      "lostcities/profiles/sunlit_cozy.json",
+      116,
+      "left unchanged (not the display phrase)",
+      "\"worldStyle\": \"sunlit:towns\","
+    ],
+    [
+      "lostcities/profiles/sunlit_cozy.json",
+      136,
+      "replaced display name",
+      "\"description\": \"Sunlit Valley - vilas vivas: casas variadas com moveis de varios mods, depositos, comercio de bairro, ho"
+    ],
+    [
+      "lostcities/profiles/sunlit_cozy.json",
+      145,
+      "left unchanged (not the display phrase)",
+      "\"extraDescription\": \"Datapack sunlit_towns + KubeJS sunlitTowns*: moradores/golens nascem com a cidade, loot tematico po"
+    ],
+    [
+      "tooltipoverhaul/custom_frames.json",
+      52,
+      "left unchanged (not the display phrase)",
+      "\"society:sunlit_crystal\","
+    ],
+    [
+      "defaultconfigs/lostcities-server.toml",
+      6,
+      "left unchanged (not the display phrase)",
+      "selectedProfile = \"sunlit_cozy\""
+    ]
+  ],
+  "backup": "/var/home/Orgo/Documentos/curseforge/minecraft/Instances/Pipinha's Village/tools/configport/backup-20261112-015917.tar.gz",
+  "validation": {
+    "toml_pass": 117,
+    "toml_fail": 0,
+    "json_pass": 53,
+    "json_fail": 0
+  },
+  "validation_failures": []
+}

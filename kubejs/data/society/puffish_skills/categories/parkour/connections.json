@@ -1,0 +1,21 @@
+{
+  "normal": {
+    "bidirectional": [
+      ["b2199d6352e151c", "f12a752acc69a51"],
+      ["f12a752acc69a51", "d3de597f6b4c42f"],
+      ["d3de597f6b4c42f", "4cc26517bb35e3e"],
+      ["4cc26517bb35e3e", "8d6399a3379847c"],
+      ["b2199d6352e151c", "31c70203c8b2158"],
+      ["31c70203c8b2158", "af51ca2828b1bbd"],
+      ["af51ca2828b1bbd", "0593c00ea892e34"],
+      ["0593c00ea892e34", "dc3679578a053fb"],
+      ["b2199d6352e151c", "93fedca8c97fb8b"],
+      ["93fedca8c97fb8b", "390f00fafa2a7f2"],
+      ["390f00fafa2a7f2", "6dc21544c576845"],
+      ["6dc21544c576845", "33c7a97330b25a5"]
+    ]
+  },
+  "exclusive": {
+    "bidirectional": []
+  }
+}

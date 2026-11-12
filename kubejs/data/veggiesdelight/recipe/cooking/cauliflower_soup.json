@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "ingredients": [
+    {
+      "tag": "c:crops/cauliflower"
+    },
+    {
+      "tag": "c:crops/cauliflower"
+    },
+    {
+      "tag": "c:vegetables"
+    },
+    {
+      "tag": "society:small_milk"
+    }
+  ],
+  "result": {
+    "id": "veggiesdelight:cauliflower_soup"
+  }
+}

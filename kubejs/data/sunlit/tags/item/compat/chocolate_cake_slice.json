@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bakery:chocolate_cake_slice",
+      "required": false
+    },
+    {
+      "id": "create_central_kitchen:chocolate_cake_slice",
+      "required": false
+    }
+  ]
+}

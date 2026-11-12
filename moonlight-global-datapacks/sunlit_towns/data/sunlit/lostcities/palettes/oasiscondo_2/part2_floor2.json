@@ -1,0 +1,1 @@
+{"palette":[{"char":"a","block":"create:redstone_link[powered=false,receiver=false,facing=south]"},{"char":"b","block":"minecraft:redstone_torch[lit=true]"},{"char":"c","block":"buildersdelight:lantern_2[facing=east,face=floor]"}]}

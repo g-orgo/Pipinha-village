@@ -1,0 +1,22 @@
+[
+  {
+    "regex": ".*mining.*",
+    "icon": "minecraft:iron_pickaxe"
+  },
+  {
+    "regex": ".*farming.*",
+    "icon": "minecraft:iron_hoe"
+  },
+  {
+    "regex": ".*husbandry.*",
+    "icon": "minecraft:wheat"
+  },
+  {
+    "regex": ".*fishing.*",
+    "icon": "minecraft:fishing_rod"
+  },
+  {
+    "regex": ".*adventuring.*",
+    "icon": "minecraft:iron_sword"
+  }
+]

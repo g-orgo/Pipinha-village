@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "culturaldelights:popcorn",
+      "required": false
+    },
+    {
+      "id": "hauntedharvest:popcorn",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "unlocked_by_default": true,
+  "title": {
+    "translate": "society_skills.catador.category.title"
+  },
+  "icon": {
+    "type": "item",
+    "data": {
+      "item": "minecraft:brush"
+    }
+  },
+  "background": "textures/block/coarse_dirt.png",
+  "spent_points_limit": 6
+}

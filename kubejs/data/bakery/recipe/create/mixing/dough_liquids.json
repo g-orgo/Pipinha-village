@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "results": [
+    {
+      "id": "bakery:dough"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "bakery:wheat"
+    },
+    {
+      "item": "bakery:yeast"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "forge:water"
+    },
+    {
+      "tag": "c:sugar"
+    }
+  ]
+}

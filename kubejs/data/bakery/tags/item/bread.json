@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bakery:bread",
+      "required": false
+    },
+    {
+      "id": "bakery:toast",
+      "required": false
+    },
+    {
+      "id": "minecraft:bread",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:toast",
+      "required": false
+    }
+  ]
+}

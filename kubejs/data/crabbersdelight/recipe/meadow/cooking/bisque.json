@@ -1,0 +1,41 @@
+{
+  "type": "meadow:cooking",
+  "result": {
+    "id": "crabbersdelight:bisque"
+  },
+  "ingredients": [
+    [
+      {
+        "tag": "crabbersdelight:cooked_seafood"
+      },
+      {
+        "tag": "crabbersdelight:raw_seafood"
+      }
+    ],
+    {
+      "item": "farm_and_charm:onion"
+    },
+    {
+      "tag": "c:grain/rice"
+    },
+    {
+      "tag": "c:crops/carrot"
+    },
+    {
+      "tag": "society:large_milk"
+    }
+  ],
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "crabbersdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "meadow"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "atmospheric:passion_fruit",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:passionfruititem",
+      "required": false
+    }
+  ]
+}

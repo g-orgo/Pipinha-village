@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "results": [
+    {
+      "id": "farm_and_charm:butter"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "society:small_milk"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farm_and_charm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

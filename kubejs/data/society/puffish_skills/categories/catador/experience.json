@@ -1,0 +1,43 @@
+{
+  "experience_per_level": {
+    "type": "values",
+    "data": {
+      "values": [
+        400,
+        800,
+        1600,
+        3200,
+        6000,
+        10000
+      ]
+    }
+  },
+  "sources": [
+    {
+      "type": "puffish_skills:increase_stat",
+      "data": {
+        "variables": {
+          "looting_chests": {
+            "operations": [
+              {
+                "type": "get_stat"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "stat": "minecraft.custom:lootr.looted_stat"
+                }
+              }
+            ]
+          }
+        },
+        "experience": [
+          {
+            "condition": "looting_chests",
+            "expression": "60"
+          }
+        ]
+      }
+    }
+  ]
+}

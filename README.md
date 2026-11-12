@@ -13,4 +13,3 @@ Esta branch é a versão 1.21.1 (NeoForge 21.1.265), ainda em migração. A vers
 
 1. No CurseForge, crie um perfil personalizado: Minecraft 1.21.1, NeoForge 21.1.265.
 2. Copie a pasta `mods/` desta branch para a pasta do perfil.
-3. Baixe os jars listados em `mods/EXTERNAL.txt` (passam do limite de 100 MB do GitHub) para a mesma pasta `mods/`.

@@ -111,8 +111,8 @@ F11_entrega    # zip e repositório próprios da 1.21.1 (decidir com o dono)
 
 F0 e F1 prontas: 364 jars em `mods/`, lista em `mods_instalados.tsv`. Conferido sem abrir o
 jogo: todo jar tem `neoforge.mods.toml`, toda dependência obrigatória está presente (incluindo
-as que vêm dentro de outros jars) e nenhuma incompatibilidade declarada bate com a versão
-instalada.
+as que vêm dentro de outros jars) nenhuma incompatibilidade declarada bate com a versão
+instalada e as faixas de versão das dependências conferem (checker com versionRange desde 2026-11-12).
 
 ```py title:Decisões da F1
 mods_mesmo_projeto = 348   # 342 do CurseForge + 6 só no Modrinth (Daily Weather, Fragmentum,
@@ -129,6 +129,9 @@ fora = {"Radium": "incompatível com Create 6",
         "Create: Extra Gauges": "versões 1.21.1 exigem Deployer API, incompatível com Factory Logistics",
         "Redecorate / Farmer's Cutting: Quark": "não são ports do original"}
 large_meals_id = "largemeals -> large_meals"   # entra no script de remap da F4/F5
+watermedia = "2.1.37 + YT Plugin"   # o CurseForge troca para 2.x no launch por causa do Waterframes 2.1.23;
+fancymenu  = "3.9.1"               # último sem exigir WaterMedia 3; Drippy fica em 3.1.2 (pede FancyMenu >= 3.9.0)
+                                   # WaterMedia Binaries (152 MB) saiu junto com a 3.x
 ```
 
 Próximo passo: o dono abre o jogo uma vez (sem mundo), fecha, e o agente lê `logs/latest.log`.

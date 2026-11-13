@@ -22,7 +22,7 @@
     }
   ],
   "output": {
-    "count": 5,
-    "item": "vintagedelight:pickle"
+    "id": "vintagedelight:pickle",
+    "count": 5
   }
 }

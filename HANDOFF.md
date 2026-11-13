@@ -103,6 +103,32 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   escondia pelo id 376322) e botão de configs do Supplementaries desligado (chave renomeada configs_button).
   Chaves de config renomeadas entre versões: operador aplicando a partir de scratch renamed_keys.txt.
 
+- 5º-7º launch (2026-11-13): mesmo crash. Causa PROVADA: o Meadow 1.21.1 tem `DataFixerMixin` no construtor de
+  `ResourceLocation` que troca ids antigos (lista em `DataFixerEntries`, ex. `meadow:fire_log` -> `meadow:firewood`).
+  O arquivo `kubejs/data/meadow/recipe/fire_log.json` ganhava o id `meadow:firewood` e duplicava a receita do Meadow.
+  Renomeado para `firewood_from_raw_logs.json` (+ `fire_log_unpack` -> `firewood_unpack`); `port_data.py` ganhou
+  `FILE_RENAMES` para não recriar o nome antigo. Regra: nenhum arquivo de dados `meadow:` pode ter id da lista antiga.
+  Confirmado no 8º launch (mundo criou); `zzDebugDuplicateData.js` removido.
+  Create: todos os addons declaram faixas que aceitam 6.0.10; nenhum feito para Create 5 nos jars.
+
+- 8º launch (2026-11-13): mundo criou. Erros do log em 3 unidades paralelas (operadores):
+  R) 1478 receitas no formato 1.20 (301 em kubejs/data, 1177 de e.custom em server_scripts/recipes) -> formato 1.21.
+  P) Lost Cities: 4561 de 19031 paletas em moonlight-global-datapacks/sunlit_towns com 243 blocos inexistentes
+     (redeco, cfm, youkaishomecoming, meadow...) -> tools/lcport/block_map.tsv + port_palettes.py; + 51 loot tables do pack.
+  S) sunlitTownsLife.js (.is ambíguo, 47 chunks sem povoar), husbandryJei 'global', itens ausentes no JEI,
+     jadeClient getTooltip, hostileSpawnToggle getCategory, incontrol com splendid_slimes.
+  R FEITO (2026-11-13): tanukidecor diy (683) item->id no brain; sewing (script + toolbelt: pouch_upgrade_N virou
+     belt_upgrade_N na 1.21, overrides recriados com agulha de ferro; belt/pouch mantêm materiais do pack);
+     kubejs/data via tools/dataport/fix_recipe_format.py (268 fixed, 45 removidos por itens ausentes, 27 left;
+     status em tools/dataport/work/recipe_status.tsv; forge:conditional desembrulhado); scripts lote 1
+     (misc/stripping/pickling) e lote 2 (mixer/bottle/grape/milk/milling/pressing/crushing/harmonize com
+     conversor toRecipe121 em runtime). S FEITO: sunlitTownsLife getBlock()===, husbandryJei global.runtime,
+     guards de itens no JEI, jadeClient appendTooltip, hostileSpawnToggle, incontrol sem splendid_slimes.
+  P FEITO: 4561 paletas reescritas (tools/lcport/block_map.tsv, 243 blocos; regras a=157 b=6493 c=342), loot do pack
+     com 72 trocas em 36 arquivos (tools/lcport/loot_map.tsv). lc_ids.py reconhece itens registrados pelo KubeJS
+     (create() e society:*): a 1ª passada tinha trocado 73 itens society válidos e foi refeita a partir da branch.
+  Ruído de mods (ignorar): railways (267 loot de compat), bonsaitrees4 (794 avisos de compat), quark spawn category.
+
 ## Pendente, em ordem
 
 1. F5 KubeJS: port estático PRONTO (379/379 sintaxe OK, commit 10f2eb5e na branch 1.21.1). Falta: o dono abre

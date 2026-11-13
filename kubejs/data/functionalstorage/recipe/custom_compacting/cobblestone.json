@@ -1,11 +1,11 @@
 {
   "type": "functionalstorage:custom_compacting",
   "higher_input": {
-    "count": 1,
-    "item": "minecraft:cobblestone"
+    "id": "minecraft:cobblestone",
+    "count": 1
   },
   "lower_input": {
-    "count": 4,
-    "item": "twigs:pebble"
+    "id": "twigs:pebble",
+    "count": 4
   }
 }

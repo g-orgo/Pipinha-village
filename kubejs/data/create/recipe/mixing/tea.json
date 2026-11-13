@@ -6,19 +6,20 @@
       "item": "herbalbrews:dried_black_tea"
     },
     {
+      "type": "neoforge:single",
       "amount": 250,
-      "fluid": "society:ancient_fruit_juice",
-      "nbt": {}
+      "fluid": "society:ancient_fruit_juice"
     },
     {
+      "type": "neoforge:single",
       "amount": 250,
       "fluid": "society:milk"
     }
   ],
   "results": [
     {
-      "amount": 1000,
-      "fluid": "create:tea"
+      "id": "create:tea",
+      "amount": 1000
     }
   ]
 }

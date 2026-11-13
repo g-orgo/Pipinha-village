@@ -29,6 +29,7 @@
       "tag": "c:flour"
     },
     {
+      "type": "neoforge:single",
       "amount": 1000,
       "fluid": "society:milk"
     }

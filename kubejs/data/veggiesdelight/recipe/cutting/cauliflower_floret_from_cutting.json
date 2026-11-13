@@ -7,8 +7,10 @@
   ],
   "result": [
     {
-      "count": 4,
-      "item": "veggiesdelight:cauliflower_floret"
+      "item": {
+        "id": "veggiesdelight:cauliflower_floret",
+        "count": 4
+      }
     }
   ],
   "tool": {

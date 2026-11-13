@@ -20,7 +20,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "numismatics:cog",  
+          "name": "numismatics:cog",
           "functions": [
             {
               "function": "set_count",
@@ -75,7 +75,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "trials:breeze_rod",
+          "name": "minecraft:breeze_rod",
           "weight": 8,
           "functions": [
             {
@@ -103,7 +103,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "trials:ominous_bottle",
+          "name": "minecraft:ominous_bottle",
           "weight": 8
         },
         {
@@ -159,12 +159,12 @@
         },
         {
           "type": "minecraft:item",
-          "name": "trials:bolt_template",
+          "name": "minecraft:bolt_armor_trim_smithing_template",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "trials:music_disc_precipice",
+          "name": "minecraft:music_disc_precipice",
           "weight": 1
         },
         {

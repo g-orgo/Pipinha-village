@@ -3,21 +3,31 @@
   "materials": [
     {
       "count": 3,
-      "item": "minecraft:iron_ingot"
+      "ingredient": {
+        "item": "minecraft:iron_ingot"
+      }
     },
     {
       "count": 4,
-      "item": "minecraft:jungle_planks"
+      "ingredient": {
+        "item": "minecraft:jungle_planks"
+      }
     },
     {
       "count": 1,
-      "item": "society:battery"
+      "ingredient": {
+        "item": "society:battery"
+      }
     },
     {
       "count": 4,
-      "item": "minecraft:glowstone_dust"
+      "ingredient": {
+        "item": "minecraft:glowstone_dust"
+      }
     }
   ],
-  "result": "refurbished_furniture:jungle_light_ceiling_fan",
+  "result": {
+    "id": "refurbished_furniture:jungle_light_ceiling_fan"
+  },
   "show_notification": false
 }

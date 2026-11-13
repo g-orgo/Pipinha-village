@@ -22,7 +22,7 @@
     }
   ],
   "output": {
-    "count": 5,
-    "item": "vintagedelight:pickled_egg"
+    "id": "vintagedelight:pickled_egg",
+    "count": 5
   }
 }

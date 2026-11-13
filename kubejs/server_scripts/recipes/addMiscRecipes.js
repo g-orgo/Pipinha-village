@@ -25,20 +25,21 @@ ServerEvents.recipes((e) => {
     type: "farmersdelight:cutting",
     ingredients: [{ item: "herbalbrews:lavender" }],
     tool: { tag: "c:tools/knife" },
-    result: [{ item: "herbalbrews:lavender_blossom", count: 2 }],
+    result: [{ item: { id: "herbalbrews:lavender_blossom", count: 2 } }],
   });
   e.custom({
     type: "farmersdelight:cutting",
     ingredients: [{ item: "twigs:silt" }],
     tool: { tag: "minecraft:shovels" },
-    result: [{ item: "twigs:silt_ball", count: 4 }],
+    result: [{ item: { id: "twigs:silt_ball", count: 4 } }],
   });
   e.custom({
     type: "farmersdelight:cooking",
     cookingtime: 200,
     experience: 3.0,
     container: {
-      item: "minecraft:bowl",
+      id: "minecraft:bowl",
+      count: 1,
     },
     ingredients: [
       {
@@ -56,7 +57,8 @@ ServerEvents.recipes((e) => {
       { item: "farmersdelight:tomato_sauce" },
     ],
     result: {
-      item: "society:chicken_tortilla_soup",
+      id: "society:chicken_tortilla_soup",
+      count: 1,
     },
   });
   e.custom({
@@ -73,7 +75,8 @@ ServerEvents.recipes((e) => {
       { item: "society:mayonnaise" },
     ],
     result: {
-      item: "society:mexican_street_corn",
+      id: "society:mexican_street_corn",
+      count: 1,
     },
   });
   e.custom({
@@ -92,7 +95,8 @@ ServerEvents.recipes((e) => {
       }
     ],
     result: {
-      item: 'society:deep_a_mochi',
+      id: 'society:deep_a_mochi',
+      count: 1,
     },
   });
   e.custom({
@@ -114,7 +118,8 @@ ServerEvents.recipes((e) => {
       }
     ],
     result: {
-      item: 'society:lemon_beignets',
+      id: 'society:lemon_beignets',
+      count: 1,
     },
   });
   e.shapeless("quark:slime_in_a_bucket", [
@@ -672,7 +677,7 @@ ServerEvents.recipes((e) => {
     type: "farmersdelight:cutting",
     ingredients: [{ item: "society:neptuna" }],
     tool: { tag: "c:tools/knife" },
-    result: [{ item: "aquaculture:neptunium_nugget", count: 3 }],
+    result: [{ item: { id: "aquaculture:neptunium_nugget", count: 3 } }],
   });
   // Catalog Dupes
   e.shaped("2x society:tanuki_catalog", ["CCC", "CcC", "CCC"], {
@@ -730,8 +735,8 @@ ServerEvents.recipes((e) => {
       },
     ],
     output: {
+      id: "supplementaries:lumisene_bottle",
       count: 1,
-      item: "supplementaries:lumisene_bottle",
     },
   });
   e.custom({
@@ -749,8 +754,8 @@ ServerEvents.recipes((e) => {
       { item: "minecraft:glow_berries" },
     ],
     output: {
+      id: "supplementaries:lumisene_bucket",
       count: 1,
-      item: "supplementaries:lumisene_bucket",
     },
   });
   e.shaped("8x minecraft:gunpowder", ["ggg", "gcg", "ggg"], {
@@ -1106,6 +1111,6 @@ ServerEvents.recipes((e) => {
       { "item": "vintagedelight:roasted_peanut" },
       { "amount": 125, "fluid": "create:honey" }
     ],
-    "results": [{ "item": "vintagedelight:honey_roasted_peanut" }]
+    "results": [{ "id": "vintagedelight:honey_roasted_peanut" }]
   });
 });

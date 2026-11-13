@@ -1,6 +1,5 @@
 {
   "type": "refurbished_furniture:cutting_board_combining",
-  "count": 1,
   "ingredients": [
     {
       "item": "farm_and_charm:dough"
@@ -18,5 +17,8 @@
       "tag": "meadow:cheeses"
     }
   ],
-  "result": "refurbished_furniture:raw_vegetable_pizza"
+  "result": {
+    "id": "refurbished_furniture:raw_vegetable_pizza",
+    "count": 1
+  }
 }

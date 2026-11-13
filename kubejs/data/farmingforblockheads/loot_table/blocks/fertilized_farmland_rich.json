@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dew_drop_farmland_growth:weak_fertilizer"
+          "name": "minecraft:bone_meal"
         }
       ],
       "conditions": [

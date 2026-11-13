@@ -1,1 +1,1 @@
-{"palette": [{"char": "G", "block": "minecraft:dirt"}, {"char": "!", "block": "meadow:pine_leaves"}, {"char": "#", "block": "atmospheric:kousa_trapdoor[facing=west,half=bottom,open=false]"}, {"char": "$", "block": "verdantvibes:ivy[east=true,north=false,south=false,up=false,west=false]"}]}
+{"palette":[{"char":"G","block":"minecraft:dirt"},{"char":"!","block":"meadow:pine_leaves"},{"char":"#","block":"atmospheric:kousa_trapdoor[facing=west,half=bottom,open=false]"},{"char":"$","block":"minecraft:vine[east=true,north=false,south=false,up=false,west=false]"}]}

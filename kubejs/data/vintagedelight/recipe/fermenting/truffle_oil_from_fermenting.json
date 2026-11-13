@@ -22,7 +22,7 @@
     }
   ],
   "output": {
-    "count": 4,
-    "item": "society:truffle_oil"
+    "id": "society:truffle_oil",
+    "count": 4
   }
 }

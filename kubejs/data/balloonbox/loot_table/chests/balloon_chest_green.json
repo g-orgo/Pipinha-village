@@ -231,7 +231,7 @@
               "add": false
             }
           ],
-          "name": "dew_drop_farmland_growth:hydrating_fertilizer"
+          "name": "minecraft:bone_meal"
         },
         {
           "type": "minecraft:item",
@@ -247,7 +247,7 @@
               "add": false
             }
           ],
-          "name": "dew_drop_farmland_growth:weak_fertilizer"
+          "name": "minecraft:bone_meal"
         },
         {
           "type": "minecraft:item",
@@ -263,7 +263,7 @@
               "add": false
             }
           ],
-          "name": "dew_drop_farmland_growth:bountiful_fertilizer"
+          "name": "minecraft:bone_meal"
         },
         {
           "type": "minecraft:item",
@@ -279,7 +279,7 @@
               "add": false
             }
           ],
-          "name": "dew_drop_farmland_growth:low_quality_fertilizer"
+          "name": "minecraft:bone_meal"
         },
         {
           "type": "minecraft:item",
@@ -295,7 +295,7 @@
               "add": false
             }
           ],
-          "name": "dew_drop_farmland_growth:high_quality_fertilizer"
+          "name": "minecraft:bone_meal"
         },
         {
           "type": "minecraft:item",
@@ -311,7 +311,7 @@
               "add": false
             }
           ],
-          "name": "dew_drop_farmland_growth:strong_fertilizer"
+          "name": "minecraft:bone_meal"
         }
       ]
     },
@@ -387,7 +387,6 @@
           ],
           "name": "atmospheric:yucca_sapling"
         },
-        
         {
           "type": "minecraft:item",
           "weight": 4,
@@ -562,7 +561,7 @@
               "add": false
             }
           ],
-          "name": "nethervinery:crimson_grape_seeds"
+          "name": "vinery:red_grape_seeds"
         },
         {
           "type": "minecraft:item",
@@ -578,7 +577,7 @@
               "add": false
             }
           ],
-          "name": "nethervinery:warped_grape_seeds"
+          "name": "vinery:white_grape_seeds"
         },
         {
           "type": "minecraft:item",

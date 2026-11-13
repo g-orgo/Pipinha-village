@@ -1,11 +1,11 @@
 {
   "type": "functionalstorage:custom_compacting",
   "higher_input": {
-    "count": 1,
-    "item": "numismatics:sun"
+    "id": "numismatics:sun",
+    "count": 1
   },
   "lower_input": {
-    "count": 8,
-    "item": "numismatics:crown"
+    "id": "numismatics:crown",
+    "count": 8
   }
 }

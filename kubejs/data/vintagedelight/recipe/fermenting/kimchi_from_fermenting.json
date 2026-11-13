@@ -22,8 +22,8 @@
     }
   ],
   "output": {
-    "count": 4,
-    "item": "vintagedelight:kimchi"
+    "id": "vintagedelight:kimchi",
+    "count": 4
   },
   "secondaryOutput": {
     "item": "vintagedelight:pickled_pepper"

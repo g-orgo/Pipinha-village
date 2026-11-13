@@ -1,11 +1,11 @@
 {
   "type": "functionalstorage:custom_compacting",
   "higher_input": {
-    "count": 1,
-    "item": "unusualfishmod:crimson_bricks"
+    "id": "unusualfishmod:crimson_bricks",
+    "count": 1
   },
   "lower_input": {
-    "count": 2,
-    "item": "unusualfishmod:crimson_shard"
+    "id": "unusualfishmod:crimson_shard",
+    "count": 2
   }
 }

@@ -5,12 +5,18 @@
     "item": "minecraft:glass_bottle"
   },
   "ingredients": [
-    { "item": "society:maple_syrup" },
-    { "item": "minecraft:melon_slice" },
-    { "item": "minecraft:sugar" }
+    {
+      "item": "society:maple_syrup"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
   ],
   "output": {
-    "count": 1,
-    "item": "longwings:melon_butterfly_brew_bottle"
+    "id": "longwings:melon_butterfly_brew_bottle",
+    "count": 1
   }
 }

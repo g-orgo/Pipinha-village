@@ -359,7 +359,7 @@
               "add": false
             }
           ],
-          "name": "moreminecarts:glass_spines"
+          "name": "minecraft:glass"
         },
         {
           "type": "minecraft:item",
@@ -380,17 +380,17 @@
         {
           "type": "minecraft:item",
           "weight": 7,
-          "name": "society:iron_upgrade_smithing_template"
+          "name": "minecraft:netherite_upgrade_smithing_template"
         },
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "society:gold_upgrade_smithing_template"
+          "name": "minecraft:netherite_upgrade_smithing_template"
         },
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "society:diamond_upgrade_smithing_template"
+          "name": "minecraft:netherite_upgrade_smithing_template"
         }
       ]
     },

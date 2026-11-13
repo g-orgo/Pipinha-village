@@ -20,7 +20,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "moreminecarts:glass_spines",
+          "name": "minecraft:glass",
           "weight": 5,
           "functions": [
             {
@@ -184,17 +184,17 @@
         },
         {
           "type": "minecraft:item",
-          "name": "trials:music_disc_creator_box",
+          "name": "minecraft:music_disc_creator",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "trials:banner_pattern_flow",
+          "name": "minecraft:flow_banner_pattern",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "trials:banner_pattern_guster",
+          "name": "minecraft:guster_banner_pattern",
           "weight": 1
         }
       ]

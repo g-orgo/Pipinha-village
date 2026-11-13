@@ -2,16 +2,6 @@
   "type": "herbalbrews:kettle_brewing",
   "experience": 0.8,
   "crafting_duration": 20,
-  "fluid": [
-    {
-      "amount": 20
-    }
-  ],
-  "heat_needed": [
-    {
-      "amount": 50
-    }
-  ],
   "ingredients": [
     {
       "item": "herbalbrews:ground_coffee"
@@ -24,8 +14,10 @@
     }
   ],
   "result": {
-    "id": "herbalbrews:hazelnut_coffee",
-    "effect": "herbalbrews:deeprush",
-    "effectduration": 3600
-  }
+    "id": "herbalbrews:hazelnut_coffee"
+  },
+  "fluid_amount": 20,
+  "heat_amount": 50,
+  "effect": "herbalbrews:deeprush",
+  "effect_duration": 3600
 }

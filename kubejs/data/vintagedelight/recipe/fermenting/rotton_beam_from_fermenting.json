@@ -22,7 +22,7 @@
     }
   ],
   "output": {
-    "count": 5,
-    "item": "everycomp:db/betterarcheology/rotten_beam"
+    "id": "everycomp:db/betterarcheology/rotten_beam",
+    "count": 5
   }
 }

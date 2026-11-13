@@ -72,12 +72,12 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "society:iron_upgrade_smithing_template"
+          "name": "minecraft:netherite_upgrade_smithing_template"
         },
         {
           "type": "minecraft:item",
           "weight": 4,
-          "name": "society:gold_upgrade_smithing_template"
+          "name": "minecraft:netherite_upgrade_smithing_template"
         },
         {
           "type": "minecraft:item",
@@ -352,7 +352,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "species:springling_egg"
+          "name": "minecraft:egg"
         }
       ],
       "rolls": 1.0

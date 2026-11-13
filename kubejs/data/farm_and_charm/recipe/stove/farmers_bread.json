@@ -11,7 +11,10 @@
       "tag": "farm_and_charm:water_bottles"
     }
   ],
-  "item": "farm_and_charm:farmers_bread",
-  "count": 3,
-  "experience": 0.3
+  "experience": 0.3,
+  "result": {
+    "id": "farm_and_charm:farmers_bread",
+    "count": 3
+  },
+  "requiresLearning": false
 }

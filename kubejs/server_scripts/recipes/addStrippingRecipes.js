@@ -14,7 +14,7 @@ ServerEvents.recipes((e) => {
       results: [
         {
           count: 1,
-          item: `${splitLog[0]}:stripped_${splitLog[1]}`,
+          id: `${splitLog[0]}:stripped_${splitLog[1]}`,
         },
       ],
     });

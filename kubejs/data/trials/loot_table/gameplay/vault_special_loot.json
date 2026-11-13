@@ -96,7 +96,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "trials:ominous_bottle",
+          "name": "minecraft:ominous_bottle",
           "weight": 6
         },
         {
@@ -129,7 +129,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "create_enchantment_industry:hyper_experience_bottle",
+          "name": "minecraft:experience_bottle",
           "weight": 7,
           "functions": [
             {
@@ -148,7 +148,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "trials:heavy_core",
+          "name": "minecraft:heavy_core",
           "weight": 4
         },
         {
@@ -167,12 +167,12 @@
         },
         {
           "type": "minecraft:item",
-          "name": "trials:flow_template",
+          "name": "minecraft:flow_armor_trim_smithing_template",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "trials:music_disc_creator",
+          "name": "minecraft:music_disc_creator",
           "weight": 2
         },
         {

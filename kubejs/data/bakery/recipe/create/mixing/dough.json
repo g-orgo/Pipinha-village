@@ -14,6 +14,7 @@
       "item": "farm_and_charm:yeast"
     },
     {
+      "type": "neoforge:single",
       "amount": 250,
       "fluid": "minecraft:water"
     }

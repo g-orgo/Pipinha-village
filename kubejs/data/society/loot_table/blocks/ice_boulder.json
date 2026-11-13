@@ -53,7 +53,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "society:pristine_frozen_tear",
+          "name": "minecraft:blue_ice",
           "weight": 4
         },
         {

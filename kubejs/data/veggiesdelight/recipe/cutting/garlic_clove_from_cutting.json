@@ -7,8 +7,10 @@
   ],
   "result": [
     {
-      "count": 4,
-      "item": "veggiesdelight:garlic_clove"
+      "item": {
+        "id": "veggiesdelight:garlic_clove",
+        "count": 4
+      }
     }
   ],
   "tool": {

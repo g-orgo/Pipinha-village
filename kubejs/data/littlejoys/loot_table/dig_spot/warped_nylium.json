@@ -254,7 +254,7 @@
         {
           "type": "minecraft:item",
           "weight": 4,
-          "name": "nethervinery:warped_grape_seeds"
+          "name": "vinery:white_grape_seeds"
         },
         {
           "type": "minecraft:item",

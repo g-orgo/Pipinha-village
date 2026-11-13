@@ -1,1 +1,1 @@
-{"palette":[{"char":"a","block":"minecraft:oak_leaves[waterlogged=false,persistent=true]"},{"char":"b","block":"cfm:oak_hedge"},{"char":"\u00a1","block":"refurbished_furniture:oak_hedge[north=false,south=false,west=false,east=false]"}]}
+{"palette":[{"char":"a","block":"minecraft:oak_leaves[waterlogged=false,persistent=true]"},{"char":"b","block":"minecraft:oak_leaves[persistent=true]"},{"char":"\u00a1","block":"refurbished_furniture:oak_hedge[north=false,south=false,west=false,east=false]"}]}

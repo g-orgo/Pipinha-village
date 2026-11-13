@@ -14,7 +14,7 @@
     }
   ],
   "container": {
-    "item": "bakery:jar"
+    "id": "bakery:jar"
   },
   "recipe_book_tab": "meals",
   "result": {

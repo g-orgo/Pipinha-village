@@ -9,17 +9,61 @@
       },
       "bonus_rolls": 0,
       "entries": [
-        { "type": "minecraft:item", "weight": 1, "name": "society:relic_trove" },
-        { "type": "minecraft:item", "weight": 1, "name": "society:artifact_trove" },
-        { "type": "minecraft:item", "weight": 1, "name": "society:book_of_stars" },
-        { "type": "minecraft:item", "weight": 2, "name": "society:mining_monthly" },
-        { "type": "minecraft:item", "weight": 2, "name": "society:combat_quarterly" },
-        { "type": "minecraft:item", "weight": 3, "name": "society:froggy_helm" },
-        { "type": "minecraft:item", "weight": 3, "name": "society:ribbit_drum" },
-        { "type": "minecraft:item", "weight": 3, "name": "society:ribbit_gadget" },
-        { "type": "minecraft:item", "weight": 22, "name": "society:magic_rope" },
-        { "type": "minecraft:item", "weight": 5, "name": "gag:escape_rope" },
-        { "type": "minecraft:item", "weight": 80, "name": "meadow:firewood" }
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "society:relic_trove"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "society:artifact_trove"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "society:book_of_stars"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "society:mining_monthly"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "society:combat_quarterly"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "society:froggy_helm"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "society:ribbit_drum"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "society:ribbit_gadget"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 22,
+          "name": "society:magic_rope"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "gag:escape_rope"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 80,
+          "name": "meadow:firewood"
+        }
       ]
     },
     {
@@ -115,7 +159,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "nethervinery:crimson_grape_seeds",
+          "name": "vinery:red_grape_seeds",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -131,7 +175,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "nethervinery:warped_grape_seeds",
+          "name": "vinery:white_grape_seeds",
           "functions": [
             {
               "function": "minecraft:set_count",

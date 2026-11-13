@@ -11,6 +11,7 @@
       "tag": "farm_and_charm:flour"
     },
     {
+      "type": "neoforge:single",
       "amount": 250,
       "fluid": "minecraft:water"
     }

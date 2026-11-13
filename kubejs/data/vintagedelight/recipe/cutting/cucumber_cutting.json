@@ -7,8 +7,10 @@
   ],
   "result": [
     {
-      "item": "vintagedelight:cucumber_noodles",
-      "count": 6
+      "item": {
+        "id": "vintagedelight:cucumber_noodles",
+        "count": 6
+      }
     }
   ],
   "tool": {

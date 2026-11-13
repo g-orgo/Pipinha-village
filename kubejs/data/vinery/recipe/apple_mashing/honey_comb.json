@@ -4,7 +4,7 @@
     "item": "minecraft:honeycomb_block"
   },
   "output": {
-    "item": "minecraft:honeycomb",
+    "id": "minecraft:honeycomb",
     "count": 4
   }
 }

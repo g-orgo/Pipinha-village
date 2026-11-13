@@ -25,7 +25,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "trials:ominous_bottle"
+          "name": "minecraft:ominous_bottle"
         }
       ]
     },

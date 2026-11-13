@@ -58,9 +58,19 @@ global.isHostileSpawnsOff = function (server) {
 
 // A hostile mob that goes away when spawns are off: MONSTER category mob, not a boss,
 // not named, leashed or persistent (picked up items, raid members).
+// KubeJS wraps the entity, so entity.getType() returns the type id string, not the
+// Java EntityType: the category is looked up from the registry by that id.
+function hostileToggleCategory(typeId) {
+  var ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
+  var BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
+  var entityType = BuiltInRegistries.ENTITY_TYPE.get(ResourceLocation.parse(String(typeId)));
+  return String(entityType.getCategory().name());
+}
+
 function hostileToggleRemovable(entity) {
-  if (entity == null || String(entity.getType().getCategory().name()) !== "MONSTER") return false;
-  var id = String(Java.loadClass("net.minecraft.world.entity.EntityType").getKey(entity.getType()));
+  if (entity == null) return false;
+  var id = String(entity.getType());
+  if (hostileToggleCategory(id) !== "MONSTER") return false;
   if (HOSTILE_TOGGLE_KEEP_TYPES.indexOf(id) >= 0) return false;
   if (typeof entity.isPersistenceRequired !== "function") return false;
   if (entity.isPersistenceRequired() || entity.requiresCustomPersistence()) return false;
@@ -99,7 +109,7 @@ NativeEvents.onEvent(Java.loadClass("net.neoforged.neoforge.event.entity.living.
   if (hostileToggleSpawnFailed) return;
   try {
     var entity = e.getEntity();
-    if (String(entity.getType().getCategory().name()) !== "MONSTER") return;
+    if (hostileToggleCategory(entity.getType()) !== "MONSTER") return;
     if (HOSTILE_TOGGLE_BLOCKED_TYPES.indexOf(String(e.getSpawnType().name())) < 0) return;
     if (global.isHostileSpawnsOff(entity.getServer())) e.setSpawnCancelled(true);
   } catch (err) {

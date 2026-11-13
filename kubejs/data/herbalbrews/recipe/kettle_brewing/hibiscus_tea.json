@@ -2,16 +2,6 @@
   "type": "herbalbrews:kettle_brewing",
   "experience": 0.5,
   "crafting_duration": 50,
-  "fluid": [
-    {
-      "amount": 15
-    }
-  ],
-  "heat_needed": [
-    {
-      "amount": 10
-    }
-  ],
   "ingredients": [
     {
       "item": "herbalbrews:hibiscus"
@@ -24,8 +14,10 @@
     }
   ],
   "result": {
-    "id": "herbalbrews:hibiscus_tea",
-    "effect": "herbalbrews:lifeleech",
-    "effectduration": 1800
-  }
+    "id": "herbalbrews:hibiscus_tea"
+  },
+  "fluid_amount": 15,
+  "heat_amount": 10,
+  "effect": "herbalbrews:lifeleech",
+  "effect_duration": 1800
 }

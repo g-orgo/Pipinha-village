@@ -22,7 +22,7 @@
     }
   ],
   "output": {
-    "count": 1,
-    "item": "minecraft:slime_block"
+    "id": "minecraft:slime_block",
+    "count": 1
   }
 }

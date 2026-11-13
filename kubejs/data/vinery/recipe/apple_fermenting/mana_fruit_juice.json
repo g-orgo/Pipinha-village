@@ -7,7 +7,7 @@
     "required": true
   },
   "output": {
-    "item": "society:mana_fruit_juice",
+    "id": "society:mana_fruit_juice",
     "count": 1
   }
 }

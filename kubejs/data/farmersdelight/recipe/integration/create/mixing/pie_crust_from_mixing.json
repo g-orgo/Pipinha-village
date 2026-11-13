@@ -17,6 +17,7 @@
       "item": "create:wheat_flour"
     },
     {
+      "type": "neoforge:single",
       "fluid": "society:milk",
       "amount": 250
     }

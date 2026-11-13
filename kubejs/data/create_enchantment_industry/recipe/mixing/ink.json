@@ -5,14 +5,14 @@
       "item": "minecraft:ink_sac"
     },
     {
+      "type": "neoforge:single",
       "fluid": "minecraft:water",
-      "nbt": {},
       "amount": 250
     }
   ],
   "results": [
     {
-      "fluid": "create_enchantment_industry:ink",
+      "id": "create_enchantment_industry:ink",
       "amount": 250
     }
   ]

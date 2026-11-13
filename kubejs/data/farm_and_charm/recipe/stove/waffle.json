@@ -11,7 +11,10 @@
       "tag": "bakery:eggs"
     }
   ],
-  "item": "bakery:waffle",
-  "count": 4,
-  "experience": 0.3
+  "experience": 0.3,
+  "result": {
+    "id": "bakery:waffle",
+    "count": 4
+  },
+  "requiresLearning": false
 }

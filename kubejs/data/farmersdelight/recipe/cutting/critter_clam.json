@@ -7,15 +7,21 @@
   ],
   "result": [
     {
-      "item": "crabbersdelight:raw_clam_meat"
+      "item": {
+        "id": "crabbersdelight:raw_clam_meat"
+      }
     },
     {
       "chance": 0.5,
-      "item": "society:river_jelly"
+      "item": {
+        "id": "society:river_jelly"
+      }
     },
     {
       "chance": 0.05,
-      "item": "society:sunlit_pearl"
+      "item": {
+        "id": "society:sunlit_pearl"
+      }
     }
   ],
   "tool": {

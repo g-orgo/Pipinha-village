@@ -1,1 +1,1 @@
-{"palette":[{"char":"a","block":"minecraft:air"},{"char":"b","block":"minecraft:mangrove_fence"},{"char":"c","block":"cfm:oak_hedge"}]}
+{"palette":[{"char":"a","block":"minecraft:air"},{"char":"b","block":"minecraft:mangrove_fence"},{"char":"c","block":"minecraft:oak_leaves[persistent=true]"}]}

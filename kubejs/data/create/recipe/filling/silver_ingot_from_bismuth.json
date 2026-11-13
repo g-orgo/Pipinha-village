@@ -5,6 +5,7 @@
       "item": "etcetera:bismuth_ingot"
     },
     {
+      "type": "neoforge:single",
       "amount": 200,
       "fluid": "society:alchemical_varnish"
     }

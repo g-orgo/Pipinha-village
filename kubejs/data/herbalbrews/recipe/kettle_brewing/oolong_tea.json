@@ -2,16 +2,6 @@
   "type": "herbalbrews:kettle_brewing",
   "experience": 0.8,
   "crafting_duration": 35,
-  "fluid": [
-    {
-      "amount": 20
-    }
-  ],
-  "heat_needed": [
-    {
-      "amount": 40
-    }
-  ],
   "ingredients": [
     {
       "item": "herbalbrews:dried_oolong_tea"
@@ -21,8 +11,10 @@
     }
   ],
   "result": {
-    "id": "herbalbrews:oolong_tea",
-    "effect": "herbalbrews:fortune",
-    "effectduration": 1800
-  }
+    "id": "herbalbrews:oolong_tea"
+  },
+  "fluid_amount": 20,
+  "heat_amount": 40,
+  "effect": "herbalbrews:fortune",
+  "effect_duration": 1800
 }

@@ -20,10 +20,12 @@
     {
       "item": "windswept:pinecone"
     },
-    { "item": "society:maple_syrup" }
+    {
+      "item": "society:maple_syrup"
+    }
   ],
   "output": {
-    "count": 1,
-    "item": "windswept:pinecone_jam_bottle"
+    "id": "windswept:pinecone_jam_bottle",
+    "count": 1
   }
 }

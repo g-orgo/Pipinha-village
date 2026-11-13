@@ -3,13 +3,19 @@
   "materials": [
     {
       "count": 4,
-      "item": "minecraft:iron_ingot"
+      "ingredient": {
+        "item": "minecraft:iron_ingot"
+      }
     },
     {
       "count": 1,
-      "item": "society:battery"
+      "ingredient": {
+        "item": "society:battery"
+      }
     }
   ],
-  "result": "refurbished_furniture:light_toaster",
+  "result": {
+    "id": "refurbished_furniture:light_toaster"
+  },
   "show_notification": false
 }

@@ -3,7 +3,7 @@
   "cookingtime": 200,
   "experience": 2.0,
   "container": {
-    "item": "minecraft:glass_bottle"
+    "id": "minecraft:glass_bottle"
   },
   "ingredients": [
     {

@@ -78,7 +78,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "society:pristine_frozen_tear",
+          "name": "minecraft:blue_ice",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -572,7 +572,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "moreminecarts:lightspeed_rail",
+          "name": "minecraft:rail",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -586,7 +586,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "moreminecarts:lightspeed_powered_rail",
+          "name": "minecraft:powered_rail",
           "functions": [
             {
               "function": "minecraft:set_count",

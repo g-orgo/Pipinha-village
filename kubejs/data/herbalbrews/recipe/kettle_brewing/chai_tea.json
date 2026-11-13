@@ -2,16 +2,6 @@
   "type": "herbalbrews:kettle_brewing",
   "experience": 0.8,
   "crafting_duration": 20,
-  "fluid": [
-    {
-      "amount": 20
-    }
-  ],
-  "heat_needed": [
-    {
-      "amount": 50
-    }
-  ],
   "ingredients": [
     {
       "tag": "society:small_milk"
@@ -22,5 +12,7 @@
   ],
   "result": {
     "id": "herbalbrews:chai_tea"
-  }
+  },
+  "fluid_amount": 20,
+  "heat_amount": 50
 }

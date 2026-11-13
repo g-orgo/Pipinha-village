@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "trials:trial_key",
+          "name": "minecraft:trial_key",
           "weight": 2
         },
         {

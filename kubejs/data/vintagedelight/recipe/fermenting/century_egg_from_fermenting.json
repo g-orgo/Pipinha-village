@@ -13,7 +13,7 @@
     }
   ],
   "output": {
-    "count": 1,
-    "item": "vintagedelight:century_egg"
+    "id": "vintagedelight:century_egg",
+    "count": 1
   }
 }

@@ -5,6 +5,7 @@
       "item": "minecraft:bread"
     },
     {
+      "type": "neoforge:single",
       "amount": 250,
       "fluid": "society:milk"
     }

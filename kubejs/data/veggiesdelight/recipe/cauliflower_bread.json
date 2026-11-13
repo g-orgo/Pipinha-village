@@ -11,7 +11,10 @@
       "tag": "forge:grain/wheat"
     }
   ],
-  "item": "veggiesdelight:cauliflower_bread",
-  "count": 1,
-  "experience": 0.35
+  "experience": 0.35,
+  "result": {
+    "id": "veggiesdelight:cauliflower_bread",
+    "count": 1
+  },
+  "requiresLearning": false
 }

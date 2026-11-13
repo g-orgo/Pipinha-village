@@ -1,1 +1,1 @@
-{"palette":[{"char":"a","block":"create:tuff_pillar[axis=y]"},{"char":"b","block":"cfm:spruce_hedge"},{"char":"c","block":"create:andesite_bars"},{"char":"d","block":"embellishcraft:smooth_marble"},{"char":"e","block":"minecraft:smooth_stone"}]}
+{"palette":[{"char":"a","block":"create:tuff_pillar[axis=y]"},{"char":"b","block":"minecraft:spruce_leaves[persistent=true]"},{"char":"c","block":"create:andesite_bars"},{"char":"d","block":"embellishcraft:smooth_marble"},{"char":"e","block":"minecraft:smooth_stone"}]}

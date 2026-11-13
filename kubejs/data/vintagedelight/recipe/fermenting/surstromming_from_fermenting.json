@@ -22,7 +22,7 @@
     }
   ],
   "output": {
-    "count": 5,
-    "item": "vintagedelight:surstromming"
+    "id": "vintagedelight:surstromming",
+    "count": 5
   }
 }

@@ -18,16 +18,23 @@ ServerEvents.recipes((e) => {
     ];
     additionalItem && sewingInputs.push(additionalItem);
 
+    // Skip the recipe when the result or any material is not registered.
+    const usedIds = [result].concat(sewingInputs.map((input) => input.ingredient.item));
+    const missing = usedIds.filter((id) => id && !Item.exists(id));
+    if (missing.length > 0) {
+      console.warn("[SOCIETY] sewing recipe for " + result + " skipped, missing: " + missing.join(", "));
+      return;
+    }
+
     e.custom({
       type: "sewingkit:sewing",
       materials: sewingInputs,
       result: {
+        id: result,
         count: resultCount || 1,
-        item: result,
       },
       tool: {
-        type: "sewingkit:tool_ingredient",
-        tool_type: "sewingkit_sew",
+        tag: "sewingkit:needles/wood_or_higher",
       },
     });
   };
@@ -142,6 +149,13 @@ ServerEvents.recipes((e) => {
     createSewingRecipe("farmersdelight:cooking_pot", item);
   });
   const createHatSewingRecipe = (index, materials, coinCount, result) => {
+    const hatInput = index >= materials.length ? materials[index % materials.length].item : materials[index].item;
+    const hatId = `simplehats:${result}`;
+    if (!Item.exists(hatId) || !Item.exists(hatInput)) {
+      console.warn("[SOCIETY] sewing hat " + hatId + " skipped, missing " + hatInput);
+      return;
+    }
+
     e.custom({
       type: "sewingkit:sewing",
       materials: [
@@ -168,11 +182,11 @@ ServerEvents.recipes((e) => {
         },
       ],
       result: {
-        item: `simplehats:${result}`,
+        id: `simplehats:${result}`,
+        count: 1,
       },
       tool: {
-        type: "sewingkit:tool_ingredient",
-        tool_type: "sewingkit_sew",
+        tag: "sewingkit:needles/wood_or_higher",
       },
     });
   };

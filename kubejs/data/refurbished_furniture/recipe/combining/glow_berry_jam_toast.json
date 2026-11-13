@@ -1,6 +1,5 @@
 {
   "type": "refurbished_furniture:cutting_board_combining",
-  "count": 1,
   "ingredients": [
     {
       "item": "refurbished_furniture:toast"
@@ -9,5 +8,8 @@
       "item": "bakery:glowberry_jam"
     }
   ],
-  "result": "refurbished_furniture:glow_berry_jam_toast"
+  "result": {
+    "id": "refurbished_furniture:glow_berry_jam_toast",
+    "count": 1
+  }
 }

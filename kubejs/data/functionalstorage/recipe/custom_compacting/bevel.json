@@ -1,11 +1,11 @@
 {
   "type": "functionalstorage:custom_compacting",
   "higher_input": {
-    "count": 1,
-    "item": "numismatics:bevel"
+    "id": "numismatics:bevel",
+    "count": 1
   },
   "lower_input": {
-    "count": 8,
-    "item": "numismatics:spur"
+    "id": "numismatics:spur",
+    "count": 8
   }
 }

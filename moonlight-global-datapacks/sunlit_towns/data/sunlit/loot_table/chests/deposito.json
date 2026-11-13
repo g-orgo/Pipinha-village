@@ -1195,7 +1195,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "createdeco:netherite_sheet",
+          "name": "minecraft:netherite_ingot",
           "weight": 1,
           "functions": [
             {
@@ -1415,12 +1415,12 @@
         },
         {
           "type": "minecraft:item",
-          "name": "constructionstick:diamond_stick",
+          "name": "minecraft:diamond",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "constructionstick:netherite_stick",
+          "name": "minecraft:netherite_ingot",
           "weight": 1
         },
         {

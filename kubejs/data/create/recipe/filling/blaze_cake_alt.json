@@ -31,9 +31,9 @@
       }
     ],
     {
+      "type": "neoforge:single",
       "amount": 500,
-      "fluid": "minecraft:lava",
-      "nbt": {}
+      "fluid": "minecraft:lava"
     }
   ],
   "results": [

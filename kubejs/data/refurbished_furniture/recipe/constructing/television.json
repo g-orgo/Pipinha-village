@@ -3,25 +3,37 @@
   "materials": [
     {
       "count": 8,
-      "item": "minecraft:iron_ingot"
+      "ingredient": {
+        "item": "minecraft:iron_ingot"
+      }
     },
     {
       "count": 2,
-      "item": "minecraft:copper_ingot"
+      "ingredient": {
+        "item": "minecraft:copper_ingot"
+      }
     },
     {
       "count": 1,
-      "item": "society:ribbit_gadget"
+      "ingredient": {
+        "item": "society:ribbit_gadget"
+      }
     },
     {
       "count": 4,
-      "item": "society:battery"
+      "ingredient": {
+        "item": "society:battery"
+      }
     },
     {
       "count": 2,
-      "item": "minecraft:amethyst_shard"
+      "ingredient": {
+        "item": "minecraft:amethyst_shard"
+      }
     }
   ],
-  "result": "refurbished_furniture:television",
+  "result": {
+    "id": "refurbished_furniture:television"
+  },
   "show_notification": false
 }

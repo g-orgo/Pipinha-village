@@ -21,10 +21,11 @@
     }
   ],
   "container": {
-    "item": "minecraft:bowl"
+    "id": "minecraft:bowl"
   },
   "result": {
     "id": "candlelight:bolognese",
     "count": 4
-  }
+  },
+  "requiresLearning": false
 }

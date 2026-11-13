@@ -18,10 +18,11 @@
     }
   ],
   "container": {
-    "item": "minecraft:bowl"
+    "id": "minecraft:bowl"
   },
   "result": {
     "id": "candlelight:beef_with_mushroom_in_wine_and_potatoes",
     "count": 4
-  }
+  },
+  "requiresLearning": false
 }

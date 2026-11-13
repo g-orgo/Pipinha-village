@@ -18,7 +18,7 @@
         },
         {
           "type": "item",
-          "name": "society:pristine_emerald",
+          "name": "minecraft:emerald",
           "entryName": "pristine_emerald",
           "weight": 5
         },
@@ -105,7 +105,7 @@
         },
         {
           "type": "item",
-          "name": "society:pristine_aquamarine",
+          "name": "minecraft:prismarine_crystals",
           "entryName": "aquamarine",
           "weight": 6
         },

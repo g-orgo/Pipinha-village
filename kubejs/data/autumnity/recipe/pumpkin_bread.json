@@ -11,7 +11,10 @@
       "tag": "farm_and_charm:wheat"
     }
   ],
-  "item": "autumnity:pumpkin_bread",
-  "count": 2,
-  "experience": 0.35
+  "experience": 0.35,
+  "result": {
+    "id": "autumnity:pumpkin_bread",
+    "count": 2
+  },
+  "requiresLearning": false
 }

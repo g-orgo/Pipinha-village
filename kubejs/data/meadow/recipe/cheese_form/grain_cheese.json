@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "meadow:rennet"
   },
-  "result": "meadow:grain_cheese_wheel"
+  "result": {
+    "id": "meadow:grain_cheese_wheel"
+  }
 }

@@ -1,0 +1,341 @@
+id	status	note
+atmospheric:orange_pudding	fixed	already in 1.21.1 layout
+autumnity:pumpkin_bread	fixed	already in 1.21.1 layout
+bakery:create/mixing/cake_dough_liquids	fixed	already in 1.21.1 layout
+bakery:create/mixing/dough	fixed	already in 1.21.1 layout
+bakery:create/mixing/dough_liquids	fixed	already in 1.21.1 layout
+bakery:create/mixing/sweet_dough_liquids	fixed	already in 1.21.1 layout
+brewinandchewin:pizza_from_dough	removed	item absent from every installed mod: farmersdelight:dough
+cluttered:antique_bricks	fixed	already in 1.21.1 layout
+crabbersdelight:frog_leg_kebob	removed	item absent from every installed mod: crabbersdelight:frog_leg_kebob
+crabbersdelight:squid_kebob	removed	item absent from every installed mod: crabbersdelight:squid_kebob
+create_central_kitchen:compacting/cake	fixed	already in 1.21.1 layout
+createdeco:placard	left	no file at expected path (stale entry)
+create_enchantment_industry:mixing/ink	fixed	already in 1.21.1 layout
+create_factory_logistics:barrel_packager	left	no file at expected path (stale entry)
+create_factory_logistics:factory_chemical_gauge	left	no file at expected path (stale entry)
+create_factory_logistics:sequenced_assembly/fluid_mechanism	fixed	already in 1.21.1 layout
+create:filling/blaze_cake_alt	fixed	already in 1.21.1 layout
+create:filling/compat/farmersdelight/milk_bottle	fixed	already in 1.21.1 layout
+create:filling/silver_ingot_from_bismuth	fixed	already in 1.21.1 layout
+create:filling/sweet_roll	fixed	already in 1.21.1 layout
+create:mechanical_crafting/blunderbuss	fixed	already in 1.21.1 layout
+create_mechanical_extruder:extruding/blackstone	left	no 1.21.1 example for type create_mechanical_extruder:extruding
+create_mechanical_extruder:extruding/calcite	left	no 1.21.1 example for type create_mechanical_extruder:extruding
+create_mechanical_extruder:extruding/cobbled_limestone	left	no 1.21.1 example for type create_mechanical_extruder:extruding
+create:mixing/chocolate	fixed	already in 1.21.1 layout
+create:mixing/chocolate_melting	fixed	already in 1.21.1 layout
+create:mixing/sweet_potato_dough_from_water	fixed	already in 1.21.1 layout
+create:mixing/tea	fixed	already in 1.21.1 layout
+create:sequenced_assembly/precision_mechanism	fixed	already in 1.21.1 layout
+create:sequenced_assembly/sturdy_sheet	fixed	already in 1.21.1 layout
+dew_drop_farmland_growth:bountiful_fertilizer_moth	removed	item absent from every installed mod: dew_drop_farmland_growth:bountiful_fertilizer
+dew_drop_farmland_growth:bountiful_fertilizer	removed	item absent from every installed mod: dew_drop_farmland_growth:bountiful_fertilizer
+dew_drop_farmland_growth:deluxe_hydrating_fertilizer	removed	item absent from every installed mod: dew_drop_farmland_growth:deluxe_hydrating_fertilizer
+dew_drop_farmland_growth:garden_pot	removed	item absent from every installed mod: dew_drop_farmland_growth:garden_pot
+dew_drop_farmland_growth:high_quality_fertilizer	removed	item absent from every installed mod: dew_drop_farmland_growth:high_quality_fertilizer
+dew_drop_farmland_growth:hydrating_fertilizer	removed	item absent from every installed mod: dew_drop_farmland_growth:hydrating_fertilizer
+dew_drop_farmland_growth:hyper_fertilizer	removed	item absent from every installed mod: dew_drop_farmland_growth:hyper_fertilizer
+dew_drop_farmland_growth:low_quality_fertilizer	removed	item absent from every installed mod: dew_drop_farmland_growth:low_quality_fertilizer
+dew_drop_farmland_growth:pristine_quality_fertilizer	removed	item absent from every installed mod: dew_drop_farmland_growth:pristine_quality_fertilizer
+dew_drop_farmland_growth:strong_fertilizer	removed	item absent from every installed mod: dew_drop_farmland_growth:strong_fertilizer
+dew_drop_farmland_growth:weak_fertilizer	removed	item absent from every installed mod: dew_drop_farmland_growth:weak_fertilizer
+dramaticdoors:short_arid_glass_door	removed	item absent from every installed mod: clayworks:arid_glass_door
+dramaticdoors:short_meadow_pine_barn_door	removed	item absent from every installed mod: meadow:pine_barn_door
+dramaticdoors:tall_arid_glass_door	removed	item absent from every installed mod: clayworks:arid_glass_door
+dramaticdoors:tall_meadow_pine_barn_door	removed	item absent from every installed mod: meadow:pine_barn_door
+farm_and_charm:drying/fertilizer_from_bone_meal	removed	item absent from every installed mod: dew_drop_farmland_growth:weak_fertilizer
+farm_and_charm:roaster/bacon_with_eggs	fixed	already in 1.21.1 layout
+farm_and_charm:roaster/beef_with_mushroom_in_wine_and_potatoes	fixed	already in 1.21.1 layout
+farm_and_charm:roaster/bolognese	fixed	already in 1.21.1 layout
+farm_and_charm:roaster/chicken_wrapped_in_bacon	fixed	already in 1.21.1 layout
+farm_and_charm:roaster/fried_chicken	fixed	already in 1.21.1 layout
+farm_and_charm:stove/ancient_cookie	fixed	already in 1.21.1 layout
+farm_and_charm:stove/apple_pie	fixed	already in 1.21.1 layout
+farm_and_charm:stove/beef_wellington	fixed	already in 1.21.1 layout
+farm_and_charm:stove/bundt_cake	fixed	already in 1.21.1 layout
+farm_and_charm:stove/chicken_alfredo	fixed	already in 1.21.1 layout
+farm_and_charm:stove/chicken_with_vegetables	fixed	already in 1.21.1 layout
+farm_and_charm:stove/cornet	fixed	already in 1.21.1 layout
+farm_and_charm:stove/farmers_bread	fixed	already in 1.21.1 layout
+farm_and_charm:stove/jam_roll	fixed	already in 1.21.1 layout
+farm_and_charm:stove/lasagne	fixed	already in 1.21.1 layout
+farm_and_charm:stove/linzer_tart	fixed	already in 1.21.1 layout
+farm_and_charm:stove/lychee_cookie	fixed	already in 1.21.1 layout
+farm_and_charm:stove/pork_ribs	fixed	already in 1.21.1 layout
+farm_and_charm:stove/roasted_chicken	fixed	already in 1.21.1 layout
+farm_and_charm:stove/star_cookie	fixed	already in 1.21.1 layout
+farm_and_charm:stove/toast	fixed	already in 1.21.1 layout
+farm_and_charm:stove/turnip_cake	fixed	already in 1.21.1 layout
+farm_and_charm:stove/waffle	fixed	already in 1.21.1 layout
+farmersdelight:cooking/apple_jam	fixed	already in 1.21.1 layout
+farmersdelight:cooking/barley_soup	fixed	already in 1.21.1 layout
+farmersdelight:cooking/bisque	fixed	already in 1.21.1 layout
+farmersdelight:cooking/brewery_dumplings	fixed	already in 1.21.1 layout
+farmersdelight:cooking/chicken_teriyaki	fixed	already in 1.21.1 layout
+farmersdelight:cooking/chocolate_jam	fixed	already in 1.21.1 layout
+farmersdelight:cooking/chocolate_mousse	fixed	already in 1.21.1 layout
+farmersdelight:cooking/chocolate_truffle	fixed	already in 1.21.1 layout
+farmersdelight:cooking/clam_chowder	fixed	already in 1.21.1 layout
+farmersdelight:cooking/corn_grits	fixed	already in 1.21.1 layout
+farmersdelight:cooking/fried_rice	fixed	already in 1.21.1 layout
+farmersdelight:cooking/glowberry_jam	fixed	already in 1.21.1 layout
+farmersdelight:cooking/goulash	fixed	already in 1.21.1 layout
+farmersdelight:cooking/khinkali	removed	item absent from every installed mod: candlelight:khinkali
+farmersdelight:cooking/lasagne	fixed	already in 1.21.1 layout
+farmersdelight:cooking/leather	fixed	already in 1.21.1 layout
+farmersdelight:cooking/mossberry_stew	fixed	already in 1.21.1 layout
+farmersdelight:cooking/mushroom_soup	fixed	already in 1.21.1 layout
+farmersdelight:cooking/nettle_tea	fixed	already in 1.21.1 layout
+farmersdelight:cooking/onion_soup	fixed	already in 1.21.1 layout
+farmersdelight:cooking/pasta_with_mozzarella	fixed	already in 1.21.1 layout
+farmersdelight:cooking/pork_ribs	fixed	already in 1.21.1 layout
+farmersdelight:cooking/potato_soup	fixed	already in 1.21.1 layout
+farmersdelight:cooking/pudding	fixed	already in 1.21.1 layout
+farmersdelight:cooking/rennet	fixed	already in 1.21.1 layout
+farmersdelight:cooking/ribwort_tea	fixed	already in 1.21.1 layout
+farmersdelight:cooking/roasted_ham	fixed	already in 1.21.1 layout
+farmersdelight:cooking/salmon_on_white_wine	fixed	already in 1.21.1 layout
+farmersdelight:cooking/sausage	fixed	already in 1.21.1 layout
+farmersdelight:cooking/sausage_with_cheese	fixed	already in 1.21.1 layout
+farmersdelight:cooking/sausage_with_oat_patty	fixed	already in 1.21.1 layout
+farmersdelight:cooking/seafood_gumbo	fixed	already in 1.21.1 layout
+farmersdelight:cooking/shrimp_fried_rice	fixed	already in 1.21.1 layout
+farmersdelight:cooking/simple_tomato_soup	fixed	already in 1.21.1 layout
+farmersdelight:cooking/strawberry_jam	fixed	already in 1.21.1 layout
+farmersdelight:cooking/strawberry_tea	fixed	already in 1.21.1 layout
+farmersdelight:cooking/sweetberry_jam	fixed	already in 1.21.1 layout
+farmersdelight:cooking/tomato_soup	fixed	already in 1.21.1 layout
+farmersdelight:cutting/cheesecake_slice	fixed	already in 1.21.1 layout
+farmersdelight:cutting/cheese_tart_slice	fixed	already in 1.21.1 layout
+farmersdelight:cutting/critter_clam	fixed	already in 1.21.1 layout
+farmersdelight:cutting/piece_of_amethyst_cheese	fixed	already in 1.21.1 layout
+farmersdelight:cutting/piece_of_buffalo_cheese	fixed	already in 1.21.1 layout
+farmersdelight:cutting/piece_of_cheese	fixed	already in 1.21.1 layout
+farmersdelight:cutting/piece_of_goat_cheese	fixed	already in 1.21.1 layout
+farmersdelight:cutting/piece_of_grain_cheese	fixed	already in 1.21.1 layout
+farmersdelight:cutting/piece_of_sheep_cheese	fixed	already in 1.21.1 layout
+farmersdelight:cutting/piece_of_warped_cheese	fixed	already in 1.21.1 layout
+farmersdelight:fried_egg_from_campfire_cooking	fixed	already in 1.21.1 layout
+farmersdelight:fried_egg_from_smoking	fixed	already in 1.21.1 layout
+farmersdelight:fried_egg	fixed	already in 1.21.1 layout
+farmersdelight:integration/create/mixing/pie_crust_from_mixing	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/ancient_coin	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/bamboo	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/bevel	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/bismuth_ingot	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/cobblestone	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/cog	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/compacted_dripstone	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/crimson_bricks	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/crown	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/dirt	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/dripstone_block	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/iridium_coin	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/prismatic_coin	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/relucent_bricks	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/sprocket	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/sturdy_bamboo	fixed	already in 1.21.1 layout
+functionalstorage:custom_compacting/sun	fixed	already in 1.21.1 layout
+hearthandharvest:cooking/unripe_goat_cheese_wheel	left	no file at expected path (stale entry)
+hearthandharvest:goat_milk_crate	left	no file at expected path (stale entry)
+hearthandharvest:integration/brewinandchewin/fermenting/unripe_goat_cheese_wheel	left	no file at expected path (stale entry)
+herbalbrews:kettle_brewing/black_tea	fixed	already in 1.21.1 layout
+herbalbrews:kettle_brewing/chai_tea	fixed	already in 1.21.1 layout
+herbalbrews:kettle_brewing/cinnamon_coffee	fixed	already in 1.21.1 layout
+herbalbrews:kettle_brewing/coffee	fixed	already in 1.21.1 layout
+herbalbrews:kettle_brewing/green_tea	fixed	already in 1.21.1 layout
+herbalbrews:kettle_brewing/hazelnut_coffee	fixed	already in 1.21.1 layout
+herbalbrews:kettle_brewing/hibiscus_tea	fixed	already in 1.21.1 layout
+herbalbrews:kettle_brewing/lavender_tea	fixed	already in 1.21.1 layout
+herbalbrews:kettle_brewing/milk_coffee	fixed	already in 1.21.1 layout
+herbalbrews:kettle_brewing/oolong_tea	fixed	already in 1.21.1 layout
+herbalbrews:kettle_brewing/rooibos_tea	fixed	already in 1.21.1 layout
+herbalbrews:kettle_brewing/yerba_mate_tea	fixed	already in 1.21.1 layout
+jeed:external/relics/vanishing	left	no 1.21.1 example for type jeed:effect_provider
+longwings:apple_butterfly_brew_bottle	fixed	already in 1.21.1 layout
+longwings:berry_butterfly_brew_bottle	fixed	already in 1.21.1 layout
+longwings:melon_butterfly_brew_bottle	fixed	already in 1.21.1 layout
+longwings:sugar_water_bowl	fixed	already in 1.21.1 layout
+meadow:cheese_form/amethyst_cheese	fixed	already in 1.21.1 layout
+meadow:cheese_form/buffalo_cheese	fixed	already in 1.21.1 layout
+meadow:cheese_form/cheese	fixed	already in 1.21.1 layout
+meadow:cheese_form/goat_cheese	fixed	already in 1.21.1 layout
+meadow:cheese_form/grain_cheese	fixed	already in 1.21.1 layout
+meadow:cheese_form/sheep_cheese	fixed	already in 1.21.1 layout
+meadow:cheese_form/warped_cheese	fixed	already in 1.21.1 layout
+meadow:climbing_rope_topmount	removed	item absent from every installed mod: meadow:climbing_rope_topmount
+minecraft:birtday_cake	removed	item absent from every installed mod: species:birtday_cake,species:birt_egg
+minecraft:red_dye	left	no file at expected path (stale entry)
+moreminecarts:chiseled_organic_glass_pane	removed	item absent from every installed mod: moreminecarts:chiseled_organic_glass_pane,moreminecarts:chiseled_organic_glass
+moreminecarts:organic_glass_pane	removed	item absent from every installed mod: moreminecarts:organic_glass_pane,moreminecarts:organic_glass
+nethervinery:improved_lava_fizz	removed	item absent from every installed mod: nethervinery:improved_lava_fizz,nethervinery:lava_fizz
+nethervinery:improved_nether_fizz	removed	item absent from every installed mod: nethervinery:improved_nether_fizz,nethervinery:nether_fizz
+online_detector:advanced_online_detector	removed	item absent from every installed mod: online_detector:advanced_online_detector,online_detector:online_detector
+pipez:advanced_upgrade	removed	item absent from every installed mod: translocators:item_translocator
+quark:tweaks/blasting/raw_bismuth_block_blasting	fixed	already in 1.21.1 layout
+quark:tweaks/blasting/raw_lead_block_blasting	fixed	already in 1.21.1 layout
+quark:tweaks/blasting/raw_silver_block_blasting	fixed	already in 1.21.1 layout
+quark:tweaks/blasting/raw_zinc_block_blast	fixed	already in 1.21.1 layout
+quark:tweaks/smelting/raw_bismuth_block_smelting	fixed	already in 1.21.1 layout
+quark:tweaks/smelting/raw_lead_block_smelting	fixed	already in 1.21.1 layout
+quark:tweaks/smelting/raw_silver_block_smelting	fixed	already in 1.21.1 layout
+quark:tweaks/smelting/raw_zinc_block_smelting	fixed	already in 1.21.1 layout
+refinedstorage:filter	removed	item absent from every installed mod: refinedstorage:filter
+refinedstorage:fluid_grid/fluid_grid	removed	item absent from every installed mod: refinedstorage:fluid_grid
+refinedstorage:speed_upgrade	removed	item absent from every installed mod: moreminecarts:hard_light_lens
+refinedstorage:stack_upgrade	removed	item absent from every installed mod: moreminecarts:hard_light_lens
+refurbished_furniture:baking/cooked_meatlovers_pizza	fixed	already in 1.21.1 layout
+refurbished_furniture:combining/glow_berry_jam_toast	fixed	already in 1.21.1 layout
+refurbished_furniture:combining/raw_meatlovers_pizza	fixed	already in 1.21.1 layout
+refurbished_furniture:combining/raw_vegetable_pizza	fixed	already in 1.21.1 layout
+refurbished_furniture:combining/sweet_berry_jam_toast	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/acacia_light_ceiling_fan	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/birch_light_ceiling_fan	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/black_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/blue_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/brown_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/cherry_light_ceiling_fan	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/computer	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/crimson_light_ceiling_fan	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/cyan_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/dark_oak_light_ceiling_fan	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/doorbell	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/gray_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/green_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/jungle_light_ceiling_fan	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/light_blue_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/light_ceiling_light	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/light_fridge	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/light_gray_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/light_lightswitch	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/light_microwave	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/light_range_hood	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/light_stove	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/light_toaster	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/lime_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/magenta_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/mangrove_light_ceiling_fan	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/oak_light_ceiling_fan	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/orange_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/pink_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/purple_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/red_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/spruce_light_ceiling_fan	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/television	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/warped_light_ceiling_fan	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/white_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:constructing/yellow_lamp	fixed	already in 1.21.1 layout
+refurbished_furniture:frying/cheese_toastie	fixed	already in 1.21.1 layout
+refurbished_furniture:toasting/cheese_toastie	fixed	already in 1.21.1 layout
+sawmill:barrel	left	no 1.21.1 example for type sawmill:woodcutting
+smallships:bamboo_galley	removed	item absent from every installed mod: smallships:sail
+smallships:sail	removed	item absent from every installed mod: smallships:sail
+snuffles:frosty_fluff_carpet_from_frosty_fluff	left	no file at expected path (stale entry)
+snuffles:frosty_fluff_carpet_from_snuffle_fluff_carpet	left	no file at expected path (stale entry)
+snuffles:frosty_fluff_from_snuffle_fluff	left	no file at expected path (stale entry)
+snuffles:snuffle_fluff_carpet_from_frosty_fluff_carpet	left	no file at expected path (stale entry)
+snuffles:snuffle_fluff_carpet_from_snuffle_fluff	left	no file at expected path (stale entry)
+snuffles:snuffle_fluff_from_frosty_fluff	left	no file at expected path (stale entry)
+society:crushing/gravel	left	no file at expected path (stale entry)
+species:wicked_dope	removed	item absent from every installed mod: species:wicked_dope,species:wicked_wax
+species:wicked_swapper	removed	item absent from every installed mod: species:wicked_wax,species:wicked_swapper
+sunlit:cutting/aquaculture_tuna	left	no file at expected path (stale entry)
+translocators:fluid_translocator	removed	item absent from every installed mod: translocators:fluid_translocator
+translocators:item_translocator	removed	item absent from every installed mod: translocators:item_translocator
+twigs:copper_pillar_from_cut_copper_stonecutting	fixed	already in 1.21.1 layout
+twigs:copper_pillar_stonecutting	fixed	already in 1.21.1 layout
+twigs:exposed_copper_pillar_from_cut_copper_stonecutting	fixed	already in 1.21.1 layout
+twigs:exposed_copper_pillar_stonecutting	fixed	already in 1.21.1 layout
+twigs:oxidized_copper_pillar_from_cut_copper_stonecutting	fixed	already in 1.21.1 layout
+twigs:oxidized_copper_pillar_stonecutting	fixed	already in 1.21.1 layout
+twigs:waxed_copper_pillar_from_cut_copper_stonecutting	fixed	already in 1.21.1 layout
+twigs:waxed_copper_pillar_stonecutting	fixed	already in 1.21.1 layout
+twigs:waxed_exposed_copper_pillar_from_cut_copper_stonecutting	fixed	already in 1.21.1 layout
+twigs:waxed_exposed_copper_pillar_stonecutting	fixed	already in 1.21.1 layout
+twigs:waxed_oxidized_copper_pillar_from_cut_copper_stonecutting	fixed	already in 1.21.1 layout
+twigs:waxed_oxidized_copper_pillar_stonecutting	fixed	already in 1.21.1 layout
+twigs:waxed_weathered_copper_pillar_from_cut_copper_stonecutting	fixed	already in 1.21.1 layout
+twigs:waxed_weathered_copper_pillar_stonecutting	fixed	already in 1.21.1 layout
+twigs:weathered_copper_pillar_from_cut_copper_stonecutting	fixed	already in 1.21.1 layout
+twigs:weathered_copper_pillar_stonecutting	fixed	already in 1.21.1 layout
+veggiesdelight:cauliflower_bread	fixed	already in 1.21.1 layout
+veggiesdelight:cauliflower_burger	removed	item absent from every installed mod: veggiesdelight:cooked_cauliflower_patty,veggiesdelight:cauliflower_burger
+veggiesdelight:compat/vintagedelight/cooking/pad_thai	fixed	already in 1.21.1 layout
+veggiesdelight:cooking/carrot_juice	fixed	already in 1.21.1 layout
+veggiesdelight:cooking/cauliflower_soup	fixed	already in 1.21.1 layout
+veggiesdelight:cooking/dandelion_juice	fixed	already in 1.21.1 layout
+veggiesdelight:cooking/garlic_chicken_stew	fixed	already in 1.21.1 layout
+veggiesdelight:cooking/mashed_potatoes	fixed	already in 1.21.1 layout
+veggiesdelight:cooking/pasta_with_broccoli	fixed	already in 1.21.1 layout
+veggiesdelight:cooking/roasted_vegetables	fixed	already in 1.21.1 layout
+veggiesdelight:cooking/shakshouka	fixed	already in 1.21.1 layout
+veggiesdelight:cooking/sweet_potato_pancakes	fixed	already in 1.21.1 layout
+veggiesdelight:cutting/cauliflower_floret_from_cutting	fixed	already in 1.21.1 layout
+veggiesdelight:cutting/garlic_clove_from_cutting	fixed	already in 1.21.1 layout
+veggiesdelight:fermented_garlic_honey	fixed	already in 1.21.1 layout
+veggiesdelight:garlic_baked_cod	fixed	already in 1.21.1 layout
+veggiesdelight:garlic_bread	fixed	already in 1.21.1 layout
+vinery:apple_fermenting/ancient_juice	fixed	already in 1.21.1 layout
+vinery:apple_fermenting/mana_fruit_juice	fixed	already in 1.21.1 layout
+vinery:apple_fermenting/sparkpod_juice	fixed	already in 1.21.1 layout
+vinery:apple_fermenting/starfruit_juice	fixed	already in 1.21.1 layout
+vinery:apple_mashing/honey_comb	fixed	already in 1.21.1 layout
+vinery:wine_fermentation/blazevine_pinot	removed	item absent from every installed mod: nethervinery:blazewine_pinot
+vinery:wine_fermentation/ghastly_grenache	removed	item absent from every installed mod: nethervinery:ghastly_grenache
+vinery:wine_fermentation/lava_fizz	removed	item absent from every installed mod: nethervinery:lava_fizz
+vinery:wine_fermentation/mana_king	removed	item absent from every installed mod: society:dried_shimmering_mushrooms
+vinery:wine_fermentation/nether_fizz	removed	item absent from every installed mod: nethervinery:nether_fizz
+vintagedelight:cooking/cheese_pasta	fixed	already in 1.21.1 layout
+vintagedelight:cooking/pad_thai	fixed	already in 1.21.1 layout
+vintagedelight:cutting/cucumber_cutting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/apple_brew_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/berry_brew_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/century_egg_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/fermented_spider_eye_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting_jar	removed	item absent from every installed mod: moreminecarts:glass_spines
+vintagedelight:fermenting/kimchi_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/melon_brew_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/ochre_froglight_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/overnight_oats_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/pearlescent_froglight_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/pickled_beetroot_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/pickled_egg_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/pickled_ghost_pepper_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/pickled_onion_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/pickled_pitcher_pod_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/pickle_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/river_jelly_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/rotton_beam_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/rotton_logs_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/slime_block_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/surstromming_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/truffle_oil_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/verdant_froglight_from_fermenting	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/vinegar_from_jam_bottles	fixed	already in 1.21.1 layout
+vintagedelight:fermenting/vinegar_from_jam	fixed	already in 1.21.1 layout
+windswept:chestnut_soup	fixed	already in 1.21.1 layout
+windswept:christmas_pudding	fixed	already in 1.21.1 layout
+windswept:ginger_tea	fixed	already in 1.21.1 layout
+windswept:goat_stew	fixed	already in 1.21.1 layout
+windswept:lavender_tea	fixed	already in 1.21.1 layout
+windswept:pinecone_jam_bottle	fixed	already in 1.21.1 layout
+copycats:crafting/copycat_vertical_stairs_from_conversion	fixed	unwrapped forge:conditional to 1.21 neoforge:conditions
+farm_and_charm:create/mixing/butter	fixed	unwrapped forge:conditional to 1.21 neoforge:conditions
+farm_and_charm:create/mixing/small_butter	fixed	unwrapped forge:conditional to 1.21 neoforge:conditions
+functionalstorage:compacting_framed_drawer	fixed	unwrapped forge:conditional to 1.21 neoforge:conditions
+functionalstorage:ender_drawer	fixed	unwrapped forge:conditional to 1.21 neoforge:conditions
+functionalstorage:fluid_1	fixed	unwrapped forge:conditional to 1.21 neoforge:conditions
+functionalstorage:fluid_2	fixed	unwrapped forge:conditional to 1.21 neoforge:conditions
+functionalstorage:fluid_4	fixed	unwrapped forge:conditional to 1.21 neoforge:conditions
+functionalstorage:framed_controller_extension	fixed	unwrapped forge:conditional to 1.21 neoforge:conditions
+functionalstorage:framed_simple_compacting_drawer	fixed	unwrapped forge:conditional to 1.21 neoforge:conditions
+functionalstorage:framed_storage_controller	fixed	unwrapped forge:conditional to 1.21 neoforge:conditions
+hauntedharvest:fried_rice_cooking	fixed	unwrapped forge:conditional to 1.21 neoforge:conditions
+netherdepthsupgrade:cooking/baked_blazefish_stew	left	result item not in any jar; kept behind its condition: netherdepthsupgrade:baked_blazefish_stew
+netherdepthsupgrade:cooking/baked_glowdine_stew	left	result item not in any jar; kept behind its condition: netherdepthsupgrade:baked_glowdine_stew
+netherdepthsupgrade:cooking/baked_lava_pufferfish_stew	left	result item not in any jar; kept behind its condition: netherdepthsupgrade:baked_lava_pufferfish_stew
+netherdepthsupgrade:cooking/baked_magmacubefish_stew	left	result item not in any jar; kept behind its condition: netherdepthsupgrade:baked_magmacubefish_stew
+netherdepthsupgrade:cooking/baked_obsidianfish_stew	left	result item not in any jar; kept behind its condition: netherdepthsupgrade:baked_obsidianfish_stew
+netherdepthsupgrade:cooking/baked_searing_cod_stew	left	result item not in any jar; kept behind its condition: netherdepthsupgrade:baked_searing_cod_stew
+netherdepthsupgrade:cooking/baked_soulsucker_stew	left	result item not in any jar; kept behind its condition: netherdepthsupgrade:baked_soulsucker_stew

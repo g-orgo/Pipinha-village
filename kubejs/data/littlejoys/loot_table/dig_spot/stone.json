@@ -21,12 +21,12 @@
         {
           "type": "minecraft:item",
           "weight": 4,
-          "name": "society:iron_upgrade_smithing_template"
+          "name": "minecraft:netherite_upgrade_smithing_template"
         },
         {
           "type": "minecraft:item",
           "weight": 2,
-          "name": "society:gold_upgrade_smithing_template"
+          "name": "minecraft:netherite_upgrade_smithing_template"
         },
         {
           "type": "minecraft:item",

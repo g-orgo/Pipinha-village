@@ -1,11 +1,11 @@
 {
   "type": "functionalstorage:custom_compacting",
   "higher_input": {
-    "count": 1,
-    "item": "etcetera:bismuth_ingot"
+    "id": "etcetera:bismuth_ingot",
+    "count": 1
   },
   "lower_input": {
-    "count": 9,
-    "item": "etcetera:bismuth_nugget"
+    "id": "etcetera:bismuth_nugget",
+    "count": 9
   }
 }

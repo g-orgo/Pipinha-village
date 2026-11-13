@@ -18,10 +18,11 @@
     }
   ],
   "container": {
-    "item": "minecraft:bowl"
+    "id": "minecraft:bowl"
   },
   "result": {
     "id": "brewery:fried_chicken",
     "count": 2
-  }
+  },
+  "requiresLearning": false
 }

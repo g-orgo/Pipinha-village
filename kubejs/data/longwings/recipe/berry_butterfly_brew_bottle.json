@@ -5,12 +5,18 @@
     "item": "minecraft:glass_bottle"
   },
   "ingredients": [
-    { "item": "society:maple_syrup" },
-    { "item": "farm_and_charm:strawberry" },
-    { "item": "minecraft:sugar" }
+    {
+      "item": "society:maple_syrup"
+    },
+    {
+      "item": "farm_and_charm:strawberry"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
   ],
   "output": {
-    "count": 1,
-    "item": "longwings:berry_butterfly_brew_bottle"
+    "id": "longwings:berry_butterfly_brew_bottle",
+    "count": 1
   }
 }

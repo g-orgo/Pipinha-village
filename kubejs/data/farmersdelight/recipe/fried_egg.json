@@ -6,5 +6,7 @@
   "ingredient": {
     "tag": "c:eggs"
   },
-  "result": "farmersdelight:fried_egg"
+  "result": {
+    "id": "farmersdelight:fried_egg"
+  }
 }

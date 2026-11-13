@@ -11,7 +11,10 @@
       "item": "veggiesdelight:roasted_garlic_clove"
     }
   ],
-  "item": "veggiesdelight:garlic_bread",
-  "count": 3,
-  "experience": 0.35
+  "experience": 0.35,
+  "result": {
+    "id": "veggiesdelight:garlic_bread",
+    "count": 3
+  },
+  "requiresLearning": false
 }

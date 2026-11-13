@@ -22,7 +22,7 @@
     }
   ],
   "output": {
-    "count": 5,
-    "item": "vintagedelight:pickled_pepper"
+    "id": "vintagedelight:pickled_pepper",
+    "count": 5
   }
 }

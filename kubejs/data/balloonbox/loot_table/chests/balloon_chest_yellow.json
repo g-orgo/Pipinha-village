@@ -374,7 +374,7 @@
               "add": false
             }
           ],
-          "name": "create_enchantment_industry:hyper_experience_bottle"
+          "name": "minecraft:experience_bottle"
         },
         {
           "type": "minecraft:item",
@@ -406,7 +406,7 @@
               "add": false
             }
           ],
-          "name": "moreminecarts:chiseled_organic_glass"
+          "name": "minecraft:glass"
         }
       ]
     },

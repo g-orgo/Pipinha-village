@@ -1,16 +1,6 @@
 {
   "type": "herbalbrews:kettle_brewing",
   "experience": 0.8,
-  "fluid": [
-    {
-      "amount": 10
-    }
-  ],
-  "heat_needed": [
-    {
-      "amount": 20
-    }
-  ],
   "ingredients": [
     {
       "item": "herbalbrews:dried_black_tea"
@@ -23,9 +13,11 @@
     }
   ],
   "result": {
-    "id": "herbalbrews:black_tea",
-    "effect": "herbalbrews:tough",
-    "effectduration": 1800
+    "id": "herbalbrews:black_tea"
   },
-  "crafting_duration": 20
+  "crafting_duration": 20,
+  "fluid_amount": 10,
+  "heat_amount": 20,
+  "effect": "herbalbrews:tough",
+  "effect_duration": 1800
 }

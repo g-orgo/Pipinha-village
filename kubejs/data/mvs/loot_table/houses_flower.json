@@ -63,7 +63,7 @@
         {
           "type": "minecraft:item",
           "weight": 2,
-          "name": "verdantvibes:dragon_tree"
+          "name": "minecraft:dark_oak_sapling"
         },
         {
           "type": "minecraft:item",

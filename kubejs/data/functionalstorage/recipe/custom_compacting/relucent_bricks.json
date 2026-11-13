@@ -1,11 +1,11 @@
 {
   "type": "functionalstorage:custom_compacting",
   "higher_input": {
-    "count": 1,
-    "item": "unusualfishmod:relucent_bricks"
+    "id": "unusualfishmod:relucent_bricks",
+    "count": 1
   },
   "lower_input": {
-    "count": 2,
-    "item": "unusualfishmod:relucent_shard"
+    "id": "unusualfishmod:relucent_shard",
+    "count": 2
   }
 }

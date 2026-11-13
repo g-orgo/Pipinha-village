@@ -10,8 +10,8 @@
     }
   ],
   "output": {
-    "count": 1,
-    "item": "vintagedelight:vinegar_mason_jar"
+    "id": "vintagedelight:vinegar_mason_jar",
+    "count": 1
   },
   "secondaryOutput": {
     "count": 3,

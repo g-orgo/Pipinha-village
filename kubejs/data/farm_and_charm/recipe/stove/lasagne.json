@@ -11,7 +11,10 @@
       "tag": "candlelight:cheeses"
     }
   ],
-  "item": "candlelight:lasagne",
-  "count": 6,
-  "experience": 1
+  "experience": 1,
+  "result": {
+    "id": "candlelight:lasagne",
+    "count": 6
+  },
+  "requiresLearning": false
 }

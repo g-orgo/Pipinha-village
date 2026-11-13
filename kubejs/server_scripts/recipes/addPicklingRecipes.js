@@ -14,8 +14,8 @@ ServerEvents.recipes((e) => {
         { tag: "c:salt" },
       ],
       output: {
+        id: `society:pickled_${pickle.item.path}`,
         count: 5,
-        item: `society:pickled_${pickle.item.path}`,
       },
     });
   });

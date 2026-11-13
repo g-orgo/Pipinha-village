@@ -305,7 +305,7 @@ const townLowerPark = (level, cx, cz, ground, forcedLawn) => {
     let n = 0;
     for (let x = 1; x < 15; x++) {
       for (let z = 1; z < 15; z++) {
-        if (level.getBlockState(new $TownBlockPos((cx << 4) + x, y, (cz << 4) + z)).is($TownBlocks.GRASS_BLOCK)) n++;
+        if (level.getBlockState(new $TownBlockPos((cx << 4) + x, y, (cz << 4) + z)).getBlock() === $TownBlocks.GRASS_BLOCK) n++;
       }
     }
     if (n > bestN) {
@@ -567,7 +567,7 @@ const townArmorStands = (level, cx, cz, yMin, yMax, name, rnd) => {
     for (let z = 0; z < 16; z++) {
       for (let y = yMin; y <= yMax; y++) {
         let pos = new $TownBlockPos((cx << 4) + x, y, (cz << 4) + z);
-        if (!level.getBlockState(pos).is($TownBlocks.STRUCTURE_VOID)) continue;
+        if (level.getBlockState(pos).getBlock() !== $TownBlocks.STRUCTURE_VOID) continue;
         level.setBlock(pos, $TownBlocks.AIR.defaultBlockState(), 3);
         let stand = $TownEntityType.ARMOR_STAND.create(level);
         if (!stand) continue;
@@ -646,7 +646,7 @@ const townPopulate = (level, cx, cz) => {
   for (let x = 0; x < 16 && hay < 3; x++) {
     for (let z = 0; z < 16; z++) {
       for (let y = ground; y <= ground + 2; y++) {
-        if (level.getBlockState(new $TownBlockPos((cx << 4) + x, y, (cz << 4) + z)).is($TownBlocks.HAY_BLOCK)) hay++;
+        if (level.getBlockState(new $TownBlockPos((cx << 4) + x, y, (cz << 4) + z)).getBlock() === $TownBlocks.HAY_BLOCK) hay++;
       }
     }
   }

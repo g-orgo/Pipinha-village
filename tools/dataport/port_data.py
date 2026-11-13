@@ -25,6 +25,13 @@ UNK_JSON = HERE / "unknown_namespaces.json"
 REPORT = HERE / "REPORT.md"
 MODIDS = NEW / "tools" / "modcheck" / "modids.txt"
 
+# Files whose id collides at runtime. Meadow 1.21.1 rewrites every ResourceLocation
+# meadow:fire_log -> meadow:firewood (DataFixerMixin), so a recipe file named fire_log
+# gets the same id as Meadow's own firewood recipe and crashes the data load.
+FILE_RENAMES = {
+    ("meadow", "recipe/fire_log.json"): "recipe/firewood_from_raw_logs.json",
+    ("meadow", "recipe/fire_log_unpack.json"): "recipe/firewood_unpack.json",
+}
 DIR_MAP = {"recipes": "recipe", "loot_tables": "loot_table", "advancements": "advancement",
            "functions": "function", "structures": "structure", "predicates": "predicate",
            "item_modifiers": "item_modifier"}
@@ -96,6 +103,9 @@ def plan(kind, rel, R):
         if name.endswith(".json") and (inner[1], name[:-5]) in R:
             new_ns = "c"
             moved = True
+    key = (new_ns, "/".join(inner))
+    if key in FILE_RENAMES:
+        inner = FILE_RENAMES[key].split("/")
     return prefix + (new_ns,) + tuple(inner), ns, moved
 
 

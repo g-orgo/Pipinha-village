@@ -4,6 +4,8 @@
   "ingredient": {
     "item": "meadow:cheese_sandwich"
   },
-  "result": "refurbished_furniture:cheese_toastie",
+  "result": {
+    "id": "refurbished_furniture:cheese_toastie"
+  },
   "time": 400
 }

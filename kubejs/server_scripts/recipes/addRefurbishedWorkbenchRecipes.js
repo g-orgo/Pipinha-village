@@ -6,16 +6,18 @@ ServerEvents.recipes((e) => {
     e.custom({
       type: "tanukidecor:diy",
       result: {
-        item: item.id,
+        id: item.id,
       },
     });
   });
 
   global.lootFurniture.forEach((item) => {
+    // 1.21 ItemStack codec uses "id"; skip ids from mods that are not installed
+    if (!Item.exists(item)) return;
     e.custom({
       type: "tanukidecor:diy",
       result: {
-        item: item,
+        id: item,
       },
     });
   });

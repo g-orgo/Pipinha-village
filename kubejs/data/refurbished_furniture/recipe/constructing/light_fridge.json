@@ -3,17 +3,25 @@
   "materials": [
     {
       "count": 9,
-      "item": "minecraft:iron_ingot"
+      "ingredient": {
+        "item": "minecraft:iron_ingot"
+      }
     },
     {
       "count": 3,
-      "item": "minecraft:copper_ingot"
+      "ingredient": {
+        "item": "minecraft:copper_ingot"
+      }
     },
     {
       "count": 1,
-      "item": "society:battery"
+      "ingredient": {
+        "item": "society:battery"
+      }
     }
   ],
-  "result": "refurbished_furniture:light_fridge",
+  "result": {
+    "id": "refurbished_furniture:light_fridge"
+  },
   "show_notification": false
 }

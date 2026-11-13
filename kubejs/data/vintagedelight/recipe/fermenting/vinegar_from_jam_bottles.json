@@ -10,8 +10,8 @@
     }
   ],
   "output": {
-    "count": 1,
-    "item": "vintagedelight:vinegar_bottle"
+    "id": "vintagedelight:vinegar_bottle",
+    "count": 1
   },
   "secondaryOutput": {
     "count": 1,

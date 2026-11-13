@@ -25,7 +25,7 @@
     }
   ],
   "output": {
-    "count": 1,
-    "item": "vintagedelight:overnight_oats"
+    "id": "vintagedelight:overnight_oats",
+    "count": 1
   }
 }

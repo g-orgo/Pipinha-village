@@ -11,7 +11,10 @@
       "tag": "bakery:eggs"
     }
   ],
-  "item": "farmersdelight:sweet_berry_cookie",
-  "count": 4,
-  "experience": 0.3
+  "experience": 0.3,
+  "result": {
+    "id": "farmersdelight:sweet_berry_cookie",
+    "count": 4
+  },
+  "requiresLearning": false
 }

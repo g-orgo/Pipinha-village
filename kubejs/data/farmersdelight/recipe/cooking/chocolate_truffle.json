@@ -14,7 +14,7 @@
     }
   ],
   "container": {
-    "item": "minecraft:bowl"
+    "id": "minecraft:bowl"
   },
   "recipe_book_tab": "meals",
   "result": {

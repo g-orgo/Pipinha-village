@@ -11,7 +11,10 @@
       "tag": "c:crops/onion"
     }
   ],
-  "item": "veggiesdelight:garlic_baked_cod",
-  "count": 1,
-  "experience": 0.35
+  "experience": 0.35,
+  "result": {
+    "id": "veggiesdelight:garlic_baked_cod",
+    "count": 1
+  },
+  "requiresLearning": false
 }

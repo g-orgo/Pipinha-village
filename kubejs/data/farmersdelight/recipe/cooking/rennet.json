@@ -11,7 +11,7 @@
     }
   ],
   "container": {
-    "item": "minecraft:glass_bottle"
+    "id": "minecraft:glass_bottle"
   },
   "recipe_book_tab": "meals",
   "result": {

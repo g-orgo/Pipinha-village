@@ -28,7 +28,10 @@
       "tag": "bakery:dough"
     }
   ],
-  "item": "veggiesdelight:turnip_cake",
-  "count": 1,
-  "experience": 0.35
+  "experience": 0.35,
+  "result": {
+    "id": "veggiesdelight:turnip_cake",
+    "count": 1
+  },
+  "requiresLearning": false
 }

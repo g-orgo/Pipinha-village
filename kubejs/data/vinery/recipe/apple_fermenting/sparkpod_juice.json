@@ -7,7 +7,7 @@
     "required": true
   },
   "output": {
-    "item": "society:sparkpod_juice",
+    "id": "society:sparkpod_juice",
     "count": 1
   }
 }

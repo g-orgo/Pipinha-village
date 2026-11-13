@@ -22,7 +22,7 @@
     }
   ],
   "output": {
-    "count": 5,
-    "item": "betterarcheology:rotten_log"
+    "id": "betterarcheology:rotten_log",
+    "count": 5
   }
 }

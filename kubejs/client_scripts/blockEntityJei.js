@@ -1,3 +1,20 @@
+const blockEntityJeiItemAliases = {
+  "minecraft:scute": "minecraft:turtle_scute",
+  "trials:breeze_rod": "minecraft:breeze_rod",
+};
+
+// Returns "Nx id" (or "id") when the item exists in the registry, null otherwise.
+// Strings with NBT or component data are passed through unchanged.
+const blockEntityJeiItem = (raw) => {
+  const text = String(raw);
+  if (text.includes("{") || text.includes("[")) return text;
+  const match = text.match(/^(\d+x )?(.+)$/);
+  if (!match) return null;
+  const count = match[1] || "";
+  const id = blockEntityJeiItemAliases[match[2]] || match[2];
+  return Item.exists(id) ? `${count}${id}` : null;
+};
+
 const registerBECategory = (
   event,
   categoryID,
@@ -55,7 +72,7 @@ const registerBECategory = (
           builder
             .addSlot("INPUT", 2, 2)
             .addItemStack(
-              `${output[0].includes("steamed_milk") ? 1 : inputCount}x ${input}`
+              blockEntityJeiItem(`${output[0].includes("steamed_milk") ? 1 : inputCount}x ${input}`) || "minecraft:air"
             )
             .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         }
@@ -69,7 +86,7 @@ const registerBECategory = (
           output.forEach((item, index) => {
             builder
               .addSlot("OUTPUT", 104 + index * slotSize, 2)
-              .addItemStack(Item.of(`${item}`))
+              .addItemStack(blockEntityJeiItem(`${item}`) || "minecraft:air")
               .setBackground(guiHelper.getSlotDrawable(), -1, -1);
           });
         }
@@ -122,7 +139,7 @@ const registerMushroomLogCategory = (
           builder
             .addSlot("INPUT", 2, 2)
             .addItemStack(
-              `1x ${input}`
+              blockEntityJeiItem(`1x ${input}`) || "minecraft:air"
             )
             .addTooltipCallback((slotView, tooltip) => {
               tooltip.add(1,
@@ -134,7 +151,7 @@ const registerMushroomLogCategory = (
           builder
             .addSlot("INPUT", 2, 2)
             .addItemStack(
-              `1x ${input}`
+              blockEntityJeiItem(`1x ${input}`) || "minecraft:air"
             )
             .addTooltipCallback((slotView, tooltip) => {
               tooltip.add(1,
@@ -147,7 +164,7 @@ const registerMushroomLogCategory = (
         output.forEach((item, index) => {
           builder
             .addSlot("OUTPUT", 104 + index * slotSize, 2)
-            .addItemStack(Item.of(`${item}`))
+            .addItemStack(blockEntityJeiItem(`${item}`) || "minecraft:air")
             .addTooltipCallback((slotView, tooltip) => {
               tooltip.add(1,
                 Text.translatable("jei.society.mushroom_growing.mult").green()
@@ -204,7 +221,7 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         builder
           .addSlot("INPUT", 2, 2)
-          .addItemStack(`${item}`)
+          .addItemStack(blockEntityJeiItem(`${item}`) || "minecraft:air")
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         global.runtime["textDrawHandler"] = (
           jeiHelpers,
@@ -229,7 +246,7 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
               26 + (index > 6 ? index - 7 : index) * slotSize,
               line
             )
-            .addItemStack(Item.of(`${reward.count}x ${reward.item}`))
+            .addItemStack(blockEntityJeiItem(`${reward.count}x ${reward.item}`) || "minecraft:air")
             .addTooltipCallback((slotView, tooltip) => {
               if (reward.minPopulation) {
                 tooltip.add(1,

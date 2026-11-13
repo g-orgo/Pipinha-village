@@ -7,7 +7,7 @@
     "required": true
   },
   "output": {
-    "item": "society:ancient_juice",
+    "id": "society:ancient_juice",
     "count": 1
   }
 }

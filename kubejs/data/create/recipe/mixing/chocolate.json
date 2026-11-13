@@ -9,14 +9,15 @@
       "item": "minecraft:cocoa_beans"
     },
     {
+      "type": "neoforge:single",
       "amount": 250,
       "fluid": "society:milk"
     }
   ],
   "results": [
     {
-      "amount": 250,
-      "fluid": "create:chocolate"
+      "id": "create:chocolate",
+      "amount": 250
     }
   ]
 }

@@ -47,7 +47,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "society:pristine_sandstone_slate",
+          "name": "minecraft:sandstone",
           "weight": 6
         },
         {

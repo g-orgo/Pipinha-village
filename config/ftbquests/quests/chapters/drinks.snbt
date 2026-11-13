@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "drinks"
 	group: "15230846E14B6926"
+	icon: { count: 1, id: "vinery:eiswein" }
 	id: "3DE5C3A5E424080B"
 	images: [ ]
 	order_index: 7
@@ -689,6 +690,7 @@
 			}]
 			size: 2.0d
 			tasks: [{
+				icon: { count: 1, id: "vinery:fermentation_barrel" }
 				id: "2B67A83CE639308D"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -720,6 +722,7 @@
 				"3820DA7C3314E0AD"
 			]
 			hide_dependency_lines: true
+			icon: { count: 1, id: "brewery:netherite_brewingstation" }
 			id: "09ADAEA86CEB55E2"
 			rewards: [{
 				id: "08A1BB76D73E76AA"
@@ -731,6 +734,7 @@
 			}]
 			size: 2.0d
 			tasks: [{
+				icon: { count: 1, id: "brewery:wooden_brewingstation" }
 				id: "59C99166EA79DA39"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -761,6 +765,7 @@
 				"1D2808AF740F8C6A"
 			]
 			hide_dependency_lines: true
+			icon: { count: 1, id: "herbalbrews:tea_kettle" }
 			id: "0BE5F31F09A945C1"
 			rewards: [{
 				id: "08879AF69E0E1B70"
@@ -772,6 +777,7 @@
 			}]
 			size: 2.0d
 			tasks: [{
+				icon: { count: 1, id: "society:espresso_machine" }
 				id: "33563F224C8ECB6C"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -819,6 +825,7 @@
 			shape: "octagon"
 			size: 3.0d
 			tasks: [{
+				icon: { count: 1, id: "vinery:jellie_wine" }
 				id: "66521C3EA4D8D1C9"
 				stat: "minecraft:play_time"
 				type: "stat"

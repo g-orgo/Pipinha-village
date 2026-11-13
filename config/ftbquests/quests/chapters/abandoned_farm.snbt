@@ -7,6 +7,7 @@
 	group: "106AD9AA3ADDE3AE"
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_complete: true
+	icon: { count: 1, id: "farm_and_charm:barley" }
 	id: "7C65158A3343D7FA"
 	images: [{
 		height: 10.0d
@@ -21,10 +22,14 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: { count: 1, id: "supplementaries:present_green" }
 			id: "661A3A466ABF29BA"
 			rewards: [{
 				id: "23C19AD4A368AA0F"
-				item: { count: 1, id: "minecraft:elytra" }
+				item: {
+					count: 1
+					id: "minecraft:elytra"
+				}
 				type: "item"
 			}]
 			shape: "none"
@@ -74,43 +79,48 @@
 		}
 		{
 			dependencies: ["661A3A466ABF29BA"]
-			description: ["{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.description1}"]
 			hide_details_until_startable: false
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
-			icon: "farm_and_charm:barley"
+			icon: { count: 1, id: "farm_and_charm:barley" }
 			id: "6EBAA004C1A50E98"
 			rewards: [
 				{
 					id: "0102B9ADBB397CC1"
-					item: { components: { "trofers:trophy": "trofers:abandoned_farm" }, count: 1, id: "trofers:large_pillar" }
+					item: {
+						components: {
+							"trofers:trophy": "trofers:abandoned_farm"
+						}
+						count: 1
+						id: "trofers:large_pillar"
+					}
 					type: "item"
 				}
 				{
 					id: "39C73D8690F31BE1"
-					item: { count: 1, id: "botania:apothecary_default" }
+					item: {
+						count: 1
+						id: "botania:apothecary_default"
+					}
 					type: "item"
 				}
 				{
 					auto: "invisible"
 					command: "/kjs stages add @p abandoned_farm_complete"
-					elevate_perms: true
 					id: "699EAE14FFE8E2AB"
+					permission_level: 2
 					silent: true
 					type: "command"
 				}
 			]
 			shape: "none"
-			subtitle: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.subtitle}"
 			tasks: [{
-				icon: "society:furniture_box"
+				icon: { count: 1, id: "society:furniture_box" }
 				id: "3D497F4CF396A37A"
 				stat: "minecraft:play_time"
-				title: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.task.4416200878094459770.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.title}"
 			x: -0.028571428571424917d
 			y: 1.0999999999999872d
 		}

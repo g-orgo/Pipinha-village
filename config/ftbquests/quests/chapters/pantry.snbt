@@ -5,6 +5,7 @@
 	default_quest_shape: ""
 	filename: "pantry"
 	group: "106AD9AA3ADDE3AE"
+	icon: { count: 1, id: "furniture:explorers_box" }
 	id: "0ABCE0D05B56531F"
 	images: [{
 		height: 10.0d
@@ -19,6 +20,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: { count: 1, id: "supplementaries:present_green" }
 			id: "7D155FD0EFEEB5AC"
 			rewards: [{
 				count: 20
@@ -56,6 +58,7 @@
 			y: 0.3285714285714221d
 		}
 		{
+			icon: { count: 1, id: "supplementaries:present_red" }
 			id: "3EF57F71C1C786FE"
 			require_sequential_tasks: false
 			rewards: [{
@@ -93,6 +96,7 @@
 			y: -0.44285714285715017d
 		}
 		{
+			icon: { count: 1, id: "supplementaries:present_orange" }
 			id: "2074A4FFF17266DB"
 			rewards: [{
 				count: 3
@@ -130,6 +134,7 @@
 			y: -1.2142857142857224d
 		}
 		{
+			icon: { count: 1, id: "supplementaries:present_purple" }
 			id: "314D5DDD65659FDE"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -169,6 +174,7 @@
 			y: -0.4714285714285751d
 		}
 		{
+			icon: { count: 1, id: "supplementaries:present_yellow" }
 			id: "43591809C1D493F5"
 			rewards: [{
 				count: 2
@@ -221,6 +227,7 @@
 				"314D5DDD65659FDE"
 				"3EF57F71C1C786FE"
 			]
+			icon: { count: 1, id: "furniture:explorers_box" }
 			id: "7CBAF0748446A0C2"
 			rewards: [
 				{
@@ -243,6 +250,7 @@
 			]
 			shape: "none"
 			tasks: [{
+				icon: { count: 1, id: "society:furniture_box" }
 				id: "713FD6544CCC4F5C"
 				stat: "minecraft:play_time"
 				type: "stat"

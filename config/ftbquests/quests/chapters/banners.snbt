@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "banners"
 	group: "15230846E14B6926"
+	icon: { count: 1, id: "refurbished_furniture:spatula" }
 	id: "5C67DA068D003A2D"
 	images: [ ]
 	order_index: 8
@@ -54,6 +55,7 @@
 			}]
 			size: 2.0d
 			tasks: [{
+				icon: { count: 1, id: "farm_and_charm:scarecrow" }
 				id: "60BC53B1056204F0"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -104,6 +106,7 @@
 			}]
 			size: 2.0d
 			tasks: [{
+				icon: { count: 1, id: "candlelight:candlelight_banner" }
 				id: "765B171872302421"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -159,6 +162,7 @@
 			}]
 			size: 2.0d
 			tasks: [{
+				icon: { count: 1, id: "bakery:bakery_banner" }
 				id: "3AD3A245C817EDF9"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -1070,6 +1074,7 @@
 			}]
 			size: 2.0d
 			tasks: [{
+				icon: { count: 1, id: "farmersdelight:netherite_knife" }
 				id: "4DF65AF04FBBC65C"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -1117,6 +1122,7 @@
 			]
 			size: 3.0d
 			tasks: [{
+				icon: { count: 1, id: "refurbished_furniture:spatula" }
 				id: "38C343FDC4F440C9"
 				stat: "minecraft:play_time"
 				type: "stat"

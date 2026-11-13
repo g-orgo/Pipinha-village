@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "ii__building_up_the_farm"
 	group: "457DCF55318282CA"
+	icon: { count: 1, id: "kaleidoscope_cookery:tomato" }
 	id: "4603D051DD0D1099"
 	images: [ ]
 	order_index: 1
@@ -11,6 +12,7 @@
 	quests: [
 		{
 			dependencies: ["0A39B0C0A77E57B0"]
+			icon: { count: 1, id: "kaleidoscope_cookery:tomato_seed" }
 			id: "6ADD884F3FFE5D42"
 			rewards: [
 				{
@@ -60,6 +62,7 @@
 			y: -1.5d
 		}
 		{
+			icon: { count: 1, id: "minecraft:farmland" }
 			id: "0A39B0C0A77E57B0"
 			rewards: [{
 				count: 4
@@ -107,7 +110,6 @@
 		}
 		{
 			dependencies: ["6ADD884F3FFE5D42"]
-			icon: "sunrisegardening:weak_fertilizer"
 			id: "07858B887B222BC2"
 			rewards: [{
 				id: "7400FB36CD4F9C87"
@@ -127,6 +129,7 @@
 		}
 		{
 			dependencies: ["07858B887B222BC2"]
+			icon: { count: 1, id: "farmersdelight:cooking_pot" }
 			id: "122BB9885C33C85F"
 			rewards: [{
 				count: 4
@@ -227,6 +230,7 @@
 		{
 			dependencies: ["7B2EB2B56F155E49"]
 			hide_until_deps_complete: true
+			icon: { count: 1, id: "brewery:beer_wheat" }
 			id: "1AADE5D96B701A97"
 			tasks: [
 				{
@@ -246,6 +250,7 @@
 		{
 			dependencies: ["2B3BEC36F6C0F6BE"]
 			hide_until_deps_complete: true
+			icon: { count: 1, id: "minecraft:painting" }
 			id: "2DD84A5F127B1463"
 			min_required_dependencies: 1
 			rewards: [{
@@ -265,6 +270,7 @@
 		}
 		{
 			dependencies: ["07858B887B222BC2"]
+			icon: { count: 1, id: "supplementaries:present_green" }
 			id: "5B6FD08D6063D6AA"
 			rewards: [{
 				count: 4
@@ -304,6 +310,7 @@
 			y: -1.5d
 		}
 		{
+			icon: { count: 1, id: "minecraft:cow_spawn_egg" }
 			id: "6EEBD017839FF628"
 			rewards: [
 				{
@@ -417,6 +424,7 @@
 		}
 		{
 			dependencies: ["3D324E99DF28D224"]
+			icon: { count: 1, id: "minecraft:egg" }
 			id: "45739CCE73037CBB"
 			rewards: [{
 				id: "231B8DF626FF312D"
@@ -436,6 +444,7 @@
 		}
 		{
 			dependencies: ["3D324E99DF28D224"]
+			icon: { count: 1, id: "society:milk" }
 			id: "5B5A764F0E02E5FF"
 			tasks: [
 				{
@@ -532,6 +541,7 @@
 			y: 4.0d
 		}
 		{
+			icon: { count: 1, id: "unusualfishmod:raw_sneep_snorp" }
 			id: "429FEBEC239B975F"
 			rewards: [
 				{
@@ -576,6 +586,7 @@
 		}
 		{
 			dependencies: ["26315E4AC203348C"]
+			icon: { count: 1, id: "aquaculture:iron_fishing_rod" }
 			id: "21B07E7D0C412FFA"
 			rewards: [{
 				id: "3C1C43D8FAAB143C"
@@ -615,6 +626,7 @@
 		{
 			dependencies: ["63FDC7BA6801CF64"]
 			hide_until_deps_complete: true
+			icon: { count: 1, id: "aquaculture:iron_hook" }
 			id: "3E48E03F3F044FF2"
 			rewards: [{
 				count: 8
@@ -636,6 +648,7 @@
 		{
 			dependencies: ["63FDC7BA6801CF64"]
 			hide_until_deps_complete: true
+			icon: { count: 1, id: "aquaculture:worm" }
 			id: "28203635739BC73E"
 			rewards: [{
 				id: "04B0C53823196913"
@@ -817,6 +830,7 @@
 		{
 			dependencies: ["5B6FD08D6063D6AA"]
 			hide_until_deps_complete: true
+			icon: { count: 1, id: "pamhc2trees:starfruit_sapling" }
 			id: "0E68DD5DFB2DFD97"
 			rewards: [{
 				id: "268D67CA7616F89F"
@@ -879,6 +893,7 @@
 			dependencies: ["5AD7C2BCDA001A53"]
 			hide_dependency_lines: false
 			hide_until_deps_complete: true
+			icon: { count: 1, id: "smallships:acacia_brigg" }
 			id: "4513A91DA55E8069"
 			rewards: [{
 				id: "7964D2EC916385E4"
@@ -951,6 +966,7 @@
 		{
 			dependencies: ["5AD7C2BCDA001A53"]
 			hide_until_deps_complete: true
+			icon: { count: 1, id: "sewingkit:sewing_station" }
 			id: "1E2D2FF9428F96DA"
 			rewards: [{
 				id: "2D757CF0C0E54E8F"
@@ -981,6 +997,7 @@
 				"1E2D2FF9428F96DA"
 			]
 			hide_until_deps_complete: true
+			icon: { count: 1, id: "toolbelt:belt" }
 			id: "64A93713A3B85B9A"
 			rewards: [{
 				id: "54EE1670688A648F"
@@ -1110,6 +1127,7 @@
 		{
 			dependencies: ["21B07E7D0C412FFA"]
 			hide_until_deps_complete: true
+			icon: { count: 1, id: "stardew_fishing:trap_bobber" }
 			id: "77690255DF58F118"
 			rewards: [{
 				id: "6014646708F6EAAD"
@@ -1129,6 +1147,7 @@
 		}
 		{
 			dependencies: ["42C8E1F0D9A5B2BD"]
+			icon: { count: 1, id: "refinedstorage:crafting_grid" }
 			id: "61501449BF31B773"
 			rewards: [{
 				count: 16
@@ -1157,6 +1176,7 @@
 		{
 			dependencies: ["61501449BF31B773"]
 			hide_until_deps_complete: true
+			icon: { count: 1, id: "refinedstorage:4k_storage_block" }
 			id: "69C3121C90AABBF4"
 			tasks: [
 				{
@@ -1197,14 +1217,15 @@
 			dependencies: ["6ADD884F3FFE5D42"]
 			hide_until_deps_complete: true
 			id: "5FBE3685CF008A5A"
-			rewards: [
-				{
-					count: 4
-					id: "40C6F28062432BDD"
-					item: { count: 1, id: "sunrisegardening:low_quality_fertilizer" }
-					type: "item"
+			rewards: [{
+				count: 4
+				id: "40C6F28062432BDD"
+				item: {
+					count: 1
+					id: "sunrisegardening:low_quality_fertilizer"
 				}
-			]
+				type: "item"
+			}]
 			tasks: [{
 				id: "4CB767B95CEA4E1D"
 				item: { count: 1, id: "minecraft:stone_hoe" }
@@ -1258,6 +1279,7 @@
 		}
 		{
 			dependencies: ["26315E4AC203348C"]
+			icon: { count: 1, id: "aquaculture:fish_bones" }
 			id: "58FB1A6006C36FD8"
 			tasks: [{
 				id: "3FE319CA1C65EE1E"
@@ -1269,6 +1291,7 @@
 		{
 			dependencies: ["5B6FD08D6063D6AA"]
 			hide_until_deps_complete: true
+			icon: { count: 1, id: "minecraft:apple" }
 			id: "6F3FC6227213B886"
 			rewards: [{
 				id: "718F890F60221DC4"
@@ -1366,6 +1389,7 @@
 		{
 			dependencies: ["723A5C8DB06D8C36"]
 			hide_until_deps_complete: true
+			icon: { count: 1, id: "cozycafe:cafe_menu" }
 			id: "62129A6009E60E0F"
 			rewards: [{
 				count: 2
@@ -1386,6 +1410,7 @@
 		{
 			dependencies: ["723A5C8DB06D8C36"]
 			hide_until_deps_complete: true
+			icon: { count: 1, id: "cozycafe:serving_plate" }
 			id: "7C30FC21953CF7D3"
 			rewards: [{
 				id: "4421B0B2ADC081B2"
@@ -1414,6 +1439,7 @@
 		}
 		{
 			dependencies: ["5B6FD08D6063D6AA"]
+			icon: { count: 1, id: "minecraft:bookshelf" }
 			id: "42C8E1F0D9A5B2BD"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1445,19 +1471,13 @@
 		}
 		{
 			dependencies: ["6ADD884F3FFE5D42"]
-			description: [
-				"{ftbquests.chapter.ii__building_up_the_farm.quest54B618CF0AB9DC20.description1}"
-				""
-				"{ftbquests.chapter.ii__building_up_the_farm.quest54B618CF0AB9DC20.description2}"
-				""
-				"{ftbquests.chapter.ii__building_up_the_farm.quest54B618CF0AB9DC20.description3}"
-				""
-				"{ftbquests.chapter.ii__building_up_the_farm.quest54B618CF0AB9DC20.description4}"
-			]
 			id: "54B618CF0AB9DC20"
 			rewards: [{
 				id: "05D8DB298A7C0CAD"
-				item: { count: 1, id: "sunrisegardening:iron_sprinkler" }
+				item: {
+					count: 1
+					id: "sunrisegardening:iron_sprinkler"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -1470,13 +1490,7 @@
 		}
 		{
 			dependencies: ["6ADD884F3FFE5D42"]
-			description: [
-				"{ftbquests.chapter.ii__building_up_the_farm.quest1D5820FBDD8EB900.description1}"
-				""
-				"{ftbquests.chapter.ii__building_up_the_farm.quest1D5820FBDD8EB900.description2}"
-			]
 			hide_until_deps_complete: true
-			icon: "sunrisegardening:weak_fertilizer"
 			id: "1D5820FBDD8EB900"
 			rewards: [
 				{
@@ -1488,17 +1502,18 @@
 				{
 					count: 8
 					id: "532FEB13B10DE71C"
-					item: { count: 1, id: "sunrisegardening:hydrating_fertilizer" }
+					item: {
+						count: 1
+						id: "sunrisegardening:hydrating_fertilizer"
+					}
 					type: "item"
 				}
 			]
 			tasks: [{
 				id: "58D90C49D8129101"
 				item: { components: { "ftbfiltersystem:filter": "or(item(sunrisegardening:weak_fertilizer)item(sunrisegardening:strong_fertilizer)item(sunrisegardening:hydrating_fertilizer)item(sunrisegardening:bountiful_fertilizer)item(sunrisegardening:low_quality_fertilizer)item(sunrisegardening:high_quality_fertilizer))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				title: "{ftbquests.chapter.ii__building_up_the_farm.quest1D5820FBDD8EB900.task.6402161856581112065.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.ii__building_up_the_farm.quest1D5820FBDD8EB900.title}"
 			x: 3.0d
 			y: -0.5d
 		}

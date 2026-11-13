@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "iii__advanced_farming"
 	group: "457DCF55318282CA"
+	icon: { count: 1, id: "society:ancient_fruit" }
 	id: "06219592000B9C9F"
 	images: [ ]
 	order_index: 2
@@ -89,6 +90,7 @@
 				"0F176FBF01ABB774"
 				"6689D68F72E56A40"
 			]
+			icon: { count: 1, id: "society:charging_rod" }
 			id: "0C7D8F89BCF645AA"
 			rewards: [{
 				count: 4
@@ -316,14 +318,15 @@
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			id: "08CFE766C9645FC8"
-			rewards: [
-				{
-					count: 4
-					id: "69E47AA8BD899E47"
-					item: { count: 1, id: "sunrisegardening:high_quality_fertilizer" }
-					type: "item"
+			rewards: [{
+				count: 4
+				id: "69E47AA8BD899E47"
+				item: {
+					count: 1
+					id: "sunrisegardening:high_quality_fertilizer"
 				}
-			]
+				type: "item"
+			}]
 			tasks: [{
 				id: "1D2C8AFDDED732A1"
 				item: { count: 1, id: "society:quality_washer" }
@@ -365,6 +368,7 @@
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
+			icon: { count: 1, id: "longwings:butterfly_driplure" }
 			id: "7ADD57C8AF4092B2"
 			rewards: [{
 				id: "7098A56E92FB337B"
@@ -410,6 +414,7 @@
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
+			icon: { count: 1, id: "longwings:butterfly_handbook" }
 			id: "4DC073ABF3D72467"
 			rewards: [{
 				id: "2E19FA6FA274E294"
@@ -428,6 +433,7 @@
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
+			icon: { count: 1, id: "society:butterfly_amber" }
 			id: "3B6640956F047EC8"
 			rewards: [
 				{
@@ -478,6 +484,7 @@
 		{
 			dependencies: ["214BFF5CB710FFE2"]
 			hide_dependency_lines: false
+			icon: { count: 1, id: "refurbished_furniture:light_electricity_generator" }
 			id: "0462313FFAEC4054"
 			rewards: [{
 				id: "010FC9BAC3A786B3"
@@ -488,6 +495,7 @@
 				type: "item"
 			}]
 			tasks: [{
+				icon: { count: 1, id: "refurbished_furniture:light_electricity_generator" }
 				id: "1554E7905CF741CC"
 				item: { components: { "ftbfiltersystem:filter": "or(item(refurbished_furniture:dark_electricity_generator)item(refurbished_furniture:light_electricity_generator))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
@@ -576,6 +584,7 @@
 		}
 		{
 			dependencies: ["66E1AC55824DF1D9"]
+			icon: { count: 1, id: "etcetera:bismuth_ingot" }
 			id: "6689D68F72E56A40"
 			rewards: [{
 				count: 4
@@ -596,6 +605,7 @@
 		}
 		{
 			dependencies: ["6689D68F72E56A40"]
+			icon: { count: 1, id: "classicpipes:oak_pipe" }
 			id: "6C95E6AEEC55CFA5"
 			rewards: [{
 				count: 4
@@ -654,6 +664,7 @@
 		}
 		{
 			dependencies: ["66E1AC55824DF1D9"]
+			icon: { count: 1, id: "society:ribbit_hut_block" }
 			id: "3DE36C9FBCB58800"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -685,11 +696,13 @@
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest3492FA6A5DFCC390.description1}"]
 			id: "3492FA6A5DFCC390"
 			rewards: [{
 				id: "51B4932933C92BF1"
-				item: "society:fire_quartz"
+				item: {
+					count: 1
+					id: "society:fire_quartz"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -697,17 +710,18 @@
 				item: { count: 1, id: "sunrisegardening:gold_sprinkler" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest3492FA6A5DFCC390.title}"
 			x: 2.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["214BFF5CB710FFE2"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest2746CBE8BDA47E40.description1}"]
 			id: "2746CBE8BDA47E40"
 			rewards: [{
 				id: "674EAF8B280ADA6F"
-				item: "society:battery"
+				item: {
+					count: 1
+					id: "society:battery"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -720,8 +734,6 @@
 		}
 		{
 			dependencies: ["07938A28F31B7473"]
-			description: ["{ftbquests.chapter.iii__advanced_farming.quest1D21615AEE411491.description1}"]
-			icon: "sunrisegardening:strong_fertilizer"
 			id: "1D21615AEE411491"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -732,10 +744,8 @@
 			tasks: [{
 				id: "38A2FC9B0D264BD2"
 				item: { components: { "ftbfiltersystem:filter": "or(item(sunrisegardening:strong_fertilizer)item(sunrisegardening:high_quality_fertilizer))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				title: "{ftbquests.chapter.iii__advanced_farming.quest1D21615AEE411491.task.4081101955221834706.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iii__advanced_farming.quest1D21615AEE411491.title}"
 			x: 4.0d
 			y: -3.5d
 		}

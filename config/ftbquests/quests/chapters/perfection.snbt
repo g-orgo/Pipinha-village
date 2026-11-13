@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "perfection"
 	group: "15230846E14B6926"
+	icon: { count: 1, id: "society:golden_clock" }
 	id: "4AA29866E19A65A8"
 	images: [{
 		height: 3.0d
@@ -227,6 +228,7 @@
 				"47CF88FE788DD872"
 				"2D9AD3D0C59E682B"
 			]
+			icon: { count: 1, id: "supplementaries:present_blue" }
 			id: "272D9228BC46AEE0"
 			rewards: [{
 				id: "5BFAE126EEEBC621"
@@ -238,6 +240,7 @@
 			}]
 			size: 2.0d
 			tasks: [{
+				icon: { count: 1, id: "supplementaries:present_blue" }
 				id: "0229473CF1E31A5E"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -254,6 +257,7 @@
 				"77780C73C016EE60"
 				"06EDF98282351F85"
 			]
+			icon: { count: 1, id: "society:furniture_box" }
 			id: "45120BEE01BB36B4"
 			rewards: [
 				{
@@ -275,6 +279,7 @@
 			]
 			size: 2.0d
 			tasks: [{
+				icon: { count: 1, id: "society:furniture_box" }
 				id: "7D559D380A8E31EE"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -502,6 +507,7 @@
 			shape: "none"
 			size: 3.0d
 			tasks: [{
+				icon: { count: 1, id: "fantasyfurniture:decorations/bone_skeleton_skull_blossoms" }
 				id: "09B79BA0E1E2F6AA"
 				stat: "minecraft:play_time"
 				type: "stat"

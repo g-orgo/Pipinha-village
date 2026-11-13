@@ -5,6 +5,7 @@
 	disable_toast: true
 	filename: "armor_weapons__tools"
 	group: "439B0423947443D3"
+	icon: { count: 1, id: "rehooked:diamond_hook" }
 	id: "08F0C20BB94C2DBD"
 	images: [ ]
 	order_index: 3
@@ -12,6 +13,7 @@
 	quests: [
 		{
 			dependencies: ["617AC2E80908BFD7"]
+			icon: { count: 1, id: "minecraft:leather_chestplate" }
 			id: "48F1059FC059D3E5"
 			tasks: [{
 				id: "3CE6113B51970AC2"
@@ -23,6 +25,7 @@
 		}
 		{
 			dependencies: ["48F1059FC059D3E5"]
+			icon: { count: 1, id: "minecraft:chainmail_chestplate" }
 			id: "21FD7614E314BA14"
 			tasks: [{
 				id: "7D036618EBB21410"
@@ -34,6 +37,7 @@
 		}
 		{
 			dependencies: ["0ACB2E342421B74E"]
+			icon: { count: 1, id: "minecraft:golden_chestplate" }
 			id: "7A5974D470C5AA9C"
 			tasks: [{
 				id: "6E8880D4D8EB4DF5"
@@ -45,6 +49,7 @@
 		}
 		{
 			dependencies: ["21FD7614E314BA14"]
+			icon: { count: 1, id: "minecraft:iron_chestplate" }
 			id: "0ACB2E342421B74E"
 			tasks: [{
 				id: "487C30F04C7295E0"
@@ -56,6 +61,7 @@
 		}
 		{
 			dependencies: ["7A5974D470C5AA9C"]
+			icon: { count: 1, id: "minecraft:diamond_chestplate" }
 			id: "38A0B8D54F85B846"
 			tasks: [{
 				id: "3E0453D9C60A9B8C"
@@ -67,6 +73,7 @@
 		}
 		{
 			dependencies: ["38A0B8D54F85B846"]
+			icon: { count: 1, id: "minecraft:netherite_chestplate" }
 			id: "4C2120EC29BE0E64"
 			tasks: [{
 				id: "5E760A955BFF6876"
@@ -78,6 +85,7 @@
 		}
 		{
 			dependencies: ["38A0B8D54F85B846"]
+			icon: { count: 1, id: "aquaculture:neptunium_chestplate" }
 			id: "33FD69B12C21E495"
 			tasks: [{
 				id: "2ED9B316F07C51F3"
@@ -89,6 +97,7 @@
 		}
 		{
 			dependencies: ["617AC2E80908BFD7"]
+			icon: { count: 1, id: "minecraft:wooden_pickaxe" }
 			id: "1B614E9E38B45BD0"
 			tasks: [{
 				id: "7972CE0709D02D49"
@@ -100,6 +109,7 @@
 		}
 		{
 			dependencies: ["1B614E9E38B45BD0"]
+			icon: { count: 1, id: "minecraft:stone_pickaxe" }
 			id: "43C52E202277C5AA"
 			tasks: [{
 				id: "0E5D7529339C2A99"
@@ -111,6 +121,7 @@
 		}
 		{
 			dependencies: ["08241E18191275AE"]
+			icon: { count: 1, id: "minecraft:golden_pickaxe" }
 			id: "32FE1F4EF913EADA"
 			tasks: [{
 				id: "4D916A97F18FCE61"
@@ -122,6 +133,7 @@
 		}
 		{
 			dependencies: ["43C52E202277C5AA"]
+			icon: { count: 1, id: "minecraft:iron_pickaxe" }
 			id: "08241E18191275AE"
 			tasks: [{
 				id: "18CE25FAB2D5E7FE"
@@ -133,6 +145,7 @@
 		}
 		{
 			dependencies: ["32FE1F4EF913EADA"]
+			icon: { count: 1, id: "minecraft:diamond_pickaxe" }
 			id: "54301E900FFA56D7"
 			tasks: [{
 				id: "0A266FA5E2FD2103"
@@ -144,6 +157,7 @@
 		}
 		{
 			dependencies: ["54301E900FFA56D7"]
+			icon: { count: 1, id: "minecraft:netherite_pickaxe" }
 			id: "319129CE8210964A"
 			tasks: [{
 				id: "6D157C77899A7115"
@@ -155,6 +169,7 @@
 		}
 		{
 			dependencies: ["54301E900FFA56D7"]
+			icon: { count: 1, id: "aquaculture:neptunium_pickaxe" }
 			id: "4EA02089CD02F7C0"
 			tasks: [{
 				id: "1756A4BFB7D46C3B"
@@ -169,7 +184,10 @@
 			id: "0B85DF081F75ECA7"
 			rewards: [{
 				id: "2605209B1A6CAD51"
-				item: { count: 1, id: "numismatics:crown" }
+				item: {
+					count: 1
+					id: "numismatics:crown"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -185,7 +203,10 @@
 			id: "33176CD4D28070D3"
 			rewards: [{
 				id: "11DEF451B99DD9F9"
-				item: { count: 1, id: "numismatics:cog" }
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -202,6 +223,7 @@
 			optional: true
 			size: 2.0d
 			tasks: [{
+				icon: { count: 1, id: "minecraft:wooden_pickaxe" }
 				id: "531DADCAC7BBB3D6"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -215,7 +237,10 @@
 			id: "3B30AFF91D59746A"
 			rewards: [{
 				id: "5AFEED8149346DA0"
-				item: { count: 1, id: "numismatics:sprocket" }
+				item: {
+					count: 1
+					id: "numismatics:sprocket"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -231,7 +256,10 @@
 			id: "10C0B87E2EA1C8A5"
 			rewards: [{
 				id: "478FF52B8E89F86D"
-				item: { count: 1, id: "numismatics:bevel" }
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -258,7 +286,10 @@
 			id: "702A9E699FC422CC"
 			rewards: [{
 				id: "44E2A57DD54F4A43"
-				item: { count: 1, id: "numismatics:bevel" }
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -274,7 +305,10 @@
 			id: "5C8CF40663CCE754"
 			rewards: [{
 				id: "4CD41495CD166B97"
-				item: { count: 1, id: "numismatics:cog" }
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -290,7 +324,10 @@
 			id: "001F144802D59DB4"
 			rewards: [{
 				id: "39CEA2F22564D0FB"
-				item: { count: 1, id: "numismatics:cog" }
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -306,7 +343,10 @@
 			id: "4F54E885ECC26922"
 			rewards: [{
 				id: "7FFD73B83D19A769"
-				item: { count: 1, id: "numismatics:cog" }
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -322,7 +362,10 @@
 			id: "18274B43429F2808"
 			rewards: [{
 				id: "5BEDBA63B9A11483"
-				item: { count: 1, id: "numismatics:cog" }
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -335,10 +378,14 @@
 		}
 		{
 			dependencies: ["617AC2E80908BFD7"]
+			icon: { count: 1, id: "create:copper_backtank" }
 			id: "4EFD1F876D69591E"
 			rewards: [{
 				id: "513417F90E4B9769"
-				item: { count: 1, id: "numismatics:sprocket" }
+				item: {
+					count: 1
+					id: "numismatics:sprocket"
+				}
 				type: "item"
 			}]
 			tasks: [
@@ -358,10 +405,14 @@
 		}
 		{
 			dependencies: ["4EFD1F876D69591E"]
+			icon: { count: 1, id: "create:netherite_diving_helmet" }
 			id: "1BA73EA72B471270"
 			rewards: [{
 				id: "46F8621CBFAD3966"
-				item: { count: 1, id: "numismatics:sun" }
+				item: {
+					count: 1
+					id: "numismatics:sun"
+				}
 				type: "item"
 			}]
 			tasks: [
@@ -394,7 +445,10 @@
 			id: "4BC9FE01DC8D5ADB"
 			rewards: [{
 				id: "4FD79C56D7547153"
-				item: { count: 1, id: "numismatics:cog" }
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -410,7 +464,10 @@
 			id: "5E89F151176083E6"
 			rewards: [{
 				id: "5CCF1F636469BF46"
-				item: { count: 1, id: "numismatics:cog" }
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -423,6 +480,7 @@
 		}
 		{
 			dependencies: ["617AC2E80908BFD7"]
+			icon: { count: 1, id: "minecraft:netherite_pickaxe" }
 			id: "34206688082CCC57"
 			tasks: [{
 				id: "75D3693267CE0239"
@@ -436,7 +494,10 @@
 			id: "55A3F4C2B6F3460B"
 			rewards: [{
 				id: "33550E79FF5DE2D6"
-				item: { count: 1, id: "numismatics:cog" }
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -449,10 +510,14 @@
 		}
 		{
 			dependencies: ["34206688082CCC57"]
+			icon: { count: 1, id: "justhammers:diamond_hammer" }
 			id: "66510F15A69EBAED"
 			rewards: [{
 				id: "03FACD1CB0A7EF22"
-				item: { count: 1, id: "numismatics:cog" }
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -465,6 +530,7 @@
 		}
 		{
 			dependencies: ["38A0B8D54F85B846"]
+			icon: { count: 1, id: "oreganized:electrum_chestplate" }
 			id: "6FDA9C1E5D681CDA"
 			tasks: [{
 				id: "652F7B6F053D1586"
@@ -476,6 +542,7 @@
 		}
 		{
 			dependencies: ["54301E900FFA56D7"]
+			icon: { count: 1, id: "oreganized:electrum_pickaxe" }
 			id: "11207C347FC407E1"
 			tasks: [{
 				id: "2712211EC08C9471"
@@ -490,7 +557,10 @@
 			id: "062C9E95DF7C987D"
 			rewards: [{
 				id: "0BB83B3A3B326CDB"
-				item: { count: 1, id: "botania:cosmetic_cat_ears" }
+				item: {
+					count: 1
+					id: "botania:cosmetic_cat_ears"
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -503,47 +573,37 @@
 		}
 		{
 			dependencies: ["7A5974D470C5AA9C"]
-			icon: "botania:manasteel_chestplate"
+			icon: { count: 1, id: "botania:manasteel_chestplate" }
 			id: "6080E8F9B0DDAE72"
-			subtitle: "{ftbquests.chapter.armor_weapons__tools.quest6080E8F9B0DDAE72.subtitle}"
 			tasks: [{
 				id: "12DAF95F0B50680C"
 				item: { components: { "ftbfiltersystem:filter": "or(item(botania:manasteel_leggings)item(botania:manasteel_chestplate)item(botania:manasteel_helmet)item(botania:manasteel_boots))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				match_components: "none"
-				title: "{ftbquests.chapter.armor_weapons__tools.quest6080E8F9B0DDAE72.task.1358672424212654092.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.armor_weapons__tools.quest6080E8F9B0DDAE72.title}"
 			x: -2.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["6080E8F9B0DDAE72"]
-			icon: "botania:terrasteel_chestplate"
+			icon: { count: 1, id: "botania:terrasteel_chestplate" }
 			id: "6E4CC63B8CF1EDAF"
 			tasks: [{
 				id: "7EDA5896186979D5"
 				item: { components: { "ftbfiltersystem:filter": "or(item(botania:terrasteel_boots)item(botania:terrasteel_leggings)item(botania:terrasteel_chestplate)item(botania:terrasteel_helmet))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				match_components: "none"
-				title: "{ftbquests.chapter.armor_weapons__tools.quest6E4CC63B8CF1EDAF.task.9140715795379747285.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.armor_weapons__tools.quest6E4CC63B8CF1EDAF.title}"
 			x: 2.0d
 			y: -6.5d
 		}
 		{
 			dependencies: ["6080E8F9B0DDAE72"]
-			icon: "botania:elementium_chestplate"
+			icon: { count: 1, id: "botania:elementium_chestplate" }
 			id: "3FC4155A11F14663"
 			tasks: [{
 				id: "033A4317987E15C2"
 				item: { components: { "ftbfiltersystem:filter": "or(item(botania:elementium_helmet)item(botania:elementium_chestplate)item(botania:elementium_boots)item(botania:elementium_leggings))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				match_components: "none"
-				title: "{ftbquests.chapter.armor_weapons__tools.quest3FC4155A11F14663.task.232572099384710594.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.armor_weapons__tools.quest3FC4155A11F14663.title}"
 			x: 0.0d
 			y: -5.0d
 		}

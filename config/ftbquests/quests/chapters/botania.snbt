@@ -3,20 +3,13 @@
 	default_quest_shape: ""
 	filename: "botania"
 	group: "457DCF55318282CA"
-	icon: "society:mana_fruit"
+	icon: { count: 1, id: "society:mana_fruit" }
 	id: "7D5C355F4BB66AE9"
 	images: [ ]
-	order_index: 5
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
-			description: [
-				"{ftbquests.chapter.botania.quest5E5E6E09E6C6DF02.description1}"
-				""
-				"{ftbquests.chapter.botania.quest5E5E6E09E6C6DF02.description2}"
-				""
-				"{ftbquests.chapter.botania.quest5E5E6E09E6C6DF02.description3}"
-			]
 			id: "5E5E6E09E6C6DF02"
 			rewards: [{
 				id: "2D7DCEB9B6F5F134"
@@ -29,25 +22,15 @@
 			size: 2.0d
 			tasks: [{
 				id: "6062F75BE9F93639"
-				item: {
-					count: 1
-					id: "botania:apothecary_default"
-				}
-				match_components: "none"
+				item: { count: 1, id: "botania:apothecary_default" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.botania.quest5E5E6E09E6C6DF02.title}"
 			x: -3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5E5E6E09E6C6DF02"]
-			description: [
-				"{ftbquests.chapter.botania.quest44C80D7C3D2B11E8.description1}"
-				""
-				"{ftbquests.chapter.botania.quest44C80D7C3D2B11E8.description2}"
-			]
-			icon: "botania_seeds:white_mystical_flower_seed"
+			icon: { count: 1, id: "botania_seeds:white_mystical_flower_seed" }
 			id: "44C80D7C3D2B11E8"
 			rewards: [{
 				id: "7A60653ECC43AFA3"
@@ -59,29 +42,15 @@
 			}]
 			tasks: [{
 				id: "6E67A8406FEEE79B"
-				item: {
-					components: {
-						"ftbfiltersystem:filter": "item_tag(society:botania_seeds)"
-					}
-					count: 1
-					id: "ftbfiltersystem:smart_filter"
-				}
-				match_components: "none"
-				title: "{ftbquests.chapter.botania.quest44C80D7C3D2B11E8.task.7955512261482571675.title}"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(society:botania_seeds)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.botania.quest44C80D7C3D2B11E8.title}"
 			x: -0.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1BF054DD14781BAD"]
-			description: [
-				"{ftbquests.chapter.botania.quest3EC0E2F632F6A20D.description1}"
-				""
-				"{ftbquests.chapter.botania.quest3EC0E2F632F6A20D.description2}"
-			]
-			icon: "botania:pure_daisy"
+			icon: { count: 1, id: "botania:pure_daisy" }
 			id: "3EC0E2F632F6A20D"
 			rewards: [{
 				count: 16
@@ -95,29 +64,17 @@
 			tasks: [
 				{
 					id: "446C710951C34A72"
-					item: {
-						count: 1
-						id: "botania:pure_daisy"
-					}
-					match_components: "none"
+					item: { count: 1, id: "botania:pure_daisy" }
 					type: "item"
 				}
 				{
 					id: "0599C4F163F74FE1"
-					item: {
-						count: 1
-						id: "botania:livingwood_log"
-					}
-					match_components: "none"
+					item: { count: 1, id: "botania:livingwood_log" }
 					type: "item"
 				}
 				{
 					id: "5AC140E366AA5E68"
-					item: {
-						count: 1
-						id: "botania:livingrock"
-					}
-					match_components: "none"
+					item: { count: 1, id: "botania:livingrock" }
 					type: "item"
 				}
 			]
@@ -126,12 +83,7 @@
 		}
 		{
 			dependencies: ["5797BBD7788369E3"]
-			description: [
-				"{ftbquests.chapter.botania.quest42DA09B2A18E2ED1.description1}"
-				""
-				"{ftbquests.chapter.botania.quest42DA09B2A18E2ED1.description2}"
-			]
-			icon: "vintagedelight:gearo_berry"
+			icon: { count: 1, id: "vintagedelight:gearo_berry" }
 			id: "42DA09B2A18E2ED1"
 			rewards: [{
 				id: "374667AEA46CD2D6"
@@ -143,31 +95,15 @@
 			}]
 			tasks: [{
 				id: "29D8E1DA592B300E"
-				item: {
-					components: {
-						"ftbfiltersystem:filter": "or(item(pamhc2trees:lemon_sapling)item(vintagedelight:gearo_berry))"
-					}
-					count: 1
-					id: "ftbfiltersystem:smart_filter"
-				}
-				match_components: "none"
-				title: "{ftbquests.chapter.botania.quest42DA09B2A18E2ED1.task.3015408278439669774.title}"
+				item: { components: { "ftbfiltersystem:filter": "or(item(pamhc2trees:lemon_sapling)item(vintagedelight:gearo_berry))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.botania.quest42DA09B2A18E2ED1.title}"
 			x: 21.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["46F86152B5B36A3B"]
-			description: [
-				"{ftbquests.chapter.botania.quest5797BBD7788369E3.description1}"
-				""
-				"{ftbquests.chapter.botania.quest5797BBD7788369E3.description2}"
-				""
-				"{ftbquests.chapter.botania.quest5797BBD7788369E3.description3}"
-			]
-			icon: "botania:pixie_dust"
+			icon: { count: 1, id: "botania:pixie_dust" }
 			id: "5797BBD7788369E3"
 			rewards: [{
 				count: 16
@@ -182,46 +118,28 @@
 				{
 					count: 3L
 					id: "03E79E68D01D5CC3"
-					item: {
-						count: 3
-						id: "botania:glimmering_livingwood_log"
-					}
+					item: { count: 1, id: "botania:glimmering_livingwood_log" }
 					match_components: "fuzzy"
 					type: "item"
 				}
 				{
 					id: "094691D38227681E"
-					item: {
-						count: 1
-						id: "botania:alfheim_portal"
-					}
-					match_components: "none"
+					item: { count: 1, id: "botania:alfheim_portal" }
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "0BEA1274DF50CB4C"
-					item: {
-						count: 2
-						id: "botania:natura_pylon"
-					}
+					item: { count: 1, id: "botania:natura_pylon" }
 					match_components: "fuzzy"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.botania.quest5797BBD7788369E3.title}"
 			x: 20.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3B0A3083FFE1416B"]
-			description: [
-				"{ftbquests.chapter.botania.quest46F86152B5B36A3B.description1}"
-				""
-				"{ftbquests.chapter.botania.quest46F86152B5B36A3B.description2}"
-				""
-				"{ftbquests.chapter.botania.quest46F86152B5B36A3B.description3}"
-			]
 			id: "46F86152B5B36A3B"
 			rewards: [{
 				id: "1C966091E6B2B450"
@@ -233,11 +151,7 @@
 			}]
 			tasks: [{
 				id: "32E84BAD2E411D78"
-				item: {
-					count: 1
-					id: "botania:terrasteel_ingot"
-				}
-				match_components: "none"
+				item: { count: 1, id: "botania:terrasteel_ingot" }
 				type: "item"
 			}]
 			x: 18.0d
@@ -245,12 +159,7 @@
 		}
 		{
 			dependencies: ["46F86152B5B36A3B"]
-			description: [
-				"{ftbquests.chapter.botania.quest1CC084C4F5E11C97.description1}"
-				""
-				"{ftbquests.chapter.botania.quest1CC084C4F5E11C97.description2}"
-			]
-			icon: "botania:terrasteel_helmet"
+			icon: { count: 1, id: "botania:terrasteel_helmet" }
 			id: "1CC084C4F5E11C97"
 			rewards: [{
 				id: "7F8BA65A228BA88D"
@@ -262,58 +171,26 @@
 			}]
 			tasks: [{
 				id: "0E56D2F4735C48B6"
-				item: {
-					components: {
-						"ftbfiltersystem:filter": "or(item(botania:terrasteel_helmet)item(botania:terrasteel_chestplate)item(botania:terrasteel_leggings)item(botania:terrasteel_boots))"
-					}
-					count: 1
-					id: "ftbfiltersystem:smart_filter"
-				}
-				match_components: "none"
-				title: "{ftbquests.chapter.botania.quest1CC084C4F5E11C97.task.1033245111877388470.title}"
+				item: { components: { "ftbfiltersystem:filter": "or(item(botania:terrasteel_helmet)item(botania:terrasteel_chestplate)item(botania:terrasteel_leggings)item(botania:terrasteel_boots))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.botania.quest1CC084C4F5E11C97.title}"
 			x: 17.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["46F86152B5B36A3B"]
-			description: [
-				"{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.description1}"
-				""
-				"{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.description2}"
-				"{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.description3}"
-				"{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.description4}"
-			]
-			icon: "botania:terra_pick"
+			icon: { count: 1, id: "botania:terra_pick" }
 			id: "4DE0F1BADE3F2F57"
 			tasks: [{
 				id: "3B466EBCDB361382"
-				item: {
-					components: {
-						"ftbfiltersystem:filter": "or(item(botania:terra_sword)item(botania:terra_axe)item(botania:terra_pick))"
-					}
-					count: 1
-					id: "ftbfiltersystem:smart_filter"
-				}
-				match_components: "none"
-				title: "{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.task.4271223054018155394.title}"
+				item: { components: { "ftbfiltersystem:filter": "or(item(botania:terra_sword)item(botania:terra_axe)item(botania:terra_pick))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.title}"
 			x: 19.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["44C80D7C3D2B11E8"]
-			description: [
-				"{ftbquests.chapter.botania.quest1BF054DD14781BAD.description1}"
-				""
-				"{ftbquests.chapter.botania.quest1BF054DD14781BAD.description2}"
-				""
-				"{ftbquests.chapter.botania.quest1BF054DD14781BAD.description3}"
-			]
 			id: "1BF054DD14781BAD"
 			rewards: [{
 				count: 8
@@ -326,29 +203,18 @@
 			}]
 			tasks: [{
 				id: "23CC15DBCB48AA96"
-				item: {
-					count: 1
-					id: "botania:white_petal"
-				}
-				match_components: "none"
+				item: { count: 1, id: "botania:white_petal" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.botania.quest1BF054DD14781BAD.title}"
 			x: 1.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3EC0E2F632F6A20D", "1BF054DD14781BAD"]
-			description: [
-				"{ftbquests.chapter.botania.quest33B78DFDDC041570.description1}"
-				""
-				"{ftbquests.chapter.botania.quest33B78DFDDC041570.description2}"
-				""
-				"{ftbquests.chapter.botania.quest33B78DFDDC041570.description3}"
-				""
-				"{ftbquests.chapter.botania.quest33B78DFDDC041570.description4}"
+			dependencies: [
+				"3EC0E2F632F6A20D"
+				"1BF054DD14781BAD"
 			]
-			icon: "botania:mana_pool"
+			icon: { count: 1, id: "botania:mana_pool" }
 			id: "33B78DFDDC041570"
 			rewards: [{
 				id: "55E27BBBAADBCCD7"
@@ -361,34 +227,20 @@
 			tasks: [
 				{
 					id: "2D858E8510EF1BA0"
-					item: {
-						count: 1
-						id: "botania:mana_pool"
-					}
-					match_components: "none"
+					item: { count: 1, id: "botania:mana_pool" }
 					type: "item"
 				}
 				{
 					id: "417347A1C29A59F2"
-					item: {
-						count: 1
-						id: "botania:mana_spreader"
-					}
-					match_components: "none"
+					item: { count: 1, id: "botania:mana_spreader" }
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.botania.quest33B78DFDDC041570.title}"
 			x: 5.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1D0F4F3CFC1585A9"]
-			description: [
-				"{ftbquests.chapter.botania.questB3038ABD80F2633.description1}"
-				""
-				"{ftbquests.chapter.botania.questB3038ABD80F2633.description2}"
-			]
 			id: "0B3038ABD80F2633"
 			rewards: [{
 				id: "03C4469B78A1F4C9"
@@ -398,14 +250,9 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.botania.questB3038ABD80F2633.subtitle}"
 			tasks: [{
 				id: "282D73A45C348D10"
-				item: {
-					count: 1
-					id: "society:botanical_tribute"
-				}
-				match_components: "none"
+				item: { count: 1, id: "society:botanical_tribute" }
 				type: "item"
 			}]
 			x: 8.5d
@@ -413,11 +260,6 @@
 		}
 		{
 			dependencies: ["33B78DFDDC041570"]
-			description: [
-				"{ftbquests.chapter.botania.quest1D0F4F3CFC1585A9.description1}"
-				""
-				"{ftbquests.chapter.botania.quest1D0F4F3CFC1585A9.description2}"
-			]
 			id: "1D0F4F3CFC1585A9"
 			rewards: [{
 				count: 4
@@ -430,11 +272,7 @@
 			}]
 			tasks: [{
 				id: "61221C508336D416"
-				item: {
-					count: 1
-					id: "botania:manasteel_ingot"
-				}
-				match_components: "none"
+				item: { count: 1, id: "botania:manasteel_ingot" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -442,13 +280,6 @@
 		}
 		{
 			dependencies: ["33B78DFDDC041570"]
-			description: [
-				"{ftbquests.chapter.botania.quest31BC474EE5C53DAB.description1}"
-				""
-				"{ftbquests.chapter.botania.quest31BC474EE5C53DAB.description2}"
-				""
-				"{ftbquests.chapter.botania.quest31BC474EE5C53DAB.description3}"
-			]
 			id: "31BC474EE5C53DAB"
 			rewards: [{
 				id: "3DAD35983275CD8F"
@@ -460,11 +291,7 @@
 			}]
 			tasks: [{
 				id: "508921FB14479D23"
-				item: {
-					count: 1
-					id: "botania:mana_diamond"
-				}
-				match_components: "none"
+				item: { count: 1, id: "botania:mana_diamond" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -472,7 +299,6 @@
 		}
 		{
 			dependencies: ["33B78DFDDC041570"]
-			description: ["{ftbquests.chapter.botania.quest4AF0A434148274AC.description1}"]
 			id: "4AF0A434148274AC"
 			rewards: [{
 				id: "4C43B38656C01222"
@@ -484,11 +310,7 @@
 			}]
 			tasks: [{
 				id: "049218C4FA54C6C1"
-				item: {
-					count: 1
-					id: "botania:mana_pearl"
-				}
-				match_components: "none"
+				item: { count: 1, id: "botania:mana_pearl" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -496,14 +318,7 @@
 		}
 		{
 			dependencies: ["69A2A84A2830134C"]
-			description: [
-				"{ftbquests.chapter.botania.quest7E6A0CF4C704430C.description1}"
-				""
-				"{ftbquests.chapter.botania.quest7E6A0CF4C704430C.description2}"
-				""
-				"{ftbquests.chapter.botania.quest7E6A0CF4C704430C.description3}"
-			]
-			icon: "unusualfishmod:fluvial_shell"
+			icon: { count: 1, id: "unusualfishmod:fluvial_shell" }
 			id: "7E6A0CF4C704430C"
 			rewards: [{
 				id: "52DE782ADCF7FEE7"
@@ -516,39 +331,22 @@
 			tasks: [
 				{
 					id: "12F0CF1609125B85"
-					item: {
-						count: 1
-						id: "unusualfishmod:fluvial_shell"
-					}
-					match_components: "none"
+					item: { count: 1, id: "unusualfishmod:fluvial_shell" }
 					type: "item"
 				}
 				{
 					id: "62CC063901572119"
-					item: {
-						components: {
-							"ftbfiltersystem:filter": "or(item(unusualfishmod:clement_shell)item(unusualfishmod:thunderous_shell))"
-						}
-						count: 1
-						id: "ftbfiltersystem:smart_filter"
-					}
-					match_components: "none"
-					title: "{ftbquests.chapter.botania.quest7E6A0CF4C704430C.task.7119071952871301401.title}"
+					item: { components: { "ftbfiltersystem:filter": "or(item(unusualfishmod:clement_shell)item(unusualfishmod:thunderous_shell))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.botania.quest7E6A0CF4C704430C.title}"
 			x: 10.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["4AF0A434148274AC", "31BC474EE5C53DAB"]
-			description: [
-				"{ftbquests.chapter.botania.quest69A2A84A2830134C.description1}"
-				""
-				"{ftbquests.chapter.botania.quest69A2A84A2830134C.description2}"
-				""
-				"{ftbquests.chapter.botania.quest69A2A84A2830134C.description3}"
+			dependencies: [
+				"4AF0A434148274AC"
+				"31BC474EE5C53DAB"
 			]
 			id: "69A2A84A2830134C"
 			rewards: [{
@@ -561,24 +359,14 @@
 			}]
 			tasks: [{
 				id: "667FBDA65AD14971"
-				item: {
-					count: 1
-					id: "botania:runic_altar"
-				}
-				match_components: "none"
+				item: { count: 1, id: "botania:runic_altar" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.botania.quest69A2A84A2830134C.title}"
 			x: 10.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5797BBD7788369E3"]
-			description: [
-				"{ftbquests.chapter.botania.quest13A0704DCABC95E9.description1}"
-				""
-				"{ftbquests.chapter.botania.quest13A0704DCABC95E9.description2}"
-			]
 			id: "13A0704DCABC95E9"
 			rewards: [{
 				id: "3C1BB1BFCB686A7C"
@@ -591,24 +379,14 @@
 			size: 2.0d
 			tasks: [{
 				id: "263E71296C284732"
-				item: {
-					count: 1
-					id: "botania:gaia_pylon"
-				}
-				match_components: "none"
+				item: { count: 1, id: "botania:gaia_pylon" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.botania.quest13A0704DCABC95E9.title}"
 			x: 23.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5797BBD7788369E3"]
-			description: [
-				"{ftbquests.chapter.botania.quest247D9F5D8A4FAE35.description1}"
-				""
-				"{ftbquests.chapter.botania.quest247D9F5D8A4FAE35.description2}"
-			]
 			id: "247D9F5D8A4FAE35"
 			rewards: [{
 				count: 4
@@ -621,25 +399,15 @@
 			}]
 			tasks: [{
 				id: "7886C18466323644"
-				item: {
-					count: 1
-					id: "society:cornucopia"
-				}
-				match_components: "none"
+				item: { count: 1, id: "society:cornucopia" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.botania.quest247D9F5D8A4FAE35.title}"
 			x: 21.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["6DAC81A05E481E58"]
-			description: [
-				"{ftbquests.chapter.botania.quest3B0A3083FFE1416B.description1}"
-				""
-				"{ftbquests.chapter.botania.quest3B0A3083FFE1416B.description2}"
-			]
-			icon: "botania:terra_plate"
+			icon: { count: 1, id: "botania:terra_plate" }
 			id: "3B0A3083FFE1416B"
 			rewards: [{
 				count: 8
@@ -653,20 +421,12 @@
 			tasks: [
 				{
 					id: "4447658636C31787"
-					item: {
-						count: 1
-						id: "botania:terra_plate"
-					}
-					match_components: "none"
+					item: { count: 1, id: "botania:terra_plate" }
 					type: "item"
 				}
 				{
 					id: "0075872E5120E54C"
-					item: {
-						count: 1
-						id: "botania:spark"
-					}
-					match_components: "none"
+					item: { count: 1, id: "botania:spark" }
 					type: "item"
 				}
 			]
@@ -675,12 +435,7 @@
 		}
 		{
 			dependencies: ["69A2A84A2830134C"]
-			description: [
-				"{ftbquests.chapter.botania.quest137994A312B7CAEB.description1}"
-				""
-				"{ftbquests.chapter.botania.quest137994A312B7CAEB.description2}"
-			]
-			icon: "botania:jaded_amaranthus"
+			icon: { count: 1, id: "botania:jaded_amaranthus" }
 			id: "137994A312B7CAEB"
 			rewards: [{
 				id: "05F19D1578AB8F64"
@@ -692,28 +447,14 @@
 			}]
 			tasks: [{
 				id: "01ED68E2F47601EB"
-				item: {
-					components: {
-						"ftbfiltersystem:filter": "item_tag(botania:functional_special_flowers)"
-					}
-					count: 1
-					id: "ftbfiltersystem:smart_filter"
-				}
-				match_components: "none"
-				title: "{ftbquests.chapter.botania.quest137994A312B7CAEB.task.138882487491625451.title}"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(botania:functional_special_flowers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.botania.quest137994A312B7CAEB.title}"
 			x: 10.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["46F86152B5B36A3B"]
-			description: [
-				"{ftbquests.chapter.botania.quest18EDA9E2559C26E1.description1}"
-				""
-				"{ftbquests.chapter.botania.quest18EDA9E2559C26E1.description2}"
-			]
 			id: "18EDA9E2559C26E1"
 			rewards: [{
 				id: "6C28E320E6433D57"
@@ -725,27 +466,15 @@
 			}]
 			tasks: [{
 				id: "3B4DFFCF3C1F7C60"
-				item: {
-					count: 1
-					id: "society:mana_milker"
-				}
-				match_components: "none"
+				item: { count: 1, id: "society:mana_milker" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.botania.quest18EDA9E2559C26E1.title}"
 			x: 19.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["33B78DFDDC041570"]
-			description: [
-				"{ftbquests.chapter.botania.quest27437A0F629AF989.description1}"
-				""
-				"{ftbquests.chapter.botania.quest27437A0F629AF989.description2}"
-				""
-				"{ftbquests.chapter.botania.quest27437A0F629AF989.description3}"
-			]
-			icon: "botania:kekimurus"
+			icon: { count: 1, id: "botania:kekimurus" }
 			id: "27437A0F629AF989"
 			rewards: [{
 				id: "3128A34A75484777"
@@ -757,42 +486,28 @@
 			}]
 			tasks: [{
 				id: "6469A390C683349B"
-				item: {
-					components: {
-						"ftbfiltersystem:filter": "item_tag(botania:generating_special_flowers)"
-					}
-					count: 1
-					id: "ftbfiltersystem:smart_filter"
-				}
-				match_components: "none"
-				title: "{ftbquests.chapter.botania.quest27437A0F629AF989.task.7235494118548518043.title}"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(botania:generating_special_flowers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.botania.quest27437A0F629AF989.title}"
 			x: 5.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["221306DB217B8F93", "5E5E6E09E6C6DF02"]
-			description: ["{ftbquests.chapter.botania.quest78F0A0A709A1C67.description1}"]
-			icon: "botania:orange_mystical_flower"
+			dependencies: [
+				"221306DB217B8F93"
+				"5E5E6E09E6C6DF02"
+			]
+			icon: { count: 1, id: "botania:orange_mystical_flower" }
 			id: "078F0A0A709A1C67"
 			tasks: [{
 				id: "1840F64E466C295B"
-				title: "{ftbquests.chapter.botania.quest78F0A0A709A1C67.task.1747667471469128027.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.botania.quest78F0A0A709A1C67.title}"
 			x: -5.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["33B78DFDDC041570"]
-			description: [
-				"{ftbquests.chapter.botania.quest631D3F5020956DD7.description1}"
-				""
-				"{ftbquests.chapter.botania.quest631D3F5020956DD7.description2}"
-			]
 			id: "631D3F5020956DD7"
 			rewards: [{
 				count: 4
@@ -805,26 +520,14 @@
 			}]
 			tasks: [{
 				id: "6C39686522168FA9"
-				item: {
-					count: 1
-					id: "society:mana_feed"
-				}
-				match_components: "none"
+				item: { count: 1, id: "society:mana_feed" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.botania.quest631D3F5020956DD7.title}"
 			x: 5.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["13A0704DCABC95E9"]
-			description: [
-				"{ftbquests.chapter.botania.quest52AB7E364A737557.description1}"
-				""
-				"{ftbquests.chapter.botania.quest52AB7E364A737557.description2}"
-				""
-				"{ftbquests.chapter.botania.quest52AB7E364A737557.description3}"
-			]
 			id: "52AB7E364A737557"
 			rewards: [{
 				id: "33ADB279EAF02CC2"
@@ -836,11 +539,7 @@
 			}]
 			tasks: [{
 				id: "485786DF564CFDD5"
-				item: {
-					count: 1
-					id: "society:sparkstone_recycler"
-				}
-				match_components: "none"
+				item: { count: 1, id: "society:sparkstone_recycler" }
 				type: "item"
 			}]
 			x: 25.0d
@@ -848,13 +547,6 @@
 		}
 		{
 			dependencies: ["13A0704DCABC95E9"]
-			description: [
-				"{ftbquests.chapter.botania.quest61F2F0C46147E002.description1}"
-				""
-				"{ftbquests.chapter.botania.quest61F2F0C46147E002.description2}"
-				""
-				"{ftbquests.chapter.botania.quest61F2F0C46147E002.description3}"
-			]
 			id: "61F2F0C46147E002"
 			rewards: [{
 				id: "3095C6FED15E64BB"
@@ -866,11 +558,7 @@
 			}]
 			tasks: [{
 				id: "2F3CC185B8FF80D3"
-				item: {
-					count: 1
-					id: "botania:flight_tiara"
-				}
-				match_components: "none"
+				item: { count: 1, id: "botania:flight_tiara" }
 				type: "item"
 			}]
 			x: 25.0d
@@ -878,11 +566,6 @@
 		}
 		{
 			dependencies: ["46F86152B5B36A3B"]
-			description: [
-				"{ftbquests.chapter.botania.quest768A5A2162C079D0.description1}"
-				""
-				"{ftbquests.chapter.botania.quest768A5A2162C079D0.description2}"
-			]
 			id: "768A5A2162C079D0"
 			rewards: [{
 				id: "596991571993533D"
@@ -894,11 +577,7 @@
 			}]
 			tasks: [{
 				id: "1DCA9053294233FF"
-				item: {
-					count: 1
-					id: "society:mana_clock"
-				}
-				match_components: "none"
+				item: { count: 1, id: "society:mana_clock" }
 				type: "item"
 			}]
 			x: 17.0d
@@ -906,11 +585,6 @@
 		}
 		{
 			dependencies: ["69A2A84A2830134C"]
-			description: [
-				"{ftbquests.chapter.botania.quest24D0021DB56E9E46.description1}"
-				""
-				"{ftbquests.chapter.botania.quest24D0021DB56E9E46.description2}"
-			]
 			id: "24D0021DB56E9E46"
 			rewards: [{
 				count: 4
@@ -923,27 +597,15 @@
 			}]
 			tasks: [{
 				id: "7AC03820EA1202FA"
-				item: {
-					count: 1
-					id: "crabbersdelight:mana_crab_trap_bait"
-				}
-				match_components: "none"
+				item: { count: 1, id: "crabbersdelight:mana_crab_trap_bait" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.botania.quest24D0021DB56E9E46.title}"
 			x: 11.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["69A2A84A2830134C"]
-			description: [
-				"{ftbquests.chapter.botania.quest6DAC81A05E481E58.description1}"
-				""
-				"{ftbquests.chapter.botania.quest6DAC81A05E481E58.description2}"
-				""
-				"{ftbquests.chapter.botania.quest6DAC81A05E481E58.description3}"
-			]
-			icon: "society:mana_fruit"
+			icon: { count: 1, id: "society:mana_fruit" }
 			id: "6DAC81A05E481E58"
 			rewards: [{
 				id: "5E17942584FE76C7"
@@ -957,36 +619,20 @@
 			tasks: [
 				{
 					id: "44DA3AEA8733A65B"
-					item: {
-						count: 1
-						id: "society:mana_fruit_crop"
-					}
-					match_components: "none"
+					item: { count: 1, id: "society:mana_fruit_crop" }
 					type: "item"
 				}
 				{
 					id: "3FF24FA8CD1A07A9"
-					item: {
-						count: 1
-						id: "society:mana_fruit"
-					}
-					match_components: "none"
+					item: { count: 1, id: "society:mana_fruit" }
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.botania.quest6DAC81A05E481E58.title}"
 			x: 13.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6DAC81A05E481E58"]
-			description: [
-				"{ftbquests.chapter.botania.quest796B163FC5C54124.description1}"
-				""
-				"{ftbquests.chapter.botania.quest796B163FC5C54124.description2}"
-				""
-				"{ftbquests.chapter.botania.quest796B163FC5C54124.description3}"
-			]
 			id: "796B163FC5C54124"
 			rewards: [
 				{
@@ -1008,11 +654,7 @@
 			]
 			tasks: [{
 				id: "2AC6D58A1D827006"
-				item: {
-					count: 1
-					id: "society:mana_sprinkler"
-				}
-				match_components: "none"
+				item: { count: 1, id: "society:mana_sprinkler" }
 				type: "item"
 			}]
 			x: 13.0d
@@ -1020,42 +662,31 @@
 		}
 		{
 			dependencies: ["1BF054DD14781BAD"]
-			description: [
-				"{ftbquests.chapter.botania.quest3C7C3242A6A3E081.description1}"
-				""
-				"{ftbquests.chapter.botania.quest3C7C3242A6A3E081.description2}"
-			]
 			id: "3C7C3242A6A3E081"
-			rewards: [ ]
 			tasks: [{
 				id: "2622EA3B7A44D8C8"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.botania.quest3C7C3242A6A3E081.title}"
 			x: 3.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["3B0A3083FFE1416B"]
-			description: [
-				"{ftbquests.chapter.botania.quest656E19A85C1146B4.description1}"
-				""
-				"{ftbquests.chapter.botania.quest656E19A85C1146B4.description2}"
-			]
 			id: "656E19A85C1146B4"
 			rewards: [{
 				id: "2ACF2741BA79BC87"
-				item: "society:candied_animal_feed"
+				item: {
+					count: 1
+					id: "society:candied_animal_feed"
+				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "7B98D183C624AEA4"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.botania.quest656E19A85C1146B4.title}"
 			x: 15.5d
 			y: -1.5d
 		}
 	]
-	title: "{ftbquests.chapter.botania.title}"
 }

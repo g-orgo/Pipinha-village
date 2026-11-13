@@ -294,6 +294,7 @@
 		}
 		{
 			dependencies: ["33338792EF0994BD"]
+			icon: { count: 1, id: "quark:pickarang" }
 			id: "55F17BB945CA5BB2"
 			tasks: [{
 				id: "243D36F88B4D14A6"
@@ -304,6 +305,7 @@
 		}
 		{
 			dependencies: ["33338792EF0994BD"]
+			icon: { count: 1, id: "brewery:beer_wheat" }
 			id: "7B2AB58CA9C1C19B"
 			tasks: [{
 				id: "6A31C1AEEBE3F235"
@@ -346,6 +348,7 @@
 		}
 		{
 			dependencies: ["49477F09DF6EBA50"]
+			icon: { count: 1, id: "society:animal_fancy" }
 			id: "0E7AAB1F6C287535"
 			tasks: [{
 				id: "6C5F6D72CE1B21A3"

@@ -2049,12 +2049,26 @@
 			rewards: [
 				{
 					id: "741CB500AE30F56B"
-					item: { components: { "trofers:trophy": "trofers:butterfly_moth" }, count: 1, id: "trofers:large_pillar" }
+					item: {
+						components: {
+							"trofers:trophy": "trofers:butterfly_moth"
+						}
+						count: 1
+						id: "trofers:large_pillar"
+					}
 					type: "item"
 				}
 				{
 					id: "499A7047BB0D8E66"
-					item: { components: { "minecraft:custom_data": { variant: 1 } }, count: 1, id: "botania:flight_tiara" }
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								variant: 1
+							}
+						}
+						count: 1
+						id: "botania:flight_tiara"
+					}
 					type: "item"
 				}
 			]
@@ -2072,7 +2086,6 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{ftbquests.chapter.longwings.questB0AC1BFF726E11E.title}"
 			x: 3.0d
 			y: 10.5d
 		}

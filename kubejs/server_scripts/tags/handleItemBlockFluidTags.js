@@ -2,8 +2,9 @@
 console.info("[SOCIETY] handleItemBlockFluidTags.js loaded");
 
 ServerEvents.tags("item", (e) => {
-  // Snuffles still ships 1.20 forge tag refs; bridge them to the c: tags so its tags load.
-  e.add("forge:crops/potato", "#c:crops/potato");
+  // Snuffles still ships a 1.20 forge tag ref. Add the item itself: NeoForge's c:crops/potato
+  // already includes #forge:crops/potato, so referencing the c: tag here would be a cycle.
+  e.add("forge:crops/potato", "minecraft:potato");
   const stripTags = [
     "perfectplushies:red_fox_plushie",
     "perfectplushies:snow_fox_plushie",

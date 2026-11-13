@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "gems"
 	group: "15230846E14B6926"
+	icon: { count: 1, id: "society:prismatic_shard" }
 	id: "52FC1CA43F502926"
 	images: [
 		{
@@ -407,6 +408,7 @@
 			shape: "none"
 			size: 3.0d
 			tasks: [{
+				icon: { count: 1, id: "society:omni_geode_node" }
 				id: "5D3AF2A372B781AC"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -427,9 +429,11 @@
 			y: -2.5292517006802484d
 		}
 		{
+			icon: { count: 1, id: "society:spinel" }
 			id: "3BB6026DE3D9EA82"
 			shape: "none"
 			tasks: [{
+				icon: { count: 1, id: "society:spinel" }
 				id: "66793859E6E45068"
 				item: { count: 1, id: "society:spinel" }
 				type: "item"

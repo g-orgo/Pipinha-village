@@ -301,3 +301,13 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   Pendente com o dono: extrusor 1.21 só aceita blocos laterais; blackstone (tinta do CEI, fluido não existe mais) e
   cobbled_limestone (apple_juice sem bloco, o id do bloco é da garrafa do Vinery) seguem falhando até escolher substitutos.
   Ruído de jar (não é nosso): Sable copycat_catwalk (copycats), overlays do hobbit_hill_village, smallships ao sair.
+- 2026-11-13 20:10: (1) StackOverflow em ServerEvents.tags (abortava todas as tags de item do KubeJS): a ponte
+  forge:crops/potato -> #c:crops/potato fazia ciclo, porque o c:crops/potato da NeoForge já inclui #forge:crops/potato;
+  agora adiciona minecraft:potato direto. (2) Questbook sem ícones: o FTB Quests 1.21.1 só lê icon como compound e
+  descartou os ícones em string do port ao regravar. tools/questport/restore_icons.py copia os 281 ícones da 1.20.1
+  (por id hex) no formato `icon: { count: 1, id: "..." }`; ids conferidos (Oreganized é jar-in-jar).
+  Ruído de jar: 33 cardápios do Cozy Cafe vêm do próprio jar (mods ausentes), não são nossos.
+  Pendente: 10 lojas society_trading falham inteiras por ids ausentes (society:invitation, óculos/queijos society,
+  nethervinery, create_central_kitchen, candlelight, species, etc.): decidir por id renomear ou tirar a oferta.
+  Pendente F7: society:invitation e society:villager (itens do mod society 1.20.1) não existem; 34 tarefas de quest
+  aparecem como ftbquests:missing_item.

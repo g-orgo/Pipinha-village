@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "relics"
 	group: "15230846E14B6926"
+	icon: { count: 1, id: "relics:shadow_glaive" }
 	id: "42AACEA9490B775F"
 	images: [ ]
 	order_index: 6
@@ -327,6 +328,7 @@
 			shape: "octagon"
 			size: 3.0d
 			tasks: [{
+				icon: { count: 1, id: "relics:shadow_glaive" }
 				id: "4A70A735A003E168"
 				stat: "minecraft:play_time"
 				type: "stat"

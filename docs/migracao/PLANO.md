@@ -56,10 +56,12 @@ vanilla_ou_inutil = ["Trials Chambers Reuploaded",  # trial chambers são vanill
   "Better Advanced Tooltips Backport", "SerializerDebug", "FTB Quest Localizer",
   "Item Filters", "ServerConfig Updater", "Serene Seasons Fix - Revived",  # conferir se ainda precisa
   "Refined Storage (Fixes) Mixin", "Libnonymous"]
-sem_substituto = ["Botania", "Botania Seeds", "Dracovita Farm Life", "Little Tractor",
+# Com sucessor/port (2026-11-13): Botania -> Botania Revived (+ Botania Seeds em KubeJS),
+# Re:Deco -> Redecorate, Domestication Innovation -> Redomesticate, Fantasy's Furniture (port).
+# Candidato a conferir: Sturdy Farmland -> Sunrise Gardening (sucessor declarado, build 1.21.1 a confirmar).
+sem_substituto = ["Dracovita Farm Life", "Little Tractor",
   "Croptania", "Gensokyo Delight", "Quark Delight", "Farmer's Delight Compat",
-  "NetherVinery", "Fantasy's Furniture", "Re:Deco", "Rainbow Oaks Renewed",
-  "Domestication Innovation Fixed", "Species", "Hamsters Plus Lite", "Legendary Creatures",
+  "NetherVinery", "Rainbow Oaks Renewed", "Species", "Hamsters Plus Lite", "Legendary Creatures",
   "Sturdy Farmland", "Balloon Box", "Fluid & Foolish", "More Minecarts and Rails",
   "Refined Storage Addons", "Max Enchant X", "Loot Journal", "Quests Additions",
   "VerdantVibes", "Radiant Gear", "Longwing Nuker", "Online Detector", "..."]  # resto no tsv

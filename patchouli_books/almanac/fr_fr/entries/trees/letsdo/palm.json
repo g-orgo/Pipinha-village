@@ -125,7 +125,7 @@
                 "mapping": {
                     "0": "beachparty:palm_leaves",
                     "L": "beachparty:palm_leaves",
-                    "C": "beachparty:coconut_hanging",
+                    "C": "beachparty:hanging_coconut",
                     "W": "beachparty:palm_log[axis=y]"
                 }
             }

@@ -572,7 +572,7 @@ StartupEvents.registry("item", (e) => {
     .food((food) => {
       food.nutrition(3);
       food.saturation(3);
-      food.effect("farm_and_charm:sweets", 300, 1, 1.0);
+      food.effect("minecraft:speed", 300, 0, 1.0); // farm_and_charm:sweets was dropped in 1.21.1
     });
   e.create("society:ancient_cookie")
     .texture("society:item/ancient_cookie")
@@ -598,7 +598,7 @@ StartupEvents.registry("item", (e) => {
       food.nutrition(2);
       food.saturation(14);
       food.effect("minecraft:strength", 3000, 0, 1.0);
-      food.effect("farm_and_charm:sweets", 3000, 2, 1.0);
+      food.effect("minecraft:speed", 3000, 1, 1.0); // farm_and_charm:sweets was dropped in 1.21.1
     });
   e.create("society:magic_rock_candy")
     .texture("society:item/magic_rock_candy")
@@ -610,7 +610,7 @@ StartupEvents.registry("item", (e) => {
       food.effect("minecraft:luck", 6000, 2, 1.0);
       food.effect("minecraft:strength", 6000, 0, 1.0);
       food.effect("minecraft:resistance", 6000, 2, 1.0);
-      food.effect("farm_and_charm:sweets", 6000, 2, 1.0);
+      food.effect("minecraft:speed", 6000, 1, 1.0); // farm_and_charm:sweets was dropped in 1.21.1
       food.effect("farm_and_charm:feast", 6000, 2, 1.0);
     });
 

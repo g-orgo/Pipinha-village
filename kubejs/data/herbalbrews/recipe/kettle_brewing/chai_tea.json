@@ -14,5 +14,7 @@
     "id": "herbalbrews:chai_tea"
   },
   "fluid_amount": 20,
-  "heat_amount": 50
+  "heat_amount": 50,
+  "effect": "herbalbrews:tough",
+  "effect_duration": 6000
 }

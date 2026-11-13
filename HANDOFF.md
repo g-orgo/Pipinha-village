@@ -291,3 +291,13 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   Validator: PASS em 6/7; o 7º (236 stubs antigos forge:conditions/forge:false em kubejs/data) corrigido pelo brain com /tmp forge2neo.py (236 arquivos, todos parseiam). Tags forge:* do próprio pack continuam (kubejs/data/forge/tags).
 - 2026-11-13 (brain): commits f09f07294 + 4652c6182 enviados. Dono instalou Sunrise Gardening (sucessor do Sturdy Farmland, mesmos ids em sunrisegardening:*). Em andamento: backend-operator restaura conteúdo (rename de namespace, receitas de fertilizante, loot, quests, aspersores, config); conversor refaz o save com dew_drop -> sunrisegardening. Depois: validator, commit, push.
 - 2026-11-13 (brain): Sunrise Gardening fechado. Rename dew_drop -> sunrisegardening (28 arquivos), 15 receitas de fertilizante/vaso, 7 receitas de aspersor + remoções do mod, hay golem, loot (floricultura, balloonbox, FFB farmland), 11 quests + 21 chaves de lang, reward table fertilizer.snbt, save round 5. Validator PASS 7/7. Commit em andamento.
+- 2026-11-13 (erros no chat do "Mapa solo", log 19:31): helper custom() de 5 scripts de receitas (crushing, bottle, mixer,
+  grape juice, pressing) não retornava a receita e o .id() encadeado abortava o resto do arquivo: agora retorna (stub quando
+  pulada). hideJEIItems.js aceita "@modid" (Platform.isLoaded) em vez de Item.exists. Tag forge:crops/potato -> #c:crops/potato
+  (snuffles). Almanac do Patchouli vazio: beachparty:coconut_hanging -> hanging_coconut, brewery:hop_trellis -> hops_crop.
+  farm_and_charm:sweets não existe na 1.21.1 (quebrava o JEED no EMI): 3 comidas society trocadas por minecraft:speed.
+  31 JSON de kubejs/data no formato 1.20 corrigidos (rotton_beam removido, saída não existe; winter rune snow_block no lugar
+  do raw_snowflake; ancient_cookie usa #c:eggs no lugar do ovo do Species; chai_tea com herbalbrews:tough 6000).
+  Pendente com o dono: extrusor 1.21 só aceita blocos laterais; blackstone (tinta do CEI, fluido não existe mais) e
+  cobbled_limestone (apple_juice sem bloco, o id do bloco é da garrafa do Vinery) seguem falhando até escolher substitutos.
+  Ruído de jar (não é nosso): Sable copycat_catwalk (copycats), overlays do hobbit_hill_village, smallships ao sair.

@@ -25,9 +25,7 @@
       "tag": "society:large_milk"
     }
   ],
-  "container": {
-    "item": "minecraft:bowl"
-  },
+  "container": "minecraft:bowl",
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",

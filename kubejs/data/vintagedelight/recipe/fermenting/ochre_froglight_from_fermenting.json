@@ -27,6 +27,6 @@
   },
   "secondaryOutput": {
     "count": 1,
-    "item": "minecraft:glass_bottle"
+    "id": "minecraft:glass_bottle"
   }
 }

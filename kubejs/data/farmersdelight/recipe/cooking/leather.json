@@ -25,8 +25,5 @@
     {
       "tag": "c:salt"
     }
-  ],
-  "container": {
-    "id": "minecraft:air"
-  }
+  ]
 }

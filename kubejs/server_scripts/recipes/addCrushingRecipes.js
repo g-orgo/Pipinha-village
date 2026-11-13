@@ -3,7 +3,8 @@ console.info("[SOCIETY] addCrushingRecipes.js loaded");
 ServerEvents.recipes((e) => {
   const custom = (recipe) => {
     const converted = global.toRecipe121(recipe);
-    if (global.recipeIdsExist121(converted)) e.custom(converted);
+    // Return the recipe (or a no-op stub when skipped) so callers can chain .id().
+    return global.recipeIdsExist121(converted) ? e.custom(converted) : { id: () => {} };
   };
   const crushedRecipes = (input, output, outputCount, ignoreMincer) => {
     if (!ignoreMincer) {

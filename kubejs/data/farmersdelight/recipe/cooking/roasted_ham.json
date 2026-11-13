@@ -25,8 +25,5 @@
     {
       "tag": "c:crops/carrot"
     }
-  ],
-  "container": {
-    "id": "minecraft:air"
-  }
+  ]
 }

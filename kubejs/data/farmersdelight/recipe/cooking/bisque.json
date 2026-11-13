@@ -6,14 +6,17 @@
   "cookingtime": 200,
   "experience": 1.0,
   "ingredients": [
-    [
-      {
-        "tag": "crabbersdelight:cooked_seafood"
-      },
-      {
-        "tag": "crabbersdelight:raw_seafood"
-      }
-    ],
+    {
+      "type": "neoforge:compound",
+      "children": [
+        {
+          "tag": "crabbersdelight:cooked_seafood"
+        },
+        {
+          "tag": "crabbersdelight:raw_seafood"
+        }
+      ]
+    },
     {
       "item": "farm_and_charm:onion"
     },

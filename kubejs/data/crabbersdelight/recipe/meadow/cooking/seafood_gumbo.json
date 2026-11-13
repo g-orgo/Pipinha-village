@@ -20,9 +20,7 @@
       "tag": "c:foods/raw_pork"
     }
   ],
-  "container": {
-    "item": "minecraft:bowl"
-  },
+  "container": "minecraft:bowl",
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",

@@ -14,9 +14,7 @@
       "tag": "c:sugar"
     }
   ],
-  "container": {
-    "item": "bakery:jar"
-  },
+  "container": "bakery:jar",
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",

@@ -4,9 +4,6 @@
   "providers": [
     {
       "item": "relics:midnight_robe"
-    },
-    {
-      "item": "relics:arrow_quiver"
     }
   ]
 }

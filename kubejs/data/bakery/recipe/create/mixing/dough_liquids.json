@@ -14,7 +14,8 @@
     },
     {
       "amount": 250,
-      "fluidTag": "forge:water"
+      "fluid": "minecraft:water",
+      "type": "neoforge:single"
     },
     {
       "tag": "c:sugar"

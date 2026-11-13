@@ -17,7 +17,7 @@
           ["F"]
         ],
         "mapping": {
-          "0": "brewery:hop_trellis[age=6]",
+          "0": "brewery:hops_crop[age=4,supported=true]",
           "F": "minecraft:farmland[moisture=7]"
         }
       }

@@ -4,7 +4,9 @@
 	default_quest_shape: ""
 	filename: "fishing"
 	group: "15230846E14B6926"
-	icon: { count: 1, id: "minecraft:fishing_rod" }
+	icon: {
+		id: "minecraft:fishing_rod"
+	}
 	id: "377D458757642E97"
 	images: [
 		{
@@ -1576,7 +1578,9 @@
 			shape: "none"
 			size: 3.0d
 			tasks: [{
-				icon: { count: 1, id: "aquaculture:neptunium_fishing_rod" }
+				icon: {
+					id: "aquaculture:neptunium_fishing_rod"
+				}
 				id: "13FE62BC8E043289"
 				stat: "minecraft:play_time"
 				type: "stat"

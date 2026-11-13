@@ -60,7 +60,7 @@
     },
     {
       "offer": {
-        "id": "farm_and_charm:strawberry_seed",
+        "id": "farm_and_charm:strawberry_seeds",
         "count": 1
       },
       "request": {
@@ -1679,86 +1679,6 @@
     },
     {
       "offer": {
-        "id": "moreminecarts:glass_cactus",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 4
-      },
-      "numismatics_cost": 2048,
-      "seasons_required": [
-        "early_summer",
-        "mid_summer",
-        "late_summer"
-      ],
-      "stage_override": "universal_methods_of_farming",
-      "trade_id": "market_glass_cactus"
-    },
-    {
-      "offer": {
-        "id": "moreminecarts:glass_cactus",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 4
-      },
-      "numismatics_cost": 1843,
-      "seasons_required": [
-        "early_summer",
-        "mid_summer",
-        "late_summer"
-      ],
-      "stage_override": "mercantil_farming_1_universal_methods_of_farming",
-      "trade_id": "market_glass_cactus_mercantil_1",
-      "stage_required": "mercantil_farming_1",
-      "stage_removed": "mercantil_farming_2",
-      "unlock_description": "jei.society_trading.mercantil_discount_1"
-    },
-    {
-      "offer": {
-        "id": "moreminecarts:glass_cactus",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 4
-      },
-      "numismatics_cost": 1741,
-      "seasons_required": [
-        "early_summer",
-        "mid_summer",
-        "late_summer"
-      ],
-      "stage_override": "mercantil_farming_2_universal_methods_of_farming",
-      "trade_id": "market_glass_cactus_mercantil_2",
-      "stage_required": "mercantil_farming_2",
-      "stage_removed": "mercantil_farming_3",
-      "unlock_description": "jei.society_trading.mercantil_discount_2"
-    },
-    {
-      "offer": {
-        "id": "moreminecarts:glass_cactus",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 4
-      },
-      "numismatics_cost": 1536,
-      "seasons_required": [
-        "early_summer",
-        "mid_summer",
-        "late_summer"
-      ],
-      "stage_override": "mercantil_farming_3_universal_methods_of_farming",
-      "trade_id": "market_glass_cactus_mercantil_3",
-      "stage_required": "mercantil_farming_3",
-      "unlock_description": "jei.society_trading.mercantil_discount_3"
-    },
-    {
-      "offer": {
         "id": "minecraft:bamboo",
         "count": 1
       },
@@ -2313,78 +2233,6 @@
       "numismatics_cost": 15360,
       "trade_id": "farmer_dehydrator_for_sun_mercantil_3",
       "stage_required": "mercantil_farming_3",
-      "unlock_description": "jei.society_trading.mercantil_discount_3"
-    },
-    {
-      "offer": {
-        "id": "create_central_kitchen:cooking_guide",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 8
-      },
-      "second_request": {
-        "id": "society:prismatic_shard",
-        "count": 1
-      },
-      "numismatics_cost": 32768,
-      "trade_id": "farmer_cooking_guide_for_sun"
-    },
-    {
-      "offer": {
-        "id": "create_central_kitchen:cooking_guide",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 8
-      },
-      "second_request": {
-        "id": "society:prismatic_shard",
-        "count": 1
-      },
-      "numismatics_cost": 29491,
-      "trade_id": "farmer_cooking_guide_for_sun_mercantil_1",
-      "stage_required": "mercantil_kitchen_1",
-      "stage_removed": "mercantil_kitchen_2",
-      "unlock_description": "jei.society_trading.mercantil_discount_1"
-    },
-    {
-      "offer": {
-        "id": "create_central_kitchen:cooking_guide",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 8
-      },
-      "second_request": {
-        "id": "society:prismatic_shard",
-        "count": 1
-      },
-      "numismatics_cost": 27853,
-      "trade_id": "farmer_cooking_guide_for_sun_mercantil_2",
-      "stage_required": "mercantil_kitchen_2",
-      "stage_removed": "mercantil_kitchen_3",
-      "unlock_description": "jei.society_trading.mercantil_discount_2"
-    },
-    {
-      "offer": {
-        "id": "create_central_kitchen:cooking_guide",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 8
-      },
-      "second_request": {
-        "id": "society:prismatic_shard",
-        "count": 1
-      },
-      "numismatics_cost": 24576,
-      "trade_id": "farmer_cooking_guide_for_sun_mercantil_3",
-      "stage_required": "mercantil_kitchen_3",
       "unlock_description": "jei.society_trading.mercantil_discount_3"
     },
     {

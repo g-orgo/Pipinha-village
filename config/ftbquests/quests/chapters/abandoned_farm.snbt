@@ -7,7 +7,9 @@
 	group: "106AD9AA3ADDE3AE"
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_complete: true
-	icon: { count: 1, id: "farm_and_charm:barley" }
+	icon: {
+		id: "farm_and_charm:barley"
+	}
 	id: "7C65158A3343D7FA"
 	images: [{
 		height: 10.0d
@@ -22,7 +24,9 @@
 	quest_links: [ ]
 	quests: [
 		{
-			icon: { count: 1, id: "supplementaries:present_green" }
+			icon: {
+				id: "supplementaries:present_green"
+			}
 			id: "661A3A466ABF29BA"
 			rewards: [{
 				id: "23C19AD4A368AA0F"
@@ -82,7 +86,9 @@
 			hide_details_until_startable: false
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
-			icon: { count: 1, id: "farm_and_charm:barley" }
+			icon: {
+				id: "farm_and_charm:barley"
+			}
 			id: "6EBAA004C1A50E98"
 			rewards: [
 				{
@@ -115,7 +121,9 @@
 			]
 			shape: "none"
 			tasks: [{
-				icon: { count: 1, id: "society:furniture_box" }
+				icon: {
+					id: "society:furniture_box"
+				}
 				id: "3D497F4CF396A37A"
 				stat: "minecraft:play_time"
 				type: "stat"

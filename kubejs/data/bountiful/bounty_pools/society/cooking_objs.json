@@ -199,8 +199,8 @@
 			"unitWorth": 174
 		},
 		"cooking_mashed_potatoes": {
-			"type": "minecraft:item",
-			"content": "veggiesdelight:mashed_potatoes",
+			"type": "item_tag",
+			"content": "sunlit:compat/mashed_potatoes",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -661,8 +661,8 @@
 			"unitWorth": 1218
 		},
 		"cooking_apple_pie": {
-			"type": "minecraft:item",
-			"content": "farmersdelight:apple_pie",
+			"type": "item_tag",
+			"content": "sunlit:compat/apple_pie",
 			"rarity": "UNCOMMON",
 			"weightMult": 0.5,
 			"amount": {
@@ -672,8 +672,8 @@
 			"unitWorth": 792
 		},
 		"cooking_melon_juice": {
-			"type": "minecraft:item",
-			"content": "kaleidoscope_tavern:watermelon_juice",
+			"type": "item_tag",
+			"content": "sunlit:compat/melon_juice",
 			"rarity": "UNCOMMON",
 			"weightMult": 0.5,
 			"amount": {
@@ -738,8 +738,8 @@
 			"unitWorth": 204
 		},
 		"cooking_cheese_sandwich": {
-			"type": "minecraft:item",
-			"content": "meadow:cheese_sandwich",
+			"type": "item_tag",
+			"content": "sunlit:compat/cheese_sandwich",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -771,8 +771,8 @@
 			"unitWorth": 48
 		},
 		"cooking_bread": {
-			"type": "minecraft:item",
-			"content": "bakery:bread",
+			"type": "item_tag",
+			"content": "sunlit:compat/bread",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -991,8 +991,8 @@
 			"unitWorth": 63
 		},
 		"cooking_gingerbread_cookie": {
-			"type": "minecraft:item",
-			"content": "snowyspirit:gingerbread_cookie",
+			"type": "item_tag",
+			"content": "sunlit:compat/gingerbread_cookie",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -1002,8 +1002,8 @@
 			"unitWorth": 33
 		},
 		"cooking_candy_cane": {
-			"type": "minecraft:item",
-			"content": "snowyspirit:candy_cane",
+			"type": "item_tag",
+			"content": "sunlit:compat/candy_cane",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -1409,8 +1409,8 @@
 			"unitWorth": 108
 		},
 		"cooking_carrot_cake": {
-			"type": "minecraft:item",
-			"content": "veggiesdelight:carrot_cake",
+			"type": "item_tag",
+			"content": "sunlit:compat/carrot_cake",
 			"rarity": "UNCOMMON",
 			"weightMult": 0.5,
 			"amount": {
@@ -1519,8 +1519,8 @@
 			"unitWorth": 1908
 		},
 		"cooking_pickled_onion": {
-			"type": "minecraft:item",
-			"content": "vintagedelight:pickled_onion",
+			"type": "item_tag",
+			"content": "sunlit:compat/pickled_onion",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -1530,8 +1530,8 @@
 			"unitWorth": 126
 		},
 		"cooking_pickle": {
-			"type": "minecraft:item",
-			"content": "vintagedelight:pickle",
+			"type": "item_tag",
+			"content": "sunlit:compat/pickle",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -1585,8 +1585,8 @@
 			"unitWorth": 1080
 		},
 		"cooking_pickled_beetroot": {
-			"type": "minecraft:item",
-			"content": "vintagedelight:pickled_beetroot",
+			"type": "item_tag",
+			"content": "sunlit:compat/pickled_beetroot",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -1629,8 +1629,8 @@
 			"unitWorth": 576
 		},
 		"cooking_kimchi": {
-			"type": "minecraft:item",
-			"content": "vintagedelight:kimchi",
+			"type": "item_tag",
+			"content": "sunlit:compat/kimchi",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -1860,8 +1860,8 @@
 			"unitWorth": 144
 		},
 		"cooking_roasted_peanut": {
-			"type": "minecraft:item",
-			"content": "vintagedelight:roasted_peanut",
+			"type": "item_tag",
+			"content": "sunlit:compat/roasted_peanut",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -1904,8 +1904,8 @@
 			"unitWorth": 324
 		},
 		"cooking_roasted_chestnuts": {
-			"type": "minecraft:item",
-			"content": "windswept:roasted_chestnuts",
+			"type": "item_tag",
+			"content": "sunlit:compat/roasted_chestnut",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -2113,8 +2113,8 @@
 			"unitWorth": 1458
 		},
 		"cooking_cooked_crab_leg": {
-			"type": "minecraft:item",
-			"content": "quark:cooked_crab_leg",
+			"type": "item_tag",
+			"content": "sunlit:compat/crab_leg",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -2245,8 +2245,8 @@
 			"unitWorth": 2349
 		},
 		"cooking_toast": {
-			"type": "minecraft:item",
-			"content": "bakery:toast",
+			"type": "item_tag",
+			"content": "sunlit:compat/toast",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -2586,8 +2586,8 @@
 			"unitWorth": 972
 		},
 		"cooking_tomato_sauce": {
-			"type": "minecraft:item",
-			"content": "farmersdelight:tomato_sauce",
+			"type": "item_tag",
+			"content": "sunlit:compat/tomato_sauce",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -2641,8 +2641,8 @@
 			"unitWorth": 672
 		},
 		"cooking_onion_soup": {
-			"type": "minecraft:item",
-			"content": "farmersdelight:onion_soup",
+			"type": "item_tag",
+			"content": "sunlit:compat/onion_soup",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -2718,8 +2718,8 @@
 			"unitWorth": 420
 		},
 		"cooking_apple_cider": {
-			"type": "minecraft:item",
-			"content": "farmersdelight:apple_cider",
+			"type": "item_tag",
+			"content": "sunlit:compat/apple_cider",
 			"rarity": "UNCOMMON",
 			"weightMult": 0.5,
 			"amount": {
@@ -2993,8 +2993,8 @@
 			"unitWorth": 600
 		},
 		"cooking_dumplings": {
-			"type": "minecraft:item",
-			"content": "kaleidoscope_cookery:dumpling",
+			"type": "item_tag",
+			"content": "sunlit:compat/dumpling",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -3037,8 +3037,8 @@
 			"unitWorth": 666
 		},
 		"cooking_cooked_rice": {
-			"type": "minecraft:item",
-			"content": "kaleidoscope_cookery:cooked_rice",
+			"type": "item_tag",
+			"content": "sunlit:compat/cooked_rice",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -3114,8 +3114,8 @@
 			"unitWorth": 3384
 		},
 		"cooking_fried_rice": {
-			"type": "minecraft:item",
-			"content": "farmersdelight:fried_rice",
+			"type": "item_tag",
+			"content": "sunlit:compat/fried_rice",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -3180,8 +3180,8 @@
 			"unitWorth": 1224
 		},
 		"cooking_glowberry_jam": {
-			"type": "minecraft:item",
-			"content": "bakery:glowberry_jam",
+			"type": "item_tag",
+			"content": "sunlit:compat/glow_berry_jam",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -3202,8 +3202,8 @@
 			"unitWorth": 330
 		},
 		"cooking_sweetberry_jam": {
-			"type": "minecraft:item",
-			"content": "brewinandchewin:sweet_berry_jam",
+			"type": "item_tag",
+			"content": "sunlit:compat/sweet_berry_jam",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -3246,8 +3246,8 @@
 			"unitWorth": 2232
 		},
 		"cooking_potato_soup": {
-			"type": "minecraft:item",
-			"content": "farm_and_charm:potato_soup",
+			"type": "item_tag",
+			"content": "sunlit:compat/potato_soup",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -3257,8 +3257,8 @@
 			"unitWorth": 216
 		},
 		"cooking_apple_jam": {
-			"type": "minecraft:item",
-			"content": "bakery:apple_jam",
+			"type": "item_tag",
+			"content": "sunlit:compat/apple_jam",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -3488,8 +3488,8 @@
 			"unitWorth": 552
 		},
 		"cooking_carrot_juice": {
-			"type": "minecraft:item",
-			"content": "veggiesdelight:carrot_juice",
+			"type": "item_tag",
+			"content": "sunlit:compat/carrot_juice",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -4247,8 +4247,8 @@
 			"unitWorth": 216
 		},
 		"cooking_butter": {
-			"type": "minecraft:item",
-			"content": "farm_and_charm:butter",
+			"type": "item_tag",
+			"content": "sunlit:compat/butter",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {

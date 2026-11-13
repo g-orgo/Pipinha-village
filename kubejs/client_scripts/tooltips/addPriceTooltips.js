@@ -249,7 +249,7 @@ const addPriceTooltip = (tooltip, sellable, attribute) => {
     value: global.getConfiguredValue(sellable.value, attribute),
     attribute: attribute,
   };
-  tooltip.add(sellable.item, (text) => text.dynamic("pipinha:price"));
+  tooltip.modify(sellable.item, (text) => text.dynamic("pipinha:price"));
 };
 
 const calculateCost = (coin, count, stackSize) => {
@@ -368,11 +368,11 @@ ItemEvents.modifyTooltips((event) => {
     "numismatics:prismatic_coin",
   ];
   coinTooltips.forEach((coin) => {
-    tooltip.add(coin, (text) => text.dynamic("pipinha:coin"));
+    tooltip.modify(coin, (text) => text.dynamic("pipinha:coin"));
   });
 
-  tooltip.add("longwings:butterfly", (text) => text.dynamic("pipinha:longwing"));
-  tooltip.add("longwings:moth", (text) => text.dynamic("pipinha:longwing"));
+  tooltip.modify("longwings:butterfly", (text) => text.dynamic("pipinha:longwing"));
+  tooltip.modify("longwings:moth", (text) => text.dynamic("pipinha:longwing"));
   // Ore
   global.ore.forEach((item) => {
     addPriceTooltip(tooltip, item, "gem");

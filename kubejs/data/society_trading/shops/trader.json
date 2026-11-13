@@ -261,17 +261,6 @@
     },
     {
       "offer": {
-        "id": "society:black_opal",
-        "count": 1
-      },
-      "request": {
-        "id": "netherdepthsupgrade:baked_obsidianfish_stew",
-        "count": 32
-      },
-      "trade_id": "minecraft:trader_black_opal_for_baked_obsidianfish_stew"
-    },
-    {
-      "offer": {
         "id": "society:frosted_tip",
         "count": 1
       },

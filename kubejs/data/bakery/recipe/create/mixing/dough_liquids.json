@@ -10,7 +10,7 @@
       "tag": "bakery:wheat"
     },
     {
-      "item": "bakery:yeast"
+      "item": "farm_and_charm:yeast"
     },
     {
       "amount": 250,

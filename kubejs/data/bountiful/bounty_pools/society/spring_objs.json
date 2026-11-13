@@ -12,8 +12,8 @@
 			"unitWorth": 60
 		},
 		"spring_onion": {
-			"type": "minecraft:item",
-			"content": "farm_and_charm:onion",
+			"type": "item_tag",
+			"content": "sunlit:compat/onion",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -56,8 +56,8 @@
 			"unitWorth": 54
 		},
 		"spring_lettuce": {
-			"type": "minecraft:item",
-			"content": "kaleidoscope_cookery:lettuce",
+			"type": "item_tag",
+			"content": "sunlit:compat/lettuce",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -100,8 +100,8 @@
 			"unitWorth": 144
 		},
 		"spring_tomato": {
-			"type": "minecraft:item",
-			"content": "kaleidoscope_cookery:tomato",
+			"type": "item_tag",
+			"content": "sunlit:compat/tomato",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -210,8 +210,8 @@
 			"unitWorth": 216
 		},
 		"spring_cucumber": {
-			"type": "minecraft:item",
-			"content": "vintagedelight:cucumber",
+			"type": "item_tag",
+			"content": "sunlit:compat/cucumber",
 			"rarity": "UNCOMMON",
 			"weightMult": 0.5,
 			"amount": {

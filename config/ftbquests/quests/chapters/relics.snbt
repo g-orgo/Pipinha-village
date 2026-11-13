@@ -3,7 +3,69 @@
 	default_quest_shape: ""
 	filename: "relics"
 	group: "15230846E14B6926"
-	icon: { count: 1, id: "relics:shadow_glaive" }
+	icon: {
+		components: {
+			"relics:data": {
+				abilities: {
+					abilities: {
+						cloning: {
+							extender: {
+								cooldown: 0
+								cooldownCap: 0
+								ticking: 0b
+							}
+							lock: {
+								breaks: 0
+							}
+							points: 0
+							research: {
+								links: { }
+								researched: 0b
+							}
+							stats: {
+								chance: {
+									initialValue: 0.07313d
+								}
+							}
+						}
+						mayhem: {
+							extender: {
+								cooldown: 0
+								cooldownCap: 0
+								ticking: 0b
+							}
+							lock: {
+								breaks: 5
+							}
+							points: 0
+							research: {
+								links: { }
+								researched: 0b
+							}
+							stats: {
+								bounces: {
+									initialValue: 3.69818d
+								}
+								chance: {
+									initialValue: 0.11772d
+								}
+								damage: {
+									initialValue: 0.17254d
+								}
+							}
+						}
+					}
+				}
+				leveling: {
+					experience: 0
+					level: 0
+					luck: 0
+					points: 0
+				}
+			}
+		}
+		id: "relics:shadow_glaive"
+	}
 	id: "42AACEA9490B775F"
 	images: [ ]
 	order_index: 6
@@ -13,7 +75,7 @@
 			id: "5FDBDED97111F43B"
 			tasks: [{
 				id: "4275B723069F4C05"
-				item: { components: { "ftbquests:missing_item": "relics:horse_flute" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "relics:horse_flute" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -213,7 +275,7 @@
 			id: "74DAEBEF604D17EA"
 			tasks: [{
 				id: "3637C05CA3E79DBC"
-				item: { components: { "ftbquests:missing_item": "relics:arrow_quiver" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "relics:arrow_quiver" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -223,7 +285,7 @@
 			id: "601AF949E5E96321"
 			tasks: [{
 				id: "7542F8B879E6F226"
-				item: { components: { "ftbquests:missing_item": "relics:spatial_sign" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "relics:spatial_sign" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -328,7 +390,69 @@
 			shape: "octagon"
 			size: 3.0d
 			tasks: [{
-				icon: { count: 1, id: "relics:shadow_glaive" }
+				icon: {
+					components: {
+						"relics:data": {
+							abilities: {
+								abilities: {
+									cloning: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 0
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											chance: {
+												initialValue: 0.09626d
+											}
+										}
+									}
+									mayhem: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											bounces: {
+												initialValue: 3.31846d
+											}
+											chance: {
+												initialValue: 0.08203d
+											}
+											damage: {
+												initialValue: 0.1858d
+											}
+										}
+									}
+								}
+							}
+							leveling: {
+								experience: 0
+								level: 0
+								luck: 0
+								points: 0
+							}
+						}
+					}
+					id: "relics:shadow_glaive"
+				}
 				id: "4A70A735A003E168"
 				stat: "minecraft:play_time"
 				type: "stat"

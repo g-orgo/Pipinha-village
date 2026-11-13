@@ -23,7 +23,7 @@
                 "min": 0.0
               },
               "function": "minecraft:enchanted_count_increase",
-"enchantment": "minecraft:looting"
+              "enchantment": "minecraft:looting"
             }
           ],
           "name": "rottencreatures:frozen_rotten_flesh"
@@ -53,7 +53,7 @@
                 "min": 0.0
               },
               "function": "minecraft:enchanted_count_increase",
-"enchantment": "minecraft:looting"
+              "enchantment": "minecraft:looting"
             }
           ],
           "name": "windswept:icicles"
@@ -68,7 +68,14 @@
           "condition": "minecraft:killed_by_player"
         },
         {
-          "condition": "minecraft:random_chance_with_enchanted_bonus", "enchantment": "minecraft:looting", "unenchanted_chance": 0.025, "enchanted_chance": {"type": "minecraft:linear", "base": 0.035, "per_level_above_first": 0.01}
+          "condition": "minecraft:random_chance_with_enchanted_bonus",
+          "enchantment": "minecraft:looting",
+          "unenchanted_chance": 0.025,
+          "enchanted_chance": {
+            "type": "minecraft:linear",
+            "base": 0.035,
+            "per_level_above_first": 0.01
+          }
         }
       ],
       "entries": [
@@ -108,7 +115,7 @@
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
-          "entity": "killer",
+          "entity": "attacker",
           "predicate": {
             "type": "#minecraft:skeletons"
           }

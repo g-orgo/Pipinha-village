@@ -311,3 +311,42 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   nethervinery, create_central_kitchen, candlelight, species, etc.): decidir por id renomear ou tirar a oferta.
   Pendente F7: society:invitation e society:villager (itens do mod society 1.20.1) não existem; 34 tarefas de quest
   aparecem como ftbquests:missing_item.
+
+## 2026-11-13 20:15: tooltip das moedas + erros do "Mapa solo" (log 20:10) + fechar a migração
+- FEITO (brain): tooltip "ArrowFunction (1) => {...}" nas moedas: KubeJS 7 `add(item, List<Text>)` x `modify(item, builder)`;
+  15 chamadas `tooltip.add(id, (text) => text.dynamic(...))` -> `modify` (addPriceTooltips/addAdvancedTooltips);
+  `global.guardItemEvent.add` manda função para `modify`.
+- Unidades em paralelo (operadores):
+  A loot: 7 scripts LootJS 3.7 quebrados (seasonfish, profession, farming, mining, general, fishing, adventurer),
+    12 loot JSON nossos no formato 1.20, overrides para loot de jar quebrado, GLMs dos delights.
+  B receitas: grape/mixer/pressing/bottle/removeRecipes/sewing, bakery dough_liquids, extrusor, stubs de receita de jar.
+  C F7 society: itens do mod society ausentes (invitation, villager...), 10 lojas, 60 tarefas missing_item, loot de vila, EmbersTextAPI.
+  D menu: changelogs, créditos (barra transparente), pause screen, textos com "Sunlit", página do pinguim.
+  E docs + keybinding presets + resource packs no options.txt (autorizado) + Small Ships ao fechar.
+  F funções desligadas: modifyItems (21 itens), cabeças no minimapa, noSneakEating, etc.
+- Depois: validator, commit na branch 1.21.1, dono abre o jogo.
+- 20:2x FEITO: D menus (changelog com Botania Revived, credits "Original Dev Team", wiki -> "Society Wiki", lang sem "Sunlit"
+  exceto nomes de itens: Sunlit Crystal/Flux/Singing Frog/Market ficam para o dono); E docs/state.md, keybinding presets
+  (pasta só tem loader, nada a conferir), resource packs já aceitam o formato 34 (nada trocado; Excalibur Twigs/Vinery sem
+  versão 1.21.1), Small Ships 2.0.2 ao fechar = bug do mod (última versão); F1 status dos ~40 itens já cobertos;
+  F2 minimapa/noSneakEating Rhino OK; golem de feno ok com sunrisegardening; loot JSON: 304/304 tabelas com override
+  (tools/dataport/fix_jar_loot.py: 275 vazias, 17 convertidas) + 20 GLMs (lootTable->table, can_item_perform_ability);
+  receitas B1: guards + brain reescreveu global.recipeIdsExist121 (BuiltInRegistries.containsKey; Fluid.exists deixava
+  passar fluidos do Vinery). C: 6 itens do mod society registrados (registerSocietyModItems.js), 19 tarefas de quest.
+- EM CURSO: loot scripts LootJS 3.7 (4 operadores, brief no scratchpad LOOTJS37_BRIEF.md); C refazendo ofertas
+  removidas por engano + queijos maturados (aged_*_cheese_block) + catalisadores; B2/B3 receitas (substitutos, removeRecipes,
+  extrusor, stubs de receitas de jar). Pendente: F3 (prancheta do fish pond, Bountiful), validator, commit.
+- 20:3x FEITO: loot scripts farming/profession/fishing/seasonfish/mining/adventurer em LootJS 3.7 (Rhino OK);
+  queijos maturados: Meadow 1.21 renomeou *_cheese_block -> *_cheese_wheel; global.agedName (000_port_runtime.js)
+  mantém os ids society:aged_*_cheese_block (5 arquivos); registerSocietyModItems.js sem duplicatas (battery/black_opal/
+  river_jelly já estão em registerItems.js); lojas restauradas (queijos, river_jelly); carpenter_greenhouse_supplies
+  volta com minecraft:glass x24 no lugar do vidro do More Minecarts (decisão reversível do brain, avisar o dono);
+  quests: 0 missing_item (smallships:sail -> cotton_sails, ícone tavern -> vinery:white_grapejuice); fish pond
+  clipboard restaurado. EM CURSO: generalLoot (IntRange via codec), B2/B3 receitas, Bountiful por tag nas pools +
+  updateBountyBoard (components). Depois: validator, commit, push.
+- 20:4x FEITO: generalLoot (IntRange via IntRange.CODEC), todos os 7 scripts de loot portados; Bountiful: 45 objetivos
+  viram item_tag (tools/dataport/bounty_compat_tags.py), updateBountyBoard.js usa components (DecreeData {ids, rank});
+  receitas: stubs de jar (tools/dataport/stub_jar_recipes.py), dough_liquids com farm_and_charm:yeast, red_dye do
+  Farmer's Respite corrigido, extrusor blackstone/cobbled_limestone DESLIGADOS (decisão do dono: CEI ink e apple_juice
+  não existem). Substitutos de aloe_gel/sap/hyper_experience/ovo do Species: sem equivalente, receitas puladas pelo guard.
+  EM CURSO: validator. Depois: commit (commit-operator) + push na branch 1.21.1.

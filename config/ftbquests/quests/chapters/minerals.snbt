@@ -3,7 +3,9 @@
 	default_quest_shape: ""
 	filename: "minerals"
 	group: "15230846E14B6926"
-	icon: { count: 1, id: "society:fire_opal" }
+	icon: {
+		id: "society:fire_opal"
+	}
 	id: "67332F7DBC6DB88B"
 	images: [
 		{
@@ -1104,7 +1106,9 @@
 				"3A90CE8E42E5FCA5"
 			]
 			hide_dependency_lines: true
-			icon: { count: 1, id: "society:geode" }
+			icon: {
+				id: "society:geode"
+			}
 			id: "1B75D6174593D5E5"
 			rewards: [{
 				id: "2EBFB7C4335F509E"
@@ -1117,7 +1121,9 @@
 			shape: "none"
 			size: 2.0d
 			tasks: [{
-				icon: { count: 1, id: "society:geode" }
+				icon: {
+					id: "society:geode"
+				}
 				id: "1FD6880BC6E90A7E"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -1143,7 +1149,9 @@
 				"25074546C0EC6913"
 			]
 			hide_dependency_lines: true
-			icon: { count: 1, id: "society:magma_geode" }
+			icon: {
+				id: "society:magma_geode"
+			}
 			id: "378EF12075D01F1C"
 			rewards: [{
 				count: 5
@@ -1157,7 +1165,9 @@
 			shape: "none"
 			size: 2.0d
 			tasks: [{
-				icon: { count: 1, id: "society:magma_geode" }
+				icon: {
+					id: "society:magma_geode"
+				}
 				id: "7BA4C34E2910EBC5"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -1185,7 +1195,9 @@
 				"63433DB8A0DAB49F"
 			]
 			hide_dependency_lines: true
-			icon: { count: 1, id: "society:frozen_geode" }
+			icon: {
+				id: "society:frozen_geode"
+			}
 			id: "329C4304D2EDEE72"
 			rewards: [{
 				count: 2
@@ -1199,7 +1211,9 @@
 			shape: "none"
 			size: 2.0d
 			tasks: [{
-				icon: { count: 1, id: "society:frozen_geode" }
+				icon: {
+					id: "society:frozen_geode"
+				}
 				id: "2313FD2F31AC09D4"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -1264,7 +1278,9 @@
 			shape: "none"
 			size: 3.0d
 			tasks: [{
-				icon: { count: 1, id: "society:omni_geode" }
+				icon: {
+					id: "society:omni_geode"
+				}
 				id: "445CBBEAFC66083B"
 				stat: "minecraft:play_time"
 				type: "stat"

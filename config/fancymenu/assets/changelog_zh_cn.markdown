@@ -13,6 +13,7 @@
 + Create High Seas：物理装置可以漂浮在水上，内部也会进水
 + Sable：带物理效果的移动方块结构
 + Create 6 及其更新后的附属模组
++ Botania Revived 取代 Botania：与 1.20.1 体验一致，种子已重新制作
 + 使用 Sodium + Iris 代替 Embeddium + Oculus：新版本的光影与性能
 
 ### 变更
@@ -21,7 +22,7 @@
 + 1.20.1 版的世界需在副本中转换，未随迁的模组方块会消失
 
 ### 移除
-- Botania、Splendid Slimes 和 Create: Splendid Cogs，以及相关的任务、商品和配方
+- Splendid Slimes 和 Create: Splendid Cogs，以及相关的任务、商品和配方
 - 没有 1.21.1 版本的模组，例如 Species、Re:Deco、Quark Delight 和 Refined Storage Addons
 
 ### 进行中

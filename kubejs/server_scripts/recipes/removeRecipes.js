@@ -986,13 +986,15 @@ ServerEvents.recipes((e) => {
   removeByOutput.forEach((item) => {
     e.remove({ output: item });
   });
-  global.removedItems.forEach((item) => {
+  // Skip ids whose mod is absent, so e.remove does not warn about unknown items.
+  global.removedItems.filter((item) => Item.exists(item)).forEach((item) => {
     e.remove({ output: item });
   });
-  global.lootFurniture.forEach((item) => {
+  global.lootFurniture.filter((item) => Item.exists(item)).forEach((item) => {
     e.remove({ output: item });
   });
-  removeByInput.forEach((item) => {
+  // Skip ids whose mod is absent, so e.remove does not warn about unknown items.
+  removeByInput.filter((item) => Item.exists(item)).forEach((item) => {
     e.remove({ input: item });
   });
   e.remove({ mod: "pamhc2trees" });

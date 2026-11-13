@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "snuffles:snuffle_fluff"
+    }
+  },
+  "result": {
+    "count": 3,
+    "id": "snuffles:snuffle_fluff_carpet"
+  }
+}

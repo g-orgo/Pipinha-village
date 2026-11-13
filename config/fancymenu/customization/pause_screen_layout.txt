@@ -555,7 +555,7 @@ vanilla_button {
   nine_slice_border_x = 5
   nine_slice_border_y = 5
   description = Work in progress and open to contributions!%n%
-  label = Sunlit Valley %!n!%Wiki
+  label = Society %!n!%Wiki
   navigatable = true
   widget_active_state_requirement_container_identifier = 88209f55-9717-420f-bba9-10d7cecfebf4-1767326224623
   [loading_requirement_container_meta:88209f55-9717-420f-bba9-10d7cecfebf4-1767326224623] = [groups:][instances:]

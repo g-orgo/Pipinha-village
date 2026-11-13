@@ -103,20 +103,6 @@
     },
     {
       "offer": {
-        "id": "create_enchantment_industry:disenchanter",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 16
-      },
-      "numismatics_cost": 65536,
-      "stage_required": "adventuring_mastery",
-      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked",
-      "trade_id": "librarian_disenchanter_for_sun"
-    },
-    {
-      "offer": {
         "id": "create_enchantment_industry:printer",
         "count": 1
       },
@@ -128,20 +114,6 @@
       "stage_required": "adventuring_mastery",
       "unlock_description": "jei.society_trading.adventuring_mastery_unlocked",
       "trade_id": "librarian_printer_for_sun"
-    },
-    {
-      "offer": {
-        "id": "create_enchantment_industry:enchanting_guide",
-        "count": 1
-      },
-      "request": {
-        "id": "numismatics:sun",
-        "count": 6
-      },
-      "numismatics_cost": 24576,
-      "stage_required": "adventuring_mastery",
-      "unlock_description": "jei.society_trading.adventuring_mastery_unlocked",
-      "trade_id": "librarian_enchanting_guide_for_crown"
     },
     {
       "offer": {

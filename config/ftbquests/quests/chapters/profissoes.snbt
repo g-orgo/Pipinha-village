@@ -3,14 +3,18 @@
 	default_quest_shape: ""
 	filename: "profissoes"
 	group: "457DCF55318282CA"
-	icon: { count: 1, id: "vinery:straw_hat" }
+	icon: {
+		id: "vinery:straw_hat"
+	}
 	id: "08FC159E7158BF7A"
 	images: [ ]
 	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
-			icon: { count: 1, id: "vinery:straw_hat" }
+			icon: {
+				id: "vinery:straw_hat"
+			}
 			id: "0056C1BBCA79C58A"
 			size: 2.0d
 			tasks: [{
@@ -41,14 +45,18 @@
 			y: -4.5d
 		}
 		{
-			icon: { count: 1, id: "minecraft:iron_hoe" }
+			icon: {
+				id: "minecraft:iron_hoe"
+			}
 			id: "5B1F0A3C7D2E4F61"
 			optional: true
 			shape: "octagon"
 			size: 1.5d
 			tags: ["sunlit_profession_farmer"]
 			tasks: [{
-				icon: { count: 1, id: "minecraft:writable_book" }
+				icon: {
+					id: "minecraft:writable_book"
+				}
 				id: "6C85CC8060BA68C2"
 				type: "custom"
 			}]
@@ -133,14 +141,18 @@
 			y: -2.25d
 		}
 		{
-			icon: { count: 1, id: "society:milk_pail" }
+			icon: {
+				id: "society:milk_pail"
+			}
 			id: "5B1F0A3C7D2E4F62"
 			optional: true
 			shape: "octagon"
 			size: 1.5d
 			tags: ["sunlit_profession_rancher"]
 			tasks: [{
-				icon: { count: 1, id: "minecraft:writable_book" }
+				icon: {
+					id: "minecraft:writable_book"
+				}
 				id: "4B71DBBC6FB0D822"
 				type: "custom"
 			}]
@@ -245,14 +257,18 @@
 			y: 0.0d
 		}
 		{
-			icon: { count: 1, id: "minecraft:fishing_rod" }
+			icon: {
+				id: "minecraft:fishing_rod"
+			}
 			id: "5B1F0A3C7D2E4F63"
 			optional: true
 			shape: "octagon"
 			size: 1.5d
 			tags: ["sunlit_profession_fisher"]
 			tasks: [{
-				icon: { count: 1, id: "minecraft:writable_book" }
+				icon: {
+					id: "minecraft:writable_book"
+				}
 				id: "41A9A408D04E2F1F"
 				type: "custom"
 			}]
@@ -357,14 +373,18 @@
 			y: 2.25d
 		}
 		{
-			icon: { count: 1, id: "vinery:winemaker_apron" }
+			icon: {
+				id: "vinery:winemaker_apron"
+			}
 			id: "5B1F0A3C7D2E4F64"
 			optional: true
 			shape: "octagon"
 			size: 1.5d
 			tags: ["sunlit_profession_winemaker"]
 			tasks: [{
-				icon: { count: 1, id: "minecraft:writable_book" }
+				icon: {
+					id: "minecraft:writable_book"
+				}
 				id: "38E09E8437EEF861"
 				type: "custom"
 			}]
@@ -509,14 +529,18 @@
 			y: 4.5d
 		}
 		{
-			icon: { count: 1, id: "farmersdelight:cooking_pot" }
+			icon: {
+				id: "farmersdelight:cooking_pot"
+			}
 			id: "5B1F0A3C7D2E4F65"
 			optional: true
 			shape: "octagon"
 			size: 1.5d
 			tags: ["sunlit_profession_cook"]
 			tasks: [{
-				icon: { count: 1, id: "minecraft:writable_book" }
+				icon: {
+					id: "minecraft:writable_book"
+				}
 				id: "1AA7B4ABC5E7426A"
 				type: "custom"
 			}]

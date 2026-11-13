@@ -99,12 +99,12 @@ Peças para o caminho B já estão na instância: `player-animation-lib` 2.0.4 e
 
 ## Estado na 1.21.1
 
-- **Assets da animação completa:** já copiados para `kubejs/assets/food/` (1593 definições, 1577 geo, 1577 animações e 1577 texturas). Os scripts que consomem isso (fase F5, `kubejs/`) ainda não foram portados. **A portar.**
+- **Assets da animação completa:** já copiados para `kubejs/assets/food/` (1593 definições, 1577 geo, 1577 animações e 1577 texturas). Os scripts que consomem isso (fase F5, `kubejs/`) já foram portados em modo estático (379 de 379 com sintaxe válida) e seguem em correção a partir dos logs do dono. **A conferir no jogo.**
 - **Immersive Eating:** `kaleidoscope_ImmersiveEating-neoforge1.21.1-1.5.6.jar` está em `mods/`. A versão de referência da 1.20.1 era a 1.4.3. **Existe**, mas o comportamento em terceira pessoa ainda não foi testado na 1.21.1. **Confirmar no jogo**, sem rodar o jogo pelo agente.
 - **Mordidas (Eating Animation):** `eatinganimation-1.21.0-6.0.1.jar` está em `mods/`. Os frames das comidas ainda dependem do gerador de `tools/pack_tools/gen_bite_frames.py`, que precisa ser conferido para a 1.21.1. **A portar** para o restante das comidas.
 - **Resource packs de comida:** `EatAnimation Farmer's Delight's Compat` e `FreshAnimations_v1.10.4` estão em `resourcepacks/` como zip, sem ativação. A ativação é da fase F10 e exige a decisão do dono (regra de resource packs do AGENTS.md). **A portar** na F10.
 - **Animação de braço (NotEnoughAnimations):** não há o jar na `mods/`. O caminho de "braço à boca" por ele não existe na 1.21.1 até ser portado. **A portar** ou substituir pelo caminho B.
-- **Mini mod `sunlit_eating`:** não existe na instância. **A portar** (caminhos A e B). Depende da F5 e do JDK de compilação.
+- **Mini mod `sunlit_eating`:** não existe na instância. **A portar** (caminhos A e B). Depende da triagem dos mods próprios e do JDK de compilação.
 - **Shoulder Surfing** (`ShoulderSurfing-NeoForge-1.21.1-5.3.1.jar`) está em `mods/`, então o teste de terceira pessoa já tem a câmera necessária.
 - **Duração e lista da camada 3:** decisões do dono, em aberto.
 

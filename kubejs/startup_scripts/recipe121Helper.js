@@ -63,21 +63,33 @@ global.toRecipe121 = (() => {
 // registered in the installed mods (for example a removed mod such as nethervinery).
 // Recipe scripts call it before e.custom so a missing id skips that one recipe
 // instead of producing a parse error on load. Tags (#...) are not checked.
-global.recipeIdsExist121 = (recipe) => {
-  const idExists = (id) => {
-    if (typeof id !== "string" || id.charAt(0) === "#") return true;
-    return Item.exists(id) || Fluid.exists(id);
+global.recipeIdsExist121 = (() => {
+  // Query the vanilla registries directly: the wrapper helpers (Fluid.exists) let
+  // unregistered vinery juice fluids through in the 20:10 log.
+  const BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
+  const ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
+  const inRegistry = (registry, id) => {
+    const rl = ResourceLocation.tryParse(id);
+    return rl !== null && registry.containsKey(rl);
   };
-  const walk = (node) => {
+  const isSkippable = (id) => typeof id !== "string" || id.charAt(0) === "#";
+  // A missing mod namespace always means the id is absent, whatever the registry lookup says.
+  const fluidExists = (id) =>
+    isSkippable(id) || (Platform.isLoaded(id.split(":")[0]) && inRegistry(BuiltInRegistries.FLUID, id));
+  const idExists = (id) =>
+    isSkippable(id) ||
+    (Platform.isLoaded(id.split(":")[0]) &&
+      (inRegistry(BuiltInRegistries.ITEM, id) || inRegistry(BuiltInRegistries.FLUID, id)));
+  return (recipe) => walk(recipe);
+  function walk(node) {
     if (Array.isArray(node)) return node.every(walk);
     if (node === null || typeof node !== "object") return true;
     for (const key in node) {
       const value = node[key];
-      if (key === "fluid" && typeof value === "string" && !idExists(value)) return false;
+      if (key === "fluid" && typeof value === "string" && !fluidExists(value)) return false;
       if ((key === "item" || key === "id") && typeof value === "string" && !idExists(value)) return false;
       if (!walk(value)) return false;
     }
     return true;
-  };
-  return walk(recipe);
-};
+  }
+})();

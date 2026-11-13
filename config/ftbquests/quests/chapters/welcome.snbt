@@ -3,14 +3,18 @@
 	default_quest_shape: ""
 	filename: "welcome"
 	group: ""
-	icon: { count: 1, id: "betterarcheology:growth_totem" }
+	icon: {
+		id: "betterarcheology:growth_totem"
+	}
 	id: "05ED409B61A4CC4D"
 	images: [ ]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			icon: { count: 1, id: "betterarcheology:growth_totem" }
+			icon: {
+				id: "betterarcheology:growth_totem"
+			}
 			id: "2B6877708A709B5C"
 			rewards: [
 				{
@@ -74,7 +78,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			icon: { count: 1, id: "numismatics:cog" }
+			icon: {
+				id: "numismatics:cog"
+			}
 			id: "42BBE95A6DE1DD19"
 			tasks: [{
 				id: "18D7A7C05EC66667"
@@ -85,7 +91,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			icon: { count: 1, id: "minecraft:chorus_fruit" }
+			icon: {
+				id: "minecraft:chorus_fruit"
+			}
 			id: "25777939975C3CEE"
 			tasks: [{
 				id: "12B5F8FF7A12B850"
@@ -96,11 +104,15 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			icon: { count: 1, id: "minecraft:feather" }
+			icon: {
+				id: "minecraft:feather"
+			}
 			id: "3C6C8A3075250D1A"
 			rewards: [{
 				command: "puffish_skills points add @p society:parkour 1"
-				icon: { count: 1, id: "minecraft:feather" }
+				icon: {
+					id: "minecraft:feather"
+				}
 				id: "7B2BC137FA2BF215"
 				permission_level: 2
 				type: "command"
@@ -114,7 +126,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			icon: { count: 1, id: "farmersdelight:cooking_pot" }
+			icon: {
+				id: "farmersdelight:cooking_pot"
+			}
 			id: "6CB695EFC40CBAFC"
 			rewards: [
 				{
@@ -127,7 +141,9 @@
 				}
 				{
 					command: "puffish_skills points add @p society:culinaria 1"
-					icon: { count: 1, id: "farmersdelight:cooking_pot" }
+					icon: {
+						id: "farmersdelight:cooking_pot"
+					}
 					id: "6857839BDA7BA0B1"
 					permission_level: 2
 					type: "command"
@@ -142,7 +158,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			icon: { count: 1, id: "vinery:straw_hat" }
+			icon: {
+				id: "vinery:straw_hat"
+			}
 			id: "4E6A1C2B9D3F5A07"
 			tasks: [{
 				id: "4E6A1C2B9D3F5A08"
@@ -153,7 +171,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			icon: { count: 1, id: "solonion:food_book" }
+			icon: {
+				id: "solonion:food_book"
+			}
 			id: "7A7B131D229E5279"
 			rewards: [{
 				id: "7564618DEEDF5B88"
@@ -172,7 +192,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			icon: { count: 1, id: "simplehats:rainboworbiters" }
+			icon: {
+				id: "simplehats:rainboworbiters"
+			}
 			id: "4F7FB7C8808AF152"
 			tasks: [{
 				id: "5268786D837BACF0"
@@ -183,7 +205,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			icon: { count: 1, id: "refurbished_furniture:computer" }
+			icon: {
+				id: "refurbished_furniture:computer"
+			}
 			id: "18490F31FFAB134E"
 			tasks: [{
 				id: "7A3A17A854FF5FAB"
@@ -194,7 +218,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			icon: { count: 1, id: "gamediscs:gaming_console" }
+			icon: {
+				id: "gamediscs:gaming_console"
+			}
 			id: "6EA5618181628D34"
 			tasks: [{
 				id: "56C063A91C4834B3"
@@ -205,7 +231,9 @@
 		}
 		{
 			disable_toast: true
-			icon: { count: 1, id: "minecraft:lily_of_the_valley" }
+			icon: {
+				id: "minecraft:lily_of_the_valley"
+			}
 			id: "5FB57C45A25D41F0"
 			rewards: [
 				{
@@ -254,7 +282,9 @@
 			tasks: [{
 				dimension: "minecraft:overworld"
 				disable_toast: true
-				icon: { count: 1, id: "minecraft:grass_block" }
+				icon: {
+					id: "minecraft:grass_block"
+				}
 				id: "0570B72A57438956"
 				type: "dimension"
 			}]
@@ -263,7 +293,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			icon: { count: 1, id: "supplementaries:flag_light_blue" }
+			icon: {
+				id: "supplementaries:flag_light_blue"
+			}
 			id: "1375AE2ECAC8C147"
 			tasks: [{
 				id: "656AD09E45594435"
@@ -274,7 +306,9 @@
 		}
 		{
 			dependencies: ["18490F31FFAB134E"]
-			icon: { count: 1, id: "minecraft:skeleton_skull" }
+			icon: {
+				id: "minecraft:skeleton_skull"
+			}
 			id: "25305BECA3C32315"
 			tasks: [{
 				id: "5F3330533AD364D1"
@@ -285,7 +319,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			icon: { count: 1, id: "etched:radio" }
+			icon: {
+				id: "etched:radio"
+			}
 			id: "67486880FE3E2CCD"
 			tasks: [{
 				id: "5330CA06B1E9BEE3"
@@ -296,12 +332,16 @@
 		}
 		{
 			dependencies: ["1375AE2ECAC8C147"]
-			icon: { count: 1, id: "supplementaries:slice_map" }
+			icon: {
+				id: "supplementaries:slice_map"
+			}
 			id: "5FDA526D348C8A0F"
 			rewards: [{
 				command: "/kjs stages add @p ftbchunks_mapping"
 				exclude_from_claim_all: true
-				icon: { count: 1, id: "supplementaries:slice_map" }
+				icon: {
+					id: "supplementaries:slice_map"
+				}
 				id: "757BB197D52F88E4"
 				ignore_reward_blocking: true
 				permission_level: 2
@@ -318,7 +358,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			icon: { count: 1, id: "society:magnifying_glass" }
+			icon: {
+				id: "society:magnifying_glass"
+			}
 			id: "238702B124895A0A"
 			tasks: [{
 				id: "071758A047AA8A61"
@@ -329,7 +371,9 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			icon: { count: 1, id: "minecraft:leather_chestplate" }
+			icon: {
+				id: "minecraft:leather_chestplate"
+			}
 			id: "68F93F0E30C84F4A"
 			tasks: [{
 				id: "6914A9FC555FA1DC"
@@ -340,7 +384,9 @@
 		}
 		{
 			dependencies: ["68F93F0E30C84F4A"]
-			icon: { count: 1, id: "minecraft:water_bucket" }
+			icon: {
+				id: "minecraft:water_bucket"
+			}
 			id: "63DFF7FEBC553219"
 			tasks: [{
 				id: "252348AEE006A1CE"
@@ -351,7 +397,9 @@
 		}
 		{
 			dependencies: ["68F93F0E30C84F4A"]
-			icon: { count: 1, id: "minecraft:gold_ingot" }
+			icon: {
+				id: "minecraft:gold_ingot"
+			}
 			id: "2B46C775C4DFF807"
 			tasks: [{
 				id: "53CF1BDCF0F70286"
@@ -362,7 +410,9 @@
 		}
 		{
 			dependencies: ["68F93F0E30C84F4A"]
-			icon: { count: 1, id: "minecraft:clock" }
+			icon: {
+				id: "minecraft:clock"
+			}
 			id: "41956D4BCC48C7B0"
 			tasks: [{
 				id: "36CB36D030D7F67B"
@@ -373,7 +423,9 @@
 		}
 		{
 			dependencies: ["68F93F0E30C84F4A"]
-			icon: { count: 1, id: "minecraft:bell" }
+			icon: {
+				id: "minecraft:bell"
+			}
 			id: "61AE28BDF887A1DF"
 			tasks: [{
 				id: "03B86281A1ECF8AA"
@@ -384,7 +436,9 @@
 		}
 		{
 			dependencies: ["68F93F0E30C84F4A"]
-			icon: { count: 1, id: "minecraft:fishing_rod" }
+			icon: {
+				id: "minecraft:fishing_rod"
+			}
 			id: "11BB3F9D5230722D"
 			tasks: [{
 				id: "7E1C15ECA8C21A8F"

@@ -11,8 +11,8 @@
           "block": "tanukidecor:cabana_bed",
           "condition": "minecraft:block_state_property",
           "properties": {
-            "width": 1,
-            "depth": 1
+            "width": "1",
+            "depth": "1"
           }
         }
       ],

@@ -4,7 +4,9 @@
 	default_quest_shape: ""
 	filename: "iv__prismatic_farming"
 	group: "457DCF55318282CA"
-	icon: { count: 1, id: "society:prismatic_shard" }
+	icon: {
+		id: "society:prismatic_shard"
+	}
 	id: "2B2A6AA10AFF0156"
 	images: [ ]
 	order_index: 3
@@ -24,7 +26,9 @@
 			size: 1.5d
 			tasks: [{
 				biome: "society:umbra_barrens"
-				icon: { count: 1, id: "minecraft:end_stone" }
+				icon: {
+					id: "minecraft:end_stone"
+				}
 				id: "52727B8A0D17120B"
 				type: "biome"
 			}]
@@ -53,7 +57,9 @@
 				}
 			]
 			tasks: [{
-				icon: { count: 1, id: "minecraft:ominous_trial_key" }
+				icon: {
+					id: "minecraft:ominous_trial_key"
+				}
 				id: "238260076624C9BF"
 				structure: "minecraft:trial_chambers"
 				type: "structure"
@@ -143,7 +149,9 @@
 		}
 		{
 			dependencies: ["7037A26BF990653E"]
-			icon: { count: 1, id: "minecraft:fletching_table" }
+			icon: {
+				id: "minecraft:fletching_table"
+			}
 			id: "41C453E806763C4F"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -161,7 +169,9 @@
 		}
 		{
 			dependencies: ["41C453E806763C4F"]
-			icon: { count: 1, id: "society:magic_rope" }
+			icon: {
+				id: "society:magic_rope"
+			}
 			id: "1A81A877A381DB97"
 			rewards: [{
 				count: 2
@@ -264,7 +274,9 @@
 		}
 		{
 			dependencies: ["7B26713E5E4E25CB"]
-			icon: { count: 1, id: "society:artisan_hopper" }
+			icon: {
+				id: "society:artisan_hopper"
+			}
 			id: "4759B2BFFF26E78F"
 			min_required_dependencies: 1
 			rewards: [{
@@ -312,12 +324,16 @@
 			y: 14.0d
 		}
 		{
-			icon: { count: 1, id: "society:skull_cavern_teleporter" }
+			icon: {
+				id: "society:skull_cavern_teleporter"
+			}
 			id: "5A369FC904BCF5EE"
 			size: 1.5d
 			tasks: [{
 				dimension: "society:skull_cavern"
-				icon: { count: 1, id: "minecraft:skeleton_skull" }
+				icon: {
+					id: "minecraft:skeleton_skull"
+				}
 				id: "53F45DEC3FD0866C"
 				type: "dimension"
 			}]
@@ -404,7 +420,9 @@
 		}
 		{
 			dependencies: ["3FA607115DB107D9"]
-			icon: { count: 1, id: "society:end_stone_boulder" }
+			icon: {
+				id: "society:end_stone_boulder"
+			}
 			id: "2F83B8F22344FAD7"
 			min_required_dependencies: 1
 			rewards: [{
@@ -508,7 +526,9 @@
 		}
 		{
 			dependencies: ["41C453E806763C4F"]
-			icon: { count: 1, id: "society:ancient_cog" }
+			icon: {
+				id: "society:ancient_cog"
+			}
 			id: "5558DB4DE54C890D"
 			min_required_dependencies: 1
 			rewards: [{
@@ -585,7 +605,9 @@
 		}
 		{
 			dependencies: ["63F8C52D082BBCB3"]
-			icon: { count: 1, id: "society:growth_obelisk" }
+			icon: {
+				id: "society:growth_obelisk"
+			}
 			id: "003782D1F1A74349"
 			rewards: [{
 				count: 4
@@ -651,7 +673,9 @@
 		}
 		{
 			dependencies: ["38AC25E172172654"]
-			icon: { count: 1, id: "vinery:fermentation_barrel" }
+			icon: {
+				id: "vinery:fermentation_barrel"
+			}
 			id: "506B32619EB8477F"
 			rewards: [
 				{
@@ -696,7 +720,7 @@
 		}
 		{
 			dependencies: ["506B32619EB8477F"]
-			icon: { count: 1, id: "kaleidoscope_tavern:grape_juice" }
+			icon: { count: 1, id: "vinery:white_grapejuice" }
 			id: "094497558E9DB19C"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -747,7 +771,9 @@
 			}]
 			size: 1.5d
 			tasks: [{
-				icon: { count: 1, id: "aquaculture:neptunium_fishing_rod" }
+				icon: {
+					id: "aquaculture:neptunium_fishing_rod"
+				}
 				id: "7162E14466460F42"
 				stage: "fishing_mastery"
 				type: "gamestage"
@@ -757,7 +783,9 @@
 		}
 		{
 			dependencies: ["21671DA370EA7A37"]
-			icon: { count: 1, id: "society:needle_bobber" }
+			icon: {
+				id: "society:needle_bobber"
+			}
 			id: "785F3754068D5C2D"
 			rewards: [{
 				id: "3CF7E830E51BAB65"
@@ -790,7 +818,9 @@
 			}]
 			size: 1.5d
 			tasks: [{
-				icon: { count: 1, id: "society:milk_pail" }
+				icon: {
+					id: "society:milk_pail"
+				}
 				id: "5492353782FA1337"
 				stage: "husbandry_mastery"
 				type: "gamestage"
@@ -833,7 +863,9 @@
 			}]
 			size: 1.5d
 			tasks: [{
-				icon: { count: 1, id: "minecraft:netherite_sword" }
+				icon: {
+					id: "minecraft:netherite_sword"
+				}
 				id: "60760AF29A6A1954"
 				stage: "adventuring_mastery"
 				type: "gamestage"
@@ -905,7 +937,9 @@
 			}]
 			size: 1.5d
 			tasks: [{
-				icon: { count: 1, id: "minecraft:netherite_hoe" }
+				icon: {
+					id: "minecraft:netherite_hoe"
+				}
 				id: "224A29585E36B057"
 				stage: "farming_mastery"
 				type: "gamestage"
@@ -928,7 +962,9 @@
 			}]
 			size: 1.5d
 			tasks: [{
-				icon: { count: 1, id: "minecraft:netherite_pickaxe" }
+				icon: {
+					id: "minecraft:netherite_pickaxe"
+				}
 				id: "0AD01E5BA4169E25"
 				stage: "mining_mastery"
 				type: "gamestage"
@@ -937,7 +973,9 @@
 			y: 3.25d
 		}
 		{
-			icon: { count: 1, id: "society:book_of_stars" }
+			icon: {
+				id: "society:book_of_stars"
+			}
 			id: "25677844C218103A"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -947,7 +985,9 @@
 			}]
 			size: 1.5d
 			tasks: [{
-				icon: { count: 1, id: "society:book_of_stars" }
+				icon: {
+					id: "society:book_of_stars"
+				}
 				id: "3FE67ED6D7C3F44B"
 				stage: "mastery_unlocked"
 				type: "gamestage"
@@ -1015,7 +1055,9 @@
 		}
 		{
 			dependencies: ["40845F4C88AD03CB"]
-			icon: { count: 1, id: "cluttered:willow_sapling" }
+			icon: {
+				id: "cluttered:willow_sapling"
+			}
 			id: "458EC4BFA0C47FCB"
 			rewards: [{
 				id: "5FB77FCF4E2CC6AF"
@@ -1099,7 +1141,9 @@
 		{
 			dependencies: ["06308BDE5F4EC0D2"]
 			hide_until_deps_complete: true
-			icon: { count: 1, id: "refinedstorage:controller" }
+			icon: {
+				id: "refinedstorage:controller"
+			}
 			id: "15061E71D3F55AE8"
 			rewards: [
 				{
@@ -1234,7 +1278,9 @@
 			]
 			hide_dependent_lines: true
 			hide_text_until_complete: false
-			icon: { count: 1, id: "society:ruby" }
+			icon: {
+				id: "society:ruby"
+			}
 			id: "7037A26BF990653E"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1245,17 +1291,12 @@
 			tasks: [
 				{
 					id: "0944E1D3F203821B"
-					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "society:invitation" }
 					match_components: "fuzzy"
 					type: "item"
 				}
 				{
-					icon: {
-						components: {
-							"ftbquests:missing_item": "society:villager"
-						}
-						id: "ftbquests:missing_item"
-					}
+					icon: { count: 1, id: "society:villager" }
 					id: "48A5EF6D1BB8647A"
 					stage: "invited_trader"
 					type: "gamestage"

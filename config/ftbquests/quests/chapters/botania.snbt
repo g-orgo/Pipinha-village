@@ -3,7 +3,9 @@
 	default_quest_shape: ""
 	filename: "botania"
 	group: "457DCF55318282CA"
-	icon: { count: 1, id: "society:mana_fruit" }
+	icon: {
+		id: "society:mana_fruit"
+	}
 	id: "7D5C355F4BB66AE9"
 	images: [ ]
 	order_index: 6
@@ -30,7 +32,9 @@
 		}
 		{
 			dependencies: ["5E5E6E09E6C6DF02"]
-			icon: { count: 1, id: "botania_seeds:white_mystical_flower_seed" }
+			icon: {
+				id: "botania_seeds:white_mystical_flower_seed"
+			}
 			id: "44C80D7C3D2B11E8"
 			rewards: [{
 				id: "7A60653ECC43AFA3"
@@ -50,7 +54,9 @@
 		}
 		{
 			dependencies: ["1BF054DD14781BAD"]
-			icon: { count: 1, id: "botania:pure_daisy" }
+			icon: {
+				id: "botania:pure_daisy"
+			}
 			id: "3EC0E2F632F6A20D"
 			rewards: [{
 				count: 16
@@ -83,7 +89,9 @@
 		}
 		{
 			dependencies: ["5797BBD7788369E3"]
-			icon: { count: 1, id: "vintagedelight:gearo_berry" }
+			icon: {
+				id: "vintagedelight:gearo_berry"
+			}
 			id: "42DA09B2A18E2ED1"
 			rewards: [{
 				id: "374667AEA46CD2D6"
@@ -103,7 +111,9 @@
 		}
 		{
 			dependencies: ["46F86152B5B36A3B"]
-			icon: { count: 1, id: "botania:pixie_dust" }
+			icon: {
+				id: "botania:pixie_dust"
+			}
 			id: "5797BBD7788369E3"
 			rewards: [{
 				count: 16
@@ -159,7 +169,9 @@
 		}
 		{
 			dependencies: ["46F86152B5B36A3B"]
-			icon: { count: 1, id: "botania:terrasteel_helmet" }
+			icon: {
+				id: "botania:terrasteel_helmet"
+			}
 			id: "1CC084C4F5E11C97"
 			rewards: [{
 				id: "7F8BA65A228BA88D"
@@ -179,7 +191,9 @@
 		}
 		{
 			dependencies: ["46F86152B5B36A3B"]
-			icon: { count: 1, id: "botania:terra_pick" }
+			icon: {
+				id: "botania:terra_pick"
+			}
 			id: "4DE0F1BADE3F2F57"
 			tasks: [{
 				id: "3B466EBCDB361382"
@@ -214,7 +228,9 @@
 				"3EC0E2F632F6A20D"
 				"1BF054DD14781BAD"
 			]
-			icon: { count: 1, id: "botania:mana_pool" }
+			icon: {
+				id: "botania:mana_pool"
+			}
 			id: "33B78DFDDC041570"
 			rewards: [{
 				id: "55E27BBBAADBCCD7"
@@ -318,7 +334,9 @@
 		}
 		{
 			dependencies: ["69A2A84A2830134C"]
-			icon: { count: 1, id: "unusualfishmod:fluvial_shell" }
+			icon: {
+				id: "unusualfishmod:fluvial_shell"
+			}
 			id: "7E6A0CF4C704430C"
 			rewards: [{
 				id: "52DE782ADCF7FEE7"
@@ -407,7 +425,9 @@
 		}
 		{
 			dependencies: ["6DAC81A05E481E58"]
-			icon: { count: 1, id: "botania:terra_plate" }
+			icon: {
+				id: "botania:terra_plate"
+			}
 			id: "3B0A3083FFE1416B"
 			rewards: [{
 				count: 8
@@ -435,7 +455,9 @@
 		}
 		{
 			dependencies: ["69A2A84A2830134C"]
-			icon: { count: 1, id: "botania:jaded_amaranthus" }
+			icon: {
+				id: "botania:jaded_amaranthus"
+			}
 			id: "137994A312B7CAEB"
 			rewards: [{
 				id: "05F19D1578AB8F64"
@@ -474,7 +496,9 @@
 		}
 		{
 			dependencies: ["33B78DFDDC041570"]
-			icon: { count: 1, id: "botania:kekimurus" }
+			icon: {
+				id: "botania:kekimurus"
+			}
 			id: "27437A0F629AF989"
 			rewards: [{
 				id: "3128A34A75484777"
@@ -497,7 +521,9 @@
 				"221306DB217B8F93"
 				"5E5E6E09E6C6DF02"
 			]
-			icon: { count: 1, id: "botania:orange_mystical_flower" }
+			icon: {
+				id: "botania:orange_mystical_flower"
+			}
 			id: "078F0A0A709A1C67"
 			tasks: [{
 				id: "1840F64E466C295B"
@@ -605,7 +631,9 @@
 		}
 		{
 			dependencies: ["69A2A84A2830134C"]
-			icon: { count: 1, id: "society:mana_fruit" }
+			icon: {
+				id: "society:mana_fruit"
+			}
 			id: "6DAC81A05E481E58"
 			rewards: [{
 				id: "5E17942584FE76C7"

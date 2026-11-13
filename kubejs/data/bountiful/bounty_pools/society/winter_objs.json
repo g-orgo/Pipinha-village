@@ -1,8 +1,8 @@
 {
 	"content": {
 		"winter_dragonfruititem": {
-			"type": "minecraft:item",
-			"content": "pamhc2trees:dragonfruititem",
+			"type": "item_tag",
+			"content": "sunlit:compat/dragon_fruit",
 			"rarity": "UNCOMMON",
 			"weightMult": 0.5,
 			"amount": {
@@ -133,8 +133,8 @@
 			"unitWorth": 168
 		},
 		"winter_ginger": {
-			"type": "minecraft:item",
-			"content": "snowyspirit:ginger",
+			"type": "item_tag",
+			"content": "sunlit:compat/ginger",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {

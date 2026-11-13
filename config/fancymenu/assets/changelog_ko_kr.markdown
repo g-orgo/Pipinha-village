@@ -13,6 +13,7 @@
 + Create High Seas: 물리 구조물이 물에 뜨고 내부에 물이 찰 수 있습니다
 + Sable: 물리로 움직이는 블록 구조물
 + 애드온이 업데이트된 Create 6
++ Botania Revived가 Botania를 대신합니다: 1.20.1과 같은 경험, 씨앗은 다시 만들어졌습니다
 + Embeddium + Oculus 대신 Sodium + Iris: 새 버전의 셰이더와 성능
 
 ### 변경
@@ -21,7 +22,7 @@
 + 1.20.1 에디션의 월드는 복사본에서 변환되며, 함께 오지 않은 모드의 블록은 사라집니다
 
 ### 제거
-- Botania, Splendid Slimes, Create: Splendid Cogs 및 관련 퀘스트, 상점 품목, 레시피
+- Splendid Slimes, Create: Splendid Cogs 및 관련 퀘스트, 상점 품목, 레시피
 - 1.21.1 버전이 없는 모드 (Species, Re:Deco, Quark Delight, Refined Storage Addons 등)
 
 ### 진행 중

@@ -1,10 +1,23 @@
 {
 	id: "4133F788491A4812"
 	loot_size: 1
-	order_index: 5
+	order_index: 6
 	rewards: [
-		{ id: "6E1F0A2B3C4D5E61", item: { count: 4, id: "sunrisegardening:weak_fertilizer" } }
-		{ id: "6E1F0A2B3C4D5E62", item: { count: 4, id: "sunrisegardening:bountiful_fertilizer" } }
+		{
+			count: 4
+			id: "6E1F0A2B3C4D5E61"
+			item: {
+				count: 1
+				id: "sunrisegardening:weak_fertilizer"
+			}
+		}
+		{
+			count: 4
+			id: "6E1F0A2B3C4D5E62"
+			item: {
+				count: 1
+				id: "sunrisegardening:bountiful_fertilizer"
+			}
+		}
 	]
-	title: "{ftbquests.loot_table.4698371000991631378.title}"
 }

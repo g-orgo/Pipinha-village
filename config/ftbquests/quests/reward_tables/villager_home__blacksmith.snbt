@@ -1,7 +1,7 @@
 {
 	id: "187F1B8A23F0F047"
 	loot_size: 1
-	order_index: 16
+	order_index: 17
 	rewards: [
 		{ id: "65E6657CFF321F1A", item: { components: { "minecraft:custom_data": { allow_nbt: 1, altezza: 0, blueprint_name: "blacksmith_basic", buildAnyway: 0b, free_build: 1, inventari_blocco_selezionati: "", lunghezzaX: 0, lunghezzaZ: 0, mirrowX: 0b, mirrowY: 0b, mirrowZ: 0b, nome: "blacksmith_basic", owner: "worn", owner_name: "Ace", remaining_uses: 1, rotateValue: 0s, skipObstructionBlock: 0b, visualizeBuild: 0b, wasHolding: 1b, worn_set: 1b }, "minecraft:custom_name": "{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.basic_blacksmith\"}", "minecraft:damage": 1, "minecraft:lore": ["{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.basic_blacksmith.author\"}"] }, count: 1, id: "portable_blueprints:worn_blueprint" } }
 		{ id: "09FCEAB1D892E510", item: { components: { "minecraft:custom_data": { allow_nbt: 1, altezza: 0, blueprint_name: "blacksmith_rural", buildAnyway: 0b, free_build: 1, inventari_blocco_selezionati: "", lunghezzaX: 0, lunghezzaZ: 0, mirrowX: 0b, mirrowY: 0b, mirrowZ: 0b, nome: "blacksmith_rural", owner: "worn", owner_name: "Ace", remaining_uses: 1, rotateValue: 0s, skipObstructionBlock: 0b, visualizeBuild: 0b, wasHolding: 1b, worn_set: 1b }, "minecraft:custom_name": "{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.rural_blacksmith\"}", "minecraft:damage": 1, "minecraft:lore": ["{\"color\":\"#FFFF00\",\"italic\":false,\"translate\":\"portable_blueprints.worn_blueprint.rural_blacksmith.author\"}"] }, count: 1, id: "portable_blueprints:worn_blueprint" } }

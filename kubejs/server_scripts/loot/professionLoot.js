@@ -13,45 +13,65 @@ const specialtyLootPerk = (label, fn) => {
 
 const isSeedItem = (item) => String(item.id).includes("seed");
 
+const profLootParams = Java.loadClass("net.minecraft.world.level.storage.loot.parameters.LootContextParams");
+const profCropBlock = Java.loadClass("net.minecraft.world.level.block.CropBlock");
+
+// Crop is fully grown: CropBlock.isMaxAge for crops, otherwise the "age" property at its maximum.
+const isCropMaxGrown = (state) => {
+  const block = state.block;
+  if (block instanceof profCropBlock) return block.isMaxAge(state);
+  const ageProp = block.getStateDefinition().getProperty("age");
+  if (!ageProp) return false;
+  const maxAge = Math.max.apply(null, Java.from(ageProp.getPossibleValues()));
+  return Number(state.getValue(ageProp)) === maxAge;
+};
+
+// Adds an item by id (with a count) only when the mod providing it is loaded.
+const profAddLootId = (loot, id, count) => {
+  if (Item.exists(id)) loot.addItem(Item.of(id, count));
+};
+
 LootJS.modifiers((e) => {
-  e.addBlockModifier(global.cropList).apply((c) => specialtyLootPerk("context", () => {
-    let player = c.getPlayer();
+  e.addBlockModifier(global.cropList).customAction((context, loot) => specialtyLootPerk("context", () => {
+    const player = context.getPlayerOrNull();
     if (!player || player.isFake() || global.specialtyTier(player, "farming") === 0) return;
 
-    let state = c.destroyedBlock.blockState;
-    let crop = state.block;
-    if (!crop.isMaxAge || !crop.isMaxAge(state)) return;
-    let longCycle = typeof crop.getMaxAge === "function" && crop.getMaxAge() >= 7;
-    let tier = global.specialtyTier(player, "farming");
+    const state = context.getParamOrNull(profLootParams.BLOCK_STATE);
+    if (!state || !isCropMaxGrown(state)) return;
+    const crop = state.block;
+    const longCycle = crop instanceof profCropBlock && crop.getMaxAge() >= 7;
+    const tier = global.specialtyTier(player, "farming");
 
     specialtyLootPerk("extra", () => {
       if (!global.rollSpecialty(player, "farming", "crop_extra")) return;
-      c.forEachLoot((item) => {
+      loot.modifyItems((item) => {
         if (!isSeedItem(item)) item.setCount(item.getCount() + 1);
+        return item;
       });
     });
 
     specialtyLootPerk("quality", () => {
-      let perk = longCycle ? "crop_quality_long" : "crop_quality";
+      const perk = longCycle ? "crop_quality_long" : "crop_quality";
       if (!global.rollSpecialty(player, "farming", perk)) return;
-      c.forEachLoot((item) => {
+      loot.modifyItems((item) => {
         if (!isSeedItem(item)) global.bumpQuality(item);
+        return item;
       });
     });
 
     specialtyLootPerk("seed", () => {
       if (!global.rollSpecialty(player, "farming", "crop_seed")) return;
-      let seed = Item.of(crop.asItem());
-      if (!seed.isEmpty()) c.addLoot(seed);
+      const seed = Item.of(crop.asItem());
+      if (!seed.isEmpty()) loot.addItem(seed);
     });
 
     specialtyLootPerk("feed", () => {
-      if (global.rollSpecialty(player, "farming", "feed_drop")) c.addLoot("society:animal_feed");
+      if (global.rollSpecialty(player, "farming", "feed_drop")) profAddLootId(loot, "society:animal_feed", 1);
     });
 
     specialtyLootPerk("worm", () => {
       if (!global.rollSpecialty(player, "farming", "worm_drop")) return;
-      c.addLoot(tier === 2 ? "2x aquaculture:worm" : "aquaculture:worm");
+      profAddLootId(loot, "aquaculture:worm", tier === 2 ? 2 : 1);
     });
   }));
 });

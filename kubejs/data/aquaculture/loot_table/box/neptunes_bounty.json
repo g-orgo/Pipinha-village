@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "loot_table",
-          "name": "aquaculture:box/neptunes_bounty_junk",
+          "value": "aquaculture:box/neptunes_bounty_junk",
           "weight": 1
         }
       ]
@@ -53,7 +53,7 @@
       "entries": [
         {
           "type": "loot_table",
-          "name": "aquaculture:box/neptunes_bounty_junk",
+          "value": "aquaculture:box/neptunes_bounty_junk",
           "weight": 1
         }
       ]

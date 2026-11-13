@@ -4,7 +4,9 @@
 	default_quest_shape: ""
 	filename: "crops"
 	group: "15230846E14B6926"
-	icon: { count: 1, id: "minecraft:carrot" }
+	icon: {
+		id: "minecraft:carrot"
+	}
 	id: "3FDDC935FECB660C"
 	images: [
 		{
@@ -1232,7 +1234,7 @@
 			shape: "none"
 			tasks: [{
 				id: "7D8E36AD4ABBFF0F"
-				item: { components: { "ftbquests:missing_item": "culturaldelights:ginger" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "culturaldelights:ginger" }
 				type: "item"
 			}]
 			x: 1.190476190476204d
@@ -1742,7 +1744,9 @@
 			shape: "none"
 			size: 3.0d
 			tasks: [{
-				icon: { count: 1, id: "minecraft:netherite_hoe" }
+				icon: {
+					id: "minecraft:netherite_hoe"
+				}
 				id: "14B9889CA24FCD78"
 				stat: "minecraft:play_time"
 				type: "stat"

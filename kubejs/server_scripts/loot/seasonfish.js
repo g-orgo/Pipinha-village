@@ -1,7 +1,7 @@
 console.info("[SOCIETY] seasonFish.js loaded");
 
 const checkSeasonNeptuna = (p, season, needsSkil) =>
-  global.getSeasonFromLevel(p.level) === season &&
+  global.getSeasonFromLevel(p.level()) === season &&
   p.stages.has("mystical_ocean") === needsSkil;
 const convertToLootEntry = (entries, insertNeptuna) => {
   let pool = [];
@@ -39,6 +39,30 @@ const createPool = (entries, clear, rain, night) => {
   return newPool;
 };
 
+const ConstantValue = Java.loadClass(
+  "net.minecraft.world.level.storage.loot.providers.number.ConstantValue"
+);
+const weatherCheck = (weather) =>
+  Object.assign({ condition: "minecraft:weather_check" }, weather);
+const biomeLocation = (tag) => ({
+  condition: "minecraft:location_check",
+  predicate: { biomes: tag },
+});
+const notInBiomes = (tags) => ({
+  condition: "minecraft:inverted",
+  term: {
+    condition: "minecraft:any_of",
+    terms: tags.map((tag) => biomeLocation(tag)),
+  },
+});
+const addFishPool = (table, entries, mysticalOcean) =>
+  table.pool((p) => {
+    p.rolls(ConstantValue.exactly(1));
+    convertToLootEntry(entries, mysticalOcean).forEach((entry) =>
+      p.addEntry(entry)
+    );
+  });
+
 const createWeatherLootTable = (
   e,
   season,
@@ -49,61 +73,49 @@ const createWeatherLootTable = (
   night,
   mysticalOcean
 ) => {
-  if (!night) {
-    e.addTableModifier("minecraft:gameplay/fishing")
-      .playerPredicate((p) => checkSeasonNeptuna(p, season, mysticalOcean))
-      .anyBiome("#minecraft:is_ocean", "#minecraft:is_beach")
-      .weatherCheck(weather)
-      .timeCheck(24000, 0, 12999)
-      .addWeightedLoot([1, 1], convertToLootEntry(oceanFish, mysticalOcean));
+  const timeMin = night ? 13000 : 0;
+  const timeMax = night ? 23999 : 12999;
+  const playerCheck = (p) => checkSeasonNeptuna(p, season, mysticalOcean);
+  const ocean = ["#minecraft:is_ocean", "#minecraft:is_beach"];
+  const river = ["#minecraft:is_river"];
+  const fresh = ["#minecraft:is_ocean", "#minecraft:is_beach", "#minecraft:is_river"];
 
-    e.addTableModifier("minecraft:gameplay/fishing")
-      .playerPredicate((p) => checkSeasonNeptuna(p, season, mysticalOcean))
-      .anyBiome("#minecraft:is_river")
-      .weatherCheck(weather)
-      .timeCheck(24000, 0, 12999)
-      .addWeightedLoot([1, 1], convertToLootEntry(riverFish, mysticalOcean));
-
-    e.addTableModifier("minecraft:gameplay/fishing")
-      .playerPredicate((p) => checkSeasonNeptuna(p, season, mysticalOcean))
-      .not((n) => {
-        n.anyBiome(
-          "#minecraft:is_ocean",
-          "#minecraft:is_beach",
-          "#minecraft:is_river"
-        );
+  addFishPool(
+    e
+      .addTableModifier("minecraft:gameplay/fishing")
+      .matchPlayerCustom(playerCheck)
+      .matchAnyOf((c) => {
+        ocean.forEach((tag) => c.matchBiome(tag));
       })
-      .weatherCheck(weather)
-      .timeCheck(24000, 0, 12999)
-      .addWeightedLoot([1, 1], convertToLootEntry(freshFish, mysticalOcean));
-  } else {
-    e.addTableModifier("minecraft:gameplay/fishing")
-      .playerPredicate((p) => checkSeasonNeptuna(p, season, mysticalOcean))
-      .anyBiome("#minecraft:is_ocean", "#minecraft:is_beach")
-      .weatherCheck(weather)
-      .timeCheck(24000, 13000, 23999)
-      .addWeightedLoot([1, 1], convertToLootEntry(oceanFish, mysticalOcean));
+      .matchCustomCondition(weatherCondition(weather))
+      .matchTime(24000, timeMin, timeMax),
+    oceanFish,
+    mysticalOcean
+  );
 
-    e.addTableModifier("minecraft:gameplay/fishing")
-      .playerPredicate((p) => checkSeasonNeptuna(p, season, mysticalOcean))
-      .anyBiome("#minecraft:is_river")
-      .weatherCheck(weather)
-      .timeCheck(24000, 13000, 23999)
-      .addWeightedLoot([1, 1], convertToLootEntry(riverFish, mysticalOcean));
-
-    e.addTableModifier("minecraft:gameplay/fishing")
-      .playerPredicate((p) => checkSeasonNeptuna(p, season, mysticalOcean))
-      .not((n) => {
-        n.anyBiome(
-          "#minecraft:is_ocean",
-          "#minecraft:is_beach",
-          "#minecraft:is_river"
-        );
+  addFishPool(
+    e
+      .addTableModifier("minecraft:gameplay/fishing")
+      .matchPlayerCustom(playerCheck)
+      .matchAnyOf((c) => {
+        river.forEach((tag) => c.matchBiome(tag));
       })
-      .weatherCheck(weather)
-      .timeCheck(24000, 13000, 23999)
-      .addWeightedLoot([1, 1], convertToLootEntry(freshFish, mysticalOcean));
-  }
+      .matchCustomCondition(weatherCondition(weather))
+      .matchTime(24000, timeMin, timeMax),
+    riverFish,
+    mysticalOcean
+  );
+
+  addFishPool(
+    e
+      .addTableModifier("minecraft:gameplay/fishing")
+      .matchPlayerCustom(playerCheck)
+      .matchCustomCondition(notInBiomes(fresh))
+      .matchCustomCondition(weatherCondition(weather))
+      .matchTime(24000, timeMin, timeMax),
+    freshFish,
+    mysticalOcean
+  );
 };
 
 const createSeasonLootTable = (
@@ -335,14 +347,14 @@ LootJS.modifiers((e) => {
   // + Fish skills
   e.addTableModifier("minecraft:gameplay/fishing")
     .hasAnyStage("fly_fisher")
-    .modifyLoot(Ingredient.all, (itemStack) => {
+    .modifyLoot(ItemFilter.ANY, (itemStack) => {
       if (!itemStack.hasTag("minecraft:fishes")) return itemStack;
       if (itemStack.maxStackSize == 1) return itemStack;
       itemStack.setCount(itemStack.getCount() + 1);
       return itemStack;
     })
     .hasAnyStage("school_fisher")
-    .modifyLoot(Ingredient.all, (itemStack) => {
+    .modifyLoot(ItemFilter.ANY, (itemStack) => {
       if (!itemStack.hasTag("minecraft:fishes")) return itemStack;
       if (itemStack.maxStackSize == 1) return itemStack;
       itemStack.setCount(itemStack.getCount() + 3);
@@ -350,10 +362,10 @@ LootJS.modifiers((e) => {
     })
 
   e.addTableModifier("minecraft:gameplay/fishing")
-    .playerPredicate((p) =>
-      global.hasBobber(p.getHeldItem("main_hand"), "society:needle_bobber")
+    .matchPlayerCustom((p) =>
+      global.hasBobber(p.getMainHandItem(), "society:needle_bobber")
     )
-    .modifyLoot(Ingredient.all, (itemStack) => {
+    .modifyLoot(ItemFilter.ANY, (itemStack) => {
       if (!itemStack.hasTag("minecraft:fishes")) return itemStack;
       if (itemStack.maxStackSize == 1) return itemStack;
       itemStack.setCount(itemStack.getCount() + 5);

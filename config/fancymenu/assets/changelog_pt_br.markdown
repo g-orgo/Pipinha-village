@@ -13,6 +13,7 @@ Esta versão só existe porque queríamos o Create Aeronautics no pack, e ele n�
 + Create High Seas: construções com física flutuam na água e podem alagar por dentro
 + Sable: estruturas de blocos que se movem com física
 + Create 6 com os addons atualizados
++ Botania Revived no lugar do Botania: a mesma experiência da 1.20.1, com as sementes recriadas
 + Sodium + Iris no lugar de Embeddium + Oculus: shaders e desempenho na versão nova
 
 ### Mudou
@@ -21,7 +22,7 @@ Esta versão só existe porque queríamos o Create Aeronautics no pack, e ele n�
 + Mundos da edição 1.20.1 são convertidos numa cópia, e blocos de mods que não vieram somem na conversão
 
 ### Saiu
-- Botania, Splendid Slimes e Create: Splendid Cogs, junto com as missões, ofertas e receitas ligadas a eles
+- Splendid Slimes e Create: Splendid Cogs, junto com as missões, ofertas e receitas ligadas a eles
 - Mods sem versão para 1.21.1, como Species, Re:Deco, Quark Delight e Refined Storage Addons
 
 ### Em andamento

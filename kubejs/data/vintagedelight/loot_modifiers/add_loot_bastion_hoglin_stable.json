@@ -1,4 +1,10 @@
 {
-  "type": "farmersdelight:add_loot_table",
-  "conditions": []
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/bastion_hoglin_stable"
+    }
+  ],
+  "table": "vintagedelight:chests/vd_bastion_hoglin_stable"
 }

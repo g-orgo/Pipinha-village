@@ -1,20 +1,25 @@
 {
-    "type": "create_mechanical_extruder:extruding",
-    "ingredients": [
-        {
-            "amount": 1000,
-            "fluid": "minecraft:lava",
-            "nbt": {}
-        },
-        {
-            "amount": 1000,
-            "fluid": "vinery:apple_juice",
-            "nbt": {}
-        }
-    ],
-    "requiredBonks": 4,
-    "result": {
-        "id": "meadow:cobbled_limestone"
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "create_mechanical_extruder:extruding",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "minecraft:lava",
+      "nbt": {}
     },
-    "blockIngredients": []
+    {
+      "amount": 1000,
+      "fluid": "vinery:apple_juice",
+      "nbt": {}
+    }
+  ],
+  "requiredBonks": 4,
+  "result": {
+    "id": "meadow:cobbled_limestone"
+  },
+  "blockIngredients": []
 }

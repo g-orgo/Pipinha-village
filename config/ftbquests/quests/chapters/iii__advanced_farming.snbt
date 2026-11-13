@@ -3,7 +3,9 @@
 	default_quest_shape: ""
 	filename: "iii__advanced_farming"
 	group: "457DCF55318282CA"
-	icon: { count: 1, id: "society:ancient_fruit" }
+	icon: {
+		id: "society:ancient_fruit"
+	}
 	id: "06219592000B9C9F"
 	images: [ ]
 	order_index: 2
@@ -90,7 +92,9 @@
 				"0F176FBF01ABB774"
 				"6689D68F72E56A40"
 			]
-			icon: { count: 1, id: "society:charging_rod" }
+			icon: {
+				id: "society:charging_rod"
+			}
 			id: "0C7D8F89BCF645AA"
 			rewards: [{
 				count: 4
@@ -368,7 +372,9 @@
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
-			icon: { count: 1, id: "longwings:butterfly_driplure" }
+			icon: {
+				id: "longwings:butterfly_driplure"
+			}
 			id: "7ADD57C8AF4092B2"
 			rewards: [{
 				id: "7098A56E92FB337B"
@@ -414,7 +420,9 @@
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
-			icon: { count: 1, id: "longwings:butterfly_handbook" }
+			icon: {
+				id: "longwings:butterfly_handbook"
+			}
 			id: "4DC073ABF3D72467"
 			rewards: [{
 				id: "2E19FA6FA274E294"
@@ -433,7 +441,9 @@
 		}
 		{
 			dependencies: ["6F8709C925DE7237"]
-			icon: { count: 1, id: "society:butterfly_amber" }
+			icon: {
+				id: "society:butterfly_amber"
+			}
 			id: "3B6640956F047EC8"
 			rewards: [
 				{
@@ -484,7 +494,9 @@
 		{
 			dependencies: ["214BFF5CB710FFE2"]
 			hide_dependency_lines: false
-			icon: { count: 1, id: "refurbished_furniture:light_electricity_generator" }
+			icon: {
+				id: "refurbished_furniture:light_electricity_generator"
+			}
 			id: "0462313FFAEC4054"
 			rewards: [{
 				id: "010FC9BAC3A786B3"
@@ -495,7 +507,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				icon: { count: 1, id: "refurbished_furniture:light_electricity_generator" }
+				icon: {
+					id: "refurbished_furniture:light_electricity_generator"
+				}
 				id: "1554E7905CF741CC"
 				item: { components: { "ftbfiltersystem:filter": "or(item(refurbished_furniture:dark_electricity_generator)item(refurbished_furniture:light_electricity_generator))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
@@ -584,7 +598,9 @@
 		}
 		{
 			dependencies: ["66E1AC55824DF1D9"]
-			icon: { count: 1, id: "etcetera:bismuth_ingot" }
+			icon: {
+				id: "etcetera:bismuth_ingot"
+			}
 			id: "6689D68F72E56A40"
 			rewards: [{
 				count: 4
@@ -605,7 +621,9 @@
 		}
 		{
 			dependencies: ["6689D68F72E56A40"]
-			icon: { count: 1, id: "classicpipes:oak_pipe" }
+			icon: {
+				id: "classicpipes:oak_pipe"
+			}
 			id: "6C95E6AEEC55CFA5"
 			rewards: [{
 				count: 4
@@ -664,7 +682,9 @@
 		}
 		{
 			dependencies: ["66E1AC55824DF1D9"]
-			icon: { count: 1, id: "society:ribbit_hut_block" }
+			icon: {
+				id: "society:ribbit_hut_block"
+			}
 			id: "3DE36C9FBCB58800"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -675,17 +695,12 @@
 			tasks: [
 				{
 					id: "2DA4C5918EDD2952"
-					item: { components: { "ftbquests:missing_item": "society:invitation" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "society:invitation" }
 					match_components: "fuzzy"
 					type: "item"
 				}
 				{
-					icon: {
-						components: {
-							"ftbquests:missing_item": "society:villager"
-						}
-						id: "ftbquests:missing_item"
-					}
+					icon: { count: 1, id: "society:villager" }
 					id: "47A5E6018A6FB99F"
 					stage: "invited_witch"
 					type: "gamestage"

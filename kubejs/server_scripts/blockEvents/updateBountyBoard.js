@@ -1,22 +1,29 @@
 console.info("[SOCIETY] updateBountyBoard.js loaded");
 
+// 1.21.1: item stacks inside block entity NBT keep their data under "components"
+// (not "tag"), and Bountiful 8 stores the decree data in the "bountiful:decree_data"
+// component. Seasonal decrees are switched to the current season on right click.
+const DECREE_DATA_KEY = "bountiful:decree_data";
+
 BlockEvents.rightClicked("bountiful:bountyboard", (e) => {
   const { level, block } = e;
-  let seasonalBounties = ["summer", "spring", "autumn", "winter"];
-  let blockNbt = block.getEntityData();
-  const decrees = blockNbt.decree_inv.Items;
-  let isSeasonal;
-  let hasChanged;
+  const seasonalBounties = ["summer", "spring", "autumn", "winter"];
+  const blockNbt = block.getEntityData();
+  const inv = blockNbt.decree_inv;
+  if (!inv || !inv.Items) return;
+  const decrees = inv.Items;
+  let hasChanged = false;
   for (let index = 0; index < decrees.length; index++) {
-    seasonalBounties.forEach((season) => {
-      if (!isSeasonal)
-        isSeasonal = decrees[index].tag["bountiful:decree_data"].toString().includes(season);
-    });
+    const components = decrees[index].components;
+    if (!components || components[DECREE_DATA_KEY] === undefined || components[DECREE_DATA_KEY] === null) {
+      continue;
+    }
+    const data = String(components[DECREE_DATA_KEY]);
+    const isSeasonal = seasonalBounties.some((season) => data.includes(season));
     if (isSeasonal) {
-      blockNbt.decree_inv.Items[index].tag["bountiful:decree_data"] = Object(
-        `{"ids":["${global.getSeasonFromLevel(level)}"]}`
-      );
-      isSeasonal = false;
+      decrees[index].components[DECREE_DATA_KEY] = {
+        ids: [global.getSeasonFromLevel(level)],
+      };
       hasChanged = true;
     }
   }

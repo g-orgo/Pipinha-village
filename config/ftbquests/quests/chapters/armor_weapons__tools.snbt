@@ -5,7 +5,9 @@
 	disable_toast: true
 	filename: "armor_weapons__tools"
 	group: "439B0423947443D3"
-	icon: { count: 1, id: "rehooked:diamond_hook" }
+	icon: {
+		id: "rehooked:diamond_hook"
+	}
 	id: "08F0C20BB94C2DBD"
 	images: [ ]
 	order_index: 3
@@ -13,7 +15,9 @@
 	quests: [
 		{
 			dependencies: ["617AC2E80908BFD7"]
-			icon: { count: 1, id: "minecraft:leather_chestplate" }
+			icon: {
+				id: "minecraft:leather_chestplate"
+			}
 			id: "48F1059FC059D3E5"
 			tasks: [{
 				id: "3CE6113B51970AC2"
@@ -25,7 +29,9 @@
 		}
 		{
 			dependencies: ["48F1059FC059D3E5"]
-			icon: { count: 1, id: "minecraft:chainmail_chestplate" }
+			icon: {
+				id: "minecraft:chainmail_chestplate"
+			}
 			id: "21FD7614E314BA14"
 			tasks: [{
 				id: "7D036618EBB21410"
@@ -37,7 +43,9 @@
 		}
 		{
 			dependencies: ["0ACB2E342421B74E"]
-			icon: { count: 1, id: "minecraft:golden_chestplate" }
+			icon: {
+				id: "minecraft:golden_chestplate"
+			}
 			id: "7A5974D470C5AA9C"
 			tasks: [{
 				id: "6E8880D4D8EB4DF5"
@@ -49,7 +57,9 @@
 		}
 		{
 			dependencies: ["21FD7614E314BA14"]
-			icon: { count: 1, id: "minecraft:iron_chestplate" }
+			icon: {
+				id: "minecraft:iron_chestplate"
+			}
 			id: "0ACB2E342421B74E"
 			tasks: [{
 				id: "487C30F04C7295E0"
@@ -61,7 +71,9 @@
 		}
 		{
 			dependencies: ["7A5974D470C5AA9C"]
-			icon: { count: 1, id: "minecraft:diamond_chestplate" }
+			icon: {
+				id: "minecraft:diamond_chestplate"
+			}
 			id: "38A0B8D54F85B846"
 			tasks: [{
 				id: "3E0453D9C60A9B8C"
@@ -73,7 +85,9 @@
 		}
 		{
 			dependencies: ["38A0B8D54F85B846"]
-			icon: { count: 1, id: "minecraft:netherite_chestplate" }
+			icon: {
+				id: "minecraft:netherite_chestplate"
+			}
 			id: "4C2120EC29BE0E64"
 			tasks: [{
 				id: "5E760A955BFF6876"
@@ -85,7 +99,9 @@
 		}
 		{
 			dependencies: ["38A0B8D54F85B846"]
-			icon: { count: 1, id: "aquaculture:neptunium_chestplate" }
+			icon: {
+				id: "aquaculture:neptunium_chestplate"
+			}
 			id: "33FD69B12C21E495"
 			tasks: [{
 				id: "2ED9B316F07C51F3"
@@ -97,7 +113,9 @@
 		}
 		{
 			dependencies: ["617AC2E80908BFD7"]
-			icon: { count: 1, id: "minecraft:wooden_pickaxe" }
+			icon: {
+				id: "minecraft:wooden_pickaxe"
+			}
 			id: "1B614E9E38B45BD0"
 			tasks: [{
 				id: "7972CE0709D02D49"
@@ -109,7 +127,9 @@
 		}
 		{
 			dependencies: ["1B614E9E38B45BD0"]
-			icon: { count: 1, id: "minecraft:stone_pickaxe" }
+			icon: {
+				id: "minecraft:stone_pickaxe"
+			}
 			id: "43C52E202277C5AA"
 			tasks: [{
 				id: "0E5D7529339C2A99"
@@ -121,7 +141,9 @@
 		}
 		{
 			dependencies: ["08241E18191275AE"]
-			icon: { count: 1, id: "minecraft:golden_pickaxe" }
+			icon: {
+				id: "minecraft:golden_pickaxe"
+			}
 			id: "32FE1F4EF913EADA"
 			tasks: [{
 				id: "4D916A97F18FCE61"
@@ -133,7 +155,9 @@
 		}
 		{
 			dependencies: ["43C52E202277C5AA"]
-			icon: { count: 1, id: "minecraft:iron_pickaxe" }
+			icon: {
+				id: "minecraft:iron_pickaxe"
+			}
 			id: "08241E18191275AE"
 			tasks: [{
 				id: "18CE25FAB2D5E7FE"
@@ -145,7 +169,9 @@
 		}
 		{
 			dependencies: ["32FE1F4EF913EADA"]
-			icon: { count: 1, id: "minecraft:diamond_pickaxe" }
+			icon: {
+				id: "minecraft:diamond_pickaxe"
+			}
 			id: "54301E900FFA56D7"
 			tasks: [{
 				id: "0A266FA5E2FD2103"
@@ -157,7 +183,9 @@
 		}
 		{
 			dependencies: ["54301E900FFA56D7"]
-			icon: { count: 1, id: "minecraft:netherite_pickaxe" }
+			icon: {
+				id: "minecraft:netherite_pickaxe"
+			}
 			id: "319129CE8210964A"
 			tasks: [{
 				id: "6D157C77899A7115"
@@ -169,7 +197,9 @@
 		}
 		{
 			dependencies: ["54301E900FFA56D7"]
-			icon: { count: 1, id: "aquaculture:neptunium_pickaxe" }
+			icon: {
+				id: "aquaculture:neptunium_pickaxe"
+			}
 			id: "4EA02089CD02F7C0"
 			tasks: [{
 				id: "1756A4BFB7D46C3B"
@@ -223,7 +253,9 @@
 			optional: true
 			size: 2.0d
 			tasks: [{
-				icon: { count: 1, id: "minecraft:wooden_pickaxe" }
+				icon: {
+					id: "minecraft:wooden_pickaxe"
+				}
 				id: "531DADCAC7BBB3D6"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -378,7 +410,9 @@
 		}
 		{
 			dependencies: ["617AC2E80908BFD7"]
-			icon: { count: 1, id: "create:copper_backtank" }
+			icon: {
+				id: "create:copper_backtank"
+			}
 			id: "4EFD1F876D69591E"
 			rewards: [{
 				id: "513417F90E4B9769"
@@ -405,7 +439,9 @@
 		}
 		{
 			dependencies: ["4EFD1F876D69591E"]
-			icon: { count: 1, id: "create:netherite_diving_helmet" }
+			icon: {
+				id: "create:netherite_diving_helmet"
+			}
 			id: "1BA73EA72B471270"
 			rewards: [{
 				id: "46F8621CBFAD3966"
@@ -480,7 +516,9 @@
 		}
 		{
 			dependencies: ["617AC2E80908BFD7"]
-			icon: { count: 1, id: "minecraft:netherite_pickaxe" }
+			icon: {
+				id: "minecraft:netherite_pickaxe"
+			}
 			id: "34206688082CCC57"
 			tasks: [{
 				id: "75D3693267CE0239"
@@ -510,7 +548,9 @@
 		}
 		{
 			dependencies: ["34206688082CCC57"]
-			icon: { count: 1, id: "justhammers:diamond_hammer" }
+			icon: {
+				id: "justhammers:diamond_hammer"
+			}
 			id: "66510F15A69EBAED"
 			rewards: [{
 				id: "03FACD1CB0A7EF22"
@@ -530,7 +570,9 @@
 		}
 		{
 			dependencies: ["38A0B8D54F85B846"]
-			icon: { count: 1, id: "oreganized:electrum_chestplate" }
+			icon: {
+				id: "oreganized:electrum_chestplate"
+			}
 			id: "6FDA9C1E5D681CDA"
 			tasks: [{
 				id: "652F7B6F053D1586"
@@ -542,7 +584,9 @@
 		}
 		{
 			dependencies: ["54301E900FFA56D7"]
-			icon: { count: 1, id: "oreganized:electrum_pickaxe" }
+			icon: {
+				id: "oreganized:electrum_pickaxe"
+			}
 			id: "11207C347FC407E1"
 			tasks: [{
 				id: "2712211EC08C9471"
@@ -573,7 +617,9 @@
 		}
 		{
 			dependencies: ["7A5974D470C5AA9C"]
-			icon: { count: 1, id: "botania:manasteel_chestplate" }
+			icon: {
+				id: "botania:manasteel_chestplate"
+			}
 			id: "6080E8F9B0DDAE72"
 			tasks: [{
 				id: "12DAF95F0B50680C"
@@ -585,7 +631,9 @@
 		}
 		{
 			dependencies: ["6080E8F9B0DDAE72"]
-			icon: { count: 1, id: "botania:terrasteel_chestplate" }
+			icon: {
+				id: "botania:terrasteel_chestplate"
+			}
 			id: "6E4CC63B8CF1EDAF"
 			tasks: [{
 				id: "7EDA5896186979D5"
@@ -597,7 +645,9 @@
 		}
 		{
 			dependencies: ["6080E8F9B0DDAE72"]
-			icon: { count: 1, id: "botania:elementium_chestplate" }
+			icon: {
+				id: "botania:elementium_chestplate"
+			}
 			id: "3FC4155A11F14663"
 			tasks: [{
 				id: "033A4317987E15C2"

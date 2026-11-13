@@ -4,14 +4,18 @@
 	default_quest_shape: ""
 	filename: "transportation"
 	group: "439B0423947443D3"
-	icon: { count: 1, id: "minecraft:minecart" }
+	icon: {
+		id: "minecraft:minecart"
+	}
 	id: "7F2FF813A6AF57FE"
 	images: [ ]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			icon: { count: 1, id: "minecraft:minecart" }
+			icon: {
+				id: "minecraft:minecart"
+			}
 			id: "4622E3EC44CED1B6"
 			size: 2.0d
 			tasks: [{
@@ -42,7 +46,9 @@
 		}
 		{
 			dependencies: ["71C32483EE2418CA"]
-			icon: { count: 1, id: "supplementaries:way_sign_oak" }
+			icon: {
+				id: "supplementaries:way_sign_oak"
+			}
 			id: "42A10CEE57513522"
 			rewards: [{
 				count: 3
@@ -63,7 +69,9 @@
 		}
 		{
 			dependencies: ["4622E3EC44CED1B6"]
-			icon: { count: 1, id: "create:track" }
+			icon: {
+				id: "create:track"
+			}
 			id: "53836B96EE81A695"
 			rewards: [
 				{
@@ -101,7 +109,9 @@
 		}
 		{
 			dependencies: ["4622E3EC44CED1B6"]
-			icon: { count: 1, id: "smallships:oak_brigg" }
+			icon: {
+				id: "smallships:oak_brigg"
+			}
 			id: "3BC6467B02D74FAC"
 			rewards: [{
 				id: "672BC473C1F48AA5"
@@ -140,7 +150,9 @@
 		}
 		{
 			dependencies: ["53836B96EE81A695"]
-			icon: { count: 1, id: "createrailwaysnavigator:advanced_display_block" }
+			icon: {
+				id: "createrailwaysnavigator:advanced_display_block"
+			}
 			id: "32A9D7283F680AE3"
 			rewards: [{
 				id: "7B3E085BD1DE60F2"
@@ -187,7 +199,9 @@
 		}
 		{
 			dependencies: ["4622E3EC44CED1B6"]
-			icon: { count: 1, id: "automobility:automobile" }
+			icon: {
+				id: "automobility:automobile"
+			}
 			id: "5A0AA87EA971F13F"
 			rewards: [{
 				id: "492229A259CB9D08"
@@ -291,7 +305,9 @@
 		}
 		{
 			dependencies: ["4622E3EC44CED1B6"]
-			icon: { count: 1, id: "minecraft:ender_eye" }
+			icon: {
+				id: "minecraft:ender_eye"
+			}
 			id: "71C32483EE2418CA"
 			size: 1.0d
 			tasks: [{

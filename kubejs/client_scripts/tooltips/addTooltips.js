@@ -763,16 +763,7 @@ ItemEvents.modifyTooltips((event) => {
     "society:dragontooth_axe",
     Text.translatable("item.society.dragontooth_axe.description").red()
   );
-  tooltip.addAdvanced("botania:apothecary_default", (item, advanced, text) => {
-    if (tooltip.shift) {
-      text.add(Text.translatable("tooltip.society.petal_apothecary.description").gold());
-    } else {
-      text.add([
-        Text.translatable("tooltip.society.petal_apothecary.obtain").append(" "),
-        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
-      ]);
-    }
-  });
+  tooltip.modify("botania:apothecary_default", (text) => text.dynamic("pipinha:petal_apothecary"));
   tooltip.add(
     "society:kinetic_blueprint",
     Text.translatable("item.society.kinetic_blueprint.description.tip").green()
@@ -1237,5 +1228,13 @@ ItemEvents.dynamicTooltips("pipinha:general_mastery", (e) => {
         e,
         Text.translatable("tooltip.society.general_mastery.description").aqua(),
         "tooltip.society.general_mastery.required"
+    );
+});
+
+ItemEvents.dynamicTooltips("pipinha:petal_apothecary", (e) => {
+    addObtainTooltipLines(
+        e,
+        Text.translatable("tooltip.society.petal_apothecary.description").gold(),
+        "tooltip.society.petal_apothecary.obtain"
     );
 });

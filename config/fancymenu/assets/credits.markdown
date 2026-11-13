@@ -1,4 +1,4 @@
-### Sunlit Valley Dev Team
+### Original Dev Team
 - Chakyl - Lead developer & gameplay designer
 - Nitbe - Artist for blocks, portraits, and items  
 - Uni - Worldgen programmer & Skull Cavern mastermind

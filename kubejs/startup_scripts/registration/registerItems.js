@@ -939,7 +939,7 @@ StartupEvents.registry("item", (e) => {
     });
     if (splitProduct[0] === "society")
       texturePath = `${splitProduct[0]}:item/drinks/${splitProduct[1]}`;
-    e.create(`society:aged_${splitProduct[1]}`)
+    e.create(`society:aged_${global.agedName(splitProduct[1])}`)
       .texture(texturePath)
       .tag("society:aged_product")
       .displayName(
@@ -951,7 +951,7 @@ StartupEvents.registry("item", (e) => {
       .glow(true)
       .color(0, 0xcae9f4);
 
-    e.create(`society:double_aged_${splitProduct[1]}`)
+    e.create(`society:double_aged_${global.agedName(splitProduct[1])}`)
       .texture(texturePath)
       .tag("society:double_aged_product")
       .displayName(

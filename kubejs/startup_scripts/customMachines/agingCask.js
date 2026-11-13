@@ -133,7 +133,7 @@ global.ageableProductInputs = [
 global.ageableProductInputs.forEach((product) => {
   const splitProduct = product.item.split(":");
   global.agingCaskRecipes.set(product.item, {
-    output: [`1x society:aged_${splitProduct[1]}`],
+    output: [`1x society:aged_${global.agedName(splitProduct[1])}`],
     time: product.time,
   });
 });

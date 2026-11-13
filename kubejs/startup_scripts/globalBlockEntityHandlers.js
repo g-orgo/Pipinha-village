@@ -219,7 +219,7 @@ global.artisanHarvest = (
         (id.includes("wheel") || id.includes("block")) &&
         block.properties.get("upgraded").toLowerCase() === "true"
       ) {
-        harvestOutput = Item.of(`society:aged_${id.path}`);
+        harvestOutput = Item.of(`society:aged_${global.agedName(id.path)}`);
       }
       if (outputMult > 1 && !recipes.get(nbt.data.recipe).multExempt) {
         harvestOutput.count = harvestOutput.count * outputMult;

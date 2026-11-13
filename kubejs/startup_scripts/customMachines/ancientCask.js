@@ -130,8 +130,8 @@ global.ancientCaskRecipes = new Map([]);
   { item: "society:mana_king", name: "Mana King", time: 20 },
 ].forEach((product) => {
   const splitProduct = product.item.split(":");
-  global.ancientCaskRecipes.set(`society:aged_${splitProduct[1]}`, {
-    output: [`1x society:double_aged_${splitProduct[1]}`],
+  global.ancientCaskRecipes.set(`society:aged_${global.agedName(splitProduct[1])}`, {
+    output: [`1x society:double_aged_${global.agedName(splitProduct[1])}`],
     time: product.time,
   });
 });

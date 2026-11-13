@@ -5,7 +5,9 @@
 	default_quest_shape: ""
 	filename: "crafts_room"
 	group: "106AD9AA3ADDE3AE"
-	icon: { count: 1, id: "furniture:sewing_kit" }
+	icon: {
+		id: "furniture:sewing_kit"
+	}
 	id: "28E0AFD408BA2300"
 	images: [{
 		height: 10.0d
@@ -20,7 +22,9 @@
 	quest_links: [ ]
 	quests: [
 		{
-			icon: { count: 1, id: "supplementaries:present_red" }
+			icon: {
+				id: "supplementaries:present_red"
+			}
 			id: "0403045A4DA7A770"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -60,7 +64,9 @@
 			y: -1.2142857142857224d
 		}
 		{
-			icon: { count: 1, id: "supplementaries:present_green" }
+			icon: {
+				id: "supplementaries:present_green"
+			}
 			id: "1E6139BDE9202B6A"
 			rewards: [{
 				id: "490B15BEE84A932A"
@@ -154,7 +160,9 @@
 			y: -0.5d
 		}
 		{
-			icon: { count: 1, id: "supplementaries:present_red" }
+			icon: {
+				id: "supplementaries:present_red"
+			}
 			id: "6F3F87DBBBE86A28"
 			rewards: [
 				{
@@ -213,7 +221,9 @@
 				"1E6139BDE9202B6A"
 				"0403045A4DA7A770"
 			]
-			icon: { count: 1, id: "furniture:sewing_kit" }
+			icon: {
+				id: "furniture:sewing_kit"
+			}
 			id: "7591439B35772AB2"
 			rewards: [
 				{
@@ -275,7 +285,9 @@
 			]
 			shape: "none"
 			tasks: [{
-				icon: { count: 1, id: "society:furniture_box" }
+				icon: {
+					id: "society:furniture_box"
+				}
 				id: "38C738638838D769"
 				stat: "minecraft:play_time"
 				type: "stat"
@@ -285,7 +297,9 @@
 			y: 1.0714285714285694d
 		}
 		{
-			icon: { count: 1, id: "supplementaries:present_lime" }
+			icon: {
+				id: "supplementaries:present_lime"
+			}
 			id: "174FBAB7BF83C049"
 			rewards: [{
 				id: "3F8B2A9CF4518F08"
@@ -332,7 +346,9 @@
 			y: -0.44285714285715017d
 		}
 		{
-			icon: { count: 1, id: "supplementaries:present_blue" }
+			icon: {
+				id: "supplementaries:present_blue"
+			}
 			id: "7466DCDD6C3CDDE8"
 			rewards: [{
 				id: "54A04C9C43D4139E"

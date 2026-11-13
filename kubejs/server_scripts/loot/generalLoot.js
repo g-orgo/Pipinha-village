@@ -7,7 +7,23 @@ const fixedStackSize = (itemStack) => {
   }
   return itemStack;
 };
+
+const IntRange = Java.loadClass("net.minecraft.world.level.storage.loot.IntRange");
+const JsonOps = Java.loadClass("com.mojang.serialization.JsonOps");
+const JsonParser = Java.loadClass("com.google.gson.JsonParser");
+const toBound = (v) => (Array.isArray(v) ? { type: "minecraft:uniform", min: v[0], max: v[1] } : v);
+const intRange = (min, max) => {
+  const json = {};
+  if (min !== undefined && min !== null) json.min = toBound(min);
+  if (max !== undefined && max !== null) json.max = toBound(max);
+  return IntRange.CODEC.parse(JsonOps.INSTANCE, JsonParser.parseString(JSON.stringify(json))).getOrThrow();
+};
+
 LootJS.modifiers((e) => {
+  const slimeOk = Item.exists("splendid_slimes:slime_heart");
+  const slimeHeart = (kind) =>
+    Item.of("splendid_slimes:slime_heart", `{slime:{id:"splendid_slimes:${kind}"}}`);
+
   // Entities
   e.addTableModifier("rottencreatures:entities/zap")
     .randomChance(0.03)
@@ -46,138 +62,135 @@ LootJS.modifiers((e) => {
   e.addTableModifier("minecraft:chests/simple_dungeon")
     .randomChance(0.3)
     .addLoot("numismatics:bevel")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/simple_dungeon")
     .randomChance(0.1)
     .addLoot("society:source_gem");
   e.addTableModifier("minecraft:chests/abandoned_mineshaft")
     .randomChance(0.2)
     .addLoot("numismatics:bevel")
-    .limitCount([1, 4], [5, 9]);
-  e.addTableModifier("minecraft:chests/abandoned_mineshaft")
-    .randomChance(0.2)
-    .addLoot(
-      Item.of(
-      )
-    );
+    .limitCount(intRange([1, 4], [5, 9]));
+  if (slimeOk) {
+    e.addTableModifier("minecraft:chests/abandoned_mineshaft")
+      .randomChance(0.2)
+      .addLoot(slimeHeart("webby"));
+    e.addTableModifier("minecraft:chests/simple_dungeon")
+      .randomChance(0.1)
+      .addLoot(slimeHeart("webby"));
+  }
   e.addTableModifier("minecraft:chests/buried_treasure")
     .randomChance(0.9)
     .addLoot("numismatics:cog")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/buried_treasure")
     .randomChance(1)
     .addLoot("numismatics:crown")
-    .limitCount([1, 2]);
+    .limitCount(intRange(1, 2));
   e.addTableModifier("minecraft:chests/underwater_ruin_small")
     .randomChance(0.5)
     .addLoot("numismatics:cog")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/underwater_ruin_small")
     .randomChance(0.2)
     .addLoot("numismatics:cog")
-    .limitCount([1, 2]);
+    .limitCount(intRange(1, 2));
   e.addTableModifier("minecraft:chests/underwater_ruin_big")
     .randomChance(0.6)
     .addLoot("numismatics:cog")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/underwater_ruin_big")
     .randomChance(0.3)
     .addLoot("numismatics:cog")
-    .limitCount([1, 2]);
+    .limitCount(intRange(1, 2));
   e.addTableModifier("minecraft:chests/shipwreck_supply")
     .randomChance(0.5)
     .addLoot("numismatics:bevel")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/shipwreck_supply")
     .randomChance(0.1)
     .addLoot("numismatics:sprocket")
-    .limitCount([1, 2]);
+    .limitCount(intRange(1, 2));
   e.addTableModifier("minecraft:chests/shipwreck_treasure")
     .randomChance(0.9)
     .addLoot("numismatics:bevel")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/shipwreck_treasure")
     .randomChance(0.4)
     .addLoot("numismatics:cog")
-    .limitCount([1, 2]);
+    .limitCount(intRange(1, 2));
   e.addTableModifier("minecraft:chests/woodland_mansion")
     .randomChance(0.2)
     .addLoot("numismatics:crown")
-    .limitCount([1, 2]);
+    .limitCount(intRange(1, 2));
   e.addTableModifier("minecraft:chests/jungle_temple")
     .randomChance(0.3)
     .addLoot("numismatics:crown")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/jungle_temple")
     .randomChance(0.1)
     .addLoot("numismatics:crown")
-    .limitCount([1, 2]);
+    .limitCount(intRange(1, 2));
   e.addTableModifier("minecraft:chests/desert_pyramid")
     .randomChance(0.3)
     .addLoot("numismatics:crown")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/desert_pyramid")
     .randomChance(0.1)
     .addLoot("numismatics:crown")
-    .limitCount([1, 2]);
+    .limitCount(intRange(1, 2));
   e.addTableModifier("minecraft:chests/pillager_outpost")
     .randomChance(0.3)
     .addLoot("numismatics:cog")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/ancient_city")
     .randomChance(0.6)
     .addLoot("numismatics:cog")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/ancient_city")
     .randomChance(0.3)
     .addLoot("numismatics:crown")
-    .limitCount([1, 2]);
-  e.addTableModifier("minecraft:chests/ancient_city")
-    .randomChance(0.2)
-    .addLoot(
-      Item.of(
-      )
-    );
+    .limitCount(intRange(1, 2));
+  if (slimeOk) {
+    e.addTableModifier("minecraft:chests/ancient_city")
+      .randomChance(0.2)
+      .addLoot(slimeHeart("orby"));
+  }
   e.addTableModifier("minecraft:chests/ancient_city")
     .randomChance(0.2)
     .addLoot("numismatics:sun")
-    .limitCount([1, 1]);
+    .limitCount(intRange(1, 1));
   e.addTableModifier("minecraft:chests/ruined_portal")
     .randomChance(0.7)
     .addLoot("numismatics:sprocket")
-    .limitCount([1, 2]);
+    .limitCount(intRange(1, 2));
   e.addTableModifier("minecraft:chests/nether_bridge")
     .randomChance(0.3)
     .addLoot("numismatics:sprocket")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/bastion_bridge")
     .randomChance(0.9)
     .addLoot("numismatics:sprocket")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/bastion_hoglin_stable")
     .randomChance(0.3)
     .addLoot("numismatics:sprocket")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/bastion_other")
     .randomChance(0.5)
     .addLoot("numismatics:sprocket")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/bastion_treasure")
     .randomChance(0.6)
     .addLoot("numismatics:sprocket")
-    .limitCount([1, 4], [5, 9]);
-  e.addTableModifier("minecraft:chests/bastion_treasure")
-    .randomChance(0.2)
-    .addLoot(
-      Item.of(
-      )
-    );
-  e.addTableModifier("minecraft:chests/bastion_treasure")
-    .randomChance(0.6)
-    .addLoot(
-      Item.of(
-      )
-    );
+    .limitCount(intRange([1, 4], [5, 9]));
+  if (slimeOk) {
+    e.addTableModifier("minecraft:chests/bastion_treasure")
+      .randomChance(0.2)
+      .addLoot(slimeHeart("blazing"));
+    e.addTableModifier("minecraft:chests/bastion_treasure")
+      .randomChance(0.6)
+      .addLoot(slimeHeart("weeping"));
+  }
   e.addTableModifier("atmospheric:chests/arid_garden").removeLoot(
     "atmospheric:golden_dragon_fruit"
   );
@@ -196,43 +209,39 @@ LootJS.modifiers((e) => {
   e.addTableModifier("minecraft:chests/stronghold_corridor")
     .randomChance(0.9)
     .addLoot("numismatics:bevel")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/stronghold_corridor")
     .randomChance(0.4)
     .addLoot("numismatics:sprocket")
-    .limitCount([1, 2]);
+    .limitCount(intRange(1, 2));
   e.addTableModifier("minecraft:chests/stronghold_crossing")
     .randomChance(0.9)
     .addLoot("numismatics:bevel")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/stronghold_crossing")
     .randomChance(0.4)
     .addLoot("numismatics:sprocket")
-    .limitCount([1, 2]);
+    .limitCount(intRange(1, 2));
   e.addTableModifier("minecraft:chests/end_city_treasure")
     .randomChance(0.7)
     .addLoot("numismatics:sprocket")
-    .limitCount([1, 4], [5, 9]);
+    .limitCount(intRange([1, 4], [5, 9]));
   e.addTableModifier("minecraft:chests/end_city_treasure")
     .randomChance(0.4)
     .addLoot("numismatics:cog")
-    .limitCount([1, 1]);
+    .limitCount(intRange(1, 1));
   e.addTableModifier("minecraft:chests/end_city_treasure")
     .randomChance(0.2)
     .addLoot("numismatics:cog")
-    .limitCount([1, 1]);
-  e.addTableModifier("minecraft:chests/end_city_treasure")
-    .randomChance(0.2)
-    .addLoot(
-      Item.of(
-      )
-    );
-  e.addTableModifier("minecraft:chests/end_city_treasure")
-    .randomChance(0.2)
-    .addLoot(
-      Item.of(
-      )
-    );
+    .limitCount(intRange(1, 1));
+  if (slimeOk) {
+    e.addTableModifier("minecraft:chests/end_city_treasure")
+      .randomChance(0.2)
+      .addLoot(slimeHeart("shulking"));
+    e.addTableModifier("minecraft:chests/end_city_treasure")
+      .randomChance(0.2)
+      .addLoot(slimeHeart("ender"));
+  }
 
   // Seeds
   e.addBlockModifier("minecraft:grass").removeLoot("#c:seeds");
@@ -282,14 +291,15 @@ LootJS.modifiers((e) => {
 
   // Fix unstackable item voiding bug
   e.addTableModifier(LootType.CHEST).modifyLoot(
-    Ingredient.all,
+    ItemFilter.ANY,
     (itemStack) => {
       return fixedStackSize(itemStack);
     }
   );
 
   e.addTableModifier(LootType.CHEST).pool((p) => {
-    p.randomChance(0.05).addLoot("society:recall_potion");
+    p.when((c) => c.randomChance(0.05));
+    p.addEntry(LootEntry.of("society:recall_potion"));
   });
   e.addTableModifier("minecraft:chests/simple_dungeon").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
   e.addTableModifier("minecraft:chests/spawn_bonus_chest").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
@@ -300,10 +310,17 @@ LootJS.modifiers((e) => {
   e.addTableModifier("minecraft:chests/village/village_desert_house").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
   e.addTableModifier("minecraft:chests/village/village_snowy_house").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
   // Mastery
+  // Each chance gets its own pool, so the two rolls stay independent.
   e.addTableModifier(LootType.CHEST)
     .hasAnyStage("husbandry_mastery")
     .pool((p) => {
-      p.randomChance(0.1).addLoot("society:plushie_capsule");
-      p.randomChance(0.05).addLoot("society:animal_cracker");
+      p.when((c) => c.randomChance(0.1));
+      p.addEntry(LootEntry.of("society:plushie_capsule"));
+    });
+  e.addTableModifier(LootType.CHEST)
+    .hasAnyStage("husbandry_mastery")
+    .pool((p) => {
+      p.when((c) => c.randomChance(0.05));
+      p.addEntry(LootEntry.of("society:animal_cracker"));
     });
 });

@@ -5,7 +5,9 @@
 	default_quest_shape: ""
 	filename: "vault"
 	group: "106AD9AA3ADDE3AE"
-	icon: { count: 1, id: "furniture:cash_register" }
+	icon: {
+		id: "furniture:cash_register"
+	}
 	id: "24DD5AA13FB04D9B"
 	images: [{
 		height: 10.0d
@@ -20,7 +22,9 @@
 	quest_links: [ ]
 	quests: [
 		{
-			icon: { count: 1, id: "supplementaries:present_red" }
+			icon: {
+				id: "supplementaries:present_red"
+			}
 			id: "7CE6C320CC9F9B87"
 			rewards: [{
 				id: "3F382B3123CA893C"
@@ -42,7 +46,9 @@
 			y: 0.3285714285714221d
 		}
 		{
-			icon: { count: 1, id: "supplementaries:present_orange" }
+			icon: {
+				id: "supplementaries:present_orange"
+			}
 			id: "6541E0430F050B7D"
 			rewards: [{
 				count: 24
@@ -64,7 +70,9 @@
 			y: -0.5000000000000071d
 		}
 		{
-			icon: { count: 1, id: "supplementaries:present_yellow" }
+			icon: {
+				id: "supplementaries:present_yellow"
+			}
 			id: "5629152AF2F5D6EE"
 			rewards: [{
 				id: "4A564B58A7CFA60B"
@@ -85,7 +93,9 @@
 			y: -0.5d
 		}
 		{
-			icon: { count: 1, id: "supplementaries:present_purple" }
+			icon: {
+				id: "supplementaries:present_purple"
+			}
 			id: "10EC025C45540E52"
 			rewards: [{
 				id: "0187862826FFF6F2"
@@ -112,7 +122,9 @@
 				"6541E0430F050B7D"
 				"7CE6C320CC9F9B87"
 			]
-			icon: { count: 1, id: "furniture:cash_register" }
+			icon: {
+				id: "furniture:cash_register"
+			}
 			id: "4B9634D942E590AB"
 			rewards: [
 				{
@@ -145,7 +157,9 @@
 			]
 			shape: "none"
 			tasks: [{
-				icon: { count: 1, id: "society:furniture_box" }
+				icon: {
+					id: "society:furniture_box"
+				}
 				id: "12AF72DCF6F3A875"
 				stat: "minecraft:play_time"
 				type: "stat"

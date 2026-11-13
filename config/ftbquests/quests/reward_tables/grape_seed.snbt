@@ -1,7 +1,7 @@
 {
 	id: "732B0FAEC93CCF7B"
 	loot_size: 1
-	order_index: 6
+	order_index: 7
 	rewards: [
 		{ id: "5BF8A2A0A2BB2E03", item: { count: 1, id: "vinery:red_grape_seeds" } }
 		{ id: "2A7EA61D7EC6277F", item: { count: 1, id: "vinery:white_grape_seeds" } }

@@ -82,11 +82,11 @@ Essas colisões precisam ser resolvidas antes da lista de animação completa se
 
 ## Estado na 1.21.1
 
-- **Gerador do inventário:** `tools/pack_tools/food_inventory.py` existe na instância, mas ainda precisa ser conferido contra o registro 1.21.1. **A portar** na fase F5, junto dos scripts do KubeJS.
+- **Gerador do inventário:** `tools/pack_tools/food_inventory.py` existe na instância, mas ainda precisa ser conferido contra o registro 1.21.1. **A portar** junto dos scripts do KubeJS, que já estão na instância em modo estático e em correção pelos logs.
 - **Números de referência:** ainda são os da 1.20.1. **Não refeitos** para a 1.21.1.
 - **Colisões de path:** a lista acima vem da 1.20.1. Na 1.21.1 ela precisa ser gerada de novo. Pode mudar, porque mods foram trocados e alguns itens somem.
 - **Assets de animação completa:** `kubejs/assets/food/` já tem 1593 definições e 1577 modelos, animações e texturas. A lista de quem ganhou definição precisa ser refeita com o inventário novo. **A portar** o resto.
-- **Mods que saíram do pack:** Botania, Splendid Slimes, Splendid Cogs e Species não estão em `mods/`. Itens desses mods saem do inventário. Nada aqui depende deles.
+- **Mods que saíram do pack:** Splendid Slimes, Splendid Cogs e Species não estão em `mods/`. Itens desses mods saem do inventário. O Botania voltou em 2026-11-13 (Botania Revived, mesmo mod id), então os itens dele contam de novo.
 
 ## Regras de negócio
 

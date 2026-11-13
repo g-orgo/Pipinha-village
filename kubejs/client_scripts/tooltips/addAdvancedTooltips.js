@@ -322,13 +322,13 @@ global.ageableProductInputs.forEach((product) => {
     const splitProduct = product.item.split(":");
     const isWhiskeyGold =
         product.item === "brewery:whiskey_maggoallan" || product.item === "brewery:whiskey_smokey_reverie";
-    ItemEvents.dynamicTooltips(`pipinha:aged_${splitProduct[1]}`, (e) => {
+    ItemEvents.dynamicTooltips(`pipinha:aged_${global.agedName(splitProduct[1])}`, (e) => {
         if (isWhiskeyGold)
             e.lines.set(0, e.lines.get(0).copy().gold());
         else
             e.lines.set(0, e.lines.get(0).copy().aqua());
     });
-    ItemEvents.dynamicTooltips(`pipinha:double_aged_${splitProduct[1]}`, (e) => {
+    ItemEvents.dynamicTooltips(`pipinha:double_aged_${global.agedName(splitProduct[1])}`, (e) => {
         if (isWhiskeyGold)
             e.lines.set(0, e.lines.get(0).copy().gold());
         else
@@ -339,23 +339,23 @@ global.ageableProductInputs.forEach((product) => {
 ItemEvents.modifyTooltips((event) => {
     const tooltip = global.guardItemEvent(event);
     global.plushies.forEach((plush) => {
-        tooltip.add(plush, (text) => text.dynamic("pipinha:plushie"));
+        tooltip.modify(plush, (text) => text.dynamic("pipinha:plushie"));
     });
-    tooltip.add("society:villager_home", (text) => text.dynamic("pipinha:villager_home"));
-    tooltip.add("society:fish_pond", (text) => text.dynamic("pipinha:fish_pond"));
-    tooltip.add("society:caterpillar_eggs", (text) => text.dynamic("pipinha:caterpillar_eggs"));
-    tooltip.add("kaleidoscope_cookery:tomato_seed", (text) => text.dynamic("pipinha:tomato_seed"));
-    tooltip.add("farm_and_charm:strawberry_seed", (text) => text.dynamic("pipinha:strawberry_seed"));
-    tooltip.add("society:magnifying_glass", (text) => text.dynamic("pipinha:magnifying_glass"));
-    tooltip.add("society:car_key", (text) => text.dynamic("pipinha:car_key"));
-    tooltip.add(["society:pig_race_ticket", "society:multiplayer_pig_race_ticket"], (text) =>
+    tooltip.modify("society:villager_home", (text) => text.dynamic("pipinha:villager_home"));
+    tooltip.modify("society:fish_pond", (text) => text.dynamic("pipinha:fish_pond"));
+    tooltip.modify("society:caterpillar_eggs", (text) => text.dynamic("pipinha:caterpillar_eggs"));
+    tooltip.modify("kaleidoscope_cookery:tomato_seed", (text) => text.dynamic("pipinha:tomato_seed"));
+    tooltip.modify("farm_and_charm:strawberry_seed", (text) => text.dynamic("pipinha:strawberry_seed"));
+    tooltip.modify("society:magnifying_glass", (text) => text.dynamic("pipinha:magnifying_glass"));
+    tooltip.modify("society:car_key", (text) => text.dynamic("pipinha:car_key"));
+    tooltip.modify(["society:pig_race_ticket", "society:multiplayer_pig_race_ticket"], (text) =>
         text.dynamic("pipinha:pig_race_ticket")
     );
     global.ageableProductInputs.forEach((product) => {
         const splitProduct = product.item.split(":");
-        tooltip.add(`society:aged_${splitProduct[1]}`, (text) => text.dynamic(`pipinha:aged_${splitProduct[1]}`));
-        tooltip.add(`society:double_aged_${splitProduct[1]}`, (text) =>
-            text.dynamic(`pipinha:double_aged_${splitProduct[1]}`)
+        tooltip.modify(`society:aged_${global.agedName(splitProduct[1])}`, (text) => text.dynamic(`pipinha:aged_${global.agedName(splitProduct[1])}`));
+        tooltip.modify(`society:double_aged_${global.agedName(splitProduct[1])}`, (text) =>
+            text.dynamic(`pipinha:double_aged_${global.agedName(splitProduct[1])}`)
         );
     });
 });

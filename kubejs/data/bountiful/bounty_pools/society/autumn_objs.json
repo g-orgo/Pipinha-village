@@ -23,8 +23,8 @@
 			"unitWorth": 138
 		},
 		"autumn_corn": {
-			"type": "minecraft:item",
-			"content": "culturaldelights:corn_cob",
+			"type": "item_tag",
+			"content": "sunlit:compat/corn",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -78,8 +78,8 @@
 			"unitWorth": 33
 		},
 		"autumn_eggplant": {
-			"type": "minecraft:item",
-			"content": "society:eggplant",
+			"type": "item_tag",
+			"content": "sunlit:compat/eggplant",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -199,8 +199,8 @@
 			"unitWorth": 288
 		},
 		"autumn_peanut": {
-			"type": "minecraft:item",
-			"content": "vintagedelight:peanut",
+			"type": "item_tag",
+			"content": "sunlit:compat/peanut",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {

@@ -4,14 +4,18 @@
 	default_quest_shape: ""
 	filename: "creatures"
 	group: "439B0423947443D3"
-	icon: { count: 1, id: "minecraft:allay_spawn_egg" }
+	icon: {
+		id: "minecraft:allay_spawn_egg"
+	}
 	id: "7DC080E5FD09BC9E"
 	images: [ ]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
-			icon: { count: 1, id: "minecraft:carved_pumpkin" }
+			icon: {
+				id: "minecraft:carved_pumpkin"
+			}
 			id: "5045DE566B4AC009"
 			rewards: [{
 				id: "6D98C9DC104C8E07"
@@ -40,7 +44,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				icon: { count: 1, id: "minecraft:barrel" }
+				icon: {
+					id: "minecraft:barrel"
+				}
 				id: "7371A850C556BDEC"
 				observation_type: "entity_type"
 				observe_type: 5
@@ -64,7 +70,9 @@
 			}]
 			tasks: [
 				{
-					icon: { count: 1, id: "golemoverhaul:candle_golem_block" }
+					icon: {
+						id: "golemoverhaul:candle_golem_block"
+					}
 					id: "48ACC80FE89FEF9D"
 					observation_type: "entity_type"
 					observe_type: 5
@@ -92,7 +100,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				icon: { count: 1, id: "golemoverhaul:honey_blob" }
+				icon: {
+					id: "golemoverhaul:honey_blob"
+				}
 				id: "5040984A6FB06C1E"
 				observation_type: "entity_type"
 				observe_type: 5
@@ -114,7 +124,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				icon: { count: 1, id: "farm_and_charm:scarecrow" }
+				icon: {
+					id: "farm_and_charm:scarecrow"
+				}
 				id: "0F83D9F009EFB8AB"
 				observation_type: "entity_type"
 				observe_type: 5
@@ -136,7 +148,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				icon: { count: 1, id: "golemoverhaul:clay_golem_statue" }
+				icon: {
+					id: "golemoverhaul:clay_golem_statue"
+				}
 				id: "41A7F16CE512A270"
 				observation_type: "entity_type"
 				observe_type: 5
@@ -158,7 +172,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				icon: { count: 1, id: "minecraft:dried_kelp_block" }
+				icon: {
+					id: "minecraft:dried_kelp_block"
+				}
 				id: "71E5D254AB607AB2"
 				observation_type: "entity_type"
 				observe_type: 5
@@ -172,7 +188,9 @@
 		{
 			id: "66C03C4DA3F21900"
 			tasks: [{
-				icon: { count: 1, id: "minecraft:slime_spawn_egg" }
+				icon: {
+					id: "minecraft:slime_spawn_egg"
+				}
 				id: "3106C0E203B13B16"
 				observation_type: "entity_type"
 				observe_type: 5
@@ -195,7 +213,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				icon: { count: 1, id: "minecraft:coal" }
+				icon: {
+					id: "minecraft:coal"
+				}
 				id: "697BA82CD29CF667"
 				observation_type: "entity_type"
 				observe_type: 5
@@ -217,7 +237,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				icon: { count: 1, id: "minecraft:netherite_ingot" }
+				icon: {
+					id: "minecraft:netherite_ingot"
+				}
 				id: "50E5413F069A19C0"
 				observation_type: "entity_type"
 				observe_type: 5

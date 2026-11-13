@@ -12,8 +12,8 @@
 			"unitWorth": 108
 		},
 		"summer_corn": {
-			"type": "minecraft:item",
-			"content": "culturaldelights:corn_cob",
+			"type": "item_tag",
+			"content": "sunlit:compat/corn",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -23,8 +23,8 @@
 			"unitWorth": 84
 		},
 		"summer_blueberry": {
-			"type": "minecraft:item",
-			"content": "society:blueberry",
+			"type": "item_tag",
+			"content": "sunlit:compat/blueberry",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -133,8 +133,8 @@
 			"unitWorth": 192
 		},
 		"summer_oat": {
-			"type": "minecraft:item",
-			"content": "farm_and_charm:oat",
+			"type": "item_tag",
+			"content": "sunlit:compat/oat",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -155,8 +155,8 @@
 			"unitWorth": 12
 		},
 		"summer_tomato": {
-			"type": "minecraft:item",
-			"content": "kaleidoscope_cookery:tomato",
+			"type": "item_tag",
+			"content": "sunlit:compat/tomato",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {

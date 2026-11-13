@@ -5,14 +5,18 @@
 	disable_toast: true
 	filename: "tools"
 	group: "439B0423947443D3"
-	icon: { count: 1, id: "etcetera:hammer" }
+	icon: {
+		id: "etcetera:hammer"
+	}
 	id: "38639EECD8CDEFB3"
 	images: [ ]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			icon: { count: 1, id: "meadow:firewood" }
+			icon: {
+				id: "meadow:firewood"
+			}
 			id: "31F6C5811A72396C"
 			size: 2.0d
 			tasks: [{
@@ -24,7 +28,9 @@
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			icon: { count: 1, id: "buildinggadgets2:gadget_building" }
+			icon: {
+				id: "buildinggadgets2:gadget_building"
+			}
 			id: "5837B77D1243D30F"
 			rewards: [{
 				id: "73714A09282D81A3"
@@ -54,7 +60,9 @@
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			icon: { count: 1, id: "copycats:copycat_stairs" }
+			icon: {
+				id: "copycats:copycat_stairs"
+			}
 			id: "23EFDF37F9BCD63B"
 			rewards: [{
 				id: "2A8ECF9567036899"
@@ -74,7 +82,9 @@
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			icon: { count: 1, id: "constructionwand:infinity_wand" }
+			icon: {
+				id: "constructionwand:infinity_wand"
+			}
 			id: "2193ACEC05CC5B07"
 			rewards: [{
 				id: "4FE46E0F741A0364"
@@ -94,7 +104,9 @@
 		}
 		{
 			dependencies: ["2193ACEC05CC5B07"]
-			icon: { count: 1, id: "constructionwand:core_angel" }
+			icon: {
+				id: "constructionwand:core_angel"
+			}
 			id: "086A3F527E1A973E"
 			rewards: [{
 				id: "3651413BAA3324A2"
@@ -152,7 +164,9 @@
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			icon: { count: 1, id: "etcetera:hammer" }
+			icon: {
+				id: "etcetera:hammer"
+			}
 			id: "6C1236C00210E5A7"
 			rewards: [{
 				id: "1817392BB56F25D9"
@@ -217,7 +231,9 @@
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			icon: { count: 1, id: "refurbished_furniture:workbench" }
+			icon: {
+				id: "refurbished_furniture:workbench"
+			}
 			id: "12ED0E637AD47FD4"
 			rewards: [{
 				id: "4A144CE04D511BEE"
@@ -244,7 +260,9 @@
 		}
 		{
 			dependencies: ["12ED0E637AD47FD4"]
-			icon: { count: 1, id: "society:tanuki_catalog" }
+			icon: {
+				id: "society:tanuki_catalog"
+			}
 			id: "100B4D3BEEE9C433"
 			rewards: [{
 				count: 4
@@ -334,7 +352,9 @@
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			icon: { count: 1, id: "simplehats:headphonesblue" }
+			icon: {
+				id: "simplehats:headphonesblue"
+			}
 			id: "7E94B1934D0257E8"
 			rewards: [{
 				id: "4EC96CD71AFA7A8A"
@@ -372,7 +392,9 @@
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
-			icon: { count: 1, id: "portable_blueprints:tablet" }
+			icon: {
+				id: "portable_blueprints:tablet"
+			}
 			id: "54B6F31A66A23AD4"
 			rewards: [{
 				id: "21EC0DE21DADD12C"

@@ -151,16 +151,19 @@ ServerEvents.recipes((e) => {
   // garrafa do FD as receitas que pediam a H&H, mantendo os ids originais
   // para os advancements continuarem destravando.
   e.remove({ id: "hearthandharvest:goat_milk_crate" });
-  custom({
-    type: "hearthandharvest:bottle_crate",
-    input: {
-      item: "farmersdelight:milk_bottle",
-    },
-    result: {
-      count: 1,
-      item: "hearthandharvest:goat_milk_crate",
-    },
-  }).id("hearthandharvest:goat_milk_crate");
+  // Hearth and Harvest 1.4.3 (1.21.1) has no goat_milk_crate item: the crate recipe is skipped.
+  if (Item.exists("hearthandharvest:goat_milk_crate")) {
+    custom({
+      type: "hearthandharvest:bottle_crate",
+      input: {
+        item: "farmersdelight:milk_bottle",
+      },
+      result: {
+        count: 1,
+        item: "hearthandharvest:goat_milk_crate",
+      },
+    }).id("hearthandharvest:goat_milk_crate");
+  }
   e.remove({ id: "hearthandharvest:cooking/unripe_goat_cheese_wheel" });
   custom({
     type: "farmersdelight:cooking",

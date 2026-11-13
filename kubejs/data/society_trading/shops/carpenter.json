@@ -38,7 +38,7 @@
         "count": 1
       },
       "second_request": {
-        "id": "moreminecarts:chiseled_organic_glass",
+        "id": "minecraft:glass",
         "count": 24
       },
       "trade_id": "carpenter_greenhouse_supplies"
@@ -6273,18 +6273,6 @@
         },
         {
           "offer": {
-            "id": "candlelight:typewriter_copper",
-            "count": 1
-          },
-          "request": {
-            "id": "numismatics:crown",
-            "count": 8
-          },
-          "numismatics_cost": 4096,
-          "trade_id": "carpenter_candlelight_typewriter_copper"
-        },
-        {
-          "offer": {
             "id": "cluttered:watering_can_copper",
             "count": 1
           },
@@ -6978,18 +6966,6 @@
           },
           "numismatics_cost": 512,
           "trade_id": "carpenter_cluttered_armchair_heart"
-        },
-        {
-          "offer": {
-            "id": "candlelight:hearth",
-            "count": 1
-          },
-          "request": {
-            "id": "numismatics:crown",
-            "count": 8
-          },
-          "numismatics_cost": 4096,
-          "trade_id": "carpenter_candlelight_hearth"
         },
         {
           "offer": {

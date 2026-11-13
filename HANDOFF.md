@@ -129,6 +129,18 @@ Origem (só leitura): `../Society: Sunlit Valley`.
      (create() e society:*): a 1ª passada tinha trocado 73 itens society válidos e foi refeita a partir da branch.
   Ruído de mods (ignorar): railways (267 loot de compat), bonsaitrees4 (794 avisos de compat), quark spawn category.
 
+- Auditoria do que faltou da 1.20.1 (2026-11-13, pedido do dono):
+  FEITO: patchouli_books (almanac 155 entradas, fish_finder 68; sem slimes e sem animais de mods ausentes;
+  variantes SNBT de wooly_cow/chapple mantidas), config/remi/stack_groups (130), 8 defaultconfigs FTB/gag,
+  2 shaderpacks, 2 resource packs (sem ativar), sunlit_tools -> tools/pack_tools; regen_chunks.py portado
+  (claims FTB 2101 em chunks/time/force_loaded; testado em cópia do save, incluindo claim sintético).
+  Barra de rolagem do changelog transparente nos 12 layouts do menu (pedido do dono).
+  A decidir com o dono: 11 mods próprios (custom-mods/ + sunlit_cinematic_toms) para portar a NeoForge 1.21.1
+  (clockfix, dfhashfix, eating, handsonfix, hangdump, langfilter, qualityfix, replayfix, sortfix, texturefix,
+  cinematic_toms); "keybinding presets" (atalhos: precisa autorização); docs da raiz (READ_FIRST, LEIA-ME,
+  atalhos.md) com identidade Pipinha. Ignorado de propósito: journeymap/xaero (mapa agora é FTB Chunks),
+  caches (emojiful, mod_data, local/), dist/, saves, Distant_Horizons_server_data, .bobby, screenshots.
+
 ## Pendente, em ordem
 
 1. F5 KubeJS: port estático PRONTO (379/379 sintaxe OK, commit 10f2eb5e na branch 1.21.1). Falta: o dono abre

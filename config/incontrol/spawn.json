@@ -73,7 +73,7 @@
       "1=simplehats:hatscraps_halloween",
       "1=simplehats:hatbag_halloween",
       "3=farmersdelight:iron_knife",
-      "3=vinery:basket",
+      "3=farmersdelight:wooden_basket",
       "4=minecraft:apple",
       "1=pamhc2trees:cinnamon_sapling",
       "4=supplementaries:candy"
@@ -140,10 +140,6 @@
   {
     "mob": "autumnity:turkey",
     "mincount": 3,
-    "result": "deny"
-  },
-  {
-    "mob": "wildernature:flamingo",
     "result": "deny"
   },
   {

@@ -44,7 +44,7 @@ const SUNLIT_DUPLICATE_GROUPS = {
   "cucumber": ["vintagedelight:cucumber", "culturaldelights:cucumber", "youkaishomecoming:cucumber"],
   "cucumber_seeds": ["vintagedelight:cucumber_seeds", "culturaldelights:cucumber_seeds", "youkaishomecoming:cucumber_seeds"],
   "dog_food": ["farm_and_charm:dog_food", "farmersdelight:dog_food"],
-  "dough": ["kaleidoscope_cookery:raw_dough", "farmersdelight:wheat_dough", "create:dough", "farm_and_charm:dough", "bakery:dough", "candlelight:dough", "refurbished_furniture:dough"],
+  "dough": ["kaleidoscope_cookery:raw_dough", "farmersdelight:wheat_dough", "create:dough", "farm_and_charm:dough", "candlelight:dough", "refurbished_furniture:dough"],
   "dragon_fruit": ["atmospheric:dragon_fruit", "pamhc2trees:dragonfruititem"],
   "dumpling": ["kaleidoscope_cookery:dumpling", "farmersdelight:dumplings", "brewery:dumplings"],
   "eggplant": ["society:eggplant", "culturaldelights:eggplant"],
@@ -118,12 +118,13 @@ const SUNLIT_DUPLICATE_GROUPS = {
 
 ServerEvents.recipes((event) => {
   Object.keys(global.canonicalItems).forEach((dup) => {
+    if (!Item.exists(dup)) return;
     event.replaceOutput({}, dup, global.canonicalItems[dup]);
   });
   Object.keys(SUNLIT_DUPLICATE_GROUPS).forEach((group) => {
     const tag = "#sunlit:compat/" + group;
     SUNLIT_DUPLICATE_GROUPS[group].forEach((item) => {
-      // Some group members are not installed (e.g. bakery:dough); skip them.
+      // Some group members are not installed; skip them.
       if (!Item.exists(item)) return;
       event.replaceInput({}, item, tag);
     });

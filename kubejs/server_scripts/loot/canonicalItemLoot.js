@@ -5,6 +5,7 @@ console.info("[SOCIETY] canonicalItemLoot.js loaded");
 LootJS.modifiers((e) => {
   const modifier = e.addTableModifier(/.*/);
   Object.keys(global.canonicalItems).forEach((dup) => {
+    if (!Item.exists(dup)) return;
     modifier.replaceLoot(dup, global.canonicalItems[dup], true);
   });
 });

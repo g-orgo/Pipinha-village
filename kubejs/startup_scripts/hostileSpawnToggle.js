@@ -137,20 +137,27 @@ function hostileToggleClient() {
   return Java.loadClass("net.minecraft.client.Minecraft").getInstance();
 }
 
+// 1.21 buttons draw GUI atlas sprites (textures/gui/sprites/<folder>/<state>[_highlighted].png),
+// cut from the old 64x64 sheets; returns the sprite folder for the active style.
 function hostileToggleTexture() {
-  var ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
   var excalibur = false;
   hostileToggleClient().getResourcePackRepository().getSelectedIds().forEach((id) => {
     if (String(id).toLowerCase().indexOf("excalibur_v1") >= 0) excalibur = true;
   });
-  return new ResourceLocation("kubejs", excalibur ? "textures/gui/hostile_spawns_excalibur.png" : "textures/gui/hostile_spawns.png");
+  return excalibur ? "hostile_spawns_excalibur" : "hostile_spawns";
 }
 
-function hostileToggleButton(texture, u, key, onPress) {
+function hostileToggleButton(texture, state, key, onPress) {
   var Tooltip = Java.loadClass("net.minecraft.client.gui.components.Tooltip");
   var ImageButton = Java.loadClass("net.minecraft.client.gui.components.ImageButton");
+  var WidgetSprites = Java.loadClass("net.minecraft.client.gui.components.WidgetSprites");
+  var ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
+  var sprites = new WidgetSprites(
+    ResourceLocation.fromNamespaceAndPath("kubejs", texture + "/" + state),
+    ResourceLocation.fromNamespaceAndPath("kubejs", texture + "/" + state + "_highlighted")
+  );
   var label = Component.translatable(key);
-  var button = new ImageButton(0, 0, HOSTILE_TOGGLE_SIZE, HOSTILE_TOGGLE_SIZE, u, 0, HOSTILE_TOGGLE_SIZE, texture, 64, 64, onPress, label);
+  var button = new ImageButton(0, 0, HOSTILE_TOGGLE_SIZE, HOSTILE_TOGGLE_SIZE, sprites, onPress, label);
   button.setTooltip(Tooltip.create(label));
   return button;
 }
@@ -167,11 +174,11 @@ function hostileTogglePair(event, isOff, onChange) {
     pair.on.setPosition(x, y);
     pair.off.setPosition(x, y);
   };
-  pair.on = hostileToggleButton(texture, 0, "sunlit.hostile_spawns.on", () => {
+  pair.on = hostileToggleButton(texture, "on", "sunlit.hostile_spawns.on", () => {
     pair.show(true);
     onChange(true);
   });
-  pair.off = hostileToggleButton(texture, HOSTILE_TOGGLE_SIZE, "sunlit.hostile_spawns.off", () => {
+  pair.off = hostileToggleButton(texture, "off", "sunlit.hostile_spawns.off", () => {
     pair.show(false);
     onChange(false);
   });

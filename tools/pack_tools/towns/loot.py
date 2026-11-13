@@ -746,11 +746,26 @@ const sunlitLootFill = (ctx, theme) => {{
   real.concat(extra, filler).slice(0, size).forEach((s) => ctx.addLoot(s));
 }};
 
+// LootJS 3.7 (1.21): customAction gives the vanilla LootContext and a LootBucket instead of the old
+// LootContextJS; this adapter keeps the old ctx API used by sunlitLootFill.
+const $SunlitLootParams = Java.loadClass("net.minecraft.world.level.storage.loot.parameters.LootContextParams");
+const $SunlitBlockPos = Java.loadClass("net.minecraft.core.BlockPos");
+const sunlitLootCtx = (context, loot) => ({{
+  getVanillaContext: () => context,
+  getLevel: () => context.getLevel(),
+  getBlockPos: () => $SunlitBlockPos.containing(context.getParamOrNull($SunlitLootParams.ORIGIN)),
+  forEachLoot: (fn) => {{
+    for (let i = 0; i < loot.size(); i++) fn(loot.get(i));
+  }},
+  removeLoot: () => loot.clear(),
+  addLoot: (s) => loot.addItem(s),
+}});
+
 LootJS.modifiers((e) => {{
   SUNLIT_LOOT_CFG.themes.forEach((theme) => {{
-    e.addLootTableModifier(`sunlit:chests/${{theme}}`).apply((ctx) => {{
+    e.addTableModifier(`sunlit:chests/${{theme}}`).customAction((context, loot) => {{
       try {{
-        sunlitLootFill(ctx, theme);
+        sunlitLootFill(sunlitLootCtx(context, loot), theme);
       }} catch (err) {{
         console.error(`[Sunlit Towns] loot ${{theme}}: ${{err}}`);
       }}

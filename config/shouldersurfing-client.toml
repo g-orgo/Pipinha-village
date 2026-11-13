@@ -461,11 +461,11 @@
 		# Range: 0.05000000074505806 ~ 1.0
 		turning_speed_multiplier = 0.25
 		#Whether the x-rot of the player turns with the camera. This config option only applies when camera is decoupled.
-		turn_player_x_rot_with_camera = true
+		turn_player_x_rot_with_camera = false
 		#Whether the x-rot of the player turns such that it is always facing the camera. This config option only applies when camera is decoupled and player x-rot turning with camera is enabled.
 		turn_player_x_rot_to_camera = false
 		#Whether the y-rot of the player turns with the camera. This config option only applies when camera is decoupled.
-		turn_player_y_rot_with_camera = true
+		turn_player_y_rot_with_camera = false
 		#The maximum angle to turn the player y-rot with the camera. This config option only applies when 'Turn player y-rot with camera' is enabled.
 		# Default: 90.0
 		# Range: 0.0 ~ 180.0

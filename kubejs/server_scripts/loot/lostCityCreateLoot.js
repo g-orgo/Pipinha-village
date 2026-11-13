@@ -53,7 +53,7 @@ LootJS.modifiers((e) => {
     .addLoot("create:millstone");
   e.addTableModifier("lostcities:chests/lostcitychest")
     .randomChance(0.12)
-    .addLoot("create:toolbox");
+    .addLoot("create:brown_toolbox");
   e.addTableModifier("lostcities:chests/lostcitychest")
     .randomChance(0.1)
     .addLoot("create:deployer");

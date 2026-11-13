@@ -186,6 +186,10 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   do almanaque. Deixado: aloe_preserves sem receita de Create (fluido aloe_gel não existe); erro do Small Ships
   2.0.2 ao fechar o mundo (bug do mod, depois do save); JEMI/create_factory_logistics chemical (bug do mod).
 
+- 10º launch (2026-11-13, "10º launch: KubeJS loot/ids"): bakery:dough removido (não existe no jar 2.1.11) de canonical/normalize; create:toolbox -> create:brown_toolbox; entrada vazia de splendid_slimes removida (generalLoot); addTypeModifier -> addTableModifier(LootType) em 3 arquivos. Pendente: sunlitTownsLoot (apply não existe em addTableModifier) e ImageButton 1.21.1 (precisa de sprites).
+- 10º launch: KubeJS receitas (2026-11-13): addMiscRecipes.js, 37 blocos com resultado/ingrediente ausente trocados por comentário "dropped in 1.21.1"; car_key: relics:horse_flute -> minecraft:saddle; meadow wool: só warped_wool mantido; create:filling honey como neoforge:tag; cutting FD e tuna corrigidos; helper em startup_scripts/recipe121Helper.js. Não testado no jogo.
+- 10º launch (2026-11-13, brain): Shoulder Surfing 5.3.1 renomeou player_x/y_rot_follows_camera para player.turning.turn_player_x/y_rot_with_camera; voltaram a false como na 1.20.1 (corpo não gira com a câmera). FOV 60 já estava certo. Punchy Moves tem câmera de ombro própria (tecla V, junto com Toolbelt/Supplementaries/Curios/Replay), desligada por padrão; camera.json não existe, então nunca foi ligada. InControl: 3=vinery:basket -> farmersdelight:wooden_basket, regra do wildernature:flamingo removida. sunlitTownsLoot.js (e o gerador tools/pack_tools/towns/loot.py): apply -> customAction com adaptador do ctx (LootJS 3.7). hostileSpawnToggle.js: ImageButton com WidgetSprites, sprites recortados em kubejs/assets/kubejs/textures/gui/sprites/hostile_spawns*/. Pendente do dono: Sturdy Farmland (aspersores/fertilizantes) sem 1.21.1; itens sem receita: gnome, quality_washer, mana_sprinkler, relics:blazing_flask, quark:slime_in_a_bucket, conchas do unusualfishmod.
+
 ## Pendente, em ordem
 
 1. F5 KubeJS: port estático PRONTO (379/379 sintaxe OK, commit 10f2eb5e na branch 1.21.1). Falta: o dono abre

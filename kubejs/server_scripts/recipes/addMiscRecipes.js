@@ -125,11 +125,7 @@ ServerEvents.recipes((e) => {
       count: 1,
     },
   });
-  e.shapeless("quark:slime_in_a_bucket", [
-    "society:petrified_slime",
-    "species:youth_potion",
-    "minecraft:bucket",
-  ]);
+  // dropped in 1.21.1: species:youth_potion no longer exists
   e.shapeless("minecraft:magenta_dye", ["windswept:lavender"]);
   e.shapeless("create:tree_fertilizer", [
     "4x farmersdelight:straw",
@@ -168,37 +164,13 @@ ServerEvents.recipes((e) => {
   });
 
   // Greenhouse glass
-  e.shaped("moreminecarts:chiseled_organic_glass", [" C ", "ege", " C "], {
-    C: "numismatics:crown",
-    e: "society:earth_crystal",
-    g: "moreminecarts:organic_glass",
-  });
-  e.shaped("2x moreminecarts:chiseled_organic_glass", [" C ", "fgf", " C "], {
-    C: "numismatics:crown",
-    f: "society:fire_quartz",
-    g: "moreminecarts:organic_glass",
-  });
-  e.shaped("3x moreminecarts:chiseled_organic_glass", [" C ", "fgf", " C "], {
-    C: "numismatics:crown",
-    f: "society:jade",
-    g: "moreminecarts:organic_glass",
-  });
-  e.stonecutting(
-    "moreminecarts:greenhouse_glass_stairs",
-    "moreminecarts:chiseled_organic_glass"
-  );
-  e.stonecutting(
-    "moreminecarts:chiseled_organic_glass",
-    "moreminecarts:greenhouse_glass_stairs"
-  );
-  e.stonecutting(
-    "moreminecarts:greenhouse_glass_slab",
-    "moreminecarts:chiseled_organic_glass"
-  );
-  e.stonecutting(
-    "moreminecarts:chiseled_organic_glass",
-    "moreminecarts:greenhouse_glass_slab"
-  );
+  // dropped in 1.21.1: moreminecarts:chiseled_organic_glass no longer exists
+  // dropped in 1.21.1: moreminecarts:chiseled_organic_glass no longer exists
+  // dropped in 1.21.1: moreminecarts:chiseled_organic_glass no longer exists
+  // dropped in 1.21.1: moreminecarts:greenhouse_glass_stairs no longer exists
+  // dropped in 1.21.1: moreminecarts:chiseled_organic_glass no longer exists
+  // dropped in 1.21.1: moreminecarts:greenhouse_glass_slab no longer exists
+  // dropped in 1.21.1: moreminecarts:chiseled_organic_glass no longer exists
   // Mastery
   e.shaped("society:treasure_totem", ["fmf", "fsf", "fdf"], {
     s: "society:mystic_syrup",
@@ -335,12 +307,7 @@ ServerEvents.recipes((e) => {
     C: "numismatics:crown",
     f: "society:fire_quartz",
   });
-  e.shaped("society:quality_washer", [" S ", "zcz", "fzf"], {
-    c: "minecraft:cauldron",
-    S: "dew_drop_farmland_growth:high_quality_fertilizer",
-    f: "society:fire_quartz",
-    z: "create:zinc_ingot",
-  });
+  // dropped in 1.21.1: dew_drop_farmland_growth:high_quality_fertilizer no longer exists
   e.shaped("farm_and_charm:mincer", ["iCi", "ici", "ifi"], {
     c: "minecraft:iron_block",
     C: "quark:sturdy_stone",
@@ -435,7 +402,7 @@ ServerEvents.recipes((e) => {
   });
   // Prismatic
   e.shapeless("society:car_key", [
-    "relics:horse_flute",
+    "minecraft:saddle", // dropped in 1.21.1: relics:horse_flute substituted by minecraft:saddle
     "society:prismatic_shard",
   ]);
   e.shaped("society:prize_machine", ["ttt", "tbt", "ttt"], {
@@ -457,13 +424,7 @@ ServerEvents.recipes((e) => {
     e: "minecraft:dragon_egg",
     p: "society:prismatic_shard",
   });
-  e.shaped("relics:blazing_flask", ["fhf", "pep", "fbf"], {
-    h: "rehooked:blaze_hook",
-    e: "society:production_science_pack",
-    f: "netherdepthsupgrade:blazefish",
-    p: "nethervinery:blazewine_pinot",
-    b: "create:blaze_burner",
-  });
+  // dropped in 1.21.1: nethervinery:blazewine_pinot no longer exists
   e.shaped("relics:magic_mirror", ["ppp", "pmp", "ppp"], {
     m: "oreganized:silver_mirror",
     p: "society:prismatic_shard",
@@ -866,23 +827,9 @@ ServerEvents.recipes((e) => {
     e.shapeless(fish, [`society:smoked_${fish.path}`, "1x minecraft:blue_ice"]);
   });
   // Sprinklers
-  e.shaped("dew_drop_farmland_growth:iron_sprinkler", [" C ", "IlI", " l "], {
-    I: "minecraft:iron_block",
-    C: "minecraft:copper_block",
-    l: "#society:raw_logs",
-  });
-  e.shaped("dew_drop_farmland_growth:gold_sprinkler", ["fef", " s ", " G "], {
-    G: "minecraft:gold_block",
-    s: "dew_drop_farmland_growth:iron_sprinkler",
-    f: "society:fire_quartz",
-    e: "society:earth_crystal",
-  });
-  e.shaped("dew_drop_farmland_growth:gold_sprinkler", ["fef", "GlG", " l "], {
-    l: "#society:raw_logs",
-    G: "minecraft:gold_block",
-    f: "society:fire_quartz",
-    e: "society:earth_crystal",
-  });
+  // dropped in 1.21.1: dew_drop_farmland_growth:iron_sprinkler no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:gold_sprinkler no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:gold_sprinkler no longer exists
   e.shaped(
     "society:caterpillar_box",
     ["isi", "abm", "iBi"],
@@ -895,76 +842,23 @@ ServerEvents.recipes((e) => {
       m: "society:moth_pollen",
     }
   );
-  e.shaped(
-    "dew_drop_farmland_growth:diamond_sprinkler",
-    ["nDn", " s ", " b "],
-    {
-      s: "dew_drop_farmland_growth:gold_sprinkler",
-      D: "minecraft:diamond_block",
-      b: "society:battery",
-      n: "aquaculture:neptunium_nugget",
-    }
-  );
-  e.shaped(
-    "dew_drop_farmland_growth:diamond_sprinkler",
-    ["nDn", "blb", " l "],
-    {
-      l: "#society:raw_logs",
-      D: "minecraft:diamond_block",
-      b: "society:battery",
-      n: "aquaculture:neptunium_nugget",
-    }
-  );
-  e.shaped(
-    "dew_drop_farmland_growth:netherite_sprinkler",
-    ["nNn", " s ", " j "],
-    {
-      s: "dew_drop_farmland_growth:diamond_sprinkler",
-      j: "society:jade",
-      N: "minecraft:netherite_ingot",
-      n: "aquaculture:neptunium_ingot",
-    }
-  );
-  e.shaped(
-    "dew_drop_farmland_growth:netherite_sprinkler",
-    ["nNn", "jlj", " l "],
-    {
-      l: "#society:raw_logs",
-      j: "society:jade",
-      N: "minecraft:netherite_ingot",
-      n: "aquaculture:neptunium_ingot",
-    }
-  );
+  // dropped in 1.21.1: dew_drop_farmland_growth:diamond_sprinkler no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:diamond_sprinkler no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:netherite_sprinkler no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:netherite_sprinkler no longer exists
 
   // Botania
-  e.shaped("society:botanical_tribute", ["CCC", "CMC", "CCC"], {
-    C: "numismatics:sun",
-  });
+  // dropped in 1.21.1: botania key M (botanical tribute) no longer exists
 
-  e.shaped("unusualfishmod:fluvial_shell", [" r ", "nhn", " d "], {
-    d: "minecraft:nautilus_shell",
-    n: "aquaculture:neptunium_ingot",
-  });
+  // dropped in 1.21.1: unusualfishmod fluvial_shell keys r and h no longer exists
 
-  e.shaped("unusualfishmod:clement_shell", [" r ", " h ", " g "], {
-    h: "unusualfishmod:fluvial_shell",
-    g: "vinery:glowing_wine",
-  });
+  // dropped in 1.21.1: unusualfishmod clement_shell keys r and h no longer exists
 
-  e.shaped("unusualfishmod:thunderous_shell", [" r ", "chc", " c "], {
-    h: "unusualfishmod:fluvial_shell",
-    c: "society:charging_rod",
-  });
+  // dropped in 1.21.1: unusualfishmod thunderous_shell keys r and h no longer exists
 
-  e.shaped("society:gnome", [" h ", "iti", " s "], {
-    t: "society:tiny_gnome",
-    i: "species:ichor_bottle",
-    h: "simplehats:gnome",
-    s: "paraglider:spirit_orb",
-  });
+  // dropped in 1.21.1: species:ichor_bottle no longer exists
 
-  e.shaped("society:cornucopia", [" p ", "php", " p "], {
-  });
+  // dropped in 1.21.1: botania:pixie_dust and botania:horn_grass no longer exists
   e.shaped("society:cornucopia", [" c ", "shs", " s "], {
     c: "numismatics:neptunium_coin",
     s: "society:sparkstone_block",
@@ -976,21 +870,11 @@ ServerEvents.recipes((e) => {
     b: "society:magic_bulb",
     l: "meadow:firewood"
   });
-  e.shaped("society:mana_milker", ["rtr", "nMn", "lTl"], {
-    t: "society:botanical_tribute",
-    M: "society:milk_pail",
-  });
-  e.shaped("society:mana_sprinkler", ["lil", "iSi", "lPl"], {
-    S: "dew_drop_farmland_growth:gold_sprinkler",
-  });
-  e.shaped("society:mana_clock", ["mrm", "ncn", "mTm"], {
-    c: "minecraft:clock",
-    n: "minecraft:netherite_ingot",
-  });
+  // dropped in 1.21.1: botania keys r, n, l, T (mana milker) no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:gold_sprinkler no longer exists
+  // dropped in 1.21.1: botania keys m, r, T (mana clock) no longer exists
 
-  e.shaped("society:sparkstone_recycler", ["mrm", "ncn", "mTm"], {
-    m: "society:botanical_tribute",
-  });
+  // dropped in 1.21.1: botania keys r, n, c, T (sparkstone recycler) no longer exists
 
   e.shaped("society:spark_gro", ["oso", "sps", "oso"], {
     o: "vintagedelight:organic_mash",
@@ -1018,12 +902,7 @@ ServerEvents.recipes((e) => {
     b: "etcetera:light_bulb",
   });
   [
-    { input: "meadow:flecked_wool", output: "minecraft:brown_wool" },
-    { input: "meadow:highland_wool", output: "minecraft:brown_wool" },
-    { input: "meadow:patched_wool", output: "minecraft:blue_wool" },
-    { input: "meadow:rocky_wool", output: "minecraft:light_gray_wool" },
-    { input: "meadow:umbra_wool", output: "minecraft:light_blue_wool" },
-    { input: "meadow:inky_wool", output: "minecraft:black_wool" },
+    // dropped in 1.21.1: meadow:flecked_wool, highland_wool, patched_wool, rocky_wool, umbra_wool, inky_wool no longer exist
     { input: "meadow:warped_wool", output: "minecraft:cyan_wool" },
   ].forEach((recipe) => {
     e.shapeless(recipe.output, [recipe.input]);
@@ -1097,22 +976,22 @@ ServerEvents.recipes((e) => {
   e.shapeless("sophisticatedstorage:basic_to_iron_tier_upgrade", ["sophisticatedstorage:basic_to_copper_tier_upgrade", "sophisticatedstorage:copper_to_iron_tier_upgrade"])
   e.shapeless("sophisticatedstorage:basic_to_copper_tier_upgrade", ["sophisticatedstorage:basic_to_copper_tier_upgrade"])
 
-  e.shapeless("dew_drop_farmland_growth:hyper_fertilized_sand", ["minecraft:sand", "dew_drop_farmland_growth:hyper_fertilizer"])
-  e.shapeless("dew_drop_farmland_growth:weak_fertilized_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:weak_fertilizer"])
-  e.shapeless("dew_drop_farmland_growth:strong_fertilized_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:strong_fertilizer"])
-  e.shapeless("dew_drop_farmland_growth:hyper_fertilized_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:hyper_fertilizer"])
-  e.shapeless("dew_drop_farmland_growth:bountiful_fertilized_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:bountiful_fertilizer"])
-  e.shapeless("dew_drop_farmland_growth:hydrating_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:hydrating_fertilizer"])
-  e.shapeless("dew_drop_farmland_growth:deluxe_hydrating_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:deluxe_hydrating_fertilizer"])
-  e.shapeless("dew_drop_farmland_growth:low_quality_fertilized_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:low_quality_fertilizer"])
-  e.shapeless("dew_drop_farmland_growth:high_quality_fertilized_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:high_quality_fertilizer"])
-  e.shapeless("dew_drop_farmland_growth:pristine_quality_fertilized_farmland", ["minecraft:dirt", "dew_drop_farmland_growth:pristine_quality_fertilizer"])
+  // dropped in 1.21.1: dew_drop_farmland_growth:hyper_fertilizer no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:weak_fertilizer no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:strong_fertilizer no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:hyper_fertilizer no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:bountiful_fertilizer no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:hydrating_fertilizer no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:deluxe_hydrating_fertilizer no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:low_quality_fertilizer no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:high_quality_fertilizer no longer exists
+  // dropped in 1.21.1: dew_drop_farmland_growth:pristine_quality_fertilizer no longer exists
 
   e.custom({
     type: "create:filling",
     ingredients: [
       { "item": "vintagedelight:roasted_peanut" },
-      { "amount": 125, "fluid": "create:honey" }
+      { "type": "neoforge:tag", "amount": 125, "tag": "c:honey" }
     ],
     "results": [{ "id": "vintagedelight:honey_roasted_peanut" }]
   });

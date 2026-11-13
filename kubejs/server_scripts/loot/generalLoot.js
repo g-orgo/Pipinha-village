@@ -60,12 +60,6 @@ LootJS.modifiers((e) => {
       Item.of(
       )
     );
-  e.addTableModifier("minecraft:chests/simple_dungeon")
-    .randomChance(0.1)
-    .addLoot(
-      Item.of(
-      )
-    );
   e.addTableModifier("minecraft:chests/buried_treasure")
     .randomChance(0.9)
     .addLoot("numismatics:cog")
@@ -287,14 +281,14 @@ LootJS.modifiers((e) => {
     .replaceLoot("minecraft:flint_and_steel", "numismatics:cog", true);
 
   // Fix unstackable item voiding bug
-  e.addTypeModifier(LootType.CHEST).modifyLoot(
+  e.addTableModifier(LootType.CHEST).modifyLoot(
     Ingredient.all,
     (itemStack) => {
       return fixedStackSize(itemStack);
     }
   );
 
-  e.addTypeModifier(LootType.CHEST).pool((p) => {
+  e.addTableModifier(LootType.CHEST).pool((p) => {
     p.randomChance(0.05).addLoot("society:recall_potion");
   });
   e.addTableModifier("minecraft:chests/simple_dungeon").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
@@ -306,7 +300,7 @@ LootJS.modifiers((e) => {
   e.addTableModifier("minecraft:chests/village/village_desert_house").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
   e.addTableModifier("minecraft:chests/village/village_snowy_house").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
   // Mastery
-  e.addTypeModifier(LootType.CHEST)
+  e.addTableModifier(LootType.CHEST)
     .hasAnyStage("husbandry_mastery")
     .pool((p) => {
       p.randomChance(0.1).addLoot("society:plushie_capsule");

@@ -1,0 +1,369 @@
+{
+	autofocus_id: "7591439B35772AB2"
+	consume_items: true
+	default_hide_dependency_lines: true
+	default_quest_shape: ""
+	filename: "crafts_room"
+	group: "106AD9AA3ADDE3AE"
+	id: "28E0AFD408BA2300"
+	images: [{
+		height: 10.0d
+		id: "4D77A84F79BE1D37"
+		image: "society:textures/gui/community_center_crafts_room.png"
+		rotation: 0.0d
+		width: 17.77777777777778d
+		x: 0.0d
+		y: 0.0d
+	}]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0403045A4DA7A770"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7C954934496A21F9"
+				table_id: 2467450565259284777L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [
+				{
+					id: "198E9AF012E7021F"
+					item: { count: 1, id: "society:pine_tar" }
+					type: "item"
+				}
+				{
+					id: "302A626238C2B361"
+					item: { count: 1, id: "society:oak_resin" }
+					type: "item"
+				}
+				{
+					id: "0D8F36EFE3D375C1"
+					item: { count: 1, id: "society:maple_syrup" }
+					type: "item"
+				}
+				{
+					id: "7A14BED1889FDFC6"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(society:preserves)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "161E5A9AADD44F3D"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(society:large_mayonnaise)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -0.028571428571424917d
+			y: -1.2142857142857224d
+		}
+		{
+			id: "1E6139BDE9202B6A"
+			rewards: [{
+				id: "490B15BEE84A932A"
+				item: {
+					components: {
+						"relics:data": {
+							abilities: {
+								abilities: {
+									spore_mist: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											amount: {
+												initialValue: 7.7542d
+											}
+											damage: {
+												initialValue: 0.22907d
+											}
+										}
+									}
+								}
+							}
+							leveling: {
+								experience: 0
+								level: 0
+								luck: 0
+								points: 0
+							}
+						}
+					}
+					count: 1
+					id: "relics:spore_sack"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [
+				{
+					id: "02A73FD2EF76B0FA"
+					item: { count: 1, id: "farm_and_charm:oatmeal_with_strawberries" }
+					type: "item"
+				}
+				{
+					id: "653C489AAF6328A0"
+					item: { count: 1, id: "farm_and_charm:goulash" }
+					type: "item"
+				}
+				{
+					id: "4D5AD21914F9846E"
+					item: { count: 1, id: "farm_and_charm:farmers_breakfast" }
+					type: "item"
+				}
+				{
+					id: "6C07D3AF35BC2D33"
+					item: { count: 1, id: "candlelight:beef_wellington" }
+					type: "item"
+				}
+				{
+					id: "7F3D40B9DBD284A5"
+					item: { count: 1, id: "meadow:cheese_tart" }
+					type: "item"
+				}
+				{
+					id: "74ED92913B03FEF5"
+					item: { count: 1, id: "farmersdelight:ratatouille" }
+					type: "item"
+				}
+				{
+					id: "24D2EF1888A66C36"
+					item: { count: 1, id: "farmersdelight:stuffed_pumpkin_block" }
+					type: "item"
+				}
+				{
+					id: "11CA697D5632C4C6"
+					item: { count: 1, id: "bakery:chocolate_cake" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			id: "6F3F87DBBBE86A28"
+			rewards: [{
+				id: "124F7E6A6400E6C2"
+				item: {
+					count: 1
+					id: "society:snow_melter"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [
+				{
+					id: "6EE8BE6F502E597C"
+					item: { count: 1, id: "society:frozen_tear" }
+					type: "item"
+				}
+				{
+					id: "4822242F76E20E58"
+					item: { count: 1, id: "society:frozen_geode" }
+					type: "item"
+				}
+				{
+					id: "427EF9CF19E98CBB"
+					item: { count: 1, id: "society:pickled_ginger" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "116A9CF43B613B8F"
+					item: { count: 1, id: "meadow:firewood" }
+					match_components: "fuzzy"
+					type: "item"
+				}
+				{
+					id: "1EEE1FF4918F0162"
+					item: { count: 1, id: "windswept:pinecone_jam_bottle" }
+					type: "item"
+				}
+			]
+			x: 3.028571428571432d
+			y: 0.3285714285714221d
+		}
+		{
+			dependencies: [
+				"6F3F87DBBBE86A28"
+				"1E6139BDE9202B6A"
+				"0403045A4DA7A770"
+			]
+			id: "7591439B35772AB2"
+			rewards: [
+				{
+					id: "3BEDCAAC8ECCCB29"
+					item: {
+						components: {
+							"relics:data": {
+								abilities: {
+									abilities: {
+										teleport: {
+											extender: {
+												cooldown: 0
+												cooldownCap: 0
+												ticking: 0b
+											}
+											lock: {
+												breaks: 5
+											}
+											points: 0
+											research: {
+												links: { }
+												researched: 0b
+											}
+											stats: {
+												cooldown: {
+													initialValue: 117.61635d
+												}
+												distance: {
+													initialValue: 940.51563d
+												}
+											}
+										}
+									}
+								}
+								leveling: {
+									experience: 0
+									level: 0
+									luck: 0
+									points: 0
+								}
+							}
+						}
+						count: 1
+						id: "relics:magic_mirror"
+					}
+					type: "item"
+				}
+				{
+					id: "40AD50A7154B8198"
+					item: {
+						components: {
+							"trofers:trophy": "trofers:crafts_room"
+						}
+						count: 1
+						id: "trofers:large_pillar"
+					}
+					type: "item"
+				}
+			]
+			shape: "none"
+			tasks: [{
+				id: "38C738638838D769"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			x: -0.028571428571424917d
+			y: 1.0714285714285694d
+		}
+		{
+			id: "174FBAB7BF83C049"
+			rewards: [{
+				id: "3F8B2A9CF4518F08"
+				item: {
+					count: 1
+					id: "vintagedelight:magic_peanut"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [
+				{
+					id: "4DDAC0F27F56E261"
+					item: { count: 1, id: "society:salmonberry" }
+					type: "item"
+				}
+				{
+					id: "47B9AD4D20179AB2"
+					item: { count: 1, id: "society:boysenberry" }
+					type: "item"
+				}
+				{
+					id: "7452DA5440481765"
+					item: { count: 1, id: "society:cranberry" }
+					type: "item"
+				}
+				{
+					id: "30814D7224710AD9"
+					item: { count: 1, id: "society:crystalberry" }
+					type: "item"
+				}
+				{
+					id: "034FD7153211F7A0"
+					item: { count: 1, id: "farm_and_charm:wild_nettle" }
+					type: "item"
+				}
+				{
+					id: "6869B124739E7D6D"
+					item: { count: 1, id: "farm_and_charm:wild_ribwort" }
+					type: "item"
+				}
+			]
+			x: -1.5428571428571445d
+			y: -0.44285714285715017d
+		}
+		{
+			id: "7466DCDD6C3CDDE8"
+			rewards: [{
+				id: "54A04C9C43D4139E"
+				item: {
+					count: 1
+					id: "society:artifact_trove"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [
+				{
+					id: "61374B75325BA963"
+					item: { count: 1, id: "farmersrespite:coffee_beans" }
+					type: "item"
+				}
+				{
+					id: "66FC3F4A21FCD62D"
+					item: { count: 1, id: "herbalbrews:yerba_mate_leaf" }
+					type: "item"
+				}
+				{
+					id: "5D671577B4C36B3B"
+					item: { count: 1, id: "herbalbrews:rooibos_leaf" }
+					type: "item"
+				}
+				{
+					id: "2A0F2F7452A50122"
+					item: { count: 1, id: "herbalbrews:green_tea_leaf" }
+					type: "item"
+				}
+				{
+					id: "472EA018F9D0C0E8"
+					item: { count: 1, id: "brewery:hops" }
+					type: "item"
+				}
+				{
+					id: "7E48DF9E76F49A49"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(kaleidoscope_tavern:grape)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "57B88B56E94E2933"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(vinery:white_grape)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -3.057142857142857d
+			y: 0.29999999999999716d
+		}
+	]
+}

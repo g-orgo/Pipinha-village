@@ -1,0 +1,594 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "profissoes"
+	group: "457DCF55318282CA"
+	id: "08FC159E7158BF7A"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0056C1BBCA79C58A"
+			size: 2.0d
+			tasks: [{
+				id: "16B7C4A36BCE5EC0"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B1F0A3C7D2E4F61"]
+			id: "4A3D0ECF43D497AD"
+			rewards: [{
+				id: "32F1C4D058E7142B"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "67CC87DF4B066501"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:crops)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			id: "5B1F0A3C7D2E4F61"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tags: ["sunlit_profession_farmer"]
+			tasks: [{
+				id: "6C85CC8060BA68C2"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4A3D0ECF43D497AD"]
+			id: "628376D35C63F871"
+			rewards: [{
+				id: "7BF3C51F908ABCD2"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B770A2254472A60"
+				item: { count: 1, id: "society:seed_maker" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["628376D35C63F871"]
+			id: "388B7AC34F183492"
+			rewards: [{
+				id: "406615C6BD281E73"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "643C45FC5D217C27"
+				item: { count: 1, id: "society:preserves_jar" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5B1F0A3C7D2E4F62"]
+			id: "6EE15AF255859EE6"
+			rewards: [{
+				id: "39741BD6C8F72A30"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "666335C34E401362"
+				item: { count: 1, id: "society:animal_feed" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["6EE15AF255859EE6"]
+			id: "58A7FD66EAB3C2F7"
+			rewards: [{
+				id: "3A3A9A869B206951"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E87C1CAA7643595"
+				item: { count: 1, id: "society:milk_pail" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.25d
+		}
+		{
+			id: "5B1F0A3C7D2E4F62"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tags: ["sunlit_profession_rancher"]
+			tasks: [{
+				id: "4B71DBBC6FB0D822"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["58A7FD66EAB3C2F7"]
+			id: "2F304AC4BE932E53"
+			rewards: [{
+				id: "50BA3EF3D1F5B15F"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2AC12D0EFFB1813F"
+				item: { count: 1, id: "society:feeding_trough" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["2F304AC4BE932E53"]
+			id: "242F2DECF4CB1F2C"
+			rewards: [{
+				id: "255E4D5CD1A86D35"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "644CD9C9FAAED87D"
+				item: { count: 1, id: "society:mayonnaise_machine" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["242F2DECF4CB1F2C"]
+			id: "4AA0016E87063724"
+			rewards: [{
+				count: 2
+				id: "42514C8FC88139C0"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2377A24026FC6D53"
+				item: { count: 1, id: "society:cheese_press" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["5B1F0A3C7D2E4F63"]
+			id: "571A7B93095B5124"
+			rewards: [{
+				id: "50622AD751235B7A"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D020925DEC7B01D"
+				item: { count: 1, id: "aquaculture:tackle_box" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["571A7B93095B5124"]
+			id: "36129E4D479D09E3"
+			rewards: [{
+				id: "7F37934C4B0E5921"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 10L
+				id: "6FDABEB70564BBA4"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(minecraft:fishes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			id: "5B1F0A3C7D2E4F63"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tags: ["sunlit_profession_fisher"]
+			tasks: [{
+				id: "41A9A408D04E2F1F"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36129E4D479D09E3"]
+			id: "34CFEFA22A31572C"
+			rewards: [{
+				id: "32C0A36A1583C8E5"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5804F39C434CE02A"
+				item: { count: 1, id: "crabbersdelight:crab_trap" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["34CFEFA22A31572C"]
+			id: "76189DAB8B8C3B6F"
+			rewards: [{
+				id: "112D43B99833329C"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CC23159B68CE822"
+				item: { count: 1, id: "society:fish_smoker" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["76189DAB8B8C3B6F"]
+			id: "79DAA7A7F95B9192"
+			rewards: [{
+				count: 2
+				id: "30F297CC1914575D"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5DA996070AD5BFAE"
+				item: { count: 1, id: "society:fish_pond" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B1F0A3C7D2E4F64"]
+			id: "22E91DAAE230FF19"
+			rewards: [{
+				id: "107B084B39BF10E5"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "118E7A1D3DA7789D"
+				item: { components: { "ftbfiltersystem:filter": "or(item(kaleidoscope_tavern:grape)item(vinery:white_grape)item(kaleidoscope_tavern:green_grape)item(kaleidoscope_tavern:gold_grape)item(kaleidoscope_tavern:ice_grape))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["22E91DAAE230FF19"]
+			id: "485072AF01F49763"
+			rewards: [{
+				id: "65E6AACA8848F3AA"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B400817E78EC38D"
+				item: { count: 1, id: "vinery:fermentation_barrel" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.25d
+		}
+		{
+			id: "5B1F0A3C7D2E4F64"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tags: ["sunlit_profession_winemaker"]
+			tasks: [{
+				id: "38E09E8437EEF861"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["485072AF01F49763"]
+			id: "395579558A43E479"
+			rewards: [{
+				id: "1958FC6EBA8E814F"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4AE3DB71103DD79D"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(society:wine)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["395579558A43E479"]
+			id: "4AB1091C7A14C042"
+			rewards: [{
+				id: "7E0364DA3BC7CCD4"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "772CB5BBF8AB624C"
+				item: { count: 1, id: "society:wine_keg" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["4AB1091C7A14C042"]
+			id: "67561B36311854CB"
+			rewards: [{
+				count: 2
+				id: "6232088E9DD33118"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2505C1AA62F6804E"
+				item: { count: 1, id: "society:aging_cask" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["67561B36311854CB"]
+			id: "067A0D952D78E540"
+			rewards: [{
+				count: 2
+				id: "7739C07A81D8002D"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "6551044FA6624200"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(society:wine)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["067A0D952D78E540"]
+			id: "7564EAD68EED5C46"
+			rewards: [{
+				count: 4
+				id: "7CDDDBF494C1A347"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C12E35BBA8A9C60"
+				item: { count: 1, id: "society:ancient_cask" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["5B1F0A3C7D2E4F65"]
+			id: "3BBAD726303D346F"
+			rewards: [{
+				id: "6AB8AFB4B2F5427B"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "41B9CB2C68E2AF49"
+				item: { count: 1, id: "farmersdelight:cutting_board" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3BBAD726303D346F"]
+			id: "7054C737873985E4"
+			rewards: [{
+				id: "44A2E22BC2CB3B3D"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E3210616763D0B9"
+				item: { count: 1, id: "farmersdelight:cooking_pot" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			id: "5B1F0A3C7D2E4F65"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tags: ["sunlit_profession_cook"]
+			tasks: [{
+				id: "1AA7B4ABC5E7426A"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7054C737873985E4"]
+			id: "77F3B2AD2F373995"
+			rewards: [{
+				id: "463917F7B4066FB0"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "6CFA4C97F92CE0C9"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(society:dish)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["77F3B2AD2F373995"]
+			id: "596C020E3951F2F1"
+			rewards: [{
+				id: "2C049E1CBA04EE4E"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "46859833892C8712"
+				item: { count: 1, id: "farmersdelight:skillet" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["596C020E3951F2F1"]
+			id: "48AE3ECA47A7A52B"
+			rewards: [{
+				count: 2
+				id: "407A63B01D866012"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "38E5ED3B784EFADD"
+				item: { count: 1, id: "cozycafe:plating_station" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["48AE3ECA47A7A52B"]
+			id: "63B8857324997ED2"
+			rewards: [{
+				count: 4
+				id: "1001745599DD8DC9"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "29AED1BBEE203711"
+				item: { count: 1, id: "cozycafe:cafe_manager" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 4.5d
+		}
+	]
+}

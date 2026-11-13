@@ -1,10 +1,10 @@
 {
-  "configVersion": 5,
+  "configVersion": 8,
   "perf": {
     "particleAmount": 1500,
     "particleStormDensity": 1.5,
-    "particleDistance": 8,
-    "surfaceRange": 40
+    "particleDistance": 16,
+    "surfaceRange": 100
   },
   "sound": {
     "rainVolume": 0.2,
@@ -12,9 +12,9 @@
     "windVolume": 0.1
   },
   "wind": {
-    "strength": 0.4,
-    "gustFrequency": 0.2,
-    "modulationSpeed": 0.04,
+    "strength": 0.03,
+    "gustFrequency": 0.15,
+    "modulationSpeed": 0.1,
     "yLevelAdjustment": true
   },
   "compat": {

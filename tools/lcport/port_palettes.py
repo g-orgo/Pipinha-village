@@ -62,6 +62,8 @@ def transform(value, mapping):
     accepted = lc_ids.accepted_states(new_id)
     props = []
     for k, v in parse_props(value):
+        if k == "upholstery" and new_id.startswith("redecorate:"):
+            k = "fabric"  # Redecorate renamed Re:Deco's upholstery property
         if accepted is not None and k in accepted:
             allowed = accepted[k]
             if allowed is None or v in allowed:

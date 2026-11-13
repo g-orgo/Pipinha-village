@@ -1,1 +1,1 @@
-{"palette":[{"char":"a","block":"buildersdelight:lantern_2[facing=south,face=floor]"},{"char":"b","block":"quark:spruce_leaf_carpet"},{"char":"c","block":"minecraft:gray_carpet"},{"char":"d","block":"minecraft:lantern[hanging=false]"}]}
+{"palette":[{"char":"a","block":"buildersdelight:lantern_2[facing=south,face=floor]"},{"char":"b","block":"quark:spruce_leaf_carpet"},{"char":"c","block":"redecorate:gray_rug[facing=north,east=false,north=false,south=false,west=false]"},{"char":"d","block":"minecraft:lantern[hanging=false]"}]}

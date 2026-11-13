@@ -1,0 +1,14 @@
+{
+	id: "549F4646FB7BFF20"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ id: "6D5339DF4BE8B0BE", item: { count: 1, id: "society:stone_hand" } }
+		{ id: "4A05808BFBDE3878", item: { count: 1, id: "society:frosted_tip" } }
+		{ id: "221BEED80EACDD8B", item: { count: 1, id: "society:infinity_worm" } }
+		{ id: "56A1DDD05E03CFF8", item: { count: 1, id: "society:ancient_cog" } }
+		{ id: "6C9C82BDEA0807B0", item: { count: 1, id: "society:tiny_gnome" } }
+		{ id: "37E72E6183D0200A", item: { count: 1, id: "society:sea_biscut" } }
+		{ id: "503D076D84C2BBBE", item: { count: 1, id: "society:cordycep" } }
+	]
+}

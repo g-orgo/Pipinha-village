@@ -1,0 +1,370 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	id: "05ED409B61A4CC4D"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2B6877708A709B5C"
+			rewards: [
+				{
+					id: "525A6E45CC76603B"
+					item: {
+						count: 1
+						id: "minecraft:dirt"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3EA76FBA24C42CF4"
+					item: {
+						count: 1
+						id: "minecraft:oak_sapling"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "56CD1D9357C0EA60"
+					item: {
+						count: 1
+						id: "create:tree_fertilizer"
+					}
+					type: "item"
+				}
+				{
+					id: "4C59BCD7BD312E4C"
+					item: {
+						count: 1
+						id: "minecraft:bundle"
+					}
+					type: "item"
+				}
+				{
+					id: "76B396154BB44855"
+					item: {
+						count: 1
+						id: "toms_storage:crafting_terminal"
+					}
+					type: "item"
+				}
+				{
+					id: "0894E6A802FFEC96"
+					item: {
+						count: 1
+						id: "toms_storage:inventory_connector"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "072C2039D178F97E"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			id: "42BBE95A6DE1DD19"
+			tasks: [{
+				id: "18D7A7C05EC66667"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			id: "25777939975C3CEE"
+			tasks: [{
+				id: "12B5F8FF7A12B850"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			id: "3C6C8A3075250D1A"
+			rewards: [{
+				command: "puffish_skills points add @p society:parkour 1"
+				id: "7B2BC137FA2BF215"
+				permission_level: 2
+				type: "command"
+			}]
+			tasks: [{
+				id: "02AB91857638A71C"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			id: "6CB695EFC40CBAFC"
+			rewards: [
+				{
+					id: "335BF8F5FEC3356E"
+					item: {
+						count: 1
+						id: "farm_and_charm:potato_with_roast_meat"
+					}
+					type: "item"
+				}
+				{
+					command: "puffish_skills points add @p society:culinaria 1"
+					id: "6857839BDA7BA0B1"
+					permission_level: 2
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "464C7A8C47E8791F"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			id: "4E6A1C2B9D3F5A07"
+			tasks: [{
+				id: "4E6A1C2B9D3F5A08"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			id: "7A7B131D229E5279"
+			rewards: [{
+				id: "7564618DEEDF5B88"
+				item: {
+					count: 1
+					id: "solonion:food_book"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1751982CCE09E023"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			id: "4F7FB7C8808AF152"
+			tasks: [{
+				id: "5268786D837BACF0"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			id: "18490F31FFAB134E"
+			tasks: [{
+				id: "7A3A17A854FF5FAB"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			id: "6EA5618181628D34"
+			tasks: [{
+				id: "56C063A91C4834B3"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			disable_toast: true
+			id: "5FB57C45A25D41F0"
+			rewards: [
+				{
+					auto: "no_toast"
+					command: "/gamerule doPatrolSpawning false"
+					icon: {
+						components: {
+							"patchouli:book": "via_romana:guide"
+						}
+						id: "patchouli:guide_book"
+					}
+					id: "59471FAB210830B3"
+					ignore_reward_blocking: true
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/gamerule keepInventory true"
+					id: "657AF0EED8D32519"
+					ignore_reward_blocking: true
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/gamerule doInsomnia false"
+					id: "377531F1AD380D30"
+					ignore_reward_blocking: true
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/gamerule randomTickSpeed 3"
+					id: "5D9A22BE88DA4140"
+					ignore_reward_blocking: true
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				disable_toast: true
+				id: "0570B72A57438956"
+				type: "dimension"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			id: "1375AE2ECAC8C147"
+			tasks: [{
+				id: "656AD09E45594435"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["18490F31FFAB134E"]
+			id: "25305BECA3C32315"
+			tasks: [{
+				id: "5F3330533AD364D1"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			id: "67486880FE3E2CCD"
+			tasks: [{
+				id: "5330CA06B1E9BEE3"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1375AE2ECAC8C147"]
+			id: "5FDA526D348C8A0F"
+			rewards: [{
+				command: "/kjs stages add @p ftbchunks_mapping"
+				exclude_from_claim_all: true
+				id: "757BB197D52F88E4"
+				ignore_reward_blocking: true
+				permission_level: 2
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				id: "278FC13CCE8B9572"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			id: "238702B124895A0A"
+			tasks: [{
+				id: "071758A047AA8A61"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			id: "68F93F0E30C84F4A"
+			tasks: [{
+				id: "6914A9FC555FA1DC"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68F93F0E30C84F4A"]
+			id: "63DFF7FEBC553219"
+			tasks: [{
+				id: "252348AEE006A1CE"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["68F93F0E30C84F4A"]
+			id: "2B46C775C4DFF807"
+			tasks: [{
+				id: "53CF1BDCF0F70286"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["68F93F0E30C84F4A"]
+			id: "41956D4BCC48C7B0"
+			tasks: [{
+				id: "36CB36D030D7F67B"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68F93F0E30C84F4A"]
+			id: "61AE28BDF887A1DF"
+			tasks: [{
+				id: "03B86281A1ECF8AA"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["68F93F0E30C84F4A"]
+			id: "11BB3F9D5230722D"
+			tasks: [{
+				id: "7E1C15ECA8C21A8F"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+	]
+}

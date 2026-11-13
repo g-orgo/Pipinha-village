@@ -1,1 +1,1 @@
-{"palette":[{"char":"a","block":"minecraft:white_carpet"},{"char":"b","block":"quark:paper_wall"}]}
+{"palette":[{"char":"a","block":"redecorate:white_rug[facing=north,east=false,north=false,south=false,west=false]"},{"char":"b","block":"quark:paper_wall"}]}

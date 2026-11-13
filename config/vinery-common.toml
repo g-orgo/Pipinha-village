@@ -31,7 +31,7 @@
 	#Chance in percent per random tick that grapes grow.
 	# Default: 50
 	# Range: 0 ~ 100
-	grapeGrowthChance = 50
+	grapeGrowthChance = 10
 	#Multiplies the growth chance of grape bushes, grapevine stems and lattices. 1.0 = normal, 0 = grapes never grow.
 	# Default: 1.0
 	# Range: 0.0 ~ 10.0
@@ -87,13 +87,13 @@
 	#Chance in percent that the wandering winemaker spawns when a spawn is attempted.
 	# Default: 50
 	# Range: 0 ~ 100
-	spawnChance = 50
+	spawnChance = 20
 	#The wandering winemaker arrives with mules.
-	spawnWithMules = true
+	spawnWithMules = false
 	#Time between spawn attempts in ticks. 24000 ticks = 1 day.
 	# Default: 48000
 	# Range: 1 ~ 168000
-	spawnDelay = 48000
+	spawnDelay = 96000
 
 #Trades of the winemaker villager. Changes need a game restart.
 ["Villager Trades"]

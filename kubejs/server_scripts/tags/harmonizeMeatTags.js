@@ -128,7 +128,7 @@ ServerEvents.tags("item", (e) => {
   });
   // Miner's Delight puts its whole insect tag in forge:raw_meat; Candlelight puts the
   // tartare dish in its raw beef tag, which forge:raw_beef and c:raw_beef include.
-  e.remove("c:raw_meat", "#miners_delight:raw_insect_meat");
+  e.remove("c:raw_meat", "#minersdelight:raw_insect_meat");
   ["c:raw_beef", "c:raw_beef", "candlelight:raw_beef"].forEach((tag) => e.remove(tag, "candlelight:beef_tartare"));
 
   Object.keys(SUNLIT_FISH_SPECIES).forEach((tag) => {

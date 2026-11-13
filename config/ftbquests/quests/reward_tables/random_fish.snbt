@@ -1,0 +1,14 @@
+{
+	id: "0E92072EBDD2DBB6"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ id: "457972ACDA93E294", item: { count: 1, id: "aquaculture:pollock" } }
+		{ id: "37ABA87DA0C6BD73", item: { count: 1, id: "aquaculture:brown_trout" } }
+		{ id: "6C26D00EEE677C3F", item: { count: 1, id: "aquaculture:synodontis" } }
+		{ id: "0295D0D12C2CA5B3", item: { count: 1, id: "aquaculture:carp" } }
+		{ id: "36D7EC91D69B3474", item: { count: 1, id: "aquaculture:tuna" } }
+		{ id: "76B505A5DF0A5900", item: { count: 1, id: "aquaculture:perch" } }
+		{ id: "1E398024008E078D", item: { count: 1, id: "aquaculture:atlantic_cod" } }
+	]
+}

@@ -1,1 +1,1 @@
-{"palette":[{"char":"a","block":"create:redstone_contact[powered=false,facing=north]"},{"char":"b","block":"minecraft:gray_carpet"},{"char":"c","block":"minecraft:light_gray_carpet"},{"char":"d","block":"minecraft:gray_carpet"}]}
+{"palette":[{"char":"a","block":"create:redstone_contact[powered=false,facing=north]"},{"char":"b","block":"redecorate:gray_rug[facing=north,east=false,north=false,south=false,west=false]"},{"char":"c","block":"redecorate:light_gray_rug[facing=north,east=false,north=false,south=false,west=false]"},{"char":"d","block":"minecraft:gray_carpet"}]}

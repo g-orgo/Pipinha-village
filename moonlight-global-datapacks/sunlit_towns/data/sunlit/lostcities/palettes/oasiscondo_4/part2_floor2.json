@@ -1,1 +1,1 @@
-{"palette":[{"char":"a","block":"minecraft:brown_carpet"},{"char":"b","block":"minecraft:lantern[hanging=false]"},{"char":"c","block":"minecraft:lantern[hanging=true]"}]}
+{"palette":[{"char":"a","block":"redecorate:brown_rug[facing=north,east=false,north=false,south=false,west=false]"},{"char":"b","block":"minecraft:lantern[hanging=false]"},{"char":"c","block":"minecraft:lantern[hanging=true]"}]}

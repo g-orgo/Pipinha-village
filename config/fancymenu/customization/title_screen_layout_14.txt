@@ -9,7 +9,7 @@ layout-meta {
   randomgroup = 10
   randomonlyfirsttime = true
   layout_index = 0
-  custom_menu_title = Society: Pipinha's Village
+  custom_menu_title = Pipinha's Village
   [loading_requirement_container_meta:a17e4aab-8e79-4275-912f-f781bf2ab396-1784847789225] = [groups:][instances:]
 }
 

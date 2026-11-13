@@ -42,6 +42,7 @@ A instância 1.20.1 de origem fica em `../Society: Sunlit Valley` e é só leitu
 
 - Versionado na branch `1.21.1` do https://github.com/g-orgo/Pipinha-village.git
   (worktree local: `/var/home/Orgo/Documentos/Pipinha-village-1.21.1`). A `main` segue sendo
-  a 1.20.1 até o dono decidir trocar.
+  a 1.20.1 até o dono decidir trocar. A 1.20.1 trabalha na branch `1.20.1` (clone
+  `/var/home/Orgo/Documentos/Pipinha-village`); esta instância nunca escreve nela.
 - Commits e pushes nessa branch são autorizados pelo dono; nunca force-push, nunca na `main`.
 - Nenhum arquivo acima de 95 MB, nenhum save, log, cache, token ou dado pessoal.

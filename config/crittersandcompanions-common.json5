@@ -276,7 +276,7 @@
 	},
 	grapplingHook: {
 		launch_speed: 1.0,
-		max_speed: 2.0,
+		max_speed: 4.0,
 		max_distance: 32.0,
 		enable_durability: true
 	}

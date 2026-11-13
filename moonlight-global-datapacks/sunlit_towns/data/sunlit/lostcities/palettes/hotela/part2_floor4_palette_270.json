@@ -1,1 +1,1 @@
-{"palette":[{"char":"a","block":"minecraft:black_stained_glass_pane"},{"char":"b","block":"minecraft:light_gray_carpet"}]}
+{"palette":[{"char":"a","block":"minecraft:black_stained_glass_pane"},{"char":"b","block":"redecorate:light_gray_rug[facing=north,east=false,north=false,south=false,west=false]"}]}

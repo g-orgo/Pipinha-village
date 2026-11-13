@@ -2,6 +2,8 @@
 
 O pack é baseado no Society: Sunlit Valley (1.20.1 Forge); daqui em diante ele é o Pipinha's Village.
 
+Esta versão existe porque queríamos o **Create Aeronautics** no pack, e ele não existe para 1.20.1.
+
 Criado em 2026-11-11. Tabelas de apoio nesta pasta:
 `mods_1.21.1.tsv` (status de cada um dos 441 mods da 1.20.1), `mods_instalados.tsv` e `modpacks_comparados.tsv`
 (134 modpacks 1.21.1 comparados com a nossa lista).
@@ -76,7 +78,7 @@ F7_society     # reimplementar o que o mod 'society' faz, ou dropar
 F8_mundo       # Lost Cities, sunlit_towns, estruturas; teste num mundo novo
 F9_save        # teste numa CÓPIA do save "Solito solamente"
 F10_extras     # resource packs (pack_format 34), FancyMenu, atalhos dos mods novos
-F11_entrega    # zip e repositório próprios da 1.21.1 (decidir com o dono)
+F11_entrega    # 1.21.1 vai para a main + Modpack.zip novo; 1.20.1 numa branch própria (dono, 2026-11-13)
 ```
 
 #### Regras de negócio
@@ -127,9 +129,10 @@ renderizacao = "Sodium + Iris"   # Embeddium saiu: na 1.21.1 os addons exigem So
 fora = {"Radium": "incompatível com Create 6",
         "Sodium Options API": "a versão 1.21.1 conflita com Reese's Sodium Options",
         "Create: Extra Gauges": "versões 1.21.1 exigem Deployer API, incompatível com Factory Logistics",
-        "Redecorate / Farmer's Cutting: Quark": "não são ports do original",
+        "Farmer's Cutting: Quark": "não é port do original",
         "PowerfulJS": "crash na construção do Create 6.0.10"}
 large_meals_id = "largemeals -> large_meals"   # entra no script de remap da F4/F5
+redecorate = "sucessor do Re:Deco (2026-11-13): 45 blocos com o mesmo nome + renomeados; resto segue em block_map.tsv"
 watermedia = "2.1.37 + YT Plugin"   # o CurseForge troca para 2.x no launch por causa do Waterframes 2.1.23;
 fancymenu  = "3.9.1"               # último sem exigir WaterMedia 3; Drippy fica em 3.1.2 (pede FancyMenu >= 3.9.0)
                                    # WaterMedia Binaries (152 MB) saiu junto com a 3.x
@@ -149,11 +152,12 @@ Vale usar um dos packs 1.21.1 como base em vez do nosso?
 > Não. O mais parecido divide só 29% dos mods e nenhum tem a nossa economia.
 > Começar dele seria refazer o pack inteiro; portar o nosso aproveita 342 mods direto.
 
-**Ainda em aberto:** Botania, Splendid Slimes e Splendid Cogs não existem na 1.21.1.
-Dropar (e tirar das quests/lojas) ou recriar o essencial em KubeJS?
+Botania, Splendid Slimes e Splendid Cogs não existem na 1.21.1. Dropar ou recriar em KubeJS?
+> Saem do pack, junto com quests, ofertas e receitas ligadas a eles (decisão do dono, 2026-11-12).
 
 A versão 1.21.1 ganha repositório próprio?
 > Por enquanto é a branch `1.21.1` do Pipinha-village. Depois o repositório passa a ser
 > só desta versão (decisão do dono, 2026-11-11).
 
-**Ainda em aberto:** migrar o save "Solito solamente" ou começar mundo novo na 1.21.1?
+Migrar o save "Solito solamente" ou começar mundo novo na 1.21.1?
+> Converter uma cópia (F9), e ela vira o mundo principal; o original não é tocado (dono, 2026-11-13).

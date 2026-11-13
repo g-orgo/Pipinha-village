@@ -1,0 +1,390 @@
+{
+	autofocus_id: "31F6C5811A72396C"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "tools"
+	group: "439B0423947443D3"
+	id: "38639EECD8CDEFB3"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "31F6C5811A72396C"
+			size: 2.0d
+			tasks: [{
+				id: "4FBF100AF8AE2641"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			id: "5837B77D1243D30F"
+			rewards: [{
+				id: "73714A09282D81A3"
+				item: {
+					components: {
+						"patchouli:book": "buildinggadgets2:buildinggadgets2book"
+					}
+					count: 1
+					id: "patchouli:guide_book"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2C20F65D8FFCF118"
+					item: { count: 1, id: "buildinggadgets2:gadget_core" }
+					type: "item"
+				}
+				{
+					id: "57C1B03844582DB5"
+					item: { components: { "ftbfiltersystem:filter": "or(item(buildinggadgets2:gadget_exchanging)item(buildinggadgets2:gadget_building)item(buildinggadgets2:gadget_cut_paste)item(buildinggadgets2:gadget_copy_paste)item(buildinggadgets2:gadget_destruction))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			id: "23EFDF37F9BCD63B"
+			rewards: [{
+				id: "2A8ECF9567036899"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "37BEA915F4C1B7B2"
+				item: { components: { "ftbfiltersystem:filter": "or(item(copycats:copycat_byte)item(create:copycat_panel)item(create:copycat_step)item(copycats:copycat_vertical_slice)item(copycats:copycat_ghost_block)item(copycats:copycat_half_panel)item(copycats:copycat_block)item(copycats:copycat_slab)item(copycats:copycat_board)item(copycats:copycat_catwalk)item(copycats:copycat_layer)item(copycats:copycat_vertical_step)item(copycats:copycat_beam)item(copycats:copycat_wall)item(copycats:copycat_fence)item(copycats:copycat_vertical_stairs)item(copycats:copycat_slice)item(copycats:copycat_iron_trapdoor)item(copycats:copycat_trapdoor)item(copycats:copycat_iron_door)item(copycats:copycat_door)item(copycats:copycat_slope_layer)item(copycats:copycat_vertical_slope)item(copycats:copycat_slope)item(copycats:copycat_half_layer)item(copycats:copycat_box)item(copycats:copycat_fence_gate))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			id: "2193ACEC05CC5B07"
+			rewards: [{
+				id: "4FE46E0F741A0364"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7093310473EC2AE3"
+				item: { components: { "ftbfiltersystem:filter": "or(item(constructionwand:stone_wand)item(constructionwand:iron_wand)item(constructionwand:infinity_wand)item(constructionwand:diamond_wand))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2193ACEC05CC5B07"]
+			id: "086A3F527E1A973E"
+			rewards: [{
+				id: "3651413BAA3324A2"
+				item: {
+					count: 1
+					id: "numismatics:crown"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F0933DA244DC98F"
+				item: { components: { "ftbfiltersystem:filter": "or(item(constructionwand:core_destruction)item(constructionwand:core_angel))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			id: "6DAD35E264D3E056"
+			rewards: [{
+				id: "67AA34004DF431AC"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "613AAD6A70EAEB13"
+				item: { count: 1, id: "create:wand_of_symmetry" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			id: "4EAA3F652AE923B4"
+			rewards: [{
+				id: "61764C3CB845951F"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "540DB45F559C9AAA"
+				item: { count: 1, id: "quark:trowel" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			id: "6C1236C00210E5A7"
+			rewards: [{
+				id: "1817392BB56F25D9"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7FCF62F6E555A842"
+					item: { count: 1, id: "etcetera:hammer" }
+					type: "item"
+				}
+				{
+					id: "36AE8ECCAE05BE9E"
+					item: { count: 1, id: "etcetera:chisel" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			id: "574978CE534E254B"
+			rewards: [{
+				id: "62B37F698B356D6C"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5451CF002DC3D1C1"
+				item: { count: 1, id: "quark:abacus" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			id: "7BCC4E221CF97D0B"
+			rewards: [{
+				id: "40EE8779B79BE00E"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "46BF5E7112C1E0AF"
+				item: { count: 1, id: "etcetera:frame" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			id: "12ED0E637AD47FD4"
+			rewards: [{
+				id: "4A144CE04D511BEE"
+				item: {
+					count: 1
+					id: "refurbished_furniture:wrench"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0F771A1CBBDC9FD5"
+					item: { count: 1, id: "refurbished_furniture:workbench" }
+					type: "item"
+				}
+				{
+					id: "1975B4057900DED6"
+					item: { count: 1, id: "refurbished_furniture:light_electricity_generator" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["12ED0E637AD47FD4"]
+			id: "100B4D3BEEE9C433"
+			rewards: [{
+				count: 4
+				id: "08720CFEB5676102"
+				item: {
+					count: 1
+					id: "society:furniture_box"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3EF5A9EA750FC64D"
+				item: { components: { "ftbfiltersystem:filter": "or(item(society:tanuki_catalog)item(society:modern_catalog)item(society:fantasy_catalog))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			id: "6933B95631B3A039"
+			rewards: [{
+				count: 16
+				id: "11D3B9BC1D76E071"
+				item: {
+					count: 1
+					id: "minecraft:oak_log"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "08E4841A34A42A78"
+				item: { count: 1, id: "sawmill:sawmill" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["100B4D3BEEE9C433"]
+			id: "4A4474120CD64CBD"
+			rewards: [
+				{
+					id: "3ABCAA3CB62FE70F"
+					item: {
+						count: 1
+						id: "society:tanuki_catalog"
+					}
+					type: "item"
+				}
+				{
+					id: "596526D5A33D01E0"
+					item: {
+						count: 1
+						id: "society:modern_catalog"
+					}
+					type: "item"
+				}
+				{
+					id: "03ED2ACF1F0B5B4D"
+					item: {
+						count: 1
+						id: "society:fantasy_catalog"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "3FCFDD9F4F2A7544"
+				item: { count: 1, id: "tanukidecor:diy_workbench" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			id: "3A5DF5AD3C5299DE"
+			tasks: [{
+				id: "4FB6C9BF2CA1409A"
+				item: { count: 1, id: "society:magnifying_glass" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			id: "7E94B1934D0257E8"
+			rewards: [{
+				id: "4EC96CD71AFA7A8A"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F9BEDE31C44BA36"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5837B77D1243D30F"]
+			id: "07D5EB5853F9A357"
+			rewards: [{
+				id: "70DD9DC359B7F1E6"
+				item: {
+					count: 1
+					id: "buildinggadgets2:gadget_core"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "10D95304948010B2"
+				item: { count: 1, id: "buildinggadgets2:template_manager" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			id: "54B6F31A66A23AD4"
+			rewards: [{
+				id: "21EC0DE21DADD12C"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "058F9B403F01B939"
+					item: { count: 1, id: "portable_blueprints:scanner" }
+					type: "item"
+				}
+				{
+					id: "20E2F8E9F43039FE"
+					item: { count: 1, id: "portable_blueprints:tablet" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 2.5d
+		}
+	]
+}

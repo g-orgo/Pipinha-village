@@ -80,7 +80,23 @@
 	cameraShake = true
 	#The screen flashes at big moments (the light of a spell, white-hot metal).
 	screenFlash = true
+	#0: cinematic entry; 1: quick on a recent return; 2: quick on every entry. -1 keeps the old quickReturn setting.
+	# Default: -1
+	# Range: -1 ~ 2
+	quickMode = -1
+	#0: original stretching arms; 1: short natural reach with a gentle camera lean; 2: floating forearms.
+	# Default: 0
+	# Range: 0 ~ 2
+	armStyle = 0
+	#Turns the letterbox bars, the breathing camera, the shake and the flashes off at once, whatever they are set to.
+	reduceMotion = false
 
 [developer]
 	#Show the local station layout editors and enable their G shortcut. Saved layouts apply even when this is false.
 	developerMode = false
+
+[multiplayer]
+	#On a server without Cinematic Interactions, show local scenes over supported vanilla menus. Set this from the main menu; it takes effect on the next connection. Other stations keep their vanilla behavior.
+	clientOnlyMode = false
+	#Whether the server list has already shown its note about the client-only mode (it shows once).
+	serverHintSeen = false

@@ -18,4 +18,4 @@ setblock ~-1 ~-3 ~2 minecraft:chest[facing=north]
 setblock ~2 ~-3 ~-2 minecraft:furnace[facing=north]
 setblock ~1 ~-3 ~-1 minecraft:wall_torch[facing=north]
 setblock ~-1 ~-3 ~1 minecraft:wall_torch[facing=south]
-tellraw @s {"text":"[Sunlit] Porao escavado! Desca pela escada no canto. Recoloque o alcapao se quiser.","color":"gold"}
+tellraw @s {"text":"[Pipinha] Porao escavado! Desca pela escada no canto. Recoloque o alcapao se quiser.","color":"gold"}

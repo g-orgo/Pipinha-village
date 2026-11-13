@@ -1,0 +1,26 @@
+{
+  "type": "neoforge:remove_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "embellishcraft:ore_jade",
+    "embellishcraft:ore_basalt",
+    "embellishcraft:ore_slate",
+    "embellishcraft:ore_gneiss",
+    "embellishcraft:ore_marble",
+    "embellishcraft:ore_larvikite",
+    "create:zinc_ore",
+    "create:striated_ores_overworld",
+    "oreganized:lead_ore",
+    "oreganized:lead_ore_extra",
+    "oreganized:silver_ore",
+    "oreganized:silver_ore_extra",
+    "twigs:ore_rhyolite",
+    "twigs:ore_bloodstone",
+    "twigs:ore_schist_upper",
+    "twigs:ore_schist_lower",
+    "extractinator:silt"
+  ],
+  "steps": [
+    "underground_ores"
+  ]
+}

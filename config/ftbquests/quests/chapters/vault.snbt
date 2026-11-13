@@ -1,0 +1,142 @@
+{
+	autofocus_id: "4B9634D942E590AB"
+	consume_items: true
+	default_hide_dependency_lines: true
+	default_quest_shape: ""
+	filename: "vault"
+	group: "106AD9AA3ADDE3AE"
+	id: "24DD5AA13FB04D9B"
+	images: [{
+		height: 10.0d
+		id: "2F104D848217C32D"
+		image: "society:textures/gui/community_center_vault.png"
+		rotation: 0.0d
+		width: 17.77777777777778d
+		x: 0.0d
+		y: 0.0d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7CE6C320CC9F9B87"
+			rewards: [{
+				id: "3F382B3123CA893C"
+				item: {
+					count: 1
+					id: "simplehats:hatbag_epic"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				count: 4L
+				id: "22FC2E88EA6ABB6A"
+				item: { count: 1, id: "numismatics:crown" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: -3.085714285714289d
+			y: 0.3285714285714221d
+		}
+		{
+			id: "6541E0430F050B7D"
+			shape: "none"
+			tasks: [{
+				count: 2L
+				id: "393D8C55AE6556DC"
+				item: { count: 1, id: "numismatics:sun" }
+				type: "item"
+			}]
+			x: -1.5428571428571445d
+			y: -0.5000000000000071d
+		}
+		{
+			id: "5629152AF2F5D6EE"
+			rewards: [{
+				id: "4A564B58A7CFA60B"
+				item: {
+					count: 1
+					id: "society:charging_rod"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				count: 4L
+				id: "3E532DD7361F4599"
+				item: { count: 1, id: "numismatics:sun" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			id: "10EC025C45540E52"
+			rewards: [{
+				id: "0187862826FFF6F2"
+				item: {
+					count: 1
+					id: "society:crystalarium"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				count: 6L
+				id: "4FE5D5E3C4364207"
+				item: { count: 1, id: "numismatics:sun" }
+				type: "item"
+			}]
+			x: 3.028571428571432d
+			y: 0.29999999999999716d
+		}
+		{
+			dependencies: [
+				"10EC025C45540E52"
+				"5629152AF2F5D6EE"
+				"6541E0430F050B7D"
+				"7CE6C320CC9F9B87"
+			]
+			id: "4B9634D942E590AB"
+			rewards: [
+				{
+					id: "3E7038EEEA891554"
+					item: {
+						count: 1
+						id: "society:skull_cavern_teleporter"
+					}
+					type: "item"
+				}
+				{
+					id: "56E23AC06D59CFB7"
+					item: {
+						components: {
+							"trofers:trophy": "trofers:vault"
+						}
+						count: 1
+						id: "trofers:large_pillar"
+					}
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/kjs stages add @p vault_complete"
+					id: "547F885D1C8553E3"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "none"
+			tasks: [{
+				id: "12AF72DCF6F3A875"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			x: -0.05714285714285694d
+			y: 1.0142857142857125d
+		}
+	]
+}

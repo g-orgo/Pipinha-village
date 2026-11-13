@@ -1,7 +1,7 @@
 #Everything about growing crops.
 [Farming]
 	#Crops grow faster while it is raining on them.
-	enableRainGrowthEffect = true
+	enableRainGrowthEffect = false
 	#Shows fireflies around lit lanterns outdoors at night when it is not raining.
 	enableFireflies = true
 	#How much faster crops grow in rain. 0.5 = 50% faster, 1.0 = twice as fast.
@@ -13,9 +13,9 @@
 	# Range: 0 ~ 100
 	bigCropChance = 3
 	#Fertilized farmland occasionally acts like bone meal on the crop above it.
-	enableBonemealEffect = true
+	enableBonemealEffect = false
 	#Fertilizer makes a few crops in a 5×5 area grow like bone meal does.
-	enableFertilizer = true
+	enableFertilizer = false
 	#Radius in blocks around fertilized soil spread with a pitchfork in which plants can grow a stage.
 	# Default: 5
 	# Range: 1 ~ 16

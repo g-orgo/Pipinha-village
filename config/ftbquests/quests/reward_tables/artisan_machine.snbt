@@ -1,0 +1,10 @@
+{
+	id: "7CEE6786B4C401DE"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ id: "009381B2233D673A", item: { count: 1, id: "society:mayonnaise_machine" } }
+		{ id: "01193C0D6B7AFACF", item: { count: 1, id: "society:loom" } }
+		{ id: "0A086099D830F594", item: { count: 1, id: "society:cheese_press" } }
+	]
+}

@@ -1,0 +1,399 @@
+old_id	new_id	kind	prop_renames	prop_set
+botania:apothecary_default	minecraft:cauldron	any		
+cfm:birch_chair	refurbished_furniture:birch_chair	any		
+cfm:birch_hedge	minecraft:birch_leaves	any		persistent=true
+cfm:birch_kitchen_sink_light	refurbished_furniture:birch_kitchen_sink	any		
+cfm:black_grill	refurbished_furniture:black_grill	any		
+cfm:brown_kitchen_counter	refurbished_furniture:brown_kitchen_cabinetry	any		
+cfm:brown_kitchen_drawer	refurbished_furniture:brown_kitchen_drawer	any		
+cfm:brown_sofa	refurbished_furniture:brown_sofa	any		
+cfm:cyan_cooler	refurbished_furniture:cyan_cooler	any		
+cfm:cyan_kitchen_counter	refurbished_furniture:cyan_kitchen_cabinetry	any		
+cfm:cyan_kitchen_drawer	refurbished_furniture:cyan_kitchen_drawer	any		
+cfm:cyan_kitchen_sink	refurbished_furniture:cyan_kitchen_sink	any		
+cfm:dark_oak_chair	refurbished_furniture:dark_oak_chair	any		
+cfm:dark_oak_coffee_table	refurbished_furniture:dark_oak_table	any		
+cfm:dark_oak_hedge	minecraft:dark_oak_leaves	any		persistent=true
+cfm:diving_board	minecraft:air	block		
+cfm:gray_kitchen_counter	refurbished_furniture:gray_kitchen_cabinetry	any		
+cfm:gray_kitchen_sink	refurbished_furniture:gray_kitchen_sink	any		
+cfm:gray_picket_fence	cluttered:wooden_picket_fence	any		
+cfm:gray_sofa	refurbished_furniture:gray_sofa	any		
+cfm:green_kitchen_counter	refurbished_furniture:green_kitchen_cabinetry	any		
+cfm:green_kitchen_sink	refurbished_furniture:green_kitchen_sink	any		
+cfm:jungle_hedge	minecraft:jungle_leaves	any		persistent=true
+cfm:light_gray_picket_fence	cluttered:wooden_picket_fence	any		
+cfm:light_gray_sofa	refurbished_furniture:light_gray_sofa	any		
+cfm:oak_hedge	minecraft:oak_leaves	any		persistent=true
+cfm:oak_park_bench	another_furniture:oak_bench	any		
+cfm:rainbow_sofa	refurbished_furniture:red_sofa	any		
+cfm:red_kitchen_counter	refurbished_furniture:red_kitchen_cabinetry	any		
+cfm:rock_path	refurbished_furniture:stone_stepping_stones	any		
+cfm:spruce_desk	refurbished_furniture:spruce_desk	any		
+cfm:spruce_hedge	minecraft:spruce_leaves	any		persistent=true
+cfm:spruce_park_bench	another_furniture:spruce_bench	any		
+cfm:spruce_table	refurbished_furniture:spruce_table	any		
+cfm:stripped_birch_blinds	beautify:birch_blinds	any		
+cfm:stripped_birch_chair	refurbished_furniture:birch_chair	any		
+cfm:stripped_birch_coffee_table	refurbished_furniture:birch_table	any		
+cfm:stripped_birch_kitchen_counter	refurbished_furniture:birch_kitchen_cabinetry	any		
+cfm:stripped_birch_park_bench	another_furniture:birch_bench	any		
+cfm:stripped_birch_upgraded_fence	minecraft:birch_fence	any		
+cfm:stripped_dark_oak_blinds	beautify:dark_oak_blinds	any		
+cfm:stripped_dark_oak_cabinet	refurbished_furniture:dark_oak_storage_cabinet	any		
+cfm:stripped_dark_oak_chair	refurbished_furniture:dark_oak_chair	any		
+cfm:stripped_dark_oak_coffee_table	refurbished_furniture:dark_oak_table	any		
+cfm:stripped_dark_oak_desk	refurbished_furniture:dark_oak_desk	any		
+cfm:stripped_dark_oak_desk_cabinet	refurbished_furniture:dark_oak_drawer	any		
+cfm:stripped_dark_oak_kitchen_counter	refurbished_furniture:dark_oak_kitchen_cabinetry	any		
+cfm:stripped_dark_oak_kitchen_sink_light	refurbished_furniture:dark_oak_kitchen_sink	any		
+cfm:stripped_dark_oak_park_bench	another_furniture:dark_oak_bench	any		
+cfm:stripped_dark_oak_table	refurbished_furniture:dark_oak_table	any		
+cfm:stripped_dark_oak_upgraded_fence	minecraft:dark_oak_fence	any		
+cfm:stripped_jungle_blinds	beautify:jungle_blinds	any		
+cfm:stripped_jungle_chair	refurbished_furniture:jungle_chair	any		
+cfm:stripped_jungle_kitchen_counter	refurbished_furniture:jungle_kitchen_cabinetry	any		
+cfm:stripped_jungle_table	refurbished_furniture:jungle_table	any		
+cfm:stripped_mangrove_table	refurbished_furniture:mangrove_table	any		
+cfm:stripped_oak_bedside_cabinet	refurbished_furniture:oak_drawer	any		
+cfm:stripped_oak_blinds	beautify:oak_blinds	any		
+cfm:stripped_oak_chair	refurbished_furniture:oak_chair	any		
+cfm:stripped_oak_coffee_table	refurbished_furniture:oak_table	any		
+cfm:stripped_oak_desk	refurbished_furniture:oak_desk	any		
+cfm:stripped_oak_desk_cabinet	refurbished_furniture:oak_drawer	any		
+cfm:stripped_oak_kitchen_counter	refurbished_furniture:oak_kitchen_cabinetry	any		
+cfm:stripped_oak_kitchen_drawer	refurbished_furniture:oak_kitchen_drawer	any		
+cfm:stripped_oak_kitchen_sink_light	refurbished_furniture:oak_kitchen_sink	any		
+cfm:stripped_oak_park_bench	another_furniture:oak_bench	any		
+cfm:stripped_oak_table	refurbished_furniture:oak_table	any		
+cfm:stripped_spruce_blinds	beautify:spruce_blinds	any		
+cfm:stripped_spruce_chair	refurbished_furniture:spruce_chair	any		
+cfm:stripped_spruce_coffee_table	refurbished_furniture:spruce_table	any		
+cfm:stripped_spruce_desk	refurbished_furniture:spruce_desk	any		
+cfm:stripped_spruce_desk_cabinet	refurbished_furniture:spruce_drawer	any		
+cfm:stripped_spruce_kitchen_counter	refurbished_furniture:spruce_kitchen_cabinetry	any		
+cfm:stripped_spruce_kitchen_sink_dark	refurbished_furniture:spruce_kitchen_sink	any		
+cfm:stripped_spruce_park_bench	another_furniture:spruce_bench	any		
+cfm:stripped_spruce_table	refurbished_furniture:spruce_table	any		
+cfm:stripped_spruce_upgraded_gate	minecraft:spruce_fence_gate	any		
+cfm:white_sofa	refurbished_furniture:white_sofa	any		
+cfm:yellow_kitchen_counter	refurbished_furniture:yellow_kitchen_cabinetry	any		
+create_central_kitchen:blaze_stove	farmersdelight:stove	any		
+create_central_kitchen:pumpkin_pie	farmersdelight:pumpkin_pie	any		
+createdeco:andesite_facade	minecraft:andesite	any		
+embellishcraft:black_dark_oak_fancy_bed	minecraft:black_bed	any		
+embellishcraft:blue_dark_oak_fancy_bed	minecraft:blue_bed	any		
+embellishcraft:blue_spruce_fancy_bed	minecraft:blue_bed	any		
+embellishcraft:brown_dark_oak_fancy_bed	minecraft:brown_bed	any		
+embellishcraft:brown_oak_fancy_bed	minecraft:brown_bed	any		
+embellishcraft:brown_spruce_fancy_bed	minecraft:brown_bed	any		
+embellishcraft:dark_oak_fancy_table	refurbished_furniture:dark_oak_table	any		
+embellishcraft:gray_birch_fancy_bed	minecraft:gray_bed	any		
+embellishcraft:gray_dark_oak_fancy_bed	minecraft:gray_bed	any		
+embellishcraft:gray_oak_fancy_bed	minecraft:gray_bed	any		
+embellishcraft:gray_spruce_fancy_bed	minecraft:gray_bed	any		
+embellishcraft:green_dark_oak_fancy_bed	minecraft:green_bed	any		
+embellishcraft:jungle_fancy_table	refurbished_furniture:jungle_table	any		
+embellishcraft:light_blue_spruce_fancy_bed	minecraft:light_blue_bed	any		
+embellishcraft:light_gray_birch_fancy_bed	minecraft:light_gray_bed	any		
+embellishcraft:light_gray_dark_oak_fancy_bed	minecraft:light_gray_bed	any		
+embellishcraft:light_gray_oak_fancy_bed	minecraft:light_gray_bed	any		
+embellishcraft:oak_fancy_table	refurbished_furniture:oak_table	any		
+embellishcraft:red_dark_oak_fancy_bed	minecraft:red_bed	any		
+embellishcraft:spruce_fancy_table	refurbished_furniture:spruce_table	any		
+embellishcraft:white_birch_fancy_bed	minecraft:white_bed	any		
+embellishcraft:white_oak_fancy_bed	minecraft:white_bed	any		
+embellishcraft:white_spruce_fancy_bed	minecraft:white_bed	any		
+embellishcraft:yellow_dark_oak_fancy_bed	minecraft:yellow_bed	any		
+embellishcraft:yellow_oak_fancy_bed	minecraft:yellow_bed	any		
+fantasyfurniture:decorations/brewing_cauldron	minecraft:cauldron	any		
+fantasyfurniture:decorations/venthyr_tea_set	candlelight:table_set	any		
+hearthandharvest:egg_crate	hearthandharvest:crate	any		
+hearthandharvest:milk_crate	hearthandharvest:crate	any		
+meadow:bench	meadow:pine_bench	any		
+meadow:can	meadow:milk_can	any		
+meadow:chair	meadow:pine_chair	any		
+meadow:cheese_block	meadow:cheese_wheel	any		
+meadow:highland_wool	minecraft:white_wool	any		
+meadow:pine_barn_trapdoor	meadow:reclaimed_pine_trapdoor	any		
+meadow:roasted_ham	meadow:roasted_buffalo_ham	any		
+meadow:shelf	meadow:pine_cabinet	any		
+meadow:shutter_block	meadow:pine_shutter	any		
+meadow:table	meadow:pine_table	any		
+moreminecarts:wooden_rail	minecraft:rail	any		
+quark:nether_brick_trapped_chest	minecraft:trapped_chest	any		
+redeco:acacia_side_table	refurbished_furniture:acacia_table	any		
+redeco:amethyst_light_bulb	redecorate:amethyst_lightbulb	any	upholstery>fabric	
+redeco:azalea_terrarium	furniture:terrarium	any		
+redeco:bamboo_terrarium	furniture:terrarium	any		
+redeco:birch_bench	redecorate:birch_bench	any	upholstery>fabric	
+redeco:birch_coffee_table	refurbished_furniture:birch_table	any		
+redeco:birch_pedestal	supplementaries:pedestal	any		
+redeco:birch_side_table	refurbished_furniture:birch_table	any		
+redeco:birch_stool	candlelight:birch_chair	any		
+redeco:birch_sword_mount	minecraft:air	block		
+redeco:black_fluffy_carpet	redecorate:black_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:black_ottoman	another_furniture:black_stool	any		
+redeco:black_paper_lantern	whimsy_deco:paper_lantern	any		
+redeco:black_sofa	another_furniture:black_sofa	any		
+redeco:blue_ottoman	another_furniture:blue_stool	any		
+redeco:brown_cushion	minecraft:brown_carpet	any		
+redeco:brown_fluffy_carpet	redecorate:brown_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:brown_mushroom_terrarium	furniture:terrarium	any		
+redeco:brown_ottoman	another_furniture:brown_stool	any		
+redeco:brown_pet_bed	redecorate:brown_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:brown_sofa	another_furniture:brown_sofa	any		
+redeco:cherry_side_table	refurbished_furniture:cherry_table	any		
+redeco:crimson_fungus_terrarium	furniture:terrarium	any		
+redeco:dark_oak_bench	redecorate:dark_oak_bench	any	upholstery>fabric	
+redeco:dark_oak_chair	redecorate:dark_oak_chair	any	upholstery>fabric	
+redeco:dark_oak_coffee_table	refurbished_furniture:dark_oak_table	any		
+redeco:dark_oak_crate	refurbished_furniture:dark_oak_crate	any		
+redeco:dark_oak_display_case	tanukidecor:display_case	any		
+redeco:dark_oak_pedestal	supplementaries:pedestal	any		
+redeco:dark_oak_shelf	another_furniture:dark_oak_shelf	any		
+redeco:dark_oak_side_table	refurbished_furniture:dark_oak_table	any		
+redeco:dark_oak_stool	candlelight:dark_oak_chair	any		
+redeco:dark_oak_sword_mount	minecraft:air	block		
+redeco:dark_oak_table	redecorate:dark_oak_table	any	upholstery>fabric	short=false
+redeco:deepslate_gravestone	faunaandorchestra:gravestone	any		
+redeco:dripleaf_terrarium	furniture:terrarium	any		
+redeco:fern_terrarium	furniture:terrarium	any		
+redeco:flowering_azalea_terrarium	furniture:terrarium	any		
+redeco:glow_ink_light_bulb	redecorate:glow_ink_lightbulb	any	upholstery>fabric	
+redeco:glowberry_terrarium	furniture:terrarium	any		
+redeco:glowstone_light_bulb	redecorate:glowstone_lightbulb	any	upholstery>fabric	
+redeco:grass_terrarium	furniture:terrarium	any		
+redeco:gray_cushion	minecraft:gray_carpet	any		
+redeco:gray_fluffy_carpet	redecorate:gray_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:gray_ottoman	another_furniture:gray_stool	any		
+redeco:gray_sofa	another_furniture:gray_sofa	any		
+redeco:green_ottoman	another_furniture:green_stool	any		
+redeco:green_paper_lantern	whimsy_deco:paper_lantern	any		
+redeco:jar	supplementaries:jar	any		
+redeco:jungle_bench	redecorate:jungle_bench	any	upholstery>fabric	
+redeco:jungle_pedestal	supplementaries:pedestal	any		
+redeco:jungle_shelf	another_furniture:jungle_shelf	any		
+redeco:jungle_side_table	refurbished_furniture:jungle_table	any		
+redeco:jungle_sword_mount	minecraft:air	block		
+redeco:jungle_table	redecorate:jungle_table	any	upholstery>fabric	short=false
+redeco:light_gray_cushion	minecraft:light_gray_carpet	any		
+redeco:light_gray_fluffy_carpet	redecorate:light_gray_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:light_gray_ottoman	another_furniture:light_gray_stool	any		
+redeco:light_gray_paper_lantern	whimsy_deco:paper_lantern	any		
+redeco:light_gray_sofa	another_furniture:light_gray_sofa	any		
+redeco:mangrove_side_table	refurbished_furniture:mangrove_table	any		
+redeco:mud_brick_stepping_stones	minecraft:mud_bricks	any		
+redeco:oak_bench	redecorate:oak_bench	any	upholstery>fabric	
+redeco:oak_coffee_table	refurbished_furniture:oak_table	any		
+redeco:oak_crate	refurbished_furniture:oak_crate	any		
+redeco:oak_display_case	tanukidecor:display_case	any		
+redeco:oak_pedestal	supplementaries:pedestal	any		
+redeco:oak_shelf	another_furniture:oak_shelf	any		
+redeco:oak_side_table	refurbished_furniture:oak_table	any		
+redeco:oak_stool	candlelight:oak_chair	any		
+redeco:pink_pet_bed	redecorate:pink_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:pink_petals_terrarium	furniture:terrarium	any		
+redeco:polished_birch_planks	minecraft:birch_planks	any		
+redeco:polished_birch_slab	minecraft:birch_slab	any		
+redeco:polished_dark_oak_planks	minecraft:dark_oak_planks	any		
+redeco:polished_dark_oak_slab	minecraft:dark_oak_slab	any		
+redeco:polished_dark_oak_stairs	minecraft:dark_oak_stairs	any		
+redeco:polished_oak_planks	minecraft:oak_planks	any		
+redeco:polished_oak_slab	minecraft:oak_slab	any		
+redeco:polished_oak_stairs	minecraft:oak_stairs	any		
+redeco:polished_spruce_planks	minecraft:spruce_planks	any		
+redeco:red_cushion	minecraft:red_carpet	any		
+redeco:red_fluffy_carpet	redecorate:red_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:red_mushroom_terrarium	furniture:terrarium	any		
+redeco:red_ottoman	another_furniture:red_stool	any		
+redeco:red_sofa	another_furniture:red_sofa	any		
+redeco:spruce_bench	redecorate:spruce_bench	any	upholstery>fabric	
+redeco:spruce_cabinet	refurbished_furniture:spruce_storage_cabinet	any		
+redeco:spruce_chair	redecorate:spruce_chair	any	upholstery>fabric	
+redeco:spruce_coffee_table	refurbished_furniture:spruce_table	any		
+redeco:spruce_crate	refurbished_furniture:spruce_crate	any		
+redeco:spruce_shelf	another_furniture:spruce_shelf	any		
+redeco:spruce_side_table	refurbished_furniture:spruce_table	any		
+redeco:spruce_stool	candlelight:spruce_chair	any		
+redeco:spruce_sword_mount	minecraft:air	block		
+redeco:spyglass_stand	minecraft:air	block		
+redeco:stone_gravestone	faunaandorchestra:gravestone	any		
+redeco:stone_stepping_stones	refurbished_furniture:stone_stepping_stones	any		
+redeco:trash_bin	refurbished_furniture:recycle_bin	any		
+redeco:warped_fungus_terrarium	furniture:terrarium	any		
+redeco:white_cushion	minecraft:white_carpet	any		
+redeco:white_fluffy_carpet	redecorate:white_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:white_ottoman	another_furniture:white_stool	any		
+redeco:white_pet_bed	redecorate:white_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:white_sofa	another_furniture:white_sofa	any		
+redeco:yellow_ottoman	another_furniture:yellow_stool	any		
+society:fire_quartz	minecraft:quartz_block	any		
+species:alphacene_grass	minecraft:grass_block	any		
+trials:tuff_slab	minecraft:tuff_slab	any		
+trials:tuff_stairs	minecraft:tuff_stairs	any		
+verdantvibes:ivy	minecraft:vine	any		
+vinery:basket	farmersdelight:wooden_basket	any		
+vinery:flower_box	meadow:wooden_flower_box	any		
+vinery:flower_pot_big	meadow:wooden_flower_pot_big	any		
+vinery:apple_juice	vinery:apple_wine	any		
+redeco:oak_chair	redecorate:oak_chair	any	upholstery>fabric	
+redeco:oak_table	redecorate:oak_table	any	upholstery>fabric	short=false
+redeco:oak_drawers	redecorate:oak_drawers	any	upholstery>fabric	
+redeco:oak_drawer_counter	redecorate:oak_drawer_table	any	upholstery>fabric	east=false;north=false;south=false;west=false
+redeco:spruce_table	redecorate:spruce_table	any	upholstery>fabric	short=false
+redeco:spruce_drawers	redecorate:spruce_drawers	any	upholstery>fabric	
+redeco:spruce_drawer_counter	redecorate:spruce_drawer_table	any	upholstery>fabric	east=false;north=false;south=false;west=false
+redeco:birch_chair	redecorate:birch_chair	any	upholstery>fabric	
+redeco:birch_table	redecorate:birch_table	any	upholstery>fabric	short=false
+redeco:birch_drawers	redecorate:birch_drawers	any	upholstery>fabric	
+redeco:birch_drawer_counter	redecorate:birch_drawer_table	any	upholstery>fabric	east=false;north=false;south=false;west=false
+redeco:jungle_chair	redecorate:jungle_chair	any	upholstery>fabric	
+redeco:jungle_drawers	redecorate:jungle_drawers	any	upholstery>fabric	
+redeco:jungle_drawer_counter	redecorate:jungle_drawer_table	any	upholstery>fabric	east=false;north=false;south=false;west=false
+redeco:acacia_chair	redecorate:acacia_chair	any	upholstery>fabric	
+redeco:acacia_bench	redecorate:acacia_bench	any	upholstery>fabric	
+redeco:acacia_table	redecorate:acacia_table	any	upholstery>fabric	short=false
+redeco:acacia_drawers	redecorate:acacia_drawers	any	upholstery>fabric	
+redeco:acacia_drawer_counter	redecorate:acacia_drawer_table	any	upholstery>fabric	east=false;north=false;south=false;west=false
+redeco:dark_oak_drawers	redecorate:dark_oak_drawers	any	upholstery>fabric	
+redeco:dark_oak_drawer_counter	redecorate:dark_oak_drawer_table	any	upholstery>fabric	east=false;north=false;south=false;west=false
+redeco:mangrove_chair	redecorate:mangrove_chair	any	upholstery>fabric	
+redeco:mangrove_bench	redecorate:mangrove_bench	any	upholstery>fabric	
+redeco:mangrove_table	redecorate:mangrove_table	any	upholstery>fabric	short=false
+redeco:mangrove_drawers	redecorate:mangrove_drawers	any	upholstery>fabric	
+redeco:mangrove_drawer_counter	redecorate:mangrove_drawer_table	any	upholstery>fabric	east=false;north=false;south=false;west=false
+redeco:cherry_chair	redecorate:cherry_chair	any	upholstery>fabric	
+redeco:cherry_bench	redecorate:cherry_bench	any	upholstery>fabric	
+redeco:cherry_table	redecorate:cherry_table	any	upholstery>fabric	short=false
+redeco:cherry_drawers	redecorate:cherry_drawers	any	upholstery>fabric	
+redeco:cherry_drawer_counter	redecorate:cherry_drawer_table	any	upholstery>fabric	east=false;north=false;south=false;west=false
+redeco:bamboo_chair	redecorate:bamboo_chair	any	upholstery>fabric	
+redeco:bamboo_bench	redecorate:bamboo_bench	any	upholstery>fabric	
+redeco:bamboo_table	redecorate:bamboo_table	any	upholstery>fabric	short=false
+redeco:bamboo_drawers	redecorate:bamboo_drawers	any	upholstery>fabric	
+redeco:bamboo_drawer_counter	redecorate:bamboo_drawer_table	any	upholstery>fabric	east=false;north=false;south=false;west=false
+redeco:crimson_chair	redecorate:crimson_chair	any	upholstery>fabric	
+redeco:crimson_bench	redecorate:crimson_bench	any	upholstery>fabric	
+redeco:crimson_table	redecorate:crimson_table	any	upholstery>fabric	short=false
+redeco:crimson_drawers	redecorate:crimson_drawers	any	upholstery>fabric	
+redeco:crimson_drawer_counter	redecorate:crimson_drawer_table	any	upholstery>fabric	east=false;north=false;south=false;west=false
+redeco:warped_chair	redecorate:warped_chair	any	upholstery>fabric	
+redeco:warped_bench	redecorate:warped_bench	any	upholstery>fabric	
+redeco:warped_table	redecorate:warped_table	any	upholstery>fabric	short=false
+redeco:warped_drawers	redecorate:warped_drawers	any	upholstery>fabric	
+redeco:warped_drawer_counter	redecorate:warped_drawer_table	any	upholstery>fabric	east=false;north=false;south=false;west=false
+redeco:white_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=white;lightbulb=glowstone
+redeco:orange_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=orange;lightbulb=glowstone
+redeco:orange_fluffy_carpet	redecorate:orange_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:magenta_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=magenta;lightbulb=glowstone
+redeco:magenta_fluffy_carpet	redecorate:magenta_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:light_blue_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=light_blue;lightbulb=glowstone
+redeco:light_blue_fluffy_carpet	redecorate:light_blue_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:yellow_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=yellow;lightbulb=glowstone
+redeco:yellow_fluffy_carpet	redecorate:yellow_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:lime_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=lime;lightbulb=glowstone
+redeco:lime_fluffy_carpet	redecorate:lime_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:pink_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=pink;lightbulb=glowstone
+redeco:pink_fluffy_carpet	redecorate:pink_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:gray_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=gray;lightbulb=glowstone
+redeco:light_gray_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=light_gray;lightbulb=glowstone
+redeco:cyan_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=cyan;lightbulb=glowstone
+redeco:cyan_fluffy_carpet	redecorate:cyan_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:purple_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=purple;lightbulb=glowstone
+redeco:purple_fluffy_carpet	redecorate:purple_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:blue_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=blue;lightbulb=glowstone
+redeco:blue_fluffy_carpet	redecorate:blue_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:brown_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=brown;lightbulb=glowstone
+redeco:green_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=green;lightbulb=glowstone
+redeco:green_fluffy_carpet	redecorate:green_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:red_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=red;lightbulb=glowstone
+redeco:black_lamp	redecorate:oak_lamp	any	upholstery>fabric	shade=black;lightbulb=glowstone
+redeco:orange_pet_bed	redecorate:orange_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:magenta_pet_bed	redecorate:magenta_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:light_blue_pet_bed	redecorate:light_blue_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:yellow_pet_bed	redecorate:yellow_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:lime_pet_bed	redecorate:lime_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:gray_pet_bed	redecorate:gray_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:light_gray_pet_bed	redecorate:light_gray_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:cyan_pet_bed	redecorate:cyan_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:purple_pet_bed	redecorate:purple_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:blue_pet_bed	redecorate:blue_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:green_pet_bed	redecorate:green_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:red_pet_bed	redecorate:red_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+redeco:black_pet_bed	redecorate:black_rug	any	upholstery>fabric	facing=north;east=false;north=false;south=false;west=false
+constructionstick:diamond_stick	minecraft:diamond	item		
+constructionstick:netherite_stick	minecraft:netherite_ingot	item		
+create_enchantment_industry:hyper_experience_bottle	minecraft:experience_bottle	item		
+createdeco:netherite_sheet	minecraft:netherite_ingot	item		
+dew_drop_farmland_growth:bountiful_fertilizer	minecraft:bone_meal	item		
+dew_drop_farmland_growth:high_quality_fertilizer	minecraft:bone_meal	item		
+dew_drop_farmland_growth:hydrating_fertilizer	minecraft:bone_meal	item		
+dew_drop_farmland_growth:iron_sprinkler	farm_and_charm:water_sprinkler	item		
+dew_drop_farmland_growth:low_quality_fertilizer	minecraft:bone_meal	item		
+dew_drop_farmland_growth:strong_fertilizer	minecraft:bone_meal	item		
+dew_drop_farmland_growth:weak_fertilizer	minecraft:bone_meal	item		
+farm_and_charm:strawberry_seed	farm_and_charm:strawberry_seeds	item		
+kaleidoscope_tavern:grape_juice	hearthandharvest:green_grape_juice	item		
+minecraft:scute	minecraft:turtle_scute	item		
+moreminecarts:chiseled_organic_glass	minecraft:glass	item		
+moreminecarts:glass_spines	minecraft:glass	item		
+moreminecarts:lightspeed_powered_rail	minecraft:powered_rail	item		
+moreminecarts:lightspeed_rail	minecraft:rail	item		
+nethervinery:crimson_grape_seeds	vinery:red_grape_seeds	item		
+nethervinery:warped_grape_seeds	vinery:white_grape_seeds	item		
+society:diamond_upgrade_smithing_template	minecraft:netherite_upgrade_smithing_template	item		
+society:gold_upgrade_smithing_template	minecraft:netherite_upgrade_smithing_template	item		
+society:iron_upgrade_smithing_template	minecraft:netherite_upgrade_smithing_template	item		
+society:pristine_aquamarine	minecraft:prismarine_crystals	item		
+society:pristine_emerald	minecraft:emerald	item		
+society:pristine_frozen_tear	minecraft:blue_ice	item		
+society:pristine_sandstone_slate	minecraft:sandstone	item		
+species:springling_egg	minecraft:egg	item		
+trials:banner_pattern_flow	minecraft:flow_banner_pattern	item		
+trials:banner_pattern_guster	minecraft:guster_banner_pattern	item		
+trials:bolt_template	minecraft:bolt_armor_trim_smithing_template	item		
+trials:breeze_rod	minecraft:breeze_rod	item		
+trials:flow_template	minecraft:flow_armor_trim_smithing_template	item		
+trials:heavy_core	minecraft:heavy_core	item		
+trials:music_disc_creator	minecraft:music_disc_creator	item		
+trials:music_disc_creator_box	minecraft:music_disc_creator	item		
+trials:music_disc_precipice	minecraft:music_disc_precipice	item		
+trials:ominous_bottle	minecraft:ominous_bottle	item		
+trials:trial_key	minecraft:trial_key	item		
+trials:trial_key_ominous	minecraft:ominous_trial_key	item		
+verdantvibes:bracket_mushroom	minecraft:brown_mushroom	item		
+verdantvibes:dragon_tree	minecraft:dark_oak_sapling	item		
+meadow:fire_log	meadow:firewood	any		
+redeco:black_upholstery	redecorate:black_fabric	item	upholstery>fabric	
+redeco:blue_upholstery	redecorate:blue_fabric	item	upholstery>fabric	
+redeco:brown_upholstery	redecorate:brown_fabric	item	upholstery>fabric	
+redeco:cyan_upholstery	redecorate:cyan_fabric	item	upholstery>fabric	
+redeco:gray_upholstery	redecorate:gray_fabric	item	upholstery>fabric	
+redeco:green_upholstery	redecorate:green_fabric	item	upholstery>fabric	
+redeco:light_blue_upholstery	redecorate:light_blue_fabric	item	upholstery>fabric	
+redeco:light_gray_upholstery	redecorate:light_gray_fabric	item	upholstery>fabric	
+redeco:lime_upholstery	redecorate:lime_fabric	item	upholstery>fabric	
+redeco:magenta_upholstery	redecorate:magenta_fabric	item	upholstery>fabric	
+redeco:orange_upholstery	redecorate:orange_fabric	item	upholstery>fabric	
+redeco:pink_upholstery	redecorate:pink_fabric	item	upholstery>fabric	
+redeco:purple_upholstery	redecorate:purple_fabric	item	upholstery>fabric	
+redeco:red_upholstery	redecorate:red_fabric	item	upholstery>fabric	
+redeco:white_upholstery	redecorate:white_fabric	item	upholstery>fabric	
+redeco:yellow_upholstery	redecorate:yellow_fabric	item	upholstery>fabric	
+redeco:crate_block_entity	refurbished_furniture:crate	be		
+redeco:pedestal_block_entity	supplementaries:pedestal	be		
+minecraft:grass		ignore		
+society:earth_crystal		ignore		
+society:geode_node		ignore		
+society:skull_cavern		ignore		
+supplementaries:sign_post	supplementaries:way_sign	block		
+supplementaries:sign_post	supplementaries:way_sign	be		
+quark:lootr_nether_brick_trapped_chest	minecraft:trapped_chest	any		
+quark:lootr_nether_brick_trapped_chest	minecraft:trapped_chest	be		
+toms_storage:ts.inventory_hopper_basic	toms_storage:basic_inventory_hopper	any		
+toms_storage:ts.inventory_hopper_basic	toms_storage:basic_inventory_hopper	be		
+dew_drop_farmland_growth:weak_fertilized_farmland	minecraft:farmland	block		
+dew_drop_farmland_growth:low_quality_fertilized_farmland	minecraft:farmland	block		
+dew_drop_farmland_growth:iron_sprinkler	minecraft:air	block		
+dew_drop_farmland_growth:gold_sprinkler	minecraft:air	block		

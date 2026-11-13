@@ -176,7 +176,7 @@ addFoodPrices(global.crops, "crop", [
   ["meadow:wooden_warped_milk_bucket", 40],
   ["minecraft:dried_kelp", 15],
   ["minersdelight:bone_broth_cup", 70],
-  ["miners_delight:hot_cocoa_cup", 40],
+  ["minersdelight:hot_cocoa_cup", 40],
   ["minersdelight:plate_of_fake_meatloaf", 50],
   ["netherdepthsupgrade:cooked_glowdine_slice", 125],
   ["netherdepthsupgrade:cooked_lava_pufferfish_slice", 50],

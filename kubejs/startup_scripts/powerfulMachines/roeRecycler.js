@@ -77,7 +77,7 @@ global.handleRoeRecycler = (e) => {
   }
 
   level.spawnParticles(
-    "domesticationinnovation:simple_bubble",
+    "redomesticate:simple_bubble",
     true,
     x,
     y + 1,

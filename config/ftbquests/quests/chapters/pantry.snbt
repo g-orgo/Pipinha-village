@@ -1,0 +1,238 @@
+{
+	autofocus_id: "7CBAF0748446A0C2"
+	consume_items: true
+	default_hide_dependency_lines: true
+	default_quest_shape: ""
+	filename: "pantry"
+	group: "106AD9AA3ADDE3AE"
+	id: "0ABCE0D05B56531F"
+	images: [{
+		height: 10.0d
+		id: "252CE1D7344C81FD"
+		image: "society:textures/gui/community_center_greenhouse.png"
+		rotation: 0.0d
+		width: 17.77777777777778d
+		x: 0.0d
+		y: 0.0d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7D155FD0EFEEB5AC"
+			shape: "none"
+			tasks: [
+				{
+					id: "0B35C5DE8BB5F9F6"
+					item: { count: 1, id: "veggiesdelight:turnip" }
+					type: "item"
+				}
+				{
+					id: "668E84D9EE57A1A8"
+					item: { count: 1, id: "kaleidoscope_cookery:lettuce" }
+					type: "item"
+				}
+				{
+					id: "7CDE2B20B7CC5880"
+					item: { count: 1, id: "veggiesdelight:cauliflower" }
+					type: "item"
+				}
+				{
+					id: "3F5BC351515794BE"
+					item: { count: 1, id: "farm_and_charm:strawberry" }
+					type: "item"
+				}
+			]
+			x: -3.057142857142857d
+			y: 0.3285714285714221d
+		}
+		{
+			id: "3EF57F71C1C786FE"
+			require_sequential_tasks: false
+			shape: "none"
+			tasks: [
+				{
+					id: "2DCE90F8655627E2"
+					item: { count: 1, id: "farm_and_charm:oat" }
+					type: "item"
+				}
+				{
+					id: "1B1C690E927AA97F"
+					item: { count: 1, id: "veggiesdelight:bellpepper" }
+					type: "item"
+				}
+				{
+					id: "6DCE2F477E7CA601"
+					item: { count: 1, id: "society:blueberry" }
+					type: "item"
+				}
+				{
+					id: "3033562FFE412612"
+					item: { count: 1, id: "minecraft:melon" }
+					type: "item"
+				}
+			]
+			x: -1.5428571428571445d
+			y: -0.44285714285715017d
+		}
+		{
+			id: "2074A4FFF17266DB"
+			rewards: [{
+				count: 3
+				id: "761491DBA60727EF"
+				item: {
+					count: 1
+					id: "society:preserves_jar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [
+				{
+					id: "10528A18EFA1224B"
+					item: { count: 1, id: "culturaldelights:corn_cob" }
+					type: "item"
+				}
+				{
+					id: "2A66DE4B86C12568"
+					item: { count: 1, id: "society:eggplant" }
+					type: "item"
+				}
+				{
+					id: "1765579326FB757D"
+					item: { count: 1, id: "minecraft:pumpkin" }
+					type: "item"
+				}
+				{
+					id: "350C1AD567DB67EC"
+					item: { count: 1, id: "minecraft:beetroot" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -1.2142857142857224d
+		}
+		{
+			id: "314D5DDD65659FDE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "056F5C708072416C"
+				table_id: 9002246533416223198L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [
+				{
+					id: "6311F3FAC9E5755D"
+					item: { components: { "ftbfiltersystem:filter": "or(item(society:large_milk)item(society:large_sheep_milk))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "13169DA529D1555A"
+					item: { components: { "ftbfiltersystem:filter": "or(item(society:large_buffalo_milk)item(society:large_goat_milk)item(society:large_warped_milk))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "1E3334D99216AE48"
+					item: { count: 1, id: "society:fine_wool" }
+					type: "item"
+				}
+				{
+					id: "4C6092038147B063"
+					item: { count: 1, id: "society:large_egg" }
+					type: "item"
+				}
+				{
+					id: "38CA49D3F5035787"
+					item: { count: 1, id: "society:large_duck_egg" }
+					type: "item"
+				}
+			]
+			x: 1.4857142857142875d
+			y: -0.4714285714285751d
+		}
+		{
+			id: "43591809C1D493F5"
+			rewards: [{
+				count: 2
+				id: "7E7399293510698C"
+				item: {
+					count: 1
+					id: "minecraft:sniffer_egg"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [
+				{
+					count: 5L
+					id: "499CB69BCD41BFE0"
+					item: { components: { "quality_food:quality": { level: 2, type: "quality_food:gold" } }, count: 1, id: "veggiesdelight:cauliflower" }
+					match_components: "fuzzy"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6C57B3D989FFD624"
+					item: { components: { "quality_food:quality": { level: 2, type: "quality_food:gold" } }, count: 1, id: "veggiesdelight:bellpepper" }
+					match_components: "fuzzy"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "2068F0BB063AD8B7"
+					item: { components: { "quality_food:quality": { level: 2, type: "quality_food:gold" } }, count: 1, id: "society:eggplant" }
+					match_components: "fuzzy"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4101FC59B4F4D5FE"
+					item: { components: { "quality_food:quality": { level: 2, type: "quality_food:gold" } }, count: 1, id: "culturaldelights:corn_cob" }
+					match_components: "fuzzy"
+					type: "item"
+				}
+			]
+			x: 2.999999999999993d
+			y: 0.3285714285714221d
+		}
+		{
+			dependencies: [
+				"43591809C1D493F5"
+				"2074A4FFF17266DB"
+				"7D155FD0EFEEB5AC"
+				"314D5DDD65659FDE"
+				"3EF57F71C1C786FE"
+			]
+			id: "7CBAF0748446A0C2"
+			rewards: [
+				{
+					id: "4FC255BFC2126E9F"
+					item: {
+						components: {
+							"trofers:trophy": "trofers:pantry"
+						}
+						count: 1
+						id: "trofers:large_pillar"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "46FDA42C9D22205F"
+					table_id: 5635253696830077546L
+					type: "choice"
+				}
+			]
+			shape: "none"
+			tasks: [{
+				id: "713FD6544CCC4F5C"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			x: -0.05714285714285694d
+			y: 1.0714285714285694d
+		}
+	]
+}

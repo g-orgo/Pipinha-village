@@ -57,12 +57,16 @@
       "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:20.0d}"
     }
   ],
+  "detriments": [],
   "shouldExcludedCount": true,
   "complexityStandardNutrition": 5,
   "complexityStandardSaturation": 0.6,
   "complexityBenefitEffectModifier": 0.2,
   "complexityNeutralEffectModifier": 0,
   "complexityHarmEffectModifier": -0.2,
+  "trackedFoodDiversityDecay": true,
+  "disableDiversityCalculations": false,
+  "disabledDefaultDiversity": 1,
   "foodDiversity": [
     {
       "ingredient": "{id:\"item\",item:\"minecraft:golden_carrot\"}",
@@ -77,7 +81,7 @@
       "diversity": 5
     },
     {
-      "ingredient": "{id:\"item\",item:\"botania:infinite_fruit\"}",
+      "ingredient": "{id:\"item\",item:\"minecraft:air\"}",
       "diversity": -2
     },
     {

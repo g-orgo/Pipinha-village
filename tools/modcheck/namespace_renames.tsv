@@ -1,0 +1,7 @@
+old_ns	new_ns	old_jar	new_jar	evidence
+miners_delight	minersdelight	miners_delight-1.20.1-1.4.5-backport.jar	minersdelight-1.21.1-1.4.5.jar	old asset paths 240, found in new jar 131, missing 109; pairing by TSV slug miners-delight-plus (ok_neoforge); new jar has no miners_delight namespace
+numismatics_utils	numismaticsutils	numismatics_utils-2.2.jar	numismaticsutils-2.3-1.21.1.jar	old paths 8, found 5, missing 3; pairing by TSV slug create-numismatics-utils (ok_neoforge)
+largemeals	large_meals	largemeals-1.20.1-1.3.0.jar	large_meals-1.21.1-1.0.1.jar	old paths 72, found 39, missing 33; pairing by TSV slug large-meals (marked faltando in TSV, jar present in mods/)
+bonsaitrees3	bonsaitrees4	BonsaiTrees3-1.20.1-3.3.2.jar	bonsaitrees4-4.0.9.jar	old paths 662, found 16, missing 646 (weak path evidence, rewritten mod); pairing by TSV slug bonsai-trees (ok_neoforge)
+domesticationinnovation	redomesticate	domesticationinnovation-1.7.2-1.20.1.jar	redomesticate-2.0.2+1.21.1-neoforge.jar	old paths 181, found 110, missing 71; pairing by path overlap 0.61 and TSV mods_instalados (novo_1.21.1)
+sunlit_eating	pipinha_eating	sunlit_eating-1.0.0.jar	pipinha_eating-1.0.0.jar	old paths 7, found 7, missing 0; pairing by path overlap 1.0 (no references in allowed folders)

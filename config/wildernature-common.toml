@@ -102,15 +102,15 @@
 	#How often the boar spawns compared to other animals. 0 = never.
 	# Default: 14
 	# Range: 0 ~ 100
-	boarSpawnWeight = 14
+	boarSpawnWeight = 0
 	#Smallest number of boars that spawn together.
 	# Default: 4
 	# Range: 1 ~ 10
-	boarMinGroupSize = 4
+	boarMinGroupSize = 1
 	#Largest number of boars that spawn together.
 	# Default: 5
 	# Range: 1 ~ 10
-	boarMaxGroupSize = 5
+	boarMaxGroupSize = 1
 	#How often the bison spawns compared to other animals. 0 = never.
 	# Default: 14
 	# Range: 0 ~ 100
@@ -126,15 +126,15 @@
 	#How often the turkey spawns compared to other animals. 0 = never.
 	# Default: 12
 	# Range: 0 ~ 100
-	turkeySpawnWeight = 12
+	turkeySpawnWeight = 0
 	#Smallest number of turkeys that spawn together.
 	# Default: 3
 	# Range: 1 ~ 10
-	turkeyMinGroupSize = 3
+	turkeyMinGroupSize = 1
 	#Largest number of turkeys that spawn together.
 	# Default: 5
 	# Range: 1 ~ 10
-	turkeyMaxGroupSize = 5
+	turkeyMaxGroupSize = 1
 	#How often the dog spawns compared to other animals. 0 = never.
 	# Default: 5
 	# Range: 0 ~ 100
@@ -150,15 +150,15 @@
 	#How often the mini sheep spawns compared to other animals. 0 = never.
 	# Default: 13
 	# Range: 0 ~ 100
-	miniSheepSpawnWeight = 13
+	miniSheepSpawnWeight = 0
 	#Smallest number of mini sheep that spawn together.
 	# Default: 3
 	# Range: 1 ~ 10
-	miniSheepMinGroupSize = 3
+	miniSheepMinGroupSize = 1
 	#Largest number of mini sheep that spawn together.
 	# Default: 6
 	# Range: 1 ~ 10
-	miniSheepMaxGroupSize = 6
+	miniSheepMaxGroupSize = 1
 	#How often the cassowary spawns compared to other animals. 0 = never.
 	# Default: 7
 	# Range: 0 ~ 100

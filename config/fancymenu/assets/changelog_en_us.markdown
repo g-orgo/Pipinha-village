@@ -1,126 +1,30 @@
 ^^^
 ### Pipinha's Village
-### Edition
+### 1.21.1 Edition
 ^^^
 
-Welcome to Pipinha's Village! This changelog summarizes what differs from the normal Sunlit Valley, by category.
+Welcome to Pipinha's Village, now on Minecraft 1.21.1! Based on Society: Sunlit Valley.
+
+This version only exists because we wanted Create Aeronautics in the pack, and it did not exist for 1.20.1.
 
 ### New
-+ Minecraft mule instead of the Vinery mule: the mule spawn egg and the mules already in the world become the normal mule, and the wandering winemaker arrives without mules
-+ Automatic claims: placing a chest, bed, crab trap, machine or any block that works on its own claims and protects the chunk, with no limit on claimed or force loaded chunks; opening chests does not claim
-+ Difficulty is always Hard, with a button next to it to turn hostile mob spawning on or off, in Options and when creating a world
-+ Languages: the list only shows English (US) and Portuguese (Brazil)
-+ Hands-On Delight: cook in Farmer's Delight with your own hands, right at the stations in the world instead of the menus
-+ Eating animations made for the pack: every food has its own animation in first and third person, bitten little by little until only the bone or stick is left
-+ Bowls eaten with a spoon, plates with a fork, and mayonnaise, preserve and jam jars that open their lid and are drunk in sips
-+ Trees with Specialties: the 2 missing points were added, so every skill can be picked now
-+ Mercantile: buying from villager shops also gives Mercantile experience, with a daily limit
-+ Profession contacts: each profession gets its own contact on the Phone (Grocer for the Cook, with the produce of the season, Bait Shop, Farm Co-op, Feed Store and Vintner), and the Cook quests explain the cafe's 50% bonus and tips
-+ Temperature: modded furnaces, stoves and fireplaces give heat while lit
-+ Exercise: running nonstop or hanging with ParCool slowly warms you up; staying at the limit for too long makes you sweat
-+ Recipes: coal and charcoal work for each other, and so do ice and ice cubes in food and drink recipes
-+ Ginger drops from its crop again
-+ Village houses no longer have loose wooden supports on the front
-+ The trash slot shows up in the inventory again
-+ New texture packs: Fresh Animations: Classic Horses, fairy wings on the elytra, Create Pipez and Aquaculture
-+ FTB Chunks map with icons for 24 modded creatures, such as otter, red panda, duck, goose, hamster, crab and Snuffle
-+ Minimap: villagers and village townsfolk show up with their face, and over 100 modded creatures without an icon now show their own face
-+ The Librarian is now the Artisan: besides her storage stock, she sells every Create machine and part needed to progress (cogs, belts, chains, press, deployer, redstone link and more); power sources unlock after the Boiler Room
-+ Create: crushing gravel now gives the nuggets that used to come from tuff, so the basic ore farm works with cobblestone alone (cobblestone turns into gravel in crushing wheels or a millstone)
-+ Tom's terminal in a scene: Ctrl+A selects the whole search text, to clear or replace it at once
-+ While sneaking, right click no longer eats or drinks (food, drinks, potions, canteens or water by hand), so gifts can be given to villagers without starting to eat
-+ Meat and fish by species: duck, goose and turkey go wherever chicken goes, bison, buffalo and venison wherever beef goes, boar wherever pork goes, goat wherever mutton goes, halibut and pollock wherever cod goes; cabbage rolls and bat rolls only take ground meat, vegetables or mushrooms
++ Create Aeronautics: physics-based contraptions, from cars and boats to planes and airships (Simulated, Aeronautics and Offroad)
++ Aeronautics Camera Sync: the camera follows the aircraft you are riding
++ Create High Seas: physics contraptions float on water and can flood inside
++ Sable: moving block structures with physics
++ Create 6 with its addons updated
++ Sodium + Iris instead of Embeddium + Oculus: shaders and performance on the new version
 
-+ Longer day: the daylight part goes from 10 to about 15 minutes, and the night does not change
-+ Bounty Board: turning in a bounty gives Mercantile tree XP, from 40 to 150 depending on rarity
-+ New name: Pipinha's Village on the title screen logo, quest book, first advancement, login notice and Discord
-+ ReplayMod: singleplayer replays now read the IDs from their own save (the recorded world must be in the saves folder)
-+ Plonk: the default key to place items on any surface is now R
-+ Cooking quality: automated cooking pots, bowls and the Brewin' and Chewin' keg keep the quality of the ingredients
-+ Seasonal bonus also on crops from the cooking mods
-+ Seed Maker: turning a crop into seeds no longer gives a profit when selling
-+ Pets: the first empty-hand click of the day pets the animal instead of the usual action (riding, sitting) and shows its name and hearts; from 5 hearts affection gives bonuses that grow up to 10: horses run faster and jump higher, dogs and bears deal and withstand more damage, ferrets and axolotls fight better, cats, owls, hamsters, hedgehogs and allays get quicker; wolves at 10 hearts earn Wolf Armor; dogs in follow mode appear at your feet after a teleport (waystone, Via Romana, pearl, portal) or when you get off your horse
-+ Cook: the first time you prepare each dish you earn its sell value in coins and Cooking experience, once per dish
-+ Taller terrain: Lithosphere gives the world much taller mountains
-+ Third-person animations with Punchy Moves: character posture, shoulder camera, expressions and emotes (replaces Not Enough Animations)
-+ 3D inventory and container screens with Spatial GUI, drawn as a plane in space
-
-### Professions and skills
-+ Professions: Farmer, Rancher, Fisher, Winemaker and Cook, picked by signing a contract in the Professions chapter
-+ Every tree stays open, and each profession gets its own Specialties and 50% more XP in its tree
-+ New trees: Cooking, Winemaking and Mercantile
-+ Mercantile: levels up by selling, giving gifts, talking to villagers and turning in bounties, and Haggle makes the shops of your trade cheaper
-+ Guild: the Crystal of Ambition: Professions unlocks one more profession and the Crystal of Regret: Professions lets you pick again
-
-### Economy
-+ Rebalanced prices: easy crops are worth less and rare ones still pay well
-+ Crops and foods from the cooking mods have prices and work in the valley machines
-+ Foods repeated across mods became a single one, with the same price and recipes
-+ Tooltips show the byproduct gain and the seasonal bonus in coins
-
-### Survival
-+ Serene Seasons: seasons affect crop growth and the weather
-+ Dew Drop Daily Weather and Dew Drop Farmland Growth
-+ Legendary Survival Overhaul: body temperature and thirst
-+ Temperature coats, sewn at the Sewing Table
-
-### Villages
-+ The Lost Cities, with the sunlit_cozy profile: living villages instead of ruins
-+ sunlit_towns datapack: village houses built from schematics
-+ Villagers keep a fixed home and can be called with an invitation
-
-### Movement and tools
-+ ParCool! and ParCool Compatibility Addon
-+ Paraglider
-+ Construction Wand and FTB Ultimine
-+ Dew Drop Watering Cans: water, harvest and care for the soil
-+ Crabbers Delight: crab traps
-+ Stardew Fishing and Unusual Fish Mod: fishing changes
-+ Tom's Simple Storage: storage, with the terminal opened as a scene by Cinematic Interactions
-+ Bonsai Trees 4: potted trees
-
-### Farm, kitchen and decoration
-+ Quality Food: product quality
-+ Farmer's Delight, Kaleidoscope Cookery, Kaleidoscope Tavern and Farmer's Respite: kitchen and cooking
-+ Hands-On Delight: Farmer's Delight menus become in-world stations, and you cook with your own hands
-+ Brewin' and Chewin', Cuisine Delight, Cultural Delights, Large Meals, Miner's Delight, Ocean's Delight and Quark Delight
-+ Hearth and Harvest, Haunted Harvest and Youkai's Homecoming: new crops and dishes
-+ Create Slice & Dice: Create cuts and cooks for you
-+ Fauna and Orchestra: animals
-+ Another Furniture, Builder's Delight, Re:Deco, Refurbished Furniture and MrCrayfish's Furniture: decoration
-+ Create Deco, EmbellishCraft, Whimsy Deco and Tanuki Decor: decoration blocks
-+ Simply Light: light blocks
-
-### Visuals, sound and animations
-+ The pack's eating animations, together with Kaleidoscope: Immersive Eating and Eating Animation
-+ Fresh Animations and Fresh Moves: livelier mobs and player
-+ Not Enough Animations and Punchy!: third and first person animations
-+ Excalibur: medieval textures, with support for Create, Farmer's Delight, Supplementaries and other mods
-+ Fancy Crops: new crop textures
-+ Distant Horizons: see much farther
-+ ItemPhysic: dropped items with physics
-+ Sound Physics Remastered and Enhanced Audio: Ambience: echo and ambient sound
-+ Sounds Be Gone!: mute specific sounds
-
-### Disabled mods
-+ V-Minus: reloaded all resources on every dimension change and made worlds slow to open
-+ JourneyMap and JourneyMap Integration: the map lives in FTB Chunks now
-+ Xaero's World Map and its Excalibur support: one map only, no more two maps fighting
-+ Construction Sticks: block building is handled by Construction Wand and FTB Ultimine
-+ Animal Pen: disabled by the owner
+### Changed
++ Minecraft 1.21.1 with NeoForge 21.1.265
++ Some key binds were renamed (ParCool, Refined Storage, Relics and Punchy): set them again in Controls if needed
++ Worlds from the 1.20.1 edition are converted on a copy, and blocks from mods that did not come along disappear
 
 ### Removed
-- Diagonal Fences and Diagonal Walls
-- Chunky
-- Golden dragon fruit (Atmospheric)
-- Ginger root crate (Windswept)
-- Carrot, potato, onion and beetroot crates (Farmer's Delight) and tomato bag (Farm and Charm)
-- Wild carrots, potatoes, onions, rice, cabbages and beetroots (Farmer's Delight)
-- Tomato with its seeds and strawberry seeds (Farm and Charm)
-- Farm and Charm lettuce and corn: replaced by the Kaleidoscope Cookery and Cultural Delights ones
-- Oats and oat seeds (Vintage Delight)
-- Hops seeds (Brewery)
-- Potato and carrot (vanilla, no seasonal tag): out of town gardens and chests
-- Fruit and nut tree saplings (PamHC2Trees), such as gooseberry, chestnut, avocado, pear, guava, coconut and maple
+- Botania, Splendid Slimes and Create: Splendid Cogs, along with their quests, offers and recipes
+- Mods without a 1.21.1 version, such as Species, Re:Deco, Quark Delight and Refined Storage Addons
+
+### In progress
++ Shops, professions, economy, eating animations, towns and quests from the 1.20.1 edition are being brought over step by step
 
 Questions? Open the Welcome chapter in the quest book, the Guides are there.

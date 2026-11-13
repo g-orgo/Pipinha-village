@@ -57,6 +57,9 @@
     "show_tree_block_counts": true,
     "show_num_chops_remaining": true
   },
+  "kubejs": {
+    "shipping_bin_jade": true
+  },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -101,6 +104,12 @@
   "functionalstorage": {
     "armory": true,
     "drawer": true
+  },
+  "society": {
+    "plushie_jade": true,
+    "crop_growth_jade": true,
+    "artisan_machine_jade": true,
+    "fish_pond_jade": true
   },
   "jadeaddons": {
     "equipment_requirement": ""

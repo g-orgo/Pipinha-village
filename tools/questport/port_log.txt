@@ -1,0 +1,245 @@
+## missing in 1.21.1: 82
+  4x dew_drop_farmland_growth:weak_fertilizer
+  4x dew_drop_farmland_growth:high_quality_fertilizer
+  3x moreminecarts:chiseled_organic_glass
+  3x dew_drop_farmland_growth:iron_sprinkler
+  3x dew_drop_farmland_growth:strong_fertilizer
+  3x dew_drop_farmland_growth:gold_sprinkler
+  2x dew_drop_farmland_growth:bountiful_fertilizer
+  2x nethervinery:netherite_nectar
+  2x unusualfishmod:raw_snowflake
+  2x dew_drop_farmland_growth:hydrating_fertilizer
+  2x dew_drop_farmland_growth:low_quality_fertilizer
+  2x refinedstorageaddons:wireless_crafting_grid
+  2x dew_drop_farmland_growth:garden_pot
+  2x domesticationinnovation:collar_tag
+  2x domesticationinnovation:pet_bed_white
+  2x moreminecarts:wooden_projector_rail
+  2x moreminecarts:coupler
+  1x species:youth_potion
+  1x candlelight:khinkali
+  1x beachparty:chocolate_icecream
+  1x verdantvibes:bracket_mushroom
+  1x species:alphacene_mushroom
+  1x nethervinery:warped_grape
+  1x nethervinery:crimson_grape
+  1x moreminecarts:glass_cactus
+  1x nethervinery:blazewine_pinot
+  1x nethervinery:nether_fizz
+  1x nethervinery:lava_fizz
+  1x nethervinery:improved_lava_fizz
+  1x nethervinery:improved_nether_fizz
+  1x nethervinery:ghastly_grenache
+  1x brewery:hop_trellis_seed
+  1x candlelight:hearth
+  1x beachparty:sweetberry_milkshake
+  1x netherdepthsupgrade:baked_lava_pufferfish_stew
+  1x dew_drop_farmland_growth:diamond_sprinkler
+  1x dew_drop_farmland_growth:netherite_sprinkler
+  1x dew_drop_farmland_growth:hyper_fertilizer
+  1x dew_drop_farmland_growth:pristine_quality_fertilizer
+  1x nethervinery:warped_grapejuice
+  1x nethervinery:crimson_grapejuice
+  1x domesticationinnovation:wayward_lantern
+  1x domesticationinnovation:drum
+  1x create_central_kitchen:cooking_guide
+  1x create_enchantment_industry:disenchanter
+  1x create_enchantment_industry:hyper_experience_bottle
+  1x nethervinery:crimson_grape_juice_bucket
+  1x fantasyfurniture:decorations/bone_skeleton_skull_blossoms
+  1x moreminecarts:wooden_rail
+  1x moreminecarts:wooden_cross_rail
+  1x moreminecarts:wooden_rail_turn
+  1x moreminecarts:maglev_rail
+  1x moreminecarts:maglev_powered_rail
+  1x moreminecarts:lightspeed_rail
+  1x moreminecarts:lightspeed_powered_rail
+  1x moreminecarts:projector_rail
+  1x moreminecarts:maglev_projector_rail
+## removed (owner decision): 52
+  8x splendid_slimes:slime_ticket
+  6x splendid_slimes:slime_heart
+  4x splendid_slimes:slime_incubator
+  3x splendid_slimes:plort
+  2x botania:manasteel_chestplate
+  2x botania:terrasteel_chestplate
+  2x botania:elementium_chestplate
+  2x splendid_slimes:plort_rippit
+  2x splendid_slimes:slime_item
+  2x splendid_slimes:slime_candy
+  1x botania:apothecary_default
+  1x botania:manasteel_leggings
+  1x botania:manasteel_helmet
+  1x botania:manasteel_boots
+  1x botania:terrasteel_boots
+  1x botania:terrasteel_leggings
+  1x botania:terrasteel_helmet
+  1x botania:elementium_helmet
+  1x botania:elementium_boots
+  1x botania:elementium_leggings
+  1x botania:cosmetic_cat_ears
+  1x botania:horn_snow
+  1x splendid_slimes:corral_block
+  1x splendid_slimes:slime_vac
+  1x splendid_slimes:rocket_pod
+  1x splendid_slimes:slime_feeder
+  1x splendid_slimes:slime_inspector
+  1x splendid_slimes:plort_press
+  1x botania:flight_tiara
+## nbt dropped (icon): 12
+  2x relics:shadow_glaive abilities
+  2x relics:shadow_glaive charges
+  1x aquaculture:neptunium_pickaxe inWater
+  1x create:copper_backtank Air
+  1x vinery:eiswein Year
+  1x vinery:jellie_wine Year
+  1x minecraft:painting EntityTag
+  1x cozycafe:serving_plate platedFood
+  1x constructionwand:infinity_wand wand_options
+  1x automobility:automobile Automobile
+## nbt ignored (task without match_nbt): 141
+  2x society:galaxy_sword Damage
+  2x candlelight:beef_wellington StoredEffects
+  2x aquaculture:leech Damage
+  2x aquaculture:minnow Damage
+  2x relics:magic_mirror abilities
+  1x quark:flamerang Damage
+  1x quark:pickarang Damage
+  1x society:dragontooth_axe Damage
+  1x create:copper_backtank Air
+  1x create:copper_diving_helmet Damage
+  1x create:netherite_backtank Air
+  1x create:netherite_diving_helmet Damage
+  1x minecraft:netherite_leggings Damage
+  1x create:netherite_diving_boots Damage
+  1x create:potato_cannon Damage
+  1x create:extendo_grip Damage
+  1x society:meowmageddon Damage
+  1x society:princess_hairbrush Damage
+  1x quark:forgotten_hat Damage
+  1x candlelight:salmon_on_white_wine StoredEffects
+  1x candlelight:tropical_fish_supreme StoredEffects
+  1x candlelight:lasagne StoredEffects
+  1x candlelight:tomato_soup StoredEffects
+  1x candlelight:mushroom_soup StoredEffects
+  1x candlelight:pasta_with_mozzarella StoredEffects
+  1x candlelight:bolognese StoredEffects
+  1x candlelight:chicken_alfredo StoredEffects
+  1x candlelight:chicken_with_vegetables StoredEffects
+  1x candlelight:pasta_with_bolognese StoredEffects
+  1x candlelight:fillet_steak StoredEffects
+  1x candlelight:roasted_lamb_with_lettuce StoredEffects
+  1x candlelight:roastbeef_with_glazed_carrots StoredEffects
+  1x candlelight:beef_with_mushroom_in_wine_and_potatoes StoredEffects
+  1x candlelight:pork_ribs StoredEffects
+  1x vinery:red_wine Year
+  1x vinery:villagers_fright Year
+  1x vinery:creepers_crush Year
+  1x vinery:kelp_cider Year
+  1x vinery:chorus_wine Year
+  1x vinery:strad_wine Year
+  1x vinery:stal_wine Year
+  1x vinery:chenet_wine Year
+  1x vinery:lilitu_wine Year
+  1x farmersdelight:apple_cider Year
+  1x vinery:magnetic_wine Year
+  1x vinery:apple_wine Year
+  1x society:forks_of_blue Year
+  1x kaleidoscope_tavern:honey_wine Year
+  1x vinery:bolvar_wine Year
+  1x vinery:cristel_wine Year
+  1x vinery:clark_wine Year
+  1x vinery:solaris_wine Year
+  1x vinery:bottle_mojang_noir Year
+  1x vinery:noir_wine Year
+  1x vinery:cherry_wine Year
+  1x vinery:jo_special_mixture Year
+  1x vinery:mellohi_wine Year
+  1x vinery:glowing_wine Year
+  1x vinery:aegis_wine Year
+  1x vinery:eiswein Year
+  1x vinery:jellie_wine Year
+  1x society:good_catawba Year
+  1x society:nutty_basil Year
+  1x sophisticatedbackpacks:backpack contentsUuid
+  1x sophisticatedbackpacks:backpack inventorySlots
+  1x sophisticatedbackpacks:backpack renderInfo
+  1x sophisticatedbackpacks:backpack upgradeSlots
+  1x minecraft:golden_pickaxe Damage
+  1x minecraft:wooden_hoe Damage
+  1x portable_blueprints:worn_blueprint Damage
+  1x portable_blueprints:worn_blueprint allow_nbt
+  1x portable_blueprints:worn_blueprint altezza
+  1x portable_blueprints:worn_blueprint blueprint_name
+  1x portable_blueprints:worn_blueprint buildAnyway
+  1x portable_blueprints:worn_blueprint display
+  1x portable_blueprints:worn_blueprint free_build
+  1x portable_blueprints:worn_blueprint inventari_blocco_selezionati
+  1x portable_blueprints:worn_blueprint lunghezzaX
+  1x portable_blueprints:worn_blueprint lunghezzaZ
+  1x portable_blueprints:worn_blueprint mirrowX
+  1x portable_blueprints:worn_blueprint mirrowY
+  1x portable_blueprints:worn_blueprint mirrowZ
+  1x portable_blueprints:worn_blueprint nome
+  1x portable_blueprints:worn_blueprint owner
+  1x portable_blueprints:worn_blueprint owner_name
+  1x portable_blueprints:worn_blueprint remaining_uses
+  1x portable_blueprints:worn_blueprint rotateValue
+  1x portable_blueprints:worn_blueprint skipObstructionBlock
+  1x portable_blueprints:worn_blueprint visualizeBuild
+  1x portable_blueprints:worn_blueprint wasHolding
+  1x portable_blueprints:worn_blueprint worn_set
+  1x minecraft:flint_and_steel Damage
+  1x minecraft:fishing_rod Damage
+  1x sewingkit:iron_sewing_needle Damage
+  1x dew_drop_watering_cans:iron_watering_can Damage
+  1x minecraft:stone_hoe Damage
+  1x netherdepthsupgrade:lava_fishing_rod Damage
+  1x longwings:catching_net Damage
+  1x oreganized:scribe Damage
+  1x create:super_glue Damage
+  1x wildernature:blunderbuss Damage
+  1x farmersdelight:skillet Damage
+  1x relics:horse_flute abilities
+  1x relics:hunter_belt abilities
+  1x relics:ice_skates abilities
+  1x relics:wool_mitten abilities
+  1x relics:amphibian_boot abilities
+  1x relics:aqua_walker abilities
+  1x relics:jellyfish_necklace abilities
+  1x relics:reflection_necklace abilities
+  1x relics:ice_breaker abilities
+  1x relics:roller_skates abilities
+  1x relics:leather_belt abilities
+  1x relics:drowned_belt abilities
+  1x relics:magma_walker abilities
+  1x relics:bastion_ring abilities
+  1x relics:shadow_glaive abilities
+  1x relics:shadow_glaive charges
+  1x relics:elytra_booster abilities
+  1x relics:enders_hand abilities
+  1x relics:rage_glove abilities
+  1x relics:spore_sack abilities
+  1x relics:chorus_inhibitor abilities
+  1x relics:arrow_quiver abilities
+  1x relics:spatial_sign abilities
+  1x relics:spatial_sign pos
+  1x relics:spatial_sign world
+  1x relics:space_dissector abilities
+  1x relics:blazing_flask abilities
+  1x create:wand_of_symmetry enable
+  1x create:wand_of_symmetry symmetry
+  1x etcetera:hammer Damage
+  1x etcetera:chisel Damage
+  1x minecraft:elytra Damage
+  1x gag:hearthstone Damage
+  1x gag:energized_hearthstone Damage
+## nbt dropped (reward): 7
+  2x bountiful:decree bountiful:decree_data
+  1x relics:rage_glove abilities
+  1x relics:spore_sack abilities
+  1x relics:magic_mirror abilities
+  1x supplementaries:jar BlockEntityTag
+  1x sophisticatedstorage:iron_barrel woodType
+## task removed: 1
+  1x splendid_slimes:splendid_slime

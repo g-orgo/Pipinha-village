@@ -1,0 +1,41 @@
+{
+	id: "223E25374B1DD129"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			count: 2
+			id: "1D521657B8606CE6"
+			item: {
+				count: 1
+				id: "pamhc2trees:lychee_sapling"
+			}
+		}
+		{
+			count: 2
+			id: "51BD5183E2ABDFBF"
+			item: {
+				count: 1
+				id: "pamhc2trees:banana_sapling"
+			}
+		}
+		{
+			count: 3
+			id: "72E00FDD464D6872"
+			item: {
+				count: 1
+				id: "pamhc2trees:apple_sapling"
+			}
+		}
+		{
+			count: 3
+			id: "37E2A29735F84515"
+			item: {
+				count: 1
+				id: "pamhc2trees:cherry_sapling"
+			}
+		}
+		{ id: "0539F1F362669979", item: { count: 1, id: "pamhc2trees:mango_sapling" } }
+		{ id: "20F2221234C33889", item: { count: 1, id: "pamhc2trees:peach_sapling" } }
+	]
+}

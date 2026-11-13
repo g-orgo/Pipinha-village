@@ -15,7 +15,7 @@
 	#Chance of ducks successfully fishing.
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
-	duck_fishing_change = 0.5
+	duck_fishing_change = 0.05
 	#No more following behavior when tamed.
 	duck_tamed_no_follow = false
 	#Baby model random size (0.25-0.7).

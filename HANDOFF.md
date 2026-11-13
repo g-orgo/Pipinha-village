@@ -201,3 +201,41 @@ Origem (só leitura): `../Society: Sunlit Valley`.
 5. F9 conversão da cópia do save.
 6. F10 resource packs, FancyMenu (sem menções ao Sunlit), atalhos (options.txt só com autorização).
 7. F11 sincronizar a branch a cada unidade fechada.
+
+- 2026-11-13 (sessão Redecorate/F9): RAM: `minecraftinstance.json` allocatedMemory 8096 -> 6880 (igual à 1.20.1;
+  PC tem 15 GB e o processo passava de 95%). Redecorate 1.1.0 instalado pelo dono como sucessor do Re:Deco:
+  mapa redeco->redecorate (cadeira/banco upholstery->fabric, mesa short=false, drawers, drawer_counter->drawer_table,
+  light_bulb->lightbulb, lâmpada colorida -> oak_lamp[shade=cor,lightbulb=glowstone], fluffy_carpet->rug).
+  F9 em curso: `tools/saveport/convert_save.py` copia "Solito solamente" para `saves/` e remapeia ids antes do upgrade.
+  Repositório: branch `1.20.1` criada da main (c849da451) para a 1.20.1; `sync_repo.py` e AGENTS.md do Sunlit apontam para ela.
+  Sucessores achados e a decidir com o dono: Fantasy's Furniture (port não oficial 1.21.1), Youkai's Homecoming
+  (port não oficial completo), Domestication Innovation -> Redomesticate, Refined Storage Addons -> Quartz Arsenal,
+  Botania -> Botania Revived (dono já tinha tirado o Botania).
+  FEITO: block_map.tsv com 90 linhas redecorate; port_palettes.py renomeia upholstery->fabric; 343 paletas corrigidas
+  via tools/saveport/fix_redeco_palettes.py (check_palettes/check_states limpos, 0 "redeco:" restante).
+  Dono escolheu instalar (2026-11-13): Youkai's Homecoming (port não oficial), Fantasy's Furniture (port não oficial),
+  Redomesticate, Quartz Arsenal. PENDENTE em ordem: (1) instalar e conferir os 4 jars; (2) voltar nas paletas as linhas
+  youkaishomecoming/fantasyfurniture/domesticationinnovation se os ports mantêm os ids; (3) F9 convert_save.py
+  (scan+dry-run, depois cópia real), id do vinery cherries->cherry conferir no jar.
+  FEITO: youkaishomecoming-4.2.17 (mesmos 209 ids), redomesticate-2.0.2 (namespace domesticationinnovation -> redomesticate,
+  mesmos nomes), refinedstorage-quartz-arsenal-1.0.8 (toml sem faixa de mc/neoforge; Modrinth lista 1.21.1 NeoForge, aceito).
+  Fantasy's Furniture: DONO BAIXA no CurseForge (fantasys-furniture-1-21-1-neoforge-unofficial-port, Core + sets).
+  Em curso: paletas voltam aos blocos youkai (fix_namespace_palettes.py); convert_save.py scan/dry-run.
+  A fazer no id_map: domesticationinnovation:* -> redomesticate:*; youkai sem remap; refinedstorageaddons -> quartz arsenal (conferir ids).
+  FEITO: paletas voltaram aos blocos youkai (643 valores, 305 arquivos). convert_save.py scan ok (97 regiões, 2646 chunks,
+  0 erros, md5 da origem igual). Caso novo achado: Miner's Delight mudou namespace miners_delight -> minersdelight
+  (290 arquivos do pack ainda usavam o antigo). Em curso: auditoria de namespaces renomeados (tools/modcheck/namespace_renames.tsv)
+  + troca no pack; rodada 1 do conversor (upholstery>fabric, namespaces, pet_bed->rug, BE de crate/pedestal, itens perdidos).
+  Depois: cópia real do save (convert_save.py run) e validator.
+  FEITO: namespaces renomeados (tools/modcheck/namespace_renames.tsv): miners_delight->minersdelight, largemeals->large_meals,
+  domesticationinnovation->redomesticate, numismatics_utils->numismaticsutils, bonsaitrees3->bonsaitrees4 (pareamento fraco),
+  sunlit_eating->pipinha_eating. 376 arquivos reescritos, kubejs/assets e kubejs/data movidos. ATENÇÃO: port_data.py não
+  conhece esses renames de pasta; se rodar de novo, recria kubejs/data/miners_delight e domesticationinnovation.
+  Ids sem par no jar novo (ficaram): miners_delight:cooking, numismatics_utils:numismatics_utils, bonsaitrees3:* (5).
+  FEITO (F9): saves/Solito solamente convertido (cópia; origem intacta por md5): 697 blocos, 22 itens, 46 BE remapeados,
+  181 BE descartados sem itens; terra arada do Sturdy Farmland -> farmland vanilla, aspersores -> ar. Renomes dentro de mods:
+  toms_storage ts.* -> sem prefixo, supplementaries sign_post -> way_sign (também em config/via_romana-common.toml),
+  quark lootr trapped chest -> trapped_chest. Ficam sem par (somem): verdantvibes (103 plantas), splendid_slimes, species,
+  balloonbox, botania:lexicon, meadow sheep_cheese_block/inky_wool. fantasyfurniture (5 blocos) aguarda o dono instalar o port
+  ANTES de abrir o mundo. tools/pack_tools/sync_repo.py da 1.21.1 aponta para a worktree e a branch 1.21.1.
+  Em curso: validator; depois commit na branch 1.21.1.

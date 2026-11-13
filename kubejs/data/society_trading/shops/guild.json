@@ -143,7 +143,7 @@
     },
     {
       "offer": {
-        "item": "domesticationinnovation:collar_tag",
+        "item": "redomesticate:collar_tag",
         "count": 1
       },
       "request": {
@@ -157,7 +157,7 @@
     },
     {
       "offer": {
-        "item": "domesticationinnovation:pet_bed_white",
+        "item": "redomesticate:pet_bed_white",
         "count": 1
       },
       "request": {
@@ -169,7 +169,7 @@
     },
     {
       "offer": {
-        "item": "domesticationinnovation:drum",
+        "item": "redomesticate:drum",
         "count": 1
       },
       "request": {
@@ -183,7 +183,7 @@
     },
     {
       "offer": {
-        "item": "domesticationinnovation:wayward_lantern",
+        "item": "redomesticate:wayward_lantern",
         "count": 1
       },
       "request": {

@@ -12,4 +12,4 @@ setblock ~-1 ~ ~1 minecraft:bookshelf
 setblock ~3 ~ ~ create:basin
 setblock ~3 ~ ~1 create:andesite_casing
 setblock ~2 ~ ~2 minecraft:lantern
-tellraw @s {"text":"[Sunlit] Cozinha modelo colocada. Gire/ajuste com a chave inglesa do Create se precisar.","color":"gold"}
+tellraw @s {"text":"[Pipinha] Cozinha modelo colocada. Gire/ajuste com a chave inglesa do Create se precisar.","color":"gold"}

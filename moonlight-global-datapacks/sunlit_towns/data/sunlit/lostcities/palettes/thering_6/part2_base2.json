@@ -1,1 +1,1 @@
-{"palette":[{"char":"a","block":"minecraft:light_gray_carpet"},{"char":"b","block":"simplylight:illuminant_panel[facing=up]"}]}
+{"palette":[{"char":"a","block":"redecorate:light_gray_rug[facing=north,east=false,north=false,south=false,west=false]"},{"char":"b","block":"simplylight:illuminant_panel[facing=up]"}]}

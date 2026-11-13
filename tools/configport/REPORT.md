@@ -1181,3 +1181,50 @@ Skipped:
 - current run step 4 changed: no
 - TOML validation: 0 pass / 0 fail
 - JSON validation: 0 pass / 0 fail
+## Round F3b (2026-11-13, manual key-by-key pass)
+
+Rule used: a value is ported only when it differs from the 1.20.1 mod default (pack customization).
+Keys whose old value was just the old mod default keep the 1.21.1 default (e.g. exposure ColorPrintTime 200,
+Let's Do food values, relics ability stats). Backups: `backup-20261113-f3b-*.tar.gz`.
+
+### relics (format changed: per-table chance map -> list of {biomes, dimensions, tables, weight})
+- 1.20.1 rule: relics only from Trials vaults (`trials:gameplay/vault_loot` / `vault_special_loot`), 0.25% each.
+- 1.21.1: vault_loot -> `minecraft:chests/trial_chambers/reward`, vault_special_loot -> `.../reward_ominous`, weight 100.
+- Chance 0.0 in 1.20.1 -> `entries: []` (no loot): bastion_ring, blazing_flask, holy_locket, hunter_belt, ice_skates,
+  infinity_ham, magic_mirror, magma_walker, midnight_robe, rage_glove, spore_sack, wool_mitten.
+- New in 1.21.1: phantom_boot, springy_boot -> normal vault (pack rule); leafy_ring keeps mod default (no loot).
+- `loot.yaml` relicGenChance 0.33 -> 0.02 (one global roll; 1.20.1 summed to ~2.2% per normal vault).
+- Removed from the mod: arrow_quiver, horse_flute, spatial_sign (nothing to port).
+
+### Keys that moved or changed type
+- wildernature-common: boar, turkey, mini sheep spawns off again (weight 0, groups 1).
+- farm_and_charm-common: enableBonemealEffect, enableRainGrowthEffect, enableFertilizer = false.
+- vinery-common: Wandering Trader spawnChance 20 (was 0.2), spawnWithMules false, spawnDelay 96000;
+  grapeGrowthChance 10 (was 0.1). Villager trades not ported (format changed, old lists were mod defaults).
+- numismaticsutils-client (was numismatics-utils-client): hud_x_position 64, hud_y_position 18.
+- easyanvils-server prior_work_penalty DISABLED -> NONE. waystones spawnInVillages false -> "DISABLED".
+- waystones (new format): enableCosts false (all old XP multipliers were 0), chunksBetweenWildWaystones 0
+  (old frequency 0), warpRequirements + `[source_is_warp_stone] add_cooldown(warp_stone, 30)`.
+- gag.cfg (was gag.snbt): allow_random_ticks false, dimension_multiplier 1, fishing_additional_loot 0.
+- crittersandcompanions-common.json5 (was .toml): grapplingHook max_speed 4.0.
+- nerb/client.yaml (was nerb.yaml): buttonMode TOGGLE.
+- tipsmod.json (was tips.json): default_cycle_time 8000, ignored_namespaces ["tipsmod"], title color gold.
+- serilum/guiclock.json (was guiclock.json5): no clock needed, no effect lowering, 12h, no day count,
+  Left, offsets 18/14, RGB 255,170,0. collective.json5 values already equal.
+- defaultconfigs -> common (the mods dropped their server config): dew_drop_daily_weather (18 keys, seasonal
+  weather), dew_drop_watering_cans (mudOdds, bonemealOdds), untitledduckmod (duck_fishing_change),
+  refinedstorage requireEnergy false (RS1 had useEnergy false everywhere).
+
+### Copied for the mod's own migration / as is
+- biomespawnpoint/spawnbiomes.txt: Biome Spawn Point 4.1 moves it into `serilum/biomespawnpoint.json` on boot.
+- crash_assistant/scripts/startup/00_migrated_problematic_mods.jexl, watermedia/assets/loading.gif.
+
+### Left out on purpose
+- controllable/bindings.properties, key_adapters.properties: controller bindings (owner's call, like keybinds).
+- embeddium-options.json -> sodium-options.json, oculus.properties -> iris.properties: video/shader settings.
+- particlerain/config.json: units changed (configVersion 5 -> 8); new defaults kept.
+- create-client mainMenuConfigButtonRow stays 0 (set on purpose in 1.21.1; 1.20.1 had the default 2).
+- waystones dimensionalWarpDenyList ["society:skull_cavern"]: no verified equivalent syntax in warpRequirements.
+- doapi/recipebook.json5, jei/blacklist.cfg (empty), l2_configs, fallingtrees society:palm_leaves (not registered).
+- New mods (Create Aeronautics, Sable, High Seas, Aeronautics Camera Sync): no config generated yet; nothing in
+  the pack's configs references them except Carry On's own default blacklist. Defaults untouched.

@@ -41,8 +41,8 @@ element {
   text_border = 2
   line_spacing = 2
   enable_scrolling = true
-  grabber_color_normal = #C25E05FF
-  grabber_color_hover = #5E2C28FF
+  grabber_color_normal = #00000000
+  grabber_color_hover = #00000000
   auto_line_wrapping = true
   remove_html_breaks = true
   code_block_single_color = #737373FF

@@ -1,0 +1,10 @@
+{
+	id: "30564F6053E41FEE"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{ id: "312CE25B157F9CFC", item: { count: 1, id: "whimsy_deco:blue_phone" } }
+		{ id: "68021715CDEBAE3C", item: { count: 1, id: "whimsy_deco:black_phone" } }
+		{ id: "197F55E6ABAA8480", item: { count: 1, id: "whimsy_deco:red_phone" } }
+	]
+}

@@ -1,1 +1,1 @@
-{"palette":[{"char":"a","block":"minecraft:gray_carpet"},{"char":"b","block":"minecraft:redstone_wall_torch[facing=north,lit=true]"}]}
+{"palette":[{"char":"a","block":"redecorate:gray_rug[facing=north,east=false,north=false,south=false,west=false]"},{"char":"b","block":"minecraft:redstone_wall_torch[facing=north,lit=true]"}]}

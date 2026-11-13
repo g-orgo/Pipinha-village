@@ -10,4 +10,4 @@ setblock ~-1 ~ ~ refurbished_furniture:white_lamp
 setblock ~-1 ~ ~1 furniture:lamp_white
 setblock ~3 ~ ~ create:black_seat
 setblock ~3 ~ ~1 create:depot
-tellraw @s {"text":"[Sunlit] Apartamento mobiliado. Use a chave do Create para girar o que ficar torto.","color":"gold"}
+tellraw @s {"text":"[Pipinha] Apartamento mobiliado. Use a chave do Create para girar o que ficar torto.","color":"gold"}

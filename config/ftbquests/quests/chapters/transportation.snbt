@@ -1,0 +1,338 @@
+{
+	autofocus_id: "4622E3EC44CED1B6"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "transportation"
+	group: "439B0423947443D3"
+	id: "7F2FF813A6AF57FE"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4622E3EC44CED1B6"
+			size: 2.0d
+			tasks: [{
+				id: "5172EF5DBC41D8A8"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4622E3EC44CED1B6"]
+			id: "0C5B1C74E340882B"
+			rewards: [{
+				id: "5CB3AE1CBB3CC726"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2528AEA7F1E586F0"
+				item: { count: 1, id: "minecraft:rail" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["71C32483EE2418CA"]
+			id: "42A10CEE57513522"
+			rewards: [{
+				count: 3
+				id: "205B1BBC5500A1EF"
+				item: {
+					count: 1
+					id: "via_romana:charting_map"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3580A14EBCD0BA25"
+				item: { count: 1, id: "via_romana:charting_map" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4622E3EC44CED1B6"]
+			id: "53836B96EE81A695"
+			rewards: [
+				{
+					count: 4
+					id: "35A8601CD1E7D811"
+					item: {
+						count: 1
+						id: "create:railway_casing"
+					}
+					type: "item"
+				}
+				{
+					id: "66D9AB0D6B734412"
+					item: {
+						count: 1
+						id: "create:wrench"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "385A1E8476DE731F"
+					item: { count: 1, id: "create:controls" }
+					type: "item"
+				}
+				{
+					id: "6BB2A011FACDFB66"
+					item: { count: 1, id: "railways:track_oak" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4622E3EC44CED1B6"]
+			id: "3BC6467B02D74FAC"
+			rewards: [{
+				id: "672BC473C1F48AA5"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "31BD8DCF91D1BE89"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(smallships:ships)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C5B1C74E340882B"]
+			id: "0E93089181D8EE7B"
+			rewards: [{
+				id: "06EF0D97322F3322"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "429E9537297CFBE7"
+				item: { count: 1, id: "create:minecart_coupling" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["53836B96EE81A695"]
+			id: "32A9D7283F680AE3"
+			rewards: [{
+				id: "7B3E085BD1DE60F2"
+				item: {
+					count: 1
+					id: "numismatics:bevel"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "095C6D74149C1AE7"
+					item: { count: 1, id: "createrailwaysnavigator:advanced_display_block" }
+					match_components: "fuzzy"
+					type: "item"
+				}
+				{
+					id: "640828A2E37CEC9C"
+					item: { count: 1, id: "createrailwaysnavigator:navigator" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4622E3EC44CED1B6"]
+			id: "164AAAAD6433695A"
+			rewards: [{
+				id: "7C5E169D6A011082"
+				item: {
+					count: 1
+					id: "numismatics:sun"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3196A1C9052406E5"
+				item: { count: 1, id: "minecraft:elytra" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4622E3EC44CED1B6"]
+			id: "5A0AA87EA971F13F"
+			rewards: [{
+				id: "492229A259CB9D08"
+				item: {
+					count: 1
+					id: "automobility:crowbar"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "29CBF324286184CF"
+					item: { count: 1, id: "automobility:auto_mechanic_table" }
+					type: "item"
+				}
+				{
+					id: "2941B038382A98EC"
+					item: { count: 1, id: "automobility:automobile_assembler" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5A0AA87EA971F13F"]
+			id: "7EE92D71D7478FA4"
+			rewards: [{
+				count: 4
+				id: "1A1E459CA9590744"
+				item: {
+					count: 1
+					id: "numismatics:cog"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "432843CD0D8D95EB"
+				item: { count: 1, id: "society:car_key" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["71C32483EE2418CA"]
+			id: "2D553026BFCB2CF0"
+			rewards: [{
+				id: "3440ADDF64A5D8AB"
+				item: {
+					count: 1
+					id: "numismatics:crown"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "31E93CF7CC7A856C"
+				item: { count: 1, id: "gag:hearthstone" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2D553026BFCB2CF0"]
+			id: "5A3012C1FA5184A2"
+			rewards: [{
+				id: "4C05B5511873BBB8"
+				item: {
+					count: 1
+					id: "minecraft:lightning_rod"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "30129B11B2BDBC67"
+				item: { count: 1, id: "gag:energized_hearthstone" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["71C32483EE2418CA"]
+			id: "562817C23134A26D"
+			rewards: [{
+				id: "03C15EF769AAA96F"
+				item: {
+					count: 1
+					id: "whimsy_deco:oak_desk_mirror"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "197B39D3BB77E368"
+				item: { components: { "relics:data": { abilities: { abilities: { teleport: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 60.56326d }, distance: { initialValue: 834.15232d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:magic_mirror" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4622E3EC44CED1B6"]
+			id: "71C32483EE2418CA"
+			size: 1.0d
+			tasks: [{
+				id: "6E03C1C00F4D8506"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"4622E3EC44CED1B6"
+				"71C32483EE2418CA"
+			]
+			id: "693FFA0C3FD1A078"
+			rewards: [{
+				id: "479E0222D6A2709B"
+				item: {
+					count: 1
+					id: "simplerecall:recall_potion"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "03CB0C77931D1C07"
+				item: { components: { "ftbfiltersystem:filter": "or(item(waystones:red_sharestone)item(waystones:purple_sharestone)item(waystones:blue_sharestone)item(waystones:green_sharestone))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["71C32483EE2418CA"]
+			id: "12FC0701CC742176"
+			rewards: [{
+				id: "4754C31F1F92BAB5"
+				item: {
+					count: 1
+					id: "simplerecall:recall_potion"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "591E4BAA778640F1"
+				item: { count: 1, id: "simplerecall:recall_potion" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -6.5d
+		}
+	]
+}

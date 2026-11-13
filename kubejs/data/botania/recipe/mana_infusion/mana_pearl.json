@@ -1,0 +1,10 @@
+{
+  "type": "botania:mana_infusion",
+  "input": {
+    "item": "crabbersdelight:pearl"
+  },
+  "mana": 6000,
+  "output": {
+    "id": "botania:mana_pearl"
+  }
+}

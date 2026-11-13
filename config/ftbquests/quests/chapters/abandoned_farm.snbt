@@ -19,59 +19,100 @@
 	}]
 	order_index: 5
 	quest_links: [ ]
-	quests: [{
-		id: "661A3A466ABF29BA"
-		rewards: [{
-			id: "23C19AD4A368AA0F"
-			item: {
-				count: 1
-				id: "minecraft:elytra"
-			}
-			type: "item"
-		}]
-		shape: "none"
-		tasks: [
-			{
-				id: "476FF1529844DA7D"
-				item: { count: 1, id: "society:aged_jellie_wine" }
+	quests: [
+		{
+			id: "661A3A466ABF29BA"
+			rewards: [{
+				id: "23C19AD4A368AA0F"
+				item: { count: 1, id: "minecraft:elytra" }
 				type: "item"
-			}
-			{
-				id: "58F3D840E6CBF1E1"
-				item: { count: 1, id: "society:petrified_mayonnaise" }
-				type: "item"
-			}
-			{
-				id: "28AC2D19FB4BB833"
-				item: { count: 1, id: "society:prismatic_shard" }
-				type: "item"
-			}
-			{
-				count: 5L
-				id: "7CB76A4E375BA71B"
-				item: { components: { "quality_food:quality": { level: 2, type: "quality_food:gold" } }, count: 1, id: "society:ancient_fruit" }
-				match_components: "fuzzy"
-				type: "item"
-			}
-			{
-				count: 5L
-				id: "167D06E351C49C00"
-				item: { components: { "quality_food:quality": { level: 2, type: "quality_food:gold" } }, count: 1, id: "society:neptuna" }
-				match_components: "fuzzy"
-				type: "item"
-			}
-			{
-				id: "10C2C380DEB89028"
-				item: { count: 1, id: "society:aged_starshell_turtle_roe" }
-				type: "item"
-			}
-			{
-				id: "269E488B9A57FCC7"
-				item: { count: 1, id: "society:truffle_tea" }
-				type: "item"
-			}
-		]
-		x: -0.028571428571424917d
-		y: -1.2714285714285793d
-	}]
+			}]
+			shape: "none"
+			tasks: [
+				{
+					id: "476FF1529844DA7D"
+					item: { count: 1, id: "society:aged_jellie_wine" }
+					type: "item"
+				}
+				{
+					id: "58F3D840E6CBF1E1"
+					item: { count: 1, id: "society:petrified_mayonnaise" }
+					type: "item"
+				}
+				{
+					id: "28AC2D19FB4BB833"
+					item: { count: 1, id: "society:prismatic_shard" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7CB76A4E375BA71B"
+					item: { components: { "quality_food:quality": { level: 2, type: "quality_food:gold" } }, count: 1, id: "society:ancient_fruit" }
+					match_components: "fuzzy"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "167D06E351C49C00"
+					item: { components: { "quality_food:quality": { level: 2, type: "quality_food:gold" } }, count: 1, id: "society:neptuna" }
+					match_components: "fuzzy"
+					type: "item"
+				}
+				{
+					id: "10C2C380DEB89028"
+					item: { count: 1, id: "society:aged_starshell_turtle_roe" }
+					type: "item"
+				}
+				{
+					id: "269E488B9A57FCC7"
+					item: { count: 1, id: "society:truffle_tea" }
+					type: "item"
+				}
+			]
+			x: -0.028571428571424917d
+			y: -1.2714285714285793d
+		}
+		{
+			dependencies: ["661A3A466ABF29BA"]
+			description: ["{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.description1}"]
+			hide_details_until_startable: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: "farm_and_charm:barley"
+			id: "6EBAA004C1A50E98"
+			rewards: [
+				{
+					id: "0102B9ADBB397CC1"
+					item: { components: { "trofers:trophy": "trofers:abandoned_farm" }, count: 1, id: "trofers:large_pillar" }
+					type: "item"
+				}
+				{
+					id: "39C73D8690F31BE1"
+					item: { count: 1, id: "botania:apothecary_default" }
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/kjs stages add @p abandoned_farm_complete"
+					elevate_perms: true
+					id: "699EAE14FFE8E2AB"
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "none"
+			subtitle: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.subtitle}"
+			tasks: [{
+				icon: "society:furniture_box"
+				id: "3D497F4CF396A37A"
+				stat: "minecraft:play_time"
+				title: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.task.4416200878094459770.title}"
+				type: "stat"
+				value: 1
+			}]
+			title: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.title}"
+			x: -0.028571428571424917d
+			y: 1.0999999999999872d
+		}
+	]
 }

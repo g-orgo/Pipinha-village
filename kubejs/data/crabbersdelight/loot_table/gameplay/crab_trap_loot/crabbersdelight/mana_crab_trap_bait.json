@@ -81,7 +81,7 @@
           "weight": 4,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
+              "function": "minecraft:set_custom_data",
               "tag": "{quality_food:{effects:[],quality:1}}"
             }
           ]
@@ -92,7 +92,7 @@
           "weight": 3,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
+              "function": "minecraft:set_custom_data",
               "tag": "{quality_food:{effects:[],quality:2}}"
             }
           ]
@@ -103,7 +103,7 @@
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
+              "function": "minecraft:set_custom_data",
               "tag": "{quality_food:{effects:[],quality:3}}"
             }
           ]
@@ -112,6 +112,11 @@
           "type": "minecraft:item",
           "name": "mysticaloaktree:wise_oak",
           "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "botania:overgrowth_seed"
         }
       ]
     }

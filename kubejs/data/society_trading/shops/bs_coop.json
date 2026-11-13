@@ -5,17 +5,41 @@
 	"hidden_from_selector": true,
 	"display_type": "image",
 	"jei_catalyst": {
-		"item": "minecraft:egg"
+		"id": "minecraft:egg"
 	},
 	"trades": [
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_basic\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_basic\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_basic",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_basic",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/basic/coop_basic",
@@ -24,12 +48,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_alpine\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.alpine_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.alpine_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_alpine\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_alpine",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_alpine",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/alpine/coop_alpine",
@@ -38,12 +86,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_arid\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.arid_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.arid_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_arid\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_arid",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_arid",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/arid/coop_arid",
@@ -52,12 +124,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_bamboo\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bamboo_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bamboo_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_bamboo\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_bamboo",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_bamboo",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/bamboo/coop_bamboo",
@@ -66,12 +162,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_bavarian\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bavarian_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bavarian_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_bavarian\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_bavarian",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_bavarian",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/bavarian/coop_bavarian",
@@ -80,12 +200,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_cherry\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cherry_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cherry_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_cherry\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_cherry",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_cherry",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/cherry/coop_cherry",
@@ -94,12 +238,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_entrana\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.entrana_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.entrana_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_entrana\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_entrana",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_entrana",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/entrana/coop_entrana",
@@ -108,12 +276,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_floral\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.floral_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.floral_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_floral\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_floral",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_floral",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/floral/coop_floral",
@@ -122,12 +314,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_mason\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.mason_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.mason_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_mason\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_mason",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_mason",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/mason/coop_mason",
@@ -136,12 +352,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_prismarine\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.prismarine_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.prismarine_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_prismarine\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_prismarine",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_prismarine",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/prismarine/coop_prismarine",
@@ -150,12 +390,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_rural\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_rural\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_rural",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_rural",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/rural/coop_rural",
@@ -164,12 +428,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_sakura\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.sakura_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.sakura_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_sakura\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_sakura",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_sakura",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/sakura/coop_sakura",
@@ -178,12 +466,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_siberian\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.siberian_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.siberian_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_siberian\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_siberian",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_siberian",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/siberian/coop_siberian",
@@ -192,12 +504,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_tudor\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.tudor_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.tudor_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_tudor\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_tudor",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_tudor",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/tudor/coop_tudor",
@@ -206,12 +542,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"coop_vibrantown\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.vibrantown_coop\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.vibrantown_coop.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"coop_vibrantown\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "coop_vibrantown",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "coop_vibrantown",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 2
 			},
 			"image": "society:textures/gui/buildings/vibrantown/coop_vibrantown",

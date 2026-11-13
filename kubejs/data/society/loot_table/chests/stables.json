@@ -204,7 +204,7 @@
               "add": false
             }
           ],
-          "name": "relics:horse_flute"
+          "name": "minecraft:saddle"
         },
         {
           "type": "minecraft:item",

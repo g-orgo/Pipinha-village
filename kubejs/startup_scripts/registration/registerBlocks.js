@@ -625,6 +625,7 @@ StartupEvents.registry("block", (e) => {
       });
       item.food((food) => {
         food.alwaysEdible(true);
+        food.effect("botania:soul_cross", 2400, 1, 1.0);
         food.eatSeconds(0.8);
       });
       item.useAnimation("drink");
@@ -642,6 +643,7 @@ StartupEvents.registry("block", (e) => {
       });
       item.food((food) => {
         food.alwaysEdible(true);
+        food.effect("botania:clear", 2400, 1, 1.0);
         food.eatSeconds(0.8);
       });
       item.useAnimation("drink");

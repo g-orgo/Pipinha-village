@@ -119,6 +119,9 @@ BlockEvents.rightClicked(global.plushies, (e) => {
       global.setPlushieExtractedPD(newAnimal, animal)
       breakPlushie(block, true)
       block.set("minecraft:air")
+      server.runCommandSilent(
+        `playsound botania:babylon_spawn block @a ${block.x} ${block.y} ${block.z}`
+      );
       level.spawnParticles(
         "snowyspirit:glow_light",
         true,
@@ -145,6 +148,9 @@ BlockEvents.leftClicked(global.plushies, (e) => {
   if (player.getHeldItem("main_hand").id.equals("society:plushie_wand") && !player.cooldowns.isOnCooldown("society:plushie_wand")) {
     breakPlushie(block)
     block.set("minecraft:air")
+    server.runCommandSilent(
+      `playsound botania:babylon_attack block @a ${block.x} ${block.y} ${block.z}`
+    );
     level.spawnParticles(
       "snowyspirit:glow_light",
       true,

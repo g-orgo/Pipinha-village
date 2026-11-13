@@ -5,17 +5,41 @@
 	"hidden_from_selector": true,
 	"display_type": "image",
 	"jei_catalyst": {
-		"item": "society:milk"
+		"id": "society:milk"
 	},
 	"trades": [
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_basic\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_basic\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_basic",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_basic",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/basic/barn_basic",
@@ -24,12 +48,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_alpine\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.alpine_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.alpine_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_alpine\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_alpine",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_alpine",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/alpine/barn_alpine",
@@ -38,12 +86,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_arid\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.arid_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.arid_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_arid\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_arid",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_arid",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/arid/barn_arid",
@@ -52,12 +124,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_bamboo\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bamboo_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bamboo_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_bamboo\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_bamboo",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_bamboo",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/bamboo/barn_bamboo",
@@ -66,12 +162,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_bavarian\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bavarian_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bavarian_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_bavarian\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_bavarian",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_bavarian",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/bavarian/barn_bavarian",
@@ -80,12 +200,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_cherry\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cherry_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cherry_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_cherry\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_cherry",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_cherry",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/cherry/barn_cherry",
@@ -94,12 +238,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_entrana\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.entrana_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.entrana_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_entrana\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_entrana",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_entrana",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/entrana/barn_entrana",
@@ -108,12 +276,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_floral\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.floral_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.floral_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_floral\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_floral",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_floral",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/floral/barn_floral",
@@ -122,12 +314,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_mason\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.mason_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.mason_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_mason\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_mason",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_mason",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/mason/barn_mason",
@@ -136,12 +352,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_prismarine\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.prismarine_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.prismarine_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_prismarine\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_prismarine",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_prismarine",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/prismarine/barn_prismarine",
@@ -150,12 +390,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_rural\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_rural\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_rural",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_rural",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/rural/barn_rural",
@@ -164,12 +428,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_sakura\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.sakura_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.sakura_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_sakura\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_sakura",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_sakura",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/sakura/barn_sakura",
@@ -178,12 +466,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_siberian\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.siberian_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.siberian_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_siberian\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_siberian",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_siberian",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/siberian/barn_siberian",
@@ -192,12 +504,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_tudor\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.tudor_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.tudor_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_tudor\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_tudor",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_tudor",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/tudor/barn_tudor",
@@ -206,12 +542,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"barn_vibrantown\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.vibrantown_barn\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.vibrantown_barn.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"barn_vibrantown\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "barn_vibrantown",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "barn_vibrantown",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 4
 			},
 			"image": "society:textures/gui/buildings/vibrantown/barn_vibrantown",

@@ -2,6 +2,7 @@ console.info("[SOCIETY] manaSprinkler.js loaded");
 
 const MANA_PER_SPRINKLE = 50;
 const SPRINKLER_MAX_MANA = MANA_PER_SPRINKLE * 25 * 8;
+global.registerManaReceiver("society:mana_sprinkler", global.persistentManaSpec(SPRINKLER_MAX_MANA));
 
 global.manaSprinklerScan = (entity, radius) => {
   const { block, level } = entity;

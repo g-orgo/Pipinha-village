@@ -43,7 +43,7 @@ ServerEvents.tags("entity_type", (e) => {
   [].forEach((animal) => {
     e.add("society:cannot_lasso", animal);
   });
-  ["untitledduckmod:goose", "untitledduckmod:duck"].forEach((animal) => {
+  ["botania:doppleganger", "untitledduckmod:goose", "untitledduckmod:duck"].forEach((animal) => {
     e.add("society:cannot_wicked_mask", animal);
   });
 });

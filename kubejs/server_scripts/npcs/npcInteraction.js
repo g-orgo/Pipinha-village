@@ -71,6 +71,8 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
             player.give(Item.of("16x society:sparkpod_seed"))
             server.runCommandSilent(`dialog ${player.username} show ${player.username} market_unique_five_gift_read`);
         } else if (npcId.equals("librarian") && player.stages.has("debt_caverns")) {
+            player.give(Item.of('botania:diva_charm'))
+            player.give(Item.of('botania:mana_ring[minecraft:custom_data={mana:500000}]'))
             server.runCommandSilent(`dialog ${player.username} show ${player.username} librarian_unique_five_gift_read`);
         } else if (npcId.equals("trader")) {
             player.stages.add("trader_clothing")

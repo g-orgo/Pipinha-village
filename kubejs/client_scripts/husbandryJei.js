@@ -1,6 +1,5 @@
 const husbandryJeiItemAliases = {
   "minecraft:scute": "minecraft:turtle_scute",
-  "trials:breeze_rod": "minecraft:breeze_rod",
 };
 
 // Returns "Nx id" (or "id") when the item exists in the registry, null otherwise.

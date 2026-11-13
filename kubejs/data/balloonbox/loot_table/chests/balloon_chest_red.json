@@ -191,7 +191,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "society:util/common_coin_loot"
+          "value": "society:util/common_coin_loot"
         }
       ]
     },
@@ -205,7 +205,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "society:util/rare_coin_loot"
+          "value": "society:util/rare_coin_loot"
         }
       ]
     },
@@ -445,14 +445,15 @@
           "weight": 1,
           "functions": [
             {
-              "function": "set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"minecraft:mending\",lvl:1}]}"
+              "function": "minecraft:set_enchantments",
+              "enchantments": {"minecraft:mending": 1},
+              "add": true
             }
           ]
         },
         {
           "type": "minecraft:loot_table",
-          "name": "society:util/rare_coin_loot"
+          "value": "society:util/rare_coin_loot"
         }
       ]
     }

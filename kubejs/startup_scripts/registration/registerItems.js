@@ -247,6 +247,7 @@ StartupEvents.registry("item", (e) => {
     .food((food) => {
       food.nutrition(3);
       food.saturation(1);
+      food.effect("botania:soul_cross", 3000, 2, 1.0);
       food.eatSeconds(0.8);
     });
   e.create("society:canvas")
@@ -442,6 +443,7 @@ StartupEvents.registry("item", (e) => {
     .texture("society:item/drinks/energy_drink")
     .food((food) => {
       food.eatSeconds(0.8);
+      food.effect("botania:emptiness", 4800, 0, 1.0);
       food.effect("minecraft:speed", 4800, 2, 1.0);
     })
     .useAnimation("drink");
@@ -449,6 +451,7 @@ StartupEvents.registry("item", (e) => {
     .texture("society:item/drinks/pink_energy_drink")
     .food((food) => {
       food.eatSeconds(0.8);
+      food.effect("botania:emptiness", 4800, 0, 1.0);
       food.effect("minecraft:haste", 4800, 2, 1.0);
     })
     .useAnimation("drink");
@@ -456,6 +459,7 @@ StartupEvents.registry("item", (e) => {
     .texture("society:item/drinks/white_energy_drink")
     .food((food) => {
       food.eatSeconds(0.8);
+      food.effect("botania:emptiness", 4800, 0, 1.0);
       food.effect("minecraft:strength", 4800, 2, 1.0);
     })
     .useAnimation("drink");
@@ -463,6 +467,7 @@ StartupEvents.registry("item", (e) => {
     .texture("society:item/drinks/mana_energy_drink")
     .food((food) => {
       food.eatSeconds(0.8);
+      food.effect("botania:emptiness", 4800, 0, 1.0);
       food.effect("minecraft:resistance", 4800, 2, 1.0);
     })
     .useAnimation("drink");

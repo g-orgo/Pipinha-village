@@ -1,7 +1,10 @@
 console.info("[SOCIETY] addMixerRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
-  const custom = (recipe) => e.custom(global.toRecipe121(recipe));
+  const custom = (recipe) => {
+    const converted = global.toRecipe121(recipe);
+    if (global.recipeIdsExist121(converted)) e.custom(converted);
+  };
   const createMixerRecipe = (inputs, output, count) => {
     custom({
       type: "create:mixing",

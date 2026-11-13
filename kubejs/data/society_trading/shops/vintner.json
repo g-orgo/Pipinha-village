@@ -3,18 +3,18 @@
   "name": "shop.society_trading.vintner",
   "texture": "vinery:textures/item/red_grape",
   "jei_catalyst": {
-    "item": "vinery:red_grape"
+    "id": "vinery:red_grape"
   },
   "stage_required": "profession_winemaker",
   "selector_weight": -94,
   "trades": [
     {
       "offer": {
-        "item": "vinery:red_grape_seeds",
+        "id": "vinery:red_grape_seeds",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 256,
@@ -30,11 +30,11 @@
     },
     {
       "offer": {
-        "item": "vinery:red_grape_seeds",
+        "id": "vinery:red_grape_seeds",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 230,
@@ -53,11 +53,11 @@
     },
     {
       "offer": {
-        "item": "vinery:red_grape_seeds",
+        "id": "vinery:red_grape_seeds",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 218,
@@ -76,11 +76,11 @@
     },
     {
       "offer": {
-        "item": "vinery:red_grape_seeds",
+        "id": "vinery:red_grape_seeds",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 192,
@@ -98,11 +98,11 @@
     },
     {
       "offer": {
-        "item": "vinery:white_grape_seeds",
+        "id": "vinery:white_grape_seeds",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 256,
@@ -118,11 +118,11 @@
     },
     {
       "offer": {
-        "item": "vinery:white_grape_seeds",
+        "id": "vinery:white_grape_seeds",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 230,
@@ -141,11 +141,11 @@
     },
     {
       "offer": {
-        "item": "vinery:white_grape_seeds",
+        "id": "vinery:white_grape_seeds",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 218,
@@ -164,11 +164,11 @@
     },
     {
       "offer": {
-        "item": "vinery:white_grape_seeds",
+        "id": "vinery:white_grape_seeds",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 192,
@@ -186,11 +186,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grape_seeds_red",
+        "id": "vinery:savanna_grape_seeds_red",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -206,11 +206,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grape_seeds_red",
+        "id": "vinery:savanna_grape_seeds_red",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 461,
@@ -229,11 +229,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grape_seeds_red",
+        "id": "vinery:savanna_grape_seeds_red",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 435,
@@ -252,11 +252,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grape_seeds_red",
+        "id": "vinery:savanna_grape_seeds_red",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 384,
@@ -274,11 +274,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grape_seeds_white",
+        "id": "vinery:savanna_grape_seeds_white",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -294,11 +294,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grape_seeds_white",
+        "id": "vinery:savanna_grape_seeds_white",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 461,
@@ -317,11 +317,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grape_seeds_white",
+        "id": "vinery:savanna_grape_seeds_white",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 435,
@@ -340,11 +340,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grape_seeds_white",
+        "id": "vinery:savanna_grape_seeds_white",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 384,
@@ -362,11 +362,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grape_seeds_red",
+        "id": "vinery:jungle_grape_seeds_red",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -379,11 +379,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grape_seeds_red",
+        "id": "vinery:jungle_grape_seeds_red",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 461,
@@ -399,11 +399,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grape_seeds_red",
+        "id": "vinery:jungle_grape_seeds_red",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 435,
@@ -419,11 +419,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grape_seeds_red",
+        "id": "vinery:jungle_grape_seeds_red",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 384,
@@ -438,11 +438,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grape_seeds_white",
+        "id": "vinery:jungle_grape_seeds_white",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -455,11 +455,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grape_seeds_white",
+        "id": "vinery:jungle_grape_seeds_white",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 461,
@@ -475,11 +475,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grape_seeds_white",
+        "id": "vinery:jungle_grape_seeds_white",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 435,
@@ -495,11 +495,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grape_seeds_white",
+        "id": "vinery:jungle_grape_seeds_white",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 384,
@@ -514,11 +514,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grape_seeds_red",
+        "id": "vinery:taiga_grape_seeds_red",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -531,11 +531,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grape_seeds_red",
+        "id": "vinery:taiga_grape_seeds_red",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 461,
@@ -551,11 +551,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grape_seeds_red",
+        "id": "vinery:taiga_grape_seeds_red",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 435,
@@ -571,11 +571,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grape_seeds_red",
+        "id": "vinery:taiga_grape_seeds_red",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 384,
@@ -590,11 +590,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grape_seeds_white",
+        "id": "vinery:taiga_grape_seeds_white",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -607,11 +607,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grape_seeds_white",
+        "id": "vinery:taiga_grape_seeds_white",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 461,
@@ -627,11 +627,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grape_seeds_white",
+        "id": "vinery:taiga_grape_seeds_white",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 435,
@@ -647,11 +647,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grape_seeds_white",
+        "id": "vinery:taiga_grape_seeds_white",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 384,
@@ -666,11 +666,11 @@
     },
     {
       "offer": {
-        "item": "vinery:red_grape",
+        "id": "vinery:red_grape",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 84,
@@ -686,11 +686,11 @@
     },
     {
       "offer": {
-        "item": "vinery:red_grape",
+        "id": "vinery:red_grape",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 76,
@@ -709,11 +709,11 @@
     },
     {
       "offer": {
-        "item": "vinery:red_grape",
+        "id": "vinery:red_grape",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 71,
@@ -732,11 +732,11 @@
     },
     {
       "offer": {
-        "item": "vinery:red_grape",
+        "id": "vinery:red_grape",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 63,
@@ -754,11 +754,11 @@
     },
     {
       "offer": {
-        "item": "vinery:white_grape",
+        "id": "vinery:white_grape",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 84,
@@ -774,11 +774,11 @@
     },
     {
       "offer": {
-        "item": "vinery:white_grape",
+        "id": "vinery:white_grape",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 76,
@@ -797,11 +797,11 @@
     },
     {
       "offer": {
-        "item": "vinery:white_grape",
+        "id": "vinery:white_grape",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 71,
@@ -820,11 +820,11 @@
     },
     {
       "offer": {
-        "item": "vinery:white_grape",
+        "id": "vinery:white_grape",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 63,
@@ -842,11 +842,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grapes_red",
+        "id": "vinery:savanna_grapes_red",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 84,
@@ -862,11 +862,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grapes_red",
+        "id": "vinery:savanna_grapes_red",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 76,
@@ -885,11 +885,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grapes_red",
+        "id": "vinery:savanna_grapes_red",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 71,
@@ -908,11 +908,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grapes_red",
+        "id": "vinery:savanna_grapes_red",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 63,
@@ -930,11 +930,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grapes_white",
+        "id": "vinery:savanna_grapes_white",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 84,
@@ -950,11 +950,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grapes_white",
+        "id": "vinery:savanna_grapes_white",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 76,
@@ -973,11 +973,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grapes_white",
+        "id": "vinery:savanna_grapes_white",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 71,
@@ -996,11 +996,11 @@
     },
     {
       "offer": {
-        "item": "vinery:savanna_grapes_white",
+        "id": "vinery:savanna_grapes_white",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 63,
@@ -1018,11 +1018,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grapes_red",
+        "id": "vinery:jungle_grapes_red",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 84,
@@ -1035,11 +1035,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grapes_red",
+        "id": "vinery:jungle_grapes_red",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 76,
@@ -1055,11 +1055,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grapes_red",
+        "id": "vinery:jungle_grapes_red",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 71,
@@ -1075,11 +1075,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grapes_red",
+        "id": "vinery:jungle_grapes_red",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 63,
@@ -1094,11 +1094,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grapes_white",
+        "id": "vinery:jungle_grapes_white",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 84,
@@ -1111,11 +1111,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grapes_white",
+        "id": "vinery:jungle_grapes_white",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 76,
@@ -1131,11 +1131,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grapes_white",
+        "id": "vinery:jungle_grapes_white",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 71,
@@ -1151,11 +1151,11 @@
     },
     {
       "offer": {
-        "item": "vinery:jungle_grapes_white",
+        "id": "vinery:jungle_grapes_white",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 63,
@@ -1170,11 +1170,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grapes_red",
+        "id": "vinery:taiga_grapes_red",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 84,
@@ -1187,11 +1187,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grapes_red",
+        "id": "vinery:taiga_grapes_red",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 76,
@@ -1207,11 +1207,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grapes_red",
+        "id": "vinery:taiga_grapes_red",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 71,
@@ -1227,11 +1227,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grapes_red",
+        "id": "vinery:taiga_grapes_red",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 63,
@@ -1246,11 +1246,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grapes_white",
+        "id": "vinery:taiga_grapes_white",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 84,
@@ -1263,11 +1263,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grapes_white",
+        "id": "vinery:taiga_grapes_white",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 76,
@@ -1283,11 +1283,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grapes_white",
+        "id": "vinery:taiga_grapes_white",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 71,
@@ -1303,11 +1303,11 @@
     },
     {
       "offer": {
-        "item": "vinery:taiga_grapes_white",
+        "id": "vinery:taiga_grapes_white",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 63,

@@ -100,7 +100,7 @@
 		#Allows soap to clean blocks in-world. Disable to prevent in-world block cleaning while keeping soap item and recipes functional
 		block_cleaning_enabled = true
 		#Dyed Bock/Item types that cannot be cleaned with soap
-		clean_blacklist = ["minecraft:glazed_terracotta", ",minecraft:mushroom", "waystones:sharestone"]
+		clean_blacklist = ["minecraft:glazed_terracotta", "botania:mystical_flower", "botania:floating_flower", ",minecraft:mushroom", "botania:mushroom", "botania:tall_mystical_flower", "botania:petal_block", "waystones:sharestone"]
 
 		#This is a map of special blocks that can be cleaned with soap. For items you will also need to add a recipe
 		[functional.soap.special_blocks]

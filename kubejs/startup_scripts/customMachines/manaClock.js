@@ -2,6 +2,7 @@ console.info("[SOCIETY] manaClock.js loaded");
 
 const MANA_PER_AGE = 10000;
 const CLOCK_MAX_MANA = MANA_PER_AGE * 26;
+global.registerManaReceiver("society:mana_clock", global.persistentManaSpec(CLOCK_MAX_MANA));
 
 global.manaClockTick = (entity) => {
   const { block, level } = entity;
@@ -20,7 +21,7 @@ global.manaClockTick = (entity) => {
         global.handleProgress(level, scanBlock);
         entity.persistentData.putInt("mana", mana - MANA_PER_AGE);
         level.server.runCommandSilent(
-          `playsound minecraft:block.beacon.activate block @a ${x} ${y} ${z}`
+          `playsound botania:gaia_trap block @a ${x} ${y} ${z}`
         );
         break;
       }

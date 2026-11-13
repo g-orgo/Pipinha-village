@@ -79,7 +79,7 @@ BlockEvents.rightClicked(global.plushies, (e) => {
       server,
       item,
       block,
-      "trials:vault_activate",
+      "minecraft:block.vault.activate",
       "supplementaries:bomb_explosion"
     );
     if (animal.bff) {

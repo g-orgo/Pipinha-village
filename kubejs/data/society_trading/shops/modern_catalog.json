@@ -5,17 +5,17 @@
 	"display_type": "thin",
 	"texture": "minecraft:textures/block/quartz_block_side",
 	"jei_catalyst": {
-		"item": "society:modern_catalog"
+		"id": "society:modern_catalog"
 	},
 	"block_tag": "society:opens_modern_catalog",
 	"trades": [
 		{
 			"offer": {
-				"item": "cluttered:garland_polaroid_a",
+				"id": "cluttered:garland_polaroid_a",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -23,11 +23,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:office_supplies_a",
+				"id": "cluttered:office_supplies_a",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -35,11 +35,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:polaroids_a",
+				"id": "cluttered:polaroids_a",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -47,11 +47,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:endtable_amethyst",
+				"id": "cluttered:endtable_amethyst",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -59,11 +59,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:bee_lamp_angry",
+				"id": "cluttered:bee_lamp_angry",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -71,11 +71,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:sewing_machine_antique",
+				"id": "cluttered:sewing_machine_antique",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -83,11 +83,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:wedding_arch",
+				"id": "cluttered:wedding_arch",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -95,11 +95,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:cottage_armchair",
+				"id": "cluttered:cottage_armchair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -107,11 +107,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:fwish_armchair",
+				"id": "cluttered:fwish_armchair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -119,11 +119,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:heavenly_ornamental_array",
+				"id": "cluttered:heavenly_ornamental_array",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -131,11 +131,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:garland_polaroid_b",
+				"id": "cluttered:garland_polaroid_b",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -143,11 +143,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:office_supplies_b",
+				"id": "cluttered:office_supplies_b",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -155,11 +155,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:polaroids_b",
+				"id": "cluttered:polaroids_b",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -167,11 +167,11 @@
 		},
 		{
 			"offer": {
-				"item": "beautify:lamp_bamboo",
+				"id": "beautify:lamp_bamboo",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -179,11 +179,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:lovely_love_seat_basic",
+				"id": "cluttered:lovely_love_seat_basic",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -191,11 +191,11 @@
 		},
 		{
 			"offer": {
-				"item": "supplementaries:lunch_basket",
+				"id": "supplementaries:lunch_basket",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -203,11 +203,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:picnic_basket",
+				"id": "cluttered:picnic_basket",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -215,11 +215,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:blue_mushroom_bed",
+				"id": "cluttered:blue_mushroom_bed",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 4
 			},
 			"numismatics_cost": 2048,
@@ -227,11 +227,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:red_mushroom_bed",
+				"id": "cluttered:red_mushroom_bed",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 4
 			},
 			"numismatics_cost": 2048,
@@ -239,11 +239,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:pastel_bed",
+				"id": "cluttered:pastel_bed",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 4
 			},
 			"numismatics_cost": 2048,
@@ -251,11 +251,11 @@
 		},
 		{
 			"offer": {
-				"item": "minecraft:bell",
+				"id": "minecraft:bell",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -263,11 +263,11 @@
 		},
 		{
 			"offer": {
-				"item": "candlelight:dinner_bell",
+				"id": "candlelight:dinner_bell",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -275,11 +275,11 @@
 		},
 		{
 			"offer": {
-				"item": "chimes:glass_bells",
+				"id": "chimes:glass_bells",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -287,11 +287,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:cupid_bench",
+				"id": "cluttered:cupid_bench",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -299,11 +299,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:cat_plant_pot_black",
+				"id": "cluttered:cat_plant_pot_black",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -311,11 +311,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:lovely_love_seat_black",
+				"id": "cluttered:lovely_love_seat_black",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -323,11 +323,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:osson_pendant_black",
+				"id": "cluttered:osson_pendant_black",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -335,11 +335,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_fridge_black",
+				"id": "cluttered:retro_fridge_black",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -347,11 +347,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_toaster_black",
+				"id": "cluttered:retro_toaster_black",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 14
 			},
 			"numismatics_cost": 7168,
@@ -359,11 +359,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:rose_end_table_black",
+				"id": "cluttered:rose_end_table_black",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -371,11 +371,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:briefcase_blank",
+				"id": "cluttered:briefcase_blank",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -383,11 +383,11 @@
 		},
 		{
 			"offer": {
-				"item": "supplementaries:clock_block",
+				"id": "supplementaries:clock_block",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 10
 			},
 			"numismatics_cost": 5120,
@@ -395,11 +395,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:garland_blossom",
+				"id": "cluttered:garland_blossom",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -407,11 +407,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:bicycle_blue",
+				"id": "cluttered:bicycle_blue",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -419,11 +419,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:bicycle_with_flowers_blue",
+				"id": "cluttered:bicycle_with_flowers_blue",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -431,11 +431,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:birdhouse_blue",
+				"id": "cluttered:birdhouse_blue",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -443,11 +443,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:confectionery_table_blue",
+				"id": "cluttered:confectionery_table_blue",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -455,11 +455,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:fence_shelf_blue",
+				"id": "cluttered:fence_shelf_blue",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -467,11 +467,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_shelf_blue",
+				"id": "cluttered:flower_shelf_blue",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -479,11 +479,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_shelf_candle_blue",
+				"id": "cluttered:flower_shelf_candle_blue",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -491,11 +491,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:glowshroom_terrarium_blue",
+				"id": "cluttered:glowshroom_terrarium_blue",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -503,11 +503,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:gumball_machine_blue",
+				"id": "cluttered:gumball_machine_blue",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -515,11 +515,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:puzzle_piece_table_blue",
+				"id": "cluttered:puzzle_piece_table_blue",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -527,11 +527,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:puzzle_piece_table_pastel_blue",
+				"id": "cluttered:puzzle_piece_table_pastel_blue",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -539,11 +539,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:record_player_blue",
+				"id": "cluttered:record_player_blue",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -551,11 +551,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_fridge_blue",
+				"id": "cluttered:retro_fridge_blue",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -563,11 +563,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_toaster_blue",
+				"id": "cluttered:retro_toaster_blue",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 14
 			},
 			"numismatics_cost": 7168,
@@ -575,11 +575,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:bulletin_board",
+				"id": "cluttered:bulletin_board",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -587,11 +587,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:fabric_bolts",
+				"id": "cluttered:fabric_bolts",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -599,11 +599,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:cottage_bookcase",
+				"id": "cluttered:cottage_bookcase",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 5
 			},
 			"numismatics_cost": 2560,
@@ -611,11 +611,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:fwish_bookcase",
+				"id": "cluttered:fwish_bookcase",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 5
 			},
 			"numismatics_cost": 2560,
@@ -623,11 +623,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:small_bookcase",
+				"id": "cluttered:small_bookcase",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 5
 			},
 			"numismatics_cost": 2560,
@@ -635,11 +635,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:antique_library_books",
+				"id": "cluttered:antique_library_books",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -647,11 +647,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:lunar_observatory_books",
+				"id": "cluttered:lunar_observatory_books",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -659,11 +659,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:rito_wooden_books",
+				"id": "cluttered:rito_wooden_books",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -671,11 +671,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:row_of_small_books",
+				"id": "cluttered:row_of_small_books",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -683,11 +683,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:stack_of_books",
+				"id": "cluttered:stack_of_books",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -695,11 +695,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:bamboo_bookshelf",
+				"id": "cluttered:bamboo_bookshelf",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 5
 			},
 			"numismatics_cost": 2560,
@@ -707,11 +707,11 @@
 		},
 		{
 			"offer": {
-				"item": "beautify:bookstack",
+				"id": "beautify:bookstack",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -719,11 +719,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:wine_bottles",
+				"id": "cluttered:wine_bottles",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -731,11 +731,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:sweetheart_baking_set_bowl",
+				"id": "cluttered:sweetheart_baking_set_bowl",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -743,11 +743,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:explorers_box",
+				"id": "furniture:explorers_box",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -755,11 +755,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:filing_box",
+				"id": "cluttered:filing_box",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -767,11 +767,11 @@
 		},
 		{
 			"offer": {
-				"item": "candlelight:jewelry_box",
+				"id": "candlelight:jewelry_box",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -779,11 +779,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:tool_box",
+				"id": "furniture:tool_box",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -791,11 +791,11 @@
 		},
 		{
 			"offer": {
-				"item": "waterframes:tv_box",
+				"id": "waterframes:tv_box",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -803,11 +803,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:sliced_bread",
+				"id": "cluttered:sliced_bread",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -815,11 +815,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:desk_brown",
+				"id": "cluttered:desk_brown",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -827,11 +827,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:mushroom_terrarium_brown",
+				"id": "cluttered:mushroom_terrarium_brown",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -839,11 +839,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:osson_pendant_brown",
+				"id": "cluttered:osson_pendant_brown",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -851,11 +851,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:record_player_brown",
+				"id": "cluttered:record_player_brown",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -863,11 +863,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:endtable_bubblegum",
+				"id": "cluttered:endtable_bubblegum",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -875,11 +875,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:caged_bulb",
+				"id": "cluttered:caged_bulb",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -887,11 +887,11 @@
 		},
 		{
 			"offer": {
-				"item": "beautify:lamp_light_bulb",
+				"id": "beautify:lamp_light_bulb",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -899,11 +899,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:cinnamon_bun",
+				"id": "cluttered:cinnamon_bun",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -911,11 +911,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:garland_bunny",
+				"id": "cluttered:garland_bunny",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -923,11 +923,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:small_bush",
+				"id": "cluttered:small_bush",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -935,11 +935,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:polaroids_c",
+				"id": "cluttered:polaroids_c",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -947,11 +947,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:china_cabinet",
+				"id": "cluttered:china_cabinet",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -959,11 +959,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_cabinet",
+				"id": "cluttered:darkwood_cabinet",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -971,11 +971,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:dorado_cabinet",
+				"id": "cluttered:dorado_cabinet",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -983,11 +983,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:general_store_cabinet",
+				"id": "cluttered:general_store_cabinet",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -995,11 +995,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:havana_cabinet",
+				"id": "cluttered:havana_cabinet",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1007,11 +1007,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:murex_cabinet",
+				"id": "cluttered:murex_cabinet",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1019,11 +1019,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:pastel_cabinet",
+				"id": "cluttered:pastel_cabinet",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1031,11 +1031,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:berry_cake",
+				"id": "cluttered:berry_cake",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1043,11 +1043,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:heart_cake",
+				"id": "cluttered:heart_cake",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1055,11 +1055,11 @@
 		},
 		{
 			"offer": {
-				"item": "meadow:camera",
+				"id": "meadow:camera",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1067,11 +1067,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:polaroid_camera",
+				"id": "cluttered:polaroid_camera",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1079,11 +1079,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:watering_can",
+				"id": "cluttered:watering_can",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1091,11 +1091,11 @@
 		},
 		{
 			"offer": {
-				"item": "supplementaries:cannon",
+				"id": "supplementaries:cannon",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1103,11 +1103,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:seltzer_cans",
+				"id": "cluttered:seltzer_cans",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1115,11 +1115,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:canvas",
+				"id": "furniture:canvas",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1127,11 +1127,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:pastry_display_case",
+				"id": "cluttered:pastry_display_case",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -1139,11 +1139,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:armchair_black_cat",
+				"id": "cluttered:armchair_black_cat",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1151,11 +1151,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:garland_black_cat",
+				"id": "cluttered:garland_black_cat",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1163,11 +1163,11 @@
 		},
 		{
 			"offer": {
-				"item": "beachparty:palm_chair",
+				"id": "beachparty:palm_chair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1175,11 +1175,11 @@
 		},
 		{
 			"offer": {
-				"item": "candlelight:chair",
+				"id": "candlelight:chair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1187,11 +1187,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:apple_chair",
+				"id": "cluttered:apple_chair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1199,11 +1199,11 @@
 		},
 		{
 			"offer": {
-				"item": "beachparty:beach_chair",
+				"id": "beachparty:beach_chair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1211,11 +1211,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:cottage_chair",
+				"id": "cluttered:cottage_chair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1223,11 +1223,11 @@
 		},
 		{
 			"offer": {
-				"item": "beachparty:beach_sun_lounger",
+				"id": "beachparty:beach_sun_lounger",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1235,11 +1235,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:imperial_chair",
+				"id": "cluttered:imperial_chair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1247,11 +1247,11 @@
 		},
 		{
 			"offer": {
-				"item": "beachparty:hooded_beach_chair",
+				"id": "beachparty:hooded_beach_chair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1259,11 +1259,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:pastel_chair",
+				"id": "cluttered:pastel_chair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1271,11 +1271,11 @@
 		},
 		{
 			"offer": {
-				"item": "beachparty:palm_bar_stool",
+				"id": "beachparty:palm_bar_stool",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1283,11 +1283,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:unliving_chair",
+				"id": "cluttered:unliving_chair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1295,11 +1295,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:endtable_charcoal",
+				"id": "cluttered:endtable_charcoal",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -1307,11 +1307,11 @@
 		},
 		{
 			"offer": {
-				"item": "chimes:amethyst_chimes",
+				"id": "chimes:amethyst_chimes",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1319,11 +1319,11 @@
 		},
 		{
 			"offer": {
-				"item": "chimes:bamboo_chimes",
+				"id": "chimes:bamboo_chimes",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1331,11 +1331,11 @@
 		},
 		{
 			"offer": {
-				"item": "chimes:carved_bamboo_chimes",
+				"id": "chimes:carved_bamboo_chimes",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1343,11 +1343,11 @@
 		},
 		{
 			"offer": {
-				"item": "chimes:copper_chimes",
+				"id": "chimes:copper_chimes",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1355,11 +1355,11 @@
 		},
 		{
 			"offer": {
-				"item": "chimes:iron_chimes",
+				"id": "chimes:iron_chimes",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1367,11 +1367,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:acacia_clock",
+				"id": "furniture:acacia_clock",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 10
 			},
 			"numismatics_cost": 5120,
@@ -1379,11 +1379,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:birch_clock",
+				"id": "furniture:birch_clock",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 10
 			},
 			"numismatics_cost": 5120,
@@ -1391,11 +1391,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:cherry_clock",
+				"id": "furniture:cherry_clock",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 10
 			},
 			"numismatics_cost": 5120,
@@ -1403,11 +1403,11 @@
 		},
 		{
 			"offer": {
-				"item": "create:cuckoo_clock",
+				"id": "create:cuckoo_clock",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 10
 			},
 			"numismatics_cost": 5120,
@@ -1415,11 +1415,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:dark_oak_clock",
+				"id": "furniture:dark_oak_clock",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 10
 			},
 			"numismatics_cost": 5120,
@@ -1427,11 +1427,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_clock",
+				"id": "cluttered:darkwood_clock",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 10
 			},
 			"numismatics_cost": 5120,
@@ -1439,11 +1439,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:jungle_clock",
+				"id": "furniture:jungle_clock",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 10
 			},
 			"numismatics_cost": 5120,
@@ -1451,11 +1451,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:mangrove_clock",
+				"id": "furniture:mangrove_clock",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 10
 			},
 			"numismatics_cost": 5120,
@@ -1463,11 +1463,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:oak_clock",
+				"id": "furniture:oak_clock",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 10
 			},
 			"numismatics_cost": 5120,
@@ -1475,11 +1475,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:spruce_clock",
+				"id": "furniture:spruce_clock",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 10
 			},
 			"numismatics_cost": 5120,
@@ -1487,11 +1487,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:hanging_cloth",
+				"id": "cluttered:hanging_cloth",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1499,11 +1499,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:sewing_clutter",
+				"id": "cluttered:sewing_clutter",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1511,11 +1511,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:bulletin_board_cluttered",
+				"id": "cluttered:bulletin_board_cluttered",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1523,11 +1523,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:cat_mugs_cluttered",
+				"id": "cluttered:cat_mugs_cluttered",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1535,11 +1535,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:desk_brown_cluttered",
+				"id": "cluttered:desk_brown_cluttered",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1547,11 +1547,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:desk_green_cluttered",
+				"id": "cluttered:desk_green_cluttered",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1559,11 +1559,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:dorado_cabinet_cluttered",
+				"id": "cluttered:dorado_cabinet_cluttered",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1571,11 +1571,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:havana_cabinet_cluttered",
+				"id": "cluttered:havana_cabinet_cluttered",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1583,11 +1583,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:murex_cabinet_cluttered",
+				"id": "cluttered:murex_cabinet_cluttered",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1595,11 +1595,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:ancient_codex",
+				"id": "cluttered:ancient_codex",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1607,11 +1607,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:coffer",
+				"id": "furniture:coffer",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1619,11 +1619,11 @@
 		},
 		{
 			"offer": {
-				"item": "candlelight:typewriter_copper",
+				"id": "candlelight:typewriter_copper",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1631,11 +1631,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:watering_can_copper",
+				"id": "cluttered:watering_can_copper",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1643,11 +1643,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:croissant",
+				"id": "cluttered:croissant",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1655,11 +1655,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:chocolate_croissant",
+				"id": "cluttered:chocolate_croissant",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1667,11 +1667,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:rubiks_cube",
+				"id": "cluttered:rubiks_cube",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1679,11 +1679,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:cottage_chair_cushioned",
+				"id": "cluttered:cottage_chair_cushioned",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1691,11 +1691,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:endtable_decor",
+				"id": "cluttered:endtable_decor",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -1703,11 +1703,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:moon_decoration",
+				"id": "cluttered:moon_decoration",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1715,11 +1715,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:display",
+				"id": "furniture:display",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1727,11 +1727,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:black_cat_counter_left_door",
+				"id": "cluttered:black_cat_counter_left_door",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1739,11 +1739,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:black_cat_counter_right_door",
+				"id": "cluttered:black_cat_counter_right_door",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1751,11 +1751,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:sweetheart_counter_left_door",
+				"id": "cluttered:sweetheart_counter_left_door",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1763,11 +1763,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:sweetheart_counter_right_door",
+				"id": "cluttered:sweetheart_counter_right_door",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1775,11 +1775,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:black_cat_counter_drawers",
+				"id": "cluttered:black_cat_counter_drawers",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1787,11 +1787,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:sweetheart_counter_drawers",
+				"id": "cluttered:sweetheart_counter_drawers",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1799,11 +1799,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:mermaid_dresser",
+				"id": "cluttered:mermaid_dresser",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1811,11 +1811,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:bunny_book_ends",
+				"id": "cluttered:bunny_book_ends",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1823,11 +1823,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_endtable",
+				"id": "cluttered:darkwood_endtable",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -1835,11 +1835,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_bed_southern_flair",
+				"id": "cluttered:darkwood_bed_southern_flair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 4
 			},
 			"numismatics_cost": 2048,
@@ -1847,11 +1847,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_chair_southern_flair",
+				"id": "cluttered:darkwood_chair_southern_flair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1859,11 +1859,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_decorative_shelves_southern_flair",
+				"id": "cluttered:darkwood_decorative_shelves_southern_flair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1871,11 +1871,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_sofa_southern_flair",
+				"id": "cluttered:darkwood_sofa_southern_flair",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 5
 			},
 			"numismatics_cost": 2560,
@@ -1883,11 +1883,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:armchair_flower",
+				"id": "cluttered:armchair_flower",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1895,11 +1895,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:basket_of_flowers",
+				"id": "cluttered:basket_of_flowers",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1907,11 +1907,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:glass_vase_of_flowers",
+				"id": "cluttered:glass_vase_of_flowers",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -1919,11 +1919,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:hanging_plant_pot_flowers",
+				"id": "cluttered:hanging_plant_pot_flowers",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -1931,11 +1931,11 @@
 		},
 		{
 			"offer": {
-				"item": "beautify:acacia_picture_frame",
+				"id": "beautify:acacia_picture_frame",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1943,11 +1943,11 @@
 		},
 		{
 			"offer": {
-				"item": "beautify:birch_picture_frame",
+				"id": "beautify:birch_picture_frame",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1955,11 +1955,11 @@
 		},
 		{
 			"offer": {
-				"item": "beautify:crimson_picture_frame",
+				"id": "beautify:crimson_picture_frame",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1967,11 +1967,11 @@
 		},
 		{
 			"offer": {
-				"item": "beautify:dark_oak_picture_frame",
+				"id": "beautify:dark_oak_picture_frame",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1979,11 +1979,11 @@
 		},
 		{
 			"offer": {
-				"item": "beautify:jungle_picture_frame",
+				"id": "beautify:jungle_picture_frame",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -1991,11 +1991,11 @@
 		},
 		{
 			"offer": {
-				"item": "beautify:mangrove_picture_frame",
+				"id": "beautify:mangrove_picture_frame",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -2003,11 +2003,11 @@
 		},
 		{
 			"offer": {
-				"item": "beautify:oak_picture_frame",
+				"id": "beautify:oak_picture_frame",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -2015,11 +2015,11 @@
 		},
 		{
 			"offer": {
-				"item": "beautify:quartz_picture_frame",
+				"id": "beautify:quartz_picture_frame",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -2027,11 +2027,11 @@
 		},
 		{
 			"offer": {
-				"item": "beautify:spruce_picture_frame",
+				"id": "beautify:spruce_picture_frame",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -2039,11 +2039,11 @@
 		},
 		{
 			"offer": {
-				"item": "beautify:warped_picture_frame",
+				"id": "beautify:warped_picture_frame",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -2051,11 +2051,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:armchair_fuchsia",
+				"id": "cluttered:armchair_fuchsia",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -2063,11 +2063,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_bed_geometric",
+				"id": "cluttered:darkwood_bed_geometric",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 4
 			},
 			"numismatics_cost": 2048,
@@ -2075,11 +2075,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_chair_geometric",
+				"id": "cluttered:darkwood_chair_geometric",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -2087,11 +2087,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_decorative_shelves_geometric",
+				"id": "cluttered:darkwood_decorative_shelves_geometric",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2099,11 +2099,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_sofa_geometric",
+				"id": "cluttered:darkwood_sofa_geometric",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 5
 			},
 			"numismatics_cost": 2560,
@@ -2111,11 +2111,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:lunar_observatory_globe",
+				"id": "cluttered:lunar_observatory_globe",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2123,11 +2123,11 @@
 		},
 		{
 			"offer": {
-				"item": "snowyspirit:snow_globe",
+				"id": "snowyspirit:snow_globe",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2135,11 +2135,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:steampunk_globe",
+				"id": "cluttered:steampunk_globe",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2147,11 +2147,11 @@
 		},
 		{
 			"offer": {
-				"item": "society:gnome",
+				"id": "society:gnome",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2159,11 +2159,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:gramophone",
+				"id": "furniture:gramophone",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2171,11 +2171,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:hanging_plant_pot_grass",
+				"id": "cluttered:hanging_plant_pot_grass",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2183,11 +2183,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:desk_green",
+				"id": "cluttered:desk_green",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2195,11 +2195,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_shelf_green",
+				"id": "cluttered:flower_shelf_green",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2207,11 +2207,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_shelf_candle_green",
+				"id": "cluttered:flower_shelf_candle_green",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2219,11 +2219,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:glowshroom_terrarium_green",
+				"id": "cluttered:glowshroom_terrarium_green",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2231,11 +2231,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:nightstand_green",
+				"id": "cluttered:nightstand_green",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2243,11 +2243,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:osson_pendant_racing_green",
+				"id": "cluttered:osson_pendant_racing_green",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2255,11 +2255,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:osson_pendant_sage_green",
+				"id": "cluttered:osson_pendant_sage_green",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2267,11 +2267,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:puzzle_piece_table_green",
+				"id": "cluttered:puzzle_piece_table_green",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -2279,11 +2279,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:spool_of_thread_green",
+				"id": "cluttered:spool_of_thread_green",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2291,11 +2291,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:coffee_grinder",
+				"id": "cluttered:coffee_grinder",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2303,11 +2303,11 @@
 		},
 		{
 			"offer": {
-				"item": "beachparty:beach_towel",
+				"id": "beachparty:beach_towel",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2315,11 +2315,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:armchair_heart",
+				"id": "cluttered:armchair_heart",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -2327,11 +2327,11 @@
 		},
 		{
 			"offer": {
-				"item": "candlelight:hearth",
+				"id": "candlelight:hearth",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2339,11 +2339,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:drying_herbs",
+				"id": "cluttered:drying_herbs",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2351,11 +2351,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:pedestal_hk",
+				"id": "cluttered:pedestal_hk",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2363,11 +2363,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:pok_ta_pok_hoop",
+				"id": "cluttered:pok_ta_pok_hoop",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2375,11 +2375,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:card_index",
+				"id": "cluttered:card_index",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2387,11 +2387,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:sweetheart_baking_set_ingredients",
+				"id": "cluttered:sweetheart_baking_set_ingredients",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2399,11 +2399,11 @@
 		},
 		{
 			"offer": {
-				"item": "candlelight:typewriter_iron",
+				"id": "candlelight:typewriter_iron",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2411,11 +2411,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:armchair_ivory",
+				"id": "cluttered:armchair_ivory",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -2423,11 +2423,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:boat_in_a_jar",
+				"id": "furniture:boat_in_a_jar",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2435,11 +2435,11 @@
 		},
 		{
 			"offer": {
-				"item": "beautify:lamp_jar",
+				"id": "beautify:lamp_jar",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -2447,11 +2447,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:lunar_observatory_jar",
+				"id": "cluttered:lunar_observatory_jar",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2459,11 +2459,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:paint_water_jar",
+				"id": "cluttered:paint_water_jar",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2471,11 +2471,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:assorted_glass_jars",
+				"id": "cluttered:assorted_glass_jars",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -2483,11 +2483,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:jam_jars",
+				"id": "cluttered:jam_jars",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -2495,11 +2495,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:mushroom_jars",
+				"id": "cluttered:mushroom_jars",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -2507,11 +2507,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:small_glass_jars",
+				"id": "cluttered:small_glass_jars",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -2519,11 +2519,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:small_spice_jars",
+				"id": "cluttered:small_spice_jars",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -2531,11 +2531,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_tea_kettle",
+				"id": "cluttered:flower_tea_kettle",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2543,11 +2543,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:brass_key",
+				"id": "cluttered:brass_key",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2555,11 +2555,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:sewing_kit",
+				"id": "furniture:sewing_kit",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2567,11 +2567,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:plant_ladder",
+				"id": "cluttered:plant_ladder",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2579,11 +2579,11 @@
 		},
 		{
 			"offer": {
-				"item": "candlelight:lamp",
+				"id": "candlelight:lamp",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -2591,11 +2591,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:antique_standing_lamp",
+				"id": "cluttered:antique_standing_lamp",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -2603,11 +2603,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:bee_lamp",
+				"id": "cluttered:bee_lamp",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -2615,11 +2615,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:cottage_standing_lamp",
+				"id": "cluttered:cottage_standing_lamp",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -2627,11 +2627,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_desk_lamp",
+				"id": "cluttered:flower_desk_lamp",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -2639,11 +2639,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:honeycomb_lamp",
+				"id": "cluttered:honeycomb_lamp",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -2651,11 +2651,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:blue_mushroom_lamp",
+				"id": "cluttered:blue_mushroom_lamp",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -2663,11 +2663,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:red_mushroom_lamp",
+				"id": "cluttered:red_mushroom_lamp",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -2675,11 +2675,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:stained_glass_lamp",
+				"id": "cluttered:stained_glass_lamp",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -2687,11 +2687,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:steampunk_lamp",
+				"id": "cluttered:steampunk_lamp",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -2699,11 +2699,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:colosseo_wall_lantern",
+				"id": "cluttered:colosseo_wall_lantern",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2711,11 +2711,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:hoppin_park_lantern",
+				"id": "cluttered:hoppin_park_lantern",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2723,11 +2723,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:sea_gem_lantern",
+				"id": "cluttered:sea_gem_lantern",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2735,11 +2735,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:armchair_lemon",
+				"id": "cluttered:armchair_lemon",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -2747,11 +2747,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:pastel_light",
+				"id": "cluttered:pastel_light",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2759,11 +2759,11 @@
 		},
 		{
 			"offer": {
-				"item": "brewery:barrel_main",
+				"id": "brewery:barrel_main",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2771,11 +2771,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:sewing_mannequin",
+				"id": "cluttered:sewing_mannequin",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2783,11 +2783,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:antique_map",
+				"id": "cluttered:antique_map",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -2795,11 +2795,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:endtable_meadow",
+				"id": "cluttered:endtable_meadow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -2807,11 +2807,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:kitchen_set_brown_cabinet_mini",
+				"id": "cluttered:kitchen_set_brown_cabinet_mini",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2819,11 +2819,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:acacia_mirror",
+				"id": "furniture:acacia_mirror",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 9
 			},
 			"numismatics_cost": 4608,
@@ -2831,11 +2831,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:birch_mirror",
+				"id": "furniture:birch_mirror",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 9
 			},
 			"numismatics_cost": 4608,
@@ -2843,11 +2843,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:cherry_mirror",
+				"id": "furniture:cherry_mirror",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 9
 			},
 			"numismatics_cost": 4608,
@@ -2855,11 +2855,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:dark_oak_mirror",
+				"id": "furniture:dark_oak_mirror",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 9
 			},
 			"numismatics_cost": 4608,
@@ -2867,11 +2867,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:jungle_mirror",
+				"id": "furniture:jungle_mirror",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 9
 			},
 			"numismatics_cost": 4608,
@@ -2879,11 +2879,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:mangrove_mirror",
+				"id": "furniture:mangrove_mirror",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 9
 			},
 			"numismatics_cost": 4608,
@@ -2891,11 +2891,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:oak_mirror",
+				"id": "furniture:oak_mirror",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 9
 			},
 			"numismatics_cost": 4608,
@@ -2903,11 +2903,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:spruce_mirror",
+				"id": "furniture:spruce_mirror",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 9
 			},
 			"numismatics_cost": 4608,
@@ -2915,11 +2915,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:blueberry_muffin",
+				"id": "cluttered:blueberry_muffin",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2927,11 +2927,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:rover_mug",
+				"id": "cluttered:rover_mug",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2939,11 +2939,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:yellow_notepad",
+				"id": "cluttered:yellow_notepad",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2951,11 +2951,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:safe_novakid",
+				"id": "cluttered:safe_novakid",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2963,11 +2963,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:book_open",
+				"id": "cluttered:book_open",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2975,11 +2975,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:cardboard_box_open",
+				"id": "cluttered:cardboard_box_open",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2987,11 +2987,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:cat_plant_pot_orange",
+				"id": "cluttered:cat_plant_pot_orange",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -2999,11 +2999,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:osson_pendant_orange",
+				"id": "cluttered:osson_pendant_orange",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3011,11 +3011,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:cottage_ottoman",
+				"id": "cluttered:cottage_ottoman",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3023,11 +3023,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:fwish_ottoman",
+				"id": "cluttered:fwish_ottoman",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3035,11 +3035,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:madonna_ottoman",
+				"id": "cluttered:madonna_ottoman",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3047,11 +3047,11 @@
 		},
 		{
 			"offer": {
-				"item": "minecraft:painting",
+				"id": "minecraft:painting",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -3059,11 +3059,11 @@
 		},
 		{
 			"offer": {
-				"item": "candlelight:painting",
+				"id": "candlelight:painting",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 2
 			},
 			"numismatics_cost": 1024,
@@ -3071,11 +3071,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:box_of_paints",
+				"id": "cluttered:box_of_paints",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3083,11 +3083,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:lunar_observatory_basket_of_papers",
+				"id": "cluttered:lunar_observatory_basket_of_papers",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3095,11 +3095,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:scattered_papers",
+				"id": "cluttered:scattered_papers",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3107,11 +3107,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:birdhouse_pastel",
+				"id": "cluttered:birdhouse_pastel",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3119,11 +3119,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:row_of_small_books_pastel",
+				"id": "cluttered:row_of_small_books_pastel",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3131,11 +3131,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:rubiks_cube_pastel",
+				"id": "cluttered:rubiks_cube_pastel",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3143,11 +3143,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:wooden_block_bookshelf_pastel",
+				"id": "cluttered:wooden_block_bookshelf_pastel",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 5
 			},
 			"numismatics_cost": 2560,
@@ -3155,11 +3155,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:mermaid_pearl",
+				"id": "cluttered:mermaid_pearl",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3167,11 +3167,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:pells",
+				"id": "furniture:pells",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3179,11 +3179,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:moon_pendant",
+				"id": "cluttered:moon_pendant",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3191,11 +3191,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:stars_pendant",
+				"id": "cluttered:stars_pendant",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3203,11 +3203,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:endtable_periwinkle",
+				"id": "cluttered:endtable_periwinkle",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -3215,11 +3215,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:paper_pile",
+				"id": "cluttered:paper_pile",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3227,11 +3227,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:pineapple",
+				"id": "cluttered:pineapple",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3239,11 +3239,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:bicycle_pink",
+				"id": "cluttered:bicycle_pink",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3251,11 +3251,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:bicycle_with_flowers_pink",
+				"id": "cluttered:bicycle_with_flowers_pink",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3263,11 +3263,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:confectionery_table_pink",
+				"id": "cluttered:confectionery_table_pink",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -3275,11 +3275,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_shelf_pink",
+				"id": "cluttered:flower_shelf_pink",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3287,11 +3287,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_shelf_candle_pink",
+				"id": "cluttered:flower_shelf_candle_pink",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3299,11 +3299,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:glowshroom_terrarium_pink",
+				"id": "cluttered:glowshroom_terrarium_pink",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3311,11 +3311,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:puzzle_piece_table_pastel_pink",
+				"id": "cluttered:puzzle_piece_table_pastel_pink",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -3323,11 +3323,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:record_player_pink",
+				"id": "cluttered:record_player_pink",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3335,11 +3335,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_fridge_pink",
+				"id": "cluttered:retro_fridge_pink",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3347,11 +3347,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_toaster_pink",
+				"id": "cluttered:retro_toaster_pink",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 14
 			},
 			"numismatics_cost": 7168,
@@ -3359,11 +3359,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:small_shelf_pink",
+				"id": "cluttered:small_shelf_pink",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3371,11 +3371,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:spool_of_thread_pink",
+				"id": "cluttered:spool_of_thread_pink",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3383,11 +3383,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_shelf_plant",
+				"id": "cluttered:flower_shelf_plant",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3395,11 +3395,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:seaweed_planter",
+				"id": "cluttered:seaweed_planter",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3407,11 +3407,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:hanging_shelves_plants",
+				"id": "cluttered:hanging_shelves_plants",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3419,11 +3419,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:pastry_plate",
+				"id": "cluttered:pastry_plate",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3431,11 +3431,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:cauldron_poster",
+				"id": "cluttered:cauldron_poster",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3443,11 +3443,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:two_flower_pots",
+				"id": "cluttered:two_flower_pots",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3455,11 +3455,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:hanging_shelves_pottery",
+				"id": "cluttered:hanging_shelves_pottery",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3467,11 +3467,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:picnic_basket_prepared",
+				"id": "cluttered:picnic_basket_prepared",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3479,11 +3479,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:basket_of_produce",
+				"id": "cluttered:basket_of_produce",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3491,11 +3491,11 @@
 		},
 		{
 			"offer": {
-				"item": "waterframes:projector",
+				"id": "waterframes:projector",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3503,11 +3503,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:bicycle_purple",
+				"id": "cluttered:bicycle_purple",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3515,11 +3515,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:bicycle_with_flowers_purple",
+				"id": "cluttered:bicycle_with_flowers_purple",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3527,11 +3527,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_shelf_purple",
+				"id": "cluttered:flower_shelf_purple",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3539,11 +3539,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_shelf_candle_purple",
+				"id": "cluttered:flower_shelf_candle_purple",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3551,11 +3551,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:glowshroom_terrarium_purple",
+				"id": "cluttered:glowshroom_terrarium_purple",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3563,11 +3563,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:gumball_machine_purple",
+				"id": "cluttered:gumball_machine_purple",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3575,11 +3575,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:puzzle_piece_table_pastel_purple",
+				"id": "cluttered:puzzle_piece_table_pastel_purple",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -3587,11 +3587,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:record_player_purple",
+				"id": "cluttered:record_player_purple",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3599,11 +3599,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_fridge_purple",
+				"id": "cluttered:retro_fridge_purple",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3611,11 +3611,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_toaster_purple",
+				"id": "cluttered:retro_toaster_purple",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 14
 			},
 			"numismatics_cost": 7168,
@@ -3623,11 +3623,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:spool_of_thread_purple",
+				"id": "cluttered:spool_of_thread_purple",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3635,11 +3635,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_bed_quilted",
+				"id": "cluttered:darkwood_bed_quilted",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 4
 			},
 			"numismatics_cost": 2048,
@@ -3647,11 +3647,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_chair_quilted",
+				"id": "cluttered:darkwood_chair_quilted",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -3659,11 +3659,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_decorative_shelves_quilted",
+				"id": "cluttered:darkwood_decorative_shelves_quilted",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3671,11 +3671,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_sofa_quilted",
+				"id": "cluttered:darkwood_sofa_quilted",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 5
 			},
 			"numismatics_cost": 2560,
@@ -3683,11 +3683,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:wine_bottle_rack",
+				"id": "cluttered:wine_bottle_rack",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3695,11 +3695,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:traditional_radio",
+				"id": "cluttered:traditional_radio",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3707,11 +3707,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:birdhouse_red",
+				"id": "cluttered:birdhouse_red",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3719,11 +3719,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:gumball_machine_red",
+				"id": "cluttered:gumball_machine_red",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3731,11 +3731,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:mushroom_terrarium_red",
+				"id": "cluttered:mushroom_terrarium_red",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3743,11 +3743,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:osson_pendant_red",
+				"id": "cluttered:osson_pendant_red",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3755,11 +3755,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:puzzle_piece_table_red",
+				"id": "cluttered:puzzle_piece_table_red",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -3767,11 +3767,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:record_player_red",
+				"id": "cluttered:record_player_red",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3779,11 +3779,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_fridge_red",
+				"id": "cluttered:retro_fridge_red",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3791,11 +3791,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_toaster_red",
+				"id": "cluttered:retro_toaster_red",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 14
 			},
 			"numismatics_cost": 7168,
@@ -3803,11 +3803,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:cash_register",
+				"id": "furniture:cash_register",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3815,11 +3815,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:briefcase_rover",
+				"id": "cluttered:briefcase_rover",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3827,11 +3827,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:ham_sandwich",
+				"id": "cluttered:ham_sandwich",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3839,11 +3839,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:analog_kitchen_scale",
+				"id": "cluttered:analog_kitchen_scale",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3851,11 +3851,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:violet_screen",
+				"id": "cluttered:violet_screen",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3863,11 +3863,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:mini_cactus_set",
+				"id": "cluttered:mini_cactus_set",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3875,11 +3875,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:small_cauldron_set",
+				"id": "cluttered:small_cauldron_set",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3887,11 +3887,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:salt_pepper_shakers",
+				"id": "cluttered:salt_pepper_shakers",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3899,11 +3899,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:potion_shelf",
+				"id": "cluttered:potion_shelf",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3911,11 +3911,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_cafe_shelf",
+				"id": "cluttered:retro_cafe_shelf",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3923,11 +3923,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:small_shelf",
+				"id": "cluttered:small_shelf",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3935,11 +3935,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:row_of_small_books_shelved",
+				"id": "cluttered:row_of_small_books_shelved",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3947,11 +3947,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:row_of_small_books_pastel_shelved",
+				"id": "cluttered:row_of_small_books_pastel_shelved",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3959,11 +3959,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:newspaper_pile_short",
+				"id": "cluttered:newspaper_pile_short",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3971,11 +3971,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:sketchbook_single",
+				"id": "cluttered:sketchbook_single",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3983,11 +3983,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:black_cat_sink",
+				"id": "cluttered:black_cat_sink",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -3995,11 +3995,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:sweetheart_sink",
+				"id": "cluttered:sweetheart_sink",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4007,11 +4007,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:pok_ta_pok_hoop_snakes",
+				"id": "cluttered:pok_ta_pok_hoop_snakes",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4019,11 +4019,11 @@
 		},
 		{
 			"offer": {
-				"item": "candlelight:sofa",
+				"id": "candlelight:sofa",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 5
 			},
 			"numismatics_cost": 2560,
@@ -4031,11 +4031,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:envelope_stack",
+				"id": "cluttered:envelope_stack",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4043,11 +4043,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:pancake_stack",
+				"id": "cluttered:pancake_stack",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4055,11 +4055,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:antique_book_stand",
+				"id": "cluttered:antique_book_stand",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -4067,11 +4067,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:vial_stand",
+				"id": "cluttered:vial_stand",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4079,11 +4079,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:armchair_starry",
+				"id": "cluttered:armchair_starry",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -4091,11 +4091,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:garland_starry",
+				"id": "cluttered:garland_starry",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -4103,11 +4103,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:button_stool",
+				"id": "cluttered:button_stool",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -4115,11 +4115,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_stool",
+				"id": "cluttered:darkwood_stool",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -4127,11 +4127,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:pastel_stool",
+				"id": "cluttered:pastel_stool",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -4139,11 +4139,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:rover_stool",
+				"id": "cluttered:rover_stool",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -4151,11 +4151,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:tarrytown_stove",
+				"id": "cluttered:tarrytown_stove",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4163,11 +4163,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:armchair_strawberry",
+				"id": "cluttered:armchair_strawberry",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -4175,11 +4175,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:garland_sunflower",
+				"id": "cluttered:garland_sunflower",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -4187,11 +4187,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:endtable_sunshine",
+				"id": "cluttered:endtable_sunshine",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4199,11 +4199,11 @@
 		},
 		{
 			"offer": {
-				"item": "beachparty:palm_table",
+				"id": "beachparty:palm_table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4211,11 +4211,11 @@
 		},
 		{
 			"offer": {
-				"item": "candlelight:table",
+				"id": "candlelight:table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4223,11 +4223,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:table",
+				"id": "cluttered:table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4235,11 +4235,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:antique_mini_table",
+				"id": "cluttered:antique_mini_table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -4247,11 +4247,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:black_cat_table",
+				"id": "cluttered:black_cat_table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4259,11 +4259,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:cottage_side_table",
+				"id": "cluttered:cottage_side_table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4271,11 +4271,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:darkwood_table",
+				"id": "cluttered:darkwood_table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4283,11 +4283,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:imperial_table",
+				"id": "cluttered:imperial_table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4295,11 +4295,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:lemon_table",
+				"id": "cluttered:lemon_table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4307,11 +4307,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:lunar_observatory_table",
+				"id": "cluttered:lunar_observatory_table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4319,11 +4319,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:lunar_observatory_pedestal_table",
+				"id": "cluttered:lunar_observatory_pedestal_table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4331,11 +4331,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:blue_mushroom_table",
+				"id": "cluttered:blue_mushroom_table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4343,11 +4343,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:red_mushroom_table",
+				"id": "cluttered:red_mushroom_table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4355,11 +4355,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:pastel_table",
+				"id": "cluttered:pastel_table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4367,11 +4367,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:rose_end_table",
+				"id": "cluttered:rose_end_table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4379,11 +4379,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:sweetheart_table",
+				"id": "cluttered:sweetheart_table",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4391,11 +4391,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:sewing_table_with_tablecloth",
+				"id": "cluttered:sewing_table_with_tablecloth",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4403,11 +4403,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:table_with_white_tablecloth",
+				"id": "cluttered:table_with_white_tablecloth",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4415,11 +4415,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:newspaper_pile_tall",
+				"id": "cluttered:newspaper_pile_tall",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4427,11 +4427,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:stack_of_books_tall",
+				"id": "cluttered:stack_of_books_tall",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4439,11 +4439,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:copper_fish_tank",
+				"id": "furniture:copper_fish_tank",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4451,11 +4451,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:iron_fish_tank",
+				"id": "furniture:iron_fish_tank",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4463,11 +4463,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:telescope",
+				"id": "furniture:telescope",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4475,11 +4475,11 @@
 		},
 		{
 			"offer": {
-				"item": "furniture:terrarium",
+				"id": "furniture:terrarium",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4487,11 +4487,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:mini_hanging_terrariums",
+				"id": "cluttered:mini_hanging_terrariums",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4499,11 +4499,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:scissors_and_thread",
+				"id": "cluttered:scissors_and_thread",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4511,11 +4511,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_fridge_turquoise",
+				"id": "cluttered:retro_fridge_turquoise",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4523,11 +4523,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_toaster_turquoise",
+				"id": "cluttered:retro_toaster_turquoise",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 14
 			},
 			"numismatics_cost": 7168,
@@ -4535,11 +4535,11 @@
 		},
 		{
 			"offer": {
-				"item": "waterframes:big_tv",
+				"id": "waterframes:big_tv",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4547,11 +4547,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:blue_mushroom_tv",
+				"id": "cluttered:blue_mushroom_tv",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4559,11 +4559,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:red_mushroom_tv",
+				"id": "cluttered:red_mushroom_tv",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4571,11 +4571,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:birdhouse_unpainted",
+				"id": "cluttered:birdhouse_unpainted",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4583,11 +4583,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:blue_mushroom_wardrobe",
+				"id": "cluttered:blue_mushroom_wardrobe",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -4595,11 +4595,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:red_mushroom_wardrobe",
+				"id": "cluttered:red_mushroom_wardrobe",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -4607,11 +4607,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:pastel_wardrobe",
+				"id": "cluttered:pastel_wardrobe",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 6
 			},
 			"numismatics_cost": 3072,
@@ -4619,11 +4619,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:armchair_watermelon",
+				"id": "cluttered:armchair_watermelon",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 1
 			},
 			"numismatics_cost": 512,
@@ -4631,11 +4631,11 @@
 		},
 		{
 			"offer": {
-				"item": "meadow:wheelbarrow",
+				"id": "meadow:wheelbarrow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4643,11 +4643,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:osson_pendant_white",
+				"id": "cluttered:osson_pendant_white",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4655,11 +4655,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:record_player_white",
+				"id": "cluttered:record_player_white",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4667,11 +4667,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_fridge_white",
+				"id": "cluttered:retro_fridge_white",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4679,11 +4679,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_toaster_white",
+				"id": "cluttered:retro_toaster_white",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 14
 			},
 			"numismatics_cost": 7168,
@@ -4691,11 +4691,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_cafe_shelf_window",
+				"id": "cluttered:retro_cafe_shelf_window",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4703,11 +4703,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:endtable_wood",
+				"id": "cluttered:endtable_wood",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4715,11 +4715,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:bicycle_yellow",
+				"id": "cluttered:bicycle_yellow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4727,11 +4727,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:bicycle_with_flowers_yellow",
+				"id": "cluttered:bicycle_with_flowers_yellow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4739,11 +4739,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_shelf_yellow",
+				"id": "cluttered:flower_shelf_yellow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4751,11 +4751,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_shelf_candle_yellow",
+				"id": "cluttered:flower_shelf_candle_yellow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4763,11 +4763,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_shelf_candle_pastel_yellow",
+				"id": "cluttered:flower_shelf_candle_pastel_yellow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4775,11 +4775,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:flower_shelf_pastel_yellow",
+				"id": "cluttered:flower_shelf_pastel_yellow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4787,11 +4787,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:glowshroom_terrarium_yellow",
+				"id": "cluttered:glowshroom_terrarium_yellow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4799,11 +4799,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:osson_pendant_yellow",
+				"id": "cluttered:osson_pendant_yellow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4811,11 +4811,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:puzzle_piece_table_yellow",
+				"id": "cluttered:puzzle_piece_table_yellow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4823,11 +4823,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:puzzle_piece_table_pastel_yellow",
+				"id": "cluttered:puzzle_piece_table_pastel_yellow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 3
 			},
 			"numismatics_cost": 1536,
@@ -4835,11 +4835,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:record_player_yellow",
+				"id": "cluttered:record_player_yellow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4847,11 +4847,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_fridge_yellow",
+				"id": "cluttered:retro_fridge_yellow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,
@@ -4859,11 +4859,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:retro_toaster_yellow",
+				"id": "cluttered:retro_toaster_yellow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 14
 			},
 			"numismatics_cost": 7168,
@@ -4871,11 +4871,11 @@
 		},
 		{
 			"offer": {
-				"item": "cluttered:spool_of_thread_yellow",
+				"id": "cluttered:spool_of_thread_yellow",
 				"count": 1
 			},
 			"request": {
-				"item": "numismatics:crown",
+				"id": "numismatics:crown",
 				"count": 8
 			},
 			"numismatics_cost": 4096,

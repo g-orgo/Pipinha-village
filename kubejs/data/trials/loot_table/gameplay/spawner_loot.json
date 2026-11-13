@@ -11,7 +11,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "trials:gameplay/food_loot",
+          "value": "trials:gameplay/food_loot",
           "weight": 1
         }
       ]

@@ -65,7 +65,7 @@ global.tapperRecipes = new Map([
     "mysticaloaktree:wise_oak",
     {
       leaves: ["minecraft:oak_leaves"],
-      output: ["4x minecraft:wither_rose"],
+      output: ["4x botania:black_lotus"],
       fluidOutput: "society:oak_resin",
       time: 2,
     },

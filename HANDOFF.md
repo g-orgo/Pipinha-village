@@ -239,3 +239,53 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   balloonbox, botania:lexicon, meadow sheep_cheese_block/inky_wool. fantasyfurniture (5 blocos) aguarda o dono instalar o port
   ANTES de abrir o mundo. tools/pack_tools/sync_repo.py da 1.21.1 aponta para a worktree e a branch 1.21.1.
   Em curso: validator; depois commit na branch 1.21.1.
+  FECHADO: validator PASS (6/6); commit 4ab7a1782 na branch 1.21.1, enviado. Pendente do dono: baixar o port 1.21.1 do
+  Fantasy's Furniture (CurseForge) antes de abrir o "Solito solamente"; depois o agente remapeia as linhas fantasyfurniture
+  das paletas como foi feito com o youkai.
+
+## 2026-11-13 18:00: Botania de volta + erros do 11º launch
+- Decisão do dono: Botania volta "exatamente como na 1.20.1" (a remoção foi baseada em "não há port"; existe o
+  Botania Revived, port não oficial com mod id `botania`, só no CurseForge, projeto 1725641). Botania Seeds não tem
+  port: recriar as 16 sementes em KubeJS. Splendid Slimes/Cogs seguem sem port (busca 2026-11-13).
+- 11º launch (17:53, "Mapa solo"): mundo abriu; erros: society_trading 43 lojas (formato item/nbt 1.20), cozycafe 47
+  cardápios (nethervinery, duplicados, itens), loot ~50 fora o ruído do railways (looting_enchant, entry name->value,
+  set_nbt...), receitas KubeJS com nethervinery/species/fluido create_central_kitchen, youkai cucumber_crate e
+  red_velvet_cake não registrados pelo port (blockstate existe, bloco não), advancements.
+- Ordem: U1 baixar Botania Revived + Fantasy's Furniture port; U2 corrigir erros do log; U3 restaurar Botania
+  (scripts, dados, quests, lojas, almanaque, paletas) + sementes em KubeJS; U4 refazer cópia do save sem as linhas
+  botania/fantasyfurniture no id_map; validator; commit.
+- 18:05: Botania-Revived-1.21.1-2.0.2-NeoForge.jar colocado pelo dono (mod id botania, todos os ids da 1.20.1 existem).
+  fantasyfurniture-1.21.1-9.0.0-port.1.jar já estava (dono, 17:52; 304 blockstates iguais à 1.20.1). Em curso: U2 erros
+  do log; U3a quests+configs do Botania. Depois: U3b kubejs do Botania + sementes + paletas (botania e fantasyfurniture
+  voltam ao original); U4 refazer save.
+- 18:20: lojas: 5994 stacks item->id, 132 blueprints com custom_data (classe WornBlueprint), villager -> villager_home.
+  cozycafe: 31 cardápios de itens que não existem mais removidos, 4 duplicados. Renome achado: crabbersdelight *_kebob -> *_kebab.
+  questport (port.py/convert.py) não descarta mais botania. Em curso (5 operadores): Botania kubejs+sementes+paletas
+  (frontend-operator), quests do Botania, configs do Botania, sobras das lojas + kebab + check_ids, loot/receitas/
+  advancements/youkai não registrados. Depois: U4 refazer save (tirar linhas botania/fantasyfurniture do id_map), validator, commit.
+- 18:40: FEITO: Botania Seeds recriado (registerBotaniaSeeds.js, 16 sementes, ids originais, assets em kubejs/assets/botania_seeds),
+  addMysticalFlowerSeedRecipes.js, paletas botania (84) e fantasyfurniture (5) de volta ao original, prune_removed sem botania,
+  configs do Botania (toml + supplementaries + solonion + 3 stack groups remi). Convites: formato custom_data {type:"society:X"}
+  (npcInvite lê string); receitas que criavam {type:{id}} sendo corrigidas. kebob->kebab feito em dados e scripts.
+  Gap do Botania por arquivo: scratchpad botania_gaps.txt (startup 16, client 1, assets 10, server 21, data ~105).
+  Em curso: 3 operadores (startup/client/assets, server_scripts, kubejs/data) + quests do Botania + loot/receitas/youkai.
+  Pendente: lc_ids.py indexa blockstates só pelo nome-base (ids com subpasta, ex. fantasyfurniture:decorations/x, dão
+  falso "desconhecido" em check_palettes); U4 save; validator; commit.
+- 19:10: Botania: dados (88 arquivos em kubejs/data/botania + 16 mesclados; conferindo formato 1.21), configs ok,
+  startup parcial (globalRegistry, NPCs, fish pond, preços, tapper da wise oak -> lótus negra, loom), server parcial (14 arquivos).
+  Mana: a API BotaniaCapabilityBuilder da 1.20.1 não existe; unidade própria pesquisando capability (manaClock,
+  sparkstoneRecycler, seedMaker, manaFruit, manaSprinkler, manaMilker). Erros do log: loot (20 arquivos), receitas com guard
+  recipeIdsExist121, youkai cucumber_crate/red_velvet_cake voltaram ao substituto (não registrados); em curso: random_chance linear,
+  suco de uva do Vinery, urn loot, advancements, caminhos inválidos. Quests do Botania: capítulo + 4 merges; fechando lang 12 idiomas.
+  Pendente final: lc_ids.py (ids com subpasta), U4 save, validator, commit.
+- 20:00: FEITO: Botania completo em kubejs (startup/client/assets/server/data gap 0; 388/388 Rhino OK), quests (botania.snbt 32/32
+  + 4 merges + lang 12 idiomas), configs. Mana das máquinas: kubejs/startup_scripts/000_port_mana.js (RegisterCapabilitiesEvent +
+  JavaAdapter ManaReceiver) para mana_clock, sparkstone_recycler, mana_fruit_crop, mana_sprinkler, mana_milker; aguardando prova
+  de que o listener chega ao mod bus. mana_sprinkler: aspersor do Sturdy Farmland -> farm_and_charm:water_sprinkler. Aspersores
+  por nível do Sturdy Farmland ficam fora (saída era do mod). trials:* -> minecraft:* (33 ids, também no id_map do save).
+  lc_ids.py indexa subpastas. Puffish skills "nbt" de silk touch: conferir no próximo log.
+  Pendente: prova do mod bus (mana), erros restantes do log (round 3), U4 refazer save (id_map sem botania/fantasyfurniture, com trials),
+  validator, commit, push.
+- 2026-11-13 (brain, round 3/4): save "Solito solamente" refeito (0 decode errors, 0 itens perdidos, 180 BEs caídas, sobras só de mods fora do pack: verdantvibes, splendid_slimes spawner, meadow cheese block/inky wool, species). Round 3: random_chance linear, urn_loot epic/rare, forge:loot_table_id -> neoforge (80 arquivos, conferido no jar), set_nbt -> set_enchantments (balloonbox, livro com mending), 15 stubs de advancement forge:false -> neoforge:false, canonicalItemLoot protege o item substituto. Ruído de jar (não é nosso): brewinandchewin pizza_from_dough, bakery dough_liquids, Invalid path do youkai/longwings. Vinery 1.21.1 sem fluidos de suco: receitas de fluido não voltam.
+  Em andamento: ícones de inventário de 95 itens society (minor-operator), validator da unidade. Depois: commit + push 1.21.1.
+  Validator: PASS em 6/7; o 7º (236 stubs antigos forge:conditions/forge:false em kubejs/data) corrigido pelo brain com /tmp forge2neo.py (236 arquivos, todos parseiam). Tags forge:* do próprio pack continuam (kubejs/data/forge/tags).

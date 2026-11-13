@@ -3,18 +3,18 @@
   "name": "shop.society_trading.feed_store",
   "texture": "minecraft:textures/block/hay_block_side",
   "jei_catalyst": {
-    "item": "society:animal_feed"
+    "id": "society:animal_feed"
   },
   "stage_required": "profession_rancher",
   "selector_weight": -94,
   "trades": [
     {
       "offer": {
-        "item": "society:animal_feed",
+        "id": "society:animal_feed",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 256,
@@ -22,11 +22,11 @@
     },
     {
       "offer": {
-        "item": "society:animal_feed",
+        "id": "society:animal_feed",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 230,
@@ -37,11 +37,11 @@
     },
     {
       "offer": {
-        "item": "society:animal_feed",
+        "id": "society:animal_feed",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 218,
@@ -52,11 +52,11 @@
     },
     {
       "offer": {
-        "item": "society:animal_feed",
+        "id": "society:animal_feed",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 192,
@@ -66,11 +66,11 @@
     },
     {
       "offer": {
-        "item": "society:animal_feed",
+        "id": "society:animal_feed",
         "count": 64
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 2
       },
       "numismatics_cost": 1024,
@@ -78,11 +78,11 @@
     },
     {
       "offer": {
-        "item": "society:animal_feed",
+        "id": "society:animal_feed",
         "count": 64
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 2
       },
       "numismatics_cost": 922,
@@ -93,11 +93,11 @@
     },
     {
       "offer": {
-        "item": "society:animal_feed",
+        "id": "society:animal_feed",
         "count": 64
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 2
       },
       "numismatics_cost": 870,
@@ -108,11 +108,11 @@
     },
     {
       "offer": {
-        "item": "society:animal_feed",
+        "id": "society:animal_feed",
         "count": 64
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 2
       },
       "numismatics_cost": 768,
@@ -122,11 +122,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:hay_block",
+        "id": "minecraft:hay_block",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 3
       },
       "numismatics_cost": 207,
@@ -134,11 +134,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:hay_block",
+        "id": "minecraft:hay_block",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 3
       },
       "numismatics_cost": 186,
@@ -149,11 +149,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:hay_block",
+        "id": "minecraft:hay_block",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 3
       },
       "numismatics_cost": 176,
@@ -164,11 +164,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:hay_block",
+        "id": "minecraft:hay_block",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 3
       },
       "numismatics_cost": 155,
@@ -178,11 +178,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:wheat",
+        "id": "minecraft:wheat",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 6
       },
       "numismatics_cost": 360,
@@ -190,11 +190,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:wheat",
+        "id": "minecraft:wheat",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 6
       },
       "numismatics_cost": 324,
@@ -205,11 +205,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:wheat",
+        "id": "minecraft:wheat",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 6
       },
       "numismatics_cost": 306,
@@ -220,11 +220,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:wheat",
+        "id": "minecraft:wheat",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 6
       },
       "numismatics_cost": 270,

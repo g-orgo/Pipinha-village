@@ -5,7 +5,10 @@ const nethergrapes = ["crimson_grape", "warped_grape"];
 const nether = ["crimson", "warped"];
 
 ServerEvents.recipes((e) => {
-  const custom = (recipe) => e.custom(global.toRecipe121(recipe));
+  const custom = (recipe) => {
+    const converted = global.toRecipe121(recipe);
+    if (global.recipeIdsExist121(converted)) e.custom(converted);
+  };
   const juiceFromPress = (juice, grape) => {
     custom({
       type: "create:compacting",

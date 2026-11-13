@@ -1,7 +1,10 @@
 console.info("[SOCIETY] addCrushingRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
-  const custom = (recipe) => e.custom(global.toRecipe121(recipe));
+  const custom = (recipe) => {
+    const converted = global.toRecipe121(recipe);
+    if (global.recipeIdsExist121(converted)) e.custom(converted);
+  };
   const crushedRecipes = (input, output, outputCount, ignoreMincer) => {
     if (!ignoreMincer) {
       custom({
@@ -88,10 +91,10 @@ ServerEvents.recipes((e) => {
       { item: "minecraft:sand" },
       { chance: 0.1, item: "minecraft:flint" },
       { chance: 0.05, item: "minecraft:clay_ball" },
-      { chance: 0.1, item: "minecraft:gold_nugget[minecraft:custom_data={SunlitArtificial:1b}]" },
-      { chance: 0.1, item: "create:copper_nugget[minecraft:custom_data={SunlitArtificial:1b}]" },
-      { chance: 0.1, item: "create:zinc_nugget[minecraft:custom_data={SunlitArtificial:1b}]" },
-      { chance: 0.1, item: "minecraft:iron_nugget[minecraft:custom_data={SunlitArtificial:1b}]" },
+      { chance: 0.1, item: "minecraft:gold_nugget", components: { "minecraft:custom_data": { SunlitArtificial: 1 } } },
+      { chance: 0.1, item: "create:copper_nugget", components: { "minecraft:custom_data": { SunlitArtificial: 1 } } },
+      { chance: 0.1, item: "create:zinc_nugget", components: { "minecraft:custom_data": { SunlitArtificial: 1 } } },
+      { chance: 0.1, item: "minecraft:iron_nugget", components: { "minecraft:custom_data": { SunlitArtificial: 1 } } },
     ],
   }).id("society:crushing/gravel");
   const spoutingRecipes = [

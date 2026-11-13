@@ -486,6 +486,14 @@ global.removedItems = [
   "displaydelight:fish_stew",
   "displaydelight:fried_rice",
   // Botania
+  "botania:creative_pool",
+  "botania:infrangible_platform",
+  "botania:lens_storm",
+  "botania:corporea_spark_creative",
+  "botania:pebble",
+  "botania:fertilizer",
+  "botania:floating_pollidisiac",
+  "botania:pollidisiac",
   // Veggiesdelight
   "veggiesdelight:dandelion_juice",
   "veggiesdelight:vegan_pizza",
@@ -538,7 +546,7 @@ global.removedItems = [
   "farmingforblockheads:fertilized_farmland_healthy_stable",
   "farmingforblockheads:fertilized_farmland_rich_stable",
   "farmingforblockheads:fertilized_farmland_rich",
-  "trials:crafter",
+  "minecraft:crafter",
   "crafting_on_a_stick:anvil",
   "crafting_on_a_stick:chipped_anvil",
   "crafting_on_a_stick:damaged_anvil",

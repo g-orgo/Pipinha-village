@@ -31,6 +31,7 @@
 	chapter.5C67DA068D003A2D.title: "{ftbquests.chapter.banners.title}"
 	chapter.67332F7DBC6DB88B.title: "{ftbquests.chapter.minerals.title}"
 	chapter.7C65158A3343D7FA.title: "{ftbquests.chapter.abandoned_farm.title}"
+	chapter.7D5C355F4BB66AE9.title: "{ftbquests.chapter.botania.title}"
 	chapter.7DC080E5FD09BC9E.title: "{ftbquests.chapter.creatures.title}"
 	chapter.7F2FF813A6AF57FE.title: "{ftbquests.chapter.transportation.title}"
 	chapter_group.106AD9AA3ADDE3AE.title: "{ftbquests.chapter_groups.1182997177293464494.title}"
@@ -380,6 +381,10 @@
 		"{ftbquests.chapter.welcome.quest1375AE2ECAC8C147.description6}"
 	]
 	quest.1375AE2ECAC8C147.title: "{ftbquests.chapter.welcome.quest1375AE2ECAC8C147.title}"
+	quest.137994A312B7CAEB.quest_desc: ["{ftbquests.chapter.botania.quest137994A312B7CAEB.description1}", "{ftbquests.chapter.botania.quest137994A312B7CAEB.description1}", "{ftbquests.chapter.botania.quest137994A312B7CAEB.description2}", "{ftbquests.chapter.botania.quest137994A312B7CAEB.description2}"]
+	quest.137994A312B7CAEB.title: "{ftbquests.chapter.botania.quest137994A312B7CAEB.title}"
+	quest.13A0704DCABC95E9.quest_desc: ["{ftbquests.chapter.botania.quest13A0704DCABC95E9.description1}", "{ftbquests.chapter.botania.quest13A0704DCABC95E9.description1}", "{ftbquests.chapter.botania.quest13A0704DCABC95E9.description2}", "{ftbquests.chapter.botania.quest13A0704DCABC95E9.description2}"]
+	quest.13A0704DCABC95E9.title: "{ftbquests.chapter.botania.quest13A0704DCABC95E9.title}"
 	quest.140472B5516ED9F1.quest_desc: [
 		"{ftbquests.chapter.ivi__mechanical_farming.quest140472B5516ED9F1.description1}"
 		""
@@ -483,6 +488,8 @@
 		"{ftbquests.chapter.crops.quest18E4EF841B0D1DC7.description2}"
 	]
 	quest.18E4EF841B0D1DC7.quest_subtitle: "{ftbquests.chapter.crops.quest18E4EF841B0D1DC7.subtitle}"
+	quest.18EDA9E2559C26E1.quest_desc: ["{ftbquests.chapter.botania.quest18EDA9E2559C26E1.description1}", "{ftbquests.chapter.botania.quest18EDA9E2559C26E1.description1}", "{ftbquests.chapter.botania.quest18EDA9E2559C26E1.description2}", "{ftbquests.chapter.botania.quest18EDA9E2559C26E1.description2}"]
+	quest.18EDA9E2559C26E1.title: "{ftbquests.chapter.botania.quest18EDA9E2559C26E1.title}"
 	quest.19B466150B9315AE.quest_subtitle: "{ftbquests.chapter.relics.quest19B466150B9315AE.subtitle}"
 	quest.19D2D00AC36C9049.title: "{ftbquests.chapter.drinks.quest19D2D00AC36C9049.title}"
 	quest.1A1129507F643085.quest_desc: ["{ftbquests.chapter.ivi__mechanical_farming.quest1A1129507F643085.description1}"]
@@ -532,11 +539,16 @@
 		"{ftbquests.chapter.armor_weapons__tools.quest1BA73EA72B471270.description2}"
 	]
 	quest.1BA73EA72B471270.quest_subtitle: "{ftbquests.chapter.armor_weapons__tools.quest1BA73EA72B471270.subtitle}"
+	quest.1BF054DD14781BAD.quest_desc: ["{ftbquests.chapter.botania.quest1BF054DD14781BAD.description1}", "{ftbquests.chapter.botania.quest1BF054DD14781BAD.description1}", "{ftbquests.chapter.botania.quest1BF054DD14781BAD.description2}", "{ftbquests.chapter.botania.quest1BF054DD14781BAD.description2}", "{ftbquests.chapter.botania.quest1BF054DD14781BAD.description3}", "{ftbquests.chapter.botania.quest1BF054DD14781BAD.description3}"]
+	quest.1BF054DD14781BAD.title: "{ftbquests.chapter.botania.quest1BF054DD14781BAD.title}"
 	quest.1CA5AF97F26ABC00.quest_desc: [
 		"{ftbquests.chapter.iv__prismatic_farming.quest1CA5AF97F26ABC00.description1}"
 		""
 		"{ftbquests.chapter.iv__prismatic_farming.quest1CA5AF97F26ABC00.description2}"
 	]
+	quest.1CC084C4F5E11C97.quest_desc: ["{ftbquests.chapter.botania.quest1CC084C4F5E11C97.description1}", "{ftbquests.chapter.botania.quest1CC084C4F5E11C97.description1}", "{ftbquests.chapter.botania.quest1CC084C4F5E11C97.description2}", "{ftbquests.chapter.botania.quest1CC084C4F5E11C97.description2}"]
+	quest.1CC084C4F5E11C97.title: "{ftbquests.chapter.botania.quest1CC084C4F5E11C97.title}"
+	quest.1D0F4F3CFC1585A9.quest_desc: ["{ftbquests.chapter.botania.quest1D0F4F3CFC1585A9.description1}", "{ftbquests.chapter.botania.quest1D0F4F3CFC1585A9.description1}", "{ftbquests.chapter.botania.quest1D0F4F3CFC1585A9.description2}", "{ftbquests.chapter.botania.quest1D0F4F3CFC1585A9.description2}"]
 	quest.1D39A308673157BA.quest_desc: [
 		"{ftbquests.chapter.crops.quest1D39A308673157BA.description1}"
 		""
@@ -689,12 +701,16 @@
 		""
 		"{ftbquests.chapter.armor_weapons__tools.quest2447ECC5ACB657A7.description2}"
 	]
+	quest.247D9F5D8A4FAE35.quest_desc: ["{ftbquests.chapter.botania.quest247D9F5D8A4FAE35.description1}", "{ftbquests.chapter.botania.quest247D9F5D8A4FAE35.description1}", "{ftbquests.chapter.botania.quest247D9F5D8A4FAE35.description2}", "{ftbquests.chapter.botania.quest247D9F5D8A4FAE35.description2}"]
+	quest.247D9F5D8A4FAE35.title: "{ftbquests.chapter.botania.quest247D9F5D8A4FAE35.title}"
 	quest.24C86673E1F57A3E.quest_desc: [
 		"{ftbquests.chapter.getting_started.quest24C86673E1F57A3E.description1}"
 		""
 		"{ftbquests.chapter.getting_started.quest24C86673E1F57A3E.description2}"
 	]
 	quest.24C86673E1F57A3E.quest_subtitle: "{ftbquests.chapter.getting_started.quest24C86673E1F57A3E.subtitle}"
+	quest.24D0021DB56E9E46.quest_desc: ["{ftbquests.chapter.botania.quest24D0021DB56E9E46.description1}", "{ftbquests.chapter.botania.quest24D0021DB56E9E46.description1}", "{ftbquests.chapter.botania.quest24D0021DB56E9E46.description2}", "{ftbquests.chapter.botania.quest24D0021DB56E9E46.description2}"]
+	quest.24D0021DB56E9E46.title: "{ftbquests.chapter.botania.quest24D0021DB56E9E46.title}"
 	quest.25305BECA3C32315.quest_desc: [
 		"{ftbquests.chapter.welcome.quest25305BECA3C32315.description1}"
 		""
@@ -774,6 +790,8 @@
 	]
 	quest.272D9228BC46AEE0.quest_subtitle: "{ftbquests.chapter.perfection.quest272D9228BC46AEE0.subtitle}"
 	quest.272D9228BC46AEE0.title: "{ftbquests.chapter.perfection.quest272D9228BC46AEE0.title}"
+	quest.27437A0F629AF989.quest_desc: ["{ftbquests.chapter.botania.quest27437A0F629AF989.description1}", "{ftbquests.chapter.botania.quest27437A0F629AF989.description1}", "{ftbquests.chapter.botania.quest27437A0F629AF989.description2}", "{ftbquests.chapter.botania.quest27437A0F629AF989.description2}", "{ftbquests.chapter.botania.quest27437A0F629AF989.description3}", "{ftbquests.chapter.botania.quest27437A0F629AF989.description3}"]
+	quest.27437A0F629AF989.title: "{ftbquests.chapter.botania.quest27437A0F629AF989.title}"
 	quest.28029230D7FD63D6.quest_desc: [
 		"{ftbquests.chapter.getting_started.quest28029230D7FD63D6.description1}"
 		""
@@ -900,6 +918,7 @@
 	quest.318022FDED8803BD.title: "{ftbquests.chapter.getting_started.quest318022FDED8803BD.title}"
 	quest.319129CE8210964A.quest_desc: ["{ftbquests.chapter.armor_weapons__tools.quest319129CE8210964A.description1}"]
 	quest.319129CE8210964A.title: "{ftbquests.chapter.armor_weapons__tools.quest319129CE8210964A.title}"
+	quest.31BC474EE5C53DAB.quest_desc: ["{ftbquests.chapter.botania.quest31BC474EE5C53DAB.description1}", "{ftbquests.chapter.botania.quest31BC474EE5C53DAB.description1}", "{ftbquests.chapter.botania.quest31BC474EE5C53DAB.description2}", "{ftbquests.chapter.botania.quest31BC474EE5C53DAB.description2}", "{ftbquests.chapter.botania.quest31BC474EE5C53DAB.description3}", "{ftbquests.chapter.botania.quest31BC474EE5C53DAB.description3}"]
 	quest.31F6C5811A72396C.quest_desc: [
 		"{ftbquests.chapter.tools.quest31F6C5811A72396C.description1}"
 		""
@@ -954,6 +973,8 @@
 		"{ftbquests.chapter.getting_started.quest3385C414574E7FE2.description3}"
 	]
 	quest.3385C414574E7FE2.title: "{ftbquests.chapter.getting_started.quest3385C414574E7FE2.title}"
+	quest.33B78DFDDC041570.quest_desc: ["{ftbquests.chapter.botania.quest33B78DFDDC041570.description1}", "{ftbquests.chapter.botania.quest33B78DFDDC041570.description1}", "{ftbquests.chapter.botania.quest33B78DFDDC041570.description2}", "{ftbquests.chapter.botania.quest33B78DFDDC041570.description2}", "{ftbquests.chapter.botania.quest33B78DFDDC041570.description3}", "{ftbquests.chapter.botania.quest33B78DFDDC041570.description3}", "{ftbquests.chapter.botania.quest33B78DFDDC041570.description4}", "{ftbquests.chapter.botania.quest33B78DFDDC041570.description4}"]
+	quest.33B78DFDDC041570.title: "{ftbquests.chapter.botania.quest33B78DFDDC041570.title}"
 	quest.33E3889DD46DF291.quest_desc: [
 		"{ftbquests.chapter.creatures.quest33E3889DD46DF291.description1}"
 		""
@@ -1070,6 +1091,7 @@
 		""
 		"{ftbquests.chapter.tools.quest3A5DF5AD3C5299DE.description2}"
 	]
+	quest.3B0A3083FFE1416B.quest_desc: ["{ftbquests.chapter.botania.quest3B0A3083FFE1416B.description1}", "{ftbquests.chapter.botania.quest3B0A3083FFE1416B.description1}", "{ftbquests.chapter.botania.quest3B0A3083FFE1416B.description2}", "{ftbquests.chapter.botania.quest3B0A3083FFE1416B.description2}"]
 	quest.3B30AFF91D59746A.quest_desc: [
 		"{ftbquests.chapter.armor_weapons__tools.quest3B30AFF91D59746A.description1}"
 		""
@@ -1202,6 +1224,7 @@
 		"{ftbquests.chapter.crops.quest3E57558B04952D59.description2}"
 	]
 	quest.3E57558B04952D59.quest_subtitle: "{ftbquests.chapter.crops.quest3E57558B04952D59.subtitle}"
+	quest.3EC0E2F632F6A20D.quest_desc: ["{ftbquests.chapter.botania.quest3EC0E2F632F6A20D.description1}", "{ftbquests.chapter.botania.quest3EC0E2F632F6A20D.description1}", "{ftbquests.chapter.botania.quest3EC0E2F632F6A20D.description2}", "{ftbquests.chapter.botania.quest3EC0E2F632F6A20D.description2}"]
 	quest.3EF57F71C1C786FE.title: "{ftbquests.chapter.pantry.quest3EF57F71C1C786FE.title}"
 	quest.3F759C6DEEBC61FD.quest_desc: [
 		"{ftbquests.chapter.getting_started.quest3F759C6DEEBC61FD.description1}"
@@ -1217,6 +1240,7 @@
 		"{ftbquests.chapter.iv__prismatic_farming.quest3FA607115DB107D9.description3}"
 	]
 	quest.3FA607115DB107D9.title: "{ftbquests.chapter.iv__prismatic_farming.quest3FA607115DB107D9.title}"
+	quest.3FC4155A11F14663.title: "{ftbquests.chapter.armor_weapons__tools.quest3FC4155A11F14663.title}"
 	quest.3FF6591FC54809B1.quest_subtitle: "{ftbquests.chapter.drinks.quest3FF6591FC54809B1.subtitle}"
 	quest.4041362E384D0744.quest_subtitle: "{ftbquests.chapter.drinks.quest4041362E384D0744.subtitle}"
 	quest.40845F4C88AD03CB.quest_desc: ["{ftbquests.chapter.iv__prismatic_farming.quest40845F4C88AD03CB.description1}"]
@@ -1291,6 +1315,8 @@
 		"{ftbquests.chapter.ii__building_up_the_farm.quest42C8E1F0D9A5B2BD.description2}"
 	]
 	quest.42C8E1F0D9A5B2BD.quest_subtitle: "{ftbquests.chapter.ii__building_up_the_farm.quest42C8E1F0D9A5B2BD.subtitle}"
+	quest.42DA09B2A18E2ED1.quest_desc: ["{ftbquests.chapter.botania.quest42DA09B2A18E2ED1.description1}", "{ftbquests.chapter.botania.quest42DA09B2A18E2ED1.description1}", "{ftbquests.chapter.botania.quest42DA09B2A18E2ED1.description2}", "{ftbquests.chapter.botania.quest42DA09B2A18E2ED1.description2}"]
+	quest.42DA09B2A18E2ED1.title: "{ftbquests.chapter.botania.quest42DA09B2A18E2ED1.title}"
 	quest.43591809C1D493F5.quest_desc: ["{ftbquests.chapter.pantry.quest43591809C1D493F5.description1}"]
 	quest.43591809C1D493F5.title: "{ftbquests.chapter.pantry.quest43591809C1D493F5.title}"
 	quest.43C52E202277C5AA.title: "{ftbquests.chapter.armor_weapons__tools.quest43C52E202277C5AA.title}"
@@ -1312,6 +1338,8 @@
 		"{ftbquests.chapter.iii__advanced_farming.quest44ACDBB4DE598EA6.description2}"
 	]
 	quest.44ACDBB4DE598EA6.title: "{ftbquests.chapter.iii__advanced_farming.quest44ACDBB4DE598EA6.title}"
+	quest.44C80D7C3D2B11E8.quest_desc: ["{ftbquests.chapter.botania.quest44C80D7C3D2B11E8.description1}", "{ftbquests.chapter.botania.quest44C80D7C3D2B11E8.description1}", "{ftbquests.chapter.botania.quest44C80D7C3D2B11E8.description2}", "{ftbquests.chapter.botania.quest44C80D7C3D2B11E8.description2}"]
+	quest.44C80D7C3D2B11E8.title: "{ftbquests.chapter.botania.quest44C80D7C3D2B11E8.title}"
 	quest.45120BEE01BB36B4.quest_desc: [
 		"{ftbquests.chapter.perfection.quest45120BEE01BB36B4.description1}"
 		""
@@ -1391,6 +1419,7 @@
 	quest.469CEB4C8B3C0EA9.quest_desc: ["{ftbquests.chapter.fish_tank.quest469CEB4C8B3C0EA9.description1}"]
 	quest.469CEB4C8B3C0EA9.quest_subtitle: "{ftbquests.chapter.fish_tank.quest469CEB4C8B3C0EA9.subtitle}"
 	quest.469CEB4C8B3C0EA9.title: "{ftbquests.chapter.fish_tank.quest469CEB4C8B3C0EA9.title}"
+	quest.46F86152B5B36A3B.quest_desc: ["{ftbquests.chapter.botania.quest46F86152B5B36A3B.description1}", "{ftbquests.chapter.botania.quest46F86152B5B36A3B.description1}", "{ftbquests.chapter.botania.quest46F86152B5B36A3B.description2}", "{ftbquests.chapter.botania.quest46F86152B5B36A3B.description2}", "{ftbquests.chapter.botania.quest46F86152B5B36A3B.description3}", "{ftbquests.chapter.botania.quest46F86152B5B36A3B.description3}"]
 	quest.472A339723DE2777.quest_desc: [
 		"{ftbquests.chapter.ivi__mechanical_farming.quest472A339723DE2777.description1}"
 		""
@@ -1483,6 +1512,7 @@
 	]
 	quest.4AB1091C7A14C042.quest_subtitle: "{ftbquests.chapter.profissoes.quest4AB1091C7A14C042.subtitle}"
 	quest.4AB1091C7A14C042.title: "{ftbquests.chapter.profissoes.quest4AB1091C7A14C042.title}"
+	quest.4AF0A434148274AC.quest_desc: ["{ftbquests.chapter.botania.quest4AF0A434148274AC.description1}", "{ftbquests.chapter.botania.quest4AF0A434148274AC.description1}"]
 	quest.4B9634D942E590AB.quest_desc: [
 		"{ftbquests.chapter.vault.quest4B9634D942E590AB.description1}"
 		""
@@ -1532,6 +1562,8 @@
 		"{ftbquests.chapter.iii__advanced_farming.quest4DC073ABF3D72467.description3}"
 	]
 	quest.4DC073ABF3D72467.title: "{ftbquests.chapter.iii__advanced_farming.quest4DC073ABF3D72467.title}"
+	quest.4DE0F1BADE3F2F57.quest_desc: ["{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.description1}", "{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.description1}", "{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.description2}", "{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.description2}", "{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.description3}", "{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.description3}", "{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.description4}", "{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.description4}"]
+	quest.4DE0F1BADE3F2F57.title: "{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.title}"
 	quest.4E5BF157FDA7490A.quest_desc: ["{ftbquests.chapter.iv__prismatic_farming.quest4E5BF157FDA7490A.description1}"]
 	quest.4E5BF157FDA7490A.title: "{ftbquests.chapter.iv__prismatic_farming.quest4E5BF157FDA7490A.title}"
 	quest.4E6A1C2B9D3F5A07.quest_desc: [
@@ -1641,6 +1673,7 @@
 	]
 	quest.527F7721ED60868C.title: "{ftbquests.chapter.iii__advanced_farming.quest527F7721ED60868C.title}"
 	quest.52A3D52D6251EDB6.title: "{ftbquests.chapter.boiler_room.quest52A3D52D6251EDB6.title}"
+	quest.52AB7E364A737557.quest_desc: ["{ftbquests.chapter.botania.quest52AB7E364A737557.description1}", "{ftbquests.chapter.botania.quest52AB7E364A737557.description1}", "{ftbquests.chapter.botania.quest52AB7E364A737557.description2}", "{ftbquests.chapter.botania.quest52AB7E364A737557.description2}", "{ftbquests.chapter.botania.quest52AB7E364A737557.description3}", "{ftbquests.chapter.botania.quest52AB7E364A737557.description3}"]
 	quest.52F1DCA9462F825F.quest_desc: [
 		"{ftbquests.chapter.villagers.quest52F1DCA9462F825F.description1}"
 		""
@@ -1752,6 +1785,8 @@
 	]
 	quest.574978CE534E254B.quest_desc: ["{ftbquests.chapter.tools.quest574978CE534E254B.description1}"]
 	quest.574978CE534E254B.title: "{ftbquests.chapter.tools.quest574978CE534E254B.title}"
+	quest.5797BBD7788369E3.quest_desc: ["{ftbquests.chapter.botania.quest5797BBD7788369E3.description1}", "{ftbquests.chapter.botania.quest5797BBD7788369E3.description1}", "{ftbquests.chapter.botania.quest5797BBD7788369E3.description2}", "{ftbquests.chapter.botania.quest5797BBD7788369E3.description2}", "{ftbquests.chapter.botania.quest5797BBD7788369E3.description3}", "{ftbquests.chapter.botania.quest5797BBD7788369E3.description3}"]
+	quest.5797BBD7788369E3.title: "{ftbquests.chapter.botania.quest5797BBD7788369E3.title}"
 	quest.580FA272625D0922.quest_subtitle: "{ftbquests.chapter.drinks.quest580FA272625D0922.subtitle}"
 	quest.5837B77D1243D30F.quest_desc: [
 		"{ftbquests.chapter.tools.quest5837B77D1243D30F.description1}"
@@ -1914,6 +1949,8 @@
 	quest.5C8CF40663CCE754.quest_desc: ["{ftbquests.chapter.armor_weapons__tools.quest5C8CF40663CCE754.description1}"]
 	quest.5D6623B36EC39685.quest_subtitle: "{ftbquests.chapter.drinks.quest5D6623B36EC39685.subtitle}"
 	quest.5D95CBE19118EAD4.quest_subtitle: "{ftbquests.chapter.drinks.quest5D95CBE19118EAD4.subtitle}"
+	quest.5E5E6E09E6C6DF02.quest_desc: ["{ftbquests.chapter.botania.quest5E5E6E09E6C6DF02.description1}", "{ftbquests.chapter.botania.quest5E5E6E09E6C6DF02.description1}", "{ftbquests.chapter.botania.quest5E5E6E09E6C6DF02.description2}", "{ftbquests.chapter.botania.quest5E5E6E09E6C6DF02.description2}", "{ftbquests.chapter.botania.quest5E5E6E09E6C6DF02.description3}", "{ftbquests.chapter.botania.quest5E5E6E09E6C6DF02.description3}"]
+	quest.5E5E6E09E6C6DF02.title: "{ftbquests.chapter.botania.quest5E5E6E09E6C6DF02.title}"
 	quest.5E89F151176083E6.quest_desc: ["{ftbquests.chapter.armor_weapons__tools.quest5E89F151176083E6.description1}"]
 	quest.5E89F151176083E6.quest_subtitle: "{ftbquests.chapter.armor_weapons__tools.quest5E89F151176083E6.subtitle}"
 	quest.5FB57C45A25D41F0.quest_desc: [
@@ -1963,6 +2000,8 @@
 	]
 	quest.6021F749EAFF7359.quest_subtitle: "{ftbquests.chapter.creatures.quest6021F749EAFF7359.subtitle}"
 	quest.6021F749EAFF7359.title: "{ftbquests.chapter.creatures.quest6021F749EAFF7359.title}"
+	quest.6080E8F9B0DDAE72.subtitle: "{ftbquests.chapter.armor_weapons__tools.quest6080E8F9B0DDAE72.subtitle}"
+	quest.6080E8F9B0DDAE72.title: "{ftbquests.chapter.armor_weapons__tools.quest6080E8F9B0DDAE72.title}"
 	quest.610AB8B499859791.title: "{ftbquests.chapter.fish_tank.quest610AB8B499859791.title}"
 	quest.611336F023B21ADF.quest_subtitle: "{ftbquests.chapter.drinks.quest611336F023B21ADF.subtitle}"
 	quest.6132A6DBE97F16BD.quest_desc: ["{ftbquests.chapter.ii__building_up_the_farm.quest6132A6DBE97F16BD.description1}"]
@@ -1991,6 +2030,7 @@
 	]
 	quest.61AE28BDF887A1DF.quest_subtitle: "{ftbquests.chapter.guias_pipinha.quest882A4007B68900CC.subtitle}"
 	quest.61AE28BDF887A1DF.title: "{ftbquests.chapter.guias_pipinha.quest882A4007B68900CC.title}"
+	quest.61F2F0C46147E002.quest_desc: ["{ftbquests.chapter.botania.quest61F2F0C46147E002.description1}", "{ftbquests.chapter.botania.quest61F2F0C46147E002.description1}", "{ftbquests.chapter.botania.quest61F2F0C46147E002.description2}", "{ftbquests.chapter.botania.quest61F2F0C46147E002.description2}", "{ftbquests.chapter.botania.quest61F2F0C46147E002.description3}", "{ftbquests.chapter.botania.quest61F2F0C46147E002.description3}"]
 	quest.62129A6009E60E0F.quest_desc: [
 		"{ftbquests.chapter.ii__building_up_the_farm.quest62129A6009E60E0F.description1}"
 		""
@@ -2008,6 +2048,8 @@
 	]
 	quest.628376D35C63F871.quest_subtitle: "{ftbquests.chapter.profissoes.quest827250DFE9007E36.subtitle}"
 	quest.628376D35C63F871.title: "{ftbquests.chapter.profissoes.quest827250DFE9007E36.title}"
+	quest.631D3F5020956DD7.quest_desc: ["{ftbquests.chapter.botania.quest631D3F5020956DD7.description1}", "{ftbquests.chapter.botania.quest631D3F5020956DD7.description1}", "{ftbquests.chapter.botania.quest631D3F5020956DD7.description2}", "{ftbquests.chapter.botania.quest631D3F5020956DD7.description2}"]
+	quest.631D3F5020956DD7.title: "{ftbquests.chapter.botania.quest631D3F5020956DD7.title}"
 	quest.6327893DC34214E6.quest_subtitle: "{ftbquests.chapter.drinks.quest6327893DC34214E6.subtitle}"
 	quest.63B8857324997ED2.quest_desc: [
 		"{ftbquests.chapter.profissoes.questD98B42477F62E69C.description1}"
@@ -2165,6 +2207,8 @@
 		""
 		"{ftbquests.chapter.ii__building_up_the_farm.quest6971F0B3FC26D411.description2}"
 	]
+	quest.69A2A84A2830134C.quest_desc: ["{ftbquests.chapter.botania.quest69A2A84A2830134C.description1}", "{ftbquests.chapter.botania.quest69A2A84A2830134C.description1}", "{ftbquests.chapter.botania.quest69A2A84A2830134C.description2}", "{ftbquests.chapter.botania.quest69A2A84A2830134C.description2}", "{ftbquests.chapter.botania.quest69A2A84A2830134C.description3}", "{ftbquests.chapter.botania.quest69A2A84A2830134C.description3}"]
+	quest.69A2A84A2830134C.title: "{ftbquests.chapter.botania.quest69A2A84A2830134C.title}"
 	quest.69C3121C90AABBF4.quest_desc: [
 		"{ftbquests.chapter.ii__building_up_the_farm.quest69C3121C90AABBF4.description1}"
 		""
@@ -2251,12 +2295,15 @@
 		"{ftbquests.chapter.ii__building_up_the_farm.quest6D534E699BF820CE.description2}"
 	]
 	quest.6D5F31A96631A62D.title: "{ftbquests.chapter.perfection.quest6D5F31A96631A62D.title}"
+	quest.6DAC81A05E481E58.quest_desc: ["{ftbquests.chapter.botania.quest6DAC81A05E481E58.description1}", "{ftbquests.chapter.botania.quest6DAC81A05E481E58.description1}", "{ftbquests.chapter.botania.quest6DAC81A05E481E58.description2}", "{ftbquests.chapter.botania.quest6DAC81A05E481E58.description2}", "{ftbquests.chapter.botania.quest6DAC81A05E481E58.description3}", "{ftbquests.chapter.botania.quest6DAC81A05E481E58.description3}"]
+	quest.6DAC81A05E481E58.title: "{ftbquests.chapter.botania.quest6DAC81A05E481E58.title}"
 	quest.6DAD35E264D3E056.quest_desc: [
 		"{ftbquests.chapter.tools.quest6DAD35E264D3E056.description1}"
 		""
 		"{ftbquests.chapter.tools.quest6DAD35E264D3E056.description2}"
 	]
 	quest.6DAD35E264D3E056.title: "{ftbquests.chapter.tools.quest6DAD35E264D3E056.title}"
+	quest.6E4CC63B8CF1EDAF.title: "{ftbquests.chapter.armor_weapons__tools.quest6E4CC63B8CF1EDAF.title}"
 	quest.6EA5618181628D34.quest_desc: [
 		"{ftbquests.chapter.welcome.quest6EA5618181628D34.description1}"
 		""
@@ -2268,6 +2315,9 @@
 	]
 	quest.6EA5618181628D34.quest_subtitle: "{ftbquests.chapter.welcome.quest6EA5618181628D34.subtitle}"
 	quest.6EA5618181628D34.title: "{ftbquests.chapter.welcome.quest6EA5618181628D34.title}"
+	quest.6EBAA004C1A50E98.quest_desc: ["{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.description1}"]
+	quest.6EBAA004C1A50E98.subtitle: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.subtitle}"
+	quest.6EBAA004C1A50E98.title: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.title}"
 	quest.6EE15AF255859EE6.quest_desc: [
 		"{ftbquests.chapter.profissoes.quest8E8CF752F243D4FE.description1}"
 		""
@@ -2447,6 +2497,7 @@
 		""
 		"{ftbquests.chapter.iv__prismatic_farming.quest766BAE4A5160FD13.description3}"
 	]
+	quest.768A5A2162C079D0.quest_desc: ["{ftbquests.chapter.botania.quest768A5A2162C079D0.description1}", "{ftbquests.chapter.botania.quest768A5A2162C079D0.description1}", "{ftbquests.chapter.botania.quest768A5A2162C079D0.description2}", "{ftbquests.chapter.botania.quest768A5A2162C079D0.description2}"]
 	quest.769AC695FD3F8DC9.quest_desc: [
 		"{ftbquests.chapter.perfection.quest769AC695FD3F8DC9.description1}"
 		""
@@ -2493,6 +2544,7 @@
 		"{ftbquests.chapter.iv__prismatic_farming.quest785F3754068D5C2D.description2}"
 	]
 	quest.785F3754068D5C2D.title: "{ftbquests.chapter.iv__prismatic_farming.quest785F3754068D5C2D.title}"
+	quest.796B163FC5C54124.quest_desc: ["{ftbquests.chapter.botania.quest796B163FC5C54124.description1}", "{ftbquests.chapter.botania.quest796B163FC5C54124.description1}", "{ftbquests.chapter.botania.quest796B163FC5C54124.description2}", "{ftbquests.chapter.botania.quest796B163FC5C54124.description2}", "{ftbquests.chapter.botania.quest796B163FC5C54124.description3}", "{ftbquests.chapter.botania.quest796B163FC5C54124.description3}"]
 	quest.79C92AEDE15E7E6D.quest_desc: [
 		"{ftbquests.chapter.iii__advanced_farming.quest79C92AEDE15E7E6D.description1}"
 		""
@@ -2575,6 +2627,8 @@
 	]
 	quest.7D25F7C2281DBCD0.title: "{ftbquests.chapter.iv__prismatic_farming.quest7D25F7C2281DBCD0.title}"
 	quest.7E69F542D4EDE72B.title: "{ftbquests.chapter.crops.quest7E69F542D4EDE72B.title}"
+	quest.7E6A0CF4C704430C.quest_desc: ["{ftbquests.chapter.botania.quest7E6A0CF4C704430C.description1}", "{ftbquests.chapter.botania.quest7E6A0CF4C704430C.description1}", "{ftbquests.chapter.botania.quest7E6A0CF4C704430C.description2}", "{ftbquests.chapter.botania.quest7E6A0CF4C704430C.description2}", "{ftbquests.chapter.botania.quest7E6A0CF4C704430C.description3}", "{ftbquests.chapter.botania.quest7E6A0CF4C704430C.description3}"]
+	quest.7E6A0CF4C704430C.title: "{ftbquests.chapter.botania.quest7E6A0CF4C704430C.title}"
 	quest.7E94B1934D0257E8.quest_desc: ["{ftbquests.chapter.tools.quest7E94B1934D0257E8.description1}"]
 	quest.7E94B1934D0257E8.title: "{ftbquests.chapter.tools.quest7E94B1934D0257E8.title}"
 	quest.7ED74D28362C25CE.quest_desc: [
@@ -2616,11 +2670,14 @@
 	task.0E5D7529339C2A99.title: "{ftbquests.chapter.armor_weapons__tools.quest43C52E202277C5AA.task.1035112309185063577.title}"
 	task.0F83D9F009EFB8AB.title: "{ftbquests.chapter.creatures.quest6021F749EAFF7359.task.1117976757500098731.title}"
 	task.0F890C6BB5B2D327.title: "{ftbquests.chapter.perfection.quest17D1D7EDA66A95F4.task.1119439639127708455.title}"
+	task.1033245111877388470.title: "{ftbquests.chapter.botania.quest1CC084C4F5E11C97.task.1033245111877388470.title}"
 	task.118E7A1D3DA7789D.title: "{ftbquests.chapter.profissoes.questD7DF8466DAB4076E.task.9E00C28F16F9BE7F.title}"
 	task.12AF72DCF6F3A875.title: "{ftbquests.chapter.vault.quest4B9634D942E590AB.task.1346421106968602741.title}"
 	task.12B5F8FF7A12B850.title: "{ftbquests.chapter.welcome.quest25777939975C3CEE.task.1348257439615727696.title}"
 	task.13169DA529D1555A.title: "{ftbquests.chapter.pantry.quest314D5DDD65659FDE.task.1375460068905014618.title}"
 	task.1346109CC1B282E8.title: "{ftbquests.chapter.ivi__mechanical_farming.quest7718055315817CB1.task.1388815800541020904.title}"
+	task.1358672424212654092.title: "{ftbquests.chapter.armor_weapons__tools.quest6080E8F9B0DDAE72.task.1358672424212654092.title}"
+	task.138882487491625451.title: "{ftbquests.chapter.botania.quest137994A312B7CAEB.task.138882487491625451.title}"
 	task.13FE62BC8E043289.title: "{ftbquests.chapter.fishing.questC17CF9D782787BE.task.1440697492781150857.title}"
 	task.14B9889CA24FCD78.title: "{ftbquests.chapter.crops.quest7E69F542D4EDE72B.task.1493374957769444728.title}"
 	task.14EDDD83CB99C1B4.title: "{ftbquests.chapter.iii__advanced_farming.quest7ADD57C8AF4092B2.task.1508105008365289908.title}"
@@ -2642,6 +2699,7 @@
 	task.224A29585E36B057.title: "{ftbquests.chapter.iv__prismatic_farming.quest40845F4C88AD03CB.task.2470832805080641623.title}"
 	task.22C230033AC60FCC.title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.task.2504617133200510924.title}"
 	task.2313FD2F31AC09D4.title: "{ftbquests.chapter.minerals.quest329C4304D2EDEE72.task.2527642195023628756.title}"
+	task.232572099384710594.title: "{ftbquests.chapter.armor_weapons__tools.quest3FC4155A11F14663.task.232572099384710594.title}"
 	task.238260076624C9BF.title: "{ftbquests.chapter.iv__prismatic_farming.quest68915F617033BDF9.task.2558713123194587583.title}"
 	task.243D36F88B4D14A6.title: "{ftbquests.chapter.villagers.quest55F17BB945CA5BB2.task.2611303800061629606.title}"
 	task.252348AEE006A1CE.title: "{ftbquests.chapter.guias_pipinha.questAFA55C681B869A8F.task.8E2E538AC21D9568.title}"
@@ -2659,6 +2717,7 @@
 	task.2E87112873365470.title: "{ftbquests.chapter.ii__building_up_the_farm.quest6EEBD017839FF628.task.3352667313029928048.title}"
 	task.2ED9B316F07C51F3.title: "{ftbquests.chapter.armor_weapons__tools.quest33FD69B12C21E495.task.3375926306796229107.title}"
 	task.2F6745B71CE2EE40.title: "{ftbquests.chapter.perfection.quest2D9AD3D0C59E682B.task.3415775495149776448.title}"
+	task.3015408278439669774.title: "{ftbquests.chapter.botania.quest42DA09B2A18E2ED1.task.3015408278439669774.title}"
 	task.30CB90A24037FCC0.title: "{ftbquests.chapter.artifacts.quest2255D3F05F8B895A.task.3516062960629316800.title}"
 	task.3106C0E203B13B16.title: "{ftbquests.chapter.creatures.quest66C03C4DA3F21900.task.3532723034675821334.title}"
 	task.31BD8DCF91D1BE89.title: "{ftbquests.chapter.transportation.quest3BC6467B02D74FAC.task.3584176801100971657.title}"
@@ -2683,7 +2742,9 @@
 	task.3FE67ED6D7C3F44B.title: "{ftbquests.chapter.iv__prismatic_farming.quest25677844C218103A.task.4604507130240955467.title}"
 	task.41A7F16CE512A270.title: "{ftbquests.chapter.creatures.quest7BEAE861B07734BE.task.4731015383577961072.title}"
 	task.41A9A408D04E2F1F.title: "{ftbquests.chapter.profissoes.quest5B1F0A3C7D2E4F63.task.41A9A408D04E2F1F.title}"
+	task.4271223054018155394.title: "{ftbquests.chapter.botania.quest4DE0F1BADE3F2F57.task.4271223054018155394.title}"
 	task.429E9537297CFBE7.title: "{ftbquests.chapter.transportation.questE93089181D8EE7B.task.4800438316975324135.title}"
+	task.4416200878094459770.title: "{ftbquests.chapter.abandoned_farm.quest6EBAA004C1A50E98.task.4416200878094459770.title}"
 	task.445CBBEAFC66083B.title: "{ftbquests.chapter.minerals.quest7BA3A7D6D37CFA69.task.4926018710367766587.title}"
 	task.464C7A8C47E8791F.title: "{ftbquests.chapter.welcome.quest6CB695EFC40CBAFC.task.464C7A8C47E8791F.title}"
 	task.46B1148F60C66C53.title: "{ftbquests.chapter.fish_tank.quest469CEB4C8B3C0EA9.task.5093875259569237075.title}"
@@ -2766,15 +2827,18 @@
 	task.6FDABEB70564BBA4.title: "{ftbquests.chapter.profissoes.questAAA34CCC3A2F19BB.task.90CB503543A2642C.title}"
 	task.7059824FCE38CB5A.title: "{ftbquests.chapter.perfection.quest6C7C42BC9E072DE1.task.8095645084449033050.title}"
 	task.7093310473EC2AE3.title: "{ftbquests.chapter.tools.quest2193ACEC05CC5B07.task.8111881249018882787.title}"
+	task.7119071952871301401.title: "{ftbquests.chapter.botania.quest7E6A0CF4C704430C.task.7119071952871301401.title}"
 	task.713FD6544CCC4F5C.title: "{ftbquests.chapter.pantry.quest7CBAF0748446A0C2.task.8160476707372683100.title}"
 	task.7162E14466460F42.title: "{ftbquests.chapter.iv__prismatic_farming.quest21671DA370EA7A37.task.8170340357893394242.title}"
 	task.71C9DCC83451DA09.title: "{ftbquests.chapter.getting_started.quest318022FDED8803BD.task.8199327349034048009.title}"
 	task.71E5D254AB607AB2.title: "{ftbquests.chapter.creatures.quest5FEA1AC9BA13CC63.task.8207197157046909618.title}"
+	task.7235494118548518043.title: "{ftbquests.chapter.botania.quest27437A0F629AF989.task.7235494118548518043.title}"
 	task.7371A850C556BDEC.title: "{ftbquests.chapter.creatures.quest33E3889DD46DF291.task.8318615051591663084.title}"
 	task.753DE0AD1C863764.title: "{ftbquests.chapter.boiler_room.questB45A918213371FA.task.8448155510129440612.title}"
 	task.765B171872302421.title: "{ftbquests.chapter.banners.quest1280C34AE9A4EE7B.task.8528435713118577697.title}"
 	task.77941199A5AAA562.title: "{ftbquests.chapter.getting_started.quest66D159252C70D5F2.task.8616531338673694050.title}"
 	task.787836F003705C9D.title: "{ftbquests.chapter.getting_started.quest28029230D7FD63D6.task.8680748686234377373.title}"
+	task.7955512261482571675.title: "{ftbquests.chapter.botania.quest44C80D7C3D2B11E8.task.7955512261482571675.title}"
 	task.7972CE0709D02D49.title: "{ftbquests.chapter.armor_weapons__tools.quest1B614E9E38B45BD0.task.8751283555559025993.title}"
 	task.7A14BED1889FDFC6.title: "{ftbquests.chapter.crafts_room.quest403045A4DA7A770.task.8796865779311042502.title}"
 	task.7A3A17A854FF5FAB.title: "{ftbquests.chapter.welcome.quest18490F31FFAB134E.task.8807378033024393131.title}"
@@ -2786,4 +2850,5 @@
 	task.7E48DF9E76F49A49.title: "{ftbquests.chapter.crafts_room.quest7466DCDD6C3CDDE8.task.9099768918795655753.title}"
 	task.7F0933DA244DC98F.title: "{ftbquests.chapter.tools.quest86A3F527E1A973E.task.9153904729612208527.title}"
 	task.7F4B6A5EB91157E6.title: "{ftbquests.chapter.ii__building_up_the_farm.quest3D324E99DF28D224.task.9172542021134538726.title}"
+	task.9140715795379747285.title: "{ftbquests.chapter.armor_weapons__tools.quest6E4CC63B8CF1EDAF.task.9140715795379747285.title}"
 }

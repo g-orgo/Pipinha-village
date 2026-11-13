@@ -2,6 +2,7 @@ console.info("[SOCIETY] manaFruit.js loaded");
 
 const MANA_DRAIN = 2500;
 const FRUIT_MAX_MANA = MANA_DRAIN * 4;
+global.registerManaReceiver("society:mana_fruit_crop", global.persistentManaSpec(FRUIT_MAX_MANA));
 
 global.handleManaFruit = (e) => {
   const { level, block } = e;

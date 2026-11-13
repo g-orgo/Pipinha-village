@@ -17,6 +17,8 @@ ServerEvents.recipes((e) => {
     { type: "quark:ancient", mailbox: "everycomp:rfm/quark/ancient_mail_box" },
     { type: "quark:azalea", mailbox: "everycomp:rfm/quark/azalea_mail_box" },
     { type: "quark:blossom", mailbox: "everycomp:rfm/quark/blossom_mail_box" },
+    { type: "botania:dreamwood", mailbox: "everycomp:rfm/botania/dreamwood_mail_box" },
+    { type: "botania:livingwood", mailbox: "everycomp:rfm/botania/livingwood_mail_box" },
     { type: "minecraft:pale_oak", mailbox: "everycomp:rfm/minecraft/pale_oak_mail_box", },
     { type: "windswept:chestnut", mailbox: "everycomp:rfm/windswept/chestnut_mail_box", },
     { type: "windswept:pine", mailbox: "everycomp:rfm/windswept/pine_mail_box", },

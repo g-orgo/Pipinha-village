@@ -1,6 +1,7 @@
 console.info("[SOCIETY] skullCavernBroken.js loaded");
 
 const crashableHammers = [
+  "botania:terra_pick",
   "justhammers:diamond_impact_hammer",
   "justhammers:gold_impact_hammer",
   "justhammers:iron_impact_hammer",
@@ -93,7 +94,7 @@ BlockEvents.broken(
     if (level.dimension === "society:skull_cavern") {
       if (global.disableHammersSkullCavern && crashableHammers.includes(player.getHeldItem("main_hand").id)) {
         server.runCommandSilent(
-          `dialog ${player.username} show ${player.username} goddess_unique_skull_cavern_hammer`
+          `dialog ${player.username} show ${player.username} ${player.getHeldItem("main_hand").id.equals("botania:terra_pick") ? "goddess_unique_skull_cavern_shatterer" : "goddess_unique_skull_cavern_hammer"}`
         );
         e.cancel();
       }

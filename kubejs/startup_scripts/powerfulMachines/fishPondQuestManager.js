@@ -178,7 +178,7 @@ global.runFishPondQuestManager = (entity) => {
     }
 
     level.server.runCommandSilent(
-      `playsound minecraft:entity.blaze.shoot block @a ${x} ${y} ${z}`
+      `playsound botania:spreader_fire block @a ${x} ${y} ${z}`
     )
   }
 }

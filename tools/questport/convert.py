@@ -20,7 +20,7 @@ RENAME.update({  # each target checked in the 1.21.1 jars (lang/model) on 2026-1
 })
 STRUCT_RENAME = {'trials:trials_chambers': 'minecraft:trial_chambers'}
 TAG_RENAME = {'forge:eggs': 'c:eggs', 'forge:crops': 'c:crops'}
-REMOVED_NS = {'botania', 'botania_seeds', 'splendid_slimes', 'create_slime'}
+REMOVED_NS = {'splendid_slimes', 'create_slime'}  # botania and botania_seeds restored (2026-11-13)
 QUALITY = {1: 'iron', 2: 'gold', 3: 'diamond'}
 LOG = collections.defaultdict(collections.Counter)  # what -> Counter(detail)
 
@@ -28,6 +28,7 @@ LOG = collections.defaultdict(collections.Counter)  # what -> Counter(detail)
 def item_id(i):
     """Renamed id, or None when the item is gone (removed mod or no 1.21.1 registration)."""
     i = RENAME.get(str(i), str(i))
+    if i.split(':')[0] == 'botania_seeds': return i  # no 1.21.1 port yet: KubeJS recreates these ids
     if i.split(':')[0] in REMOVED_NS:
         LOG['removed (owner decision)'][i] += 1; return None
     if i not in K['item']:

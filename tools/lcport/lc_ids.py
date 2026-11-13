@@ -24,6 +24,8 @@ def _scan_zip(zf, blocks, items, nested, depth=0):
                 ns = parts[1]
                 base = parts[-1][:-5]
                 blocks.add(ns + ":" + base)
+                # Subfolders under blockstates/ are part of the id path.
+                blocks.add(ns + ":" + "/".join(parts[3:])[:-5])
         elif low.startswith("assets/") and "/models/item/" in low and low.endswith(".json"):
             parts = name.split("/")
             if len(parts) >= 5:
@@ -65,9 +67,12 @@ def scan_known_ids():
         for ns in sorted(os.listdir(KUBEJS_ASSETS)):
             bs = os.path.join(KUBEJS_ASSETS, ns, "blockstates")
             if os.path.isdir(bs):
-                for fn in os.listdir(bs):
-                    if fn.endswith(".json"):
-                        blocks.add(ns + ":" + fn[:-5])
+                for dp, _, fns in os.walk(bs):
+                    for fn in fns:
+                        if fn.endswith(".json"):
+                            rel = os.path.relpath(os.path.join(dp, fn), bs).replace(os.sep, "/")
+                            blocks.add(ns + ":" + fn[:-5])
+                            blocks.add(ns + ":" + rel[:-5])
             im = os.path.join(KUBEJS_ASSETS, ns, "models", "item")
             if os.path.isdir(im):
                 for fn in os.listdir(im):

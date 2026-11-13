@@ -5,18 +5,22 @@
   "villager_profession": "fisherman",
   "stage_required": "invited_fisher",
   "jei_catalyst": {
-    "item": "society:villager",
-    "nbt": "{type:{id:\"society:fisher\"}}"
+    "id": "society:villager_home",
+    "components": {
+      "minecraft:custom_data": {
+        "type": "fisher"
+      }
+    }
   },
   "selector_weight": -95,
   "trades": [
     {
       "offer": {
-        "item": "aquaculture:worm",
+        "id": "aquaculture:worm",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 16,
@@ -24,11 +28,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:worm",
+        "id": "aquaculture:worm",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 14,
@@ -39,11 +43,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:worm",
+        "id": "aquaculture:worm",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 14,
@@ -54,11 +58,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:worm",
+        "id": "aquaculture:worm",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 12,
@@ -68,11 +72,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:fishing_rod",
+        "id": "minecraft:fishing_rod",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 4
       },
       "numismatics_cost": 2048,
@@ -80,11 +84,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:fishing_rod",
+        "id": "minecraft:fishing_rod",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 4
       },
       "numismatics_cost": 1843,
@@ -95,11 +99,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:fishing_rod",
+        "id": "minecraft:fishing_rod",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 4
       },
       "numismatics_cost": 1741,
@@ -110,11 +114,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:fishing_rod",
+        "id": "minecraft:fishing_rod",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 4
       },
       "numismatics_cost": 1536,
@@ -124,11 +128,11 @@
     },
     {
       "offer": {
-        "item": "netherdepthsupgrade:lava_fishing_rod",
+        "id": "netherdepthsupgrade:lava_fishing_rod",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 24
       },
       "numismatics_cost": 73728,
@@ -136,11 +140,11 @@
     },
     {
       "offer": {
-        "item": "netherdepthsupgrade:lava_fishing_rod",
+        "id": "netherdepthsupgrade:lava_fishing_rod",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 24
       },
       "numismatics_cost": 66355,
@@ -151,11 +155,11 @@
     },
     {
       "offer": {
-        "item": "netherdepthsupgrade:lava_fishing_rod",
+        "id": "netherdepthsupgrade:lava_fishing_rod",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 24
       },
       "numismatics_cost": 62669,
@@ -166,11 +170,11 @@
     },
     {
       "offer": {
-        "item": "netherdepthsupgrade:lava_fishing_rod",
+        "id": "netherdepthsupgrade:lava_fishing_rod",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 24
       },
       "numismatics_cost": 55296,
@@ -180,15 +184,15 @@
     },
     {
       "offer": {
-        "item": "society:fish_radar",
+        "id": "society:fish_radar",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 4
       },
       "second_request": {
-        "item": "aquaculture:neptunium_ingot",
+        "id": "aquaculture:neptunium_ingot",
         "count": 1
       },
       "numismatics_cost": 2048,
@@ -196,15 +200,15 @@
     },
     {
       "offer": {
-        "item": "society:fish_radar",
+        "id": "society:fish_radar",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 4
       },
       "second_request": {
-        "item": "aquaculture:neptunium_ingot",
+        "id": "aquaculture:neptunium_ingot",
         "count": 1
       },
       "numismatics_cost": 1843,
@@ -215,15 +219,15 @@
     },
     {
       "offer": {
-        "item": "society:fish_radar",
+        "id": "society:fish_radar",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 4
       },
       "second_request": {
-        "item": "aquaculture:neptunium_ingot",
+        "id": "aquaculture:neptunium_ingot",
         "count": 1
       },
       "numismatics_cost": 1741,
@@ -234,15 +238,15 @@
     },
     {
       "offer": {
-        "item": "society:fish_radar",
+        "id": "society:fish_radar",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 4
       },
       "second_request": {
-        "item": "aquaculture:neptunium_ingot",
+        "id": "aquaculture:neptunium_ingot",
         "count": 1
       },
       "numismatics_cost": 1536,
@@ -252,15 +256,15 @@
     },
     {
       "offer": {
-        "item": "society:fish_pond",
+        "id": "society:fish_pond",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 8
       },
       "second_request": {
-        "item": "society:river_jelly",
+        "id": "society:river_jelly",
         "count": 1
       },
       "numismatics_cost": 32768,
@@ -268,15 +272,15 @@
     },
     {
       "offer": {
-        "item": "society:fish_pond",
+        "id": "society:fish_pond",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 8
       },
       "second_request": {
-        "item": "society:river_jelly",
+        "id": "society:river_jelly",
         "count": 1
       },
       "numismatics_cost": 29491,
@@ -287,15 +291,15 @@
     },
     {
       "offer": {
-        "item": "society:fish_pond",
+        "id": "society:fish_pond",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 8
       },
       "second_request": {
-        "item": "society:river_jelly",
+        "id": "society:river_jelly",
         "count": 1
       },
       "numismatics_cost": 27853,
@@ -306,15 +310,15 @@
     },
     {
       "offer": {
-        "item": "society:fish_pond",
+        "id": "society:fish_pond",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 8
       },
       "second_request": {
-        "item": "society:river_jelly",
+        "id": "society:river_jelly",
         "count": 1
       },
       "numismatics_cost": 24576,
@@ -324,15 +328,15 @@
     },
     {
       "offer": {
-        "item": "society:roe_recycler",
+        "id": "society:roe_recycler",
         "count": 1
       },
       "request": {
-        "item": "numismatics:neptunium_coin",
+        "id": "numismatics:neptunium_coin",
         "count": 2
       },
       "second_request": {
-        "item": "society:sunlit_pearl",
+        "id": "society:sunlit_pearl",
         "count": 3
       },
       "numismatics_cost": 65536,
@@ -342,11 +346,11 @@
     },
     {
       "offer": {
-        "item": "society:fish_smoker",
+        "id": "society:fish_smoker",
         "count": 1
       },
       "request": {
-        "item": "numismatics:neptunium_coin",
+        "id": "numismatics:neptunium_coin",
         "count": 2
       },
       "numismatics_cost": 65536,
@@ -354,11 +358,11 @@
     },
     {
       "offer": {
-        "item": "society:fish_smoker",
+        "id": "society:fish_smoker",
         "count": 1
       },
       "request": {
-        "item": "numismatics:neptunium_coin",
+        "id": "numismatics:neptunium_coin",
         "count": 2
       },
       "numismatics_cost": 58982,
@@ -369,11 +373,11 @@
     },
     {
       "offer": {
-        "item": "society:fish_smoker",
+        "id": "society:fish_smoker",
         "count": 1
       },
       "request": {
-        "item": "numismatics:neptunium_coin",
+        "id": "numismatics:neptunium_coin",
         "count": 2
       },
       "numismatics_cost": 55706,
@@ -384,11 +388,11 @@
     },
     {
       "offer": {
-        "item": "society:fish_smoker",
+        "id": "society:fish_smoker",
         "count": 1
       },
       "request": {
-        "item": "numismatics:neptunium_coin",
+        "id": "numismatics:neptunium_coin",
         "count": 2
       },
       "numismatics_cost": 49152,
@@ -398,11 +402,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:note_hook",
+        "id": "aquaculture:note_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:spur",
+        "id": "numismatics:spur",
         "count": 7
       },
       "numismatics_cost": 7,
@@ -410,15 +414,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:light_hook",
+        "id": "aquaculture:light_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 5
       },
       "second_request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 16,
@@ -426,15 +430,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:light_hook",
+        "id": "aquaculture:light_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 5
       },
       "second_request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 14,
@@ -445,15 +449,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:light_hook",
+        "id": "aquaculture:light_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 5
       },
       "second_request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 14,
@@ -464,15 +468,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:light_hook",
+        "id": "aquaculture:light_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 5
       },
       "second_request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 12,
@@ -482,15 +486,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:heavy_hook",
+        "id": "aquaculture:heavy_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 5
       },
       "second_request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 336,
@@ -498,15 +502,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:heavy_hook",
+        "id": "aquaculture:heavy_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 5
       },
       "second_request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 302,
@@ -517,15 +521,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:heavy_hook",
+        "id": "aquaculture:heavy_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 5
       },
       "second_request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 286,
@@ -536,15 +540,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:heavy_hook",
+        "id": "aquaculture:heavy_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 5
       },
       "second_request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 252,
@@ -554,15 +558,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:redstone_hook",
+        "id": "aquaculture:redstone_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 5
       },
       "second_request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 336,
@@ -570,15 +574,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:redstone_hook",
+        "id": "aquaculture:redstone_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 5
       },
       "second_request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 302,
@@ -589,15 +593,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:redstone_hook",
+        "id": "aquaculture:redstone_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 5
       },
       "second_request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 286,
@@ -608,15 +612,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:redstone_hook",
+        "id": "aquaculture:redstone_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 5
       },
       "second_request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 252,
@@ -626,11 +630,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:gold_hook",
+        "id": "aquaculture:gold_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 5
       },
       "numismatics_cost": 2560,
@@ -638,11 +642,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:gold_hook",
+        "id": "aquaculture:gold_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 5
       },
       "numismatics_cost": 2304,
@@ -653,11 +657,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:gold_hook",
+        "id": "aquaculture:gold_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 5
       },
       "numismatics_cost": 2176,
@@ -668,11 +672,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:gold_hook",
+        "id": "aquaculture:gold_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 5
       },
       "numismatics_cost": 1920,
@@ -682,11 +686,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:iron_hook",
+        "id": "aquaculture:iron_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 4096,
@@ -694,11 +698,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:iron_hook",
+        "id": "aquaculture:iron_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3686,
@@ -709,11 +713,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:iron_hook",
+        "id": "aquaculture:iron_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3482,
@@ -724,11 +728,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:iron_hook",
+        "id": "aquaculture:iron_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3072,
@@ -738,15 +742,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:diamond_hook",
+        "id": "aquaculture:diamond_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 16
       },
       "second_request": {
-        "item": "aquaculture:neptunium_ingot",
+        "id": "aquaculture:neptunium_ingot",
         "count": 2
       },
       "numismatics_cost": 65536,
@@ -754,15 +758,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:diamond_hook",
+        "id": "aquaculture:diamond_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 16
       },
       "second_request": {
-        "item": "aquaculture:neptunium_ingot",
+        "id": "aquaculture:neptunium_ingot",
         "count": 2
       },
       "numismatics_cost": 58982,
@@ -773,15 +777,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:diamond_hook",
+        "id": "aquaculture:diamond_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 16
       },
       "second_request": {
-        "item": "aquaculture:neptunium_ingot",
+        "id": "aquaculture:neptunium_ingot",
         "count": 2
       },
       "numismatics_cost": 55706,
@@ -792,15 +796,15 @@
     },
     {
       "offer": {
-        "item": "aquaculture:diamond_hook",
+        "id": "aquaculture:diamond_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 16
       },
       "second_request": {
-        "item": "aquaculture:neptunium_ingot",
+        "id": "aquaculture:neptunium_ingot",
         "count": 2
       },
       "numismatics_cost": 49152,
@@ -810,11 +814,11 @@
     },
     {
       "offer": {
-        "item": "society:needle_bobber",
+        "id": "society:needle_bobber",
         "count": 1
       },
       "request": {
-        "item": "society:heart_of_neptunium",
+        "id": "society:heart_of_neptunium",
         "count": 1
       },
       "stage_required": "fishing_mastery",
@@ -823,11 +827,11 @@
     },
     {
       "offer": {
-        "item": "society:net_bobber",
+        "id": "society:net_bobber",
         "count": 1
       },
       "request": {
-        "item": "society:heart_of_neptunium",
+        "id": "society:heart_of_neptunium",
         "count": 1
       },
       "stage_required": "fishing_mastery",
@@ -836,11 +840,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:trap_bobber",
+        "id": "stardew_fishing:trap_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 4
       },
       "numismatics_cost": 2048,
@@ -848,11 +852,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:trap_bobber",
+        "id": "stardew_fishing:trap_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 4
       },
       "numismatics_cost": 1843,
@@ -863,11 +867,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:trap_bobber",
+        "id": "stardew_fishing:trap_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 4
       },
       "numismatics_cost": 1741,
@@ -878,11 +882,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:trap_bobber",
+        "id": "stardew_fishing:trap_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 4
       },
       "numismatics_cost": 1536,
@@ -892,11 +896,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:cork_bobber",
+        "id": "stardew_fishing:cork_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 6
       },
       "numismatics_cost": 3072,
@@ -904,11 +908,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:cork_bobber",
+        "id": "stardew_fishing:cork_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 6
       },
       "numismatics_cost": 2765,
@@ -919,11 +923,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:cork_bobber",
+        "id": "stardew_fishing:cork_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 6
       },
       "numismatics_cost": 2611,
@@ -934,11 +938,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:cork_bobber",
+        "id": "stardew_fishing:cork_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 6
       },
       "numismatics_cost": 2304,
@@ -948,11 +952,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:sonar_bobber",
+        "id": "stardew_fishing:sonar_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 6
       },
       "numismatics_cost": 3072,
@@ -960,11 +964,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:sonar_bobber",
+        "id": "stardew_fishing:sonar_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 6
       },
       "numismatics_cost": 2765,
@@ -975,11 +979,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:sonar_bobber",
+        "id": "stardew_fishing:sonar_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 6
       },
       "numismatics_cost": 2611,
@@ -990,11 +994,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:sonar_bobber",
+        "id": "stardew_fishing:sonar_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 6
       },
       "numismatics_cost": 2304,
@@ -1004,11 +1008,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:treasure_bobber",
+        "id": "stardew_fishing:treasure_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 4096,
@@ -1016,11 +1020,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:treasure_bobber",
+        "id": "stardew_fishing:treasure_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3686,
@@ -1031,11 +1035,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:treasure_bobber",
+        "id": "stardew_fishing:treasure_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3482,
@@ -1046,11 +1050,11 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:treasure_bobber",
+        "id": "stardew_fishing:treasure_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3072,
@@ -1060,15 +1064,15 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:quality_bobber",
+        "id": "stardew_fishing:quality_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "second_request": {
-        "item": "aquaculture:neptunium_ingot",
+        "id": "aquaculture:neptunium_ingot",
         "count": 1
       },
       "numismatics_cost": 4096,
@@ -1076,15 +1080,15 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:quality_bobber",
+        "id": "stardew_fishing:quality_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "second_request": {
-        "item": "aquaculture:neptunium_ingot",
+        "id": "aquaculture:neptunium_ingot",
         "count": 1
       },
       "numismatics_cost": 3686,
@@ -1095,15 +1099,15 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:quality_bobber",
+        "id": "stardew_fishing:quality_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "second_request": {
-        "item": "aquaculture:neptunium_ingot",
+        "id": "aquaculture:neptunium_ingot",
         "count": 1
       },
       "numismatics_cost": 3482,
@@ -1114,15 +1118,15 @@
     },
     {
       "offer": {
-        "item": "stardew_fishing:quality_bobber",
+        "id": "stardew_fishing:quality_bobber",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "second_request": {
-        "item": "aquaculture:neptunium_ingot",
+        "id": "aquaculture:neptunium_ingot",
         "count": 1
       },
       "numismatics_cost": 3072,
@@ -1132,11 +1136,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:double_hook",
+        "id": "aquaculture:double_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 16384,
@@ -1144,11 +1148,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:double_hook",
+        "id": "aquaculture:double_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 14746,
@@ -1159,11 +1163,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:double_hook",
+        "id": "aquaculture:double_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 13926,
@@ -1174,11 +1178,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:double_hook",
+        "id": "aquaculture:double_hook",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 12288,
@@ -1188,11 +1192,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:tackle_box",
+        "id": "aquaculture:tackle_box",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 4096,
@@ -1200,11 +1204,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:tackle_box",
+        "id": "aquaculture:tackle_box",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3686,
@@ -1215,11 +1219,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:tackle_box",
+        "id": "aquaculture:tackle_box",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3482,
@@ -1230,11 +1234,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:tackle_box",
+        "id": "aquaculture:tackle_box",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3072,
@@ -1244,11 +1248,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:worm_farm",
+        "id": "aquaculture:worm_farm",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -1256,11 +1260,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:worm_farm",
+        "id": "aquaculture:worm_farm",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 461,
@@ -1271,11 +1275,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:worm_farm",
+        "id": "aquaculture:worm_farm",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 435,
@@ -1286,11 +1290,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:worm_farm",
+        "id": "aquaculture:worm_farm",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 384,
@@ -1300,11 +1304,11 @@
     },
     {
       "offer": {
-        "item": "society:neptunium_upgrade_smithing_template",
+        "id": "society:neptunium_upgrade_smithing_template",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 16
       },
       "numismatics_cost": 65536,
@@ -1312,11 +1316,11 @@
     },
     {
       "offer": {
-        "item": "create:copper_diving_helmet",
+        "id": "create:copper_diving_helmet",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 4
       },
       "numismatics_cost": 2048,
@@ -1324,11 +1328,11 @@
     },
     {
       "offer": {
-        "item": "create:copper_backtank",
+        "id": "create:copper_backtank",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 4
       },
       "numismatics_cost": 2048,
@@ -1336,11 +1340,11 @@
     },
     {
       "offer": {
-        "item": "create:copper_diving_boots",
+        "id": "create:copper_diving_boots",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 3
       },
       "numismatics_cost": 1536,
@@ -1348,16 +1352,20 @@
     },
     {
       "offer": {
-        "item": "patchouli:guide_book",
+        "id": "patchouli:guide_book",
         "count": 1,
-        "nbt": "{\"patchouli:book\":\"patchouli:fish_finder\"}"
+        "components": {
+          "minecraft:custom_data": {
+            "patchouli:book": "patchouli:fish_finder"
+          }
+        }
       },
       "request": {
-        "item": "numismatics:neptunium_coin",
+        "id": "numismatics:neptunium_coin",
         "count": 1
       },
       "second_request": {
-        "item": "aquaculture:neptunium_block",
+        "id": "aquaculture:neptunium_block",
         "count": 1
       },
       "numismatics_cost": 32768,

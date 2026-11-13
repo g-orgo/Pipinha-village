@@ -40,6 +40,7 @@ ItemEvents.rightClicked(
     "buildinggadgets2:gadget_cut_paste",
     "buildinggadgets2:gadget_destruction",
     "supplementaries:wrench",
+    "botania:smelt_rod",
     "society:red_wrench",
     "portable_blueprints:blueprint",
     "portable_blueprints:worn_blueprint",

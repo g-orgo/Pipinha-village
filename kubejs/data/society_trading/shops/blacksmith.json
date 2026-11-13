@@ -3,8 +3,12 @@
   "name": "shop.society_trading.blacksmith",
   "texture": "dialog:textures/portraits/blacksmith",
   "jei_catalyst": {
-    "item": "society:villager",
-    "nbt": "{type:{id:\"society:blacksmith\"}}"
+    "id": "society:villager_home",
+    "components": {
+      "minecraft:custom_data": {
+        "type": "blacksmith"
+      }
+    }
   },
   "selector_weight": -98,
   "villager_profession": "toolsmith",
@@ -12,11 +16,11 @@
   "trades": [
     {
       "offer": {
-        "item": "minecraft:coal",
+        "id": "minecraft:coal",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 16,
@@ -24,11 +28,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:copper_ingot",
+        "id": "minecraft:copper_ingot",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 16,
@@ -36,11 +40,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:iron_ingot",
+        "id": "minecraft:iron_ingot",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 64,
@@ -48,11 +52,11 @@
     },
     {
       "offer": {
-        "item": "create:zinc_ingot",
+        "id": "create:zinc_ingot",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 2
       },
       "numismatics_cost": 128,
@@ -60,11 +64,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:gold_ingot",
+        "id": "minecraft:gold_ingot",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 256,
@@ -72,11 +76,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:redstone",
+        "id": "minecraft:redstone",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 16,
@@ -84,11 +88,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:flint_and_steel",
+        "id": "minecraft:flint_and_steel",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 3
       },
       "numismatics_cost": 12288,
@@ -96,11 +100,11 @@
     },
     {
       "offer": {
-        "item": "society:iron_upgrade_smithing_template",
+        "id": "society:iron_upgrade_smithing_template",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -108,11 +112,11 @@
     },
     {
       "offer": {
-        "item": "society:gold_upgrade_smithing_template",
+        "id": "society:gold_upgrade_smithing_template",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 4096,
@@ -120,11 +124,11 @@
     },
     {
       "offer": {
-        "item": "society:diamond_upgrade_smithing_template",
+        "id": "society:diamond_upgrade_smithing_template",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 2
       },
       "numismatics_cost": 8192,
@@ -132,11 +136,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:netherite_upgrade_smithing_template",
+        "id": "minecraft:netherite_upgrade_smithing_template",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 11
       },
       "numismatics_cost": 49556,
@@ -144,11 +148,11 @@
     },
     {
       "offer": {
-        "item": "society:geode_buster",
+        "id": "society:geode_buster",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 16,
@@ -156,11 +160,11 @@
     },
     {
       "offer": {
-        "item": "extractinator:extractinator",
+        "id": "extractinator:extractinator",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 3
       },
       "numismatics_cost": 12288,
@@ -168,11 +172,11 @@
     },
     {
       "offer": {
-        "item": "create:brown_toolbox",
+        "id": "create:brown_toolbox",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 6
       },
       "numismatics_cost": 384,
@@ -180,11 +184,11 @@
     },
     {
       "offer": {
-        "item": "refurbished_furniture:workbench",
+        "id": "refurbished_furniture:workbench",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 8
       },
       "numismatics_cost": 32768,
@@ -192,11 +196,11 @@
     },
     {
       "offer": {
-        "item": "furniture:bin",
+        "id": "furniture:bin",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 16384,
@@ -204,11 +208,11 @@
     },
     {
       "offer": {
-        "item": "society:moon_statue",
+        "id": "society:moon_statue",
         "count": 1
       },
       "request": {
-        "item": "minecraft:netherite_ingot",
+        "id": "minecraft:netherite_ingot",
         "count": 20
       },
       "stage_required": "mining_mastery",
@@ -217,11 +221,11 @@
     },
     {
       "offer": {
-        "item": "buildinggadgets2:gadget_core",
+        "id": "buildinggadgets2:gadget_core",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 10
       },
       "numismatics_cost": 40960,
@@ -229,11 +233,11 @@
     },
     {
       "offer": {
-        "item": "justhammers:small_core",
+        "id": "justhammers:small_core",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 32
       },
       "numismatics_cost": 131072,
@@ -241,11 +245,11 @@
     },
     {
       "offer": {
-        "item": "justhammers:impact_core",
+        "id": "justhammers:impact_core",
         "count": 1
       },
       "request": {
-        "item": "numismatics:ancient_coin",
+        "id": "numismatics:ancient_coin",
         "count": 2
       },
       "numismatics_cost": 524288,

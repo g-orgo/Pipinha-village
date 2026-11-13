@@ -10,7 +10,10 @@ BlockEvents.rightClicked(
   ],
   (e) => {
     const { item, block } = e;
-    if (item.id === "aquaculture:neptunium_hoe") {
+    if (
+      item.id === "aquaculture:neptunium_hoe" ||
+      item.id === "botania:elementium_hoe"
+    ) {
       block.set("dew_drop_farmland_growth:hydrating_farmland");
       e.cancel();
     }

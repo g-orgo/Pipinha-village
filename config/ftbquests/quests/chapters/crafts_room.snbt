@@ -61,47 +61,7 @@
 			id: "1E6139BDE9202B6A"
 			rewards: [{
 				id: "490B15BEE84A932A"
-				item: {
-					components: {
-						"relics:data": {
-							abilities: {
-								abilities: {
-									spore_mist: {
-										extender: {
-											cooldown: 0
-											cooldownCap: 0
-											ticking: 0b
-										}
-										lock: {
-											breaks: 5
-										}
-										points: 0
-										research: {
-											links: { }
-											researched: 0b
-										}
-										stats: {
-											amount: {
-												initialValue: 7.7542d
-											}
-											damage: {
-												initialValue: 0.22907d
-											}
-										}
-									}
-								}
-							}
-							leveling: {
-								experience: 0
-								level: 0
-								luck: 0
-								points: 0
-							}
-						}
-					}
-					count: 1
-					id: "relics:spore_sack"
-				}
+				item: { components: { "relics:data": { abilities: { abilities: { spore_mist: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount: { initialValue: 7.7542d }, damage: { initialValue: 0.22907d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:spore_sack" }
 				type: "item"
 			}]
 			shape: "none"
@@ -151,15 +111,20 @@
 			y: -0.5d
 		}
 		{
+			icon: "supplementaries:present_red"
 			id: "6F3F87DBBBE86A28"
-			rewards: [{
-				id: "124F7E6A6400E6C2"
-				item: {
-					count: 1
-					id: "society:snow_melter"
+			rewards: [
+				{
+					id: "124F7E6A6400E6C2"
+					item: { count: 1, id: "society:snow_melter" }
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "7A6C3B42E9B0B69B"
+					item: { count: 1, id: "botania:horn_snow" }
+					type: "item"
+				}
+			]
 			shape: "none"
 			tasks: [
 				{
@@ -194,67 +159,17 @@
 			y: 0.3285714285714221d
 		}
 		{
-			dependencies: [
-				"6F3F87DBBBE86A28"
-				"1E6139BDE9202B6A"
-				"0403045A4DA7A770"
-			]
+			dependencies: ["6F3F87DBBBE86A28", "1E6139BDE9202B6A", "0403045A4DA7A770"]
 			id: "7591439B35772AB2"
 			rewards: [
 				{
 					id: "3BEDCAAC8ECCCB29"
-					item: {
-						components: {
-							"relics:data": {
-								abilities: {
-									abilities: {
-										teleport: {
-											extender: {
-												cooldown: 0
-												cooldownCap: 0
-												ticking: 0b
-											}
-											lock: {
-												breaks: 5
-											}
-											points: 0
-											research: {
-												links: { }
-												researched: 0b
-											}
-											stats: {
-												cooldown: {
-													initialValue: 117.61635d
-												}
-												distance: {
-													initialValue: 940.51563d
-												}
-											}
-										}
-									}
-								}
-								leveling: {
-									experience: 0
-									level: 0
-									luck: 0
-									points: 0
-								}
-							}
-						}
-						count: 1
-						id: "relics:magic_mirror"
-					}
+					item: { components: { "relics:data": { abilities: { abilities: { teleport: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 117.61635d }, distance: { initialValue: 940.51563d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:magic_mirror" }
 					type: "item"
 				}
 				{
 					id: "40AD50A7154B8198"
-					item: {
-						components: {
-							"trofers:trophy": "trofers:crafts_room"
-						}
-						count: 1
-						id: "trofers:large_pillar"
-					}
+					item: { components: { "trofers:trophy": "trofers:crafts_room" }, count: 1, id: "trofers:large_pillar" }
 					type: "item"
 				}
 			]
@@ -272,10 +187,7 @@
 			id: "174FBAB7BF83C049"
 			rewards: [{
 				id: "3F8B2A9CF4518F08"
-				item: {
-					count: 1
-					id: "vintagedelight:magic_peanut"
-				}
+				item: { count: 1, id: "vintagedelight:magic_peanut" }
 				type: "item"
 			}]
 			shape: "none"
@@ -318,10 +230,7 @@
 			id: "7466DCDD6C3CDDE8"
 			rewards: [{
 				id: "54A04C9C43D4139E"
-				item: {
-					count: 1
-					id: "society:artifact_trove"
-				}
+				item: { count: 1, id: "society:artifact_trove" }
 				type: "item"
 			}]
 			shape: "none"

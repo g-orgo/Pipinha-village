@@ -1,0 +1,14 @@
+{
+  "type": "botania:elven_trade",
+  "ingredients": [
+    {
+      "item": "pamhc2trees:dragonfruit_sapling"
+    }
+  ],
+  "output": [
+    {
+      "id": "pamhc2trees:lemon_sapling",
+      "count": 1
+    }
+  ]
+}

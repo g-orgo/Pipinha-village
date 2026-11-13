@@ -2,6 +2,7 @@ console.info("[SOCIETY] sparkstoneRecycler.js loaded");
 
 const MANA_PER_RECYCLE = 5000;
 const RECYCLER_MAX_MANA = MANA_PER_RECYCLE * 50;
+global.registerManaReceiver("society:sparkstone_recycler", global.persistentManaSpec(RECYCLER_MAX_MANA));
 
 global.checkSparkstoneRecyclers = (level, block) => {
   const { x, y, z } = block;
@@ -26,7 +27,7 @@ global.checkSparkstoneRecyclers = (level, block) => {
         if (mana >= MANA_PER_RECYCLE && rnd10()) {
           scannedBlock.getEntity().persistentData.putInt("mana", mana - MANA_PER_AGE);
           recycled = true;
-          level.server.runCommandSilent(`playsound minecraft:block.amethyst_block.chime block @a ${x} ${y} ${z}`);
+          level.server.runCommandSilent(`playsound botania:starcaller block @a ${x} ${y} ${z}`);
           level.spawnParticles(
             "ribbits:spell",
             true,

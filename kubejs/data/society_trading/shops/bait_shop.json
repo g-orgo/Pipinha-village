@@ -3,18 +3,18 @@
   "name": "shop.society_trading.bait_shop",
   "texture": "aquaculture:textures/item/worm",
   "jei_catalyst": {
-    "item": "aquaculture:worm"
+    "id": "aquaculture:worm"
   },
   "stage_required": "profession_fisher",
   "selector_weight": -94,
   "trades": [
     {
       "offer": {
-        "item": "aquaculture:worm",
+        "id": "aquaculture:worm",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 256,
@@ -22,11 +22,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:worm",
+        "id": "aquaculture:worm",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 230,
@@ -37,11 +37,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:worm",
+        "id": "aquaculture:worm",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 218,
@@ -52,11 +52,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:worm",
+        "id": "aquaculture:worm",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 192,
@@ -66,11 +66,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:minnow",
+        "id": "aquaculture:minnow",
         "count": 4
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 2
       },
       "numismatics_cost": 96,
@@ -78,11 +78,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:minnow",
+        "id": "aquaculture:minnow",
         "count": 4
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 2
       },
       "numismatics_cost": 86,
@@ -93,11 +93,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:minnow",
+        "id": "aquaculture:minnow",
         "count": 4
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 2
       },
       "numismatics_cost": 82,
@@ -108,11 +108,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:minnow",
+        "id": "aquaculture:minnow",
         "count": 4
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 2
       },
       "numismatics_cost": 72,
@@ -122,11 +122,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:leech",
+        "id": "aquaculture:leech",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 3
       },
       "numismatics_cost": 204,
@@ -134,11 +134,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:leech",
+        "id": "aquaculture:leech",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 3
       },
       "numismatics_cost": 184,
@@ -149,11 +149,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:leech",
+        "id": "aquaculture:leech",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 3
       },
       "numismatics_cost": 173,
@@ -164,11 +164,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:leech",
+        "id": "aquaculture:leech",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 3
       },
       "numismatics_cost": 153,
@@ -178,11 +178,11 @@
     },
     {
       "offer": {
-        "item": "crabbersdelight:crab_trap_bait",
+        "id": "crabbersdelight:crab_trap_bait",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 2
       },
       "numismatics_cost": 96,
@@ -190,11 +190,11 @@
     },
     {
       "offer": {
-        "item": "crabbersdelight:crab_trap_bait",
+        "id": "crabbersdelight:crab_trap_bait",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 2
       },
       "numismatics_cost": 86,
@@ -205,11 +205,11 @@
     },
     {
       "offer": {
-        "item": "crabbersdelight:crab_trap_bait",
+        "id": "crabbersdelight:crab_trap_bait",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 2
       },
       "numismatics_cost": 82,
@@ -220,11 +220,11 @@
     },
     {
       "offer": {
-        "item": "crabbersdelight:crab_trap_bait",
+        "id": "crabbersdelight:crab_trap_bait",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 2
       },
       "numismatics_cost": 72,
@@ -234,11 +234,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:fishing_line",
+        "id": "aquaculture:fishing_line",
         "count": 4
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 64,
@@ -246,11 +246,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:fishing_line",
+        "id": "aquaculture:fishing_line",
         "count": 4
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 58,
@@ -261,11 +261,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:fishing_line",
+        "id": "aquaculture:fishing_line",
         "count": 4
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 54,
@@ -276,11 +276,11 @@
     },
     {
       "offer": {
-        "item": "aquaculture:fishing_line",
+        "id": "aquaculture:fishing_line",
         "count": 4
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 48,

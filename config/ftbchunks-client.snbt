@@ -138,27 +138,27 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"quark:stoneling": true
-			"quark:toretoise": true
-			"minecraft:glow_squid": true
-			"minecraft:zombie": true
-			"minecraft:enderman": true
-			"minecraft:skeleton": true
-			"minecraft:villager": true
-			"snuffles:snuffle": true
-			"minecraft:bat": true
-			"unusualfishmod:deep_crawler": true
-			"crittersandcompanions:stag_beetle": true
-			"minecraft:spider": true
-			"etcetera:weaver": true
-			"windswept:frostbiter": true
-			"crittersandcompanions:ladybug": true
-			"minecraft:creeper": true
-			"minecraft:rabbit": true
-			"snowpig:snow_pig": true
-			"crittersandcompanions:leaf_insect": true
 			"minecraft:witch": true
+			"quark:toretoise": true
+			"crittersandcompanions:leaf_insect": true
+			"snowpig:snow_pig": true
+			"windswept:frostbiter": true
+			"crittersandcompanions:stag_beetle": true
+			"minecraft:villager": true
+			"minecraft:glow_squid": true
+			"minecraft:creeper": true
+			"snuffles:snuffle": true
 			"minecraft:fox": true
+			"minecraft:skeleton": true
+			"minecraft:zombie": true
+			"minecraft:rabbit": true
+			"minecraft:spider": true
+			"unusualfishmod:deep_crawler": true
+			"minecraft:enderman": true
+			"crittersandcompanions:ladybug": true
+			"quark:stoneling": true
+			"minecraft:bat": true
+			"etcetera:weaver": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

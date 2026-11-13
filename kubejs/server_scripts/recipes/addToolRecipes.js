@@ -68,6 +68,40 @@ ServerEvents.recipes((e) => {
     "society:prismatic_shard"
   );
 
+  const manasteelUpgrades = (type) => {
+    e.smithing(
+      `botania:manasteel_${type === "pickaxe" ? "pick" : type}`,
+      "society:botanical_tribute",
+      `minecraft:golden_${type}`,
+      "botania:manasteel_ingot"
+    );
+  };
+  const elementiumUpgrades = (type) => {
+    e.smithing(
+      `botania:elementium_${type}`,
+      "society:botanical_tribute",
+      `botania:manasteel_${type === "pickaxe" ? "pick" : type}`,
+      "botania:elementium_ingot"
+    );
+  };
+  e.smithing(
+    "botania:glass_pickaxe",
+    "society:botanical_tribute",
+    "botania:manasteel_pick",
+    "botania:mana_glass"
+  );
+  const runes = ["spring", "summer", "autumn", "winter"];
+  const terrasteelUpgrades = (type, runeIndex) => {
+    e.shaped(`botania:terrasteel_${type}`, ["crc", "mTm", "cmc"], {
+      T: Item.of(`botania:manasteel_${type}`),
+      m: "botania:terrasteel_ingot",
+      c: "society:botanical_tribute",
+      r: `botania:rune_${runes[runeIndex]}`,
+    }).modifyResult((grid, result) => {
+      let item = grid.find(Item.of(`botania:manasteel_${type}`));
+      return result.withNBT(item.nbt);
+    });
+  };
   const neptuniumUpgrades = (type) => {
     e.smithing(
       `aquaculture:neptunium_${type}`,
@@ -79,10 +113,15 @@ ServerEvents.recipes((e) => {
   toolTypes.forEach((type) => {
     upgradeTool(type, "minecraft");
     neptuniumUpgrades(type);
+    manasteelUpgrades(type);
+    elementiumUpgrades(type);
   });
   armorTypes.forEach((type, index) => {
     upgradeTool(type, "minecraft", true);
     neptuniumUpgrades(type);
+    manasteelUpgrades(type);
+    elementiumUpgrades(type);
+    terrasteelUpgrades(type, index);
   });
   e.smithing(
     `aquaculture:neptunium_bow`,

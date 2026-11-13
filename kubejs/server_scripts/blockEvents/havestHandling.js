@@ -118,6 +118,7 @@ BlockEvents.rightClicked((e) => {
         [
           "minecraft:netherite_hoe",
           "minecraft:diamond_hoe",
+          "botania:elementium_hoe",
         ].includes(item.id)
       )
         radius = 2;

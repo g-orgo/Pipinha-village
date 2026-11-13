@@ -35,7 +35,7 @@ global.handleCornucopia = (server, level, centerPos, player, returnExperience) =
   let modifiedProperties;
   let experienceMult = 0;
   server.runCommandSilent(
-    `playsound ${player != null ? "trials:breeze_idle" : "etcetera:block.drum.djembe.low"} block @a ${x} ${y} ${z}`
+    `playsound ${player != null ? "minecraft:entity.breeze.idle_ground" : "etcetera:block.drum.djembe.low"} block @a ${x} ${y} ${z}`
   );
   if (!player) {
       level.spawnParticles(

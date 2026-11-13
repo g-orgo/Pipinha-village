@@ -6,17 +6,21 @@
   "stage_required": "invited_shepherd",
   "selector_weight": -97,
   "jei_catalyst": {
-    "item": "society:villager",
-    "nbt": "{type:{id:\"society:shepherd\"}}"
+    "id": "society:villager_home",
+    "components": {
+      "minecraft:custom_data": {
+        "type": "shepherd"
+      }
+    }
   },
   "trades": [
     {
       "offer": {
-        "item": "society:animal_feed",
+        "id": "society:animal_feed",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 16,
@@ -24,11 +28,11 @@
     },
     {
       "offer": {
-        "item": "society:animal_feed",
+        "id": "society:animal_feed",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 14,
@@ -39,11 +43,11 @@
     },
     {
       "offer": {
-        "item": "society:animal_feed",
+        "id": "society:animal_feed",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 14,
@@ -54,11 +58,11 @@
     },
     {
       "offer": {
-        "item": "society:animal_feed",
+        "id": "society:animal_feed",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sprocket",
+        "id": "numismatics:sprocket",
         "count": 1
       },
       "numismatics_cost": 12,
@@ -68,12 +72,16 @@
     },
     {
       "offer": {
-        "item": "patchouli:guide_book",
+        "id": "patchouli:guide_book",
         "count": 1,
-        "nbt": "{\"patchouli:book\":\"patchouli:almanac\"}"
+        "components": {
+          "minecraft:custom_data": {
+            "patchouli:book": "patchouli:almanac"
+          }
+        }
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 64,
@@ -81,11 +89,11 @@
     },
     {
       "offer": {
-        "item": "society:feeding_trough",
+        "id": "society:feeding_trough",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 4096,
@@ -93,11 +101,11 @@
     },
     {
       "offer": {
-        "item": "society:feeding_trough",
+        "id": "society:feeding_trough",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3686,
@@ -108,11 +116,11 @@
     },
     {
       "offer": {
-        "item": "society:feeding_trough",
+        "id": "society:feeding_trough",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3482,
@@ -123,11 +131,11 @@
     },
     {
       "offer": {
-        "item": "society:feeding_trough",
+        "id": "society:feeding_trough",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3072,
@@ -137,11 +145,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:name_tag",
+        "id": "minecraft:name_tag",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -149,11 +157,11 @@
     },
     {
       "offer": {
-        "item": "moblassos:diamond_lasso",
+        "id": "moblassos:diamond_lasso",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 16384,
@@ -161,11 +169,11 @@
     },
     {
       "offer": {
-        "item": "society:milk_pail",
+        "id": "society:milk_pail",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 256,
@@ -173,11 +181,11 @@
     },
     {
       "offer": {
-        "item": "society:milk_pail",
+        "id": "society:milk_pail",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 230,
@@ -188,11 +196,11 @@
     },
     {
       "offer": {
-        "item": "society:milk_pail",
+        "id": "society:milk_pail",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 218,
@@ -203,11 +211,11 @@
     },
     {
       "offer": {
-        "item": "society:milk_pail",
+        "id": "society:milk_pail",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 192,
@@ -217,11 +225,11 @@
     },
     {
       "offer": {
-        "item": "society:miracle_potion",
+        "id": "society:miracle_potion",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 2
       },
       "numismatics_cost": 1024,
@@ -229,11 +237,11 @@
     },
     {
       "offer": {
-        "item": "society:miracle_potion",
+        "id": "society:miracle_potion",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 2
       },
       "numismatics_cost": 922,
@@ -244,11 +252,11 @@
     },
     {
       "offer": {
-        "item": "society:miracle_potion",
+        "id": "society:miracle_potion",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 2
       },
       "numismatics_cost": 870,
@@ -259,11 +267,11 @@
     },
     {
       "offer": {
-        "item": "society:miracle_potion",
+        "id": "society:miracle_potion",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 2
       },
       "numismatics_cost": 768,
@@ -273,11 +281,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:saddle",
+        "id": "minecraft:saddle",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 2
       },
       "numismatics_cost": 128,
@@ -285,11 +293,11 @@
     },
     {
       "offer": {
-        "item": "society:magic_shears",
+        "id": "society:magic_shears",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 6
       },
       "numismatics_cost": 3072,
@@ -297,11 +305,11 @@
     },
     {
       "offer": {
-        "item": "society:magic_shears",
+        "id": "society:magic_shears",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 6
       },
       "numismatics_cost": 2765,
@@ -312,11 +320,11 @@
     },
     {
       "offer": {
-        "item": "society:magic_shears",
+        "id": "society:magic_shears",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 6
       },
       "numismatics_cost": 2611,
@@ -327,11 +335,11 @@
     },
     {
       "offer": {
-        "item": "society:magic_shears",
+        "id": "society:magic_shears",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 6
       },
       "numismatics_cost": 2304,
@@ -341,11 +349,11 @@
     },
     {
       "offer": {
-        "item": "society:mood_scanner",
+        "id": "society:mood_scanner",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 7
       },
       "numismatics_cost": 3584,
@@ -353,11 +361,11 @@
     },
     {
       "offer": {
-        "item": "society:mood_scanner",
+        "id": "society:mood_scanner",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 7
       },
       "numismatics_cost": 3226,
@@ -368,11 +376,11 @@
     },
     {
       "offer": {
-        "item": "society:mood_scanner",
+        "id": "society:mood_scanner",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 7
       },
       "numismatics_cost": 3046,
@@ -383,11 +391,11 @@
     },
     {
       "offer": {
-        "item": "society:mood_scanner",
+        "id": "society:mood_scanner",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 7
       },
       "numismatics_cost": 2688,
@@ -397,11 +405,11 @@
     },
     {
       "offer": {
-        "item": "etcetera:handbell",
+        "id": "etcetera:handbell",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -409,11 +417,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:chicken_spawn_egg",
+        "id": "minecraft:chicken_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -421,11 +429,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:chicken_spawn_egg",
+        "id": "minecraft:chicken_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 461,
@@ -436,11 +444,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:chicken_spawn_egg",
+        "id": "minecraft:chicken_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 435,
@@ -451,11 +459,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:chicken_spawn_egg",
+        "id": "minecraft:chicken_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 384,
@@ -465,11 +473,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:cow_spawn_egg",
+        "id": "minecraft:cow_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -477,11 +485,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:cow_spawn_egg",
+        "id": "minecraft:cow_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 461,
@@ -492,11 +500,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:cow_spawn_egg",
+        "id": "minecraft:cow_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 435,
@@ -507,11 +515,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:cow_spawn_egg",
+        "id": "minecraft:cow_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 384,
@@ -521,11 +529,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:sheep_spawn_egg",
+        "id": "minecraft:sheep_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -533,11 +541,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:sheep_spawn_egg",
+        "id": "minecraft:sheep_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 461,
@@ -548,11 +556,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:sheep_spawn_egg",
+        "id": "minecraft:sheep_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 435,
@@ -563,11 +571,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:sheep_spawn_egg",
+        "id": "minecraft:sheep_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 384,
@@ -577,11 +585,11 @@
     },
     {
       "offer": {
-        "item": "untitledduckmod:duck_sack",
+        "id": "untitledduckmod:duck_sack",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -589,11 +597,11 @@
     },
     {
       "offer": {
-        "item": "untitledduckmod:duck_sack",
+        "id": "untitledduckmod:duck_sack",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 461,
@@ -604,11 +612,11 @@
     },
     {
       "offer": {
-        "item": "untitledduckmod:duck_sack",
+        "id": "untitledduckmod:duck_sack",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 435,
@@ -619,11 +627,11 @@
     },
     {
       "offer": {
-        "item": "untitledduckmod:duck_sack",
+        "id": "untitledduckmod:duck_sack",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 384,
@@ -633,11 +641,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:rabbit_spawn_egg",
+        "id": "minecraft:rabbit_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 4096,
@@ -645,11 +653,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:rabbit_spawn_egg",
+        "id": "minecraft:rabbit_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3686,
@@ -660,11 +668,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:rabbit_spawn_egg",
+        "id": "minecraft:rabbit_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3482,
@@ -675,11 +683,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:rabbit_spawn_egg",
+        "id": "minecraft:rabbit_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 1
       },
       "numismatics_cost": 3072,
@@ -689,11 +697,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:pig_spawn_egg",
+        "id": "minecraft:pig_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 16384,
@@ -701,11 +709,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:pig_spawn_egg",
+        "id": "minecraft:pig_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 14746,
@@ -716,11 +724,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:pig_spawn_egg",
+        "id": "minecraft:pig_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 13926,
@@ -731,11 +739,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:pig_spawn_egg",
+        "id": "minecraft:pig_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 12288,
@@ -745,11 +753,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:goat_spawn_egg",
+        "id": "minecraft:goat_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 16484,
@@ -757,11 +765,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:goat_spawn_egg",
+        "id": "minecraft:goat_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 14836,
@@ -772,11 +780,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:goat_spawn_egg",
+        "id": "minecraft:goat_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 14011,
@@ -787,11 +795,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:goat_spawn_egg",
+        "id": "minecraft:goat_spawn_egg",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 4
       },
       "numismatics_cost": 12363,
@@ -801,11 +809,11 @@
     },
     {
       "offer": {
-        "item": "society:friendship_necklace",
+        "id": "society:friendship_necklace",
         "count": 1
       },
       "request": {
-        "item": "numismatics:sun",
+        "id": "numismatics:sun",
         "count": 48
       },
       "numismatics_cost": 196608,

@@ -3,7 +3,7 @@ console.info("[SOCIETY] addMiscRecipes.js loaded");
 ServerEvents.recipes((e) => {
   // Invitation item belongs to a future phase; skip it until the item is registered.
   if (Item.exists('society:invitation')) {
-    e.shapeless(Item.of('society:invitation[minecraft:custom_data={type:{id:"society:carpenter"}}]'), ['minecraft:crafting_table', "minecraft:wooden_axe", "minecraft:cobblestone"])
+    e.shapeless(Item.of('society:invitation[minecraft:custom_data={type:"society:carpenter"}]'), ['minecraft:crafting_table', "minecraft:wooden_axe", "minecraft:cobblestone"])
   }
   // Quality is a data component in 1.21.1, set through the startup helper.
   const sugarOfQuality = (count, level) => {
@@ -402,7 +402,7 @@ ServerEvents.recipes((e) => {
   });
   // Prismatic
   e.shapeless("society:car_key", [
-    "minecraft:saddle", // dropped in 1.21.1: relics:horse_flute substituted by minecraft:saddle
+    "minecraft:saddle", // dropped in 1.21.1: horse flute replaced by minecraft:saddle
     "society:prismatic_shard",
   ]);
   e.shaped("society:prize_machine", ["ttt", "tbt", "ttt"], {
@@ -848,17 +848,36 @@ ServerEvents.recipes((e) => {
   // dropped in 1.21.1: dew_drop_farmland_growth:netherite_sprinkler no longer exists
 
   // Botania
-  // dropped in 1.21.1: botania key M (botanical tribute) no longer exists
+  e.shaped("society:botanical_tribute", ["CCC", "CMC", "CCC"], {
+    M: "botania:manasteel_ingot",
+    C: "numismatics:sun",
+  });
 
-  // dropped in 1.21.1: unusualfishmod fluvial_shell keys r and h no longer exists
+  e.shaped("unusualfishmod:fluvial_shell", [" r ", "nhn", " d "], {
+    r: "botania:rune_summer",
+    h: "botania:horn_grass",
+    d: "minecraft:nautilus_shell",
+    n: "aquaculture:neptunium_ingot",
+  });
 
-  // dropped in 1.21.1: unusualfishmod clement_shell keys r and h no longer exists
+  e.shaped("unusualfishmod:clement_shell", [" r ", " h ", " g "], {
+    r: "botania:rune_envy",
+    h: "unusualfishmod:fluvial_shell",
+    g: "vinery:glowing_wine",
+  });
 
-  // dropped in 1.21.1: unusualfishmod thunderous_shell keys r and h no longer exists
+  e.shaped("unusualfishmod:thunderous_shell", [" r ", "chc", " c "], {
+    r: "botania:rune_wrath",
+    h: "unusualfishmod:fluvial_shell",
+    c: "society:charging_rod",
+  });
 
   // dropped in 1.21.1: species:ichor_bottle no longer exists
 
-  // dropped in 1.21.1: botania:pixie_dust and botania:horn_grass no longer exists
+  e.shaped("society:cornucopia", [" p ", "php", " p "], {
+    p: "botania:pixie_dust",
+    h: "botania:horn_grass",
+  });
   e.shaped("society:cornucopia", [" c ", "shs", " s "], {
     c: "numismatics:neptunium_coin",
     s: "society:sparkstone_block",
@@ -870,11 +889,35 @@ ServerEvents.recipes((e) => {
     b: "society:magic_bulb",
     l: "meadow:firewood"
   });
-  // dropped in 1.21.1: botania keys r, n, l, T (mana milker) no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:gold_sprinkler no longer exists
-  // dropped in 1.21.1: botania keys m, r, T (mana clock) no longer exists
+  e.shaped("society:mana_milker", ["rtr", "nMn", "lTl"], {
+    r: "botania:rune_earth",
+    t: "society:botanical_tribute",
+    n: "botania:terrasteel_nugget",
+    M: "society:milk_pail",
+    l: "botania:livingwood_log",
+    T: "botania:mana_tablet",
+  });
+  e.shaped("society:mana_sprinkler", ["lil", "iSi", "lPl"], {
+    i: "botania:manasteel_ingot",
+    S: "farm_and_charm:water_sprinkler",
+    l: "botania:livingwood_log",
+    P: "botania:pump",
+  });
+  e.shaped("society:mana_clock", ["mrm", "ncn", "mTm"], {
+    r: "botania:rune_sloth",
+    T: "botania:terrasteel_ingot",
+    m: "botania:manasteel_block",
+    c: "minecraft:clock",
+    n: "minecraft:netherite_ingot",
+  });
 
-  // dropped in 1.21.1: botania keys r, n, c, T (sparkstone recycler) no longer exists
+  e.shaped("society:sparkstone_recycler", ["mrm", "ncn", "mTm"], {
+    r: "botania:rune_greed",
+    T: "botania:mana_pylon",
+    m: "society:botanical_tribute",
+    c: "botania:life_essence",
+    n: "botania:dragonstone",
+  });
 
   e.shaped("society:spark_gro", ["oso", "sps", "oso"], {
     o: "vintagedelight:organic_mash",

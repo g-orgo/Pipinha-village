@@ -8,12 +8,12 @@ from convert import stack, LOG, K
 
 SRC = "/var/home/Orgo/Documentos/curseforge/minecraft/Instances/Society: Sunlit Valley/config/ftbquests/quests"
 OUT = sys.argv[1]
-DROP_CHAPTERS = {'botania', 'slimes'}  # owner decision 2026-11-12
+DROP_CHAPTERS = {'slimes'}  # owner decision 2026-11-12
 # Quests kept alive only by checkmark/stat tasks whose whole text is about Splendid Slimes or Botania.
-TEXT_REMOVE_QUESTS = {'6EBAA004C1A50E98', '747B28CA5F55AFA7', '07A551F04BB9A117', '1030BCF34FEAE03C', '668AEE0B5CD49EE4'}
+TEXT_REMOVE_QUESTS = {'747B28CA5F55AFA7', '07A551F04BB9A117', '1030BCF34FEAE03C', '668AEE0B5CD49EE4'}
 # Description lines (lang key suffixes) that only talk about Splendid Slimes, in quests that stay.
 DESC_DROP = {'3225DF52212FAF3E': ['description2'], '66C03C4DA3F21900': ['description1', 'description2']}
-CHAPTER_SUBTITLE_DROP = {'abandoned_farm'}  # "Reward: Botania Unlocked"
+CHAPTER_SUBTITLE_DROP = set()  # "Reward: Botania Unlocked"
 removed = {'chapters': set(DROP_CHAPTERS), 'quests': {}, 'objects': set(), 'keys': []}
 
 

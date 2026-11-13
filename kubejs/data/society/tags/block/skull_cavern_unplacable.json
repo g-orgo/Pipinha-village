@@ -108,6 +108,10 @@
     "create:gantry_carriage",
     "create:track_station",
     "minecraft:dispenser",
-    "#society:skull_cavern_bomb_denied"
+    "#society:skull_cavern_bomb_denied",
+    "botania:floating_orechid_ignem",
+    "botania:floating_orechid",
+    "botania:orechid_ignem",
+    "botania:orechid"
   ]
 }

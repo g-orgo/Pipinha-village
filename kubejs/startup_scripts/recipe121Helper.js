@@ -28,6 +28,7 @@ global.toRecipe121 = (() => {
     const out = { id: stack.item };
     if (stack.count !== undefined) out.count = stack.count;
     if (stack.chance !== undefined) out.chance = stack.chance;
+    if (stack.components !== undefined) out.components = stack.components;
     return out;
   };
 
@@ -57,3 +58,26 @@ global.toRecipe121 = (() => {
 
   return toRecipe121;
 })();
+
+// Returns false when the converted recipe uses an item or fluid id that is not
+// registered in the installed mods (for example a removed mod such as nethervinery).
+// Recipe scripts call it before e.custom so a missing id skips that one recipe
+// instead of producing a parse error on load. Tags (#...) are not checked.
+global.recipeIdsExist121 = (recipe) => {
+  const idExists = (id) => {
+    if (typeof id !== "string" || id.charAt(0) === "#") return true;
+    return Item.exists(id) || Fluid.exists(id);
+  };
+  const walk = (node) => {
+    if (Array.isArray(node)) return node.every(walk);
+    if (node === null || typeof node !== "object") return true;
+    for (const key in node) {
+      const value = node[key];
+      if (key === "fluid" && typeof value === "string" && !idExists(value)) return false;
+      if ((key === "item" || key === "id") && typeof value === "string" && !idExists(value)) return false;
+      if (!walk(value)) return false;
+    }
+    return true;
+  };
+  return walk(recipe);
+};

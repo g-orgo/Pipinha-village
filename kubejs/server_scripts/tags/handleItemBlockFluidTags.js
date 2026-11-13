@@ -527,6 +527,7 @@ ServerEvents.tags("item", (e) => {
   Color.DYE.forEach((color) => {
     e.add(
       "society:botania_seeds",
+      `botania_seeds:${color}_mystical_flower_seed`
     );
   });
   [
@@ -644,10 +645,9 @@ ServerEvents.tags("block", (e) => {
     "translocators:item_translocator",
     "cb_multipart:multipart",
     "translocators:fluid_translocator",
-    "trials:trial_spawner",
+    "minecraft:trial_spawner",
     "minecraft:spawner",
-    "trials:trial_vault",
-    "trials:trial_vault_ominous",
+    "minecraft:vault",
     "fastpaintings:painting",
     "fastpaintings:painting",
     "lootr:lootr_barrel",

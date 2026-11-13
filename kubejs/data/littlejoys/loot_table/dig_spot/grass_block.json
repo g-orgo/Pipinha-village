@@ -149,6 +149,11 @@
           "type": "minecraft:item",
           "weight": 24,
           "name": "minecraft:air"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "botania:overgrowth_seed"
         }
       ],
       "rolls": 1.0

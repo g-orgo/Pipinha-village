@@ -5,17 +5,41 @@
 	"hidden_from_selector": true,
 	"display_type": "image",
 	"jei_catalyst": {
-		"item": "society:preserves_jar"
+		"id": "society:preserves_jar"
 	},
 	"trades": [
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_basic\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.basic_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_basic\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_basic",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_basic",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/basic/shed_basic",
@@ -24,12 +48,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_alpine\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.alpine_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.alpine_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_alpine\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_alpine",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_alpine",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/alpine/shed_alpine",
@@ -38,12 +86,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_arid\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.arid_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.arid_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_arid\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_arid",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_arid",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/arid/shed_arid",
@@ -52,12 +124,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_bamboo\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bamboo_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bamboo_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_bamboo\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_bamboo",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_bamboo",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/bamboo/shed_bamboo",
@@ -66,12 +162,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_bavarian\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bavarian_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.bavarian_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_bavarian\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_bavarian",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_bavarian",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/bavarian/shed_bavarian",
@@ -80,12 +200,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_cherry\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cherry_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.cherry_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_cherry\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_cherry",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_cherry",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/cherry/shed_cherry",
@@ -94,12 +238,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_entrana\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.entrana_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.entrana_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_entrana\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_entrana",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_entrana",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/entrana/shed_entrana",
@@ -108,12 +276,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_floral\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.floral_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.floral_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_floral\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_floral",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_floral",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/floral/shed_floral",
@@ -122,12 +314,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_mason\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.mason_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.mason_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_mason\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_mason",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_mason",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/mason/shed_mason",
@@ -136,12 +352,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_prismarine\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.prismarine_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.prismarine_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_prismarine\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_prismarine",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_prismarine",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/prismarine/shed_prismarine",
@@ -150,12 +390,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_rural\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.rural_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_rural\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_rural",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_rural",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/rural/shed_rural",
@@ -164,12 +428,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_sakura\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.sakura_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.sakura_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_sakura\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_sakura",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_sakura",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/sakura/shed_sakura",
@@ -178,12 +466,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_siberian\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.siberian_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.siberian_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_siberian\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_siberian",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_siberian",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/siberian/shed_siberian",
@@ -192,12 +504,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_tudor\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.tudor_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.tudor_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_tudor\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_tudor",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_tudor",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/tudor/shed_tudor",
@@ -206,12 +542,36 @@
 		},
 		{
 			"offer": {
-				"item": "portable_blueprints:worn_blueprint",
-				"nbt": "{Damage:1,allow_nbt:1,altezza:0,blueprint_name:\"shed_vibrantown\",buildAnyway:0b,display:{Name:'{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.vibrantown_shed\"}',Lore:['{\"italic\":false,\"color\":\"#FFFF00\",\"translate\":\"portable_blueprints.worn_blueprint.vibrantown_shed.author\"}']},free_build:1,inventari_blocco_selezionati:\"\",lunghezzaX:0,lunghezzaZ:0,mirrowX:0b,mirrowY:0b,mirrowZ:0b,nome:\"shed_vibrantown\",owner:\"worn\",owner_name:Ace,remaining_uses:1,rotateValue:0s,skipObstructionBlock:0b,visualizeBuild:1b,wasHolding:1b,worn_set:1b}",
-				"count": 1
+				"id": "portable_blueprints:worn_blueprint",
+				"count": 1,
+				"components": {
+					"minecraft:custom_data": {
+						"allow_nbt": 1,
+						"altezza": 0,
+						"blueprint_name": "shed_vibrantown",
+						"buildAnyway": 0,
+						"free_build": 1,
+						"inventari_blocco_selezionati": "",
+						"lunghezzaX": 0,
+						"lunghezzaZ": 0,
+						"mirrowX": 0,
+						"mirrowY": 0,
+						"mirrowZ": 0,
+						"nome": "shed_vibrantown",
+						"owner": "worn",
+						"owner_name": "Ace",
+						"remaining_uses": 1,
+						"rotateValue": 0,
+						"skipObstructionBlock": 0,
+						"visualizeBuild": 1,
+						"wasHolding": 1,
+						"worn_set": 1
+					},
+					"minecraft:damage": 1
+				}
 			},
 			"request": {
-				"item": "society:building_supplies",
+				"id": "society:building_supplies",
 				"count": 1
 			},
 			"image": "society:textures/gui/buildings/vibrantown/shed_vibrantown",

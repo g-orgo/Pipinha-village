@@ -2,6 +2,7 @@ console.info("[SOCIETY] manaMilker.js loaded");
 
 const MANA_PER_MILK = 400;
 const MAX_MANA = MANA_PER_MILK * 10;
+global.registerManaReceiver("society:mana_milker", global.persistentManaSpec(MAX_MANA));
 StartupEvents.registry("block", (event) => {
   event
     .create("society:mana_milker")

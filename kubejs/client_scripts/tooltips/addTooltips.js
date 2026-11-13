@@ -425,6 +425,15 @@ ItemEvents.modifyTooltips((event) => {
   );
   // Misc
   tooltip.add(
+    [
+      "botania:agricarnation",
+      "botania:agricarnation_chibi",
+      "botania:floating_agricarnation",
+      "botania:floating_agricarnation_chibi",
+    ],
+    Text.translatable("tooltip.society.not_work_on_farmland").darkRed()
+  );
+  tooltip.add(
     "numismaticsutils:bank_meter",
     Text.translatable("tooltip.society.bank_meter").gray()
   );
@@ -754,6 +763,16 @@ ItemEvents.modifyTooltips((event) => {
     "society:dragontooth_axe",
     Text.translatable("item.society.dragontooth_axe.description").red()
   );
+  tooltip.addAdvanced("botania:apothecary_default", (item, advanced, text) => {
+    if (tooltip.shift) {
+      text.add(Text.translatable("tooltip.society.petal_apothecary.description").gold());
+    } else {
+      text.add([
+        Text.translatable("tooltip.society.petal_apothecary.obtain").append(" "),
+        Text.translatable("tooltip.society.hold_key", Text.translatable("key.keyboard.shift").gray()).darkGray(),
+      ]);
+    }
+  });
   tooltip.add(
     "society:kinetic_blueprint",
     Text.translatable("item.society.kinetic_blueprint.description.tip").green()
@@ -940,7 +959,7 @@ ItemEvents.modifyTooltips((event) => {
   // Magnifying
 
   tooltip.add(
-    "trials:ominous_bottle",
+    "minecraft:ominous_bottle",
     Text.translatable("effect.minecraft.bad_omen")
       .blue()
       .append(Text.of(" (10:00)"))

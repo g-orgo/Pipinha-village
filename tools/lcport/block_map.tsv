@@ -1,5 +1,4 @@
 old_id	new_id	rule
-botania:apothecary_default	minecraft:cauldron	b
 cfm:birch_chair	refurbished_furniture:birch_chair	b
 cfm:birch_hedge	minecraft:birch_leaves[persistent=true]	b
 cfm:birch_kitchen_sink_light	refurbished_furniture:birch_kitchen_sink	b
@@ -106,8 +105,6 @@ embellishcraft:white_oak_fancy_bed	minecraft:white_bed	b
 embellishcraft:white_spruce_fancy_bed	minecraft:white_bed	b
 embellishcraft:yellow_dark_oak_fancy_bed	minecraft:yellow_bed	b
 embellishcraft:yellow_oak_fancy_bed	minecraft:yellow_bed	b
-fantasyfurniture:decorations/brewing_cauldron	minecraft:cauldron	b
-fantasyfurniture:decorations/venthyr_tea_set	candlelight:table_set	b
 hearthandharvest:egg_crate	hearthandharvest:crate	b
 hearthandharvest:milk_crate	hearthandharvest:crate	b
 meadow:bench	meadow:pine_bench	a
@@ -230,8 +227,6 @@ redeco:white_sofa	another_furniture:white_sofa	b
 redeco:yellow_ottoman	another_furniture:yellow_stool	b
 society:fire_quartz	minecraft:quartz_block	c
 species:alphacene_grass	minecraft:grass_block	c
-trials:tuff_slab	minecraft:tuff_slab	c
-trials:tuff_stairs	minecraft:tuff_stairs	c
 verdantvibes:ivy	minecraft:vine	b
 vinery:basket	farmersdelight:wooden_basket	b
 vinery:flower_box	meadow:wooden_flower_box	b

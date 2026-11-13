@@ -94,6 +94,9 @@
     "block_properties": false,
     "mod_name": true
   },
+  "redomesticate": {
+    "collar_tag": true
+  },
   "quality_food": {
     "quality_block": true,
     "quality_mob": true

@@ -4,17 +4,31 @@
   "texture": "vinery:textures/block/dark_cherry_cabinet_front",
   "entity": "vinery:wandering_winemaker",
   "hidden_from_selector": true,
-  "jei_catalyst": { "item": "vinery:wandering_winemaker_spawn_egg" },
+  "jei_catalyst": {
+    "id": "vinery:wandering_winemaker_spawn_egg"
+  },
   "trades": [
     {
-      "request": { "count": 1, "item": "numismatics:cog" },
-      "offer": { "count": 1, "item": "vinery:red_grape_seeds" },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:red_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 256,
       "trade_id": "wandering_winemaker_red_grape_seeds"
     },
     {
-      "request": { "count": 1, "item": "numismatics:cog" },
-      "offer": { "count": 1, "item": "vinery:red_grape_seeds" },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:red_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 230,
       "trade_id": "wandering_winemaker_red_grape_seeds_mercantil_1",
       "stage_required": "mercantil_wine_1",
@@ -22,8 +36,14 @@
       "unlock_description": "jei.society_trading.mercantil_discount_1"
     },
     {
-      "request": { "count": 1, "item": "numismatics:cog" },
-      "offer": { "count": 1, "item": "vinery:red_grape_seeds" },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:red_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 218,
       "trade_id": "wandering_winemaker_red_grape_seeds_mercantil_2",
       "stage_required": "mercantil_wine_2",
@@ -31,22 +51,40 @@
       "unlock_description": "jei.society_trading.mercantil_discount_2"
     },
     {
-      "request": { "count": 1, "item": "numismatics:cog" },
-      "offer": { "count": 1, "item": "vinery:red_grape_seeds" },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:red_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 192,
       "trade_id": "wandering_winemaker_red_grape_seeds_mercantil_3",
       "stage_required": "mercantil_wine_3",
       "unlock_description": "jei.society_trading.mercantil_discount_3"
     },
     {
-      "request": { "count": 1, "item": "numismatics:cog" },
-      "offer": { "count": 1, "item": "vinery:white_grape_seeds" },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:white_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 256,
       "trade_id": "wandering_winemaker_white_grape_seeds"
     },
     {
-      "request": { "count": 1, "item": "numismatics:cog" },
-      "offer": { "count": 1, "item": "vinery:white_grape_seeds" },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:white_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 230,
       "trade_id": "wandering_winemaker_white_grape_seeds_mercantil_1",
       "stage_required": "mercantil_wine_1",
@@ -54,8 +92,14 @@
       "unlock_description": "jei.society_trading.mercantil_discount_1"
     },
     {
-      "request": { "count": 1, "item": "numismatics:cog" },
-      "offer": { "count": 1, "item": "vinery:white_grape_seeds" },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:white_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 218,
       "trade_id": "wandering_winemaker_white_grape_seeds_mercantil_2",
       "stage_required": "mercantil_wine_2",
@@ -63,22 +107,40 @@
       "unlock_description": "jei.society_trading.mercantil_discount_2"
     },
     {
-      "request": { "count": 1, "item": "numismatics:cog" },
-      "offer": { "count": 1, "item": "vinery:white_grape_seeds" },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:white_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 192,
       "trade_id": "wandering_winemaker_white_grape_seeds_mercantil_3",
       "stage_required": "mercantil_wine_3",
       "unlock_description": "jei.society_trading.mercantil_discount_3"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:taiga_grape_seeds_red" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:taiga_grape_seeds_red",
+        "count": 1
+      },
       "numismatics_cost": 512,
       "trade_id": "wandering_winemaker_taiga_grape_seeds_red"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:taiga_grape_seeds_red" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:taiga_grape_seeds_red",
+        "count": 1
+      },
       "numismatics_cost": 461,
       "trade_id": "wandering_winemaker_taiga_grape_seeds_red_mercantil_1",
       "stage_required": "mercantil_wine_1",
@@ -86,8 +148,14 @@
       "unlock_description": "jei.society_trading.mercantil_discount_1"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:taiga_grape_seeds_red" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:taiga_grape_seeds_red",
+        "count": 1
+      },
       "numismatics_cost": 435,
       "trade_id": "wandering_winemaker_taiga_grape_seeds_red_mercantil_2",
       "stage_required": "mercantil_wine_2",
@@ -95,22 +163,40 @@
       "unlock_description": "jei.society_trading.mercantil_discount_2"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:taiga_grape_seeds_red" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:taiga_grape_seeds_red",
+        "count": 1
+      },
       "numismatics_cost": 384,
       "trade_id": "wandering_winemaker_taiga_grape_seeds_red_mercantil_3",
       "stage_required": "mercantil_wine_3",
       "unlock_description": "jei.society_trading.mercantil_discount_3"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:taiga_grape_seeds_white" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:taiga_grape_seeds_white",
+        "count": 1
+      },
       "numismatics_cost": 512,
       "trade_id": "wandering_winemaker_taiga_grape_seeds_white"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:taiga_grape_seeds_white" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:taiga_grape_seeds_white",
+        "count": 1
+      },
       "numismatics_cost": 461,
       "trade_id": "wandering_winemaker_taiga_grape_seeds_white_mercantil_1",
       "stage_required": "mercantil_wine_1",
@@ -118,8 +204,14 @@
       "unlock_description": "jei.society_trading.mercantil_discount_1"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:taiga_grape_seeds_white" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:taiga_grape_seeds_white",
+        "count": 1
+      },
       "numismatics_cost": 435,
       "trade_id": "wandering_winemaker_taiga_grape_seeds_white_mercantil_2",
       "stage_required": "mercantil_wine_2",
@@ -127,22 +219,40 @@
       "unlock_description": "jei.society_trading.mercantil_discount_2"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:taiga_grape_seeds_white" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:taiga_grape_seeds_white",
+        "count": 1
+      },
       "numismatics_cost": 384,
       "trade_id": "wandering_winemaker_taiga_grape_seeds_white_mercantil_3",
       "stage_required": "mercantil_wine_3",
       "unlock_description": "jei.society_trading.mercantil_discount_3"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:savanna_grape_seeds_red" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:savanna_grape_seeds_red",
+        "count": 1
+      },
       "numismatics_cost": 512,
       "trade_id": "wandering_winemaker_savanna_grape_seeds_red"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:savanna_grape_seeds_red" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:savanna_grape_seeds_red",
+        "count": 1
+      },
       "numismatics_cost": 461,
       "trade_id": "wandering_winemaker_savanna_grape_seeds_red_mercantil_1",
       "stage_required": "mercantil_wine_1",
@@ -150,8 +260,14 @@
       "unlock_description": "jei.society_trading.mercantil_discount_1"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:savanna_grape_seeds_red" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:savanna_grape_seeds_red",
+        "count": 1
+      },
       "numismatics_cost": 435,
       "trade_id": "wandering_winemaker_savanna_grape_seeds_red_mercantil_2",
       "stage_required": "mercantil_wine_2",
@@ -159,22 +275,40 @@
       "unlock_description": "jei.society_trading.mercantil_discount_2"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:savanna_grape_seeds_red" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:savanna_grape_seeds_red",
+        "count": 1
+      },
       "numismatics_cost": 384,
       "trade_id": "wandering_winemaker_savanna_grape_seeds_red_mercantil_3",
       "stage_required": "mercantil_wine_3",
       "unlock_description": "jei.society_trading.mercantil_discount_3"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:savanna_grape_seeds_white" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:savanna_grape_seeds_white",
+        "count": 1
+      },
       "numismatics_cost": 512,
       "trade_id": "wandering_winemaker_savanna_grape_seeds_white"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:savanna_grape_seeds_white" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:savanna_grape_seeds_white",
+        "count": 1
+      },
       "numismatics_cost": 461,
       "trade_id": "wandering_winemaker_savanna_grape_seeds_white_mercantil_1",
       "stage_required": "mercantil_wine_1",
@@ -182,8 +316,14 @@
       "unlock_description": "jei.society_trading.mercantil_discount_1"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:savanna_grape_seeds_white" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:savanna_grape_seeds_white",
+        "count": 1
+      },
       "numismatics_cost": 435,
       "trade_id": "wandering_winemaker_savanna_grape_seeds_white_mercantil_2",
       "stage_required": "mercantil_wine_2",
@@ -191,22 +331,40 @@
       "unlock_description": "jei.society_trading.mercantil_discount_2"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:savanna_grape_seeds_white" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:savanna_grape_seeds_white",
+        "count": 1
+      },
       "numismatics_cost": 384,
       "trade_id": "wandering_winemaker_savanna_grape_seeds_white_mercantil_3",
       "stage_required": "mercantil_wine_3",
       "unlock_description": "jei.society_trading.mercantil_discount_3"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:jungle_grape_seeds_red" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:jungle_grape_seeds_red",
+        "count": 1
+      },
       "numismatics_cost": 512,
       "trade_id": "wandering_winemaker_jungle_grape_seeds_red"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:jungle_grape_seeds_red" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:jungle_grape_seeds_red",
+        "count": 1
+      },
       "numismatics_cost": 461,
       "trade_id": "wandering_winemaker_jungle_grape_seeds_red_mercantil_1",
       "stage_required": "mercantil_wine_1",
@@ -214,8 +372,14 @@
       "unlock_description": "jei.society_trading.mercantil_discount_1"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:jungle_grape_seeds_red" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:jungle_grape_seeds_red",
+        "count": 1
+      },
       "numismatics_cost": 435,
       "trade_id": "wandering_winemaker_jungle_grape_seeds_red_mercantil_2",
       "stage_required": "mercantil_wine_2",
@@ -223,22 +387,40 @@
       "unlock_description": "jei.society_trading.mercantil_discount_2"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:jungle_grape_seeds_red" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:jungle_grape_seeds_red",
+        "count": 1
+      },
       "numismatics_cost": 384,
       "trade_id": "wandering_winemaker_jungle_grape_seeds_red_mercantil_3",
       "stage_required": "mercantil_wine_3",
       "unlock_description": "jei.society_trading.mercantil_discount_3"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:jungle_grape_seeds_white" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:jungle_grape_seeds_white",
+        "count": 1
+      },
       "numismatics_cost": 512,
       "trade_id": "wandering_winemaker_jungle_grape_seeds_white"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:jungle_grape_seeds_white" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:jungle_grape_seeds_white",
+        "count": 1
+      },
       "numismatics_cost": 461,
       "trade_id": "wandering_winemaker_jungle_grape_seeds_white_mercantil_1",
       "stage_required": "mercantil_wine_1",
@@ -246,8 +428,14 @@
       "unlock_description": "jei.society_trading.mercantil_discount_1"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:jungle_grape_seeds_white" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:jungle_grape_seeds_white",
+        "count": 1
+      },
       "numismatics_cost": 435,
       "trade_id": "wandering_winemaker_jungle_grape_seeds_white_mercantil_2",
       "stage_required": "mercantil_wine_2",
@@ -255,22 +443,40 @@
       "unlock_description": "jei.society_trading.mercantil_discount_2"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "vinery:jungle_grape_seeds_white" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "vinery:jungle_grape_seeds_white",
+        "count": 1
+      },
       "numismatics_cost": 384,
       "trade_id": "wandering_winemaker_jungle_grape_seeds_white_mercantil_3",
       "stage_required": "mercantil_wine_3",
       "unlock_description": "jei.society_trading.mercantil_discount_3"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "nethervinery:crimson_grape_seeds" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "nethervinery:crimson_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 2048,
       "trade_id": "wandering_winemaker_crimson_grape_seeds"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "nethervinery:crimson_grape_seeds" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "nethervinery:crimson_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 1843,
       "trade_id": "wandering_winemaker_crimson_grape_seeds_mercantil_1",
       "stage_required": "mercantil_wine_1",
@@ -278,8 +484,14 @@
       "unlock_description": "jei.society_trading.mercantil_discount_1"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "nethervinery:crimson_grape_seeds" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "nethervinery:crimson_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 1741,
       "trade_id": "wandering_winemaker_crimson_grape_seeds_mercantil_2",
       "stage_required": "mercantil_wine_2",
@@ -287,22 +499,40 @@
       "unlock_description": "jei.society_trading.mercantil_discount_2"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "nethervinery:crimson_grape_seeds" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "nethervinery:crimson_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 1536,
       "trade_id": "wandering_winemaker_crimson_grape_seeds_mercantil_3",
       "stage_required": "mercantil_wine_3",
       "unlock_description": "jei.society_trading.mercantil_discount_3"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "nethervinery:warped_grape_seeds" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "nethervinery:warped_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 2048,
       "trade_id": "wandering_winemaker_warped_grape_seeds"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "nethervinery:warped_grape_seeds" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "nethervinery:warped_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 1843,
       "trade_id": "wandering_winemaker_warped_grape_seeds_mercantil_1",
       "stage_required": "mercantil_wine_1",
@@ -310,8 +540,14 @@
       "unlock_description": "jei.society_trading.mercantil_discount_1"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "nethervinery:warped_grape_seeds" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "nethervinery:warped_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 1741,
       "trade_id": "wandering_winemaker_warped_grape_seeds_mercantil_2",
       "stage_required": "mercantil_wine_2",
@@ -319,8 +555,14 @@
       "unlock_description": "jei.society_trading.mercantil_discount_2"
     },
     {
-      "request": { "count": 1, "item": "numismatics:crown" },
-      "offer": { "count": 1, "item": "nethervinery:warped_grape_seeds" },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "offer": {
+        "id": "nethervinery:warped_grape_seeds",
+        "count": 1
+      },
       "numismatics_cost": 1536,
       "trade_id": "wandering_winemaker_warped_grape_seeds_mercantil_3",
       "stage_required": "mercantil_wine_3",

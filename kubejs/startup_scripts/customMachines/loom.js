@@ -5,6 +5,7 @@ global.loomRecipes = new Map([
   ["#minecraft:wool", { output: ["society:canvas"] }],
   ["etcetera:cotton_flower", { output: ["society:canvas"] }],
   ["society:fine_wool", { output: ["society:merino_wool"] }],
+  ["botania:mana_string", { output: ["botania:manaweave_cloth"] }],
   ["crittersandcompanions:silk", { output: ["society:merino_wool"] }],
 ]);
 

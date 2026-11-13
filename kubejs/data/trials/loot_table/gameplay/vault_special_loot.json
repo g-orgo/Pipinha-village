@@ -87,9 +87,9 @@
             {
               "function": "minecraft:enchant_randomly",
               "enchantments": [
-                "trials:density",
-                "trials:breach",
-                "trials:wind_burst"
+                "minecraft:density",
+                "minecraft:breach",
+                "minecraft:wind_burst"
               ]
             }
           ]

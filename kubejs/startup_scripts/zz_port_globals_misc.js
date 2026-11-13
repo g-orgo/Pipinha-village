@@ -944,7 +944,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
           server,
           item,
           target,
-          "trials:vault_activate",
+          "minecraft:block.vault.activate",
           "supplementaries:bomb_explosion"
         );
         if (data.bff) {

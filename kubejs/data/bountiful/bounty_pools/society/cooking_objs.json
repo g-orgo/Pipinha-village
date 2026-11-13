@@ -286,9 +286,9 @@
 			},
 			"unitWorth": 159
 		},
-		"cooking_squid_kebob": {
+		"cooking_squid_kebab": {
 			"type": "minecraft:item",
-			"content": "crabbersdelight:squid_kebob",
+			"content": "crabbersdelight:squid_kebab",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
@@ -297,9 +297,9 @@
 			},
 			"unitWorth": 342
 		},
-		"cooking_frog_leg_kebob": {
+		"cooking_frog_leg_kebab": {
 			"type": "minecraft:item",
-			"content": "crabbersdelight:frog_leg_kebob",
+			"content": "crabbersdelight:frog_leg_kebab",
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {

@@ -28,7 +28,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 DATA = os.path.join(ROOT, "kubejs", "data")
 
 REMOVED = [
-    "botania_seeds", "botania", "splendid_slimes", "splendid_cogs", "farmlife",
+    "splendid_slimes", "splendid_cogs", "farmlife",
     "hamsters", "legendarycreatures", "liltractor", "croptania", "cfm",
     "redeco", "itemfilters", "refinedstorageaddons", "gensokyo",
 ]

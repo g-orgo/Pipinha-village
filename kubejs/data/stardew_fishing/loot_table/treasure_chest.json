@@ -24,7 +24,7 @@
               "entries": [
                 {
                   "type": "minecraft:loot_table",
-                  "name": "aquaculture:box/neptunes_bounty"
+                  "value": "aquaculture:box/neptunes_bounty"
                 }
               ]
             }

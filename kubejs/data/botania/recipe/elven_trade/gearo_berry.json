@@ -1,0 +1,14 @@
+{
+  "type": "botania:elven_trade",
+  "ingredients": [
+    {
+      "item": "society:blueberry_preserves"
+    }
+  ],
+  "output": [
+    {
+      "id": "vintagedelight:gearo_berry",
+      "count": 1
+    }
+  ]
+}

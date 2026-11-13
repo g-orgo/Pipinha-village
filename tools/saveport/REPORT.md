@@ -238,3 +238,14 @@ Generator profile values (path, value, exists as json in a mod jar):
 - Restam sem mapeamento (block, 7 ids distintos): verdantvibes:burnweed x54, verdantvibes:periwinkle x29, verdantvibes:bracket_mushroom x20, splendid_slimes:slime_spawner x7, species:birt_dwelling x6, fantasyfurniture:dunmer/bookshelf x4, fantasyfurniture:decorations/muffins_blueberry x1. Item: meadow:sheep_cheese_block x2, botania:lexicon x1, meadow:inky_wool x1. Entidades: species:limpet x4, species:deepfish x3, balloonbox:balloonbox x1, species:birt x1.
 - Md5 da origem (451 arquivos): sem divergencia antes e depois do run.
 - Tamanho: origem 123833270 bytes, copia 123177907 bytes (du -sb).
+
+## Resultado da execucao (round 4, copia refeita apos botania, fantasyfurniture e youkaishomecoming)
+
+- Instalados agora: botania (Botania Revived), fantasyfurniture (port 1.21.1) e youkaishomecoming (port). Os ids sao os mesmos da origem; `mod_ids()` ja os trata como conhecidos, entao BEs desses namespaces sao mantidas e renomeadas quando ha regra.
+- Gerador: removidas de `EXTRA` em `gen_idmap.py` as 3 linhas antigas (botania:apothecary_default, fantasyfurniture:decorations/brewing_cauldron, fantasyfurniture:decorations/venthyr_tea_set), que eram substitutos de quando os namespaces nao estavam instalados. Regenerado: 0 linhas botania/fantasyfurniture/youkaishomecoming no TSV; 42 linhas trials:* presentes.
+- youkaishomecoming:cucumber_crate e red_velvet_cake: nenhuma linha necessaria; os arquivos existem no jar do youkaishomecoming e o rescan da copia mostra 0 ids youkaishomecoming nao mapeados.
+- Aplicado: block 697, item 22, be 46, be_dropped 180 (antes 181; a diferenca e uma BE de namespace agora instalado). Decode errors 0. Lost stacks 0.
+- Rescan da copia: mapped distinct = 0 em block, be, item e entity; BE unmapped = 0; decode errors = 0. Ocorrencias de BE: origem 7569, copia 7389 (180 dropadas).
+- Restam sem mapeamento: block verdantvibes:burnweed x54, verdantvibes:periwinkle x29, verdantvibes:bracket_mushroom x20, splendid_slimes:slime_spawner x7, species:birt_dwelling x6. Item meadow:sheep_cheese_block x2, meadow:inky_wool x1. Entidades species:limpet x4, species:deepfish x3, balloonbox:balloonbox x1, species:birt x1.
+- Md5 da origem (451 arquivos): sem divergencia.
+- Tamanho: origem 123833270 bytes, copia 123177907 bytes.

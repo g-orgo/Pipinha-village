@@ -8,7 +8,7 @@ ItemEvents.entityInteracted((e) => {
     if (hand == "MAIN_HAND") {
         if (item.id === "oreganized:silver_ingot") {
             const { x, y, z } = target;
-            server.runCommandSilent(`playsound trials:breeze_idle block @a ${x} ${y} ${z} 0.2 1`);
+            server.runCommandSilent(`playsound minecraft:entity.breeze.idle_ground block @a ${x} ${y} ${z} 0.2 1`);
             let reward = player.level.createEntity("minecraft:item");
             reward.x = player.x;
             reward.y = player.y;

@@ -3,18 +3,18 @@
   "name": "shop.society_trading.farm_coop",
   "texture": "dew_drop_farmland_growth:textures/item/weak_fertilizer",
   "jei_catalyst": {
-    "item": "dew_drop_farmland_growth:weak_fertilizer"
+    "id": "dew_drop_farmland_growth:weak_fertilizer"
   },
   "stage_required": "profession_farmer",
   "selector_weight": -94,
   "trades": [
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:weak_fertilizer",
+        "id": "dew_drop_farmland_growth:weak_fertilizer",
         "count": 8
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -22,11 +22,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:weak_fertilizer",
+        "id": "dew_drop_farmland_growth:weak_fertilizer",
         "count": 8
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 461,
@@ -37,11 +37,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:weak_fertilizer",
+        "id": "dew_drop_farmland_growth:weak_fertilizer",
         "count": 8
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 435,
@@ -52,11 +52,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:weak_fertilizer",
+        "id": "dew_drop_farmland_growth:weak_fertilizer",
         "count": 8
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 384,
@@ -66,11 +66,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:low_quality_fertilizer",
+        "id": "dew_drop_farmland_growth:low_quality_fertilizer",
         "count": 8
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -78,11 +78,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:low_quality_fertilizer",
+        "id": "dew_drop_farmland_growth:low_quality_fertilizer",
         "count": 8
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 461,
@@ -93,11 +93,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:low_quality_fertilizer",
+        "id": "dew_drop_farmland_growth:low_quality_fertilizer",
         "count": 8
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 435,
@@ -108,11 +108,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:low_quality_fertilizer",
+        "id": "dew_drop_farmland_growth:low_quality_fertilizer",
         "count": 8
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 384,
@@ -122,11 +122,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:hydrating_fertilizer",
+        "id": "dew_drop_farmland_growth:hydrating_fertilizer",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 256,
@@ -134,11 +134,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:hydrating_fertilizer",
+        "id": "dew_drop_farmland_growth:hydrating_fertilizer",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 230,
@@ -149,11 +149,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:hydrating_fertilizer",
+        "id": "dew_drop_farmland_growth:hydrating_fertilizer",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 218,
@@ -164,11 +164,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:hydrating_fertilizer",
+        "id": "dew_drop_farmland_growth:hydrating_fertilizer",
         "count": 8
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 4
       },
       "numismatics_cost": 192,
@@ -178,11 +178,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:strong_fertilizer",
+        "id": "dew_drop_farmland_growth:strong_fertilizer",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 3
       },
       "numismatics_cost": 192,
@@ -190,11 +190,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:strong_fertilizer",
+        "id": "dew_drop_farmland_growth:strong_fertilizer",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 3
       },
       "numismatics_cost": 173,
@@ -205,11 +205,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:strong_fertilizer",
+        "id": "dew_drop_farmland_growth:strong_fertilizer",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 3
       },
       "numismatics_cost": 163,
@@ -220,11 +220,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:strong_fertilizer",
+        "id": "dew_drop_farmland_growth:strong_fertilizer",
         "count": 1
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 3
       },
       "numismatics_cost": 144,
@@ -234,11 +234,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
+        "id": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 512,
@@ -246,11 +246,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
+        "id": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 461,
@@ -261,11 +261,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
+        "id": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 435,
@@ -276,11 +276,11 @@
     },
     {
       "offer": {
-        "item": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
+        "id": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
+        "id": "numismatics:crown",
         "count": 1
       },
       "numismatics_cost": 384,
@@ -290,11 +290,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:bone_meal",
+        "id": "minecraft:bone_meal",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 64,
@@ -302,11 +302,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:bone_meal",
+        "id": "minecraft:bone_meal",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 58,
@@ -317,11 +317,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:bone_meal",
+        "id": "minecraft:bone_meal",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 54,
@@ -332,11 +332,11 @@
     },
     {
       "offer": {
-        "item": "minecraft:bone_meal",
+        "id": "minecraft:bone_meal",
         "count": 16
       },
       "request": {
-        "item": "numismatics:cog",
+        "id": "numismatics:cog",
         "count": 1
       },
       "numismatics_cost": 48,

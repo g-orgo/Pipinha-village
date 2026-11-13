@@ -169,10 +169,7 @@
 			id: "0B85DF081F75ECA7"
 			rewards: [{
 				id: "2605209B1A6CAD51"
-				item: {
-					count: 1
-					id: "numismatics:crown"
-				}
+				item: { count: 1, id: "numismatics:crown" }
 				type: "item"
 			}]
 			tasks: [{
@@ -188,10 +185,7 @@
 			id: "33176CD4D28070D3"
 			rewards: [{
 				id: "11DEF451B99DD9F9"
-				item: {
-					count: 1
-					id: "numismatics:cog"
-				}
+				item: { count: 1, id: "numismatics:cog" }
 				type: "item"
 			}]
 			tasks: [{
@@ -221,10 +215,7 @@
 			id: "3B30AFF91D59746A"
 			rewards: [{
 				id: "5AFEED8149346DA0"
-				item: {
-					count: 1
-					id: "numismatics:sprocket"
-				}
+				item: { count: 1, id: "numismatics:sprocket" }
 				type: "item"
 			}]
 			tasks: [{
@@ -240,10 +231,7 @@
 			id: "10C0B87E2EA1C8A5"
 			rewards: [{
 				id: "478FF52B8E89F86D"
-				item: {
-					count: 1
-					id: "numismatics:bevel"
-				}
+				item: { count: 1, id: "numismatics:bevel" }
 				type: "item"
 			}]
 			tasks: [{
@@ -270,10 +258,7 @@
 			id: "702A9E699FC422CC"
 			rewards: [{
 				id: "44E2A57DD54F4A43"
-				item: {
-					count: 1
-					id: "numismatics:bevel"
-				}
+				item: { count: 1, id: "numismatics:bevel" }
 				type: "item"
 			}]
 			tasks: [{
@@ -289,10 +274,7 @@
 			id: "5C8CF40663CCE754"
 			rewards: [{
 				id: "4CD41495CD166B97"
-				item: {
-					count: 1
-					id: "numismatics:cog"
-				}
+				item: { count: 1, id: "numismatics:cog" }
 				type: "item"
 			}]
 			tasks: [{
@@ -308,10 +290,7 @@
 			id: "001F144802D59DB4"
 			rewards: [{
 				id: "39CEA2F22564D0FB"
-				item: {
-					count: 1
-					id: "numismatics:cog"
-				}
+				item: { count: 1, id: "numismatics:cog" }
 				type: "item"
 			}]
 			tasks: [{
@@ -327,10 +306,7 @@
 			id: "4F54E885ECC26922"
 			rewards: [{
 				id: "7FFD73B83D19A769"
-				item: {
-					count: 1
-					id: "numismatics:cog"
-				}
+				item: { count: 1, id: "numismatics:cog" }
 				type: "item"
 			}]
 			tasks: [{
@@ -346,10 +322,7 @@
 			id: "18274B43429F2808"
 			rewards: [{
 				id: "5BEDBA63B9A11483"
-				item: {
-					count: 1
-					id: "numismatics:cog"
-				}
+				item: { count: 1, id: "numismatics:cog" }
 				type: "item"
 			}]
 			tasks: [{
@@ -365,10 +338,7 @@
 			id: "4EFD1F876D69591E"
 			rewards: [{
 				id: "513417F90E4B9769"
-				item: {
-					count: 1
-					id: "numismatics:sprocket"
-				}
+				item: { count: 1, id: "numismatics:sprocket" }
 				type: "item"
 			}]
 			tasks: [
@@ -391,10 +361,7 @@
 			id: "1BA73EA72B471270"
 			rewards: [{
 				id: "46F8621CBFAD3966"
-				item: {
-					count: 1
-					id: "numismatics:sun"
-				}
+				item: { count: 1, id: "numismatics:sun" }
 				type: "item"
 			}]
 			tasks: [
@@ -427,10 +394,7 @@
 			id: "4BC9FE01DC8D5ADB"
 			rewards: [{
 				id: "4FD79C56D7547153"
-				item: {
-					count: 1
-					id: "numismatics:cog"
-				}
+				item: { count: 1, id: "numismatics:cog" }
 				type: "item"
 			}]
 			tasks: [{
@@ -446,10 +410,7 @@
 			id: "5E89F151176083E6"
 			rewards: [{
 				id: "5CCF1F636469BF46"
-				item: {
-					count: 1
-					id: "numismatics:cog"
-				}
+				item: { count: 1, id: "numismatics:cog" }
 				type: "item"
 			}]
 			tasks: [{
@@ -475,10 +436,7 @@
 			id: "55A3F4C2B6F3460B"
 			rewards: [{
 				id: "33550E79FF5DE2D6"
-				item: {
-					count: 1
-					id: "numismatics:cog"
-				}
+				item: { count: 1, id: "numismatics:cog" }
 				type: "item"
 			}]
 			tasks: [{
@@ -494,10 +452,7 @@
 			id: "66510F15A69EBAED"
 			rewards: [{
 				id: "03FACD1CB0A7EF22"
-				item: {
-					count: 1
-					id: "numismatics:cog"
-				}
+				item: { count: 1, id: "numismatics:cog" }
 				type: "item"
 			}]
 			tasks: [{
@@ -533,6 +488,11 @@
 		{
 			dependencies: ["0B85DF081F75ECA7"]
 			id: "062C9E95DF7C987D"
+			rewards: [{
+				id: "0BB83B3A3B326CDB"
+				item: { count: 1, id: "botania:cosmetic_cat_ears" }
+				type: "item"
+			}]
 			tasks: [{
 				id: "2176C463AE27D165"
 				item: { count: 1, id: "society:meowmageddon" }
@@ -540,6 +500,52 @@
 			}]
 			x: 6.0d
 			y: -0.5d
+		}
+		{
+			dependencies: ["7A5974D470C5AA9C"]
+			icon: "botania:manasteel_chestplate"
+			id: "6080E8F9B0DDAE72"
+			subtitle: "{ftbquests.chapter.armor_weapons__tools.quest6080E8F9B0DDAE72.subtitle}"
+			tasks: [{
+				id: "12DAF95F0B50680C"
+				item: { components: { "ftbfiltersystem:filter": "or(item(botania:manasteel_leggings)item(botania:manasteel_chestplate)item(botania:manasteel_helmet)item(botania:manasteel_boots))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				match_components: "none"
+				title: "{ftbquests.chapter.armor_weapons__tools.quest6080E8F9B0DDAE72.task.1358672424212654092.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.armor_weapons__tools.quest6080E8F9B0DDAE72.title}"
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6080E8F9B0DDAE72"]
+			icon: "botania:terrasteel_chestplate"
+			id: "6E4CC63B8CF1EDAF"
+			tasks: [{
+				id: "7EDA5896186979D5"
+				item: { components: { "ftbfiltersystem:filter": "or(item(botania:terrasteel_boots)item(botania:terrasteel_leggings)item(botania:terrasteel_chestplate)item(botania:terrasteel_helmet))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				match_components: "none"
+				title: "{ftbquests.chapter.armor_weapons__tools.quest6E4CC63B8CF1EDAF.task.9140715795379747285.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.armor_weapons__tools.quest6E4CC63B8CF1EDAF.title}"
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["6080E8F9B0DDAE72"]
+			icon: "botania:elementium_chestplate"
+			id: "3FC4155A11F14663"
+			tasks: [{
+				id: "033A4317987E15C2"
+				item: { components: { "ftbfiltersystem:filter": "or(item(botania:elementium_helmet)item(botania:elementium_chestplate)item(botania:elementium_boots)item(botania:elementium_leggings))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				match_components: "none"
+				title: "{ftbquests.chapter.armor_weapons__tools.quest3FC4155A11F14663.task.232572099384710594.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.armor_weapons__tools.quest3FC4155A11F14663.title}"
+			x: 0.0d
+			y: -5.0d
 		}
 	]
 }

@@ -663,7 +663,7 @@ global.petGifts = [
   { animal: "quark:foxhound", gifts: ["simplehats:fireworks"] },
   { animal: "quark:shiba", gifts: ["simplehats:eevee_ears"] },
   { animal: "minecraft:allay", gifts: ["simplehats:chi_ears"] },
-  { animal: "minecraft:horse", gifts: ["relics:horse_flute"] },
+  { animal: "minecraft:horse", gifts: ["minecraft:saddle"] },
   { animal: "minecraft:polar_bear", gifts: ["simplehats:teddy_bear"] },
   { animal: "wildernature:hedgehog", gifts: ["simplehats:sonichood"] },
   {

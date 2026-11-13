@@ -81,6 +81,10 @@
       "diversity": 5
     },
     {
+      "ingredient": "{id:\"item\",item:\"botania:infinite_fruit\"}",
+      "diversity": -2
+    },
+    {
       "ingredient": "{id:\"item\",item:\"minecraft:air\"}",
       "diversity": -2
     },

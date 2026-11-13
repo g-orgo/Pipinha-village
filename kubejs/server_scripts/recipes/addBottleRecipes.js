@@ -1,7 +1,10 @@
 console.info("[SOCIETY] addBottleRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
-  const custom = (recipe) => e.custom(global.toRecipe121(recipe));
+  const custom = (recipe) => {
+    const converted = global.toRecipe121(recipe);
+    if (global.recipeIdsExist121(converted)) e.custom(converted);
+  };
   const bottleRecipes = (item, fluid, amount, container) => {
     // Skip the pair when the fluid is not registered: an unknown fluid id is read as
     // an item by Create and breaks both recipes.

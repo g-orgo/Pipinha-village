@@ -1,7 +1,7 @@
 {
   "name": "Strawberry 🌼",
   "category": "patchouli:crops",
-  "icon": "farm_and_charm:strawberry",
+  "icon": "farm_and_charm:strawberry_seeds",
   "pages": [
     {
       "type": "patchouli:text",

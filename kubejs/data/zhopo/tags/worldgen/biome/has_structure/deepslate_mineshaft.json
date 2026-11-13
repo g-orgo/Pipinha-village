@@ -1,4 +1,6 @@
 {
   "replace": true,
-  "values": ["society:skull_cavern", "society:blackstone_caves"]
+  "values": [
+    "society:blackstone_caves"
+  ]
 }

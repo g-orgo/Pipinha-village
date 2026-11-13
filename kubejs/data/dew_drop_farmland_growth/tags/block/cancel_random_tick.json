@@ -55,7 +55,6 @@
       "required": false
     },
     "society:eggplant",
-    "farm_and_charm:strawberry",
     "brewery:hop_trellis",
     "society:blueberry",
     "society:tubabacco_leaf",
@@ -107,8 +106,6 @@
     "farmersdelight:rice",
     "vintagedelight:peanut_crop",
     "etcetera:cotton",
-    "nethervinery:crimson_grape_bush",
-    "nethervinery:warped_grape_bush",
     "vinery:savanna_grape_bush_white",
     "vinery:jungle_grape_bush_red",
     "vinery:savanna_grape_bush_red",

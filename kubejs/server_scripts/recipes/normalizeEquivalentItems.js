@@ -157,7 +157,12 @@ ServerEvents.recipes((event) => {
       }
       let replaced = false;
       group.items.forEach((item) => {
-        if (recipe.replaceInput(item, "#" + group.tag)) replaced = true;
+        // Unknown recipe types (UnknownKubeRecipe) have no replaceInput; skip them.
+        try {
+          if (recipe.replaceInput(item, "#" + group.tag)) replaced = true;
+        } catch (err) {
+          return;
+        }
       });
       if (replaced || recipe.json == null) return;
       const text = String(JsonIO.toString(recipe.json));

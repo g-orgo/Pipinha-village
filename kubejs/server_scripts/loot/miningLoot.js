@@ -45,7 +45,7 @@ const skullCavernOres = [
 ];
 const addMiningLootToAllOres = (e, stage, chance, item, otherPool) => {
   overworldOres.forEach((ore) => {
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage(stage)
       .pool((p) => {
         p.not((n) =>
@@ -55,7 +55,7 @@ const addMiningLootToAllOres = (e, stage, chance, item, otherPool) => {
       });
   });
   netherOres.forEach((ore) => {
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage(stage)
       .pool((p) => {
         p.not((n) =>
@@ -66,7 +66,7 @@ const addMiningLootToAllOres = (e, stage, chance, item, otherPool) => {
   });
 
   skullCavernOres.forEach((ore) => {
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage(stage)
       .pool((p) => {
         p.not((n) =>
@@ -77,7 +77,7 @@ const addMiningLootToAllOres = (e, stage, chance, item, otherPool) => {
   });
   if (otherPool && otherPool.length > 0) {
     otherPool.forEach((ore) => {
-      e.addBlockLootModifier(ore)
+      e.addBlockModifier(ore)
         .hasAnyStage(stage)
         .pool((p) => {
           p.not((n) =>
@@ -90,7 +90,7 @@ const addMiningLootToAllOres = (e, stage, chance, item, otherPool) => {
 };
 const addWeightedMiningLootToAllOres = (e, stage, chance, item, otherPool) => {
   overworldOres.forEach((ore) => {
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage(stage)
       .pool((p) => {
         p.not((n) =>
@@ -100,7 +100,7 @@ const addWeightedMiningLootToAllOres = (e, stage, chance, item, otherPool) => {
       });
   });
   netherOres.forEach((ore) => {
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage(stage)
       .pool((p) => {
         p.not((n) =>
@@ -111,7 +111,7 @@ const addWeightedMiningLootToAllOres = (e, stage, chance, item, otherPool) => {
   });
 
   skullCavernOres.forEach((ore) => {
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage(stage)
       .pool((p) => {
         p.not((n) =>
@@ -122,7 +122,7 @@ const addWeightedMiningLootToAllOres = (e, stage, chance, item, otherPool) => {
   });
   if (otherPool && otherPool.length > 0) {
     otherPool.forEach((ore) => {
-      e.addBlockLootModifier(ore)
+      e.addBlockModifier(ore)
         .hasAnyStage(stage)
         .pool((p) => {
           p.not((n) =>
@@ -135,7 +135,7 @@ const addWeightedMiningLootToAllOres = (e, stage, chance, item, otherPool) => {
 };
 const addAdditionalGeodeRoll = (e, geodeStage) => {
   overworldOres.forEach((ore) => {
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage(geodeStage)
       .pool((p) => {
         p.not((n) =>
@@ -143,7 +143,7 @@ const addAdditionalGeodeRoll = (e, geodeStage) => {
         );
         p.randomChance(0.1).addLoot("society:geode");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .biome("#c:is_cold")
       .hasAnyStage(geodeStage)
       .pool((p) => {
@@ -152,7 +152,7 @@ const addAdditionalGeodeRoll = (e, geodeStage) => {
         );
         p.randomChance(0.1).addLoot("society:frozen_geode");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .playerPredicate((p) => global.getSeasonFromLevel(p.level) === "winter")
       .hasAnyStage(geodeStage)
       .pool((p) => {
@@ -161,7 +161,7 @@ const addAdditionalGeodeRoll = (e, geodeStage) => {
         );
         p.randomChance(0.1).addLoot("society:frozen_geode");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .biome("#society:is_skull_cavern")
       .hasAnyStage(geodeStage)
       .pool((p) => {
@@ -172,7 +172,7 @@ const addAdditionalGeodeRoll = (e, geodeStage) => {
       });
   });
   netherOres.forEach((ore) => {
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage(geodeStage)
       .pool((p) => {
         p.not((n) =>
@@ -184,7 +184,7 @@ const addAdditionalGeodeRoll = (e, geodeStage) => {
 };
 LootJS.modifiers((e) => {
   overworldOres.forEach((ore) => {
-    e.addBlockLootModifier(ore).pool((p) => {
+    e.addBlockModifier(ore).pool((p) => {
       p.not((n) =>
         n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
       );
@@ -193,7 +193,7 @@ LootJS.modifiers((e) => {
       });
       p.randomChance(0.1).addLoot("society:geode");
     });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage("mineralogist")
       .pool((p) => {
         p.not((n) =>
@@ -201,7 +201,7 @@ LootJS.modifiers((e) => {
         );
         p.randomChance(0.1).addLoot("society:earth_crystal");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .biome("#c:is_cold")
       .pool((p) => {
         p.not((n) =>
@@ -212,7 +212,7 @@ LootJS.modifiers((e) => {
         });
         p.randomChance(0.1).addLoot("society:frozen_geode");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .playerPredicate((p) => global.getSeasonFromLevel(p.level) === "winter")
       .pool((p) => {
         p.not((n) =>
@@ -223,7 +223,7 @@ LootJS.modifiers((e) => {
         });
         p.randomChance(0.1).addLoot("society:frozen_geode");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .biome("#c:is_cold")
       .hasAnyStage("mineralogist")
       .pool((p) => {
@@ -232,7 +232,7 @@ LootJS.modifiers((e) => {
         );
         p.randomChance(0.1).addLoot("society:frozen_tear");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .biome("#society:is_skull_cavern")
       .pool((p) => {
         p.not((n) =>
@@ -243,7 +243,7 @@ LootJS.modifiers((e) => {
         });
         p.randomChance(0.04).addLoot("society:omni_geode");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .biome("#society:is_skull_cavern")
       .hasAnyStage("mineralogist")
       .pool((p) => {
@@ -252,7 +252,7 @@ LootJS.modifiers((e) => {
         );
         p.randomChance(0.02).addLoot("society:jade");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage("blockchain")
       .pool((p) => {
         p.not((n) =>
@@ -260,7 +260,7 @@ LootJS.modifiers((e) => {
         );
         p.randomChance(0.03).addLoot("numismatics:crown");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage("furniture_archaeologist")
       .pool((p) => {
         p.not((n) =>
@@ -268,7 +268,7 @@ LootJS.modifiers((e) => {
         );
         p.randomChance(0.03).addLoot("society:furniture_box");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage("star_blessing")
       .anyDimension("minecraft:overworld")
       .pool((p) => {
@@ -277,7 +277,7 @@ LootJS.modifiers((e) => {
         );
         p.randomChance(0.02).addLoot("society:pristine_star_shards");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage("star_blessing")
       .anyDimension("society:skull_cavern")
       .pool((p) => {
@@ -287,50 +287,50 @@ LootJS.modifiers((e) => {
         p.randomChance(0.06).addLoot("society:pristine_star_shards");
       });
   });
-  e.addBlockLootModifier("society:geode_node")
+  e.addBlockModifier("society:geode_node")
     .biome("#c:is_cold")
     .pool((p) => {
       p.randomChance(0.1).addLoot("society:frozen_geode");
     });
-  e.addBlockLootModifier("society:geode_node").pool((p) => {
+  e.addBlockModifier("society:geode_node").pool((p) => {
     p.randomChance(0.05).addLoot("society:mining_monthly");
   });
-  e.addBlockLootModifier("society:geode_node")
+  e.addBlockModifier("society:geode_node")
     .anyDimension("minecraft:overworld")
     .hasAnyStage("prismatic_prospector")
     .pool((p) => {
       p.randomChance(0.05).addLoot("society:prismatic_shard");
     });
-  e.addBlockLootModifier("society:magma_geode_node").pool((p) => {
+  e.addBlockModifier("society:magma_geode_node").pool((p) => {
     p.randomChance(0.1).addLoot("society:mining_monthly");
   });
-  e.addBlockLootModifier("society:magma_geode_node")
+  e.addBlockModifier("society:magma_geode_node")
     .anyDimension("minecraft:the_nether")
     .hasAnyStage("prismatic_prospector")
     .pool((p) => {
       p.randomChance(0.2).addLoot("society:prismatic_shard");
     });
-  e.addBlockLootModifier("society:omni_geode_node").pool((p) => {
+  e.addBlockModifier("society:omni_geode_node").pool((p) => {
     p.randomChance(0.1).addLoot("society:mining_monthly");
   });
-  e.addBlockLootModifier("society:omni_geode_node")
+  e.addBlockModifier("society:omni_geode_node")
     .hasAnyStage("prismatic_prospector")
     .pool((p) => {
       p.randomChance(0.3).addLoot("society:prismatic_shard");
     });
-  e.addBlockLootModifier("minecraft:deepslate")
+  e.addBlockModifier("minecraft:deepslate")
     .hasAnyStage("filthy_excavator")
     .pool((p) => {
       p.randomChance(0.02).addLoot("society:geode");
     });
-  e.addBlockLootModifier("minecraft:netherrack")
+  e.addBlockModifier("minecraft:netherrack")
     .hasAnyStage("filthy_excavator")
     .pool((p) => {
       p.randomChance(0.01).addLoot("society:magma_geode");
     });
 
   netherOres.forEach((ore) => {
-    e.addBlockLootModifier(ore).pool((p) => {
+    e.addBlockModifier(ore).pool((p) => {
       p.not((n) =>
         n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
       );
@@ -339,7 +339,7 @@ LootJS.modifiers((e) => {
       });
       p.randomChance(0.1).addLoot("society:magma_geode");
     });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage("mineralogist")
       .pool((p) => {
         p.not((n) =>
@@ -347,7 +347,7 @@ LootJS.modifiers((e) => {
         );
         p.randomChance(0.1).addLoot("society:fire_quartz");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage("blockchain")
       .pool((p) => {
         p.not((n) =>
@@ -355,7 +355,7 @@ LootJS.modifiers((e) => {
         );
         p.randomChance(0.06).addLoot("numismatics:crown");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage("furniture_archaeologist")
       .pool((p) => {
         p.not((n) =>
@@ -363,7 +363,7 @@ LootJS.modifiers((e) => {
         );
         p.randomChance(0.01).addLoot("society:furniture_box");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage("star_blessing")
       .anyDimension("minecraft:the_nether")
       .pool((p) => {
@@ -372,7 +372,7 @@ LootJS.modifiers((e) => {
         );
         p.randomChance(0.04).addLoot("society:pristine_star_shards");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage("star_blessing")
       .anyDimension("society:skull_cavern")
       .pool((p) => {
@@ -383,7 +383,7 @@ LootJS.modifiers((e) => {
       });
   });
   skullCavernOres.forEach((ore) => {
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .biome("#c:is_cold")
       .pool((p) => {
         p.not((n) =>
@@ -394,7 +394,7 @@ LootJS.modifiers((e) => {
         });
         p.randomChance(0.1).addLoot("society:frozen_geode");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .playerPredicate((p) => global.getSeasonFromLevel(p.level) === "winter")
       .pool((p) => {
         p.not((n) =>
@@ -405,7 +405,7 @@ LootJS.modifiers((e) => {
         });
         p.randomChance(0.1).addLoot("society:frozen_geode");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .biome("#c:is_cold")
       .hasAnyStage("mineralogist")
       .pool((p) => {
@@ -414,7 +414,7 @@ LootJS.modifiers((e) => {
         );
         p.randomChance(0.1).addLoot("society:frozen_tear");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .biome("#society:is_skull_cavern")
       .pool((p) => {
         p.not((n) =>
@@ -425,7 +425,7 @@ LootJS.modifiers((e) => {
         });
         p.randomChance(0.04).addLoot("society:omni_geode");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .biome("#society:is_skull_cavern")
       .hasAnyStage("mineralogist")
       .pool((p) => {
@@ -434,7 +434,7 @@ LootJS.modifiers((e) => {
         );
         p.randomChance(0.02).addLoot("society:jade");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage("blockchain")
       .pool((p) => {
         p.not((n) =>
@@ -442,7 +442,7 @@ LootJS.modifiers((e) => {
         );
         p.randomChance(0.03).addLoot("numismatics:crown");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage("furniture_archaeologist")
       .pool((p) => {
         p.not((n) =>
@@ -450,7 +450,7 @@ LootJS.modifiers((e) => {
         );
         p.randomChance(0.03).addLoot("society:furniture_box");
       });
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage("star_blessing")
       .anyDimension("society:skull_cavern")
       .pool((p) => {
@@ -465,7 +465,7 @@ LootJS.modifiers((e) => {
     "meadow:alpine_gold_ore",
     "minecraft:gold_ore",
   ].forEach((ore) => {
-    e.addBlockLootModifier(ore)
+    e.addBlockModifier(ore)
       .hasAnyStage("gold_rush")
       .pool((p) => {
         p.not((n) =>
@@ -495,7 +495,7 @@ LootJS.modifiers((e) => {
   );
   ["society:sparkstone_ore", "society:deepslate_sparkstone_ore"].forEach(
     (ore) => {
-      e.addBlockLootModifier(ore)
+      e.addBlockModifier(ore)
         .hasAnyStage("mining_mastery")
         .pool((p) => {
           p.not((n) =>
@@ -544,7 +544,7 @@ LootJS.modifiers((e) => {
   addWeightedMiningLootToAllOres(e, "moon_remains", 0.05, weightedRemains);
   addAdditionalGeodeRoll(e, "moon_geode_roll");
 
-  e.addBlockLootModifier(overworldOres)
+  e.addBlockModifier(overworldOres)
     .hasAnyStage("moon_extra_ore")
     .modifyLoot(Ingredient.all, (itemStack) => {
       if (itemStack.hasTag("c:raw_materials"))

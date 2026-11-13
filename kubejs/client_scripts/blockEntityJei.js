@@ -508,7 +508,6 @@ JEIAddedEvents.registerRecipes((e) => {
       additionalRewards: recipe.additionalRewards,
     });
   });
-  e.custom("society:charging").add({ input: "", output: ["society:battery"] });
   Array.from(global.espressoMachineRecipes.keys()).forEach((element) => {
     recipe = global.espressoMachineRecipes.get(element);
     e.custom("society:espresso_brewing").add({

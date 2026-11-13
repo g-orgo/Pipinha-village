@@ -8,7 +8,8 @@ global.isSneakingPlayer = (entity) =>
 
 global.isConsumableStack = (stack) => {
   if (!stack || stack.isEmpty()) return false;
-  if (stack.isEdible()) return true;
+  // 1.21.1 has no edible check on ItemStack; food is the minecraft:food data component.
+  if (stack.get(Java.loadClass("net.minecraft.core.component.DataComponents").FOOD) != null) return true;
   var anim = String(stack.getUseAnimation());
   return anim === "EAT" || anim === "DRINK";
 };
@@ -46,9 +47,24 @@ if (!global.noSneakRightClickRegistered) {
 // crouching). Cancelling the use key on the client stops both the drink effect
 // and the packet; it only fires when LSO would actually drink.
 global.wouldDrinkFluid = (player, hit) => {
-  // 1.21.1: LSO CapabilityUtil no longer exists, so the thirst lookup cannot run.
-  // Hand drinking is left unblocked on this port (no-op, returns false).
-  return false;
+  if (player.isCreative() || player.isSpectator()) return false;
+  if (!player.getMainHandItem().isEmpty()) return false;
+  var type = hit ? String(hit.getType()) : "MISS";
+  if (type === "ENTITY") return false;
+  // 1.21.1: LSO keeps thirst in a data attachment (AttachmentUtil) instead of a capability,
+  // and the reach is the vanilla block interaction range attribute.
+  var thirst = Java.loadClass("sfiomn.legendarysurvivaloverhaul.util.AttachmentUtil").getThirstAttachment(player);
+  if (!thirst || thirst.isHydrationLevelAtMax()) return false;
+  var Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes");
+  var reach = player.getAttributeValue(Attributes.BLOCK_INTERACTION_RANGE) / 2.0;
+  if (type === "BLOCK") {
+    if (player.level().getBlockEntity(hit.getBlockPos()) instanceof Java.loadClass("net.minecraft.world.MenuProvider")) return false;
+  } else {
+    reach = Math.max(3.0, reach);
+  }
+  var ThirstUtil = Java.loadClass("sfiomn.legendarysurvivaloverhaul.api.thirst.ThirstUtil");
+  var drink = ThirstUtil.getFluidThirstLookedAt(player, reach);
+  return drink != null && (drink.hydration != 0 || drink.saturation != 0);
 };
 
 global.handleNoSneakHandDrink = (e) => {

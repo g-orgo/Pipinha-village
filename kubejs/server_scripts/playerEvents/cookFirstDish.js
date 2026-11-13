@@ -37,6 +37,8 @@ const COOK_FD_STATIONS = [
   /^refurbished_furniture:(.+_cutting_board|.+_grill|frying_pan|.+_toaster)$/,
 ];
 const $CookFdBlockItem = Java.loadClass("net.minecraft.world.item.BlockItem");
+// 1.21.1 has no edible check on ItemStack; food is the minecraft:food data component.
+const CookFdFoodComponent = Java.loadClass("net.minecraft.core.component.DataComponents").FOOD;
 
 // Built on first use: id -> { item, value }. Only items that exist, have a sell
 // value and are food (edible, a drink, or a placeable feast/pie block).
@@ -46,6 +48,7 @@ const cookFdDishMap = () => {
   let map = {};
   COOK_FIRST_DISH_IDS.forEach((id) => {
     try {
+      if (!Item.exists(id)) return;
       let stack = Item.of(id);
       if (stack.isEmpty()) return;
       let trade = global.trades.get(id);
@@ -53,7 +56,7 @@ const cookFdDishMap = () => {
       if (!(value > 0)) return;
       let item = stack.getItem();
       let food =
-        stack.isEdible() ||
+        stack.get(CookFdFoodComponent) != null ||
         String(stack.getUseAnimation()) === "DRINK" ||
         item instanceof $CookFdBlockItem;
       if (food) map[id] = { item: item, value: value };

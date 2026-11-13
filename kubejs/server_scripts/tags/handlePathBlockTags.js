@@ -133,7 +133,6 @@ let pathBlocks = [
   "quark:cobblestone_bricks_slab",
   "copycats:copycat_board",
   "copycats:copycat_box",
-  "copycats:copycat_catwalk",
   "copycats:copycat_stairs",
   "copycats:copycat_slab",
   "create:copycat_step",

@@ -10,6 +10,36 @@ Origem (só leitura): `../Society: Sunlit Valley`.
 - O save "Solito solamente" vai ser convertido numa CÓPIA (F9); o original não é tocado.
 - Versionamento: branch `1.21.1` do Pipinha-village (worktree `/var/home/Orgo/Documentos/Pipinha-village-1.21.1`).
 
+## Decisões do dono (2026-11-13)
+
+- Motivo da migração: a 1.21.1 existe porque o dono quer o **Create Aeronautics**, que não existe para 1.20.1.
+  Todas as docs reescritas citam isso. ATENÇÃO: o Aeronautics ainda NÃO está em `mods/` (só aparece como
+  nome de modpack em `modpacks_comparados.tsv`); instalar, conferindo compatibilidade com Create 6.0.10.
+  FEITO (2026-11-13): Create Aeronautics bundled 1.3.2 (traz aeronautics, simulated, offroad), Aeronautics
+  Camera Sync 1.4.0 e Sable 2.0.6 (Modrinth, sha512 conferido); High Seas 0.2.2 (CurseForge, baixado pelo dono).
+  ranges.py sem problema novo. mixscan: mixins de compat do Sable miram ShoulderSurfingImpl/client.ObjectPicker,
+  que o Shoulder Surfing 5.3.1 renomeou; olhar no latest.log se só viram WARN ou se quebram a câmera.
+- Mods próprios (custom-mods/ + sunlit_cinematic_toms): triar um por um. Se o bug ainda existe na 1.21.1,
+  portar para NeoForge ou refazer em KubeJS; senão fica de fora. Mostrar a lista ao dono antes de portar.
+- Docs: trazer todas reescritas como Pipinha's Village 1.21.1 (atalhos.md, README/READ_FIRST/LEIA-ME,
+  REGRA_NAO_MODIFICAR_OPTIONS.md, docs/animacoes-*.md, docs/PUBLICAR.md, docs/context como índice novo).
+- `keybinding presets`: trazer e conferir se os atalhos existem na 1.21.1; não ativar preset nem tocar options.txt.
+- Changelog do menu: reescrever para o Pipinha's Village 1.21.1, com a linha de crédito.
+- Funções desligadas no port do KubeJS (cabeças no minimapa, noSneakEating, fertilizante do golem de feno,
+  status de 21 itens em modifyItems.js): recriar o que tiver caminho; listar ao dono o que não tiver.
+- Tapper da wise oak: passa a dar um item equivalente de mod instalado; receitas e lojas da lótus negra mudam junto.
+- Mod `society` (F7): reimplementar loot das vilas e textos (EmbersTextAPI) em KubeJS/datapack; o patch de
+  serialização só se o bug ainda existir.
+- Página do pinguim no almanaque: remover de vez, junto com os links para ela.
+- Tela de créditos: barra de rolagem transparente, igual ao changelog do menu.
+- Resource packs (autorizado): no options.txt, trocar cada zip 1.20.1 pela versão 1.21.1/equivalente na mesma
+  posição e tirar os que não existem. Remover da pasta os packs copiados e não ativados (Quark Programmer Art.zip,
+  longwing_nuker.zip).
+- Mundo principal: a cópia convertida do "Solito solamente" (F9). "Mapa solo" é só mundo de teste
+  (regenerado em 2026-11-13; backup em `backups/Mapa solo - antes do regen 2026-11-13.tar.gz`).
+- Entrega (F11): ao terminar e testar, a 1.21.1 vai para a `main` e sai um Modpack.zip novo; a 1.20.1 fica
+  guardada numa branch própria. Exige confirmação do dono no momento de mexer na main.
+
 ## Feito
 
 - F0/F1: instância criada, 364 mods, boot limpo confirmado pelo dono (2026-11-12).
@@ -140,6 +170,21 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   cinematic_toms); "keybinding presets" (atalhos: precisa autorização); docs da raiz (READ_FIRST, LEIA-ME,
   atalhos.md) com identidade Pipinha. Ignorado de propósito: journeymap/xaero (mapa agora é FTB Chunks),
   caches (emojiful, mod_data, local/), dist/, saves, Distant_Horizons_server_data, .bobby, screenshots.
+
+- 9º launch (2026-11-13, "Mapa solo" regenerado; mundo criou, erros de script). Em curso, sem commit ainda:
+  FEITO: ciclo de tag de item c:crops/corn -> forge:grain/corn -> farm_and_charm:corn (jar) -> c:crops/corn
+  derrubava TODO o ServerEvents.tags de item (StackOverflow); corn.json não inclui mais #forge:grain/corn.
+  Regra: tags do pack nunca incluem #forge:x quando o jar faz forge/mod -> #c:x (scanner:
+  `python3 tools/dataport/tag_cycles.py .`). toRecipe121 e helpers em `000_recipe121.js`
+  (global.toRecipe121; antes era const em 8 arquivos). isEdible -> componente minecraft:food (3 arquivos).
+  LootJS 3.7: addLootTableModifier->addTableModifier, addLootTypeModifier->addTypeModifier,
+  addBlockLootModifier->addBlockModifier. Guards Item.exists em receitas/JEI. LMFT: 61 ids mortos tirados de
+  17 tags. incontrol sem mobs de mods ausentes. Jade: tooltip.tooltip() antes de CropProgressProvider.
+  Almanaque: entrada nether_grapes removida (o livro não compilava), flauta do cavalo -> sela.
+  EM CURSO: troca society:milk no lugar do leite fluido (era replaceInput {fluid} na 1.20.1); ids do Vinery
+  1.21 (*_crate -> *_bag, cherries -> cherry) em todo o pack; efeito nethervinery:netherite; varredura de ids
+  do almanaque. Deixado: aloe_preserves sem receita de Create (fluido aloe_gel não existe); erro do Small Ships
+  2.0.2 ao fechar o mundo (bug do mod, depois do save); JEMI/create_factory_logistics chemical (bug do mod).
 
 ## Pendente, em ordem
 

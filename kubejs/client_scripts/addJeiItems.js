@@ -1,8 +1,13 @@
 RecipeViewerEvents.addEntries('item', (e) => {
-  e.add("displaydelight:food_plate")
-  e.add("displaydelight:small_food_plate")
-  e.add("minecraft:bundle");
-  e.add("snowyspirit:ginger_crate");
+  // Unregistered ids would fail the whole add call, so they are filtered out first.
+  [
+    "displaydelight:food_plate",
+    "displaydelight:small_food_plate",
+    "minecraft:bundle",
+    "snowyspirit:ginger_crate",
+  ]
+    .filter((id) => Item.exists(id))
+    .forEach((id) => e.add(id));
   const trophyNames = [
     "pantry",
     "vault",

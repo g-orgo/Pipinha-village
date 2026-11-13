@@ -14,7 +14,7 @@ const specialtyLootPerk = (label, fn) => {
 const isSeedItem = (item) => String(item.id).includes("seed");
 
 LootJS.modifiers((e) => {
-  e.addBlockLootModifier(global.cropList).apply((c) => specialtyLootPerk("context", () => {
+  e.addBlockModifier(global.cropList).apply((c) => specialtyLootPerk("context", () => {
     let player = c.getPlayer();
     if (!player || player.isFake() || global.specialtyTier(player, "farming") === 0) return;
 

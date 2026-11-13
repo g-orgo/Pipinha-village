@@ -1,0 +1,17 @@
+{
+  "type": "perfectplushieapi:add_plushie",
+  "chance": 0.5,
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/buried_treasure"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.0
+    }
+  ],
+  "plushies": [
+    "#perfectplushieapi:treasure_plushies"
+  ]
+}

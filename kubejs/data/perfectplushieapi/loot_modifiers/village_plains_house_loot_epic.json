@@ -1,0 +1,17 @@
+{
+  "type": "perfectplushieapi:add_plushie",
+  "chance": 0.1,
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village/village_plains_house"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.0
+    }
+  ],
+  "plushies": [
+    "#perfectplushieapi:epic_village_plushies"
+  ]
+}

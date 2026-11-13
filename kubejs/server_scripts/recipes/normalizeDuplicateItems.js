@@ -123,6 +123,8 @@ ServerEvents.recipes((event) => {
   Object.keys(SUNLIT_DUPLICATE_GROUPS).forEach((group) => {
     const tag = "#sunlit:compat/" + group;
     SUNLIT_DUPLICATE_GROUPS[group].forEach((item) => {
+      // Some group members are not installed (e.g. bakery:dough); skip them.
+      if (!Item.exists(item)) return;
       event.replaceInput({}, item, tag);
     });
   });

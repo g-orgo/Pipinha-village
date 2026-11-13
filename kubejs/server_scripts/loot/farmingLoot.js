@@ -27,28 +27,28 @@ const checkMaxGrownWithChance = (destroyedBlock, chance) => {
 };
 
 LootJS.modifiers((e) => {
-  e.addBlockLootModifier(global.cropList).apply((c) => {
+  e.addBlockModifier(global.cropList).apply((c) => {
     c.forEachLoot((item) => {
       const quality = global.getCropQuality(c.destroyedBlock);
       if (quality > 0)
         global.setQualityLevel(item, quality);
     });
   });
-  e.addBlockLootModifier(global.cropList)
+  e.addBlockModifier(global.cropList)
     .hasAnyStage("sticky_crops")
     .apply((c) => {
       if (checkMaxGrownWithChance(c.destroyedBlock, 0.02)) {
         c.addLoot("society:pine_tar");
       }
     });
-  e.addBlockLootModifier(global.cropList)
+  e.addBlockModifier(global.cropList)
     .hasAnyStage("soil_inspector")
     .apply((c) => {
       if (checkMaxGrownWithChance(c.destroyedBlock, 0.05)) {
         c.addLoot("farm_and_charm:fertilizer");
       }
     });
-  e.addBlockLootModifier(global.cropList)
+  e.addBlockModifier(global.cropList)
     .randomChance(0.25)
     .customCondition({
       condition: "minecraft:location_check",
@@ -64,14 +64,14 @@ LootJS.modifiers((e) => {
       return itemStack;
     });
     
-  e.addBlockLootModifier(global.cropList)
+  e.addBlockModifier(global.cropList)
     .hasAnyStage("paradise_crop")
     .modifyLoot(Ingredient.all, (itemStack) => {
       if (!cropCollectorDenied.includes(itemStack.id))
         itemStack.setCount(itemStack.getCount() + 1);
       return itemStack;
     });
-  e.addBlockLootModifier(global.cropList)
+  e.addBlockModifier(global.cropList)
     .hasAnyStage("crop_collector")
     .modifyLoot(Ingredient.all, (itemStack) => {
       if (!cropCollectorDenied.includes(itemStack.id))
@@ -80,21 +80,21 @@ LootJS.modifiers((e) => {
     });
 
   // Mastery
-  e.addBlockLootModifier(global.cropList)
+  e.addBlockModifier(global.cropList)
     .hasAnyStage("husbandry_mastery")
     .apply((c) => {
       if (checkMaxGrownWithChance(c.destroyedBlock, 0.005)) {
         c.addLoot("society:plushie_capsule");
       }
     });
-  e.addBlockLootModifier(global.cropList)
+  e.addBlockModifier(global.cropList)
     .hasAnyStage("husbandry_mastery")
     .apply((c) => {
       if (checkMaxGrownWithChance(c.destroyedBlock, 0.003)) {
         c.addLoot("society:animal_cracker");
       }
     });
-  e.addBlockLootModifier(global.cropList)
+  e.addBlockModifier(global.cropList)
     .hasAnyStage("farming_mastery")
     .apply((c) => {
       if (checkMaxGrownWithChance(c.destroyedBlock, 0.005)) {

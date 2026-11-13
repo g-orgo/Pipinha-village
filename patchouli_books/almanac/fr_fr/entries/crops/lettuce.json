@@ -1,7 +1,7 @@
 {
   "name": "Laitue 🌼",
   "category": "patchouli:crops",
-  "icon": "farm_and_charm:lettuce",
+  "icon": "farm_and_charm:lettuce_seeds",
   "pages": [
     {
       "type": "patchouli:text",

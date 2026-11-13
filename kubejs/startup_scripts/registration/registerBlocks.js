@@ -500,7 +500,6 @@ StartupEvents.registry("block", (e) => {
       });
       item.food((food) => {
         food.alwaysEdible(true);
-        food.effect("nethervinery:netherite", 400, 1, 1.0);
         food.eatSeconds(0.8);
       });
       item.useAnimation("drink");

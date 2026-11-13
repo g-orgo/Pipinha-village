@@ -72,6 +72,8 @@ ServerEvents.recipes((e) => {
 
   recipes.forEach((recipe) => {
     const { egg, mineral, coin } = recipe;
+    // Skip quietly when the egg, the mineral or the coin is not installed.
+    if (!Item.exists(egg) || !Item.exists(mineral) || !Item.exists(`numismatics:${coin}`)) return;
     e.shaped(egg, ["gmg", "beb", "gbg"], {
       e: "#bakery:eggs",
       b: "minecraft:bone_block",

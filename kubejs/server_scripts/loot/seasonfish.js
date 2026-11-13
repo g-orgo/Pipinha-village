@@ -50,21 +50,21 @@ const createWeatherLootTable = (
   mysticalOcean
 ) => {
   if (!night) {
-    e.addLootTableModifier("minecraft:gameplay/fishing")
+    e.addTableModifier("minecraft:gameplay/fishing")
       .playerPredicate((p) => checkSeasonNeptuna(p, season, mysticalOcean))
       .anyBiome("#minecraft:is_ocean", "#minecraft:is_beach")
       .weatherCheck(weather)
       .timeCheck(24000, 0, 12999)
       .addWeightedLoot([1, 1], convertToLootEntry(oceanFish, mysticalOcean));
 
-    e.addLootTableModifier("minecraft:gameplay/fishing")
+    e.addTableModifier("minecraft:gameplay/fishing")
       .playerPredicate((p) => checkSeasonNeptuna(p, season, mysticalOcean))
       .anyBiome("#minecraft:is_river")
       .weatherCheck(weather)
       .timeCheck(24000, 0, 12999)
       .addWeightedLoot([1, 1], convertToLootEntry(riverFish, mysticalOcean));
 
-    e.addLootTableModifier("minecraft:gameplay/fishing")
+    e.addTableModifier("minecraft:gameplay/fishing")
       .playerPredicate((p) => checkSeasonNeptuna(p, season, mysticalOcean))
       .not((n) => {
         n.anyBiome(
@@ -77,21 +77,21 @@ const createWeatherLootTable = (
       .timeCheck(24000, 0, 12999)
       .addWeightedLoot([1, 1], convertToLootEntry(freshFish, mysticalOcean));
   } else {
-    e.addLootTableModifier("minecraft:gameplay/fishing")
+    e.addTableModifier("minecraft:gameplay/fishing")
       .playerPredicate((p) => checkSeasonNeptuna(p, season, mysticalOcean))
       .anyBiome("#minecraft:is_ocean", "#minecraft:is_beach")
       .weatherCheck(weather)
       .timeCheck(24000, 13000, 23999)
       .addWeightedLoot([1, 1], convertToLootEntry(oceanFish, mysticalOcean));
 
-    e.addLootTableModifier("minecraft:gameplay/fishing")
+    e.addTableModifier("minecraft:gameplay/fishing")
       .playerPredicate((p) => checkSeasonNeptuna(p, season, mysticalOcean))
       .anyBiome("#minecraft:is_river")
       .weatherCheck(weather)
       .timeCheck(24000, 13000, 23999)
       .addWeightedLoot([1, 1], convertToLootEntry(riverFish, mysticalOcean));
 
-    e.addLootTableModifier("minecraft:gameplay/fishing")
+    e.addTableModifier("minecraft:gameplay/fishing")
       .playerPredicate((p) => checkSeasonNeptuna(p, season, mysticalOcean))
       .not((n) => {
         n.anyBiome(
@@ -167,7 +167,7 @@ LootJS.modifiers((e) => {
     "minecraft:tropical_fish",
     "minecraft:pufferfish",
   ].forEach((fish) => {
-    e.addLootTableModifier("minecraft:gameplay/fishing").removeLoot(fish);
+    e.addTableModifier("minecraft:gameplay/fishing").removeLoot(fish);
   });
 
   createSeasonLootTable(
@@ -333,7 +333,7 @@ LootJS.modifiers((e) => {
   );
 
   // + Fish skills
-  e.addLootTableModifier("minecraft:gameplay/fishing")
+  e.addTableModifier("minecraft:gameplay/fishing")
     .hasAnyStage("fly_fisher")
     .modifyLoot(Ingredient.all, (itemStack) => {
       if (!itemStack.hasTag("minecraft:fishes")) return itemStack;
@@ -349,7 +349,7 @@ LootJS.modifiers((e) => {
       return itemStack;
     })
 
-  e.addLootTableModifier("minecraft:gameplay/fishing")
+  e.addTableModifier("minecraft:gameplay/fishing")
     .playerPredicate((p) =>
       global.hasBobber(p.getHeldItem("main_hand"), "society:needle_bobber")
     )

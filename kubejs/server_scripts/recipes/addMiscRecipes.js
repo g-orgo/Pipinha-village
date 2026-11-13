@@ -1,7 +1,10 @@
 console.info("[SOCIETY] addMiscRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
-  e.shapeless(Item.of('society:invitation[minecraft:custom_data={type:{id:"society:carpenter"}}]'), ['minecraft:crafting_table', "minecraft:wooden_axe", "minecraft:cobblestone"])
+  // Invitation item belongs to a future phase; skip it until the item is registered.
+  if (Item.exists('society:invitation')) {
+    e.shapeless(Item.of('society:invitation[minecraft:custom_data={type:{id:"society:carpenter"}}]'), ['minecraft:crafting_table', "minecraft:wooden_axe", "minecraft:cobblestone"])
+  }
   // Quality is a data component in 1.21.1, set through the startup helper.
   const sugarOfQuality = (count, level) => {
     const sugar = Item.of('minecraft:sugar', count)

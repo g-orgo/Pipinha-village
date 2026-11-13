@@ -62,6 +62,15 @@ global.tapperRecipes = new Map([
     },
   ],
   [
+    "mysticaloaktree:wise_oak",
+    {
+      leaves: ["minecraft:oak_leaves"],
+      output: ["4x minecraft:wither_rose"],
+      fluidOutput: "society:oak_resin",
+      time: 2,
+    },
+  ],
+  [
     "minecraft:pale_oak_log",
     {
       leaves: ["minecraft:pale_oak_leaves"],

@@ -182,7 +182,7 @@ const sunlitLootFill = (ctx, theme) => {
 
 LootJS.modifiers((e) => {
   SUNLIT_LOOT_CFG.themes.forEach((theme) => {
-    e.addLootTableModifier(`sunlit:chests/${theme}`).apply((ctx) => {
+    e.addTableModifier(`sunlit:chests/${theme}`).apply((ctx) => {
       try {
         sunlitLootFill(ctx, theme);
       } catch (err) {

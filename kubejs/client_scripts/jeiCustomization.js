@@ -98,11 +98,10 @@ JEIAddedEvents.registerCategories((e) => {
 });
 
 JEIAddedEvents.registerRecipes((e) => {
-  const nether = ["crimson", "warped"];
   const juiceJEIRecipe = (juice, grape) => {
     e.custom("vinery:manual_juicing").add({
-      grape: `6x ${nether.includes(juice) ? "nethervinery" : "vinery"}:${grape}`,
-      juice: `2x ${nether.includes(juice) ? "nethervinery" : "vinery"}:${juice}_grapejuice`,
+      grape: `6x vinery:${grape}`,
+      juice: `2x vinery:${juice}_grapejuice`,
     });
   };
 
@@ -115,8 +114,6 @@ JEIAddedEvents.registerRecipes((e) => {
     "white_savanna",
     "white_jungle",
     "white_taiga",
-    "crimson",
-    "warped",
   ];
   const grapes = [
     "red_grape",
@@ -127,18 +124,10 @@ JEIAddedEvents.registerRecipes((e) => {
     "savanna_grapes_white",
     "jungle_grapes_white",
     "taiga_grapes_white",
-    "crimson_grape",
-    "warped_grape",
   ];
 
   grapeJuices.forEach((juice, index) => {
-    if (juice.includes("red")) {
-      juiceJEIRecipe("red", grapes[index]);
-    } else if (juice.includes("white")) {
-      juiceJEIRecipe("white", grapes[index]);
-    } else {
-      juiceJEIRecipe(juice, grapes[index]);
-    }
+    juiceJEIRecipe(juice.includes("red") ? "red" : "white", grapes[index]);
   });
 
   const cropDupes = [

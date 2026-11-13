@@ -1719,6 +1719,7 @@ global.miscAdventurer = [
   { item: "society:sunlit_pearl", value: 1920 },
   { item: "crittersandcompanions:clam", value: 512 },
   { item: "windswept:elder_feather", value: 128 },
+  { item: "minecraft:wither_rose", value: 128 },
   { item: "windswept:frozen_branch", value: 200 },
   { item: "crittersandcompanions:silk", value: 128 },
   { item: "crittersandcompanions:dragonfly_wing", value: 3300 },

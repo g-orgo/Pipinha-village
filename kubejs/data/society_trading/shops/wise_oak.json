@@ -98,6 +98,17 @@
     },
     {
       "offer": {
+        "item": "minecraft:wither_rose",
+        "count": 1
+      },
+      "request": {
+        "item": "society:blackfish_roe",
+        "count": 8
+      },
+      "trade_id": "wise_oak_blackfish_roe_for_wither_rose"
+    },
+    {
+      "offer": {
         "item": "society:fairy_dust",
         "count": 4
       },

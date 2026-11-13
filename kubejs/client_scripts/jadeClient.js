@@ -299,7 +299,8 @@ global.runtime["JadeSocietyCropClientCallback"] = (
   } else if("minecraft:torchflower".equals(name)) {
     tooltip.add(Component.translatable("jade.society.crop_growth.mature").darkGreen());
   } else {
-    $JadeCropInfo.INSTANCE.appendTooltip(tooltip, accessor, pluginConfig);
+    // The KubeJS-Jade wrapper (ITooltipWrapper record) holds the real Jade ITooltip.
+    $JadeCropInfo.INSTANCE.appendTooltip(tooltip.tooltip(), accessor, pluginConfig);
     if (!blockContainer.hasTag("dew_drop_farmland_growth:cancel_random_tick") && $SereneFertility.isCrop(state) && !isCropFertile(name)) {
       tooltip.add(Component.translatable("jade.society.crop_growth.stop").red());
     }

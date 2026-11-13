@@ -44,8 +44,6 @@ ServerEvents.recipes((e) => {
   milks.forEach((milk) => {
     compact(`society:large_${milk}`, `society:${milk}`, 4);
   });
-  e.shapeless("9x nethervinery:warped_grape", ["nethervinery:warped_grape_crate"]);
-  e.shapeless("9x nethervinery:crimson_grape", ["nethervinery:crimson_grape_crate"]);
   compact("society:salmonberry_crate", "society:salmonberry", 9);
   compact("society:boysenberry_crate", "society:boysenberry", 9);
   compact("society:cranberry_crate", "society:cranberry", 9);

@@ -1,12 +1,8 @@
 {
   "name": "Horse",
   "category": "patchouli:pets",
-  "icon": "relics:horse_flute",
+  "icon": "minecraft:saddle",
   "pages": [
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Possible Gifts:$()$(br)Horse Flute"
-    },
     {
       "type": "patchouli:entity",
       "entity": "minecraft:horse",

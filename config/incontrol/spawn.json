@@ -17,10 +17,8 @@
       "minecraft:witch",
       "minecraft:husk",
       "minecraft:stray",
-      "trials:bogged",
       "minecraft:slime",
       "minecraft:skeleton_horse",
-      "species:limpet",
       "windswept:chilled"
     ],
     "dimension": "minecraft:overworld",
@@ -100,8 +98,7 @@
       "minecraft:drowned",
       "minecraft:slime",
       "minecraft:husk",
-      "minecraft:stray",
-      "trials:bogged"
+      "minecraft:stray"
     ],
     "dimension": "minecraft:overworld",
     "maxheight": 50,
@@ -112,8 +109,7 @@
       "minecraft:zombie_villager",
       "crittersandcompanions:dragonfly",
       "crittersandcompanions:jumping_spider",
-      "minecraft:villager",
-      "species:treeper"
+      "minecraft:villager"
     ],
     "result": "deny"
   },
@@ -166,15 +162,6 @@
     "result": "deny"
   },
   {
-    "mob": "balloonbox:balloonbox",
-    "mincount": {
-      "amount": 1,
-      "perplayer": false,
-      "mob": "balloonbox:balloonbox"
-    },
-    "result": "deny"
-  },
-  {
     "dimension": "society:skull_cavern",
     "maxheight": 142,
     "healthmultiply": 2.5,
@@ -199,36 +186,6 @@
     "damagemultiply": 1.2
   },
   {
-    "mob": "legendarycreatures:corpse_eater",
-    "dimension": "society:skull_cavern",
-    "structure": [
-      "hopo:mineshaft/acacia_mineshaft",
-      "hopo:mineshaft/bamboo_mineshaft",
-      "hopo:mineshaft/birch_mineshaft",
-      "hopo:mineshaft/cherry_mineshaft",
-      "hopo:mineshaft/dark_oak_mineshaft",
-      "hopo:mineshaft/deepslate_mineshaft",
-      "hopo:mineshaft/jungle_mineshaft",
-      "hopo:mineshaft/mangrove_mineshaft",
-      "hopo:mineshaft/mud_mineshaft",
-      "hopo:mineshaft/oak_mineshaft",
-      "hopo:mineshaft/spruce_mineshaft",
-      "hopo:mineshaft/stone_mineshaft"
-    ],
-    "healthmultiply": 7,
-    "damagemultiply": 3,
-    "armoradd": 5,
-    "speedmultiply": 0.4,
-    "when": "onjoin",
-    "result": "default"
-  },
-  {
-    "mob": "legendarycreatures:corpse_eater",
-    "dimension": "society:skull_cavern",
-    "when": "onjoin",
-    "result": "deny"
-  },
-  {
     "mob": "meadow:wooly_cow",
     "dimension": "minecraft:overworld",
     "when": "onjoin",
@@ -244,12 +201,6 @@
   {
     "mob": "meadow:wooly_cow",
     "dimension": "society:the_nether",
-    "when": "onjoin",
-    "result": "deny"
-  },
-  {
-    "mob": "legendarycreatures:corpse_eater",
-    "dimension": "society:skull_cavern",
     "when": "onjoin",
     "result": "deny"
   }

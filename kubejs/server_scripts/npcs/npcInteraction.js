@@ -143,7 +143,8 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
                     0.001
                 );
                 let delay = 0;
-                if (item.isEdible()) delay = 20
+                // 1.21.1 has no edible check on ItemStack; food is the minecraft:food data component.
+                if (item.get(Java.loadClass("net.minecraft.core.component.DataComponents").FOOD) != null) delay = 20
                 if (!player.isCreative()) item.shrink(1);
                 server.scheduleInTicks(delay, () => {
                     server.runCommandSilent(

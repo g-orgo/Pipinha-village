@@ -83,6 +83,36 @@
 			chestnut = true
 			pine = true
 
+		[types.wood_type.botania]
+			livingwood = true
+			dreamwood = true
+			white_iridescent = true
+			orange_iridescent = true
+			magenta_iridescent = true
+			light_blue_iridescent = true
+			yellow_iridescent = true
+			lime_iridescent = true
+			pink_iridescent = true
+			gray_iridescent = true
+			light_gray_iridescent = true
+			cyan_iridescent = true
+			purple_iridescent = true
+			blue_iridescent = true
+			brown_iridescent = true
+			green_iridescent = true
+			red_iridescent = true
+			black_iridescent = true
+			bifrost = true
+			dry = true
+			golden = true
+			vivid = true
+			scorched = true
+			infused = true
+			mutated = true
+			thunderous = true
+			infernal = true
+			sealing = true
+
 		[types.leaves_type.atmospheric]
 			rosewood = true
 			morado = true
@@ -157,6 +187,34 @@
 			chestnut = true
 			pine = true
 			flowering_acacia = true
+
+		[types.leaves_type.botania]
+			white_iridescent = true
+			orange_iridescent = true
+			magenta_iridescent = true
+			light_blue_iridescent = true
+			yellow_iridescent = true
+			lime_iridescent = true
+			pink_iridescent = true
+			gray_iridescent = true
+			light_gray_iridescent = true
+			cyan_iridescent = true
+			purple_iridescent = true
+			blue_iridescent = true
+			brown_iridescent = true
+			green_iridescent = true
+			red_iridescent = true
+			black_iridescent = true
+			bifrost = true
+			dry = true
+			golden = true
+			vivid = true
+			scorched = true
+			infused = true
+			mutated = true
+			thunderous = true
+			infernal = true
+			sealing = true
 
 		[entries.wood_type.another_furniture]
 			shelf = true

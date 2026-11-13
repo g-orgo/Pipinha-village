@@ -1240,5 +1240,81 @@
 			x: -3.0d
 			y: 10.5d
 		}
+		{
+			dependencies: ["38AC25E172172654"]
+			description: ["{ftbquests.chapter.iv__prismatic_farming.quest6635A53C7AF81CB3.description1}"]
+			id: "6635A53C7AF81CB3"
+			rewards: [{
+				id: "494951B9286CC669"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "58304EBAF06978FC"
+				item: { count: 1, id: "sunrisegardening:netherite_sprinkler" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["0E4EA6B5E8E6361C"]
+			description: [
+				"{ftbquests.chapter.iv__prismatic_farming.quest52A790F80019F520.description1}"
+				""
+				"{ftbquests.chapter.iv__prismatic_farming.quest52A790F80019F520.description2}"
+			]
+			id: "52A790F80019F520"
+			rewards: [{
+				id: "0FFE0D3F83EB0BCD"
+				item: "society:bonefish_bait"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A255EE6EF6BBB75"
+				item: { count: 1, id: "sunrisegardening:hyper_fertilizer" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["0E13E56F342F243F"]
+			description: [
+				"{ftbquests.chapter.iv__prismatic_farming.quest35A8A8F8898AE3E5.description1}"
+				""
+				"{ftbquests.chapter.iv__prismatic_farming.quest35A8A8F8898AE3E5.description2}"
+			]
+			id: "35A8A8F8898AE3E5"
+			tasks: [{
+				id: "747623C805336417"
+				item: { count: 1, id: "sunrisegardening:pristine_quality_fertilizer" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["7B26713E5E4E25CB"]
+			description: [
+				"{ftbquests.chapter.iv__prismatic_farming.quest33BD4404990D4D89.description1}"
+				""
+				"{ftbquests.chapter.iv__prismatic_farming.quest33BD4404990D4D89.description2}"
+			]
+			id: "33BD4404990D4D89"
+			rewards: [{
+				count: 2
+				id: "280FC65D6624C825"
+				item: { count: 1, id: "sunrisegardening:garden_pot" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F3C5B69FBD0192F"
+				item: { count: 1, id: "sunrisegardening:garden_pot" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.5d
+		}
 	]
 }

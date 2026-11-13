@@ -14,14 +14,14 @@ const seedMessageThrottle = ((temp) => (entity, tick, identifier) => {
 BlockEvents.rightClicked(
   [
     "minecraft:farmland",
-    "dew_drop_farmland_growth:weak_fertilized_farmland",
-    "dew_drop_farmland_growth:strong_fertilized_farmland",
-    "dew_drop_farmland_growth:hyper_fertilized_farmland",
-    "dew_drop_farmland_growth:hydrating_farmland",
-    "dew_drop_farmland_growth:bountiful_fertilized_farmland",
-    "dew_drop_farmland_growth:low_quality_fertilized_farmland",
-    "dew_drop_farmland_growth:high_quality_fertilized_farmland",
-    "dew_drop_farmland_growth:pristine_quality_fertilized_farmland",
+    "sunrisegardening:weak_fertilized_farmland",
+    "sunrisegardening:strong_fertilized_farmland",
+    "sunrisegardening:hyper_fertilized_farmland",
+    "sunrisegardening:hydrating_farmland",
+    "sunrisegardening:bountiful_fertilized_farmland",
+    "sunrisegardening:low_quality_fertilized_farmland",
+    "sunrisegardening:high_quality_fertilized_farmland",
+    "sunrisegardening:pristine_quality_fertilized_farmland",
   ],
   (e) => {
     const { player, level, block, server } = e;

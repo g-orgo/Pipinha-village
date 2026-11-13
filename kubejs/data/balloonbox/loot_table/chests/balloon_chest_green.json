@@ -231,7 +231,7 @@
               "add": false
             }
           ],
-          "name": "minecraft:bone_meal"
+          "name": "sunrisegardening:hydrating_fertilizer"
         },
         {
           "type": "minecraft:item",
@@ -247,7 +247,7 @@
               "add": false
             }
           ],
-          "name": "minecraft:bone_meal"
+          "name": "sunrisegardening:weak_fertilizer"
         },
         {
           "type": "minecraft:item",
@@ -263,7 +263,7 @@
               "add": false
             }
           ],
-          "name": "minecraft:bone_meal"
+          "name": "sunrisegardening:bountiful_fertilizer"
         },
         {
           "type": "minecraft:item",
@@ -279,7 +279,7 @@
               "add": false
             }
           ],
-          "name": "minecraft:bone_meal"
+          "name": "sunrisegardening:low_quality_fertilizer"
         },
         {
           "type": "minecraft:item",
@@ -295,7 +295,7 @@
               "add": false
             }
           ],
-          "name": "minecraft:bone_meal"
+          "name": "sunrisegardening:high_quality_fertilizer"
         },
         {
           "type": "minecraft:item",
@@ -311,7 +311,7 @@
               "add": false
             }
           ],
-          "name": "minecraft:bone_meal"
+          "name": "sunrisegardening:strong_fertilizer"
         }
       ]
     },

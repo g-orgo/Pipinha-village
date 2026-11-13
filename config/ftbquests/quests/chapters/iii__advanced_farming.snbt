@@ -316,6 +316,14 @@
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			id: "08CFE766C9645FC8"
+			rewards: [
+				{
+					count: 4
+					id: "69E47AA8BD899E47"
+					item: { count: 1, id: "sunrisegardening:high_quality_fertilizer" }
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "1D2C8AFDDED732A1"
 				item: { count: 1, id: "society:quality_washer" }
@@ -674,6 +682,62 @@
 			]
 			x: -1.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["0F176FBF01ABB774"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest3492FA6A5DFCC390.description1}"]
+			id: "3492FA6A5DFCC390"
+			rewards: [{
+				id: "51B4932933C92BF1"
+				item: "society:fire_quartz"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6ED7E64530635F03"
+				item: { count: 1, id: "sunrisegardening:gold_sprinkler" }
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iii__advanced_farming.quest3492FA6A5DFCC390.title}"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["214BFF5CB710FFE2"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest2746CBE8BDA47E40.description1}"]
+			id: "2746CBE8BDA47E40"
+			rewards: [{
+				id: "674EAF8B280ADA6F"
+				item: "society:battery"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B08BD5F101D61C1"
+				item: { count: 1, id: "sunrisegardening:diamond_sprinkler" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["07938A28F31B7473"]
+			description: ["{ftbquests.chapter.iii__advanced_farming.quest1D21615AEE411491.description1}"]
+			icon: "sunrisegardening:strong_fertilizer"
+			id: "1D21615AEE411491"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2E25CFC302D54349"
+				table_id: 148309168996942632L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "38A2FC9B0D264BD2"
+				item: { components: { "ftbfiltersystem:filter": "or(item(sunrisegardening:strong_fertilizer)item(sunrisegardening:high_quality_fertilizer))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				title: "{ftbquests.chapter.iii__advanced_farming.quest1D21615AEE411491.task.4081101955221834706.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iii__advanced_farming.quest1D21615AEE411491.title}"
+			x: 4.0d
+			y: -3.5d
 		}
 	]
 }

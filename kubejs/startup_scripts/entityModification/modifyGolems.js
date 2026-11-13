@@ -13,6 +13,29 @@ global.handleHayGolem = (entity) => {
     )) {
       if (!level.isLoaded(pos)) continue;
       scanBlock = level.getBlock(pos);
+      if (rnd10() && scanBlock.hasTag("society:hay_golem_improvable")) {
+        if (scanBlock.id.equals("minecraft:farmland")) {
+          scanBlock.set(
+            "sunrisegardening:low_quality_fertilized_farmland",
+            scanBlock.getProperties()
+          );
+        } else if (
+          scanBlock.id.equals(
+            "sunrisegardening:low_quality_fertilized_farmland"
+          )
+        ) {
+          scanBlock.set(
+            "sunrisegardening:high_quality_fertilized_farmland",
+            scanBlock.getProperties()
+          );
+        }
+        if (level.server) {
+          level.server.runCommandSilent(
+            `playsound ribbits:entity.ribbit.magic block @a ${scanBlock.x} ${scanBlock.y} ${scanBlock.z}`
+          );
+        }
+        return;
+      }
     }
   }
 };
@@ -28,7 +51,7 @@ global.handleKelpGolem = (entity) => {
   )) {
     if (!level.isLoaded(pos)) continue;
     scanBlock = level.getBlock(pos);
-    if (scanBlock.id === "dew_drop_farmland_growth:garden_pot") {
+    if (scanBlock.id === "sunrisegardening:garden_pot") {
       blockProperties = scanBlock.getProperties();
       blockProperties.moisture = "7";
       scanBlock.set(scanBlock.id, blockProperties);

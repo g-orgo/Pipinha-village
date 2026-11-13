@@ -23,7 +23,7 @@ for l in open(ROOT + '/tools/lcport/loot_map.tsv', encoding='utf-8'):
     cols = l.rstrip('\n').split('\t')
     if len(cols) < 2 or cols[0] == 'old_id':
         continue
-    if cols[0] not in rows:
+    if cols[0] not in rows and not cols[0].startswith('dew_drop_farmland_growth:'):
         put(cols[0], cols[1], 'item')
 # explicit rows
 put('meadow:fire_log', 'meadow:firewood', 'any')
@@ -46,12 +46,22 @@ EXTRA = [
     ('quark:lootr_nether_brick_trapped_chest', 'minecraft:trapped_chest', 'be', '', ''),
     ('toms_storage:ts.inventory_hopper_basic', 'toms_storage:basic_inventory_hopper', 'any', '', ''),
     ('toms_storage:ts.inventory_hopper_basic', 'toms_storage:basic_inventory_hopper', 'be', '', ''),
-    # farmland variants seen in the source scan: only the moisture prop exists, so it is kept
-    ('dew_drop_farmland_growth:weak_fertilized_farmland', 'minecraft:farmland', 'block', '', ''),
-    ('dew_drop_farmland_growth:low_quality_fertilized_farmland', 'minecraft:farmland', 'block', '', ''),
-    # sprinkler variants seen in the source scan: block becomes air; no block entities exist for them
-    ('dew_drop_farmland_growth:iron_sprinkler', 'minecraft:air', 'block', '', ''),
-    ('dew_drop_farmland_growth:gold_sprinkler', 'minecraft:air', 'block', '', ''),
+    # Sunrise Gardening (successor of Sturdy Farmland): every old dew_drop_farmland_growth id exists under sunrisegardening.
+    # Blockstate props compared with the source: farmland keeps 'moisture' and sprinklers keep 'sticklogged', so no prop renames.
+    # kind 'any' keeps block, item and block entity data (sprinkler and pot BEs are not dropped).
+    ('dew_drop_farmland_growth:weak_fertilized_farmland', 'sunrisegardening:weak_fertilized_farmland', 'any', '', ''),
+    ('dew_drop_farmland_growth:low_quality_fertilized_farmland', 'sunrisegardening:low_quality_fertilized_farmland', 'any', '', ''),
+    ('dew_drop_farmland_growth:iron_sprinkler', 'sunrisegardening:iron_sprinkler', 'any', '', ''),
+    ('dew_drop_farmland_growth:gold_sprinkler', 'sunrisegardening:gold_sprinkler', 'any', '', ''),
+    # Sunrise Gardening fertilizer items (old dew_drop fertilizers were loot rows pointing to bone meal)
+    ('dew_drop_farmland_growth:bountiful_fertilizer', 'sunrisegardening:bountiful_fertilizer', 'item', '', ''),
+    ('dew_drop_farmland_growth:deluxe_hydrating_fertilizer', 'sunrisegardening:deluxe_hydrating_fertilizer', 'item', '', ''),
+    ('dew_drop_farmland_growth:high_quality_fertilizer', 'sunrisegardening:high_quality_fertilizer', 'item', '', ''),
+    ('dew_drop_farmland_growth:hydrating_fertilizer', 'sunrisegardening:hydrating_fertilizer', 'item', '', ''),
+    ('dew_drop_farmland_growth:hyper_fertilizer', 'sunrisegardening:hyper_fertilizer', 'item', '', ''),
+    ('dew_drop_farmland_growth:low_quality_fertilizer', 'sunrisegardening:low_quality_fertilizer', 'item', '', ''),
+    ('dew_drop_farmland_growth:strong_fertilizer', 'sunrisegardening:strong_fertilizer', 'item', '', ''),
+    ('dew_drop_farmland_growth:weak_fertilizer', 'sunrisegardening:weak_fertilizer', 'item', '', ''),
     # trials mod content that became vanilla in 1.21 (sounds and enchantments are not block/item rows, so they are not listed)
     ('trials:tuff_slab', 'minecraft:tuff_slab', 'any', '', ''),
     ('trials:tuff_stairs', 'minecraft:tuff_stairs', 'any', '', ''),

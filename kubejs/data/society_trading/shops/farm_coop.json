@@ -1,16 +1,16 @@
 {
   "shop_id": "farm_coop",
   "name": "shop.society_trading.farm_coop",
-  "texture": "dew_drop_farmland_growth:textures/item/weak_fertilizer",
+  "texture": "sunrisegardening:textures/item/weak_fertilizer",
   "jei_catalyst": {
-    "id": "dew_drop_farmland_growth:weak_fertilizer"
+    "id": "sunrisegardening:weak_fertilizer"
   },
   "stage_required": "profession_farmer",
   "selector_weight": -94,
   "trades": [
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:weak_fertilizer",
+        "id": "sunrisegardening:weak_fertilizer",
         "count": 8
       },
       "request": {
@@ -22,7 +22,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:weak_fertilizer",
+        "id": "sunrisegardening:weak_fertilizer",
         "count": 8
       },
       "request": {
@@ -37,7 +37,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:weak_fertilizer",
+        "id": "sunrisegardening:weak_fertilizer",
         "count": 8
       },
       "request": {
@@ -52,7 +52,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:weak_fertilizer",
+        "id": "sunrisegardening:weak_fertilizer",
         "count": 8
       },
       "request": {
@@ -66,7 +66,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:low_quality_fertilizer",
+        "id": "sunrisegardening:low_quality_fertilizer",
         "count": 8
       },
       "request": {
@@ -78,7 +78,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:low_quality_fertilizer",
+        "id": "sunrisegardening:low_quality_fertilizer",
         "count": 8
       },
       "request": {
@@ -93,7 +93,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:low_quality_fertilizer",
+        "id": "sunrisegardening:low_quality_fertilizer",
         "count": 8
       },
       "request": {
@@ -108,7 +108,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:low_quality_fertilizer",
+        "id": "sunrisegardening:low_quality_fertilizer",
         "count": 8
       },
       "request": {
@@ -122,7 +122,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:hydrating_fertilizer",
+        "id": "sunrisegardening:hydrating_fertilizer",
         "count": 8
       },
       "request": {
@@ -134,7 +134,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:hydrating_fertilizer",
+        "id": "sunrisegardening:hydrating_fertilizer",
         "count": 8
       },
       "request": {
@@ -149,7 +149,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:hydrating_fertilizer",
+        "id": "sunrisegardening:hydrating_fertilizer",
         "count": 8
       },
       "request": {
@@ -164,7 +164,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:hydrating_fertilizer",
+        "id": "sunrisegardening:hydrating_fertilizer",
         "count": 8
       },
       "request": {
@@ -178,7 +178,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:strong_fertilizer",
+        "id": "sunrisegardening:strong_fertilizer",
         "count": 1
       },
       "request": {
@@ -190,7 +190,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:strong_fertilizer",
+        "id": "sunrisegardening:strong_fertilizer",
         "count": 1
       },
       "request": {
@@ -205,7 +205,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:strong_fertilizer",
+        "id": "sunrisegardening:strong_fertilizer",
         "count": 1
       },
       "request": {
@@ -220,7 +220,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:strong_fertilizer",
+        "id": "sunrisegardening:strong_fertilizer",
         "count": 1
       },
       "request": {
@@ -234,7 +234,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
+        "id": "sunrisegardening:deluxe_hydrating_fertilizer",
         "count": 1
       },
       "request": {
@@ -246,7 +246,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
+        "id": "sunrisegardening:deluxe_hydrating_fertilizer",
         "count": 1
       },
       "request": {
@@ -261,7 +261,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
+        "id": "sunrisegardening:deluxe_hydrating_fertilizer",
         "count": 1
       },
       "request": {
@@ -276,7 +276,7 @@
     },
     {
       "offer": {
-        "id": "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
+        "id": "sunrisegardening:deluxe_hydrating_fertilizer",
         "count": 1
       },
       "request": {

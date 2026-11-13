@@ -10,11 +10,11 @@ global.recyclingMachineRecipes = new Map([
   ["zetter:canvas", { output: ["4x society:canvas"], multExempt: true }],
   [
     "aquaculture:fish_bones",
-    { output: ["dew_drop_farmland_growth:strong_fertilizer"] },
+    { output: ["sunrisegardening:strong_fertilizer"] },
   ],
   [
     "aquaculture:algae",
-    { output: ["dew_drop_farmland_growth:high_quality_fertilizer"] },
+    { output: ["sunrisegardening:high_quality_fertilizer"] },
   ],
   ["simplehats:hatbag_common", { output: ["1x society:canvas"] }],
   ["simplehats:hatbag_uncommon", { output: ["2x society:canvas"] }],

@@ -2349,19 +2349,19 @@ global.fishPondDefinitions = new Map([
         },
         {
           minPopulation: 9,
-          item: "dew_drop_farmland_growth:hydrating_fertilizer",
+          item: "sunrisegardening:hydrating_fertilizer",
           count: 12,
           chance: 0.4,
         },
         {
           minPopulation: 9,
-          item: "dew_drop_farmland_growth:bountiful_fertilizer",
+          item: "sunrisegardening:bountiful_fertilizer",
           count: 8,
           chance: 0.35,
         },
         {
           minPopulation: 9,
-          item: "dew_drop_farmland_growth:weak_fertilizer",
+          item: "sunrisegardening:weak_fertilizer",
           count: 4,
           chance: 0.2,
         },

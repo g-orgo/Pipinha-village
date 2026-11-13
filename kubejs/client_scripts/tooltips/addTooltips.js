@@ -467,51 +467,51 @@ ItemEvents.modifyTooltips((event) => {
   );
   // Fertilizers
   tooltip.add(
-    "dew_drop_farmland_growth:weak_fertilizer",
+    "sunrisegardening:weak_fertilizer",
     Text.translatable("tooltip.society.weak_fertilizer").green()
   );
   tooltip.add(
-    "dew_drop_farmland_growth:strong_fertilizer",
+    "sunrisegardening:strong_fertilizer",
     Text.translatable("tooltip.society.strong_fertilizer").green()
   );
   tooltip.add(
-    "dew_drop_farmland_growth:hyper_fertilizer",
+    "sunrisegardening:hyper_fertilizer",
     Text.translatable("tooltip.society.hyper_fertilizer").green()
   );
   tooltip.add(
-    "dew_drop_farmland_growth:hydrating_fertilizer",
+    "sunrisegardening:hydrating_fertilizer",
     Text.translatable("tooltip.society.hydrating_fertilizer").green()
   );
   tooltip.add(
-    "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
+    "sunrisegardening:deluxe_hydrating_fertilizer",
     Text.translatable("tooltip.society.deluxe_hydrating_fertilizer").green()
   );
   tooltip.add(
-    "dew_drop_farmland_growth:bountiful_fertilizer",
+    "sunrisegardening:bountiful_fertilizer",
     Text.translatable("tooltip.society.bountiful_fertilizer").green()
   );
   tooltip.add(
-    "dew_drop_farmland_growth:bountiful_fertilizer",
+    "sunrisegardening:bountiful_fertilizer",
     Text.translatable("tooltip.society.bountiful_fertilizer.warn").red()
   );
   tooltip.add(
-    "dew_drop_farmland_growth:low_quality_fertilizer",
+    "sunrisegardening:low_quality_fertilizer",
     Text.translatable("tooltip.society.low_quality_fertilizer").green()
   );
   tooltip.add(
-    "dew_drop_farmland_growth:high_quality_fertilizer",
+    "sunrisegardening:high_quality_fertilizer",
     Text.translatable("tooltip.society.high_quality_fertilizer").green()
   );
   tooltip.add(
-    "dew_drop_farmland_growth:pristine_quality_fertilizer",
+    "sunrisegardening:pristine_quality_fertilizer",
     Text.translatable("tooltip.society.pristine_quality_fertilizer").green()
   );
   tooltip.add(
-    "dew_drop_farmland_growth:garden_pot",
+    "sunrisegardening:garden_pot",
     Text.translatable("item.society.garden_pot.description").gray()
   );
   tooltip.add(
-    "dew_drop_farmland_growth:garden_pot",
+    "sunrisegardening:garden_pot",
     Text.translatable("item.society.garden_pot.description.tip").green()
   );
   tooltip.add(
@@ -975,11 +975,11 @@ ItemEvents.modifyTooltips((event) => {
   const generateSprinklerTooltip = (tooltip, tier, radius) => {
     const tooltipRadius = 1 + radius * 2;
     tooltip.add(
-      `dew_drop_farmland_growth:${tier}_sprinkler`,
+      `sunrisegardening:${tier}_sprinkler`,
       Text.translatable("tooltip.society.sprinkler").gray()
     );
     tooltip.add(
-      `dew_drop_farmland_growth:${tier}_sprinkler`,
+      `sunrisegardening:${tier}_sprinkler`,
       Text.translatable(
         "tooltip.society.area",
         `${tooltipRadius}x${tooltipRadius}`

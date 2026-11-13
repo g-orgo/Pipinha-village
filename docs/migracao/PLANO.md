@@ -58,7 +58,7 @@ vanilla_ou_inutil = ["Trials Chambers Reuploaded",  # trial chambers são vanill
   "Refined Storage (Fixes) Mixin", "Libnonymous"]
 # Com sucessor/port (2026-11-13): Botania -> Botania Revived (+ Botania Seeds em KubeJS),
 # Re:Deco -> Redecorate, Domestication Innovation -> Redomesticate, Fantasy's Furniture (port).
-# Candidato a conferir: Sturdy Farmland -> Sunrise Gardening (sucessor declarado, build 1.21.1 a confirmar).
+# Sturdy Farmland -> Sunrise Gardening (instalado 2026-11-13, mesmos ids sob o namespace sunrisegardening).
 sem_substituto = ["Dracovita Farm Life", "Little Tractor",
   "Croptania", "Gensokyo Delight", "Quark Delight", "Farmer's Delight Compat",
   "NetherVinery", "Rainbow Oaks Renewed", "Species", "Hamsters Plus Lite", "Legendary Creatures",

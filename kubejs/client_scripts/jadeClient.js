@@ -227,7 +227,7 @@ global.runtime["JadeSocietyCropClientCallback"] = (
   };
   const hasAvailableGardenPot = () => {
     const pot = soil;
-    if (!pot || !pot.getId().includes("dew_drop_farmland_growth:garden_pot")) return false;
+    if (!pot || !pot.getId().includes("sunrisegardening:garden_pot")) return false;
     if (!level.canSeeSky(position.above())) return true;
     return false;
   };
@@ -235,13 +235,13 @@ global.runtime["JadeSocietyCropClientCallback"] = (
     const farmland = soil;
     if (!farmland || fertilizerNotApplies.includes(name)) return {age: age, maxAge: maxAge, boosted: false};
     let delta = 0;
-    if (farmland.hasTag("dew_drop_farmland_growth:weak_fertilized_farmland")) {
+    if (farmland.hasTag("sunrisegardening:weak_fertilized_farmland")) {
       delta = 1;
     }
-    if (farmland.hasTag("dew_drop_farmland_growth:strong_fertilized_farmland")) {
+    if (farmland.hasTag("sunrisegardening:strong_fertilized_farmland")) {
       delta = 2;
     }
-    if (farmland.hasTag("dew_drop_farmland_growth:hyper_fertilized_farmland")) {
+    if (farmland.hasTag("sunrisegardening:hyper_fertilized_farmland")) {
       delta = 3;
     }
     if (delta == 0) return {age: age, maxAge: maxAge, boosted: false};
@@ -282,7 +282,7 @@ global.runtime["JadeSocietyCropClientCallback"] = (
     tooltip.add(Component.translatable("jade.society.crop_growth.stop").red());
     if (name.includes("jungle")) tooltip.add(Component.translatable("jade.society.crop_growth.need_lattice").red());
     else tooltip.add(Component.translatable("jade.society.crop_growth.need_stem").red());
-  } else if ($SereneFertility.isCrop(state) && blockContainer.hasTag("dew_drop_farmland_growth:cancel_random_tick")) {
+  } else if ($SereneFertility.isCrop(state) && blockContainer.hasTag("sunrisegardening:cancel_random_tick")) {
     try {
       if (block instanceof $CropBlock) {
         addGrowthLevelTooltip(block.getAge(state), block.getMaxAge(), isCropFertile(name));
@@ -301,7 +301,7 @@ global.runtime["JadeSocietyCropClientCallback"] = (
   } else {
     // The KubeJS-Jade wrapper (ITooltipWrapper record) holds the real Jade ITooltip.
     $JadeCropInfo.INSTANCE.appendTooltip(tooltip.tooltip(), accessor, pluginConfig);
-    if (!blockContainer.hasTag("dew_drop_farmland_growth:cancel_random_tick") && $SereneFertility.isCrop(state) && !isCropFertile(name)) {
+    if (!blockContainer.hasTag("sunrisegardening:cancel_random_tick") && $SereneFertility.isCrop(state) && !isCropFertile(name)) {
       tooltip.add(Component.translatable("jade.society.crop_growth.stop").red());
     }
   }

@@ -41,6 +41,14 @@
 		}
 		{
 			id: "6541E0430F050B7D"
+			rewards: [
+				{
+					count: 24
+					id: "2B9244C2AEEF15F7"
+					item: { count: 1, id: "sunrisegardening:high_quality_fertilizer" }
+					type: "item"
+				}
+			]
 			shape: "none"
 			tasks: [{
 				count: 2L

@@ -55,7 +55,7 @@ StartupEvents.registry("block", (event) => {
     .create("society:mana_sprinkler")
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
-    .tagBlock("dew_drop_farmland_growth:sprinkler_tier_2")
+    .tagBlock("sunrisegardening:sprinkler_tier_2")
     .defaultCutout()
     .soundType("wood")
     .item((item) => {

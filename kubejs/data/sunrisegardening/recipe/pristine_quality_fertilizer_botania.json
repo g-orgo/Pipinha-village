@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "botania:pixie_dust"
+    },
+    "p": {
+      "tag": "society:pristine_mineral"
+    },
+    "h": {
+      "item": "sunrisegardening:high_quality_fertilizer"
+    }
+  },
+  "pattern": [
+    "hch",
+    "cpc",
+    "hch"
+  ],
+  "result": {
+    "id": "sunrisegardening:pristine_quality_fertilizer",
+    "count": 4
+  },
+  "show_notification": true
+}

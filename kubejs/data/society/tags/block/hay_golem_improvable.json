@@ -1,5 +1,7 @@
 {
   "values": [
-    "minecraft:farmland"
+    "minecraft:farmland",
+    "sunrisegardening:low_quality_fertilized_farmland",
+    "sunrisegardening:high_quality_fertilized_farmland"
   ]
-}
+}  

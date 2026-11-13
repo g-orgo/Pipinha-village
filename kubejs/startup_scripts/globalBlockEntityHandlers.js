@@ -1139,15 +1139,15 @@ const getFertilizer = (crop) => {
   let block = crop
     .getLevel()
     .getBlock(crop.getPos().below());
-  if (block.hasTag("dew_drop_farmland_growth:bountiful_fertilized_farmland"))
+  if (block.hasTag("sunrisegardening:bountiful_fertilized_farmland"))
     return -1;
-  if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland"))
+  if (block.hasTag("sunrisegardening:low_quality_fertilized_farmland"))
     return 1;
-  if (block.hasTag("dew_drop_farmland_growth:high_quality_fertilized_farmland"))
+  if (block.hasTag("sunrisegardening:high_quality_fertilized_farmland"))
     return 2;
   if (
     block.hasTag(
-      "dew_drop_farmland_growth:pristine_quality_fertilized_farmland"
+      "sunrisegardening:pristine_quality_fertilized_farmland"
     )
   )
     return 3;

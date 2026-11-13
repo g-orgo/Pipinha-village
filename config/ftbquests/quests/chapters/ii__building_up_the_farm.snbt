@@ -107,6 +107,7 @@
 		}
 		{
 			dependencies: ["6ADD884F3FFE5D42"]
+			icon: "sunrisegardening:weak_fertilizer"
 			id: "07858B887B222BC2"
 			rewards: [{
 				id: "7400FB36CD4F9C87"
@@ -1196,6 +1197,14 @@
 			dependencies: ["6ADD884F3FFE5D42"]
 			hide_until_deps_complete: true
 			id: "5FBE3685CF008A5A"
+			rewards: [
+				{
+					count: 4
+					id: "40C6F28062432BDD"
+					item: { count: 1, id: "sunrisegardening:low_quality_fertilizer" }
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4CB767B95CEA4E1D"
 				item: { count: 1, id: "minecraft:stone_hoe" }
@@ -1433,6 +1442,65 @@
 			]
 			x: 12.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["6ADD884F3FFE5D42"]
+			description: [
+				"{ftbquests.chapter.ii__building_up_the_farm.quest54B618CF0AB9DC20.description1}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest54B618CF0AB9DC20.description2}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest54B618CF0AB9DC20.description3}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest54B618CF0AB9DC20.description4}"
+			]
+			id: "54B618CF0AB9DC20"
+			rewards: [{
+				id: "05D8DB298A7C0CAD"
+				item: { count: 1, id: "sunrisegardening:iron_sprinkler" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "771C38A34236A7D8"
+				item: { count: 1, id: "sunrisegardening:iron_sprinkler" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6ADD884F3FFE5D42"]
+			description: [
+				"{ftbquests.chapter.ii__building_up_the_farm.quest1D5820FBDD8EB900.description1}"
+				""
+				"{ftbquests.chapter.ii__building_up_the_farm.quest1D5820FBDD8EB900.description2}"
+			]
+			hide_until_deps_complete: true
+			icon: "sunrisegardening:weak_fertilizer"
+			id: "1D5820FBDD8EB900"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "01C970FDDCA88EDA"
+					table_id: 4698371000991631378L
+					type: "choice"
+				}
+				{
+					count: 8
+					id: "532FEB13B10DE71C"
+					item: { count: 1, id: "sunrisegardening:hydrating_fertilizer" }
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "58D90C49D8129101"
+				item: { components: { "ftbfiltersystem:filter": "or(item(sunrisegardening:weak_fertilizer)item(sunrisegardening:strong_fertilizer)item(sunrisegardening:hydrating_fertilizer)item(sunrisegardening:bountiful_fertilizer)item(sunrisegardening:low_quality_fertilizer)item(sunrisegardening:high_quality_fertilizer))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest1D5820FBDD8EB900.task.6402161856581112065.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest1D5820FBDD8EB900.title}"
+			x: 3.0d
+			y: -0.5d
 		}
 	]
 }

@@ -307,7 +307,12 @@ ServerEvents.recipes((e) => {
     C: "numismatics:crown",
     f: "society:fire_quartz",
   });
-  // dropped in 1.21.1: dew_drop_farmland_growth:high_quality_fertilizer no longer exists
+  e.shaped("society:quality_washer", [" S ", "zcz", "fzf"], {
+    c: "minecraft:cauldron",
+    S: "sunrisegardening:high_quality_fertilizer",
+    f: "society:fire_quartz",
+    z: "create:zinc_ingot",
+  });
   e.shaped("farm_and_charm:mincer", ["iCi", "ici", "ifi"], {
     c: "minecraft:iron_block",
     C: "quark:sturdy_stone",
@@ -827,9 +832,23 @@ ServerEvents.recipes((e) => {
     e.shapeless(fish, [`society:smoked_${fish.path}`, "1x minecraft:blue_ice"]);
   });
   // Sprinklers
-  // dropped in 1.21.1: dew_drop_farmland_growth:iron_sprinkler no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:gold_sprinkler no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:gold_sprinkler no longer exists
+  e.shaped("sunrisegardening:iron_sprinkler", [" C ", "IlI", " l "], {
+    I: "minecraft:iron_block",
+    C: "minecraft:copper_block",
+    l: "#society:raw_logs",
+  });
+  e.shaped("sunrisegardening:gold_sprinkler", ["fef", " s ", " G "], {
+    G: "minecraft:gold_block",
+    s: "sunrisegardening:iron_sprinkler",
+    f: "society:fire_quartz",
+    e: "society:earth_crystal",
+  });
+  e.shaped("sunrisegardening:gold_sprinkler", ["fef", "GlG", " l "], {
+    l: "#society:raw_logs",
+    G: "minecraft:gold_block",
+    f: "society:fire_quartz",
+    e: "society:earth_crystal",
+  });
   e.shaped(
     "society:caterpillar_box",
     ["isi", "abm", "iBi"],
@@ -842,10 +861,46 @@ ServerEvents.recipes((e) => {
       m: "society:moth_pollen",
     }
   );
-  // dropped in 1.21.1: dew_drop_farmland_growth:diamond_sprinkler no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:diamond_sprinkler no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:netherite_sprinkler no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:netherite_sprinkler no longer exists
+  e.shaped(
+    "sunrisegardening:diamond_sprinkler",
+    ["nDn", " s ", " b "],
+    {
+      s: "sunrisegardening:gold_sprinkler",
+      D: "minecraft:diamond_block",
+      b: "society:battery",
+      n: "aquaculture:neptunium_nugget",
+    }
+  );
+  e.shaped(
+    "sunrisegardening:diamond_sprinkler",
+    ["nDn", "blb", " l "],
+    {
+      l: "#society:raw_logs",
+      D: "minecraft:diamond_block",
+      b: "society:battery",
+      n: "aquaculture:neptunium_nugget",
+    }
+  );
+  e.shaped(
+    "sunrisegardening:netherite_sprinkler",
+    ["nNn", " s ", " j "],
+    {
+      s: "sunrisegardening:diamond_sprinkler",
+      j: "society:jade",
+      N: "minecraft:netherite_ingot",
+      n: "aquaculture:neptunium_ingot",
+    }
+  );
+  e.shaped(
+    "sunrisegardening:netherite_sprinkler",
+    ["nNn", "jlj", " l "],
+    {
+      l: "#society:raw_logs",
+      j: "society:jade",
+      N: "minecraft:netherite_ingot",
+      n: "aquaculture:neptunium_ingot",
+    }
+  );
 
   // Botania
   e.shaped("society:botanical_tribute", ["CCC", "CMC", "CCC"], {
@@ -899,7 +954,7 @@ ServerEvents.recipes((e) => {
   });
   e.shaped("society:mana_sprinkler", ["lil", "iSi", "lPl"], {
     i: "botania:manasteel_ingot",
-    S: "farm_and_charm:water_sprinkler",
+    S: "sunrisegardening:gold_sprinkler",
     l: "botania:livingwood_log",
     P: "botania:pump",
   });
@@ -1019,16 +1074,16 @@ ServerEvents.recipes((e) => {
   e.shapeless("sophisticatedstorage:basic_to_iron_tier_upgrade", ["sophisticatedstorage:basic_to_copper_tier_upgrade", "sophisticatedstorage:copper_to_iron_tier_upgrade"])
   e.shapeless("sophisticatedstorage:basic_to_copper_tier_upgrade", ["sophisticatedstorage:basic_to_copper_tier_upgrade"])
 
-  // dropped in 1.21.1: dew_drop_farmland_growth:hyper_fertilizer no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:weak_fertilizer no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:strong_fertilizer no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:hyper_fertilizer no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:bountiful_fertilizer no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:hydrating_fertilizer no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:deluxe_hydrating_fertilizer no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:low_quality_fertilizer no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:high_quality_fertilizer no longer exists
-  // dropped in 1.21.1: dew_drop_farmland_growth:pristine_quality_fertilizer no longer exists
+  e.shapeless("sunrisegardening:hyper_fertilized_sand", ["minecraft:sand", "sunrisegardening:hyper_fertilizer"]);
+  e.shapeless("sunrisegardening:weak_fertilized_farmland", ["minecraft:dirt", "sunrisegardening:weak_fertilizer"]);
+  e.shapeless("sunrisegardening:strong_fertilized_farmland", ["minecraft:dirt", "sunrisegardening:strong_fertilizer"]);
+  e.shapeless("sunrisegardening:hyper_fertilized_farmland", ["minecraft:dirt", "sunrisegardening:hyper_fertilizer"]);
+  e.shapeless("sunrisegardening:bountiful_fertilized_farmland", ["minecraft:dirt", "sunrisegardening:bountiful_fertilizer"]);
+  e.shapeless("sunrisegardening:hydrating_farmland", ["minecraft:dirt", "sunrisegardening:hydrating_fertilizer"]);
+  e.shapeless("sunrisegardening:deluxe_hydrating_farmland", ["minecraft:dirt", "sunrisegardening:deluxe_hydrating_fertilizer"]);
+  e.shapeless("sunrisegardening:low_quality_fertilized_farmland", ["minecraft:dirt", "sunrisegardening:low_quality_fertilizer"]);
+  e.shapeless("sunrisegardening:high_quality_fertilized_farmland", ["minecraft:dirt", "sunrisegardening:high_quality_fertilizer"]);
+  e.shapeless("sunrisegardening:pristine_quality_fertilized_farmland", ["minecraft:dirt", "sunrisegardening:pristine_quality_fertilizer"]);
 
   e.custom({
     type: "create:filling",

@@ -20,6 +20,15 @@
 	quests: [
 		{
 			id: "7D155FD0EFEEB5AC"
+			rewards: [{
+				count: 20
+				id: "2C7023C8330EF475"
+				item: {
+					count: 1
+					id: "sunrisegardening:weak_fertilizer"
+				}
+				type: "item"
+			}]
 			shape: "none"
 			tasks: [
 				{
@@ -49,6 +58,14 @@
 		{
 			id: "3EF57F71C1C786FE"
 			require_sequential_tasks: false
+			rewards: [{
+				id: "6517D1EFE1E30357"
+				item: {
+					count: 1
+					id: "sunrisegardening:gold_sprinkler"
+				}
+				type: "item"
+			}]
 			shape: "none"
 			tasks: [
 				{

@@ -590,5 +590,52 @@
 			x: 11.0d
 			y: 4.5d
 		}
+		{
+			dependencies: ["4A3D0ECF43D497AD"]
+			description: [
+				"{ftbquests.chapter.profissoes.questBD8EFE92BE03E3AF.description1}"
+				""
+				"{ftbquests.chapter.profissoes.questBD8EFE92BE03E3AF.description2}"
+			]
+			id: "1E770B7E4C47E045"
+			rewards: [{
+				id: "3B0A23E492CD59E6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.questBD8EFE92BE03E3AF.subtitle}"
+			tasks: [{
+				id: "2CAD9F5CCE1B8462"
+				item: { count: 1, id: "sunrisegardening:iron_sprinkler" }
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.questBD8EFE92BE03E3AF.title}"
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["388B7AC34F183492"]
+			description: [
+				"{ftbquests.chapter.profissoes.questF56C839E8DA64096.description1}"
+				""
+				"{ftbquests.chapter.profissoes.questF56C839E8DA64096.description2}"
+			]
+			id: "671D48C83400A1F2"
+			rewards: [{
+				count: 2
+				id: "1A06FACA758A5A90"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.profissoes.questF56C839E8DA64096.subtitle}"
+			tasks: [{
+				id: "691DBC026D1E6AB4"
+				item: { count: 1, id: "sunrisegardening:gold_sprinkler" }
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.profissoes.questF56C839E8DA64096.title}"
+			x: 9.5d
+			y: -4.5d
+		}
 	]
 }

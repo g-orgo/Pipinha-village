@@ -14,7 +14,7 @@ BlockEvents.rightClicked(
       item.id === "aquaculture:neptunium_hoe" ||
       item.id === "botania:elementium_hoe"
     ) {
-      block.set("dew_drop_farmland_growth:hydrating_farmland");
+      block.set("sunrisegardening:hydrating_farmland");
       e.cancel();
     }
   }

@@ -249,3 +249,15 @@ Generator profile values (path, value, exists as json in a mod jar):
 - Restam sem mapeamento: block verdantvibes:burnweed x54, verdantvibes:periwinkle x29, verdantvibes:bracket_mushroom x20, splendid_slimes:slime_spawner x7, species:birt_dwelling x6. Item meadow:sheep_cheese_block x2, meadow:inky_wool x1. Entidades species:limpet x4, species:deepfish x3, balloonbox:balloonbox x1, species:birt x1.
 - Md5 da origem (451 arquivos): sem divergencia.
 - Tamanho: origem 123833270 bytes, copia 123177907 bytes.
+
+## Resultado da execucao (round 5, Sunrise Gardening)
+
+- mods/sunrisegardening-1.2.jar (sucessor do Sturdy Farmland) passou a ser o alvo de todos os `dew_drop_farmland_growth:*` de bloco, item e block entity.
+- Props comparadas com o jar: fazenda usa `moisture` (igual ao original); sprinklers usam `sticklogged` (igual). Nenhum rename necessario.
+- `tools/saveport/gen_idmap.py`: linhas EXTRA de `dew_drop` apontam para `sunrisegardening:<path>` com kind `any` (blocos e sprinklers, mantendo BE) e `item` (8 fertilizers). Linhas de loot `dew_drop` (bone_meal, water_sprinkler) deixaram de ser geradas.
+- `tools/saveport/id_map.tsv` regenerado: 376 linhas geradas + 48 extra. Verificado: 0 linhas `dew_drop` apontando para `minecraft:air` ou `minecraft:farmland`; 0 chaves duplicadas.
+- Copia `saves/Solito solamente` apagada e reconvertida do source read-only. Run: decode_errors=0, lost_stacks=0, applied block 697, be 46, item 22, be_dropped 180.
+- md5 do source antes e depois: iguais (lista de md5_before.txt).
+- Rescan da copia: decode_errors=0, lost_stacks=0, 0 ocorrencias de `dew_drop_farmland_growth` no relatorio.
+- BE dropped ficou em 180, nao abaixo de 180. O corte de BE dew nao mudou o total; as BEs que sobram sao de outros namespaces. Nao investigado alem disso.
+- Unmapped top (sem mudanca de round 5): verdantvibes:burnweed, verdantvibes:periwinkle, verdantvibes:bracket_mushroom, splendid_slimes:slime_spawner, species:birt_dwelling.

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "t": {
+      "item": "society:jade"
+    },
+    "s": {
+      "item": "sunrisegardening:strong_fertilizer"
+    },
+    "b": {
+      "item": "botania:terrasteel_nugget"
+    }
+  },
+  "pattern": [
+    "s s",
+    "btb",
+    "s s"
+  ],
+  "result": {
+    "id": "sunrisegardening:hyper_fertilizer",
+    "count": 4
+  },
+  "show_notification": true
+}

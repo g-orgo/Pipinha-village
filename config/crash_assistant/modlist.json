@@ -722,9 +722,9 @@
     "curseForgeHash": 595699106,
     "modrinthHash": "58959b8a1114d4730c3d6ba3996f26bd97fd61c8"
   },
-  "dew_drop_farmland_growth-9.0.jar": {
-    "jarName": "dew_drop_farmland_growth-9.0.jar",
-    "modId": "dew_drop_farmland_growth",
+  "sunrisegardening-9.0.jar": {
+    "jarName": "sunrisegardening-9.0.jar",
+    "modId": "sunrisegardening",
     "name": "Dew Drop Farmland - Growth Edition",
     "version": "9.0",
     "curseForgeHash": 15097416,

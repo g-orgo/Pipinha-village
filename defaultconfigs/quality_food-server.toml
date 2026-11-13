@@ -9,7 +9,7 @@ crop_target_chance = 0.0
 seed_chance_multiplier = 0.0
 #Define multipliers to be applied per farmland on crops - Syntax: <index>;<crop>;<farmland>;<multiplier> (the index defines the sequence in which they will be checked - the first matching one is applied)
 #Example: ["2;minecraft:wheat;#farmersdelight:terrain;0.75", "3;#minecraft:crops;farmersdelight:rich_soil;1.25"]
-farmland_config = ["1;#minecraft:crops;#dew_drop_farmland_growth:bountiful_fertilized_farmland;0", "1;#minecraft:crops;minecraft:farmland;0", "2;#minecraft:crops;#dew_drop_farmland_growth:low_quality_fertilized_farmland;0", "2;#minecraft:crops;#dew_drop_farmland_growth:high_quality_fertilized_farmland;0", "2;#minecraft:crops;#dew_drop_farmland_growth:pristine_quality_fertilized_farmland;0"]
+farmland_config = ["1;#minecraft:crops;#sunrisegardening:bountiful_fertilized_farmland;0", "1;#minecraft:crops;minecraft:farmland;0", "2;#minecraft:crops;#sunrisegardening:low_quality_fertilized_farmland;0", "2;#minecraft:crops;#sunrisegardening:high_quality_fertilized_farmland;0", "2;#minecraft:crops;#sunrisegardening:pristine_quality_fertilized_farmland;0"]
 
 [Crafting]
 	#Define recipes (namespace:path) which should not result in quality being rolled (e.g. when the items can be converted back and forth)

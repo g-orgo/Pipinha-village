@@ -13,8 +13,8 @@ const hoeTiers = new Map([
 ]);
 
 const hoeFarmland = new Map([
-  ["aquaculture:neptunium_hoe", "dew_drop_farmland_growth:hydrating_farmland"],
-  ["botania:elementium_hoe", "dew_drop_farmland_growth:hydrating_farmland"],
+  ["aquaculture:neptunium_hoe", "sunrisegardening:hydrating_farmland"],
+  ["botania:elementium_hoe", "sunrisegardening:hydrating_farmland"],
 ]);
 
 const tryTill = (level, player, pos, farmland) => {

@@ -71,7 +71,7 @@ global.runGoldenClock = (entity) => {
   const { x, y, z } = block;
   const radius = 2;
   let scanBlock;
-  let dayTime = level.dayTime();
+  let dayTime = level.getDayTime();
   let morningModulo = dayTime % 24000;
   const goldenClockProgTime = 1000;
   if (

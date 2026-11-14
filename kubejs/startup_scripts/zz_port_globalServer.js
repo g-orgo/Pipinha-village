@@ -1,5 +1,12 @@
 console.info("[SOCIETY] globalServer.js loaded");
 
+// Replacement for KubeJS 6 Painter (player.paint). Elements are merged on the
+// client by id (kubejs/client_scripts/paintHud.js); "remove: true" deletes one.
+global.paintUi = (player, elements) => {
+  // sendData takes a CompoundTag; carry the elements as one JSON string.
+  player.sendData("pipinha.paint", { json: JSON.stringify(elements) });
+};
+
 global.mainUiElementIds = [
   "animalName",
   "animalNameIcons",
@@ -31,20 +38,20 @@ const clearUiPaint = (player, ids) => {
     removedText[id] = { type: "text" };
     removedShadow[`${id}Shadow`] = { type: "text" };
   });
-  player.paint(removedText);
-  player.paint(removedShadow);
+  global.paintUi(player, removedText);
+  global.paintUi(player, removedShadow);
   ids.forEach((id) => {
     removedText[id] = { remove: true };
     removedShadow[`${id}Shadow`] = { remove: true };
   });
-  player.paint(removedText);
-  player.paint(removedShadow);
+  global.paintUi(player, removedText);
+  global.paintUi(player, removedShadow);
 };
 
 global.renderUiText = (player, server, messages, clearedMessages) => {
   server.scheduleInTicks(0, () => {
     clearUiPaint(player, clearedMessages);
-    player.paint(messages);
+    global.paintUi(player, messages);
     player.persistentData.ageLastShownMessage = player.age;
     server.scheduleInTicks(100, () => {
       if (player.age - player.persistentData.get("ageLastShownMessage") >= 100)
@@ -59,16 +66,16 @@ global.clearUiItemPaint = (player, ids) => {
   ids.forEach((id) => {
     removedItem[id] = { type: "item" };
   });
-  player.paint(removedItem);
+  global.paintUi(player, removedItem);
   ids.forEach((id) => {
     removedItem[id] = { remove: true };
   });
-  player.paint(removedItem);
+  global.paintUi(player, removedItem);
 };
 
 global.renderUiItemText = (player, items, ids) => {
   global.clearUiItemPaint(player, ids);
-  player.paint(items);
+  global.paintUi(player, items);
 };
 global.calculateCoinValue = (coin) => {
   let value = 0;

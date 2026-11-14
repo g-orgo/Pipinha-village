@@ -387,3 +387,31 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   after_mods (o modelo gerado sobrescrevia side/front/top/particle com texturas inexistentes; é o que o ícone do item usa).
   fix_parent_model.js agora pula cadeias cardinal. Rhino 390/390 OK.
   Pedido do dono depois disto: regenerar os dois saves (Mapa solo e Solito solamente).
+- 23:1x SAVES regenerados (pedido do dono), jogo fechado, modo --so-claims-estrito:
+  Mapa solo: 0 claims, 25 chunks preservados (origem), 2974 apagados. Solito solamente: 17 claims (17 forceload),
+  42 preservados, 2323 apagados, 3 animais do jogador mantidos, cama -10227 78 8339.
+  Backups: saves/<save> backup-antes-regen-1.21.1-2026-11-13.zip; LOD do DH em saves/<save> dh_backup 2026-11-13/.
+  Commit 679923f1a (modelos cardinais) só local: push negado pelo classificador do modo automático; dono precisa liberar.
+- 23:2x Solito: 22 animais do jogador conferidos (1.20.1 original = antes do regen = atual). 2 meadow:wooly_sheep (Meadow 1.21
+  não tem) renomeadas para minecraft:sheep com tools/saveport/remap_entities.py (afinidade em KubeJSPersistentData mantida,
+  KubeJS 7 lê a mesma chave). Backup: saves/Solito solamente backup-antes-ovelhas-2026-11-13.zip.
+- 2026-11-13 (sessão itens/carinho/HUD, pedido do dono após jogar o Solito):
+  CAUSA itens: o DataFixer vanilla só converte containers vanilla; BEs de mods leram {Count,tag} antigos como count 1 sem
+  componentes (281 pilhas: crate 129, quark variant_chest 114, fridge 26...; 65 perderam dados), alguns vieram vazios
+  (aquecedor LSO x2, cocho x2, shipping bin, bonsai, bandeja), BEs com id trocado sumiram (doapi:cabinet/storage),
+  Curios do jogador vazio, qualidade dos itens convertidos ficou em custom_data (o Quality Food 2 lê quality_food:quality).
+  EM CURSO: tools/saveport/restore_items.py (dry-run por operador; --apply só pelo brain, com zip de backup).
+  FEITO: global.checkEntityTag (KubeJS 7 não tem entity.entityType: todo o sistema de animais estava mudo);
+  zz_port_be_ticks.js com fachada do evento (e.entity não existe no KubeJS 7: shipping bin, cocho, tapper, máquinas
+  paradas); ResourceLocation.parse em sunlitTownsLife/minimapIcons; leaderboard; Painter removido no KubeJS 7 trocado
+  por global.paintUi + client_scripts/paintHud.js (canal pipinha.paint, {json}). Nada disso testado no jogo.
+  PENDENTE: cinematics (Cinematic Interactions 0.18.30 instalado, config igual; perguntar ao dono qual cena faltou),
+  botão 5 (só Shoulder Surfing toggle_first_person; Sable tem mixins de compat quebrados com SS 5.3.1).
+- 2026-11-14 00:1x FEITO: restore_items.py --apply no Solito (backup: saves/Solito solamente backup-antes-restaurar-itens-2026-11-13.zip):
+  291 quantidades, 59 componentes, 9 BEs reabastecidos (aquecedores, cochos, shipping bin, bonsai, bandeja), 2 BEs criados
+  (armário e vitrine da padaria), 6 slots do Curios, 21 qualidades custom_data -> quality_food:quality; cartão do banco com
+  numismatics:card_account_id. Segunda passada = 0 mudanças. Não restaurado: quadro do Bountiful (recompensas),
+  potes do Supplementaries (1 item cada), prancheta do Create (texto: "No verão, plante cotton, tomate, e wheat").
+  Cena do Tom's: pipinha_cinematic_toms registrava toms_storage:ts.*_terminal (Tom's 2.x tirou o ts.); jar refeito.
+  Rhino 391/391 OK; find_dup_toplevel sem colisões. PENDENTE do dono no jogo: carinho, HUD (paintHud), ticks das máquinas,
+  cena do terminal, botão 5 (suspeito: Aeronautics Camera Sync suavizando a primeira entrada em terceira pessoa).

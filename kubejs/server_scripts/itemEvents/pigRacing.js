@@ -53,18 +53,18 @@ const clearPigPaint = (player) => {
       removedElements[id] = { type: "text" };
     });
   });
-  player.paint(removedElements);
+  global.paintUi(player, removedElements);
   pigColors.forEach((pig) => {
     pigElements.forEach((element) => {
       id = `pig${pig}${element}`;
       removedElements[id] = { remove: true };
     });
   });
-  player.paint(removedElements);
+  global.paintUi(player, removedElements);
 };
 
 const initialPaint = (player, bet, pig) => {
-  player.paint({
+  global.paintUi(player, {
     screen: {
       type: "rectangle",
       y: -50,
@@ -120,7 +120,7 @@ const initialPaint = (player, bet, pig) => {
     },
     betCoin: {
       type: "item",
-      item: bet.id,
+      item: String(bet.id),
       x: -100,
       y: -197,
       h: 32,
@@ -167,21 +167,21 @@ const getCountDownPaint = (count) => {
 
 const countDown = (player, server) => {
   const delayFactor = 7;
-  player.paint({
+  global.paintUi(player, {
     number: getCountDownPaint("3"),
   });
   server.scheduleInTicks(delayFactor, () => {
-    player.paint({
+    global.paintUi(player, {
       number: getCountDownPaint("2"),
     });
   });
   server.scheduleInTicks(delayFactor * 2, () => {
-    player.paint({
+    global.paintUi(player, {
       number: getCountDownPaint("1"),
     });
   });
   server.scheduleInTicks(delayFactor * 3, () => {
-    player.paint({
+    global.paintUi(player, {
       number: {
         type: "rectangle",
         y: -70,
@@ -195,7 +195,7 @@ const countDown = (player, server) => {
     });
   });
   server.scheduleInTicks(delayFactor * 4, () => {
-    player.paint({
+    global.paintUi(player, {
       number: { remove: true },
     });
   });
@@ -245,7 +245,7 @@ const paintPig = (player, server, xOffset, speeds, halfwayPoint, ranking) => {
       };
     }
     pigElement[id] = { remove: true };
-    player.paint(pigElement);
+    global.paintUi(player, pigElement);
     pigElement[id] = {
       type: "rectangle",
       x: -110 + calculatedOffset,
@@ -271,7 +271,7 @@ const paintPig = (player, server, xOffset, speeds, halfwayPoint, ranking) => {
         texture: `society:textures/gui/pig_racing/trophy_${ranking.indexOf(color) + 1}.png`,
       };
     }
-    player.paint(pigElement);
+    global.paintUi(player, pigElement);
   });
 };
 
@@ -289,7 +289,7 @@ const handleSPResults = (player, server, betPig, betItem, ranking) => {
       `playsound stardew_fishing:fish_escape player @a ${player.x} ${player.y} ${player.z}`
     );
   }
-  player.paint({
+  global.paintUi(player, {
     result: {
       type: "rectangle",
       y: -70,
@@ -364,7 +364,7 @@ const handleMPResults = (player, server, betPig, betValue, poolValue, ranking) =
       `playsound stardew_fishing:fish_escape player @a ${player.x} ${player.y} ${player.z}`
     );
   }
-  player.paint({
+  global.paintUi(player, {
     result: {
       type: "rectangle",
       y: -70,
@@ -407,7 +407,7 @@ const runPigRace = (player, server, bet, betPig, ranking, pigSpeeds) => {
     server.scheduleInTicks(300 + 20, () => {
       server.runCommandSilent(`stopsound ${player.username}`);
       clearPigPaint(player);
-      player.paint({
+      global.paintUi(player, {
         screen: { remove: true },
         betCoin: { remove: true },
         betCount: { remove: true },
@@ -432,7 +432,7 @@ const validTicket = (e, bet) => {
     server.runCommandSilent(
       global.getEmbersTextAPICommand(
         player.username,
-        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`,
+        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFF",offsetY:-60}`,
         80, 
         Text.translatable("society.pig_race.need_coin").toJson()
       )
@@ -443,7 +443,7 @@ const validTicket = (e, bet) => {
     server.runCommandSilent(
       global.getEmbersTextAPICommand(
         player.username, 
-        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`, 
+        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFF",offsetY:-60}`, 
         80, 
         Text.translatable("society.pig_race.need_to_select_pig").toJson()
       )
@@ -488,7 +488,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
     server.runCommandSilent(
       global.getEmbersTextAPICommand(
         player.username, 
-        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFFF",offsetY:-60}`, 
+        `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#FFFFFF",offsetY:-60}`, 
         80, 
         Text.translatable("society.pig_race.multiplay.in_progress").toJson()
       )

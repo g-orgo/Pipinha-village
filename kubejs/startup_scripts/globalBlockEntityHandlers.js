@@ -609,7 +609,7 @@ global.handleBERandomTick = (tickEvent, rndFunction, stageCount) => {
 
 global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
   const { level, block } = entity;
-  let dayTime = level.dayTime();
+  let dayTime = level.getDayTime();
   let morningModulo = dayTime % 24000;
 
   if (

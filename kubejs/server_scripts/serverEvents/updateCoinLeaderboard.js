@@ -4,7 +4,8 @@ const getTeamName = (server, uuid) => {
   let cardsList = server.persistentData.cardsList ?? {};
   let playerList = server.persistentData.playerList ?? {};
   if (playerList[uuid]) return playerList[uuid];
-  return playerList[cardsList[uuid][0]] + "'s Team";
+  let ownerUuid = cardsList[uuid] ? cardsList[uuid][0] : null;
+  return (ownerUuid ? playerList[ownerUuid] : null) ?? uuid;
 }
 
 const getLeaderboardRanking = (server) => {

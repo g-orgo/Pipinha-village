@@ -1,8 +1,20 @@
-// Why are entity type tags so weird
-global.checkEntityTag = (entity, checkedTag) => {
-  if (!entity || !entity.entityType || !entity.entityType.tags) return false;
-  return entity.entityType.tags.anyMatch((tag) => tag.location() == checkedTag);
-};
+// KubeJS 7 removed entity.entityType (it was always undefined, so every husbandry
+// check returned false). entity.type is the id string; look the EntityType up in
+// the registry and use RegistryObjectKJS.hasTag(ResourceLocation).
+global.checkEntityTag = (() => {
+  const registries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
+  const location = Java.loadClass("net.minecraft.resources.ResourceLocation");
+  return (entity, checkedTag) => {
+    if (!entity || !entity.type) return false;
+    try {
+      let type = registries.ENTITY_TYPE.get(location.parse(String(entity.type)));
+      return !!type && type.hasTag(location.parse(String(checkedTag)));
+    } catch (err) {
+      console.error(`[SOCIETY] checkEntityTag ${entity.type} ${checkedTag}: ${err}`);
+      return false;
+    }
+  };
+})();
 
 global.isFresh = (day, actionAge) => {
   return day < actionAge;

@@ -40,7 +40,7 @@ const sunlitMapSkinFaces = {};
 const sunlitMapSkinFace = (texture) => {
   const key = String(texture);
   if (!sunlitMapSkinFaces[key]) {
-    let location = new $ResourceLocation(key);
+    let location = $ResourceLocation.parse(key);
     let face = new $ImageIcon(location).withUV(8 / 64, 8 / 64, 16 / 64, 16 / 64);
     let hat = new $ImageIcon(location).withUV(40 / 64, 8 / 64, 48 / 64, 16 / 64);
     sunlitMapSkinFaces[key] = face.combineWith(hat);

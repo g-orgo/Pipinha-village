@@ -385,7 +385,7 @@ const townRefillGarden = (level, cx, cz, lawn) => {
   if (!model) {
     // chunk sem planta nenhuma: cultura do ano todo (mix.py), uma por horta
     let ids = ["veggiesdelight:turnip_crop", "veggiesdelight:broccoli_crop", "veggiesdelight:cauliflower_crop", "veggiesdelight:garlic_crop"];
-    let blkRl = new $TownRL(ids[Math.floor(townRandom(cx, cz)() * ids.length)]);
+    let blkRl = $TownRL.parse(ids[Math.floor(townRandom(cx, cz)() * ids.length)]);
     let blk = $TownBlockReg.containsKey(blkRl) ? $TownBlockReg.get(blkRl) : null;
     if (!blk || blk.defaultBlockState().isAir()) return 0;
     model = blk.defaultBlockState();
@@ -529,7 +529,7 @@ const townFaunaAdd = (level, cx, cz, key) => {
   level.persistentData.putString(key || "sunlitFauna", list.join(";"));
 };
 const townEntity = (id) => {
-  let rl = new $TownRL(id);
+  let rl = $TownRL.parse(id);
   return $TownEntities.containsKey(rl) ? $TownEntities.get(rl) : null;
 };
 const townSpawnId = (level, ids, spot, rnd) => {
@@ -576,7 +576,7 @@ const townArmorStands = (level, cx, cz, yMin, yMax, name, rnd) => {
         let set = sets[Math.floor(rnd() * sets.length)];
         for (let i = 0; i < 5; i++) {
           if (!set[i]) continue;
-          let rl = new $TownRL(set[i]);
+          let rl = $TownRL.parse(set[i]);
           if (!$TownItems.containsKey(rl)) continue;
           stand.setItemSlot($TownSlot[TOWN_ARMOR_SLOTS[i]], Item.of(set[i]));
         }

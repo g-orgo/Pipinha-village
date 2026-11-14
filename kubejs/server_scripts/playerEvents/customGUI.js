@@ -9,11 +9,11 @@ PlayerEvents.tick((e) => {
     if (
       ["gag:energized_hearthstone", "gag:hearthstone"].includes(player.getHeldItem("main_hand").id)
     ) {
-      player.paint({
+      global.paintUi(player, {
         clockIcon: { remove: true },
       });
     } else {
-      player.paint({
+      global.paintUi(player, {
         clockIcon: {
           type: "item",
           x: 8,
@@ -46,7 +46,7 @@ const fishRadarPainter = (e) => {
     }
     if (player.stages.has("mystical_ocean")) fish.push("society:neptuna");
     let fishRadarStart = 48;
-    player.paint({
+    global.paintUi(player, {
       fishRadarDisplay: {
         type: "text",
         x: fishRadarPadding,
@@ -66,7 +66,7 @@ const fishRadarPainter = (e) => {
         x: level.dimension == "minecraft:the_nether" ? -40 : 8,
         y: fishRadarStart + 8 + fishRadarPadding,
         text: `${localConditions.toJson()}`,
-        color: "#FFFFFFF",
+        color: "#FFFFFF",
         alignX: "left",
         alignY: "top",
       },

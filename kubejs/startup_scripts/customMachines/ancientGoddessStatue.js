@@ -10,7 +10,7 @@ StartupEvents.registry("block", (event) => {
     .hardness(4.5)
     .resistance(9.0)
     .requiresTool(false)
-    .modelGenerator((m) => m.parent("society:block/kubejs/ancient_goddess_statue"))
+    .parentModel(global.cardinalParent("society:ancient_goddess_statue", "society:block/kubejs/ancient_goddess_statue"))
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {

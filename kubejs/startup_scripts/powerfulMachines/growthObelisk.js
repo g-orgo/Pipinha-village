@@ -39,7 +39,7 @@ StartupEvents.registry("block", (e) => {
       item.modelGenerator((m) => m.parent("society:block/kubejs/growth_obelisk/display"));
     })
     .soundType("stone")
-    .modelGenerator((m) => m.parent("society:block/kubejs/growth_obelisk/lower"))
+    .parentModel(global.cardinalParent("society:growth_obelisk", "society:block/kubejs/growth_obelisk/lower"))
     .blockEntity((blockInfo) => {
       blockInfo.inventory("inventory", Direction.ALL_SET, 9, 2);
       blockInfo.initialData({ owner: "-1" });
@@ -58,5 +58,5 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:needs_stone_tool")
     .defaultCutout()
     .soundType("stone")
-    .modelGenerator((m) => m.parent("society:block/kubejs/growth_obelisk/upper"));
+    .parentModel(global.cardinalParent("society:growth_obelisk_upper", "society:block/kubejs/growth_obelisk/upper"));
 });

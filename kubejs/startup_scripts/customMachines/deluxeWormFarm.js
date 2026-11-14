@@ -16,7 +16,7 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
-    .modelGenerator((m) => m.parent("society:block/kubejs/deluxe_worm_farm"))
+    .parentModel(global.cardinalParent("society:deluxe_worm_farm", "society:block/kubejs/deluxe_worm_farm"))
     .item((item) => {
       item.tooltip(Text.translatable("block.society.deluxe_worm_farm.description").gray());
       item.modelGenerator((m) => m.parent("society:block/kubejs/deluxe_worm_farm"));

@@ -22,7 +22,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
-    .modelGenerator((m) => m.parent("society:block/kubejs/coin_leaderboard"))
+    .parentModel(global.cardinalParent("society:coin_leaderboard", "society:block/kubejs/coin_leaderboard"))
     .item((item) => {
       item.tooltip(
         Text.translatable("block.society.coin_leaderboard.description").gray()

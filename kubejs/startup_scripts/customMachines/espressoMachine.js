@@ -32,7 +32,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("upgraded"))
     .box(4, 0, 2, 12, 14, 14)
     .defaultCutout()
-    .modelGenerator((m) => m.parent("society:block/kubejs/espresso_machine"))
+    .parentModel(global.cardinalParent("society:espresso_machine", "society:block/kubejs/espresso_machine"))
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {

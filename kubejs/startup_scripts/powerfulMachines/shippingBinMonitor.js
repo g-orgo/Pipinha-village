@@ -50,7 +50,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.shipping_bin_monitor.description").gray());
       item.modelGenerator((m) => m.parent("society:block/kubejs/shipping_bin_monitor"));
     })
-    .modelGenerator((m) => m.parent("society:block/kubejs/shipping_bin_monitor"))
+    .parentModel(global.cardinalParent("society:shipping_bin_monitor", "society:block/kubejs/shipping_bin_monitor"))
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ value: 0 });
       blockInfo.serverTicking();

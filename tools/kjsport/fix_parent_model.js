@@ -58,6 +58,16 @@ for (const file of listJs(root)) {
           n = n.object;
         } else break;
       }
+      // Cardinal blocks need parentModel (their blockstate points at it): see fix_cardinal_model.js.
+      let isCardinal = false;
+      for (let n = top; n && (n.type === "CallExpression" || n.type === "MemberExpression"); n = n.type === "CallExpression" ? n.callee : n.object) {
+        if (n.type === "CallExpression" && n.callee.type === "MemberExpression" && n.callee.property.name === "create") {
+          const t = n.arguments[1];
+          isCardinal = !!t && t.type === "Literal" && t.value === "cardinal";
+          break;
+        }
+      }
+      if (isCardinal) return;
       const scopeText = scope === top ? "" : src.slice(scope.start, scope.end);
       const ownChainSetsTexture = [...TEXTURE_METHODS].some((m) => chainMethods.has(m));
       const itemCallbackSetsTexture =

@@ -47,7 +47,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
       item.modelGenerator((m) => m.parent("society:block/kubejs/quality_washer"));
     })
-    .modelGenerator((m) => m.parent("society:block/kubejs/quality_washer"))
+    .parentModel(global.cardinalParent("society:quality_washer", "society:block/kubejs/quality_washer"))
     .blockEntity((blockInfo) => {
       blockInfo.inventory("inventory", Direction.ALL_SET, 9, 1);
       blockInfo.serverTicking();

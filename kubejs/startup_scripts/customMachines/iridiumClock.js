@@ -67,7 +67,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.iridium_clock.area").green());
       item.modelGenerator((m) => m.parent("society:block/kubejs/iridium_clock"));
     })
-    .modelGenerator((m) => m.parent("society:block/kubejs/iridium_clock"))
+    .parentModel(global.cardinalParent("society:iridium_clock", "society:block/kubejs/iridium_clock"))
     .blockEntity((blockInfo) => {
       blockInfo.inventory("inventory", Direction.ALL_SET, 9, 3);
       blockInfo.initialData({ triggerTimes: 0 });

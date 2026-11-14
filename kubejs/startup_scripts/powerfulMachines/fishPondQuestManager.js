@@ -198,7 +198,7 @@ StartupEvents.registry("block", (event) => {
       item.modelGenerator((m) => m.parent("society:block/kubejs/fish_pond_manager"));
     })
     .soundType("copper")
-    .modelGenerator((m) => m.parent("society:block/kubejs/fish_pond_manager"))
+    .parentModel(global.cardinalParent("society:fish_pond_manager", "society:block/kubejs/fish_pond_manager"))
     .blockEntity((blockInfo) => {
       blockInfo.inventory("inventory", Direction.ALL_SET, 9, 2);
       blockInfo.initialData({ owner: "-1" });

@@ -15,6 +15,16 @@ global.agedName = (path) => {
   return p;
 };
 
+// Cardinal blocks keep .parentModel(X) because their blockstate points at it, but KubeJS 7 also writes
+// block/<id> (the block item's model) with X as parent plus side/front/top/particle overrides that
+// usually do not exist. Registrations wrap X with this helper; client_scripts/cardinalModels.js then
+// rewrites block/<id> as a plain {"parent": X}, like the 1.20.1 .model(X).
+global.cardinalParents = {};
+global.cardinalParent = (id, parent) => {
+  global.cardinalParents[String(id)] = String(parent);
+  return parent;
+};
+
 // Item ids that are not registered in this 1.21.1 instance are dropped before they reach
 // ItemEvents, so one missing id cannot abort a whole modification or tooltip handler.
 // Tags ("#"), the "*" wildcard and non-string entries (ItemStacks, objects) are kept as they are.

@@ -135,7 +135,7 @@ StartupEvents.registry("block", (event) => {
       .soundType("wool")
       .hardness(1.0)
       .requiresTool(false)
-      .modelGenerator((m) => m.parent(modelPath))
+      .parentModel(global.cardinalParent(`${splitStr[0]}:adv_${splitStr[1]}`, modelPath))
       .item((item) => {
         item.modelGenerator((m) => m.parent(modelPath));
       })

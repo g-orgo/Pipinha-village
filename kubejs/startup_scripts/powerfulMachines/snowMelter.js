@@ -38,7 +38,7 @@ StartupEvents.registry("block", (e) => {
       item.tooltip(Text.translatable("tooltip.society.area", `19x5x19`).green());
       item.modelGenerator((m) => m.parent("society:block/kubejs/snow_melter"));
     })
-    .modelGenerator((m) => m.parent("society:block/kubejs/snow_melter"))
+    .parentModel(global.cardinalParent("society:snow_melter", "society:block/kubejs/snow_melter"))
     .blockEntity((blockInfo) => {
       blockInfo.serverTicking();
       blockInfo.tickFrequency(600);

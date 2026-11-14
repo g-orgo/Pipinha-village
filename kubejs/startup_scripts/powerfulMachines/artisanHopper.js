@@ -566,7 +566,7 @@ StartupEvents.registry("block", (event) => {
       item.modelGenerator((m) => m.parent("society:block/kubejs/artisan_hopper"));
     })
     .soundType("copper")
-    .modelGenerator((m) => m.parent("society:block/kubejs/artisan_hopper"))
+    .parentModel(global.cardinalParent("society:artisan_hopper", "society:block/kubejs/artisan_hopper"))
     .blockEntity((blockInfo) => {
       blockInfo.inventory("inventory", Direction.ALL_SET, 9, 2);
       blockInfo.initialData({ owner: "-1" });
@@ -604,7 +604,7 @@ StartupEvents.registry("block", (event) => {
       item.modelGenerator((m) => m.parent("society:block/kubejs/mini_artisan_hopper"));
     })
     .soundType("copper")
-    .modelGenerator((m) => m.parent("society:block/kubejs/mini_artisan_hopper"))
+    .parentModel(global.cardinalParent("society:mini_artisan_hopper", "society:block/kubejs/mini_artisan_hopper"))
     .blockEntity((blockInfo) => {
       blockInfo.inventory("inventory", Direction.ALL_SET, 9, 2);
       blockInfo.initialData({ owner: "-1" });

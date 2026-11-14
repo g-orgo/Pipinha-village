@@ -31,7 +31,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("tooltip.society.shipping_bin").gray());
       item.modelGenerator((m) => m.parent("shippingbin:block/shipping_bin"));
     })
-    .modelGenerator((m) => m.parent("shippingbin:block/shipping_bin"))
+    .parentModel(global.cardinalParent("shippingbin:basic_shipping_bin", "shippingbin:block/shipping_bin"))
     .blockEntity((blockInfo) => {
       blockInfo.inventory("inventory", Direction.ALL_SET, 9, 4);
       blockInfo.initialData({ owner: "-1" });

@@ -103,7 +103,7 @@ StartupEvents.registry("block", (event) => {
       );
       item.modelGenerator((m) => m.parent("society:block/kubejs/roe_recycler"));
     })
-    .modelGenerator((m) => m.parent("society:block/kubejs/roe_recycler"))
+    .parentModel(global.cardinalParent("society:roe_recycler", "society:block/kubejs/roe_recycler"))
     .blockEntity((blockInfo) => {
       blockInfo.inventory("inventory", Direction.ALL_SET, 9, 1);
       blockInfo.serverTicking();

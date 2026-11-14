@@ -70,7 +70,7 @@ StartupEvents.registry("block", (e) => {
       );
       item.modelGenerator((m) => m.parent("society:block/kubejs/auto_petter"));
     })
-    .modelGenerator((m) => m.parent("society:block/kubejs/auto_petter"))
+    .parentModel(global.cardinalParent("society:auto_petter", "society:block/kubejs/auto_petter"))
     .blockEntity((blockInfo) => {
       blockInfo.serverTicking();
       blockInfo.tickFrequency(autoPetterTickRate);

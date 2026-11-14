@@ -290,7 +290,7 @@ StartupEvents.registry("block", (event) => {
       );
       item.modelGenerator((m) => m.parent("society:block/kubejs/auto_grabber"));
     })
-    .modelGenerator((m) => m.parent("society:block/kubejs/auto_grabber"))
+    .parentModel(global.cardinalParent("society:auto_grabber", "society:block/kubejs/auto_grabber"))
     .property(booleanProperty.create("upgraded"))
     .defaultState((state) => {
       state.set(booleanProperty.create("upgraded"), false);

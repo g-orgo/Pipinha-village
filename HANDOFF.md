@@ -381,3 +381,9 @@ Origem (só leitura): `../Society: Sunlit Valley`.
      Texturas copiadas dos jars 1.20.1 para kubejs/assets: 7 do Nethervinery (vinhos envelhecidos) e vidro do More Minecarts.
   Restam avisos internos de mods (relics *_broken, bountiful decree, cluttered balustrade, supplementaries/quark, displaydelight,
   fauna GeckoLib, partícula do caixote de palmeira). Rhino 389/389 OK.
+- 23:0x RODADA 7b: a troca parentModel -> modelGenerator quebrou os blocos `cardinal` (blockstate do CardinalBlockBuilder
+  aponta para parentModel; sem ele vira cubo roxo). 41 cadeias cardinal voltaram a .parentModel(global.cardinalParent(id, X))
+  (tools/kjsport/fix_cardinal_model.js); client_scripts/cardinalModels.js reescreve block/<id> como {"parent": X} no estágio
+  after_mods (o modelo gerado sobrescrevia side/front/top/particle com texturas inexistentes; é o que o ícone do item usa).
+  fix_parent_model.js agora pula cadeias cardinal. Rhino 390/390 OK.
+  Pedido do dono depois disto: regenerar os dois saves (Mapa solo e Solito solamente).

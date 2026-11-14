@@ -65,7 +65,7 @@ StartupEvents.registry("block", (event) => {
     .resistance(9.0)
     .lightLevel(0.8)
     .requiresTool(false)
-    .modelGenerator((m) => m.parent("society:block/kubejs/moon_statue"))
+    .parentModel(global.cardinalParent("society:moon_statue", "society:block/kubejs/moon_statue"))
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {

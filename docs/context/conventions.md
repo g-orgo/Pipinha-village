@@ -97,6 +97,7 @@ time_call = "overworld.getLevelData().getGameTime()"   # getGameTime() não exis
 - Durabilidade é infinita, e a morte custa durabilidade. A conta da durabilidade fica no script de ajuste de gameplay. Ferramenta da tag `SunlitWear` segue a mesma regra.
 - Config `unbreakable` órfã não é usada.
 - Pegar galinha com a mão vazia e carregá-la na cabeça fica desligado: `chickenGliding = false` em `config/hearthandharvest-common.toml`. O `Grab Chickens` do Quark também segue desligado.
+- ParCool 4.x tranca as ações numa árvore própria; no pack ela fica desligada (`enable_skill_tree = false` em `config/parcool-server.toml` e no `serverconfig` de cada save), porque a progressão de parkour é a árvore do Puffish, como na 1.20.1 (ParCool 3.4, sem árvore).
 - Velocidades de Puffish Skills foram reduzidas e não voltam a subir: `fast_feet` de 0,25 para 0,075, `quick_feet` de 0,2 para 0,1, `farming` de 0,05 para 0,03.
 - Quark: o botão de chest tem slot target 9. O sort falhava em armário de 9 e 18 slots, então `sunlit_sortfix` corrige a aceitação de itens (**a portar**).
 - Preço de colheita crua vem da etapa de processamento, não do item cru. Colheita crua recebe fator `/3` ou `/1,5`, e item raro segue sem mudança.

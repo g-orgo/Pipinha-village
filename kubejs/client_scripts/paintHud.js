@@ -10,10 +10,11 @@ const $PaintItemStack = Java.loadClass("net.minecraft.world.item.ItemStack");
 
 const paintElements = {};
 const paintItemStacks = {};
-let paintLevelHash = 0;
+let paintFailed = false;
 
 const paintClear = () => {
   Object.keys(paintElements).forEach((id) => delete paintElements[id]);
+  paintFailed = false; // a new session gets a fresh try after a render error
 };
 
 // Accepts "#RRGGBB" and "#AARRGGBB". Malformed values (e.g. "#FFFFFFF") use the
@@ -108,15 +109,9 @@ const paintDrawElement = (g, font, mc, el, screenW, screenH) => {
   pose.popPose();
 };
 
-const paintRender = (e) => {
+const paintRenderFrame = (e) => {
   const mc = $PaintMinecraft.getInstance();
-  // java.lang.System is blocked by the KubeJS class filter; ClientLevel keeps
-  // Object.hashCode, which is the identity hash.
-  const levelHash = mc.level ? mc.level.hashCode() : 0;
-  if (levelHash !== paintLevelHash) {
-    paintClear();
-    paintLevelHash = levelHash;
-  }
+  // Elements are cleared on LoggingIn/LoggingOut (below), so no per-level tracking here.
   if (!mc.level || mc.player === null) return;
 
   const list = Object.keys(paintElements).map((id) => paintElements[id]);
@@ -129,6 +124,18 @@ const paintRender = (e) => {
     .filter((el) => el.visible !== false)
     .sort((a, b) => (a.z || 0) - (b.z || 0))
     .forEach((el) => paintDrawElement(g, mc.font, mc, el, screenW, screenH));
+};
+
+// Runs every frame inside the GUI render: an exception here would crash the client,
+// so any error is logged once and the HUD stops drawing instead.
+const paintRender = (e) => {
+  if (paintFailed) return;
+  try {
+    paintRenderFrame(e);
+  } catch (err) {
+    paintFailed = true;
+    console.error(`[paintHud] HUD disabled after render error: ${err}`);
+  }
 };
 
 NetworkEvents.dataReceived("pipinha.paint", (event) => {

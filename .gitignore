@@ -1,2 +1,5 @@
 __pycache__/
 tools/configport/backup-*.tar.gz
+
+# Runtime logs written by mods
+*.log

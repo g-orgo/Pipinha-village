@@ -75,7 +75,7 @@
 			id: "5FDBDED97111F43B"
 			tasks: [{
 				id: "4275B723069F4C05"
-				item: { count: 1, id: "relics:horse_flute" }
+				item: { components: { "ftbquests:missing_item": "relics:horse_flute" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -275,7 +275,7 @@
 			id: "74DAEBEF604D17EA"
 			tasks: [{
 				id: "3637C05CA3E79DBC"
-				item: { count: 1, id: "relics:arrow_quiver" }
+				item: { components: { "ftbquests:missing_item": "relics:arrow_quiver" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -285,7 +285,7 @@
 			id: "601AF949E5E96321"
 			tasks: [{
 				id: "7542F8B879E6F226"
-				item: { count: 1, id: "relics:spatial_sign" }
+				item: { components: { "ftbquests:missing_item": "relics:spatial_sign" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 2.0d

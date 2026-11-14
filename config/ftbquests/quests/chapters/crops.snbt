@@ -1234,7 +1234,7 @@
 			shape: "none"
 			tasks: [{
 				id: "7D8E36AD4ABBFF0F"
-				item: { count: 1, id: "culturaldelights:ginger" }
+				item: { components: { "ftbquests:missing_item": "culturaldelights:ginger" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.190476190476204d

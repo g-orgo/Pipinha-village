@@ -700,7 +700,9 @@
 					type: "item"
 				}
 				{
-					icon: { count: 1, id: "society:villager" }
+					icon: {
+						id: "society:villager"
+					}
 					id: "47A5E6018A6FB99F"
 					stage: "invited_witch"
 					type: "gamestage"

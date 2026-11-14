@@ -51,7 +51,9 @@
 				}
 				{
 					disable_toast: true
-					icon: { count: 1, id: "society:villager" }
+					icon: {
+						id: "society:villager"
+					}
 					id: "06F99A1BA55E885E"
 					stage: "invited_market"
 					type: "gamestage"
@@ -350,7 +352,9 @@
 				}
 				{
 					disable_toast: true
-					icon: { count: 1, id: "society:villager" }
+					icon: {
+						id: "society:villager"
+					}
 					id: "2E87112873365470"
 					stage: "invited_shepherd"
 					type: "gamestage"
@@ -582,7 +586,9 @@
 				}
 				{
 					disable_toast: true
-					icon: { count: 1, id: "society:villager" }
+					icon: {
+						id: "society:villager"
+					}
 					id: "06F8F48507B23D58"
 					stage: "invited_fisher"
 					type: "gamestage"
@@ -1492,7 +1498,9 @@
 					type: "item"
 				}
 				{
-					icon: { count: 1, id: "society:villager" }
+					icon: {
+						id: "society:villager"
+					}
 					id: "62E5A962C8F9D3E3"
 					stage: "invited_librarian"
 					type: "gamestage"

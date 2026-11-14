@@ -138,27 +138,60 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:witch": true
-			"quark:toretoise": true
-			"crittersandcompanions:leaf_insect": true
-			"snowpig:snow_pig": true
-			"windswept:frostbiter": true
-			"crittersandcompanions:stag_beetle": true
-			"minecraft:villager": true
-			"minecraft:glow_squid": true
-			"minecraft:creeper": true
-			"snuffles:snuffle": true
-			"minecraft:fox": true
-			"minecraft:skeleton": true
-			"minecraft:zombie": true
-			"minecraft:rabbit": true
-			"minecraft:spider": true
 			"unusualfishmod:deep_crawler": true
-			"minecraft:enderman": true
-			"crittersandcompanions:ladybug": true
-			"quark:stoneling": true
+			"minecraft:creeper": true
+			"faunaandorchestra:penguin": true
+			"minecraft:spider": true
+			"unusualfishmod:shockcat": true
+			"crittersandcompanions:roly_poly": true
+			"aquaculture:muskellunge": false
+			"crittersandcompanions:stick_bug": true
+			"minecraft:rabbit": true
+			"quark:toretoise": true
+			"minecraft:pig": true
 			"minecraft:bat": true
+			"faunaandorchestra:emperor_penguin": true
+			"buzzier_bees:moobloom": true
+			"minecraft:mule": true
+			"aquaculture:perch": false
+			"aquaculture:minnow": false
+			"minecraft:chicken": true
+			"faunaandorchestra:sea_lion": true
+			"minecraft:polar_bear": true
+			"longwings:moth": true
+			"minecraft:enderman": true
+			"crittersandcompanions:leaf_insect": true
+			"crittersandcompanions:stag_beetle": true
+			"golemoverhaul:coal_golem": true
+			"aquaculture:brown_trout": false
+			"quark:forgotten": true
+			"minecraft:cow": true
+			"aquaculture:bluegill": false
+			"snowpig:snow_pig": true
+			"minecraft:wandering_trader": true
+			"minecraft:zombie": true
+			"snuffles:snuffle": true
+			"botania:manaseal_creeper": true
+			"quark:stoneling": true
+			"untitledduckmod:duck": true
+			"minecraft:sheep": true
 			"etcetera:weaver": true
+			"minecraft:glow_squid": true
+			"windswept:frostbiter": true
+			"aquaculture:smallmouth_bass": false
+			"crittersandcompanions:otter": true
+			"aquaculture:carp": false
+			"minecraft:skeleton": true
+			"minecraft:villager": true
+			"crittersandcompanions:ladybug": true
+			"wildernature:deer": true
+			"aquaculture:gar": false
+			"untitledduckmod:goose": true
+			"minecraft:witch": true
+			"minecraft:wolf": true
+			"crittersandcompanions:snail": true
+			"minecraft:horse": true
+			"minecraft:fox": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

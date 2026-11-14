@@ -136,7 +136,9 @@
 				}
 				{
 					disable_toast: true
-					icon: { count: 1, id: "society:villager" }
+					icon: {
+						id: "society:villager"
+					}
 					id: "77941199A5AAA562"
 					stage: "invited_carpenter"
 					type: "gamestage"
@@ -468,7 +470,9 @@
 				}
 				{
 					disable_toast: true
-					icon: { count: 1, id: "society:villager" }
+					icon: {
+						id: "society:villager"
+					}
 					id: "3289EF10C786A325"
 					stage: "invited_banker"
 					type: "gamestage"
@@ -528,7 +532,9 @@
 				}
 				{
 					disable_toast: true
-					icon: { count: 1, id: "society:villager" }
+					icon: {
+						id: "society:villager"
+					}
 					id: "66EF68859A260B35"
 					stage: "invited_blacksmith"
 					type: "gamestage"

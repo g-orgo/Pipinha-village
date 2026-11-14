@@ -720,7 +720,9 @@
 		}
 		{
 			dependencies: ["506B32619EB8477F"]
-			icon: { count: 1, id: "vinery:white_grapejuice" }
+			icon: {
+				id: "vinery:white_grapejuice"
+			}
 			id: "094497558E9DB19C"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1296,7 +1298,9 @@
 					type: "item"
 				}
 				{
-					icon: { count: 1, id: "society:villager" }
+					icon: {
+						id: "society:villager"
+					}
 					id: "48A5EF6D1BB8647A"
 					stage: "invited_trader"
 					type: "gamestage"

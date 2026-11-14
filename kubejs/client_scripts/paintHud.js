@@ -3,6 +3,7 @@
 // channel, are merged by id, and are drawn on every GUI frame.
 
 const $PaintMinecraft = Java.loadClass("net.minecraft.client.Minecraft");
+const $PaintComponent = Java.loadClass("net.minecraft.network.chat.Component");
 const $PaintComponentSerializer = Java.loadClass("net.minecraft.network.chat.Component$Serializer");
 const $PaintResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
 const $PaintBuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
@@ -11,6 +12,7 @@ const $PaintItemStack = Java.loadClass("net.minecraft.world.item.ItemStack");
 const paintElements = {};
 const paintItemStacks = {};
 let paintFailed = false;
+let paintLoggedParseError = false;
 
 const paintClear = () => {
   Object.keys(paintElements).forEach((id) => delete paintElements[id]);
@@ -28,30 +30,43 @@ const paintColor = (value, fallback) => {
   return ((alpha << 24) | rgb) | 0;
 };
 
-// Plain strings are drawn as they are; strings that look like Text JSON are
+// Plain strings become literal components (legacy § codes still apply); strings that look like Text JSON are
 // parsed into a component with the current registry access.
 const paintText = (text, mc) => {
   if (text === undefined || text === null) return null;
+  // Rhino 2101 fails on const declared inside nested blocks ("redeclaration of var"),
+  // so every local in this file is declared at the top of its function.
   const str = String(text);
   const trimmed = str.trim();
+  let component = null;
   if (trimmed.charAt(0) === "{" || trimmed.charAt(0) === "[") {
     try {
       if (mc.level) {
-        const component = $PaintComponentSerializer.fromJson(trimmed, mc.level.registryAccess());
+        // Explicit overload: fromJson(String, Provider) and fromJson(JsonElement, Provider)
+        // are equally good for a JS string in Rhino, which throws "ambiguous".
+        component = $PaintComponentSerializer["fromJson(java.lang.String,net.minecraft.core.HolderLookup$Provider)"](
+          trimmed, mc.level.registryAccess());
         if (component) return component;
       }
     } catch (err) {
-      return str;
+      component = null;
+      if (!paintLoggedParseError) {
+        paintLoggedParseError = true;
+        console.error(`[paintHud] text JSON not parsed, drawn as plain text: ${err}`);
+      }
     }
   }
-  return str;
+  // Always hand a Component to Font/GuiGraphics: a JS string makes the overload
+  // choice (String, Component, FormattedCharSequence) ambiguous in Rhino.
+  return $PaintComponent.literal(str);
 };
 
 const paintItemStack = (id) => {
   if (!id) return null;
   const key = String(id);
+  let item = null;
   if (paintItemStacks[key] === undefined) {
-    const item = $PaintBuiltInRegistries.ITEM.get($PaintResourceLocation.parse(key));
+    item = $PaintBuiltInRegistries.ITEM.get($PaintResourceLocation.parse(key));
     paintItemStacks[key] = new $PaintItemStack(item, 1);
   }
   return paintItemStacks[key];
@@ -65,15 +80,22 @@ const paintDrawElement = (g, font, mc, el, screenW, screenH) => {
   let w = 0;
   let h = 0;
   let draw = null;
+  let label = null;
+  let stack = null;
+  let texture = null;
+  let color = 0;
 
   if (type === "text") {
-    const text = paintText(el.text, mc);
-    if (text === null) return;
-    w = font.width(text);
+    label = paintText(el.text, mc);
+    if (label === null) return;
+    // Overloads are picked by explicit signature: Rhino finds drawString(String, float...)
+    // and drawString(Component, int...) equally good for a Component and JS numbers.
+    w = font["width(net.minecraft.network.chat.FormattedText)"](label);
     h = 9;
-    draw = () => g.drawString(font, text, 0, 0, paintColor(el.color, 0xFFFFFF), el.shadow === true);
+    draw = () => g["drawString(net.minecraft.client.gui.Font,net.minecraft.network.chat.Component,int,int,int,boolean)"](
+      font, label, 0, 0, paintColor(el.color, 0xFFFFFF), el.shadow === true);
   } else if (type === "item") {
-    const stack = paintItemStack(el.item);
+    stack = paintItemStack(el.item);
     if (stack === null) return;
     w = 16;
     h = 16;
@@ -82,10 +104,10 @@ const paintDrawElement = (g, font, mc, el, screenW, screenH) => {
     w = typeof el.w === "number" ? el.w : 0;
     h = typeof el.h === "number" ? el.h : 0;
     if (el.texture) {
-      const texture = $PaintResourceLocation.parse(String(el.texture));
+      texture = $PaintResourceLocation.parse(String(el.texture));
       draw = () => g.blit(texture, 0, 0, w, h, 0, 0, w, h, w, h);
     } else {
-      const color = paintColor(el.color, -1);
+      color = paintColor(el.color, -1);
       draw = () => g.fill(0, 0, w, h, color);
     }
   } else {
@@ -105,8 +127,11 @@ const paintDrawElement = (g, font, mc, el, screenW, screenH) => {
   pose.pushPose();
   pose.translate(x, y, 0);
   pose.scale(scale, scale, 1);
-  draw();
-  pose.popPose();
+  try {
+    draw();
+  } finally {
+    pose.popPose();
+  }
 };
 
 const paintRenderFrame = (e) => {
@@ -143,6 +168,7 @@ NetworkEvents.dataReceived("pipinha.paint", (event) => {
   try {
     data = JSON.parse(String(event.getData().getString("json")));
   } catch (err) {
+    console.error(`[paintHud] bad packet: ${err}`);
     return;
   }
   if (!data) return;

@@ -4,7 +4,9 @@
 	default_quest_shape: ""
 	filename: "villagers"
 	group: "439B0423947443D3"
-	icon: { count: 1, id: "society:villager" }
+	icon: {
+		id: "society:villager"
+	}
 	id: "20D348A9B6875391"
 	images: [
 		{
@@ -94,7 +96,9 @@
 	quests: [
 		{
 			dependencies: ["664E4A3806C40A78"]
-			icon: { count: 1, id: "society:villager" }
+			icon: {
+				id: "society:villager"
+			}
 			id: "3CF0897E67574877"
 			rewards: [{
 				count: 4
@@ -117,7 +121,9 @@
 		{
 			hide_dependency_lines: true
 			hide_dependent_lines: true
-			icon: { count: 1, id: "society:villager" }
+			icon: {
+				id: "society:villager"
+			}
 			id: "664E4A3806C40A78"
 			rewards: [{
 				count: 2
@@ -141,7 +147,9 @@
 			dependencies: ["664E4A3806C40A78"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
-			icon: { count: 1, id: "society:villager" }
+			icon: {
+				id: "society:villager"
+			}
 			id: "048655663A5A82FC"
 			rewards: [{
 				count: 4
@@ -163,7 +171,9 @@
 		}
 		{
 			dependencies: ["048655663A5A82FC"]
-			icon: { count: 1, id: "society:villager" }
+			icon: {
+				id: "society:villager"
+			}
 			id: "2A64214504AAD5E5"
 			rewards: [{
 				count: 4
@@ -185,7 +195,9 @@
 		}
 		{
 			dependencies: ["664E4A3806C40A78"]
-			icon: { count: 1, id: "society:villager" }
+			icon: {
+				id: "society:villager"
+			}
 			id: "499871FDD2A65F2C"
 			rewards: [{
 				count: 4
@@ -209,7 +221,9 @@
 			dependencies: ["048655663A5A82FC"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
-			icon: { count: 1, id: "society:villager" }
+			icon: {
+				id: "society:villager"
+			}
 			id: "4633C0427ACA18D3"
 			rewards: [{
 				id: "39A6E5251F5A738D"
@@ -243,7 +257,9 @@
 		{
 			dependencies: ["048655663A5A82FC"]
 			hide_dependency_lines: true
-			icon: { count: 1, id: "society:villager" }
+			icon: {
+				id: "society:villager"
+			}
 			id: "49477F09DF6EBA50"
 			tasks: [{
 				id: "078F96904FB1E9F6"
@@ -280,7 +296,9 @@
 		}
 		{
 			dependencies: ["66E1AC55824DF1D9"]
-			icon: { count: 1, id: "society:villager" }
+			icon: {
+				id: "society:villager"
+			}
 			id: "52F1DCA9462F825F"
 			tasks: [{
 				id: "3C94F73EFA3C7BCD"
@@ -291,7 +309,9 @@
 		}
 		{
 			dependencies: ["5A369FC904BCF5EE"]
-			icon: { count: 1, id: "society:villager" }
+			icon: {
+				id: "society:villager"
+			}
 			id: "1348507AE17E187E"
 			tasks: [{
 				id: "691F920167A31AB3"

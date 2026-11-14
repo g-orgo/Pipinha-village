@@ -43,7 +43,7 @@ const sunlitMapSkinFace = (texture) => {
     let location = $ResourceLocation.parse(key);
     let face = new $ImageIcon(location).withUV(8 / 64, 8 / 64, 16 / 64, 16 / 64);
     let hat = new $ImageIcon(location).withUV(40 / 64, 8 / 64, 48 / 64, 16 / 64);
-    sunlitMapSkinFaces[key] = face.combineWith(hat);
+    sunlitMapSkinFaces[key] = face["combineWith(dev.ftb.mods.ftblibrary.icon.Icon)"](hat);
   }
   return sunlitMapSkinFaces[key];
 };

@@ -127,7 +127,7 @@ StartupEvents.registry("block", (event) => {
 
       if (upgraded && block.properties.get("mature") === "true" && rnd10()) {
         let nbt = block.getEntityData();
-        let recipeId = nbt.data.recipe;
+        let recipeId = global.nbtStr(nbt.data.recipe);
         let recipe = recipeId ? global.crystalariumCrystals.get(recipeId) : null;
         if (recipe && recipe.output) {
           recipe.output.forEach((item) => {

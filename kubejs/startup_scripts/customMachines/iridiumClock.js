@@ -26,16 +26,16 @@ global.runIridiumClock = (entity) => {
     }
 
     let blockNbt = block.getEntityData();
-    if (Number(blockNbt.data.triggerTimes) < 1728) {
+    if (global.nbtNum(blockNbt.data.triggerTimes) < 1728) {
       blockNbt.merge({
         data: {
-          triggerTimes: Number(blockNbt.data.triggerTimes) + 1,
+          triggerTimes: global.nbtNum(blockNbt.data.triggerTimes) + 1,
         },
       });
     }
     global.setBlockEntityData(block, blockNbt);
     let spinelType = Math.random() < 0.01 * surroundingClocks ? "society:pristine_spinel" : "society:spinel"
-    let spinelToInsert = blockNbt.data.triggerTimes;
+    let spinelToInsert = global.nbtNum(blockNbt.data.triggerTimes);
     let roundedStacks = Math.floor(spinelToInsert / 64);
     if (spinelToInsert < 64) {
       global.insertInto(block, Item.of(`${spinelToInsert}x ${spinelType}`));

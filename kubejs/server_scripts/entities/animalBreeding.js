@@ -52,9 +52,9 @@ ItemEvents.entityInteracted((e) => {
     }
     let animalNbt = target.getNbt();
     let day = global.getDay(level);
-    let ageLastBred = target.persistentData.ageLastBred || 0;
+    let ageLastBred = global.nbtNum(target.persistentData.ageLastBred);
     if (global.isFresh(day, ageLastBred)) ageLastBred = 0;
-    if (Number(animalNbt.InLove) === 0 && day > ageLastBred) {
+    if (global.nbtNum(animalNbt.InLove) === 0 && day > ageLastBred) {
       if (
         ["crittersandcompanions:red_panda", "minecraft:panda"].includes(target.type) &&
         Math.random() > 0.2

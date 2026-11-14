@@ -33,7 +33,7 @@ JadeEvents.onCommonRegistration((e) => {
         registerKey(blockEntity, tag, key);
       });
       if (blockEntity.data != null && blockEntity.data.animal != null) {
-        tag.putString("animal", blockEntity.data.animal.type);
+        tag.putString("animal", global.nbtStr(blockEntity.data.animal.type));
       }
     }
   );
@@ -53,7 +53,7 @@ JadeEvents.onCommonRegistration((e) => {
     (tag, accessor) => {
       const { blockEntity } = accessor;
       if (blockEntity.data != null && blockEntity.data.customName != null) {
-        tag.putString("customName", blockEntity.data.customName.toString());
+        tag.putString("customName", global.nbtStr(blockEntity.data.customName));
       }
     }
   );

@@ -29,7 +29,7 @@ StartupEvents.registry("block", (event) => {
         let blockData = block.getEntityData().data;
         let playerAttributes = blockData.attributes;
         let playerStages = blockData.stages;
-        let ownerUUID = blockData.owner;
+        let ownerUUID = global.nbtStr(blockData.owner);
         if (!playerStages || !playerAttributes) return;
         value = global.processShippingBinInventory(
           inventory,

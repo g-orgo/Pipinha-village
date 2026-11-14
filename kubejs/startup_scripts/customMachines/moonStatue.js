@@ -17,7 +17,7 @@ global.handleMoonStatueClick = (click) => {
       let day = global.getDay(level);
       if (!player.persistentData.days) player.persistentData.days = {}
       let dayData = player.persistentData.days.moonStatueDay;
-      if (dayData == undefined || global.compareDay(day, dayData, 1)) {
+      if (dayData == undefined || global.compareDay(day, global.nbtNum(dayData), 1)) {
         let selectedBuff =
           statueBuffs[Math.floor(Math.random() * statueBuffs.length)];
         player.tell(

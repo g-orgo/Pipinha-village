@@ -71,11 +71,11 @@ global.handleLongwings = (entity, item) => {
     entities.sort((a, b) => a.distanceToSqr(entity) - b.distanceToSqr(entity));
     let coparent = entities[0];
     let eggs = level.createEntity("minecraft:item");
-    let parentVariant = entity.getNbt().Variant;
-    let coparentVariant = coparent.getNbt().Variant
+    let parentVariant = global.nbtStr(entity.getNbt().Variant);
+    let coparentVariant = global.nbtStr(coparent.getNbt().Variant)
     eggs.item = Item.of(
       "1x society:caterpillar_eggs",
-      `{parent:"${parentVariant}",coparent:"${coparentVariant}",child:"${global.getLongwingFromEgg(parentVariant, coparentVariant)}",size:${Math.max(0.25, Math.round((((entity.getNbt().size + coparent.getNbt().size) + Math.random()) / 2) * 100) / 100)}}`);
+      `{parent:"${parentVariant}",coparent:"${coparentVariant}",child:"${global.getLongwingFromEgg(parentVariant, coparentVariant)}",size:${Math.max(0.25, Math.round((((global.nbtNum(entity.getNbt().size) + global.nbtNum(coparent.getNbt().size)) + Math.random()) / 2) * 100) / 100)}}`);
     if (Math.random() <= 0.001) {
       eggs.item = Item.of("society:the_metamorphosize")
     }

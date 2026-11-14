@@ -1,6 +1,11 @@
+const $TranslationComponent = Java.loadClass("net.minecraft.network.chat.Component");
+
+// 1.21.1: Text.of(NBT.stringTag(json)) no longer parses JSON, it renders the raw
+// string. Build the translatable component directly; the explicit signature
+// avoids Rhino's ambiguity with the (String,String,Object...) overload.
 global.translatableWithFallback = (key, fallback) => {
-    if(!fallback) return Text.translatable(key);
-    else return Text.of(NBT.stringTag(`{"translate":"${key}", "fallback":"${fallback}"}`));
+    if (!fallback) return Text.translatable(key);
+    return $TranslationComponent["translatableWithFallback(java.lang.String,java.lang.String)"](String(key), String(fallback));
 }
 
 global.getTranslatedEntityName = (entity_id, fallback) => {

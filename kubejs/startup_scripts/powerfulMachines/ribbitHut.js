@@ -176,7 +176,7 @@ global.runRibbitHut = (tickEvent) => {
     morningModulo < ribbitHutProgTime + artMachineTickRate
   ) {
     level.getServer().players.forEach((p) => {
-      if (p.getUuid().toString() === block.getEntityData().data.owner) {
+      if (p.getUuid().toString() === global.nbtStr(block.getEntityData().data.owner)) {
         attachedPlayer = p;
       }
     });

@@ -460,3 +460,13 @@ Origem (só leitura): `../Society: Sunlit Valley`.
 - 2026-11-14 pipinha_deerfix (deer com affection não foge do player) e pipinha_skinfix (refaz a busca do perfil/skin
   quando o sessionserver da Mojang falha na abertura) em mods/, fontes em custom-mods/. Pendente do dono: testar no jogo.
   Sable 2.0.6: compat com SS quebrada (ShoulderSurfingImpl/ObjectPicker renomeados no 5.3.1), afeta só câmera em nave.
+- 2026-11-14 12:2x (dono): após o fromJson explícito o HUD do animal sumiu de vez (nome e corações); log 12:16-12:18 sem
+  nenhum erro e sem rastro (logs de debug tinham sido removidos cedo demais). Debug de volta com chave:
+  PAINT_DEBUG em paintHud.js (self-test no 1º quadro, "received", "drawing") + "[paintHud] sending" em checkAnimal.
+  paintText agora: Text.of(JSON.parse) -> fromJson explícito -> literal, com cache por string. Desligar PAINT_DEBUG e o
+  log "sending" só depois do dono confirmar. Visto também: smallships-server.toml erro ao fechar o mundo (não tratado).
+- 2026-11-14 12:3x: teste 12:26 mostrou servidor enviando e cliente recebendo; o HUD caiu pelo próprio debug
+  (getClass() não existe no Rhino). Debug agora em paintDebug() com try. Text.of(JSON.parse) confirmado no autoteste.
+  Solito: dia recomeçado a pedido do dono: DayTime 2654049 -> 2640000 (dia 111, 06:00), SeasonCycleTicks -14049
+  (2656257 -> 2642208). Backup: saves/Solito solamente backup-antes-recomecar-dia-2026-11-14.zip. Flags diárias dos
+  animais (ageLastPet/Fed = 111) não foram mexidas.

@@ -38,7 +38,7 @@ StartupEvents.registry("block", (event) => {
           let day = global.getDay(level);
           if (!player.persistentData.days) player.persistentData.days = {}
           let dayData = player.persistentData.days.ancientGoddessStatueDay;
-          if (dayData == undefined || global.compareDay(day, dayData, 1)) {
+          if (dayData == undefined || global.compareDay(day, global.nbtNum(dayData), 1)) {
             switch (season) {
               case "spring":
                 if (item === "society:ancient_fruit" && item.count === 64) {

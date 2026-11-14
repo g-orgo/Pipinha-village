@@ -10,24 +10,27 @@ const handleBrokenMachine = (block) => {
     block.popItem(machine.upgrade);
   }
   const nbt = block.getEntityData();
-  const currentRecipe = machine.recipes.get(nbt.data.recipe);
+  // 1.21.1: NBT fields are Tag objects; read them through global.nbtStr/nbtNum.
+  const recipeId = global.nbtStr(nbt.data.recipe);
+  const currentRecipe = machine.recipes.get(recipeId);
   if (block.properties.get("mature").toLowerCase() == "true") {
-    currentRecipe.output.forEach((element) => {
+    (currentRecipe ? currentRecipe.output : []).forEach((element) => {
       block.popItem(element);
     });
     if (
+      currentRecipe &&
       block.id == "society:ancient_cask" &&
       block.properties.get("upgraded").toLowerCase() == "true"
     ) block.popItem(Item.of(`3x ${Item.of(`${currentRecipe.output[0]}`).id}`));
   } else if (!["society:charging_rod", "society:tapper", "society:mushroom_log"].includes(block.id)) {
-    let stage = Number(nbt.data.stage);
+    let stage = global.nbtNum(nbt.data.stage);
     if (
       currentRecipe &&
       block.id == "society:ancient_cask" &&
       block.properties.get("upgraded").toLowerCase() == "true"
     ) {
-      if (working) block.popItem(Item.of(`4x ${nbt.data.recipe}`));
-      else block.popItem(Item.of(`${stage}x ${nbt.data.recipe}`));
+      if (working) block.popItem(Item.of(`4x ${recipeId}`));
+      else block.popItem(Item.of(`${stage}x ${recipeId}`));
     } else if (
       block.id == "society:deluxe_worm_farm" &&
       block.properties.get("upgraded").toLowerCase() == "true"
@@ -38,16 +41,16 @@ const handleBrokenMachine = (block) => {
       block.id == "society:preserves_jar" &&
       block.properties.get("upgraded").toLowerCase() == "true"
     ) {
-      if (working) block.popItem(Item.of(`3x ${nbt.data.recipe}`));
-      else block.popItem(Item.of(`${stage}x ${nbt.data.recipe}`));
+      if (working) block.popItem(Item.of(`3x ${recipeId}`));
+      else block.popItem(Item.of(`${stage}x ${recipeId}`));
     } else if (currentRecipe) {
-      if (nbt.data.originalInputs && nbt.data.originalInputs.length > 0) {
+      if (nbt.data.originalInputs && nbt.data.originalInputs.size() > 0) {
         nbt.data.originalInputs.forEach((item) => {
-          block.popItem(Item.of(`${item.Count}x ${item.id}`));
+          block.popItem(Item.of(`${global.nbtNum(item.Count)}x ${global.nbtStr(item.id)}`));
         });
       } else {
-        if (working) block.popItem(Item.of(`${machine.maxInput}x ${nbt.data.recipe}`));
-        else block.popItem(Item.of(`${stage}x ${nbt.data.recipe}`));
+        if (working) block.popItem(Item.of(`${machine.maxInput}x ${recipeId}`));
+        else block.popItem(Item.of(`${stage}x ${recipeId}`));
       }
     }
   }
@@ -60,13 +63,14 @@ BlockEvents.broken(global.artisanMachineIds, (e) => {
 BlockEvents.broken("society:fish_pond", (e) => {
   const { block } = e;
   const nbt = block.getEntityData();
-  if (nbt.data.type !== "") {
+  const fishType = global.nbtStr(nbt.data.type);
+  if (fishType !== "") {
     block.popItem(
       Item.of(
         "society:fish_pond",
-        `{type:"${nbt.data.type}",population:${Number(nbt.data.population)},max_population:${Number(
+        `{type:"${fishType}",population:${global.nbtNum(nbt.data.population)},max_population:${global.nbtNum(
           nbt.data.max_population
-        )},quest:${block.properties.get("quest")},quest_id:${Number(nbt.data.quest_id)}}`
+        )},quest:${block.properties.get("quest")},quest_id:${global.nbtNum(nbt.data.quest_id)}}`
       )
     );
   } else {
@@ -79,7 +83,7 @@ BlockEvents.broken("society:fish_pond", (e) => {
 
 BlockEvents.broken("society:prize_machine", (e) => {
   const nbt = e.block.getEntityData();
-  e.block.popItem(Item.of("society:prize_machine", `{prize:${nbt.data.prize}}`));
+  e.block.popItem(Item.of("society:prize_machine", `{prize:${global.nbtNum(nbt.data.prize)}}`));
 });
 
 BlockEvents.broken("society:coin_leaderboard", (e) => {

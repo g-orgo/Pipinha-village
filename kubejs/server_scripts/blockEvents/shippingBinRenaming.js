@@ -12,7 +12,7 @@ const getCustomNameJson = (item) => {
 
 const getStoredCustomName = (nbt) => {
   if (!nbt || !nbt.data) return null;
-  return nbt.data.customName || nbt.data.custom_name || null;
+  return global.nbtStr(nbt.data.customName) || global.nbtStr(nbt.data.custom_name) || null;
 };
 
 

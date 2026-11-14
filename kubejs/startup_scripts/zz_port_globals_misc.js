@@ -331,6 +331,8 @@ const checkAnimal = (
     iconString += icon;
     if (index < icons.length - 1) iconString += " ";
   });
+  // Debug logging for the animal HUD (client side: PAINT_DEBUG in paintHud.js).
+  console.info(`[paintHud] sending animal hud petted=${petted} hearts=${hearts} name=${nameText}`);
   global.renderUiText(
     player,
     server,

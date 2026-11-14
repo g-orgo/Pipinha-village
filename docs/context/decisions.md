@@ -284,6 +284,11 @@ Se o servidor ficar 90 s sem completar um tick, grava a pilha de todas as thread
 - O atalho "Toggle Custom Camera" (tecla V) ficou sem tecla em `options.txt` e em `tools/pack_tools/options_canonical.txt`, com autorização do dono. Apertar o atalho religa a câmera e grava `enabled: true`.
 - A câmera em terceira pessoa do pack é só a do Shoulder Surfing.
 
+#### 2026-11-14: estações das plantações iguais às da 1.20.1 depois da troca de jars
+- **Causa**: o Hearth & Harvest 1.4 passou a trazer tags próprias do Serene Seasons (mirtilo e framboesa na primavera e verão, algodão e milho no verão e outono, amendoim e treliça). Na 1.20.1 o jar não tinha tags e essas plantas cresciam o ano todo; no inverno o Jade mostrava "Cannot grow". O Youkai's Homecoming 4.x só gera as tags no datagen e o jar veio sem elas, então chá, pepino, café, uva vermelha, soja e feijão vermelho cresciam o ano todo.
+- **Decisão**: `jarSeasonStrip` e `jarSeasonRestore` em `handleSeasonTags.js` tiram as tags do Hearth & Harvest (bloco e item) e devolvem as do Youkai com os valores do jar 1.20.1. O milho e a treliça de uva e lúpulo são novos na 1.21.1 e seguem o resto do mod, o ano todo.
+- **Verificação**: tag efetiva calculada fora do jogo (jars, `kubejs/data` e o script) nas duas instâncias; nenhum bloco ou item ficou com estação diferente da 1.20.1.
+
 ## Anotações
 
 > Registros de 2026-10-02 a 2026-11-03 foram resumidos. O texto completo continua na 1.20.1 de origem, somente para leitura.

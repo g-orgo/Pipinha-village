@@ -50,8 +50,8 @@ seasonal_extra = 0.08          # acréscimo sazonal extra desde 2026-10-29 (era 
 ```
 
 ```py title:Rhino (KubeJS)
-forbidden_in_block = ["const", "let"]   # erro "redeclaration of var" no startup
-use_instead = "var"                     # dentro de bloco, ou corpo dentro de função
+forbidden_in_block = ["const", "let"]   # "redeclaration of var" em qualquer bloco aninhado, inclusive dentro de função
+use_instead = "let no topo da função, atribuído dentro do bloco"   # detalhes em erros-comuns.md
 time_call = "overworld.getLevelData().getGameTime()"   # getGameTime() não existe
 ```
 
@@ -128,7 +128,7 @@ time_call = "overworld.getLevelData().getGameTime()"   # getGameTime() não exis
 - Carvão, carvão vegetal e blocos deles valem um pelo outro em toda receita. Gelo e cubo de gelo valem um pelo outro só em comida e bebida.
 - Receita sem schema no KubeJS 6 (Create, Botania, Let's Do, Youkai etc.) tem o JSON reescrito, porque `replaceInput` não age nela. `replaceInput` só é chamado quando a receita cita o item exato.
 - Idioma: a lista só mostra `en_us` e `pt_br`, filtrada por mixin no cliente. Os arquivos de tradução dos mods continuam nos jars.
-- Rhino: `const` e `let` dentro de bloco no topo de script de startup dão `redeclaration of var`. Declaração dentro de função está certo.
+- Rhino: `const` e `let` dentro de qualquer bloco aninhado (`if`, `try`, `for`), em qualquer função e tipo de script, dão `redeclaration of var`. Declarar no topo da função. Lista completa de armadilhas em [[erros-comuns]].
 - `Map` e `Set` guardados em `global` podem chegar como lista em outro script. Testar `Array.isArray()` antes de chamar `.get()`. Dado que atravessa scripts vai como texto (`"moedas|porcentagem"`).
 - Script de startup roda duas vezes por sessão (cliente e servidor). Script que multiplica preço precisa de flag de idempotência (`global.priceBalanceApplied`).
 - `global.extractinatorRecipes` é lista de `{ input, output }`, não `Map`.

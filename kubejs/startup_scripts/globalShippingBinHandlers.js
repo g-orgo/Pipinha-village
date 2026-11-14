@@ -350,11 +350,11 @@ global.handleShippingBinDebt = (
   if (!playerUUID) return value;
   if (server.persistentData.debts) {
     binDebt = server.persistentData.debts.filter((debt) => {
-      return debt.uuid === playerUUID;
+      return global.nbtStr(debt.uuid) === playerUUID;
     });
   }
-  if (binDebt.length > 0 && binDebt[0].amount > 0) {
-    totalDebt = binDebt[0].amount;
+  if (binDebt.length > 0 && global.nbtNum(binDebt[0].amount) > 0) {
+    totalDebt = global.nbtNum(binDebt[0].amount);
     if (value >= totalDebt) {
       newValue = value - totalDebt;
       debtPaid = totalDebt;
@@ -570,7 +570,7 @@ global.cacheShippingBin = (entity) => {
   ];
   let binPlayer;
   level.getServer().players.forEach((p) => {
-    if (p.getUuid().toString() === block.getEntityData().data.owner) {
+    if (p.getUuid().toString() === global.nbtStr(block.getEntityData().data.owner)) {
       let newAttributes = [];
       let stages = [];
       attributeMapping.forEach((attr) => {

@@ -152,7 +152,7 @@ StartupEvents.registry("block", (event) => {
       if (player.isFake()) return;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
       const facing = block.properties.get("facing");
-      const input = block.getEntityData().data.recipe;
+      const input = global.nbtStr(block.getEntityData().data.recipe);
       let isMushroom;
       if (input) {
         isMushroom =

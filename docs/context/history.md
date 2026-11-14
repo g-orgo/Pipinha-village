@@ -9,3 +9,6 @@ Log append-only das unidades concluídas na 1.21.1. Cada linha é uma unidade. O
 - 2026-11-14: câmera do Punchy Moves desligada e tecla V desvinculada; `pipinha_deerfix` e `pipinha_skinfix` em `mods/`.
 - 2026-11-14: galinha na cabeça desligada (`chickenGliding = false` no Hearth and Harvest).
 - 2026-11-14: árvore de habilidades do ParCool desligada; ações de parkour livres de novo.
+- 2026-11-14: estações das plantações do Hearth & Harvest e do Youkai's Homecoming iguais às da 1.20.1 (`handleSeasonTags.js`).
+- 2026-11-14: máquinas artesanais (tapper e demais): fachada de tick corrigida e leituras de NBT por `global.nbtStr`/`global.nbtNum`. Aguarda teste do dono no jogo.
+- 2026-11-14: varredura de leituras NBT (startup_scripts): propriedades de Tag convertidas por `global.nbtStr`/`global.nbtNum`/`global.nbtBool`. Aguardando teste do dono.

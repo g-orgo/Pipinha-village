@@ -18,7 +18,7 @@ BlockEvents.leftClicked(
     let binPlayer;
     if (shippingBinThrottle(player, 30, "shipping-bin-throttle")) return;
     level.getServer().players.forEach((p) => {
-      if (p.getUuid().toString() === block.getEntityData().data.owner) {
+      if (p.getUuid().toString() === global.nbtStr(block.getEntityData().data.owner)) {
         binPlayer = p;
       }
     });

@@ -113,7 +113,7 @@ StartupEvents.registry("block", (event) => {
         7,
         false,
         false,
-        nbt && nbt.data && nbt.data.baseCount ? nbt.data.baseCount : 1,
+        nbt && nbt.data && global.nbtNum(nbt.data.baseCount) > 0 ? global.nbtNum(nbt.data.baseCount) : 1,
         true
       );
       global.handleMushroomLogRandomTick(click);

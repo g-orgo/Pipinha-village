@@ -58,12 +58,12 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
             dayLastGifted: -4,
             maxGifted: false
         }
-    } else if (Number(npcData.friendship) == -1) {
+    } else if (global.nbtNum(npcData.friendship) == -1) {
         npcData.friendship = 5
         server.runCommandSilent(
             `dialog ${player.getUuid()} show ${player.username} ${npcId}_intro`
         );
-    } else if (!npcData.maxGifted && Number(npcData.friendship) >= 500) {
+    } else if (!global.nbtBool(npcData.maxGifted) && global.nbtNum(npcData.friendship) >= 500) {
         if (npcId.equals("banker") && player.stages.has("slouching_towards_artistry")) {
             player.give(Item.of("2x waystones:waystone"))
             server.runCommandSilent(`dialog ${player.username} show ${player.username} banker_unique_five_gift_read`);
@@ -104,7 +104,7 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
                 );
                 return;
             }
-            if (day > npcData.dayLastGifted + 3 || npcData.dayLastGifted - day > 1) {
+            if (day > global.nbtNum(npcData.dayLastGifted) + 3 || global.nbtNum(npcData.dayLastGifted) - day > 1) {
                 let giftValue = global.getVillagerGiftResult(npcId, item.id);
                 dialogNumber = Math.floor(Math.random() * dialogLengths[npcId].giftResponseLengths[giftValue]);
                 let friendshipModification = 0;
@@ -127,7 +127,7 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
                         break;
                 }
 
-                npcData.friendship = npcData.friendship + friendshipModification;
+                npcData.friendship = global.nbtNum(npcData.friendship) + friendshipModification;
                 npcData.dayLastGifted = day
                 global.grantMercantilNpcXp(server, player, global.MERCANTIL_GIFT_XP[giftValue]);
                 server.runCommandSilent(`playsound stardew_fishing:complete block @a ${target.x} ${target.y} ${target.z}`);
@@ -164,19 +164,19 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
                 player.tell(Text.translatable("society.npc.gifted_too_soon").gold())
             }
         } else {
-            if (global.compareDay(day, npcData.dayLastChatted, 1)) {
-                let hearts = Math.floor(npcData.friendship / 100);
+            if (global.compareDay(day, global.nbtNum(npcData.dayLastChatted), 1)) {
+                let hearts = Math.floor(global.nbtNum(npcData.friendship) / 100);
                 dialogNumber = Math.floor(Math.random() * (dialogLengths[npcId].chatterLengths[hearts]));
 
                 server.runCommandSilent(
                     `dialog ${player.getUuid()} show ${player.username} ${npcId}_chatter_friendship${hearts}_${dialogNumber}`
                 );
                 npcData.dayLastChatted = day
-                if (npcData.friendship + 5 > 500) {
+                if (global.nbtNum(npcData.friendship) + 5 > 500) {
                     npcData.friendship = 500
                 } else {
-                    if (npcId === "wise_oak") npcData.friendship = npcData.friendship + 15
-                    npcData.friendship = npcData.friendship + 5
+                    if (npcId === "wise_oak") npcData.friendship = global.nbtNum(npcData.friendship) + 15
+                    npcData.friendship = global.nbtNum(npcData.friendship) + 5
 
                 }
             } else {
@@ -185,7 +185,7 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
                 } else if (npcId === "librarian" && global.isLateSeason(level)) {
                     server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} librarian_choice_dialog_book_fair`);
                 } else if (npcId === "wise_oak") {
-                    if (Number(npcData.friendship) >= 500) {
+                    if (global.nbtNum(npcData.friendship) >= 500) {
                         server.runCommandSilent(`openshop ${player.username} wise_oak`)
                     }
                 } else {
@@ -196,7 +196,7 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
     }
     // Mercantil XP for the first interaction with this NPC each day.
     let mercantilData = player.persistentData.npcData[npcId];
-    let lastMercantilDay = Number(mercantilData.dayLastMercantil);
+    let lastMercantilDay = global.nbtNum(mercantilData.dayLastMercantil);
     if (isNaN(lastMercantilDay) || global.compareDay(day, lastMercantilDay, 1)) {
         mercantilData.dayLastMercantil = day
         global.grantMercantilNpcXp(server, player, global.MERCANTIL_GREETING_XP);
@@ -218,7 +218,7 @@ ItemEvents.entityInteracted((e) => {
     if (item.id == 'easy_npc_config_ui:easy_npc_wand') return;
     if (!npcIds.includes(target.type)) return;
     if (hand == "MAIN_HAND") {
-        let npcId = getNpcKey(target.nbt.CustomName.toString())
+        let npcId = getNpcKey(global.nbtStr(target.nbt.CustomName))
         handleNpc(e, npcId, level, server, target, player, item)
     }
 });

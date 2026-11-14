@@ -2,6 +2,7 @@
 
 Mapa rápido do que está documentado para o Pipinha's Village (1.21.1). Cada linha aponta para uma seção ou arquivo.
 
+- `erros-comuns.md`: erros que já se repetiram (Rhino 2101, sobrecarga Java, logs de diagnóstico, compat entre mods). Ler antes de mexer em `kubejs/`.
 - `conventions.md`: regras estáveis do pack (regen de saves, cidades, preços, KubeJS, harmonização, mods desativados).
 - `decisions.md`: decisões datadas, uma por registro, com o porquê.
 - `state.md`: o que está implementado e em andamento agora na 1.21.1, e o que ainda é "a portar" da 1.20.1.

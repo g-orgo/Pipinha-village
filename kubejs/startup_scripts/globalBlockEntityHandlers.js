@@ -42,6 +42,37 @@ const directionProperty = Java.loadClass(
 
 // 1.21.1: cool.bot.dewdropfarmland.utils.CropHandlerUtils removed, feature disabled
 
+// 1.21.1 (KubeJS 7): CompoundTag fields reach JS as Tag objects, not strings or numbers.
+// StringTag: Map.get() misses, .equals("x") is false, "" is truthy, String() adds quotes.
+// Numbers merged from JS are stored as DoubleTag, and Number(DoubleTag) is NaN.
+// Read every block entity NBT field through these helpers.
+global.nbtStr = (tag) => {
+  if (tag === undefined || tag === null) return "";
+  if (typeof tag === "string") return tag;
+  if (tag.getAsString) return String(tag.getAsString());
+  return String(tag);
+};
+
+global.nbtNum = (tag) => {
+  let num;
+  if (tag === undefined || tag === null) return 0;
+  if (typeof tag === "number") return tag;
+  if (tag.getAsDouble) num = Number(tag.getAsDouble());
+  else num = Number(global.nbtStr(tag));
+  return isNaN(num) ? 0 : num;
+};
+
+// ByteTag (booleans) is always truthy as an object, so truthiness must go through its byte value.
+global.nbtBool = (tag) => {
+  let value;
+  if (tag === undefined || tag === null) return false;
+  if (typeof tag === "boolean") return tag;
+  if (typeof tag === "number") return tag !== 0;
+  if (tag.getAsByte) return Number(tag.getAsByte()) !== 0;
+  value = global.nbtNum(tag);
+  return value !== 0;
+};
+
 function rnd(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -77,7 +108,7 @@ global.surviveCheck = (level, pos) => {
 
 let increaseDataStage = (block, count) => {
   let nbt = block.getEntityData();
-  let currentStage = nbt.data.stage;
+  let currentStage = global.nbtNum(nbt.data.stage);
   currentStage += count || 1;
   nbt.merge({ data: { stage: currentStage } });
   global.setBlockEntityData(block, nbt)
@@ -118,8 +149,8 @@ const itemHasTag = (item, tag) => {
 
 const setQuality = (nbt, stage, itemQuality) => {
   if (
-    (Number(nbt.data.quality) === 0 && Number(stage) === 0) ||
-    Number(itemQuality) < Number(nbt.data.quality)
+    (global.nbtNum(nbt.data.quality) === 0 && global.nbtNum(stage) === 0) ||
+    Number(itemQuality) < global.nbtNum(nbt.data.quality)
   )
     nbt.merge({ data: { quality: Number(itemQuality) } });
 };
@@ -139,11 +170,11 @@ const getCanTakeItems = (
     Array.from(recipes.keys()).forEach((key) => {
       if (key.startsWith("#")) {
         if (itemHasTag(item, key)) {
-          if (nbt.data.recipe.equals("") || nbt.data.recipe == undefined) {
+          if (global.nbtStr(nbt.data.recipe) === "") {
             nbt.merge({ data: { recipe: key, originalInputs: [] } });
             itemCheck = true;
           }
-          if (inputCount != -1 && nbt.data.recipe.equals(key)) {
+          if (inputCount != -1 && global.nbtStr(nbt.data.recipe) === key) {
             let inputArray = nbt.data.originalInputs.copy();
             let usedItem = item.copy();
             usedItem.count = inputCount;
@@ -171,8 +202,8 @@ global.convertFromLegacy = (recipes, level, block) => {
     return;
   }
   if (nbt.data.contains("recipe") || !nbt.data.contains("type")) return;
-  if (nbt.data.type > 0) {
-    newRecipe = Array.from(recipes.keys())[Number(nbt.data.type) - 1];
+  if (global.nbtNum(nbt.data.type) > 0) {
+    newRecipe = Array.from(recipes.keys())[global.nbtNum(nbt.data.type) - 1];
   }
   if (['society:cheese_press', 'society:mayonnaise_machine', 'society:fish_smoker', 'society:seed_maker'].includes(block.id)) {
     nbt.merge({ data: { quality: 0 } });
@@ -199,20 +230,28 @@ global.artisanHarvest = (
   player
 ) => {
   let newProperties = block.getProperties();
+  let harvestQuality;
+  let harvestRecipe;
   if (block.properties.get("mature").toLowerCase() === "true") {
     let harvestOutput;
     let hopperOutputs = [];
+    let nbt = block.getEntityData();
+    harvestRecipe = recipes.get(global.nbtStr(nbt.data.recipe));
+    if (!harvestRecipe) {
+      console.warn(`[SOCIETY] artisanHarvest: no recipe '${global.nbtStr(nbt.data.recipe)}' in ${block.id} at ${block.x} ${block.y} ${block.z}`);
+      return artisanHopper ? hopperOutputs : undefined;
+    }
     if (!artisanHopper) {
       global.giveExperience(server, player, global.artisanXpTree(block.id), stageCount * 20);
       server.runCommandSilent(
         `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
       );
     }
-    let nbt = block.getEntityData();
-    let hasQuality = nbt.data.quality !== undefined && Number(nbt.data.quality) > 0;
-    recipes.get(nbt.data.recipe).output.forEach((id) => {
+    let hasQuality = global.nbtNum(nbt.data.quality) > 0;
+    harvestQuality = global.nbtNum(nbt.data.quality);
+    harvestRecipe.output.forEach((id) => {
       harvestOutput = Item.of(id);
-      if (hasQuality) global.setQualityLevel(harvestOutput, Number(nbt.data.quality));
+      if (hasQuality) global.setQualityLevel(harvestOutput, harvestQuality);
       // Artisan Cheese Press upgrade: auto age cheese wheels only
       if (
         isCheesePress &&
@@ -221,7 +260,7 @@ global.artisanHarvest = (
       ) {
         harvestOutput = Item.of(`society:aged_${global.agedName(id.path)}`);
       }
-      if (outputMult > 1 && !recipes.get(nbt.data.recipe).multExempt) {
+      if (outputMult > 1 && !harvestRecipe.multExempt) {
         harvestOutput.count = harvestOutput.count * outputMult;
       }
       if (!artisanHopper) {
@@ -232,7 +271,7 @@ global.artisanHarvest = (
         hopperOutputs.push(harvestOutput);
       }
       nbt.merge({ data: { stage: 0, recipe: "", originalInputs: [] } });
-      if (nbt.data.quality) {
+      if (global.nbtNum(nbt.data.quality) > 0) {
         nbt.merge({ data: { stage: 0, recipe: "", quality: 0 } });
       }
       global.setBlockEntityData(block, nbt)
@@ -260,7 +299,7 @@ global.artisanInsert = (
 ) => {
   let newProperties = block.getProperties();
   let nbt = block.getEntityData();
-  let stage = nbt.data.stage;
+  let stage = global.nbtNum(nbt.data.stage);
   let itemQuality;
   let hasQuality = nbt.data.quality !== undefined || ['society:cheese_press', 'society:mayonnaise_machine', 'society:fish_smoker', 'society:seed_maker'].includes(block.id);
   let useCount =
@@ -271,8 +310,8 @@ global.artisanInsert = (
   if (
     multipleInputs &&
     recipe &&
-    nbt.data.recipe !== "" &&
-    nbt.data.recipe !== item.id
+    global.nbtStr(nbt.data.recipe) !== "" &&
+    global.nbtStr(nbt.data.recipe) !== `${item.id}`
   )
     return;
   if (
@@ -306,7 +345,7 @@ global.artisanInsert = (
     } else if (itemQuality) {
       nbt.merge({ data: { quality: Number(itemQuality) } });
     }
-    if (!multipleInputs || nbt.data.stage === stageCount) {
+    if (!multipleInputs || global.nbtNum(nbt.data.stage) === stageCount) {
       newProperties.working = true;
       nbt.merge({ data: { stage: 0 } });
     }
@@ -365,7 +404,7 @@ global.handleBERightClick = (
 
 global.setDebt = (server, UUID, amount) => {
   for (let index = 0; index < server.persistentData.debts.length; index++) {
-    if (String(UUID) === String(server.persistentData.debts[index].uuid)) {
+    if (String(UUID) === global.nbtStr(server.persistentData.debts[index].uuid)) {
       server.persistentData.debts[index].amount = amount;
       break;
     }
@@ -417,8 +456,8 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
   let hasError = false;
   if (attachedBlock.hasTag("society:tappable_blocks")) {
     if (
-      !nbt.data.recipe ||
-      !nbt.data.recipe.equals(attachedBlock.id) ||
+      global.nbtStr(nbt.data.recipe) === "" ||
+      global.nbtStr(nbt.data.recipe) !== `${attachedBlock.id}` ||
       global.hasMultipleTappers(level, block)
     ) {
       hasError = true;
@@ -584,7 +623,7 @@ global.hasMultipleTappers = (level, block) => {
 global.handleBERandomTick = (tickEvent, rndFunction, stageCount) => {
   const { block } = tickEvent;
   const { x, y, z } = block;
-  const stage = block.getEntityData().data.stage;
+  const stage = global.nbtNum(block.getEntityData().data.stage);
   const mature = stage >= stageCount - 1;
   let newProperties = block.getProperties();
   if (block.properties.get("working").toLowerCase() === "true" && rndFunction) {
@@ -623,10 +662,10 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
     global.convertFromLegacy(recipes, level, block);
     let nbt = block.getEntityData();
     let mature;
-    let recipe = recipes && recipes.get(nbt.data.recipe);
+    let recipe = recipes && recipes.get(global.nbtStr(nbt.data.recipe));
     let resolvedStage = (recipe && recipe.time) || stageCount;
 
-    const nbtStage = nbt.data.stage;
+    const nbtStage = global.nbtNum(nbt.data.stage);
     if (halveTime && blockProperties.get("upgraded").toLowerCase() == "true") {
       mature = Number(nbtStage) >= resolvedStage / 2 - 1;
     } else {

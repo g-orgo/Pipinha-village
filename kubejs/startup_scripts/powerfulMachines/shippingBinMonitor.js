@@ -24,7 +24,7 @@ global.runShippingBinMonitor = (entity) => {
       ).calculatedValue
     );
     let nbt = block.getEntityData();
-    if (nbt.data.value !== calculationResults) {
+    if (global.nbtNum(nbt.data.value) !== calculationResults) {
       nbt.merge({ data: { value: calculationResults } });
       global.setBlockEntityData(block, nbt)
       global.clearOldTextDisplay(block, level, "shipping_bin_monitor");

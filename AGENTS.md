@@ -4,6 +4,12 @@ Modpack de fazenda, comércio e vida na cidade, baseado no Society: Sunlit Valle
 Está em migração: o plano e as fases estão em `docs/migracao/PLANO.md`.
 A instância 1.20.1 de origem fica em `../Society: Sunlit Valley` e é só leitura para este projeto.
 
+# REGRA OBRIGATÓRIA: LER A DOCUMENTAÇÃO ANTES DE AGIR
+
+- Antes de qualquer tarefa, ler `docs/context/INDEX.md` e as docs que ele aponta para o assunto.
+  Mexer em `kubejs/` sempre exige ler `docs/context/erros-comuns.md` e `docs/context/conventions.md`.
+- Erro novo que custou uma rodada de teste vai para `docs/context/erros-comuns.md` na mesma entrega.
+
 # REGRA OBRIGATÓRIA: TESTES NO JOGO SÃO DO DONO
 
 - O agente NÃO roda o jogo nem cliente headless. Pesa demais no PC do dono.

@@ -78,9 +78,9 @@ PlayerEvents.tick((e) => {
     if (
       player.stages.has("mining_mastery") &&
       player.persistentData.days &&
-      player.persistentData.days.moonStatueDay
+      player.persistentData.days.moonStatueDay !== undefined
     ) {
-      let dayData = player.persistentData.days.moonStatueDay;
+      let dayData = global.nbtNum(player.persistentData.days.moonStatueDay);
       if (dayData != -1 && global.getDay(level) != dayData) {
         statueBuffs.forEach((buff) => {
           player.stages.remove(buff);

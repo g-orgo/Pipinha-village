@@ -401,7 +401,7 @@ StartupEvents.registry("block", (event) => {
       const { item, block, hand, player, level, server } = click;
       const { x, y, z } = block;
       let nbt = block.getEntityData();
-      const prizeNumber = nbt.data.prize;
+      const prizeNumber = global.nbtNum(nbt.data.prize);
       const prizeOutput =
         global.prizeMachineRewards[Number(prizeNumber)].possibleOutputs;
       const prizeHint = global.prizeMachineRewards[Number(prizeNumber)].hint;
@@ -430,7 +430,7 @@ StartupEvents.registry("block", (event) => {
             prize:
               Number(prizeNumber) === global.prizeMachineRewards.length - 1
                 ? 8
-                : (nbt.data.prize += 1),
+                : (nbt.data.prize = prizeNumber + 1),
           },
         });
         global.setBlockEntityData(block, nbt)

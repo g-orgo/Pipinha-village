@@ -41,7 +41,7 @@ global.handleAdditionalArtisanMachineOutputs = (
       if (upgraded && rnd10()) {
         let recipe = recipes.get(recipeId);
         if (!recipe) {
-          let legacyType = artisanMachine.getEntityData().data.type;
+          let legacyType = global.nbtNum(artisanMachine.getEntityData().data.type);
           if (legacyType > 0) {
             let legacyKey = Array.from(recipes.keys())[Number(legacyType) - 1];
             recipe = recipes.get(legacyKey);
@@ -253,7 +253,7 @@ global.getArtisanMachineData = (player, block, upgraded, stages) => {
         recipes: global.mushroomLogRecipes,
         stageCount: 1,
         soundType: "species:block.alphacene_moss.place",
-        outputMult: machineNbt && machineNbt.data && machineNbt.data.baseCount ? machineNbt.data.baseCount : 1,
+        outputMult: machineNbt && machineNbt.data && global.nbtNum(machineNbt.data.baseCount) > 0 ? global.nbtNum(machineNbt.data.baseCount) : 1,
       };
       break;
     case "society:charging_rod":
@@ -304,11 +304,11 @@ global.runArtisanHopper = (artisanHopper, artisanMachinePos, player, delay) => {
         global.convertFromLegacy(recipes, level, artisanMachine);
       }
       let refreshedNbt = artisanMachine.getEntityData();
-      let { stage, recipe } = refreshedNbt.data;
-      let currentStage = stage || 0;
-      let resolvedRecipeId = recipe;
+      // 1.21.1: NBT fields are Tag objects; read them through global.nbtStr/nbtNum.
+      let currentStage = global.nbtNum(refreshedNbt.data.stage);
+      let resolvedRecipeId = global.nbtStr(refreshedNbt.data.recipe);
       if (recipes && !recipes.has(resolvedRecipeId)) {
-        let legacyType = refreshedNbt.data.type;
+        let legacyType = global.nbtNum(refreshedNbt.data.type);
         if (legacyType > 0) {
           let legacyKey = Array.from(recipes.keys())[Number(legacyType) - 1];
           if (legacyKey) resolvedRecipeId = legacyKey;

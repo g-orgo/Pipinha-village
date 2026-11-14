@@ -31,7 +31,7 @@ ItemEvents.entityInteracted((e) => {
     let eggChance = chance <= 0 ? "0%" : `${Math.min(100, Math.floor((Math.min(1, chance) / 4) * 100))}%`;
     chance = chance <= 0 ? "0%" : `${Math.min(100, Math.floor(chance * 100))}%`;
     let product = target.type.toString().equals("longwings:butterfly") ? Text.translatable("item.society.butterfly_amber") : Text.translatable("item.society.moth_pollen");
-    let longWingNameMessage = `${Text.translatable(`item.longwings.${target.getNbt().Variant}`).toJson()}`;
+    let longWingNameMessage = `${Text.translatable(`item.longwings.${global.nbtStr(target.getNbt().Variant)}`).toJson()}`;
     let chanceMessage = `${Text.translatable("society.longwings.produce_chance", chance, product).toJson()}`;
     let eggChanceMessage = `${Text.translatable("society.longwings.produce_chance", eggChance, Text.translatable("item.society.caterpillar_eggs")).toJson()}`;
     let longwingCountMessage = `${Text.translatable("society.longwings.longwing_count", `${nearbyLongwings.length - 1}`).toJson()}`;

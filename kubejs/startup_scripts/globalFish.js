@@ -413,9 +413,9 @@ global.convertPondFromLegacy = (block) => {
   let nbt = block.getEntityData();
   let newRecipe;
   if (!nbt.data.contains("type")) return;
-  if (!String(nbt.data.type).includes(":")) {
+  if (!global.nbtStr(nbt.data.type).includes(":")) {
     newRecipe = Array.from(global.fishPondDefinitions.keys())[
-      Number(nbt.data.type) - 1
+      global.nbtNum(nbt.data.type) - 1
     ];
     if (newRecipe) {
       nbt.merge({ data: { type: newRecipe } });
@@ -434,7 +434,7 @@ global.handleFishPondTick = (tickEvent) => {
   let nbt = block.getEntityData();
   if (
     blockProperties.get("mature") === "true" &&
-    String(nbt.data.type).includes(":")
+    global.nbtStr(nbt.data.type).includes(":")
   )
     return;
   const { facing, valid, mature, upgraded, quest } = global.getPondProperties(

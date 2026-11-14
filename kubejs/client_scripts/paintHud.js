@@ -13,10 +13,24 @@ const paintElements = {};
 const paintItemStacks = {};
 let paintFailed = false;
 let paintLoggedParseError = false;
+// Debug logging for the animal HUD; switch to false once confirmed in game.
+const PAINT_DEBUG = true;
+let paintLoggedDraw = false;
+let paintSelfTested = false;
+// Debug output must never break the HUD: any error inside a debug message is logged and ignored.
+const paintDebug = (message) => {
+  try {
+    console.info(`[paintHud] ${message()}`);
+  } catch (err) {
+    console.info(`[paintHud] debug message failed: ${err}`);
+  }
+};
 
 const paintClear = () => {
   Object.keys(paintElements).forEach((id) => delete paintElements[id]);
   paintFailed = false; // a new session gets a fresh try after a render error
+  paintLoggedDraw = false;
+  Object.keys(paintTextCache).forEach((key) => delete paintTextCache[key]);
 };
 
 // Accepts "#RRGGBB" and "#AARRGGBB". Malformed values (e.g. "#FFFFFFF") use the
@@ -30,35 +44,48 @@ const paintColor = (value, fallback) => {
   return ((alpha << 24) | rgb) | 0;
 };
 
-// Plain strings become literal components (legacy § codes still apply); strings that look like Text JSON are
-// parsed into a component with the current registry access.
+// Plain strings become literal components (legacy § codes still apply); strings that look
+// like Text JSON become components. Results are cached per string, since this runs every frame.
+// Every local is declared at the top of its function: Rhino 2101 fails on declarations
+// inside nested blocks ("redeclaration of var").
+const paintTextCache = {};
+const paintLogParseError = (how, err) => {
+  if (paintLoggedParseError) return;
+  paintLoggedParseError = true;
+  console.error(`[paintHud] text JSON not parsed by ${how}: ${err}`);
+};
 const paintText = (text, mc) => {
-  if (text === undefined || text === null) return null;
-  // Rhino 2101 fails on const declared inside nested blocks ("redeclaration of var"),
-  // so every local in this file is declared at the top of its function.
-  const str = String(text);
-  const trimmed = str.trim();
+  let str = null;
+  let trimmed = null;
   let component = null;
+  if (text === undefined || text === null) return null;
+  str = String(text);
+  if (paintTextCache[str] !== undefined) return paintTextCache[str];
+  trimmed = str.trim();
   if (trimmed.charAt(0) === "{" || trimmed.charAt(0) === "[") {
+    // 1) KubeJS's own text wrapper: no Java overload choice involved.
     try {
-      if (mc.level) {
-        // Explicit overload: fromJson(String, Provider) and fromJson(JsonElement, Provider)
-        // are equally good for a JS string in Rhino, which throws "ambiguous".
-        component = $PaintComponentSerializer["fromJson(java.lang.String,net.minecraft.core.HolderLookup$Provider)"](
-          trimmed, mc.level.registryAccess());
-        if (component) return component;
-      }
+      component = Text.of(JSON.parse(trimmed));
     } catch (err) {
       component = null;
-      if (!paintLoggedParseError) {
-        paintLoggedParseError = true;
-        console.error(`[paintHud] text JSON not parsed, drawn as plain text: ${err}`);
+      paintLogParseError("Text.of", err);
+    }
+    // 2) Vanilla serializer, with the overload picked by explicit signature.
+    if (!component && mc.level) {
+      try {
+        component = $PaintComponentSerializer["fromJson(java.lang.String,net.minecraft.core.HolderLookup$Provider)"](
+          trimmed, mc.level.registryAccess());
+      } catch (err) {
+        component = null;
+        paintLogParseError("Component.Serializer.fromJson", err);
       }
     }
   }
   // Always hand a Component to Font/GuiGraphics: a JS string makes the overload
   // choice (String, Component, FormattedCharSequence) ambiguous in Rhino.
-  return $PaintComponent.literal(str);
+  if (!component) component = $PaintComponent.literal(str);
+  paintTextCache[str] = component;
+  return component;
 };
 
 const paintItemStack = (id) => {
@@ -138,9 +165,17 @@ const paintRenderFrame = (e) => {
   const mc = $PaintMinecraft.getInstance();
   // Elements are cleared on LoggingIn/LoggingOut (below), so no per-level tracking here.
   if (!mc.level || mc.player === null) return;
+  if (PAINT_DEBUG && !paintSelfTested) {
+    paintSelfTested = true;
+    paintDebug(() => `self-test: JSON text -> ${paintText('{"text":"Teste","bold":false}', mc)}`);
+  }
 
   const list = Object.keys(paintElements).map((id) => paintElements[id]);
   if (list.length === 0) return;
+  if (PAINT_DEBUG && !paintLoggedDraw && paintElements.animalName) {
+    paintLoggedDraw = true;
+    paintDebug(() => `drawing ${list.length} elements; name text -> ${paintText(paintElements.animalName.text, mc)}`);
+  }
 
   const g = e.getGuiGraphics();
   const screenW = g.guiWidth();
@@ -172,6 +207,7 @@ NetworkEvents.dataReceived("pipinha.paint", (event) => {
     return;
   }
   if (!data) return;
+  if (PAINT_DEBUG && data.animalName && data.animalName.text) paintDebug(() => `received animal hud: ${Object.keys(data).join(",")}`);
   Object.keys(data).forEach((id) => {
     const spec = data[id];
     if (!spec) return;

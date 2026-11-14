@@ -3,10 +3,12 @@ console.info("[SOCIETY] checkSkullCavernLogin.js loaded");
 PlayerEvents.loggedIn((e) => {
   const { player, level, server } = e;
   if (level.dimension === "society:skull_cavern") {
-    const chunkDay =
-      level.persistentData.chunkParityMap[level.getChunkAt(player.getPos()).pos.toString()].day;
+    const chunkDay = global.nbtNum(
+      level.persistentData.chunkParityMap[level.getChunkAt(player.getPos()).pos.toString()].day
+    );
+    const enterDayTag = player.persistentData.skullCavernEnterDay;
 
-    if (Number(chunkDay) > Number(player.persistentData.skullCavernEnterDay)) {
+    if (enterDayTag !== undefined && chunkDay > global.nbtNum(enterDayTag)) {
       player.persistentData.skullCavernEnterDay = -1;
       global.teleportHome(player, server, player.level);
       server.runCommandSilent(

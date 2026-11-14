@@ -217,7 +217,7 @@ StartupEvents.registry("block", (event) => {
       if (
         !player.stages.has("slouching_towards_artistry") &&
         block.properties.get("mature") === "true" &&
-        Number(nbt.data.stage) > 5 &&
+        global.nbtNum(nbt.data.stage) > 5 &&
         Math.random() <= 0.01
       ) {
         block.popItemFromFace(

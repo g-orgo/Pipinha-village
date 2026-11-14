@@ -41,7 +41,7 @@ global.cacheOwner = (entity, stagesToFind, attributesToFind) => {
   const { level, block } = entity;
   let binPlayer = null;
   level.getServer().players.forEach((p) => {
-    if (p.getUuid().toString() === block.getEntityData().data.owner) {
+    if (p.getUuid().toString() === global.nbtStr(block.getEntityData().data.owner)) {
       binPlayer = p; 
     }
   });

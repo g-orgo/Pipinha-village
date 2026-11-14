@@ -72,7 +72,7 @@ global.getQuestItems = (block, level) => {
   let requestedItems = [];
   const { x, y, z } = block;
   let attachedPlayer;
-  const ownerUuid = block.getEntityData().data.owner;
+  const ownerUuid = global.nbtStr(block.getEntityData().data.owner);
 
   if (ownerUuid === "-1") return;
 
@@ -148,7 +148,7 @@ global.runFishPondQuestManager = (entity) => {
   if (currentMorningModulo < questManagerProgTime ||
     currentMorningModulo >= questManagerProgTime + artMachineTickRate) return;
 
-  const ownerUuid = block.getEntityData().data.owner;
+  const ownerUuid = global.nbtStr(block.getEntityData().data.owner);
 
   if (ownerUuid === "-1") return;
 

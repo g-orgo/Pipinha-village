@@ -24,11 +24,11 @@ global.runtime["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) 
   if (!global.plushies.includes(accessor.getBlock().id)) return;
   const nbt = accessor.getServerData();
 
-  if (nbt.type.equals("")) return;
-  const type = nbt.type;
+  const type = global.nbtStr(nbt.type);
+  if (type === "") return;
   let typeData = global.plushieTraits[type];
-  const affection = Number(nbt.affection);
-  const quality = Number(nbt.quality);
+  const affection = global.nbtNum(nbt.affection);
+  const quality = global.nbtNum(nbt.quality);
   let blockName = accessor.getBlock().getDescriptionId();
   tooltip.clear();
   tooltip.add(Component.translatable(blockName));
@@ -38,8 +38,9 @@ global.runtime["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) 
       typeData.color,
       `society.item.plushie.${typeData.trait}`
     ));
-  if (nbt.animal) {
-    tooltip.add(global.getTranslatedEntityName(String(nbt.animal)));
+  const animal = global.nbtStr(nbt.animal);
+  if (animal) {
+    tooltip.add(global.getTranslatedEntityName(animal));
   } else {
     tooltip.add(
       `§c${affection > 0 ? `❤`.repeat(affection) : ""}§8${
@@ -64,13 +65,15 @@ global.runtime["JadeFishPondClientCallback"] = (tooltip, accessor, pluginConfig)
   const properties = accessor.getBlockState();
   const nbt = accessor.getServerData();
 
-  if (nbt.type.equals("")) return;
-  let fish = nbt.type;
+  const fish = global.nbtStr(nbt.type);
+  if (fish === "") return;
   const upgraded = properties.getValue(properties.getBlock().getStateDefinition().getProperty("upgraded"));
   let fishIcons = "";
 
-  for (let index = 0; index < nbt.max_population; index++) {
-    if (index < nbt.population) fishIcons += "§3⏳§r";
+  const maxPopulation = global.nbtNum(nbt.max_population);
+  const population = global.nbtNum(nbt.population);
+  for (let index = 0; index < maxPopulation; index++) {
+    if (index < population) fishIcons += "§3⏳§r";
     else fishIcons += "§7⏳§r";
   }
   let blockName = accessor.getBlock().getDescriptionId();
@@ -111,14 +114,16 @@ global.runtime["JadeArtisanMachineClientCallback"] = (
   if (!machine) return;
   const isChargingRod = accessor.getBlock().id === "society:charging_rod";
   const working = properties.getValue(properties.getBlock().getStateDefinition().getProperty("working"));
-  if (!working || (nbt.recipe.equals("") && !isChargingRod)) return;
+  // 1.21.1: NBT fields are Tag objects; read them through global.nbtStr/nbtNum.
+  if (!working || (global.nbtStr(nbt.recipe) === "" && !isChargingRod)) return;
 
   const recipe = isChargingRod
     ? {
         output: ["society:battery"],
       }
-    : machine.recipes.get(nbt.recipe);
-  const stage = nbt.stage;
+    : machine.recipes.get(global.nbtStr(nbt.recipe));
+  if (!recipe) return;
+  const stage = global.nbtNum(nbt.stage);
   const upgraded = properties.getValue(properties.getBlock().getStateDefinition().getProperty("upgraded"));
   let duration = recipe.time || machine.stageCount;
   if (accessor.getBlock().id == "society:aging_cask" && upgraded) {

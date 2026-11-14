@@ -54,7 +54,7 @@ global.renderUiText = (player, server, messages, clearedMessages) => {
     global.paintUi(player, messages);
     player.persistentData.ageLastShownMessage = player.age;
     server.scheduleInTicks(100, () => {
-      if (player.age - player.persistentData.get("ageLastShownMessage") >= 100)
+      if (player.age - global.nbtNum(player.persistentData.get("ageLastShownMessage")) >= 100)
         clearUiPaint(player, clearedMessages);
     });
   });
@@ -284,8 +284,8 @@ global.handleFee = (server, player, reason) => {
     let foundIndex = -1;
     if (!server.persistentData.debts) server.persistentData.debts = [];
     for (let index = 0; index < server.persistentData.debts.length; index++) {
-      if (String(UUID) === String(server.persistentData.debts[index].uuid)) {
-        currentDebt = Number(server.persistentData.debts[index].amount);
+      if (String(UUID) === global.nbtStr(server.persistentData.debts[index].uuid)) {
+        currentDebt = global.nbtNum(server.persistentData.debts[index].amount);
         server.persistentData.debts[index].amount = currentDebt + amountToDeduct;
         foundIndex = index;
         break;
@@ -295,7 +295,7 @@ global.handleFee = (server, player, reason) => {
       server.persistentData.debts.push({ uuid: UUID.toString(), amount: amountToDeduct });
     }
     let formattedAmountToDeduct = global.formatPrice(amountToDeduct);
-    let formattedCurrentDebt = global.formatPrice(!currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount);
+    let formattedCurrentDebt = global.formatPrice(!currentDebt ? amountToDeduct : global.nbtNum(server.persistentData.debts[foundIndex].amount));
     let noteTitle = global.translatableWithFallback("society.hospital_receipt.title", "Hospital Receipt").getString();
     let noteAuthor = global.translatableWithFallback("society.hospital_receipt.author", "Pipinha's Village Hospital").getString();
     let noteText = Text.translatable("society.hospital_receipt.debt", `${formattedAmountToDeduct}`, `${formattedCurrentDebt}`).toJson();

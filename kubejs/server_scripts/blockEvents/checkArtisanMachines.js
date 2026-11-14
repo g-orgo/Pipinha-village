@@ -77,12 +77,13 @@ const idMap = new Map([
 
 const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, maxInput) => {
   const { player, block, item, server } = clickEvent;
-  const blockStage = nbt.data.stage;
+  // 1.21.1: NBT fields are Tag objects; read them through global.nbtStr/nbtNum.
+  const blockStage = global.nbtNum(nbt.data.stage);
   const status = maxInput !== -1 
     ? Text.translatable("society.working_block_entity.more_input")
     : Text.translatable("society.working_block_entity.making");
   let primaryOutput;
-  let recipe = nbt.data.recipe;
+  let recipe = global.nbtStr(nbt.data.recipe);
   let id;
   let duration;
   const isChargingRod = machineId.equals("society:charging_rod");
@@ -91,10 +92,11 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
     id = "society:battery";
     duration = stageCount;
   } else {
+    if (!recipes.get(recipe)) return;
     id = String(Item.of(recipes.get(recipe).output[0]).id);
     primaryOutput = idMap.get(id);
     duration = recipes.get(recipe).time || stageCount;
-    if (recipe === item) return;
+    if (recipe === `${item.id}`) return;
   }
   if (
     machineId == "society:aging_cask" &&
@@ -211,7 +213,7 @@ BlockEvents.rightClicked(
     })[0];
     if (block.properties.get("mature").toLowerCase() === "false") {
       let nbt = block.getEntityData();
-      if (nbt.data.type == 0) return;
+      if (nbt.data.contains("type") && global.nbtNum(nbt.data.type) == 0) return;
       sendProgressMessage(
         e,
         machine.recipes,

@@ -13,7 +13,7 @@ ItemEvents.rightClicked("society:overflow_token", (e) => {
     if (overflowList[playerUUID] == null) {
       overflowList[playerUUID] = 1;
     } else {
-      overflowList[playerUUID] += 1;
+      overflowList[playerUUID] = global.nbtNum(overflowList[playerUUID]) + 1;
     }
     server.persistentData.overflowList = overflowList;
     if (!player.isCreative()) item.shrink(1);

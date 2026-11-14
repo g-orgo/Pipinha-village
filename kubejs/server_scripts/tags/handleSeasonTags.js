@@ -510,3 +510,66 @@ ServerEvents.tags("item", (e) => {
     });
   });
 });
+
+// Serene Seasons tags that mod jars changed in the 1.21.1 port. They are fixed here so each crop
+// grows in the same seasons as in the 1.20.1 pack. See docs/context/decisions.md (2026-11-14).
+// Hearth & Harvest 1.4 ships its own season tags; in the pack its plants grow all year, as with
+// the 1.20.1 jar (no tags), and the sale bonus comes from bonusSeasonCrops.
+const jarSeasonStrip = {
+  block: [
+    "hearthandharvest:blueberry_bush",
+    "hearthandharvest:raspberry_bush",
+    "hearthandharvest:crop_trellis",
+    "hearthandharvest:cotton",
+    "hearthandharvest:peanuts",
+    "hearthandharvest:corn_stalk",
+  ],
+  item: [
+    "hearthandharvest:blueberries",
+    "hearthandharvest:raspberry",
+    "hearthandharvest:peanut",
+    "hearthandharvest:red_grapes",
+    "hearthandharvest:green_grapes",
+    "hearthandharvest:hops",
+    "hearthandharvest:cotton_seeds",
+    "hearthandharvest:corn_kernels",
+  ],
+};
+
+// Youkai's Homecoming 4.x only generates its season tags in datagen and the jar ships none,
+// so its crops grew all year. These are the values of the 1.20.1 jar.
+const jarSeasonRestore = {
+  block: {
+    spring: ["youkaishomecoming:tea", "youkaishomecoming:cucumber"],
+    summer: ["youkaishomecoming:coffea", "youkaishomecoming:red_grape"],
+    autumn: ["youkaishomecoming:soybean"],
+    winter: ["youkaishomecoming:redbean"],
+  },
+  item: {
+    spring: ["youkaishomecoming:tea_seeds", "youkaishomecoming:cucumber_seeds"],
+    summer: [
+      "youkaishomecoming:green_coffee_bean",
+      "youkaishomecoming:black_grape_seeds",
+      "youkaishomecoming:white_grape_seeds",
+      "youkaishomecoming:red_grape_seeds",
+    ],
+    autumn: ["youkaishomecoming:soybean"],
+    winter: ["youkaishomecoming:redbean"],
+  },
+};
+
+const applyJarSeasonFixes = (e, kind) => {
+  jarSeasonStrip[kind].forEach((id) => {
+    ["spring", "summer", "autumn", "winter"].forEach((season) => {
+      e.remove(`sereneseasons:${season}_crops`, id);
+    });
+  });
+  Object.keys(jarSeasonRestore[kind]).forEach((season) => {
+    jarSeasonRestore[kind][season].forEach((id) => {
+      e.add(`sereneseasons:${season}_crops`, id);
+    });
+  });
+};
+
+ServerEvents.tags("block", (e) => applyJarSeasonFixes(e, "block"));
+ServerEvents.tags("item", (e) => applyJarSeasonFixes(e, "item"));

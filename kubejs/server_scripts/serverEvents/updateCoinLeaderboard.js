@@ -3,8 +3,8 @@ console.info("[SOCIETY] updateCoinLeaderboard.js loaded");
 const getTeamName = (server, uuid) => {
   let cardsList = server.persistentData.cardsList ?? {};
   let playerList = server.persistentData.playerList ?? {};
-  if (playerList[uuid]) return playerList[uuid];
-  let ownerUuid = cardsList[uuid] ? cardsList[uuid][0] : null;
+  if (playerList[uuid]) return global.nbtStr(playerList[uuid]);
+  let ownerUuid = cardsList[uuid] ? global.nbtStr(cardsList[uuid][0]) : null;
   return (ownerUuid ? playerList[ownerUuid] : null) ?? uuid;
 }
 
@@ -20,7 +20,7 @@ const getLeaderboardRanking = (server) => {
   let leaderboardMap = new Map();
   global.GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
     let accountUUID = String(playerUUID);
-    let cardID = cardsList[accountUUID];
+    let cardID = cardsList[accountUUID] === undefined ? null : global.nbtStr(cardsList[accountUUID]);
     let bankBalance = bankAccount.getBalance();
 
     if (!playerList[playerUUID]) { // blaze banker, ignore
@@ -31,7 +31,7 @@ const getLeaderboardRanking = (server) => {
       if (bankAccount != null && !leaderboardMap.has(accountUUID)) bankBalance += bankAccount.getBalance();
     }
     if (overflowList != null && overflowList[playerUUID] != null) {
-      bankBalance += overflowList[playerUUID] * 1006632960;
+      bankBalance += global.nbtNum(overflowList[playerUUID]) * 1006632960;
     }
     if (leaderboardMap.has(accountUUID)) {
       leaderboardMap.set(accountUUID, leaderboardMap.get(accountUUID) + bankBalance);

@@ -39,9 +39,6 @@ const createPool = (entries, clear, rain, night) => {
   return newPool;
 };
 
-const ConstantValue = Java.loadClass(
-  "net.minecraft.world.level.storage.loot.providers.number.ConstantValue"
-);
 const weatherCheck = (weather) =>
   Object.assign({ condition: "minecraft:weather_check" }, weather);
 const biomeLocation = (tag) => ({
@@ -57,7 +54,7 @@ const notInBiomes = (tags) => ({
 });
 const addFishPool = (table, entries, mysticalOcean) =>
   table.pool((p) => {
-    p.rolls(ConstantValue.exactly(1));
+    p.rolls(1);
     convertToLootEntry(entries, mysticalOcean).forEach((entry) =>
       p.addEntry(entry)
     );
@@ -84,8 +81,9 @@ const createWeatherLootTable = (
     e
       .addTableModifier("minecraft:gameplay/fishing")
       .matchPlayerCustom(playerCheck)
-      .matchAnyOf((c) => {
-        ocean.forEach((tag) => c.matchBiome(tag));
+      .matchCustomCondition({
+        condition: "minecraft:any_of",
+        terms: ocean.map((tag) => biomeLocation(tag)),
       })
       .matchCustomCondition(weatherCondition(weather))
       .matchTime(24000, timeMin, timeMax),
@@ -97,8 +95,9 @@ const createWeatherLootTable = (
     e
       .addTableModifier("minecraft:gameplay/fishing")
       .matchPlayerCustom(playerCheck)
-      .matchAnyOf((c) => {
-        river.forEach((tag) => c.matchBiome(tag));
+      .matchCustomCondition({
+        condition: "minecraft:any_of",
+        terms: river.map((tag) => biomeLocation(tag)),
       })
       .matchCustomCondition(weatherCondition(weather))
       .matchTime(24000, timeMin, timeMax),

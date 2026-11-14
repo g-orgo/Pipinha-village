@@ -4,7 +4,9 @@
   "texture": "dialog:textures/portraits/carpenter",
   "hidden_from_selector": true,
   "display_type": "image",
-  "jei_catalyst": "society:greenhouse_building_supplies",
+  "jei_catalyst": {
+    "id": "society:greenhouse_building_supplies"
+  },
   "trades": [
     {
       "offer": {

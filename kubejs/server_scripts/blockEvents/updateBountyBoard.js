@@ -14,12 +14,12 @@ BlockEvents.rightClicked("bountiful:bountyboard", (e) => {
   const decrees = inv.Items;
   let hasChanged = false;
   for (let index = 0; index < decrees.length; index++) {
-    const components = decrees[index].components;
+    let components = decrees[index].components;
     if (!components || components[DECREE_DATA_KEY] === undefined || components[DECREE_DATA_KEY] === null) {
       continue;
     }
-    const data = String(components[DECREE_DATA_KEY]);
-    const isSeasonal = seasonalBounties.some((season) => data.includes(season));
+    let data = String(components[DECREE_DATA_KEY]);
+    let isSeasonal = seasonalBounties.some((season) => data.includes(season));
     if (isSeasonal) {
       decrees[index].components[DECREE_DATA_KEY] = {
         ids: [global.getSeasonFromLevel(level)],

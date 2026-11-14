@@ -17,7 +17,7 @@ const profLootParams = Java.loadClass("net.minecraft.world.level.storage.loot.pa
 const profCropBlock = Java.loadClass("net.minecraft.world.level.block.CropBlock");
 
 // Crop is fully grown: CropBlock.isMaxAge for crops, otherwise the "age" property at its maximum.
-const isCropMaxGrown = (state) => {
+const isProfessionCropMaxGrown = (state) => {
   const block = state.block;
   if (block instanceof profCropBlock) return block.isMaxAge(state);
   const ageProp = block.getStateDefinition().getProperty("age");
@@ -33,11 +33,12 @@ const profAddLootId = (loot, id, count) => {
 
 LootJS.modifiers((e) => {
   e.addBlockModifier(global.cropList).customAction((context, loot) => specialtyLootPerk("context", () => {
-    const player = context.getPlayerOrNull();
-    if (!player || player.isFake() || global.specialtyTier(player, "farming") === 0) return;
+    // 1.21 LootContext has no getPlayerOrNull: the breaking entity is THIS_ENTITY.
+    const player = context.getParamOrNull(profLootParams.THIS_ENTITY);
+    if (!player || !player.isPlayer() || player.isFake() || global.specialtyTier(player, "farming") === 0) return;
 
     const state = context.getParamOrNull(profLootParams.BLOCK_STATE);
-    if (!state || !isCropMaxGrown(state)) return;
+    if (!state || !isProfessionCropMaxGrown(state)) return;
     const crop = state.block;
     const longCycle = crop instanceof profCropBlock && crop.getMaxAge() >= 7;
     const tier = global.specialtyTier(player, "farming");

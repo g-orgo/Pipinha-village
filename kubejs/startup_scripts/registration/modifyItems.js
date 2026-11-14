@@ -27,9 +27,9 @@ ItemEvents.modification((event) => {
     if (tool == null) return;
     const rules = new ArrayList();
     for (let i = 0; i < tool.rules().size(); i++) {
-      const rule = tool.rules().get(i);
-      const speed = rule.speed();
-      const newSpeed = speed.isPresent()
+      let rule = tool.rules().get(i);
+      let speed = rule.speed();
+      let newSpeed = speed.isPresent()
         ? JavaOptional.of(JavaFloat.valueOf(String(fn(speed.get()))))
         : speed;
       rules.add(new ToolRule(rule.blocks(), newSpeed, rule.correctForDrops()));
@@ -42,10 +42,10 @@ ItemEvents.modification((event) => {
     const entries = item.getAttributeModifiers().modifiers();
     const newEntries = new ArrayList();
     for (let i = 0; i < entries.size(); i++) {
-      const entry = entries.get(i);
+      let entry = entries.get(i);
       if (entry.attribute().equals(attribute)) {
-        const old = entry.modifier();
-        const modifier = new AttributeModifier(old.id(), fn(old.amount()), old.operation());
+        let old = entry.modifier();
+        let modifier = new AttributeModifier(old.id(), fn(old.amount()), old.operation());
         newEntries.add(new AttributeEntry(entry.attribute(), modifier, entry.slot()));
       } else {
         newEntries.add(entry);

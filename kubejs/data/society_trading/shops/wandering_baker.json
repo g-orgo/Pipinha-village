@@ -1,4 +1,9 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
   "shop_id": "wandering_baker",
   "name": "shop.society_trading.wandering_baker",
   "texture": "bakery:textures/block/baker_station_1",

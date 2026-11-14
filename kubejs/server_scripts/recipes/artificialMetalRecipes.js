@@ -13,8 +13,8 @@ const hasArtificialInput = (grid, specs) =>
   specs.some((spec) => {
     const found = grid.findAll(Ingredient.of(spec));
     for (let i = 0; i < found.size(); i++) {
-      const stack = found.get(i);
-      const data = stack.customData;
+      let stack = found.get(i);
+      let data = stack.customData;
       if (data && String(data).indexOf("SunlitArtificial") >= 0) return true;
     }
     return false;

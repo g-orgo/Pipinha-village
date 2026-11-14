@@ -76,7 +76,7 @@ global.getQuestItems = (block, level) => {
 
   if (ownerUuid === "-1") return;
 
-  for (const p of level.getServer().players) {
+  for (let p of level.getServer().players) {
     if (p.getUuid().toString() === ownerUuid) {
       attachedPlayer = p;
       break;
@@ -152,7 +152,7 @@ global.runFishPondQuestManager = (entity) => {
 
   if (ownerUuid === "-1") return;
 
-  for (const p of level.getServer().players) {
+  for (let p of level.getServer().players) {
     if (p.getUuid().toString() === ownerUuid) {
       attachedPlayer = p;
       break;

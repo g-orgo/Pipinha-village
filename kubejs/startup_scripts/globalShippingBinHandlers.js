@@ -59,7 +59,7 @@ global.getSeasonalMultiplier = (item, season) => {
   if (season === "fall") season = "autumn";
   // A duplicate is worth its canonical item, so it also counts the canonical seasons
   const canonical = global.canonicalItems ? global.canonicalItems[String(item.id)] : undefined;
-  const canonicalItem = canonical ? Item.of(canonical) : undefined;
+  const canonicalItem = canonical && Item.exists(canonical) ? Item.of(canonical) : undefined;
   // society:<season>_bonus_crops gives the bonus without touching growth (see handleSeasonTags.js)
   const hasSeason = (stack, tagSeason) =>
     stack.hasTag(`sereneseasons:${tagSeason}_crops`) || stack.hasTag(`society:${tagSeason}_bonus_crops`);
@@ -248,9 +248,9 @@ global.processShippingBinInventory = (
       let trade = global.trades.get(String(slotItem.id));
       let quality = undefined;
       let doubleQuality = false;
-      const slotStack = inventory.getStackInSlot(i);
-      const slotNbt = slotStack.customData;
-      const variant = global.getCustomString(slotNbt, "variant");
+      let slotStack = inventory.getStackInSlot(i);
+      let slotNbt = slotStack.customData;
+      let variant = global.getCustomString(slotNbt, "variant");
       if (slotNbt && isLongwing && variant) {
         trade = global.trades.get(`longwings:variant/${variant}`);
       }
@@ -291,7 +291,7 @@ global.processShippingBinInventory = (
       if (isLongwing) {
         let size = 1.0;
         if (slotNbt.contains("nbt")) {
-          const storedSize = global.getCustomNumber(slotNbt, "size");
+          let storedSize = global.getCustomNumber(slotNbt, "size");
           if (storedSize) {
             size = storedSize;
           }

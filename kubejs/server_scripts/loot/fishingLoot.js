@@ -1,25 +1,25 @@
 console.info("[SOCIETY] fishingLoot.js loaded");
 
-const IntRange = Java.loadClass("net.minecraft.world.level.storage.loot.IntRange");
+
+// Vanilla any_of over biome location checks. LootJS 3.7 matchAnyOf only takes built
+// conditions, so the biome tags go through the vanilla condition codec instead.
+const anyBiome = (tags) => ({
+  condition: "minecraft:any_of",
+  terms: tags.map((tag) => ({ condition: "minecraft:location_check", predicate: { biomes: tag } })),
+});
 
 LootJS.modifiers((e) => {
   // Has any stage check is to prevent jellies from being fished up from Crab Traps. Yeah it's weird.
   e.addTableModifier(LootType.FISHING)
     .hasAnyStage("starting_items_4_1")
-    .matchAnyOf((c) => {
-      c.matchBiome("#minecraft:is_ocean");
-      c.matchBiome("#minecraft:is_beach");
-    })
+    .matchCustomCondition(anyBiome(["#minecraft:is_ocean", "#minecraft:is_beach"]))
     .pool((p) => {
       p.when((c) => c.randomChance(0.1));
       p.addEntry(LootEntry.of("society:ocean_jelly"));
     });
   e.addTableModifier(LootType.FISHING)
     .hasAnyStage("wooden_pollution")
-    .matchAnyOf((c) => {
-      c.matchBiome("#minecraft:is_ocean");
-      c.matchBiome("#minecraft:is_beach");
-    })
+    .matchCustomCondition(anyBiome(["#minecraft:is_ocean", "#minecraft:is_beach"]))
     .pool((p) => {
       p.when((c) => c.randomChance(0.1));
       p.addEntry(LootEntry.of("society:ocean_jelly"));
@@ -27,9 +27,7 @@ LootJS.modifiers((e) => {
 
   e.addTableModifier(LootType.FISHING)
     .hasAnyStage("starting_items_4_1")
-    .matchAnyOf((c) => {
-      c.matchBiome("#minecraft:is_river");
-    })
+    .matchCustomCondition(anyBiome(["#minecraft:is_river"]))
     .pool((p) => {
       p.when((c) => c.randomChance(0.1));
       p.addEntry(LootEntry.of("society:river_jelly"));
@@ -37,9 +35,7 @@ LootJS.modifiers((e) => {
 
   e.addTableModifier(LootType.FISHING)
     .hasAnyStage("wooden_pollution")
-    .matchAnyOf((c) => {
-      c.matchBiome("#minecraft:is_river");
-    })
+    .matchCustomCondition(anyBiome(["#minecraft:is_river"]))
     .pool((p) => {
       p.when((c) => c.randomChance(0.1));
       p.addEntry(LootEntry.of("society:river_jelly"));
@@ -64,7 +60,7 @@ LootJS.modifiers((e) => {
     .pool((p) => {
       p.when((c) => c.randomChance(0.5));
       p.addEntry(LootEntry.of("crabbersdelight:crab_trap_bait"));
-      p.apply((f) => f.limitCount(IntRange.range(4, 16)));
+      p.apply((f) => f.limitCount(4, 16));
     });
 
   e.addTableModifier(LootType.FISHING)
@@ -72,30 +68,25 @@ LootJS.modifiers((e) => {
     .pool((p) => {
       p.when((c) => c.randomChance(0.25));
       p.addEntry(LootEntry.of("crabbersdelight:deluxe_crab_trap_bait"));
-      p.apply((f) => f.limitCount(IntRange.range(1, 4)));
+      p.apply((f) => f.limitCount(1, 4));
     });
 
   e.addTableModifier(LootType.FISHING)
-    .matchAnyOf((c) => {
-      c.matchBiome("#minecraft:is_ocean");
-      c.matchBiome("#minecraft:is_beach");
-    })
+    .matchCustomCondition(anyBiome(["#minecraft:is_ocean", "#minecraft:is_beach"]))
     .matchPlayerCustom((p) => p.getMainHandItem().getComponents().toString().contains("aquaculture:redstone_hook"))
     .pool((p) => {
       p.when((c) => c.randomChance(0.1));
       p.addEntry(LootEntry.of("society:ocean_jelly"));
-      p.apply((f) => f.limitCount(IntRange.range(1, 2)));
+      p.apply((f) => f.limitCount(1, 2));
     });
 
   e.addTableModifier(LootType.FISHING)
-    .matchAnyOf((c) => {
-      c.matchBiome("#minecraft:is_river");
-    })
+    .matchCustomCondition(anyBiome(["#minecraft:is_river"]))
     .matchPlayerCustom((p) => p.getMainHandItem().getComponents().toString().contains("aquaculture:redstone_hook"))
     .pool((p) => {
       p.when((c) => c.randomChance(0.1));
       p.addEntry(LootEntry.of("society:river_jelly"));
-      p.apply((f) => f.limitCount(IntRange.range(1, 2)));
+      p.apply((f) => f.limitCount(1, 2));
     });
 
   e.addTableModifier(LootType.FISHING)
@@ -103,7 +94,7 @@ LootJS.modifiers((e) => {
     .pool((p) => {
       p.when((c) => c.randomChance(0.04));
       p.addEntry(LootEntry.of("society:relic_trove"));
-      p.apply((f) => f.limitCount(IntRange.range(1, 1)));
+      p.apply((f) => f.limitCount(1, 1));
     });
   e.addBlockModifier("aquaculture:neptunes_bounty")
     .hasAnyStage("prismatic_bounty")

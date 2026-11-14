@@ -1,8 +1,7 @@
 {
-	"item": "veggiesdelight:cauliflower_burger",
-	"category": "main",
-	"price": 339,
-	"product_type": "shippingbin:crop_sell_multiplier",
-	"flavors": [],
-	"themes": []
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ]
 }

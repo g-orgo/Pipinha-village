@@ -26,7 +26,7 @@ const sunlitHasBonusChest = (player) => {
     for (let dx = -20; dx <= 20; dx += 2) {
       for (let dz = -20; dz <= 20; dz += 2) {
         for (let dy = -6; dy <= 6; dy += 2) {
-          const st = level.getBlockState(p.offset(dx, dy, dz));
+          let st = level.getBlockState(p.offset(dx, dy, dz));
           if (!st.isAir() && /chest$/.test(String(st.getBlock().getDescriptionId()))) return true;
         }
       }

@@ -1,9 +1,6 @@
 console.info("[SOCIETY] miningLoot.js loaded");
 
 const Player = Java.loadClass("net.minecraft.world.entity.player.Player");
-const ConstantValue = Java.loadClass(
-  "net.minecraft.world.level.storage.loot.providers.number.ConstantValue"
-);
 
 const overworldOres = [
   "meadow:alpine_diamond_ore",
@@ -84,7 +81,7 @@ const lootPool = (p, entry, chance, playerOnly) => {
 
 // Single roll over [id, weight] pairs; ids that do not exist are skipped.
 const weightedPool = (p, entries) => {
-  p.rolls(ConstantValue.exactly(1));
+  p.rolls(1);
   entries.forEach(([id, weight]) => {
     if (Item.exists(id)) p.addEntry(LootEntry.of(id).withWeight(weight));
   });

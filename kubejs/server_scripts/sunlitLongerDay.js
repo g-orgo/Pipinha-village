@@ -18,7 +18,7 @@ console.info("[Sunlit] sunlitLongerDay.js loaded");
 
 const sunlitShouldHoldTime = (serverTick, timeOfDay) => {
   for (let i = 0; i < SUNLIT_TIME_PHASES.length; i++) {
-    const phase = SUNLIT_TIME_PHASES[i];
+    let phase = SUNLIT_TIME_PHASES[i];
     if (timeOfDay < phase.from || timeOfDay >= phase.until) continue;
     return (serverTick * phase.hold) % phase.cycle < phase.hold;
   }

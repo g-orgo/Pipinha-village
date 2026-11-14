@@ -7,12 +7,12 @@ const ClipboardType = Java.loadClass("com.simibubi.create.content.equipment.clip
 const ArrayList = Java.loadClass("java.util.ArrayList");
 const MinecraftComponent = Java.loadClass("net.minecraft.network.chat.Component");
 
-global.buildClipboardPages = (pages) => {
+const buildClipboardPages = (pages) => {
   const javaPages = new ArrayList();
-  for (const page of pages || []) {
-    const javaEntries = new ArrayList();
-    for (const entry of page.Entries) {
-      const text = JSON.parse(`${entry.Text}`).text;
+  for (let page of pages || []) {
+    let javaEntries = new ArrayList();
+    for (let entry of page.Entries) {
+      let text = JSON.parse(`${entry.Text}`).text;
       javaEntries.add(new ClipboardEntry(false, MinecraftComponent.literal(text)));
     }
     javaPages.add(javaEntries);
@@ -28,7 +28,7 @@ BlockEvents.rightClicked("society:fish_pond_manager", (e) => {
   const pages = global.getQuestItems(block, level);
   const content = new ClipboardContent(
     ClipboardType.WRITTEN,
-    global.buildClipboardPages(pages),
+    buildClipboardPages(pages),
     false
   );
   item.set(CreateDataComponents.CLIPBOARD_CONTENT, content);

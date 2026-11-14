@@ -350,3 +350,25 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   Farmer's Respite corrigido, extrusor blackstone/cobbled_limestone DESLIGADOS (decisão do dono: CEI ink e apple_juice
   não existem). Substitutos de aloe_gel/sap/hyper_experience/ovo do Species: sem equivalente, receitas puladas pelo guard.
   EM CURSO: validator. Depois: commit (commit-operator) + push na branch 1.21.1.
+- 20:5x FECHADO: validator 9/10 PASS (o 10º: usercache.json gravado pelo jogo às 20:10, sessão do dono); commit 892f28207
+  na branch 1.21.1, enviado. Próximo: dono abre o "Mapa solo" e o agente lê logs/kubejs/server.log e logs/latest.log.
+  Decisões do dono pendentes: nomes de itens com "Sunlit" (Sunlit Crystal/Flux/Singing Frog/Market); link da wiki;
+  substitutos do extrusor (blackstone, cobbled_limestone); vidro da estufa (minecraft:glass x24, reversível).
+- 22:xx RODADA 6 (log da sessão das 20:44). Causas raiz achadas e corrigidas:
+  1) Rhino 2101: `const` dentro de laço guarda o 1º valor (provado em harness). tools/kjsport/fix_loop_const.js
+     trocou 25 declarações por `let` em 9 arquivos; o guard de receitas (recipeIdsExist121) agora funciona.
+  2) Escopo compartilhado: `const` de topo com o mesmo nome em dois scripts derruba o 2º arquivo inteiro.
+     tools/kjsport/find_dup_toplevel.js: IntRange/ConstantValue/isCropMaxGrown resolvidos; seasonfish, generalLoot e
+     professionLoot voltam a carregar. Rescan: 0 colisões.
+  3) LootJS 3.7 (conferido no jar): matchAnyOf só aceita condições prontas -> biomas via JSON vanilla
+     (matchCustomCondition any_of/location_check); rolls/limitCount recebem número ou [min,max] (sem ConstantValue/IntRange);
+     contexto: getPosition(), THIS_ENTITY no lugar de getPlayerOrNull.
+  4) fishPondQuestManagerEvents: global em script de servidor -> const local.
+  5) Tooltip do cliente: canônico do suco de uva tinto vira vinery:red_grapejuice (Tavern 1.2 não tem grape_juice) + guarda Item.exists.
+  6) Lojas: bs_greenhouse jei_catalyst como objeto; wandering_baker desligada (Bakery 1.21 sem a entidade).
+     33 cardápios do cozycafe para itens ausentes desligados (kubejs/data/cozycafe/menu, neoforge:false).
+  7) Moedas: na 1.21 o pack de assets do KubeJS fica ACIMA dos resource packs. 13 texturas de kubejs/assets que
+     colidiam com packs ativos (SocietyCoins: sun, ancient, neptunium, prismatic; Excalibur; Fancy Crops) foram movidas
+     para resourcepacks/pipinha_overrides.zip (abaixo dos outros packs, como na 1.20.1).
+  Rhino SyntaxCheck: 389/389 OK. Pendentes do dono: substitutos de hyper_experience (CEI 2 não tem), sap/aloe_gel
+  (Central Kitchen 1.21 não registra), ovo do Species (mod ausente); itens "Sunlit"; wiki; extrusor; vidro da estufa.

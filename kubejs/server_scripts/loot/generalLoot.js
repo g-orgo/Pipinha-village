@@ -8,17 +8,7 @@ const fixedStackSize = (itemStack) => {
   return itemStack;
 };
 
-const IntRange = Java.loadClass("net.minecraft.world.level.storage.loot.IntRange");
-const JsonOps = Java.loadClass("com.mojang.serialization.JsonOps");
-const JsonParser = Java.loadClass("com.google.gson.JsonParser");
-const toBound = (v) => (Array.isArray(v) ? { type: "minecraft:uniform", min: v[0], max: v[1] } : v);
-const intRange = (min, max) => {
-  const json = {};
-  if (min !== undefined && min !== null) json.min = toBound(min);
-  if (max !== undefined && max !== null) json.max = toBound(max);
-  return IntRange.CODEC.parse(JsonOps.INSTANCE, JsonParser.parseString(JSON.stringify(json))).getOrThrow();
-};
-
+// LootJS 3.7 limitCount(min, max): each bound is a number or a [min, max] uniform range.
 LootJS.modifiers((e) => {
   const slimeOk = Item.exists("splendid_slimes:slime_heart");
   const slimeHeart = (kind) =>
@@ -62,14 +52,14 @@ LootJS.modifiers((e) => {
   e.addTableModifier("minecraft:chests/simple_dungeon")
     .randomChance(0.3)
     .addLoot("numismatics:bevel")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/simple_dungeon")
     .randomChance(0.1)
     .addLoot("society:source_gem");
   e.addTableModifier("minecraft:chests/abandoned_mineshaft")
     .randomChance(0.2)
     .addLoot("numismatics:bevel")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   if (slimeOk) {
     e.addTableModifier("minecraft:chests/abandoned_mineshaft")
       .randomChance(0.2)
@@ -81,75 +71,75 @@ LootJS.modifiers((e) => {
   e.addTableModifier("minecraft:chests/buried_treasure")
     .randomChance(0.9)
     .addLoot("numismatics:cog")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/buried_treasure")
     .randomChance(1)
     .addLoot("numismatics:crown")
-    .limitCount(intRange(1, 2));
+    .limitCount(1, 2);
   e.addTableModifier("minecraft:chests/underwater_ruin_small")
     .randomChance(0.5)
     .addLoot("numismatics:cog")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/underwater_ruin_small")
     .randomChance(0.2)
     .addLoot("numismatics:cog")
-    .limitCount(intRange(1, 2));
+    .limitCount(1, 2);
   e.addTableModifier("minecraft:chests/underwater_ruin_big")
     .randomChance(0.6)
     .addLoot("numismatics:cog")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/underwater_ruin_big")
     .randomChance(0.3)
     .addLoot("numismatics:cog")
-    .limitCount(intRange(1, 2));
+    .limitCount(1, 2);
   e.addTableModifier("minecraft:chests/shipwreck_supply")
     .randomChance(0.5)
     .addLoot("numismatics:bevel")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/shipwreck_supply")
     .randomChance(0.1)
     .addLoot("numismatics:sprocket")
-    .limitCount(intRange(1, 2));
+    .limitCount(1, 2);
   e.addTableModifier("minecraft:chests/shipwreck_treasure")
     .randomChance(0.9)
     .addLoot("numismatics:bevel")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/shipwreck_treasure")
     .randomChance(0.4)
     .addLoot("numismatics:cog")
-    .limitCount(intRange(1, 2));
+    .limitCount(1, 2);
   e.addTableModifier("minecraft:chests/woodland_mansion")
     .randomChance(0.2)
     .addLoot("numismatics:crown")
-    .limitCount(intRange(1, 2));
+    .limitCount(1, 2);
   e.addTableModifier("minecraft:chests/jungle_temple")
     .randomChance(0.3)
     .addLoot("numismatics:crown")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/jungle_temple")
     .randomChance(0.1)
     .addLoot("numismatics:crown")
-    .limitCount(intRange(1, 2));
+    .limitCount(1, 2);
   e.addTableModifier("minecraft:chests/desert_pyramid")
     .randomChance(0.3)
     .addLoot("numismatics:crown")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/desert_pyramid")
     .randomChance(0.1)
     .addLoot("numismatics:crown")
-    .limitCount(intRange(1, 2));
+    .limitCount(1, 2);
   e.addTableModifier("minecraft:chests/pillager_outpost")
     .randomChance(0.3)
     .addLoot("numismatics:cog")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/ancient_city")
     .randomChance(0.6)
     .addLoot("numismatics:cog")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/ancient_city")
     .randomChance(0.3)
     .addLoot("numismatics:crown")
-    .limitCount(intRange(1, 2));
+    .limitCount(1, 2);
   if (slimeOk) {
     e.addTableModifier("minecraft:chests/ancient_city")
       .randomChance(0.2)
@@ -158,31 +148,31 @@ LootJS.modifiers((e) => {
   e.addTableModifier("minecraft:chests/ancient_city")
     .randomChance(0.2)
     .addLoot("numismatics:sun")
-    .limitCount(intRange(1, 1));
+    .limitCount(1, 1);
   e.addTableModifier("minecraft:chests/ruined_portal")
     .randomChance(0.7)
     .addLoot("numismatics:sprocket")
-    .limitCount(intRange(1, 2));
+    .limitCount(1, 2);
   e.addTableModifier("minecraft:chests/nether_bridge")
     .randomChance(0.3)
     .addLoot("numismatics:sprocket")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/bastion_bridge")
     .randomChance(0.9)
     .addLoot("numismatics:sprocket")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/bastion_hoglin_stable")
     .randomChance(0.3)
     .addLoot("numismatics:sprocket")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/bastion_other")
     .randomChance(0.5)
     .addLoot("numismatics:sprocket")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/bastion_treasure")
     .randomChance(0.6)
     .addLoot("numismatics:sprocket")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   if (slimeOk) {
     e.addTableModifier("minecraft:chests/bastion_treasure")
       .randomChance(0.2)
@@ -209,31 +199,31 @@ LootJS.modifiers((e) => {
   e.addTableModifier("minecraft:chests/stronghold_corridor")
     .randomChance(0.9)
     .addLoot("numismatics:bevel")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/stronghold_corridor")
     .randomChance(0.4)
     .addLoot("numismatics:sprocket")
-    .limitCount(intRange(1, 2));
+    .limitCount(1, 2);
   e.addTableModifier("minecraft:chests/stronghold_crossing")
     .randomChance(0.9)
     .addLoot("numismatics:bevel")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/stronghold_crossing")
     .randomChance(0.4)
     .addLoot("numismatics:sprocket")
-    .limitCount(intRange(1, 2));
+    .limitCount(1, 2);
   e.addTableModifier("minecraft:chests/end_city_treasure")
     .randomChance(0.7)
     .addLoot("numismatics:sprocket")
-    .limitCount(intRange([1, 4], [5, 9]));
+    .limitCount([1, 4], [5, 9]);
   e.addTableModifier("minecraft:chests/end_city_treasure")
     .randomChance(0.4)
     .addLoot("numismatics:cog")
-    .limitCount(intRange(1, 1));
+    .limitCount(1, 1);
   e.addTableModifier("minecraft:chests/end_city_treasure")
     .randomChance(0.2)
     .addLoot("numismatics:cog")
-    .limitCount(intRange(1, 1));
+    .limitCount(1, 1);
   if (slimeOk) {
     e.addTableModifier("minecraft:chests/end_city_treasure")
       .randomChance(0.2)

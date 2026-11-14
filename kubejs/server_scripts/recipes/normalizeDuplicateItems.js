@@ -57,7 +57,7 @@ const SUNLIT_DUPLICATE_GROUPS = {
   "glow_squid": ["minersdelight:glow_squid", "culturaldelights:glow_squid"],
   "grape_green": ["kaleidoscope_tavern:green_grape", "hearthandharvest:green_grapes"],
   "grape_juice_green": ["hearthandharvest:green_grape_juice"],
-  "grape_juice_red": ["kaleidoscope_tavern:grape_juice", "vinery:red_grapejuice", "youkaishomecoming:red_grape_juice", "hearthandharvest:red_grape_juice"],
+  "grape_juice_red": ["vinery:red_grapejuice", "youkaishomecoming:red_grape_juice", "hearthandharvest:red_grape_juice"],
   "grape_juice_white": ["vinery:white_grapejuice", "youkaishomecoming:white_grape_juice"],
   "grape_red": ["kaleidoscope_tavern:grape", "vinery:red_grape", "youkaishomecoming:red_grape", "hearthandharvest:red_grapes"],
   "grape_seeds_red": ["vinery:red_grape_seeds", "youkaishomecoming:red_grape_seeds"],

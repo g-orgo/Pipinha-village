@@ -2,10 +2,6 @@
   "replace": false,
   "values": [
     {
-      "id": "kaleidoscope_tavern:grape_juice",
-      "required": false
-    },
-    {
       "id": "vinery:red_grapejuice",
       "required": false
     },

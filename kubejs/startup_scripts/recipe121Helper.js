@@ -84,8 +84,8 @@ global.recipeIdsExist121 = (() => {
   function walk(node) {
     if (Array.isArray(node)) return node.every(walk);
     if (node === null || typeof node !== "object") return true;
-    for (const key in node) {
-      const value = node[key];
+    for (let key in node) {
+      let value = node[key];
       if (key === "fluid" && typeof value === "string" && !fluidExists(value)) return false;
       if ((key === "item" || key === "id") && typeof value === "string" && !idExists(value)) return false;
       if (!walk(value)) return false;

@@ -254,7 +254,6 @@ const applyPriceBalance = () => {
     ["hearthandharvest:cherry_juice", "hearthandharvest:cherry"],
     ["hearthandharvest:red_grape_juice", "kaleidoscope_tavern:grape"],
     ["hearthandharvest:green_grape_juice", "kaleidoscope_tavern:green_grape"],
-    ["kaleidoscope_tavern:grape_juice", "kaleidoscope_tavern:grape"],
   ].forEach((pair) => {
     const fruit = priceOf(pair[1]);
     if (fruit === undefined || sugar === undefined) return;
@@ -308,7 +307,7 @@ const applyPriceBalance = () => {
     changed++;
   });
   // Os sucos da Tavern herdaram preço sem estar em lista nenhuma; sem lista não há tooltip.
-  ["kaleidoscope_tavern:grape_juice", "hearthandharvest:green_grape_juice"].forEach((id) => {
+  ["hearthandharvest:green_grape_juice"].forEach((id) => {
     if (newDrinks[id] !== undefined && cocktails[id] === undefined) {
       global.cocktails.push({ item: id, value: newDrinks[id] });
     }

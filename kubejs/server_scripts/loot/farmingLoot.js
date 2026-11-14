@@ -48,7 +48,7 @@ const addLootId = (loot, id) => {
 // global.getCropQuality expects a block-like object (id, level, pos). The crop is already
 // removed when loot runs, so it is rebuilt from the loot context.
 const destroyedCrop = (context, state) => {
-  const pos = farmBlockPos.containing(context.position());
+  const pos = farmBlockPos.containing(context.getPosition());
   return {
     id: String(farmBlockRegistry.BLOCK.getKey(state.block)),
     blockState: state,

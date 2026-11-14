@@ -16,12 +16,13 @@ sendo a jogavel.
 INSTALAR COM O INSTALADOR (RECOMENDADO)
 ---------------------------------------
 
-Feche o launcher e o Minecraft antes.
-
-- Windows: coloque install.bat e Modpack.zip na pasta do perfil (CurseForge:
-  botao direito no perfil > Open Folder) e clique duas vezes em install.bat.
-- Linux: coloque install.sh e Modpack.zip na pasta do perfil e rode:
-  bash install.sh
+1) No seu launcher (CurseForge, Prism Launcher, MultiMC, Modrinth App...)
+   crie um perfil com Minecraft 1.21.1 e NeoForge 21.1.265.
+2) Feche o launcher e o Minecraft.
+3) Windows: coloque install.bat e Modpack.zip na pasta do perfil (CurseForge:
+   botao direito no perfil > Open Folder) e clique duas vezes em install.bat.
+   Linux: coloque install.sh e Modpack.zip na pasta do perfil e rode:
+   bash install.sh
 
 O instalador substitui mods/, kubejs/, resourcepacks/ e
 moonlight-global-datapacks/ pelos arquivos do pack e mantem seu options.txt
@@ -34,8 +35,9 @@ INSTALACAO MANUAL (SE O INSTALADOR NAO RODAR)
 
 1) No app do CurseForge crie um perfil de Minecraft 1.21.1 com
    NeoForge 21.1.265 (ou importe o zip de modpack, abaixo).
-2) Apague as pastas "mods", "resourcepacks" e "kubejs" dentro da pasta da
-   instancia (CurseForge: botao direito no perfil > Open Folder).
+2) Apague as pastas "mods", "resourcepacks", "kubejs" e
+   "moonlight-global-datapacks" dentro da pasta da instancia
+   (CurseForge: botao direito no perfil > Open Folder).
 3) Descompacte este arquivo na pasta da instancia, mantendo a estrutura de
    pastas (mods/, resourcepacks/, config/, kubejs/, moonlight-global-datapacks/ ...).
    Substitua os arquivos existentes quando perguntado.

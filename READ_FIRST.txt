@@ -15,12 +15,13 @@ docs/migracao/PLANO.md). The 1.20.1 edition stays the playable one until then.
 INSTALL WITH THE INSTALLER (RECOMMENDED)
 ----------------------------------------
 
-Close the launcher and Minecraft first.
-
-- Windows: put install.bat and Modpack.zip in the profile folder (CurseForge:
-  right click the profile > Open Folder), then double click install.bat.
-- Linux: put install.sh and Modpack.zip in the profile folder, then run:
-  bash install.sh
+1) In your launcher (CurseForge, Prism Launcher, MultiMC, Modrinth App...)
+   create a profile with Minecraft 1.21.1 and NeoForge 21.1.265.
+2) Close the launcher and Minecraft.
+3) Windows: put install.bat and Modpack.zip in the profile folder (CurseForge:
+   right click the profile > Open Folder), then double click install.bat.
+   Linux: put install.sh and Modpack.zip in the profile folder, then run:
+   bash install.sh
 
 The installer replaces mods/, kubejs/, resourcepacks/ and
 moonlight-global-datapacks/ with the pack's files and keeps your options.txt
@@ -33,8 +34,9 @@ MANUAL INSTALL (IF THE INSTALLER DOES NOT RUN)
 
 1) In the CurseForge app create a profile for Minecraft 1.21.1 with
    NeoForge 21.1.265 (or import the modpack zip, below).
-2) Delete the "mods", "resourcepacks" and "kubejs" folders inside the
-   instance folder (CurseForge: right click the profile > Open Folder).
+2) Delete the "mods", "resourcepacks", "kubejs" and
+   "moonlight-global-datapacks" folders inside the instance folder
+   (CurseForge: right click the profile > Open Folder).
 3) Unzip this file into the instance folder, keeping the folder structure
    (mods/, resourcepacks/, config/, kubejs/, moonlight-global-datapacks/ ...).
    Overwrite existing files when asked.

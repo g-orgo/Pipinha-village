@@ -124,7 +124,7 @@ troughBreedingCap = 16
 	#Disables shift-right-click plucking feathers from chickens
 	disableChickenPlucking = false
 	#Whether players can pick up a chicken with an empty hand and glide while holding it overhead. Sneak to put it down
-	chickenGliding = true
+	chickenGliding = false
 
 [stompingBasin]
 	#How many items fit in one stomping basin slot. A single basin has one slot, a 2x2 multiblock has four

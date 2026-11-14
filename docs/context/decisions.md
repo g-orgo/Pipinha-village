@@ -278,6 +278,12 @@ Os agentes não rodam o jogo nem cliente headless. Verificação fica restrita a
 #### 2026-11-11: mod de diagnóstico `sunlit_hangdump`
 Se o servidor ficar 90 s sem completar um tick, grava a pilha de todas as threads em `logs/`. Só diagnóstico. A causa achada: o ALI cria entidades no start, o nó de corda do Brewery lê o bloco de (0,0), e o chunk de origem, apagado pelo regen, é gerado de forma síncrona. A geração ficava presa em `hashCode` recursivo dos records de função de densidade do Lithosphere. Correções: `regen_chunks.py` sempre mantém o 5x5 em volta da origem (motivo `origem_ali`); `tools/restore_origin_chunk.py` devolve o 5x5 de um backup; mod `sunlit_dfhashfix` memoriza o hash desses records e reutiliza o resultado de `HolderMapAllMixin`. **A portar.**
 
+#### 2026-11-14: câmera própria do Punchy Moves desligada e sem tecla
+- A câmera de terceira pessoa do Punchy Moves vem ligada por padrão e assume a posição quando o Shoulder Surfing entra no modo ombro pelo botão 5 do mouse. Teclas e mouse continuam guiados pela câmera do Shoulder Surfing, que fica invisível.
+- `config/punchy_moves/camera.json` grava `enabled: false`.
+- O atalho "Toggle Custom Camera" (tecla V) ficou sem tecla em `options.txt` e em `tools/pack_tools/options_canonical.txt`, com autorização do dono. Apertar o atalho religa a câmera e grava `enabled: true`.
+- A câmera em terceira pessoa do pack é só a do Shoulder Surfing.
+
 ## Anotações
 
 > Registros de 2026-10-02 a 2026-11-03 foram resumidos. O texto completo continua na 1.20.1 de origem, somente para leitura.

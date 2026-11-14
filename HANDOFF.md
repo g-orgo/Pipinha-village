@@ -188,7 +188,7 @@ Origem (só leitura): `../Society: Sunlit Valley`.
 
 - 10º launch (2026-11-13, "10º launch: KubeJS loot/ids"): bakery:dough removido (não existe no jar 2.1.11) de canonical/normalize; create:toolbox -> create:brown_toolbox; entrada vazia de splendid_slimes removida (generalLoot); addTypeModifier -> addTableModifier(LootType) em 3 arquivos. Pendente: sunlitTownsLoot (apply não existe em addTableModifier) e ImageButton 1.21.1 (precisa de sprites).
 - 10º launch: KubeJS receitas (2026-11-13): addMiscRecipes.js, 37 blocos com resultado/ingrediente ausente trocados por comentário "dropped in 1.21.1"; car_key: relics:horse_flute -> minecraft:saddle; meadow wool: só warped_wool mantido; create:filling honey como neoforge:tag; cutting FD e tuna corrigidos; helper em startup_scripts/recipe121Helper.js. Não testado no jogo.
-- 10º launch (2026-11-13, brain): Shoulder Surfing 5.3.1 renomeou player_x/y_rot_follows_camera para player.turning.turn_player_x/y_rot_with_camera; voltaram a false como na 1.20.1 (corpo não gira com a câmera). FOV 60 já estava certo. Punchy Moves tem câmera de ombro própria (tecla V, junto com Toolbelt/Supplementaries/Curios/Replay), desligada por padrão; camera.json não existe, então nunca foi ligada. InControl: 3=vinery:basket -> farmersdelight:wooden_basket, regra do wildernature:flamingo removida. sunlitTownsLoot.js (e o gerador tools/pack_tools/towns/loot.py): apply -> customAction com adaptador do ctx (LootJS 3.7). hostileSpawnToggle.js: ImageButton com WidgetSprites, sprites recortados em kubejs/assets/kubejs/textures/gui/sprites/hostile_spawns*/. Pendente do dono: Sturdy Farmland (aspersores/fertilizantes) sem 1.21.1; itens sem receita: gnome, quality_washer, mana_sprinkler, relics:blazing_flask, quark:slime_in_a_bucket, conchas do unusualfishmod.
+- 10º launch (2026-11-13, brain): Shoulder Surfing 5.3.1 renomeou player_x/y_rot_follows_camera para player.turning.turn_player_x/y_rot_with_camera; voltaram a false como na 1.20.1 (corpo não gira com a câmera). FOV 60 já estava certo. Punchy Moves tem câmera de ombro própria (tecla V, junto com Toolbelt/Supplementaries/Curios/Replay); a nota de que vinha desligada estava errada (ver 2026-11-14). InControl: 3=vinery:basket -> farmersdelight:wooden_basket, regra do wildernature:flamingo removida. sunlitTownsLoot.js (e o gerador tools/pack_tools/towns/loot.py): apply -> customAction com adaptador do ctx (LootJS 3.7). hostileSpawnToggle.js: ImageButton com WidgetSprites, sprites recortados em kubejs/assets/kubejs/textures/gui/sprites/hostile_spawns*/. Pendente do dono: Sturdy Farmland (aspersores/fertilizantes) sem 1.21.1; itens sem receita: gnome, quality_washer, mana_sprinkler, relics:blazing_flask, quark:slime_in_a_bucket, conchas do unusualfishmod.
 
 ## Pendente, em ordem
 
@@ -415,3 +415,48 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   Cena do Tom's: pipinha_cinematic_toms registrava toms_storage:ts.*_terminal (Tom's 2.x tirou o ts.); jar refeito.
   Rhino 391/391 OK; find_dup_toplevel sem colisões. PENDENTE do dono no jogo: carinho, HUD (paintHud), ticks das máquinas,
   cena do terminal, botão 5 (suspeito: Aeronautics Camera Sync suavizando a primeira entrada em terceira pessoa).
+- 2026-11-14 carinho/HUD ainda sem aparecer (dono). Log da sessão 00:34 sem nenhum erro do carinho nem do paintHud
+  (nem "scheduled event", nem "[paintHud] HUD disabled"). Estático conferido: checkEntityTag, sendData/dataReceived,
+  NativeEvents.onEvent, toJson (WithCodec) existem no KubeJS 2101. Diagnóstico TEMPORÁRIO adicionado (remover depois):
+  "[petdebug] click" em animalBase.js, "[petdebug] paint" em checkAnimal (zz_port_globals_misc.js),
+  "[paintHud] received/drawing/bad packet" em paintHud.js. Próximo passo: ler logs/kubejs/server.log e client.log.
+  RESULTADO 00:49: clique chega (petdebug click), servidor manda o HUD, cliente recebe; o desenho quebrava com
+  "TypeError: redeclaration of var text" (const dentro de bloco em paintDrawElement, Rhino 2101) e o paintHud se
+  desligava. Corrigido: locais no topo das funções + todo texto vira Component (evita ambiguidade de drawString).
+  Aguardando teste do dono; depois remover os logs [petdebug]/[paintHud] received/drawing.
+  01:0x teste 2: paintHud quebrou em drawString ambíguo (String/float x Component/int). Corrigido com assinatura
+  explícita (g["drawString(...Component,int,int,int,boolean)"], font["width(...FormattedText)"]) + popPose em finally;
+  minimapIcons combineWith ambíguo corrigido igual. Item sem ícone na hotbar: society:dried_tubabacco_leaf no slot
+  selecionado; aparece no inventário; texturas de todos os itens KubeJS conferidas (ok). Perguntado ao dono se o
+  quadrado cinza segue a seleção (sprite hotbar_selection do Excalibur_V26.3_01, centro branco 30%).
+- 2026-11-14 01:1x itens com tint (.color) não aparecem na hotbar (dono: folha de tubabaco seca, em qualquer slot;
+  no inventário aparece com o tint certo). Causa no motor não isolada; troca do tint por textura pré-colorida:
+  registerItems.js -> tintedTexture() + global.tintedItemTextures (456 itens: smoked, pickled, aged/double_aged,
+  roe, aged roe, bait, folha seca); client_scripts/tintedItemTextures.js gera society:item/tinted/<id> e
+  tinted/bite/<id>_0..2 via ClientEvents.generateAssets("after_mods") (LoadedTexture.tint = multiplicação).
+  161 modelos estáticos + 483 de mordida reescritos para os caminhos tinted (backup no scratchpad da sessão).
+  Bases vanilla copiadas para society:item/tint_base. Frosty fin: textura raw_snowflake_tail_fish -> raw_frosty_fin_fish.
+  Harness de enumeração: node com stubs (registerItems + globals). Validar no jogo: log "[tintedItemTextures] generated".
+- 2026-11-14 01:2x (dono): ícone sumindo era o SLOT ATIVO da hotbar (qualquer item), não o tint. Revertida a troca de tint
+  (registerItems.js do backup, modelos restaurados, tintedItemTextures.js e tint_base removidos); mantido só o fix
+  Frosty Fin (raw_frosty_fin_fish). Causa provável: animação nova do slot no Amendments 2.2.7 (não existe na 2.2.5 da
+  1.20.1) com a moldura opaca do Excalibur -> config/amendments-client.toml hotbar_slot_animation speed 2.5 -> 0.0 (vanilla).
+  HUD do animal: nome saía como JSON cru (fromJson ambíguo no Rhino) -> assinatura explícita + log de falha. Logs
+  [petdebug]/[paintHud] received/drawing removidos.
+  CRASH 01:20: Sunrise Gardening 1.2 (último) usa culturaldelights CornUpperBlock, removido no Cultural Delights 0.18.
+  Jar patcheado: isLoaded("culturaldelights") -> "culturaldelightx" em CommonModEvents (desliga só a compat de milho;
+  original em backups/sunrisegardening-1.2.original.jar). Reportar ao autor (github.com/Chakyl/sunrise-gardening).
+- 2026-11-14 câmera do botão 5 (dono: câmera mais perto que a do SS, teclas de andar "aleatórias", mouse sensível demais).
+  CAUSA (bytecode do punchy-moves 1.0.8): a câmera própria do Punchy Moves vem LIGADA por padrão (ShoulderCameraSettings
+  <clinit> enabled=true; sem camera.json fica true; a nota do 10º launch dizia o contrário). resumeSavedCamera a ativa
+  sozinha quando a câmera está em THIRD_PERSON_BACK (o modo ombro do SS usa esse tipo), a menos que o F5 do teclado
+  tenha sido usado (KeyboardHandlerMixin só vê keyTogglePerspective). O botão 5 é toggle_first_person do SS (mouse),
+  então a câmera do Punchy (depth 2,5, horizontal 1,17, FOV 70) assume a posição e o SS segue com câmera desacoplada
+  invisível guiando teclas e mouse. FEITO: config/punchy_moves/camera.json {"enabled": false}. Sem mudança em options.txt.
+  Pendente do dono: testar botão 5 e F5.
+  FEITO (dono autorizou): tecla V do "Toggle Custom Camera" do Punchy Moves desvinculada (key.keyboard.unknown) em
+  options.txt e tools/pack_tools/options_canonical.txt; backup em backups/options.txt.bak-2026-11-14-punchy-v.
+  O V segue com Toolbelt, aljava, Curios e Replay. Não religar esse atalho: ele liga a câmera e grava enabled=true.
+- 2026-11-14 pipinha_deerfix (deer com affection não foge do player) e pipinha_skinfix (refaz a busca do perfil/skin
+  quando o sessionserver da Mojang falha na abertura) em mods/, fontes em custom-mods/. Pendente do dono: testar no jogo.
+  Sable 2.0.6: compat com SS quebrada (ShoulderSurfingImpl/ObjectPicker renomeados no 5.3.1), afeta só câmera em nave.

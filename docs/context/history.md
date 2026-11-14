@@ -6,3 +6,4 @@ Log append-only das unidades concluídas na 1.21.1. Cada linha é uma unidade. O
 - 2026-11-11: F1 concluída. Jars da 1.21.1 em `mods/`.
 - 2026-11-12: checker de mods com `versionRange` adicionado a `tools/modcheck`.
 - 2026-11-13: documentação de contexto (`docs/context/`) portada para a 1.21.1.
+- 2026-11-14: câmera do Punchy Moves desligada e tecla V desvinculada; `pipinha_deerfix` e `pipinha_skinfix` em `mods/`.

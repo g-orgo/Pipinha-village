@@ -391,7 +391,7 @@ key_key.createrailwaysnavigator.route_overlay_options:key.keyboard.unknown
 key_key.observable.profile:key.keyboard.unknown
 key_key.punchy.triggerable.punchy_sword_inspect_old:key.keyboard.j
 key_key.punchy.triggerable.punchy_sword_inspect_rework:key.keyboard.g
-key_key.punchy_moves.camera_toggle_v:key.keyboard.v
+key_key.punchy_moves.camera_toggle_v:key.keyboard.unknown
 key_key.punchy_moves.camera_editor:key.keyboard.f7
 key_key.punchy_moves.free_camera:key.keyboard.unknown
 key_key.punchy_moves.emote_menu:key.keyboard.e

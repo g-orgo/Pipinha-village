@@ -3,7 +3,6 @@
 // channel, are merged by id, and are drawn on every GUI frame.
 
 const $PaintMinecraft = Java.loadClass("net.minecraft.client.Minecraft");
-const $PaintSystem = Java.loadClass("java.lang.System");
 const $PaintComponentSerializer = Java.loadClass("net.minecraft.network.chat.Component$Serializer");
 const $PaintResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
 const $PaintBuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
@@ -111,7 +110,9 @@ const paintDrawElement = (g, font, mc, el, screenW, screenH) => {
 
 const paintRender = (e) => {
   const mc = $PaintMinecraft.getInstance();
-  const levelHash = mc.level ? $PaintSystem.identityHashCode(mc.level) : 0;
+  // java.lang.System is blocked by the KubeJS class filter; ClientLevel keeps
+  // Object.hashCode, which is the identity hash.
+  const levelHash = mc.level ? mc.level.hashCode() : 0;
   if (levelHash !== paintLevelHash) {
     paintClear();
     paintLevelHash = levelHash;

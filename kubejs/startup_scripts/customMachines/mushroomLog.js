@@ -90,7 +90,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.mushroom_log.description").gray()
       );
-      item.parentModel("society:block/kubejs/mushroom_log/mushroom_log_off");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/mushroom_log/mushroom_log_off"));
     })
     .defaultState((state) => {
       state

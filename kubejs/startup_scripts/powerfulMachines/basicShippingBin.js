@@ -29,9 +29,9 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .item((item) => {
       item.tooltip(Text.translatable("tooltip.society.shipping_bin").gray());
-      item.parentModel("shippingbin:block/shipping_bin");
+      item.modelGenerator((m) => m.parent("shippingbin:block/shipping_bin"));
     })
-    .parentModel("shippingbin:block/shipping_bin")
+    .modelGenerator((m) => m.parent("shippingbin:block/shipping_bin"))
     .blockEntity((blockInfo) => {
       blockInfo.inventory("inventory", Direction.ALL_SET, 9, 4);
       blockInfo.initialData({ owner: "-1" });

@@ -22,12 +22,12 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
-    .parentModel("society:block/kubejs/coin_leaderboard")
+    .modelGenerator((m) => m.parent("society:block/kubejs/coin_leaderboard"))
     .item((item) => {
       item.tooltip(
         Text.translatable("block.society.coin_leaderboard.description").gray()
       );
-      item.parentModel("society:block/kubejs/coin_leaderboard");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/coin_leaderboard"));
     })
     .blockEntity((be) => {
       be.serverTicking();

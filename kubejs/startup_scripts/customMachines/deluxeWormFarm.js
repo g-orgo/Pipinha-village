@@ -16,10 +16,10 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
-    .parentModel("society:block/kubejs/deluxe_worm_farm")
+    .modelGenerator((m) => m.parent("society:block/kubejs/deluxe_worm_farm"))
     .item((item) => {
       item.tooltip(Text.translatable("block.society.deluxe_worm_farm.description").gray());
-      item.parentModel("society:block/kubejs/deluxe_worm_farm");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/deluxe_worm_farm"));
     })
     .defaultState((state) => {
       state

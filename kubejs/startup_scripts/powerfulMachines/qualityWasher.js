@@ -45,9 +45,9 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.quality_washer.description").gray());
       item.tooltip(Text.translatable("block.society.quality_washer.description.warn").red());
       item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
-      item.parentModel("society:block/kubejs/quality_washer");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/quality_washer"));
     })
-    .parentModel("society:block/kubejs/quality_washer")
+    .modelGenerator((m) => m.parent("society:block/kubejs/quality_washer"))
     .blockEntity((blockInfo) => {
       blockInfo.inventory("inventory", Direction.ALL_SET, 9, 1);
       blockInfo.serverTicking();

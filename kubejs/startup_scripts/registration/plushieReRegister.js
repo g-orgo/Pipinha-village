@@ -135,9 +135,9 @@ StartupEvents.registry("block", (event) => {
       .soundType("wool")
       .hardness(1.0)
       .requiresTool(false)
-      .parentModel(modelPath)
+      .modelGenerator((m) => m.parent(modelPath))
       .item((item) => {
-        item.parentModel(modelPath);
+        item.modelGenerator((m) => m.parent(modelPath));
       })
       .rightClick((click) => global.plushieRightClick(click))
       .blockEntity((blockInfo) => {

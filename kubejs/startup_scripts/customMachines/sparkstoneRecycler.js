@@ -83,9 +83,9 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.translatable("block.society.sparkstone_recycler.description").gray());
       item.tooltip(Text.translatable("society.working_block_entity.need_mana").aqua());
       item.tooltip(Text.translatable("block.society.sparkstone_recycler.description.compatible").green());
-      item.parentModel("society:block/kubejs/sparkstone_recycler");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/sparkstone_recycler"));
     })
-    .parentModel("society:block/kubejs/sparkstone_recycler")
+    .modelGenerator((m) => m.parent("society:block/kubejs/sparkstone_recycler"))
     .blockEntity((blockInfo) => {
       blockInfo.serverTicking();
       blockInfo.tickFrequency(200);

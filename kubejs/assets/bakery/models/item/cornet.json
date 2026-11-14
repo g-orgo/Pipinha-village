@@ -1,1 +1,30 @@
-{"parent": "minecraft:item/generated", "textures": {"layer0": "bakery:item/cornet"}, "overrides": [{"predicate": {"eatinganimation:eat": 0.35, "eatinganimation:eating": 1.0}, "model": "bakery:item/sunlit_bite/cornet_0"}, {"predicate": {"eatinganimation:eat": 0.7, "eatinganimation:eating": 1.0}, "model": "bakery:item/sunlit_bite/cornet_1"}, {"predicate": {"eatinganimation:eat": 0.9, "eatinganimation:eating": 1.0}, "model": "bakery:item/sunlit_bite/cornet_2"}]}
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bakery:item/cornet_shell",
+    "layer1": "bakery:item/cornet_filling"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eatinganimation:eat": 0.35,
+        "eatinganimation:eating": 1.0
+      },
+      "model": "bakery:item/sunlit_bite/cornet_0"
+    },
+    {
+      "predicate": {
+        "eatinganimation:eat": 0.7,
+        "eatinganimation:eating": 1.0
+      },
+      "model": "bakery:item/sunlit_bite/cornet_1"
+    },
+    {
+      "predicate": {
+        "eatinganimation:eat": 0.9,
+        "eatinganimation:eating": 1.0
+      },
+      "model": "bakery:item/sunlit_bite/cornet_2"
+    }
+  ]
+}

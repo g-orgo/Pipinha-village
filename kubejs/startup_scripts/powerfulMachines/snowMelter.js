@@ -36,9 +36,9 @@ StartupEvents.registry("block", (e) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.snow_melter.description").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `19x5x19`).green());
-      item.parentModel("society:block/kubejs/snow_melter");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/snow_melter"));
     })
-    .parentModel("society:block/kubejs/snow_melter")
+    .modelGenerator((m) => m.parent("society:block/kubejs/snow_melter"))
     .blockEntity((blockInfo) => {
       blockInfo.serverTicking();
       blockInfo.tickFrequency(600);

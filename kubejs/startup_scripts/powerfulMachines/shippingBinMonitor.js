@@ -48,9 +48,9 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 0, 16, 3, 16)
     .item((item) => {
       item.tooltip(Text.translatable("block.society.shipping_bin_monitor.description").gray());
-      item.parentModel("society:block/kubejs/shipping_bin_monitor");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/shipping_bin_monitor"));
     })
-    .parentModel("society:block/kubejs/shipping_bin_monitor")
+    .modelGenerator((m) => m.parent("society:block/kubejs/shipping_bin_monitor"))
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ value: 0 });
       blockInfo.serverTicking();

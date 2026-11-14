@@ -289,7 +289,7 @@ LootJS.modifiers((e) => {
 
   e.addTableModifier(LootType.CHEST).pool((p) => {
     p.when((c) => c.randomChance(0.05));
-    p.addEntry(LootEntry.of("society:recall_potion"));
+    p.addEntry(LootEntry.of("simplerecall:recall_potion"));
   });
   e.addTableModifier("minecraft:chests/simple_dungeon").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);
   e.addTableModifier("minecraft:chests/spawn_bonus_chest").replaceLoot("cluttered:willow_sapling", "numismatics:cog", true);

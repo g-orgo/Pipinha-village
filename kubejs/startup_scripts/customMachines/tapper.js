@@ -114,7 +114,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.tapper.description").gray());
-      item.parentModel("society:block/kubejs/tapper");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/tapper"));
     })
     .defaultState((state) => {
       state

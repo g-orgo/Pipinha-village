@@ -8,7 +8,7 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.translatable("block.society.juice_inserter.description").gray());
-      item.parentModel("society:block/kubejs/juice_inserter");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/juice_inserter"));
     })
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ Fluid: 0, FluidType: "" });

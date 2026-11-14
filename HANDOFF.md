@@ -372,3 +372,12 @@ Origem (só leitura): `../Society: Sunlit Valley`.
      para resourcepacks/pipinha_overrides.zip (abaixo dos outros packs, como na 1.20.1).
   Rhino SyntaxCheck: 389/389 OK. Pendentes do dono: substitutos de hyper_experience (CEI 2 não tem), sap/aloe_gel
   (Central Kitchen 1.21 não registra), ovo do Species (mod ausente); itens "Sunlit"; wiki; extrusor; vidro da estufa.
+- 22:4x RODADA 7 (log das 22:25): 2 erros KubeJS + texturas roxas.
+  1) seasonfish: weatherCondition -> weatherCheck (nome do helper). 2) generalLoot: society:recall_potion -> simplerecall:recall_potion.
+  3) Texturas: no KubeJS 7, .parentModel(X) ainda grava o mapa de texturas padrão e, com .box(), cubos com textura
+     <ns>:block/<id> inexistente (cubo roxo dos plushies adv_*). tools/kjsport/fix_parent_model.js trocou os 129 usos por
+     .modelGenerator((m) => m.parent(X)) (equivale ao .model() da 1.20). Meadow: mapeamentos wheel_of_* removidos (1.21 usa
+     *_cheese_wheel). Bakery cornet/jam_roll: camadas shell+filling. drum_cornucopia: partícula com namespace.
+     Texturas copiadas dos jars 1.20.1 para kubejs/assets: 7 do Nethervinery (vinhos envelhecidos) e vidro do More Minecarts.
+  Restam avisos internos de mods (relics *_broken, bountiful decree, cluttered balustrade, supplementaries/quark, displaydelight,
+  fauna GeckoLib, partícula do caixote de palmeira). Rhino 389/389 OK.

@@ -69,9 +69,9 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.mana_sprinkler.need_mana").aqua()
       );
-      item.parentModel("society:block/kubejs/mana_sprinkler");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/mana_sprinkler"));
     })
-    .parentModel("society:block/kubejs/mana_sprinkler")
+    .modelGenerator((m) => m.parent("society:block/kubejs/mana_sprinkler"))
     .blockEntity((blockInfo) => {
       blockInfo.serverTicking();
       blockInfo.tickFrequency(20);

@@ -65,14 +65,14 @@ StartupEvents.registry("block", (event) => {
     .resistance(9.0)
     .lightLevel(0.8)
     .requiresTool(false)
-    .parentModel("society:block/kubejs/moon_statue")
+    .modelGenerator((m) => m.parent("society:block/kubejs/moon_statue"))
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(
         Text.translatable("block.society.moon_statue.description").gray()
       );
-      item.parentModel("society:block/kubejs/moon_statue");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/moon_statue"));
     })
     .rightClick((click) => {
       global.handleMoonStatueClick(click);

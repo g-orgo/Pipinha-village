@@ -151,7 +151,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.aging_cask.description").gray()
       );
-      item.parentModel("society:block/kubejs/aging_cask/aging_cask");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/aging_cask/aging_cask"));
     })
     .defaultState((state) => {
       state

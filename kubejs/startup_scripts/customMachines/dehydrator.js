@@ -133,7 +133,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.dehydrator.description").gray());
-      item.parentModel("society:block/kubejs/dehydrator/dehydrator_off");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/dehydrator/dehydrator_off"));
     })
     .defaultState((state) => {
       state

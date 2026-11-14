@@ -85,7 +85,7 @@ const createWeatherLootTable = (
         condition: "minecraft:any_of",
         terms: ocean.map((tag) => biomeLocation(tag)),
       })
-      .matchCustomCondition(weatherCondition(weather))
+      .matchCustomCondition(weatherCheck(weather))
       .matchTime(24000, timeMin, timeMax),
     oceanFish,
     mysticalOcean
@@ -99,7 +99,7 @@ const createWeatherLootTable = (
         condition: "minecraft:any_of",
         terms: river.map((tag) => biomeLocation(tag)),
       })
-      .matchCustomCondition(weatherCondition(weather))
+      .matchCustomCondition(weatherCheck(weather))
       .matchTime(24000, timeMin, timeMax),
     riverFish,
     mysticalOcean
@@ -110,7 +110,7 @@ const createWeatherLootTable = (
       .addTableModifier("minecraft:gameplay/fishing")
       .matchPlayerCustom(playerCheck)
       .matchCustomCondition(notInBiomes(fresh))
-      .matchCustomCondition(weatherCondition(weather))
+      .matchCustomCondition(weatherCheck(weather))
       .matchTime(24000, timeMin, timeMax),
     freshFish,
     mysticalOcean

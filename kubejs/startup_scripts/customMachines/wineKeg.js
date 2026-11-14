@@ -85,7 +85,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("block.society.wine_keg.description").gray()
       );
-      item.parentModel("society:block/kubejs/wine_keg/wine_keg");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/wine_keg/wine_keg"));
     })
     .defaultState((state) => {
       state

@@ -1,1 +1,30 @@
-{"parent": "minecraft:item/generated", "textures": {"layer0": "bakery:item/jam_roll"}, "overrides": [{"predicate": {"eatinganimation:eat": 0.35, "eatinganimation:eating": 1.0}, "model": "bakery:item/sunlit_bite/jam_roll_0"}, {"predicate": {"eatinganimation:eat": 0.7, "eatinganimation:eating": 1.0}, "model": "bakery:item/sunlit_bite/jam_roll_1"}, {"predicate": {"eatinganimation:eat": 0.9, "eatinganimation:eating": 1.0}, "model": "bakery:item/sunlit_bite/jam_roll_2"}]}
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bakery:item/jam_roll_shell",
+    "layer1": "bakery:item/jam_roll_filling"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eatinganimation:eat": 0.35,
+        "eatinganimation:eating": 1.0
+      },
+      "model": "bakery:item/sunlit_bite/jam_roll_0"
+    },
+    {
+      "predicate": {
+        "eatinganimation:eat": 0.7,
+        "eatinganimation:eating": 1.0
+      },
+      "model": "bakery:item/sunlit_bite/jam_roll_1"
+    },
+    {
+      "predicate": {
+        "eatinganimation:eat": 0.9,
+        "eatinganimation:eating": 1.0
+      },
+      "model": "bakery:item/sunlit_bite/jam_roll_2"
+    }
+  ]
+}

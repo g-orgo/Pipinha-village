@@ -89,7 +89,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.seed_maker.description").gray());
       item.tooltip(Text.translatable("society.working_block_entity.preserve_quality").green());
-      item.parentModel("society:block/kubejs/seed_maker/seed_maker_off");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/seed_maker/seed_maker_off"));
     })
     .defaultState((state) => {
       state

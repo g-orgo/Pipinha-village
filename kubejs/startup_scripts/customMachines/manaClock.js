@@ -45,9 +45,9 @@ StartupEvents.registry("block", (event) => {
         Text.translatable("society.working_block_entity.need_mana").aqua()
       );
       item.tooltip(Text.translatable("tooltip.society.area", `3x3`).green());
-      item.parentModel("society:block/kubejs/mana_clock");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/mana_clock"));
     })
-    .parentModel("society:block/kubejs/mana_clock")
+    .modelGenerator((m) => m.parent("society:block/kubejs/mana_clock"))
     .blockEntity((blockInfo) => {
       blockInfo.serverTicking();
       blockInfo.tickFrequency(200);

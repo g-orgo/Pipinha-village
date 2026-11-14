@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/block",
 	"textures": {
-		"particle": "drum_cornucopia",
+		"particle": "society:block/drum_cornucopia",
 		"side": "society:block/drum_cornucopia",
 		"top": "botania:block/drum_top"
 	},

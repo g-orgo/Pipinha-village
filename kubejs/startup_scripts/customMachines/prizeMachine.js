@@ -383,7 +383,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.prize_machine.description").gray());
-      item.parentModel("society:block/kubejs/prize_machine");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/prize_machine"));
     })
     .defaultState((state) => {
       state.set(

@@ -288,9 +288,9 @@ StartupEvents.registry("block", (event) => {
           "block.society.auto_grabber.description.fuel"
         ).lightPurple()
       );
-      item.parentModel("society:block/kubejs/auto_grabber");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/auto_grabber"));
     })
-    .parentModel("society:block/kubejs/auto_grabber")
+    .modelGenerator((m) => m.parent("society:block/kubejs/auto_grabber"))
     .property(booleanProperty.create("upgraded"))
     .defaultState((state) => {
       state.set(booleanProperty.create("upgraded"), false);

@@ -18,7 +18,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
-    .parentModel("society:block/kubejs/earth_crystal")
+    .modelGenerator((m) => m.parent("society:block/kubejs/earth_crystal"))
     .lightLevel(0.5)
     .item((item) => {
       item.modelGenerator((m) => {
@@ -37,7 +37,7 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_iron_tool")
     .lightLevel(0.8)
-    .parentModel("society:block/kubejs/fire_quartz")
+    .modelGenerator((m) => m.parent("society:block/kubejs/fire_quartz"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -54,7 +54,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
-    .parentModel("society:block/kubejs/geode_node");
+    .modelGenerator((m) => m.parent("society:block/kubejs/geode_node"));
 
   e.create("society:magma_geode_node")
     .box(4, 0, 4, 12, 9, 12)
@@ -65,7 +65,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_iron_tool")
-    .parentModel("society:block/kubejs/magma_geode_node");
+    .modelGenerator((m) => m.parent("society:block/kubejs/magma_geode_node"));
 
   e.create("society:omni_geode_node")
     .box(4, 0, 4, 12, 9, 12)
@@ -76,7 +76,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .parentModel("society:block/kubejs/omni_geode_node");
+    .modelGenerator((m) => m.parent("society:block/kubejs/omni_geode_node"));
 
   // Skull Cavern
   e.create("society:skull_cavern_teleporter")
@@ -136,7 +136,7 @@ StartupEvents.registry("block", (e) => {
     e.create(`society:${type}_supply_crate`)
       .soundType("wood")
       .tagBlock("minecraft:mineable/axe")
-      .parentModel(path)
+      .modelGenerator((m) => m.parent(path))
       .tagBlock("society:supply_crate");
   };
   createSupplyCrate("oak", "refurbished_furniture:block/oak_crate_closed");
@@ -154,7 +154,7 @@ StartupEvents.registry("block", (e) => {
     .box(0, 0, 0, 0, 0, 0)
     .property(integerProperty.create("type", 0, 4))
     .property(integerProperty.create("chunkbit", 0, 1))
-    .parentModel("minecraft:block/air")
+    .modelGenerator((m) => m.parent("minecraft:block/air"))
     .hardness(-1)
     .resistance(3600000)
     .randomTick((tick) => {
@@ -175,7 +175,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .parentModel("society:block/kubejs/iridium_ore");
+    .modelGenerator((m) => m.parent("society:block/kubejs/iridium_ore"));
 
   e.create("society:deepslate_iridium_ore")
     .soundType("stone")
@@ -184,7 +184,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .parentModel("society:block/kubejs/deepslate_iridium_ore");
+    .modelGenerator((m) => m.parent("society:block/kubejs/deepslate_iridium_ore"));
 
   e.create("society:sparkstone_ore")
     .soundType("stone")
@@ -193,7 +193,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .parentModel("society:block/kubejs/sparkstone_ore");
+    .modelGenerator((m) => m.parent("society:block/kubejs/sparkstone_ore"));
 
   e.create("society:deepslate_sparkstone_ore")
     .soundType("stone")
@@ -202,7 +202,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .parentModel("society:block/kubejs/deepslate_sparkstone_ore");
+    .modelGenerator((m) => m.parent("society:block/kubejs/deepslate_sparkstone_ore"));
 
   e.create(`society:sparkstone_block`)
     .soundType("amethyst")
@@ -220,7 +220,7 @@ StartupEvents.registry("block", (e) => {
     
   // Compressed Crops block
   e.create("society:animal_feed_sack", "cardinal")
-    .parentModel("society:block/kubejs/animal_feed_sack")
+    .modelGenerator((m) => m.parent("society:block/kubejs/animal_feed_sack"))
     .mapColor("dirt")
     .soundType("sand")
     .hardness(1.0)
@@ -310,7 +310,7 @@ StartupEvents.registry("block", (e) => {
     .hardness(1.0)
     .resistance(1.0)
     .item((item) => {
-      item.parentModel("society:block/kubejs/sturdy_bamboo_block");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/sturdy_bamboo_block"));
     })
     .requiresTool(true)
     .tagBlock("minecraft:mineable/axe");
@@ -321,7 +321,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .hardness(1.0)
     .requiresTool(false)
-    .parentModel("society:block/kubejs/espresso_cup_block")
+    .modelGenerator((m) => m.parent("society:block/kubejs/espresso_cup_block"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -340,7 +340,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .hardness(1.0)
     .requiresTool(false)
-    .parentModel("society:block/kubejs/drinks/steamed_milk")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/steamed_milk"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -360,7 +360,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .hardness(1.0)
     .requiresTool(false)
-    .parentModel("society:block/kubejs/drinks/mocha")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/mocha"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -379,7 +379,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .hardness(1.0)
     .requiresTool(false)
-    .parentModel("society:block/kubejs/drinks/latte")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/latte"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -398,7 +398,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .hardness(1.0)
     .requiresTool(false)
-    .parentModel("society:block/kubejs/drinks/dirty_chai")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/dirty_chai"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -418,7 +418,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .hardness(1.0)
     .requiresTool(false)
-    .parentModel("society:block/kubejs/drinks/bowl_of_soul")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/bowl_of_soul"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -437,7 +437,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("glass")
     .hardness(1.0)
     .requiresTool(false)
-    .parentModel("society:block/kubejs/drinks/truffle_tea")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/truffle_tea"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -455,7 +455,7 @@ StartupEvents.registry("block", (e) => {
   e.create("society:beer_london", "cardinal")
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
-    .parentModel("society:block/kubejs/drinks/beer_london")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/beer_london"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -473,7 +473,7 @@ StartupEvents.registry("block", (e) => {
   e.create("society:beer_attunecore", "cardinal")
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
-    .parentModel("society:block/kubejs/drinks/beer_attunecore")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/beer_attunecore"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -492,7 +492,7 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .soundType("glass")
     .defaultCutout()
-    .parentModel("society:block/kubejs/drinks/ancient_cider")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/ancient_cider"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -509,7 +509,7 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .soundType("glass")
     .defaultCutout()
-    .parentModel("society:block/kubejs/drinks/ancient_vespertine")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/ancient_vespertine"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -527,7 +527,7 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
     .soundType("glass")
-    .parentModel("society:block/kubejs/drinks/dewy_star")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/dewy_star"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -545,7 +545,7 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
     .soundType("glass")
-    .parentModel("society:block/kubejs/drinks/starcardi")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/starcardi"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -563,7 +563,7 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
     .soundType("glass")
-    .parentModel("society:block/kubejs/drinks/star_coquito")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/star_coquito"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -581,7 +581,7 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
     .soundType("glass")
-    .parentModel("society:block/kubejs/drinks/dewy_star")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/dewy_star"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -599,7 +599,7 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .soundType("glass")
     .defaultCutout()
-    .parentModel("society:block/kubejs/drinks/ancient_vespertine")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/ancient_vespertine"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -617,7 +617,7 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .soundType("glass")
     .defaultCutout()
-    .parentModel("society:block/kubejs/drinks/ancient_vespertine")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/ancient_vespertine"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -635,7 +635,7 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .soundType("glass")
     .defaultCutout()
-    .parentModel("society:block/kubejs/drinks/ancient_vespertine")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/ancient_vespertine"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -653,7 +653,7 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
     .soundType("glass")
-    .parentModel("society:block/kubejs/drinks/forks_of_blue")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/forks_of_blue"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -671,7 +671,7 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
     .soundType("glass")
-    .parentModel("society:block/kubejs/drinks/good_catawba")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/good_catawba"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -689,7 +689,7 @@ StartupEvents.registry("block", (e) => {
     .box(2, 0, 2, 14, 14, 14)
     .defaultCutout()
     .soundType("glass")
-    .parentModel("society:block/kubejs/drinks/nutty_basil")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drinks/nutty_basil"))
     .item((item) => {
       item.modelGenerator((m) => {
         m.parent("minecraft:item/generated");
@@ -704,7 +704,7 @@ StartupEvents.registry("block", (e) => {
     });
 
   e.create("society:supreme_mayonnaise", "cardinal")
-    .parentModel("society:block/kubejs/supreme_mayonnaise")
+    .modelGenerator((m) => m.parent("society:block/kubejs/supreme_mayonnaise"))
     .soundType("stone")
     .defaultCutout()
     .hardness(1.0)
@@ -732,7 +732,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .resistance(1.0)
     .requiresTool(false)
-    .parentModel("society:block/kubejs/tanuki_catalog")
+    .modelGenerator((m) => m.parent("society:block/kubejs/tanuki_catalog"))
     .displayName("♤ §aTanuki Catalog");
 
   e.create("society:modern_catalog", "cardinal")
@@ -740,7 +740,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .resistance(1.0)
     .requiresTool(false)
-    .parentModel("society:block/kubejs/modern_catalog")
+    .modelGenerator((m) => m.parent("society:block/kubejs/modern_catalog"))
     .displayName("♧ Modern Catalog");
 
   e.create("society:fantasy_catalog", "cardinal")
@@ -748,7 +748,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .resistance(1.0)
     .requiresTool(false)
-    .parentModel("society:block/kubejs/fantasy_catalog")
+    .modelGenerator((m) => m.parent("society:block/kubejs/fantasy_catalog"))
     .displayName("♡ §eFantasy Catalog");
 
   e.create("moreminecarts:greenhouse_glass_stairs", "stairs")

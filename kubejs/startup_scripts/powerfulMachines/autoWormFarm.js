@@ -10,9 +10,9 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.auto_worm_farm.description").gray());
       item.tooltip(Text.translatable("society.working_block_entity.can_use_hopper").green());
-      item.parentModel("society:block/kubejs/auto_worm_farm");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/auto_worm_farm"));
     })
-    .parentModel("society:block/kubejs/auto_worm_farm")
+    .modelGenerator((m) => m.parent("society:block/kubejs/auto_worm_farm"))
     .blockEntity((blockInfo) => {
       blockInfo.inventory("inventory", Direction.ALL_SET, 9, 1);
       blockInfo.serverTicking();

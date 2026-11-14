@@ -156,13 +156,13 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .soundType("wood")
     .defaultCutout()
-    .parentModel("society:block/kubejs/drum_cornucopia")
+    .modelGenerator((m) => m.parent("society:block/kubejs/drum_cornucopia"))
     .box(3, 0, 3, 13, 14, 13)
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.translatable("block.society.drum_cornucopia.description").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `20x10x20`).green());
-      item.parentModel("society:block/kubejs/drum_cornucopia");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/drum_cornucopia"));
     })
     .blockEntity((blockInfo) => {
       blockInfo.serverTicking();

@@ -255,7 +255,7 @@ StartupEvents.registry("block", (e) => {
     .property(integerProperty.create("type", 0, 4))
     .defaultCutout()
     .item((item) => {
-      item.parentModel("society:block/kubejs/berry_bush/base");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/berry_bush/base"));
     })
     .defaultState((state) => {
       state.set(integerProperty.create("type", 0, 4), 0);

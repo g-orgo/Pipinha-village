@@ -24,9 +24,9 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(
         Text.translatable("tooltip.society.area", `10x10x10`).green()
       );
-      item.parentModel("society:block/kubejs/mana_milker");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/mana_milker"));
     })
-    .parentModel("society:block/kubejs/mana_milker")
+    .modelGenerator((m) => m.parent("society:block/kubejs/mana_milker"))
     .blockEntity((blockInfo) => {
       blockInfo.inventory("inventory", Direction.ALL_SET, 9, 1);
       blockInfo.serverTicking();

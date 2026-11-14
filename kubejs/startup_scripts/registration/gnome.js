@@ -29,7 +29,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.translatable("block.society.gnome.description").gray());
-      item.parentModel("society:block/kubejs/gnome/base");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/gnome/base"));
     })
     .defaultState((state) => {
       state.set(integerProperty.create("type", 0, 3), 0);
@@ -62,7 +62,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.translatable("block.society.lantern_gnome.description").gray());
-      item.parentModel("society:block/kubejs/gnome/lantern");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/gnome/lantern"));
     })
     .lightLevel(0.8)
     .rightClick((click) => {

@@ -68,9 +68,9 @@ StartupEvents.registry("block", (e) => {
       item.tooltip(
         Text.translatable("tooltip.society.area", `5x5x5`).green()
       );
-      item.parentModel("society:block/kubejs/auto_petter");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/auto_petter"));
     })
-    .parentModel("society:block/kubejs/auto_petter")
+    .modelGenerator((m) => m.parent("society:block/kubejs/auto_petter"))
     .blockEntity((blockInfo) => {
       blockInfo.serverTicking();
       blockInfo.tickFrequency(autoPetterTickRate);

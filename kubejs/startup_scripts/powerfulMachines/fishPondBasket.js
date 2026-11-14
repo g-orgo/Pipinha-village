@@ -97,11 +97,11 @@ StartupEvents.registry("block", (event) => {
           "block.society.fish_pond_basket.description.fuel"
         ).lightPurple()
       );
-      item.parentModel("society:block/kubejs/fish_pond_basket");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/fish_pond_basket"));
       item.fireResistant(true);
     })
     .soundType("copper")
-    .parentModel("society:block/kubejs/fish_pond_basket")
+    .modelGenerator((m) => m.parent("society:block/kubejs/fish_pond_basket"))
     .property(booleanProperty.create("upgraded"))
     .defaultState((state) => {
       state
@@ -172,11 +172,11 @@ StartupEvents.registry("block", (event) => {
           "block.society.fish_pond_basket.description.fuel"
         ).lightPurple()
       );
-      item.parentModel("society:block/kubejs/fish_pond_hatchery");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/fish_pond_hatchery"));
       item.fireResistant(true);
     })
     .soundType("copper")
-    .parentModel("society:block/kubejs/fish_pond_hatchery")
+    .modelGenerator((m) => m.parent("society:block/kubejs/fish_pond_hatchery"))
     .property(booleanProperty.create("upgraded"))
     .defaultState((state) => {
       state

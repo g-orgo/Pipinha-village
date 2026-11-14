@@ -32,12 +32,12 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("upgraded"))
     .box(4, 0, 2, 12, 14, 14)
     .defaultCutout()
-    .parentModel("society:block/kubejs/espresso_machine")
+    .modelGenerator((m) => m.parent("society:block/kubejs/espresso_machine"))
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.translatable("block.society.espresso_machine.description").gray());
-      item.parentModel("society:block/kubejs/espresso_machine");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/espresso_machine"));
     })
     .defaultState((state) => {
       state

@@ -232,7 +232,7 @@ StartupEvents.registry("block", (e) => {
       state.set(booleanProperty.create("upgraded"), false);
     })
     .soundType("stone")
-    .parentModel("society:block/kubejs/ribbit_hut/bottom_front_center")
+    .modelGenerator((m) => m.parent("society:block/kubejs/ribbit_hut/bottom_front_center"))
     .blockEntity((blockInfo) => {
       blockInfo.inventory("inventory", Direction.ALL_SET, 9, 3);
       blockInfo.initialData({ owner: "-1" });
@@ -261,7 +261,7 @@ StartupEvents.registry("block", (e) => {
     .resistance(3600000)
     .unbreakable()
     .item((item) => {
-      item.parentModel("ribbits:item/toadstool");
+      item.modelGenerator((m) => m.parent("ribbits:item/toadstool"));
     })
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")

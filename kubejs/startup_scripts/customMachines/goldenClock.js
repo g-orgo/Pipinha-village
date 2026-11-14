@@ -105,9 +105,9 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.translatable("block.society.golden_clock.description").gray());
       item.tooltip(Text.translatable("tooltip.society.area", `5x5x5`).green());
-      item.parentModel("society:block/kubejs/golden_clock");
+      item.modelGenerator((m) => m.parent("society:block/kubejs/golden_clock"));
     })
-    .parentModel("society:block/kubejs/golden_clock")
+    .modelGenerator((m) => m.parent("society:block/kubejs/golden_clock"))
     .blockEntity((blockInfo) => {
       blockInfo.serverTicking();
       blockInfo.tickFrequency(artMachineTickRate);

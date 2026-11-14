@@ -11,6 +11,7 @@ Usage (from anywhere):
 import argparse
 import filecmp
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -24,6 +25,30 @@ REMOTE = "git@github.com:g-orgo/Pipinha-village.git"
 REPO_ONLY = {"README.md", ".gitattributes", ".gitignore"}
 MAX_BYTES = 95 * 1024 * 1024  # GitHub rejects files over 100 MB.
 ATTRIBUTION = "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+# Dev files mirrored next to the zip content.
+DEV_DIRS = ["docs", "tools"]
+DEV_ROOT_FILES = ["AGENTS.md", "CLAUDE.md", "HANDOFF.md"]
+DEV_SKIP_DIRS = {"__pycache__", ".git", "node_modules"}
+DEV_SKIP_SUFFIXES = (".log", ".pyc")
+DEV_BACKUP = re.compile(r"^backup-.*\.tar\.gz$")
+
+
+def dev_files():
+    """Return the repository-facing dev files of the instance (docs, tools, agent notes)."""
+    found = set()
+    for top in DEV_DIRS:
+        base = os.path.join(INSTANCE, top)
+        for dp, dn, fn in os.walk(base):
+            dn[:] = [d for d in dn if d not in DEV_SKIP_DIRS]
+            for f in fn:
+                if f.endswith(DEV_SKIP_SUFFIXES) or DEV_BACKUP.match(f):
+                    continue
+                rel = os.path.relpath(os.path.join(dp, f), INSTANCE).replace(os.sep, "/")
+                found.add(rel)
+    for f in DEV_ROOT_FILES:
+        if os.path.isfile(os.path.join(INSTANCE, f)):
+            found.add(f)
+    return found
 
 
 def git(*args, check=True):
@@ -42,6 +67,8 @@ def main():
         sys.exit(f"Repository clone not found at {REPO} (git clone {REMOTE} {REPO})")
     with zipfile.ZipFile(os.path.join(INSTANCE, "Modpack.zip")) as z:
         names = {n for n in z.namelist() if not n.endswith("/")}
+    dev = dev_files()
+    names |= dev
     probe = subprocess.run(["git", "-C", REPO, "rev-parse", "--abbrev-ref", "HEAD"],
                            check=False, text=True, capture_output=True)
     if probe.returncode != 0:
@@ -59,6 +86,7 @@ def main():
             continue
         if os.path.getsize(src) > MAX_BYTES:
             too_big.append(rel)
+            print("WARN over 95 MB, not copied:", rel)
             continue
         if os.path.isfile(dst) and filecmp.cmp(src, dst, shallow=False):
             continue
@@ -72,7 +100,7 @@ def main():
         dn[:] = [d for d in dn if d != ".git"]
         for f in fn:
             rel = os.path.relpath(os.path.join(dp, f), REPO).replace(os.sep, "/")
-            if rel in names or rel in REPO_ONLY:
+            if rel in names or rel in REPO_ONLY or f == ".git":
                 continue
             removed += 1
             if not a.dry_run:

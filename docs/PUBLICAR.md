@@ -89,6 +89,33 @@ Este pack é uma **versão modificada** do modpack Society: Sunlit Valley (proje
 7. Escrever o changelog da versão.
 8. Só então enviar o zip para publicação.
 
+## Modpack.zip e instaladores
+
+O `Modpack.zip` é o arquivo que o jogador baixa e roda. Ele sai da pasta da instância (`tools/pack_tools/build_modpack.py`) e leva o conteúdo do pack mais `install.bat` (Windows) e `install.sh` (Linux).
+
+```py title:BuildModpack
+# Script: tools/pack_tools/build_modpack.py (gera INST/Modpack.zip)
+# Entram: mods, config, defaultconfigs, kubejs, resourcepacks, shaderpacks,
+#         moonlight-global-datapacks, patchouli_books, keybinding presets,
+#         options.txt, install.bat, install.sh e os READMEs
+# Ficam de fora: saves, logs, docs, tools, custom-mods, AGENTS.md, CLAUDE.md,
+#                HANDOFF.md, minecraftinstance.json, usercache.json, servers.dat
+class BuildModpack:
+    out: str = "Modpack.zip"                # escrita em .tmp e troca no fim
+    max_file_bytes: int = 95 * 1024 * 1024  # limite do GitHub: 100 MB
+    options_lastServer: str = ""            # zerado na cópia, não leva o servidor de quem gerou
+    install_sh_mode: int = 0o755            # o install.sh vai executável no zip
+```
+
+#### Regras de negócio
+
+- O zip leva só o conteúdo do pack. Saves, logs e a documentação do repositório nunca entram.
+- Se faltar `mods`, `config`, `kubejs` ou `resourcepacks`, o build para sem gerar nada.
+- Qualquer arquivo acima de 95 MB para o build.
+- Os instaladores trocam `mods`, `kubejs`, `resourcepacks` e `moonlight-global-datapacks`. O `options.txt` do jogador só recebe as linhas de resource pack.
+- O instalador confere o perfil (Minecraft 1.21.1 com NeoForge 21.1.265) antes de mexer em qualquer arquivo. Se não bater, pergunta antes de seguir.
+- `tools/pack_tools/sync_repo.py` espelha o zip e os arquivos de dev (docs, tools, notas de agente) para a branch `1.21.1` do repositório.
+
 ## Anotações
 
 > Por que a branch é a 1.21.1 e não a `main`? Porque a `main` segue sendo a 1.20.1 até a fase F11. A troca só acontece quando o dono decidir.

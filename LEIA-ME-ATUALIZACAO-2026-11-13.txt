@@ -1,0 +1,29 @@
+PIPINHA'S VILLAGE 1.21.1 - ATUALIZACAO DA 1.20.1 - 2026-11-13 - INSTRUCOES
+==========================================================================
+
+Esta edicao so existe porque queriamos o Create Aeronautics no pack, e ele
+nao existe para 1.20.1. Por isso o pack saiu do Forge 1.20.1 para o
+NeoForge 21.1.265 (Minecraft 1.21.1).
+
+1) NAO copie este conteudo por cima da instancia 1.20.1. Crie um perfil novo
+   no CurseForge (Minecraft 1.21.1, NeoForge 21.1.265) e extraia nele,
+   mantendo as pastas (mods/, config/, kubejs/, resourcepacks/ ...).
+
+2) Mundos da 1.20.1: faca uma COPIA da pasta do save e abra so a copia na
+   1.21.1. Blocos e itens de mods que nao vieram somem na conversao, e o
+   mundo nao volta a abrir na 1.20.1 depois de convertido.
+
+3) O que muda nesta atualizacao:
+   - mods novos: Create Aeronautics (Simulated, Aeronautics e Offroad),
+     Aeronautics Camera Sync, Create High Seas e Sable
+   - Create 6 e Sodium + Iris no lugar de Embeddium + Oculus
+   - sairam por nao existir na 1.21.1: Botania, Splendid Slimes,
+     Create: Splendid Cogs e outros mods sem versao nova (lista em
+     docs/migracao/mods_1.21.1.tsv), junto com as missoes, ofertas e
+     receitas ligadas a eles
+   - alguns atalhos mudaram de nome (ParCool, Refined Storage, Relics,
+     Punchy): confira em atalhos.md e refaca no menu de controles
+
+4) Em andamento: scripts KubeJS, missoes, lojas e vilas estao sendo
+   portados por etapas (docs/migracao/PLANO.md). Ate o fim da migracao, a
+   edicao 1.20.1 continua sendo a jogavel.

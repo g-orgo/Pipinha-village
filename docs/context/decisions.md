@@ -289,6 +289,13 @@ Se o servidor ficar 90 s sem completar um tick, grava a pilha de todas as thread
 - **Decisão**: `jarSeasonStrip` e `jarSeasonRestore` em `handleSeasonTags.js` tiram as tags do Hearth & Harvest (bloco e item) e devolvem as do Youkai com os valores do jar 1.20.1. O milho e a treliça de uva e lúpulo são novos na 1.21.1 e seguem o resto do mod, o ano todo.
 - **Verificação**: tag efetiva calculada fora do jogo (jars, `kubejs/data` e o script) nas duas instâncias; nenhum bloco ou item ficou com estação diferente da 1.20.1.
 
+#### 2026-11-14: Modpack.zip da 1.21.1 com instaladores Windows e Linux
+- **Decisão**: o jogador recebe um `Modpack.zip` e roda `install.bat` (Windows) ou `install.sh` (Linux) dentro da pasta do perfil. O instalador espelha o da 1.20.1 e aceita também o zip do GitHub e o clone do repositório.
+- **Motivo**: instalar à mão (apagar pastas e descompactar) era fonte de erro. O instalador faz a troca e preserva o `options.txt` do jogador.
+- **Perfil**: lê `minecraftinstance.json` (CurseForge) ou `mmc-pack.json` (Prism/MultiMC). Fora de 1.21.1 com NeoForge 21.1.265, pergunta antes de continuar.
+- **Verificação**: build real gerou o zip sem saves, logs ou docs; `install.sh` testado em pastas de teste com perfil CurseForge (com `guiScale` preservado), perfil Prism e zip com pasta-wrapper do GitHub; versão errada aborta sem mudar nada.
+- **Não verificado**: `install.bat` não foi executado (o agente não tem PowerShell). O dono deve testar no Windows.
+
 ## Anotações
 
 > Registros de 2026-10-02 a 2026-11-03 foram resumidos. O texto completo continua na 1.20.1 de origem, somente para leitura.

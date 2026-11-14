@@ -1,0 +1,73 @@
+PIPINHA'S VILLAGE - MINECRAFT 1.21.1 (NEOFORGE 21.1.265)
+=========================================================
+
+Modpack de fazenda, comercio e vida na cidade. Baseado no Society: Sunlit Valley.
+
+Esta edicao 1.21.1 so existe porque queriamos o Create Aeronautics no pack,
+e ele nao existe para 1.20.1. Ela vem com Create Aeronautics, Aeronautics
+Camera Sync, Create High Seas e Sable.
+
+ESTADO: a edicao 1.21.1 esta sendo migrada a partir da 1.20.1. Os mods ja
+estao no lugar; scripts, missoes, lojas e vilas estao sendo portados por
+etapas (plano em docs/migracao/PLANO.md). Ate la, a edicao 1.20.1 continua
+sendo a jogavel.
+
+
+INSTALAR COM O INSTALADOR (RECOMENDADO)
+---------------------------------------
+
+Feche o launcher e o Minecraft antes.
+
+- Windows: coloque install.bat e Modpack.zip na pasta do perfil (CurseForge:
+  botao direito no perfil > Open Folder) e clique duas vezes em install.bat.
+- Linux: coloque install.sh e Modpack.zip na pasta do perfil e rode:
+  bash install.sh
+
+O instalador substitui mods/, kubejs/, resourcepacks/ e
+moonlight-global-datapacks/ pelos arquivos do pack e mantem seu options.txt
+(so as linhas de resource pack sao atualizadas). Se o perfil nao for Minecraft
+1.21.1 com NeoForge 21.1.265, ele pergunta antes de continuar.
+
+
+INSTALACAO MANUAL (SE O INSTALADOR NAO RODAR)
+---------------------------------------------
+
+1) No app do CurseForge crie um perfil de Minecraft 1.21.1 com
+   NeoForge 21.1.265 (ou importe o zip de modpack, abaixo).
+2) Apague as pastas "mods", "resourcepacks" e "kubejs" dentro da pasta da
+   instancia (CurseForge: botao direito no perfil > Open Folder).
+3) Descompacte este arquivo na pasta da instancia, mantendo a estrutura de
+   pastas (mods/, resourcepacks/, config/, kubejs/, moonlight-global-datapacks/ ...).
+   Substitua os arquivos existentes quando perguntado.
+
+Nao misture arquivos da edicao 1.20.1 com esta: jars e scripts da 1.20.1
+nao carregam na 1.21.1.
+
+
+IMPORTAR NO CURSEFORGE (ZIP DE MODPACK)
+---------------------------------------
+
+O zip de modpack (manifest.json) e menor: o app do CurseForge baixa os mods
+na instalacao. Ele e gerado em dist/ pelo tools/pack_tools/export_curseforge.py
+(detalhes em docs/PUBLICAR.md).
+
+1) No app do CurseForge clique em "Create Custom Profile".
+2) Clique em "Import" e escolha o arquivo .zip.
+3) Confirme o nome do perfil e espere o app baixar os mods.
+4) Abra o perfil. Os arquivos de config e kubejs ja vem no zip.
+
+
+OBSERVACOES
+-----------
+
+- Mundos da edicao 1.20.1 sao convertidos numa copia, nunca no save
+  original. Blocos e itens de mods que nao vieram para a 1.21.1 somem na
+  conversao.
+- O Java usa o coletor padrao G1. Se voce adicionou -XX:+UseZGC manualmente,
+  remova em CurseForge > botao direito no perfil > Profile Options >
+  Additional Arguments.
+- Recomendado: reserve 8 GB de memoria (Allocated Memory) no perfil. Em um PC
+  com 16 GB de RAM, mais do que isso joga o sistema no swap.
+- A renderizacao usa Sodium + Iris (Embeddium e Oculus nao existem aqui).
+- Se o Windows disser que o caminho e muito longo, extraia o zip em uma pasta
+  mais curta (por exemplo C:\Pipinha) e copie as pastas extraidas para a instancia.

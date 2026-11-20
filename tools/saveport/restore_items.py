@@ -167,7 +167,7 @@ def convert_stack(old, t, notes):
             comps[cname] = rest.pop(key)
     rest.pop('renderInfo', None)
     rest.pop('sortBy', None)
-    if 'AccountID' in rest and rest['AccountID'][0] == 3:
+    if 'AccountID' in rest and rest['AccountID'][0] in (3, 11):  # 1.20.1 cards store a UUID int array
         comps['numismatics:card_account_id'] = rest.pop('AccountID')
     if 'UUID' in rest and rest['UUID'][0] == 11 and 'id_card' in old['id'][1]:
         comps['numismatics:id_card_uuid'] = rest.pop('UUID')

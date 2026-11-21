@@ -49,11 +49,16 @@ const clearUiPaint = (player, ids) => {
   global.paintUi(player, removedShadow);
 };
 
-// HUD lifetime: a message stays on screen for 100 ticks after the last update of that
-// player. The clock is the server tick count, because Entity#age is not exposed by the
-// KubeJS 7 wrapper: the old comparison produced NaN and the animal name never left the screen.
-global.lastUiShownTick = {};
+// HUD lifetime: a message (animal name with hearts, machine and pond status...) stays on
+// screen for 5 s (100 ticks) after the last update of that player. Each update bumps a
+// per-player counter and only the clear scheduled by the latest update runs, so the
+// lifetime does not depend on comparing two clocks (scheduleInTicks counts overworld game
+// time, getTickCount counts server ticks; Entity#age is not exposed by KubeJS 7 and once
+// left the animal name stuck on screen).
+global.uiShownGeneration = {};
 const UI_TEXT_LIFETIME_TICKS = 100;
+// Logs "[paintHud] lifetime clear" in latest.log; switch to false once confirmed in game.
+const UI_LIFETIME_DEBUG = true;
 const uiShownKey = (player) => String(player.uuid);
 
 global.renderUiText = (player, server, messages, clearedMessages) => {
@@ -61,11 +66,19 @@ global.renderUiText = (player, server, messages, clearedMessages) => {
     const key = uiShownKey(player);
     clearUiPaint(player, clearedMessages);
     global.paintUi(player, messages);
-    global.lastUiShownTick[key] = server.getTickCount();
+    let generation = (global.uiShownGeneration[key] || 0) + 1;
+    global.uiShownGeneration[key] = generation;
+    let shownTick = server.getTickCount();
     server.scheduleInTicks(UI_TEXT_LIFETIME_TICKS, () => {
-      const shown = global.lastUiShownTick[key];
-      if (shown === undefined || server.getTickCount() - shown >= UI_TEXT_LIFETIME_TICKS)
-        clearUiPaint(player, clearedMessages);
+      if (global.uiShownGeneration[key] !== generation) return;
+      clearUiPaint(player, clearedMessages);
+      if (UI_LIFETIME_DEBUG) {
+        try {
+          console.info(`[paintHud] lifetime clear after ${server.getTickCount() - shownTick} server ticks`);
+        } catch (err) {
+          console.info(`[paintHud] lifetime debug failed: ${err}`);
+        }
+      }
     });
   });
 };

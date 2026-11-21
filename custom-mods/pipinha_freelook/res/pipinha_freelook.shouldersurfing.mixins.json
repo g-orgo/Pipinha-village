@@ -1,0 +1,12 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.pipinha.freelook.mixin.ss",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ShoulderSurfingCameraMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

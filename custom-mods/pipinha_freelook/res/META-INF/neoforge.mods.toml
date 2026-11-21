@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="pipinha_freelook"
+version="1.0.0"
+displayName="Pipinha's Village Free Look"
+description="Client-only free look while riding: hold the Free Look key to look around with the camera while the player keeps the original heading, aim and crosshair."
+
+[[mixins]]
+config="pipinha_freelook.mixins.json"
+
+[[mixins]]
+config="pipinha_freelook.shouldersurfing.mixins.json"
+
+[[dependencies.pipinha_freelook]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.pipinha_freelook]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.pipinha_freelook]]
+modId="shouldersurfing"
+type="optional"
+versionRange="[5.3,)"
+ordering="AFTER"
+side="CLIENT"

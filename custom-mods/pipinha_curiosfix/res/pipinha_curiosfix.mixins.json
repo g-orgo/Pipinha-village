@@ -4,7 +4,8 @@
   "package": "com.pipinha.curiosfix.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "CuriosScreenMixin"
+    "CuriosScreenMixin",
+    "HumanoidArmorLayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

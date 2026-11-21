@@ -6,10 +6,13 @@ license="All Rights Reserved"
 modId="pipinha_curiosfix"
 version="1.0.0"
 displayName="Pipinha's Village Curios Fix"
-description="Renders item tooltips with the hovered stack on the Curios inventory screen, so stack-based tooltip lines (Quark attributes, LSO hydration) show there, and enables the TrashSlot trash slot by default on that screen."
+description="Renders item tooltips with the hovered stack on the Curios inventory screen, so stack-based tooltip lines (Quark attributes, LSO hydration) show there, enables the TrashSlot trash slot by default on that screen, and draws Curios clothing as an extra layer over the regular armor (Simple Hats no longer hides the helmet)."
 
 [[mixins]]
 config="pipinha_curiosfix.mixins.json"
+
+[[mixins]]
+config="pipinha_curiosfix.simplehats.mixins.json"
 
 [[dependencies.pipinha_curiosfix]]
 modId="neoforge"
@@ -38,3 +41,10 @@ type="optional"
 versionRange="[21.1,)"
 ordering="AFTER"
 side="BOTH"
+
+[[dependencies.pipinha_curiosfix]]
+modId="simplehats"
+type="optional"
+versionRange="[0.4,)"
+ordering="NONE"
+side="CLIENT"

@@ -1,7 +1,7 @@
 #!/bin/sh
 # Builds pipinha_curiosfix-1.0.0.jar inside a detached JDK 21 container (no local JDK needed)
 # and copies it to the instance mods folder. Usage: sh build.sh
-# Compiles against the NeoForge, Curios, TrashSlot and Balm jars (mods/), so rebuild after updating them.
+# Compiles against the NeoForge (with its bundled MixinExtras), Curios, TrashSlot and Balm jars (mods/), so rebuild after updating them.
 set -eu
 
 MOD_NAME=pipinha_curiosfix
@@ -33,6 +33,8 @@ CP=/opt/libs/net/neoforged/neoforge/21.1.265/neoforge-21.1.265-client.jar
 CP=$CP:/opt/libs/net/minecraft/client/1.21.1-20240808.144430/client-1.21.1-20240808.144430-srg.jar
 CP=$CP:/opt/libs/net/neoforged/neoforge/21.1.265/neoforge-21.1.265-universal.jar
 CP=$CP:/opt/libs/net/fabricmc/sponge-mixin/0.16.4+mixin.0.8.7/sponge-mixin-0.16.4+mixin.0.8.7.jar
+mkdir -p /src/out/lib && (cd /src/out/lib && jar xf /opt/libs/net/neoforged/neoforge/21.1.265/neoforge-21.1.265-universal.jar META-INF/jarjar/mixinextras-neoforge-0.5.5.jar)
+CP=$CP:/src/out/lib/META-INF/jarjar/mixinextras-neoforge-0.5.5.jar
 CP=$CP:/mods/curios-neoforge-9.5.1+1.21.1.jar:/mods/trashslot-neoforge-1.21.1-21.1.11.jar:/mods/balm-neoforge-1.21.1-21.0.67.jar
 CP=$CP:$(find /opt/libs -name "*.jar" | while read -r j; do jar tf "$j" >/dev/null 2>&1 && printf "%s:" "$j"; done)
 mkdir -p /src/out/classes

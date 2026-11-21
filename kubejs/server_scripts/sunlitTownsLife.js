@@ -222,6 +222,13 @@ const townParkGround = (level, pos, st) => {
   return /(dirt_path|farmland)$/.test(String(st.getBlock().getDescriptionId()));
 };
 const TOWN_PARK_H = 20;
+// loose vegetation placed by the generator (flower, short grass, pebble, mushroom): no block entity, not a fluid
+// and nothing to stand on. Two-block plants (sunflower, lilac) are left alone: the block above them is their own
+// upper half, never a park piece, and removing only the lower half would orphan it
+const townLooseVegetation = (level, pos, st) =>
+  !st.isAir() && !st.hasBlockEntity() && !st.getFluidState().isSource() &&
+  !st.hasProperty($TownProps.DOUBLE_BLOCK_HALF) &&
+  (st.canBeReplaced() || st.getCollisionShape(level, pos).isEmpty());
 // cada passo com try proprio: um block entity que nao aceita save/load (NPE de mod) nao pode deixar a coluna
 // pela metade; no pior caso o bloco desce sem os dados dele
 const townMoveColumn = (level, from, to, n) => {
@@ -234,7 +241,7 @@ const townMoveColumn = (level, from, to, n) => {
     if (st.hasBlockEntity()) {
       try {
         let be = level.getBlockEntity(p);
-        if (be) tag = be.saveWithoutMetadata();
+        if (be) tag = be.saveWithoutMetadata(level.registryAccess());
       } catch (err) {
         tag = null;
       }
@@ -263,7 +270,7 @@ const townMoveColumn = (level, from, to, n) => {
       try {
         let be = level.getBlockEntity(p);
         if (be) {
-          be.load(tags[k]);
+          be.loadWithComponents(tags[k], level.registryAccess());
           be.setChanged();
         }
       } catch (err) {}
@@ -328,7 +335,12 @@ const townLowerPark = (level, cx, cz, ground, forcedLawn) => {
         if (forced) {
           // so desce coluna de terreno de jardim (terra, caminho, arado, cerca, folha, planta); casa e
           // material de construcao ficam onde estao, senao o predio vizinho era enterrado 1 bloco
-          if (!st0.isAir() && townLoteGardenColumn(level, s0, st0)) {
+          if (townLooseVegetation(level, s0, st0) && !level.getBlockState(s0.above()).isAir() && townLoteGardenColumn(level, s0, st0)) {
+            // flower/pebble under a garden piece (fence, hedge, bench): it goes away instead of carrying the piece
+            level.setBlock(s0, $TownBlocks.AIR.defaultBlockState(), 18);
+            townMoveColumn(level, s0.above(), s0, TOWN_PARK_H);
+            moved++;
+          } else if (!st0.isAir() && townLoteGardenColumn(level, s0, st0)) {
             townMoveColumn(level, s0, base, TOWN_PARK_H);
             moved++;
           }
@@ -344,9 +356,10 @@ const townLowerPark = (level, cx, cz, ground, forcedLawn) => {
             townMoveColumn(level, s0.above(k), s0.above(k - 1), TOWN_PARK_H - k + 1);
             moved++;
           }
-        } else if (st0.canBeReplaced() && !level.getBlockState(s0.above()).isAir()) {
-          // random vegetation of Lost Cities (flower, grass) right under a park piece: it goes away and the piece
-          // settles on the lawn instead of standing on top of the flower
+        } else if (townLooseVegetation(level, s0, st0) && !level.getBlockState(s0.above()).isAir()) {
+          // random vegetation of Lost Cities (flower, grass, pebble) right under a park piece: it goes away and the
+          // piece settles on the lawn instead of standing on top of the flower. Flowers and pebbles are not
+          // "replaceable", so checking only canBeReplaced left the fence post one block above its row
           level.setBlock(s0, $TownBlocks.AIR.defaultBlockState(), 18);
           townMoveColumn(level, s0.above(), s0, TOWN_PARK_H);
           moved++;
@@ -493,7 +506,15 @@ const townSpawn = (level, type, spot, rnd, job) => {
   // moveTo(double,double,double,float,float) nao resolve no Rhino (os 2 ultimos sao float
   // e o Rhino passa tudo como double -> m_20219_ nao encontrado). setPos so usa doubles.
   mob.setPos(spot[0] + 0.5, spot[1], spot[2] + 0.5);
-  mob.finalizeSpawn(level, level.getCurrentDifficultyAt(pos), $TownMobSpawnType.STRUCTURE, null, null);
+  // 1.21.1: finalizeSpawn(ServerLevelAccessor, DifficultyInstance, MobSpawnType, SpawnGroupData) has no CompoundTag
+  // anymore. A mob that refuses it still spawns: before, the throw aborted the whole chunk post-processing (seats,
+  // fences and hedges of that chunk were never fixed).
+  try {
+    mob.finalizeSpawn(level, level.getCurrentDifficultyAt(pos), $TownMobSpawnType.STRUCTURE, null);
+  } catch (fsErr) {
+    if (!global.runtime.sunlitFinalizeWarned) console.warn(`[Sunlit Towns] finalizeSpawn falhou (${type}): ${fsErr}`);
+    global.runtime.sunlitFinalizeWarned = true;
+  }
   if (job) mob.setVillagerData(mob.getVillagerData().setProfession($TownProfession[job]).setLevel(2));
   mob.setPersistenceRequired();
   level.addFreshEntity(mob);
@@ -739,7 +760,9 @@ const townWaystones = (level, cx, cz, ground) => {
         if (st.isAir()) continue;
         let id = String(st.getBlock().getDescriptionId());
         if (!/waystone$/.test(id) || /block\.waystones\.(portstone|sharestone|warp_plate)/.test(id)) continue;
-        let half = st.getValues().toString();
+        // FerriteCore swaps the values map for FastMapEntryMap, which Rhino cannot toString(); the state string
+        // ("Block{waystones:waystone}[half=upper,...]") carries the same properties
+        let half = String(st);
         if (half.indexOf("half=upper") >= 0) continue;
         found.push(pos);
       }
@@ -790,15 +813,25 @@ const townNeverLowered = (level, cx, cz) => {
     if (!lote) return false;
     lawn = ground - 1;
   }
-  let up = 0, at = 0;
+  // grass-only lawns have no farmland or path: count exposed grass (air or loose plant on top) one block up
+  // against exposed grass at lawn height too
+  let up = 0, at = 0, gUp = 0, gAt = 0;
+  let exposedGrass = (p) => {
+    if (level.getBlockState(p).getBlock() !== $TownBlocks.GRASS_BLOCK) return false;
+    let a = p.above(), sa = level.getBlockState(a);
+    return sa.isAir() || townLooseVegetation(level, a, sa);
+  };
   for (let x = 0; x < 16; x++) {
     for (let z = 0; z < 16; z++) {
       let px = (cx << 4) + x, pz = (cz << 4) + z;
-      if (TOWN_BED.test(String(level.getBlockState(new $TownBlockPos(px, lawn + 1, pz)).getBlock().getDescriptionId()))) up++;
-      if (TOWN_BED.test(String(level.getBlockState(new $TownBlockPos(px, lawn, pz)).getBlock().getDescriptionId()))) at++;
+      let pUp = new $TownBlockPos(px, lawn + 1, pz), pAt = new $TownBlockPos(px, lawn, pz);
+      if (TOWN_BED.test(String(level.getBlockState(pUp).getBlock().getDescriptionId()))) up++;
+      if (TOWN_BED.test(String(level.getBlockState(pAt).getBlock().getDescriptionId()))) at++;
+      if (exposedGrass(pUp)) gUp++;
+      if (exposedGrass(pAt)) gAt++;
     }
   }
-  return up >= 6 && at == 0;
+  return (up >= 6 && at == 0) || (gUp >= 40 && gAt * 4 < gUp);
 };
 
 // 2026-11-10: the town queue and the chunks it gave up on (not loaded yet) lived only in memory, so closing the
@@ -1047,7 +1080,7 @@ const townCapLoot = (level, cx, cz, yMin, yMax, bandFn) => {
         if (!be) continue;
         let lt = null;
         try {
-          let tag = be.saveWithoutMetadata();
+          let tag = be.saveWithoutMetadata(level.registryAccess());
           if (tag.contains("LootTable")) lt = tag.getString("LootTable");
         } catch (err) {}
         if (!lt || lt.indexOf("sunlit:") != 0) continue;
@@ -1068,11 +1101,16 @@ const townCapLoot = (level, cx, cz, yMin, yMax, bandFn) => {
       try {
         let be = level.getBlockEntity(list[i].pos);
         if (!be) continue;
-        let tag = be.saveWithoutMetadata();
+        let tag = be.saveWithoutMetadata(level.registryAccess());
         if (!tag.contains("LootTable")) continue;
-        tag.remove("LootTable");
-        tag.remove("LootTableSeed");
-        be.load(tag);
+        // 1.21.1: loading a tag without LootTable does not clear the field (tryLoadLootTable only sets it), so
+        // containers clear it themselves; other block entities fall back to the tag reload
+        if (typeof be.setLootTable === "function") be.setLootTable(null);
+        else {
+          tag.remove("LootTable");
+          tag.remove("LootTableSeed");
+          be.loadWithComponents(tag, level.registryAccess());
+        }
         be.setChanged();
         cut++;
       } catch (err) {}

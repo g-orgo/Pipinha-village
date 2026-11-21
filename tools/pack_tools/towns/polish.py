@@ -419,6 +419,8 @@ def rule_doors(g):
             continue
         if not DOOR.search(nm(o[0])) or props(o[0]).get('half', 'lower') != 'lower':
             continue
+        if props(o[0]).get('third', 'lower') != 'lower':
+            continue  # middle/upper third of a tall door follows its lower third
         lowers[(y, z, x)] = o[0]
     seen = set()
     for (y, z, x), b in lowers.items():
@@ -488,7 +490,8 @@ def _door_wall(group, g):
 
 
 def _set_door_facing(g, y, z, x, want):
-    for dy in (0, 1):
+    tall = 'third' in props(g.b(y, z, x))
+    for dy in ((0, 1, 2) if tall else (0, 1)):
         if not g.inside(y + dy, z, x):
             continue
         cur = g.b(y + dy, z, x)
@@ -501,6 +504,27 @@ def _set_door_facing(g, y, z, x, want):
         e['block'] = with_props(cur, facing=want)
         g.put_entry(y + dy, z, x, e)
         STATS['porta_alinhada'] += 1
+
+
+def rule_tall_doors(g):
+    """tall door (dramaticdoors, `third`) with only the lower third: blueprints and schematics keep only the
+    block the player placed, the mod adds middle and upper on placement, and Lost Cities does not, so the door
+    showed up one block tall with a broken texture. Middle and upper go into the two cells above when free."""
+    for y, z, x in cells(g):
+        cur = g.b(y, z, x)
+        if not cur or not DOOR.search(nm(cur)) or props(cur).get('third') != 'lower':
+            continue
+        above = [g.b(y + dy, z, x) for dy in (1, 2)]
+        want = [with_props(cur, third=t) for t in ('middle', 'upper')]
+        if above == want:
+            continue
+        if not all(g.inside(y + dy, z, x) for dy in (1, 2)) or \
+                not all(is_air(a) or bid(a) == bid(cur) for a in above):
+            STATS['porta_alta_sem_espaco'] += 1
+            continue
+        for dy, b in ((1, want[0]), (2, want[1])):
+            g.put(y + dy, z, x, b)
+        STATS['porta_alta_completa'] += 1
 
 
 def rule_door_visible(g):
@@ -2043,6 +2067,7 @@ def main():
         rule_bath(g)
         rule_orient(g)
         rule_doors(g)
+        rule_tall_doors(g)
         rule_door_visible(g)
         rule_hedge_links(g)
         rule_hood(g)

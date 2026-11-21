@@ -146,7 +146,7 @@
     "landscapeType": "default",
     "generateLighting": true,
     "forceSpawnBuildings": [],
-    "streetGenerationMode": "HIERARCHICAL_GRID_V1",
+    "streetGenerationMode": "LEGACY",
     "generateSpawners": false,
     "buildingMinFloorsChance": 1,
     "buildingWithoutLootChance": 0.0,

@@ -1,0 +1,17 @@
+{
+  "pipinha_cinematic_toms.hint.terminal": "Click the screen to store the held item  |  Click stored items below to take  |  Right-click: take one  |  Wheel: scroll  |  Search bar: filter  |  E: open terminal",
+  "pipinha_cinematic_toms.hint.terminal.search": "Type to search  |  ESC: close the search  |  Right-click the bar: clear  |  Buttons above: sorting and search mode",
+  "pipinha_cinematic_toms.strip.empty": "Nothing stored",
+  "pipinha_cinematic_toms.strip.no_match": "No matches",
+  "pipinha_cinematic_toms.strip.count": "Stored: %s",
+  "pipinha_cinematic_toms.strip.search": "Search items...",
+  "pipinha_cinematic_toms.strip.sort_0": "Sort by Item Amount",
+  "pipinha_cinematic_toms.strip.sort_1": "Sort by Item Name",
+  "pipinha_cinematic_toms.strip.sort_2": "Sort by Mod",
+  "pipinha_cinematic_toms.strip.order_asc": "Order: ascending",
+  "pipinha_cinematic_toms.strip.order_desc": "Order: descending",
+  "pipinha_cinematic_toms.strip.search_plain": "Standard search (clears when closed)",
+  "pipinha_cinematic_toms.strip.search_keep": "Keep search when closed",
+  "pipinha_cinematic_toms.strip.pin_off": "Opens on hover only",
+  "pipinha_cinematic_toms.strip.pin_on": "Always open"
+}

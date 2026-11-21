@@ -10,8 +10,9 @@ const SYMPHONIA_BOOK = Item.of('patchouli:guide_book[patchouli:book="faunaandorc
 
 const symphoniaHasBook = (player) => {
   let found = false;
+  let $PatchouliBook;
   try {
-    const $PatchouliBook = Java.loadClass("vazkii.patchouli.common.item.PatchouliDataComponents").BOOK;
+    $PatchouliBook = Java.loadClass("vazkii.patchouli.common.item.PatchouliDataComponents").BOOK;
     player.inventory.items.forEach((item) => {
       if (found || item.id !== "patchouli:guide_book") return;
       const book = item.get($PatchouliBook);

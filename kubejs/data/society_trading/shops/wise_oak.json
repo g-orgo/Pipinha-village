@@ -1,14 +1,15 @@
 {
   "shop_id": "wise_oak",
-  "name": "shop.society_trading.wise_oak",
+  "name": {"translate": "shop.society_trading.wise_oak"},
   "texture": "mysticaloaktree:textures/block/wise_oak",
   "hidden_from_selector": true,
   "jei_catalyst": {
-    "id": "society:villager_home",
+    "id": "society:villager",
     "components": {
       "minecraft:custom_data": {
         "type": "wise_oak"
-      }
+      },
+      "minecraft:custom_model_data": 9
     }
   },
   "trades": [

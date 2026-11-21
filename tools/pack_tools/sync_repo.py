@@ -1,59 +1,53 @@
 #!/usr/bin/env python3
-"""Mirror the Modpack.zip file set into the Pipinha-village git repository.
+"""Commit and push the instance folder, which is itself the Pipinha-village repository.
 
-Modpack.zip is the source of truth for what gets distributed; each listed file
-is copied from the instance (its newest copy). Files in the repository that are
-no longer listed are removed. Then the change is committed and pushed.
+The instance is a git worktree on branch 1.21.1. What gets versioned is set by the root
+.gitignore: the Modpack.zip file set (tools/pack_tools/build_modpack.py INCLUDE_DIRS and
+INCLUDE_FILES, same artifact exclusions) plus the dev files (docs, tools, custom-mods, agent
+notes). Keep the two lists in step when either changes.
 
 Usage (from anywhere):
     python3 tools/pack_tools/sync_repo.py -m "Commit message" [--no-push] [--dry-run]
 """
 import argparse
-import filecmp
 import os
 import re
-import shutil
 import subprocess
 import sys
-import zipfile
 
 INSTANCE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-REPO = os.environ.get("PIPINHA_REPO", "/var/home/Orgo/Documentos/Pipinha-village-1.21.1")
 BRANCH = "1.21.1"
-REMOTE = "git@github.com:g-orgo/Pipinha-village.git"
-# Files that only exist in the repository (not in Modpack.zip).
-REPO_ONLY = {"README.md", ".gitattributes", ".gitignore"}
 MAX_BYTES = 95 * 1024 * 1024  # GitHub rejects files over 100 MB.
 ATTRIBUTION = "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
-# Dev files mirrored next to the zip content.
-DEV_DIRS = ["docs", "tools"]
-DEV_ROOT_FILES = ["AGENTS.md", "CLAUDE.md", "HANDOFF.md"]
-DEV_SKIP_DIRS = {"__pycache__", ".git", "node_modules"}
-DEV_SKIP_SUFFIXES = (".log", ".pyc")
-DEV_BACKUP = re.compile(r"^backup-.*\.tar\.gz$")
-
-
-def dev_files():
-    """Return the repository-facing dev files of the instance (docs, tools, agent notes)."""
-    found = set()
-    for top in DEV_DIRS:
-        base = os.path.join(INSTANCE, top)
-        for dp, dn, fn in os.walk(base):
-            dn[:] = [d for d in dn if d not in DEV_SKIP_DIRS]
-            for f in fn:
-                if f.endswith(DEV_SKIP_SUFFIXES) or DEV_BACKUP.match(f):
-                    continue
-                rel = os.path.relpath(os.path.join(dp, f), INSTANCE).replace(os.sep, "/")
-                found.add(rel)
-    for f in DEV_ROOT_FILES:
-        if os.path.isfile(os.path.join(INSTANCE, f)):
-            found.add(f)
-    return found
+PRIVATE_FILES = {"servers.dat", "usernamecache.json", "usercache.json"}
 
 
 def git(*args, check=True):
-    return subprocess.run(["git", "-C", REPO, *args], check=check, text=True,
+    return subprocess.run(["git", "-C", INSTANCE, *args], check=check, text=True,
                           capture_output=True)
+
+
+def pending_paths():
+    """Paths `git add -A` would stage (new or changed), relative to the instance."""
+    out = git("add", "-A", "--dry-run").stdout
+    return [m.group(1) for m in re.finditer(r"^add '(.+)'$", out, re.M)]
+
+
+def check_safe(paths):
+    """Refuse files GitHub rejects and the owner's private data."""
+    problems = []
+    for rel in paths:
+        full = os.path.join(INSTANCE, rel)
+        if os.path.basename(rel) in PRIVATE_FILES:
+            problems.append(f"private file: {rel}")
+        elif os.path.isfile(full) and os.path.getsize(full) > MAX_BYTES:
+            problems.append(f"over 95 MB: {rel}")
+    options = os.path.join(INSTANCE, "options.txt")
+    if os.path.isfile(options):
+        with open(options, encoding="utf-8", errors="replace") as fh:
+            if re.search(r"^lastServer:\S", fh.read(), re.M):
+                problems.append("options.txt has lastServer set (clear it before committing)")
+    return problems
 
 
 def main():
@@ -63,61 +57,23 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
-    if not os.path.exists(os.path.join(REPO, ".git")):
-        sys.exit(f"Repository clone not found at {REPO} (git clone {REMOTE} {REPO})")
-    with zipfile.ZipFile(os.path.join(INSTANCE, "Modpack.zip")) as z:
-        names = {n for n in z.namelist() if not n.endswith("/")}
-    dev = dev_files()
-    names |= dev
-    probe = subprocess.run(["git", "-C", REPO, "rev-parse", "--abbrev-ref", "HEAD"],
-                           check=False, text=True, capture_output=True)
+    probe = git("rev-parse", "--abbrev-ref", "HEAD", check=False)
     if probe.returncode != 0:
-        sys.exit(f"Refusing to run: cannot read the branch of {REPO}")
-    current = probe.stdout.strip()
-    if current != BRANCH:
-        sys.exit(f"Refusing to run: {REPO} is on branch '{current}', expected '{BRANCH}'")
+        sys.exit(f"Refusing to run: {INSTANCE} is not a git worktree")
+    if probe.stdout.strip() != BRANCH:
+        sys.exit(f"Refusing to run: branch is '{probe.stdout.strip()}', expected '{BRANCH}'")
 
-    copied, missing, too_big = 0, [], []
-    for rel in sorted(names):
-        src = os.path.join(INSTANCE, rel)
-        dst = os.path.join(REPO, rel)
-        if not os.path.isfile(src):
-            missing.append(rel)
-            continue
-        if os.path.getsize(src) > MAX_BYTES:
-            too_big.append(rel)
-            print("WARN over 95 MB, not copied:", rel)
-            continue
-        if os.path.isfile(dst) and filecmp.cmp(src, dst, shallow=False):
-            continue
-        copied += 1
-        if not a.dry_run:
-            os.makedirs(os.path.dirname(dst), exist_ok=True)
-            shutil.copy2(src, dst)
-
-    removed = 0
-    for dp, dn, fn in os.walk(REPO):
-        dn[:] = [d for d in dn if d != ".git"]
-        for f in fn:
-            rel = os.path.relpath(os.path.join(dp, f), REPO).replace(os.sep, "/")
-            if rel in names or rel in REPO_ONLY or f == ".git":
-                continue
-            removed += 1
-            if not a.dry_run:
-                os.remove(os.path.join(dp, f))
-
-    print(f"copied/updated {copied}, removed {removed}, listed {len(names)}")
-    for rel in missing:
-        print("WARN listed in Modpack.zip but missing in the instance:", rel)
-    if too_big:
-        sys.exit("Files over the GitHub limit: " + ", ".join(too_big))
-    if a.dry_run:
+    paths = pending_paths()
+    problems = check_safe(paths)
+    status = git("status", "--porcelain").stdout.splitlines()
+    print(f"changed entries: {len(status)}, files to stage: {len(paths)}")
+    if problems:
+        sys.exit("Refusing to commit:\n  " + "\n  ".join(problems))
+    if a.dry_run or not status:
+        print("Nothing to commit." if not status else "Dry run, nothing staged.")
         return
 
     git("add", "-A")
-    if not git("status", "--porcelain").stdout.strip():
-        print("Nothing to commit.")
-        return
     git("commit", "-q", "-m", f"{a.message}\n\n{ATTRIBUTION}")
     print(git("log", "--oneline", "-1").stdout.strip())
     if not a.no_push:

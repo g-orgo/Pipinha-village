@@ -1,6 +1,6 @@
 {
   "shop_id": "barkeeper",
-  "name": "shop.society_trading.barkeeper",
+  "name": {"translate": "shop.society_trading.barkeeper"},
   "texture": "beachparty:textures/item/honey_cocktail",
   "jei_catalyst": {
     "id": "brewery:beer_hops"

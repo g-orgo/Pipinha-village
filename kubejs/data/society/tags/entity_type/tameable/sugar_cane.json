@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:panda",
+      "required": false
+    },
+    {
+      "id": "wildernature:beaver",
+      "required": false
+    }
+  ]
+}

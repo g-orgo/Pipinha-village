@@ -65,7 +65,7 @@
 //         shopIds.push(`bs_${type}`);
 //         shopJson = {
 //             shop_id: `bs_${type}`,
-//             name: `shop.society_trading.building_shop.${type}`,
+//             name: { translate: `shop.society_trading.building_shop.${type}` },
 //             texture: "dialog:textures/portraits/carpenter",
 //             hidden_from_selector: true,
 //             display_type: "image",
@@ -81,7 +81,7 @@
 //     let prefix = villager ? "town_" : "";
 //     let selector = {
 //         selector_id: `${prefix}building_shop`,
-//         name: `selector.society_trading.${prefix}building_shop`,
+//         name: { translate: `selector.society_trading.${prefix}building_shop` },
 //         shop_ids: shopIds
 //     };
 //     JsonIO.write(`kubejs/data/society_trading/selectors/${prefix}building_shop.json`, selector);

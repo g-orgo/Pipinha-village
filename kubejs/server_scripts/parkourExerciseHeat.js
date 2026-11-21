@@ -34,8 +34,8 @@ console.info("[SOCIETY] parkourExerciseHeat.js loaded");
   const SWEAT_PER_STEP = 12;
   // Sweat never soaks past this wetness (LSO limit is 400; 120 shows the wet icon).
   const SWEAT_CAP = 120;
-  // ParCool actions that count as hanging.
-  const HANG_ACTIONS = { ClingToCliff: true, HangDown: true };
+  // ParCool actions that count as hanging (4.x renamed ClingToCliff to HangOn).
+  const HANG_ACTIONS = { HangOn: true, HangDown: true };
 
   const state = {};
 
@@ -44,10 +44,13 @@ console.info("[SOCIETY] parkourExerciseHeat.js loaded");
     const doing = {};
     const pk = $Parkourability.get(player);
     if (!pk) return doing;
-    // 1.21.1: ParCool exposes its actions as an ActionSet (Parkourability.getActions()).
-    const list = pk.getActions().listForIteration();
-    for (let i = 0; i < list.size(); i++) {
-      let action = list.get(i);
+    // ParCool 4.x: ActionSet is only Iterable (listForIteration is private), and isDoing()
+    // exists only on ContinuableAction; one-shot actions such as Breakfall do not have it.
+    const it = pk.getActions().iterator();
+    let action = null;
+    while (it.hasNext()) {
+      action = it.next();
+      if (typeof action.isDoing !== "function") continue;
       if (action.isDoing()) doing[String(action).split("@")[0].split(".").pop()] = true;
     }
     return doing;
@@ -58,8 +61,8 @@ console.info("[SOCIETY] parkourExerciseHeat.js loaded");
     const inst = player.getAttribute($AttributeRegistry.HEATING_TEMPERATURE);
     if (!inst) return;
     const current = inst.getModifier(HEAT_ID);
-    if (current && Math.abs(current.getAmount() - value) < 0.001) return;
-    if (current) inst.removeModifier(HEAT_ID);
+    if (current && Math.abs(current.amount() - value) < 0.001) return;
+    if (current) inst["removeModifier(net.minecraft.resources.ResourceLocation)"](HEAT_ID);
     if (value > 0.001) {
       inst.addTransientModifier(new $AttributeModifier(HEAT_ID, value, $Operation.ADD_VALUE));
     }
@@ -77,7 +80,7 @@ console.info("[SOCIETY] parkourExerciseHeat.js loaded");
   PlayerEvents.tick((e) => {
     const { player } = e;
     if (player.level.isClientSide() || player.isFake()) return;
-    if (player.age % STEP_TICKS !== 0) return;
+    if (global.playerTicks(player) % STEP_TICKS !== 0) return;
 
     const id = String(player.uuid);
     const s = state[id] || (state[id] = { heat: 0, atCap: 0, sweated: 0, x: player.getX(), z: player.getZ() });

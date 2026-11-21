@@ -187,7 +187,7 @@ global.runtime["JadeSocietyCropClientCallback"] = (
     let scannedBlock;
     for (let i = -2; i < 0 ; i++) {
       scannedBlock = level.getBlock(position.above(i));
-      if (scannedBlock.getId().includes("farmland") || scannedBlock.getId().includes("garden_pot")) {
+      if (scannedBlock.getId().includes("farmland") || scannedBlock.getId().includes("tilled_") || scannedBlock.getId().includes("garden_pot")) {
         return scannedBlock;
       }
     }

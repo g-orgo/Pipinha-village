@@ -68,12 +68,14 @@ time_call = "overworld.getLevelData().getGameTime()"   # getGameTime() não exis
 - Casa não pode ficar cortada. Quando um chunk é mantido, o prédio que cruza a borda também é mantido.
 - O regen começa com `--dry` para conferir os números. Depois, é preciso informar quantos chunks foram preservados e apagados em cada save e onde ficou o backup.
 - Nether e End não são tocados.
-- O regen termina mandando cada jogador para a cama com `send_to_bed.py`. Quem não tem cama fica onde está.
+- Antes de apagar, o regen leva cada animal domado que está fora dos claims do dono para dentro deles (`move_pets.py`), num lugar seguro, com a âncora do Horseman junto. Animal do jogador sem dono vai para o claim mais próximo. Dono sem claim: o animal fica e o relatório diz.
+- O regen termina mandando cada jogador para a cama com `send_to_bed.py`. Quem não tem cama fica onde está. Os animais não vão para a cama.
 - A primeira entrada depois de um regen espera a geração em volta dos chunks com forceload, então pode demorar.
 - O mapa de LOD do Distant Horizons (`data/DistantHorizons.sqlite`) sai do save antes do regen, senão mostra as cidades antigas de longe.
 - Claim automático: quando um jogador real coloca bloco com block entity ou cama, o chunk ganha claim sozinho. Placa e estandarte não fazem claim, e abrir baú nunca faz (**a portar** em `kubejs/server_scripts/blockEvents/autoClaimChunk.js`).
-- Casa cortada na borda de um claim se resolve depois, com jogo fechado, por `fix_cut_houses.py`, que vira o pedaço de fora em lote de grama no nível da rua. Restaurar o vizinho do backup não serve, porque o chão antigo fica em outra altura.
+- Casa cortada na borda de um claim se resolve depois, com jogo fechado, por `fix_cut_houses.py`, que vira o pedaço de fora em lote de grama no nível da rua. Restaurar o vizinho do backup não serve, porque o chão antigo fica em outra altura. Todo regen apaga de novo esses lotes (não têm claim) e a seed volta a gerar a meia casa, por isso o `clear` registra cada lote em `tools/pack_tools/lotes_limpos.tsv` e o `regen_chunks.py` mantém esses lotes em qualquer modo (2026-11-18: a meia casa do -642,522, limpa na 1.20.1, voltou após o regen de 13/11). Mesmo assim o `scan` roda depois que o dono jogar perto da base, para pegar casas cortadas novas.
 - Backups são mantidos em uma cópia só. O anterior é substituído. Backups e caches de save nunca entram no `Modpack.zip`.
+- Save convertido da 1.20.1 ou editado por ferramenta passa por `tools/saveport/sunrise_soil.py` com o jogo fechado e backup antes, senão a lavoura do Sunrise não cresce.
 
 #### Cidades
 
@@ -91,13 +93,18 @@ time_call = "overworld.getLevelData().getGameTime()"   # getGameTime() não exis
 - Baú bônus tem conteúdo fixo: copper backpack, iron pickaxe e axe, 3 pães e cantil vazio. O kit inicial só é entregue se não houver baú bônus perto do spawn (**a portar** em `spawn_bonus_chest.json` e `addQuestbook.js`).
 - Nada bloqueado nasce nas cidades. Itens em `global.removedItems`, `hiddenItems` e `stripTags` são limpos dos baús, e `itemcheck.BANNED` e `bad_item` / `bad_crop` valem na geração (**a portar**).
 - Lost Cities roda com `generateSpawners` falso.
+- Estrutura de mod de superfície não nasce dentro da cidade: ela entra em `avoidStructures` do `lostcities-server.toml` (gerado por `tools/pack_tools/lc_avoid_structures.py`, com `avoidFlattening = true`), e a cidade deixa a área dela no terreno natural. Depois de um regen, `fix_floating_structures.py scan` confere se sobrou estrutura flutuando nos chunks mantidos.
 
 #### Gameplay e economia
 
 - Durabilidade é infinita, e a morte custa durabilidade. A conta da durabilidade fica no script de ajuste de gameplay. Ferramenta da tag `SunlitWear` segue a mesma regra.
 - Config `unbreakable` órfã não é usada.
+- Todo animal é domável. Quem não tem doma própria usa a doma universal do Redomesticate: definição em `kubejs/data/society/redomesticate/taming/` e tag `#society:tameable/<grupo>` com entradas opcionais, gerados pelo `build_pet_guide.py` a partir do `content.json` do guia. O item de doma nunca é comida de cruza do animal, item da lista do `animalBreeding.js` nem item de uso do Society, porque a doma gasta o item e cancela o clique. Ficam fora peixes, monstros, NPCs, golens e o allay. Cada animal domável tem caixa no capítulo "Companheiros".
 - Pegar galinha com a mão vazia e carregá-la na cabeça fica desligado: `chickenGliding = false` em `config/hearthandharvest-common.toml`. O `Grab Chickens` do Quark também segue desligado.
 - ParCool 4.x tranca as ações numa árvore própria; no pack ela fica desligada (`enable_skill_tree = false` em `config/parcool-server.toml` e no `serverconfig` de cada save), porque a progressão de parkour é a árvore do Puffish, como na 1.20.1 (ParCool 3.4, sem árvore).
+- ParCool: as opções da 1.20.1 (3.4) que não existem no 4.x ficam em `kubejs/startup_scripts/forgeEvents/parcoolBreakfallGuard.js`: rolagem só em queda de 3 blocos ou mais (`lowest_fall_distance_for_breakfall = 3.0`) e vault só no chão (`enable_vault_in_air = false`). As que têm equivalente: corrida rápida automática ao correr (`fast_run` input `ALWAYS` = `Auto`), cambalhota desligada (`trick_jump` available = false = `can_Flipping = false`), breakfall perfeito com janela de 5 ticks (`breakfall_just_time_input_tick = 5`). A animação em primeira pessoa fica ligada (`enable_first_person_view_animation = true` em `config/parcool-animation.toml`): no 4.x é ela que libera o giro de câmera do rolamento e do hang down, que a 1.20.1 tinha (`enable_camera_rotation_roll = true`). Config de servidor muda em `config/parcool-server.toml` e no `serverconfig` do Solito juntos.
+- ParCool: o FOV não reage à corrida rápida (`kubejs/startup_scripts/forgeEvents/parcoolFastRunFov.js` tira o modificador `parcool:modi.fast_run` da conta do FOV). Sprint, poções e o resto da velocidade continuam abrindo o FOV como no vanilla.
+- ParCool: no ar, clicar com o botão direito num bloco não usa o bloco (porta, alçapão, botão, alavanca, baú), porque o mesmo botão é o agarrar do ParCool (`kubejs/startup_scripts/forgeEvents/parcoolAirborneUse.js`). O item na mão continua funcionando (pôr bloco pulando, balde na queda), e escada, trepadeira, andaime, água, montaria, voo e elytra seguem como no vanilla.
 - Velocidades de Puffish Skills foram reduzidas e não voltam a subir: `fast_feet` de 0,25 para 0,075, `quick_feet` de 0,2 para 0,1, `farming` de 0,05 para 0,03.
 - Quark: o botão de chest tem slot target 9. O sort falhava em armário de 9 e 18 slots, então `sunlit_sortfix` corrige a aceitação de itens (**a portar**).
 - Preço de colheita crua vem da etapa de processamento, não do item cru. Colheita crua recebe fator `/3` ou `/1,5`, e item raro segue sem mudança.
@@ -119,9 +126,11 @@ time_call = "overworld.getLevelData().getGameTime()"   # getGameTime() não exis
 #### Harmonização e KubeJS
 
 - Itens equivalentes de mods diferentes entram nas mesmas receitas, tags e lojas. Todo insumo novo precisa de uso prático.
-- Carne e peixe entram na tag da espécie real (`harmonizeMeatTags.js`): pato, ganso, peru, pelicano, casuar e galliraptor em `raw_chicken`; búfalo, bisão, tribull e veado em `raw_beef`; javali em `raw_pork`; cabra e carré de cordeiro em `raw_mutton`; peixe branco em `raw_fishes/cod`, salmão e truta em `raw_fishes/salmon`, atum em `raw_fishes/tuna`.
-- Prato que pede o item vanilla (`minecraft:chicken`, `minecraft:cod` etc.) passa a pedir a tag da espécie, só em receita com pelo menos dois insumos distintos. Assar, cortar ou moer um frango continuam dando produto de frango.
-- Tag genérica (`forge:raw_meat`) só tem carne de verdade. Inseto, perna de aranha, carne podre e pratos compostos saem dela.
+- Carne e peixe entram na tag da espécie real (`harmonizeMeatTags.js`): pato, ganso, peru, pelicano e casuar em `c:foods/raw_chicken`; búfalo, bisão e veado em `c:foods/raw_beef`; javali em `c:foods/raw_pork`; cabra e carré de cordeiro em `c:foods/raw_mutton`; peixe branco em `c:foods/raw_cod`, salmão e truta em `c:foods/raw_salmon`, atum inteiro em `c:foods/raw_tuna`. O mesmo vale para os cozidos (`c:foods/cooked_*`).
+- Cada ingrediente tem uma família de tags sinônimas na 1.21.1 (`c:foods/x`, `c:x`, `farm_and_charm:x`, `forge:x` que sobrou da 1.20.1, tag do próprio mod), e todas recebem os mesmos itens (`harmonizeFoodTags.js`). Famílias: ovo cru (qualquer ovo de ave, inclusive os grandes e os da Society), ovo frito, cada carne crua e cozida, bacon, carne genérica, cada peixe, peixe genérico, leite pequeno (`society:small_milk`, garrafa), leite grande (`society:large_milk`, balde), qualquer leite (`c:drinks/milk` e afins), queijo, manteiga, e tags que só existiam na 1.20.1 (pão, pimenta, soja, morango, trigo). A família só ganha itens, nunca referência de tag, para não formar ciclo.
+- Mod novo de comida: conferir se as carnes, peixes, ovos e leites dele estão em alguma família, e se as tags que as receitas dele pedem estão na lista de sinônimos.
+- Prato que pede o item vanilla (`minecraft:chicken`, `minecraft:cod`, `minecraft:egg`, `minecraft:milk_bucket`, `farmersdelight:milk_bottle` etc.) passa a pedir a tag da família, só em receita com pelo menos dois insumos distintos (`normalizeEquivalentItems.js`). Assar, cortar ou moer um frango continuam dando produto de frango. Ovo de pata e de gansa nomeados no bolo de pata e de gansa continuam pedindo o próprio ovo.
+- Tag genérica (`c:foods/raw_meat`, `c:raw_meat`) só tem carne de verdade. Inseto, perna de aranha, carne podre, hambúrguer vegano e pratos compostos saem dela.
 - Recheio de rolinho de repolho e de asa de morcego é carne vermelha moída, vegetal ou cogumelo, nunca peixe.
 - Perna de caranguejo de mod (`crabbersdelight:crab_legs`) e as do Quark valem nos pratos de caranguejo do Quark Delight.
 - Mula do Vinery fica fora. No lugar entra a mula vanilla. `spawnWithMules` fica falso, e um `vinery:mule` que entrar no mundo vira mula vanilla com os mesmos dados. Não reaplicar patch no jar da Vinery.
@@ -132,6 +141,8 @@ time_call = "overworld.getLevelData().getGameTime()"   # getGameTime() não exis
 - `Map` e `Set` guardados em `global` podem chegar como lista em outro script. Testar `Array.isArray()` antes de chamar `.get()`. Dado que atravessa scripts vai como texto (`"moedas|porcentagem"`).
 - Script de startup roda duas vezes por sessão (cliente e servidor). Script que multiplica preço precisa de flag de idempotência (`global.priceBalanceApplied`).
 - `global.extractinatorRecipes` é lista de `{ input, output }`, não `Map`.
+- Roupa vestível (armadura de pano, chapéu, Curios de vestir) de qualquer mod tem valor de temperatura do LSO em `kubejs/data/<mod>/legendarysurvivaloverhaul/temperature/items/`, na escala do próprio LSO (peça de 0,5 a 3,5; peito maior, bota menor). Lã, suéter, gorro e pele vão em `cold_resistance` (protege do frio); palha, boné, óculos escuros e roupa leve de trabalho vão em `heat_resistance`. Peças equivalentes de mods diferentes têm o mesmo valor (chapéu de palha 3,0, chapéu de chef 1,0). Mod novo com roupa entra nessa tabela na mesma entrega. Fantasia e máscara ficam neutras.
+- A temperatura das peças conta na armadura vestida e nos slots do Curios (o próprio LSO soma os dois). O slot do Cosmetic Armor é só aparência e não protege (decisão do dono, 2026-11-20).
 - Itens de mesma origem são unificados: canônico Kaleidoscope, depois Farmer's Delight, depois `society:`, depois addons do FD, depois o resto. Item que o pack remove nunca é canônico.
 - Botões de mouse do JEI ficam sem tecla. Os lookups de receita e uso ficam só em R e U.
 
@@ -164,4 +175,4 @@ time_call = "overworld.getLevelData().getGameTime()"   # getGameTime() não exis
 - `normalizeDuplicateItems.js` usa só `replaceInput`, então os grupos de duplicados não valem nas receitas de mods sem schema.
 - Immersive Eating: confirmar se continua no pack antes de portar as animações de comida.
 
-Data da regra: 2026-10-03 (regen), 2026-10-06 (baús, hortas), 2026-11-11 (claims e regen estrito).
+Data da regra: 2026-10-03 (regen), 2026-10-06 (baús, hortas), 2026-11-11 (claims e regen estrito), 2026-11-18 (animais para dentro dos claims).

@@ -1,6 +1,6 @@
 {
   "shop_id": "ribbit_merchant",
-  "name": "shop.society_trading.ribbit_merchant",
+  "name": {"translate": "shop.society_trading.ribbit_merchant"},
   "texture": "ribbits:textures/block/red_toadstool",
   "entity": "ribbits:ribbit",
   "entity_data": "ribbits:merchant",

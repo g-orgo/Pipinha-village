@@ -1,0 +1,13 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.pipinha.qualityfix.bnc",
+  "plugin": "com.pipinha.qualityfix.bnc.BrewinAndChewinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "KegBlockEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

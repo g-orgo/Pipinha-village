@@ -1,0 +1,40 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="pipinha_deerfix"
+version="1.0.0"
+displayName="Pipinha's Village Tame Deer"
+description="Tamed Wilder Nature deer (husbandry affection, or born from a tamed parent) no longer flee from players nor join herd panics. Wild deer keep their behaviour."
+
+[[mixins]]
+config="pipinha_deerfix.mixins.json"
+
+[[dependencies.pipinha_deerfix]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.pipinha_deerfix]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.pipinha_deerfix]]
+modId="wildernature"
+type="required"
+versionRange="[1.1.8,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.pipinha_deerfix]]
+modId="kubejs"
+type="required"
+versionRange="[2101.7,)"
+ordering="AFTER"
+side="BOTH"

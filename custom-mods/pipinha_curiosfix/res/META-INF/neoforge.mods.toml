@@ -1,0 +1,40 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="pipinha_curiosfix"
+version="1.0.0"
+displayName="Pipinha's Village Curios Fix"
+description="Renders item tooltips with the hovered stack on the Curios inventory screen, so stack-based tooltip lines (Quark attributes, LSO hydration) show there, and enables the TrashSlot trash slot by default on that screen."
+
+[[mixins]]
+config="pipinha_curiosfix.mixins.json"
+
+[[dependencies.pipinha_curiosfix]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.pipinha_curiosfix]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.pipinha_curiosfix]]
+modId="curios"
+type="required"
+versionRange="[9.5,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.pipinha_curiosfix]]
+modId="trashslot"
+type="optional"
+versionRange="[21.1,)"
+ordering="AFTER"
+side="BOTH"

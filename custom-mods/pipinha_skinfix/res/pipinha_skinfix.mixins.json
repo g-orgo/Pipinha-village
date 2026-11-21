@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.pipinha.skinfix.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": ["MinecraftProfileRetryMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -2,6 +2,7 @@
 // Meat and fish recipes that follow real cooking (tags in tags/harmonizeMeatTags.js):
 // - Cabbage rolls and bat rolls take a real stuffing: ground red meat (beef, pork, mutton
 //   and their species), vegetables or mushrooms. They no longer take any meat or any fish.
+// - Aquaculture tuna is cut into the same tuna slices as the Youkai tuna.
 
 const SUNLIT_ROLL_RECIPES = ["farmersdelight:cooking/cabbage_rolls", "minersdelight:cooking/bat_rolls"];
 const SUNLIT_ROLL_STUFFING = [
@@ -30,5 +31,12 @@ ServerEvents.recipes((event) => {
     });
   });
 
-  // Tuna slice cutting dropped: youkaishomecoming:raw_tuna_slice is not in the 1.21.1 mods.
+  // Result entries become {"item": {"id": ..., "count": ...}} through the helper, as in the
+  // mod's own cutting recipes (for example data/farmersdelight/recipe/cutting/beef.json).
+  custom({
+    type: "farmersdelight:cutting",
+    ingredients: [{ item: "aquaculture:tuna" }],
+    result: [{ id: "youkaishomecoming:raw_tuna_slice", count: 3 }],
+    tool: { tag: "c:tools/knife" },
+  }).id("society:cutting/aquaculture_tuna");
 });

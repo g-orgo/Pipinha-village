@@ -7,8 +7,10 @@ Rules applied to every item stack in kubejs/data/society_trading/shops/*.json:
 - "item" becomes "id".
 - StoredEnchantments nbt on minecraft:enchanted_book becomes the
   minecraft:stored_enchantments component.
-- society:villager with {type:{id:"society:X"}} becomes society:villager_home with
-  minecraft:custom_data {"type": "X"}, the shape npcInvite.js reads in 1.21.1.
+- society:villager with {type:{id:"society:X"}} (only used as jei_catalyst, the shop
+  icon) keeps the id, gets minecraft:custom_data {"type": "X"} and the
+  minecraft:custom_model_data from VILLAGER_ICON_CMD, which picks the face in
+  kubejs/assets/society/models/item/villager.json (the 1.20.1 jar chose it by nbt).
 - Any other nbt has no verified 1.21.1 mapping. It is kept under "legacy_nbt",
   which the codec ignores, so the data is not lost and the owner can decide.
 
@@ -29,6 +31,12 @@ SHOPS = os.path.join(ROOT, "kubejs", "data", "society_trading", "shops")
 STACK_KEYS = {"item", "count", "nbt"}  # keys consumed by the conversion; other keys are kept
 ENCHANT_RE = re.compile(r'\{StoredEnchantments:\s*\[\{id:\s*"([^"]+)",\s*lvl:\s*(\d+)s?\}\]\}')
 VILLAGER_RE = re.compile(r'\{type:\{id:\s*"society:([a-z_]+)"\}\}')
+# custom_model_data per villager type; must match the overrides in
+# kubejs/assets/society/models/item/villager.json
+VILLAGER_ICON_CMD = {
+    "banker": 1, "blacksmith": 2, "carpenter": 3, "fisher": 4, "librarian": 5,
+    "market": 6, "shepherd": 7, "trader": 8, "wise_oak": 9, "witch": 10,
+}
 INVITATION_RE = re.compile(r'\{"?type"?:\s*\{"?id"?:\s*"(society:[a-z_]+)"\}\}')  # SNBT or JSON-quoted
 
 
@@ -156,8 +164,10 @@ def convert_stack(stack, report):
             }
             report["enchanted_book"] += 1
         elif item == "society:villager" and m_vill:
-            out["id"] = "society:villager_home"
-            out["components"] = {"minecraft:custom_data": {"type": m_vill.group(1)}}
+            out["components"] = {
+                "minecraft:custom_data": {"type": m_vill.group(1)},
+                "minecraft:custom_model_data": VILLAGER_ICON_CMD[m_vill.group(1)],
+            }
             report["villager"] += 1
         elif item == "portable_blueprints:worn_blueprint" and parses(nbt):
             out["components"] = worn_blueprint_components(nbt)

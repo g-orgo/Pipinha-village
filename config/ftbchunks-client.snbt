@@ -53,7 +53,7 @@
 		
 		# Chunk grid overlay in large map
 		# Default: false
-		chunk_grid: false
+		chunk_grid: true
 		
 		# Claim mode for the chunk claiming screen
 		# Default: "freehand"
@@ -138,98 +138,118 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:glow_squid": true
-			"quark:stoneling": true
-			"minecraft:cow": true
-			"unusualfishmod:shockcat": true
-			"snowpig:snow_pig": true
-			"golemoverhaul:slime_golem": true
-			"minecraft:zombie": true
-			"faunaandorchestra:sea_lion": true
-			"aquaculture:bluegill": false
-			"crittersandcompanions:snail": true
-			"minecraft:bat": true
-			"quark:toretoise": true
-			"botania:manaseal_creeper": true
-			"crittersandcompanions:stag_beetle": true
-			"faunaandorchestra:penguin": true
-			"crittersandcompanions:otter": true
-			"snuffles:snuffle": true
-			"aquaculture:perch": false
-			"quark:forgotten": true
-			"minecraft:spider": true
-			"crittersandcompanions:stick_bug": true
-			"faunaandorchestra:emperor_penguin": true
-			"aquaculture:minnow": false
-			"windswept:frostbiter": true
-			"aquaculture:carp": false
-			"minecraft:axolotl": true
-			"aquaculture:gar": false
-			"minecraft:skeleton": true
-			"buzzier_bees:moobloom": true
-			"minecraft:creeper": true
-			"minecraft:pig": true
-			"wildernature:deer": true
-			"crittersandcompanions:leaf_insect": true
-			"minecraft:villager": true
-			"aquaculture:brown_trout": false
-			"untitledduckmod:duck": true
-			"golemoverhaul:coal_golem": true
-			"minecraft:chicken": true
-			"minecraft:bee": true
-			"aquaculture:muskellunge": false
-			"aquaculture:smallmouth_bass": false
-			"unusualfishmod:deep_crawler": true
-			"minecraft:polar_bear": true
-			"crittersandcompanions:roly_poly": true
-			"minecraft:wolf": true
-			"minecraft:horse": true
+			"faunaandorchestra:lemur": true
+			"unusualfishmod:prawn": true
 			"crittersandcompanions:ladybug": true
-			"minecraft:fox": true
+			"faunaandorchestra:denzel": true
+			"minecraft:polar_bear": true
+			"youkaishomecoming:lamprey": true
+			"unusualfishmod:mossthorn": true
+			"minecraft:cow": true
+			"youkaishomecoming:rumia": true
+			"youkaishomecoming:deer": true
+			"youkaishomecoming:boar": true
+			"minecraft:wolf": true
 			"minecraft:mule": true
+			"aquaculture:perch": false
+			"minecraft:bee": true
+			"crittersandcompanions:stag_beetle": true
+			"crittersandcompanions:leaf_insect": true
+			"minecraft:zombie": true
+			"aquaculture:gar": false
+			"golemoverhaul:coal_golem": true
+			"aquaculture:smallmouth_bass": false
+			"crittersandcompanions:stick_bug": true
 			"minecraft:wandering_trader": true
-			"untitledduckmod:goose": true
-			"crittersandcompanions:weevil": true
-			"minecraft:rabbit": true
+			"faunaandorchestra:emperor_penguin": true
 			"minecraft:sheep": true
-			"longwings:moth": true
-			"aquaculture:catfish": false
+			"minecraft:horse": true
+			"minecraft:villager": true
+			"minecraft:bat": true
+			"crittersandcompanions:weevil": true
+			"wildernature:deer": true
+			"snowpig:snow_pig": true
+			"wildernature:hedgehog": true
+			"snuffles:snuffle": true
+			"autumnity:turkey": true
 			"etcetera:weaver": true
-			"minecraft:witch": true
+			"aquaculture:carp": false
+			"unusualfishmod:shockcat": true
+			"minecraft:glow_squid": true
+			"unusualfishmod:blindsailfin": true
+			"minecraft:creeper": true
+			"longwings:moth": true
+			"minecraft:fox": true
+			"minecraft:skeleton": true
+			"faunaandorchestra:denise": true
+			"aquaculture:minnow": false
+			"aquaculture:catfish": false
+			"faunaandorchestra:orion": true
+			"faunaandorchestra:delroy": true
+			"faunaandorchestra:sea_lion": true
+			"minecraft:spider": true
+			"crittersandcompanions:roly_poly": true
+			"crittersandcompanions:otter": true
+			"faunaandorchestra:butler_koala": true
+			"minecraft:axolotl": true
+			"quark:toretoise": true
+			"minecraft:rabbit": true
+			"buzzier_bees:moobloom": true
+			"minecraft:slime": true
+			"quark:forgotten": true
+			"faunaandorchestra:dan_b": true
+			"untitledduckmod:goose": true
+			"golemoverhaul:slime_golem": true
+			"quark:stoneling": true
 			"minecraft:enderman": true
+			"faunaandorchestra:faust": true
+			"untitledduckmod:duck": true
+			"crittersandcompanions:snail": true
+			"unusualfishmod:deep_crawler": true
+			"minecraft:witch": true
+			"aquaculture:brown_trout": false
+			"minecraft:pig": true
+			"autumnity:snail": true
+			"minecraft:chicken": true
+			"faunaandorchestra:penguin": true
+			"aquaculture:bluegill": false
+			"botania:manaseal_creeper": true
+			"windswept:frostbiter": true
+			"hearthandharvest:crow": true
+			"aquaculture:muskellunge": false
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
 		# Default: 0.5
 		# Range: 0.1 ~ 5.0
-		font_scale: 0.5d
+		font_scale: 1.2d
 		
 		# Info hidden under minimap
 		# Default: ["ftbchunks:fps", "ftbchunks:game_time", "ftbchunks:real_time", "ftbchunks:debug"]
 		info_hidden: [
-			"ftbchunks:fps"
-			"ftbchunks:game_time"
-			"ftbchunks:real_time"
 			"ftbchunks:debug"
+			"ftbchunks:real_time"
+			"ftbchunks:zone"
+			"ftbchunks:fps"
 		]
 		
 		# Info displayed under minimap
 		# Default: ["ftbchunks:player_pos", "ftbchunks:biome", "ftbchunks:zone", "ftbchunks:fps", "ftbchunks:game_time", "ftbchunks:real_time", "ftbchunks:debug"]
 		info_order: [
-			"ftbchunks:player_pos"
 			"ftbchunks:biome"
 			"ftbchunks:zone"
 			"ftbchunks:fps"
 			"ftbchunks:game_time"
+			"ftbchunks:player_pos"
+			"seasonhud:season"
 			"ftbchunks:real_time"
 			"ftbchunks:debug"
-			"seasonhud:season"
 		]
 		info_settings: { }
 		
 		# Entities in minimap will be larger
 		# Default: false
-		large_entities: false
+		large_entities: true
 		
 		# Minimap will not rotate
 		# Default: true
@@ -281,7 +301,7 @@
 		# Scale of minimap
 		# Default: 1.0
 		# Range: 0.25 ~ 4.0
-		scale: 1.0d
+		scale: 1.3d
 		
 		# Always show player on minimap, even when rotation not locked
 		# Default: true
@@ -307,7 +327,7 @@
 		# Zoom distance of the minimap
 		# Default: 1.0
 		# Range: 1.0 ~ 4.0
-		zoom: 1.0d
+		zoom: 1.5d
 	}
 	waypoints: {
 		# Automatically remove death waypoints if closer than this many blocks away (distance of 0 disables removal)

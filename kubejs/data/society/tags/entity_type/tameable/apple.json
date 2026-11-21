@@ -1,0 +1,69 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:cow",
+      "required": false
+    },
+    {
+      "id": "minecraft:mooshroom",
+      "required": false
+    },
+    {
+      "id": "minecraft:pig",
+      "required": false
+    },
+    {
+      "id": "minecraft:sheep",
+      "required": false
+    },
+    {
+      "id": "minecraft:goat",
+      "required": false
+    },
+    {
+      "id": "buzzier_bees:moobloom",
+      "required": false
+    },
+    {
+      "id": "snowpig:snow_pig",
+      "required": false
+    },
+    {
+      "id": "meadow:water_buffalo",
+      "required": false
+    },
+    {
+      "id": "meadow:wooly_cow",
+      "required": false
+    },
+    {
+      "id": "meadow:umbra_cow",
+      "required": false
+    },
+    {
+      "id": "meadow:warped_cow",
+      "required": false
+    },
+    {
+      "id": "meadow:wooly_sheep",
+      "required": false
+    },
+    {
+      "id": "wildernature:bison",
+      "required": false
+    },
+    {
+      "id": "wildernature:minisheep",
+      "required": false
+    },
+    {
+      "id": "wildernature:deer",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:deer",
+      "required": false
+    }
+  ]
+}

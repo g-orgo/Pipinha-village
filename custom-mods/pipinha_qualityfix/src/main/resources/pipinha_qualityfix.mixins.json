@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.pipinha.qualityfix.fd",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CookingPotBlockEntityMixin",
+    "CookingPotItemHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

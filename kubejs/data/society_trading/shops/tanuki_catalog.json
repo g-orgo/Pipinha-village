@@ -1,6 +1,6 @@
 {
   "shop_id": "tanuki_catalog",
-  "name": "shop.society_trading.tanuki_catalog",
+  "name": {"translate": "shop.society_trading.tanuki_catalog"},
   "hidden_from_selector": true,
   "display_type": "thin",
   "texture": "minecraft:textures/block/white_wool",

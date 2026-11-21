@@ -10,8 +10,8 @@
     if (!player || player.isFake()) return;
     const id = String(player.getUuid());
     const last = cjLastAge[id];
-    if (last !== undefined && player.age - last < CJ_COOLDOWN_TICKS) return;
-    cjLastAge[id] = player.age;
+    if (last !== undefined && global.playerTicks(player) - last < CJ_COOLDOWN_TICKS) return;
+    cjLastAge[id] = global.playerTicks(player);
     global.grantParkourXp(player, CJ_XP);
   });
 })();

@@ -9,7 +9,7 @@
 	}
 	id: "2B2A6AA10AFF0156"
 	images: [ ]
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -1293,12 +1293,18 @@
 			tasks: [
 				{
 					id: "0944E1D3F203821B"
-					item: { count: 1, id: "society:invitation" }
+					item: { components: { "minecraft:custom_data": { type: "society:trader" } }, count: 1, id: "society:invitation" }
 					match_components: "fuzzy"
 					type: "item"
 				}
 				{
 					icon: {
+						components: {
+							"minecraft:custom_data": {
+								type: "trader"
+							}
+							"minecraft:custom_model_data": 8
+						}
 						id: "society:villager"
 					}
 					id: "48A5EF6D1BB8647A"

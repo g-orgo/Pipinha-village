@@ -1,6 +1,6 @@
 {
   "shop_id": "bs_greenhouse",
-  "name": "shop.society_trading.building_shop.greenhouse",
+  "name": {"translate": "shop.society_trading.building_shop.greenhouse"},
   "texture": "dialog:textures/portraits/carpenter",
   "hidden_from_selector": true,
   "display_type": "image",

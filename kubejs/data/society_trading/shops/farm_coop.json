@@ -1,6 +1,6 @@
 {
   "shop_id": "farm_coop",
-  "name": "shop.society_trading.farm_coop",
+  "name": {"translate": "shop.society_trading.farm_coop"},
   "texture": "sunrisegardening:textures/item/weak_fertilizer",
   "jei_catalyst": {
     "id": "sunrisegardening:weak_fertilizer"

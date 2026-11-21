@@ -1,7 +1,9 @@
 console.info("[SOCIETY] pawpawRoad.js loaded");
 
 const pawpawThrottle = ((temp) => (entity, tick, identifier) => {
-  const { age, uuid } = entity;
+  // KubeJS 7: entity.age is undefined, so the throttle never held. Use the tick count.
+  const { uuid } = entity;
+  const age = global.playerTicks(entity);
   const key = `${uuid}${identifier}`;
   const now = temp[key];
   if (!now || age - now >= tick) {

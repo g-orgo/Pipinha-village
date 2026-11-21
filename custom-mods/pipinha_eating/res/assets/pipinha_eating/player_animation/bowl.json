@@ -1,0 +1,75 @@
+{
+ "name": "bowl",
+ "author": "Pipinha's Village",
+ "description": "Pipinha's Village eating pose",
+ "emote": {
+  "isLoop": true,
+  "returnTick": 7,
+  "beginTick": 0,
+  "endTick": 25,
+  "stopTick": 30,
+  "degrees": true,
+  "moves": [
+   {
+    "tick": 0,
+    "easing": "INOUTSINE",
+    "turn": 0,
+    "rightArm": {
+     "pitch": -30,
+     "yaw": 0,
+     "roll": 0
+    },
+    "leftArm": {
+     "pitch": 0,
+     "yaw": 0,
+     "roll": 0
+    }
+   },
+   {
+    "tick": 7,
+    "easing": "INOUTSINE",
+    "turn": 0,
+    "rightArm": {
+     "pitch": -92,
+     "yaw": -26,
+     "roll": 8
+    },
+    "leftArm": {
+     "pitch": -86,
+     "yaw": 28,
+     "roll": -10
+    }
+   },
+   {
+    "tick": 16,
+    "easing": "INOUTSINE",
+    "turn": 0,
+    "rightArm": {
+     "pitch": -103,
+     "yaw": -26,
+     "roll": 8
+    },
+    "leftArm": {
+     "pitch": -96,
+     "yaw": 28,
+     "roll": -10
+    }
+   },
+   {
+    "tick": 25,
+    "easing": "INOUTSINE",
+    "turn": 0,
+    "rightArm": {
+     "pitch": -92,
+     "yaw": -26,
+     "roll": 8
+    },
+    "leftArm": {
+     "pitch": -86,
+     "yaw": 28,
+     "roll": -10
+    }
+   }
+  ]
+ }
+}

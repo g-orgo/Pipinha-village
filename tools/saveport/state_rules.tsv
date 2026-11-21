@@ -1,0 +1,10 @@
+old_glob	new_glob	rotate	map	note
+cfm:*_park_bench	another_furniture:*_bench	2	type>horizontal_1,horizontal_2	encosto do CFM fica no lado do facing, no Another Furniture fica no lado oposto; left/right ja batem depois do giro
+cfm:*_blinds	beautify:*_blinds	2		CFM desenha a persiana no lado do facing, Beautify no lado oposto
+redeco:*_sofa	another_furniture:*_sofa	2	shape>type:straight=single	encosto oposto; cantos inner/outer batem pelo nome depois do giro; sofa reto do Re:Deco tem bracos nos dois lados (= single)
+cfm:*_kitchen_counter	refurbished_furniture:*_kitchen_cabinetry	0	type>shape:left_corner=inside_corner_left/right_corner=inside_corner_right/left_corner_inverted=outside_corner_left/right_corner_inverted=outside_corner_right	mesma frente; cantos conferidos pela camada do corpo
+cfm:*_desk	refurbished_furniture:*_desk	0	type>left:single=false/left=true/right=false/middle=true;type>right:single=false/left=false/right=true/middle=true	mesma frente; ponta lateral conferida pelo perfil
+cfm:*_desk_cabinet	refurbished_furniture:*_drawer	0	type>left:single=false/left=true/right=false/middle=true;type>right:single=false/left=false/right=true/middle=true	mesma convencao da escrivaninha (mesmos mods)
+cfm:*_sofa	refurbished_furniture:*_sofa	0	type>shape:single=default	mesma frente; demais valores com o mesmo nome
+redeco:*_shelf	another_furniture:*_shelf	0	@shelf_sides>horizontal	conexoes absolutas do Re:Deco viram horizontal relativo ao facing
+trials:crafter	minecraft:crafter	0	facing>orientation:north=north_up/east=east_up/south=south_up/west=west_up	crafter vanilla usa orientation

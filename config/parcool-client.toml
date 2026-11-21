@@ -4,7 +4,7 @@
 
 		[action.parcool.fast_run]
 			#Allowed Values: DOWN_KEY, TOGGLE, ALWAYS
-			input = "DOWN_KEY"
+			input = "ALWAYS"
 
 		[action.parcool.horizontal_wall_run]
 			#Allowed Values: DOWN_KEY, TOGGLE, ALWAYS

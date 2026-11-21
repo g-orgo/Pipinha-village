@@ -27,7 +27,7 @@ BlockEvents.rightClicked("bountiful:bountyboard", (e) => {
 
 PlayerEvents.tick((e) => {
   let player = e.player;
-  if (!player || player.isFake() || player.age % 100 != 0) return;
+  if (!player || player.isFake() || global.playerTicks(player) % 100 != 0) return;
   try {
     global.syncMercantilStages(player);
   } catch (err) {

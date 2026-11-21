@@ -13,9 +13,16 @@ Fica preservado:
   jogador em entities/ (carinho do Society em KubeJSPersistentData, dono/domado, golem ou
   stoneling feito pelo jogador, na guia, nome dado com name tag, ou passageiro de um desses).
   NPCs de cidade (easy_npc) e nomes gerados (so translate) nao contam.
+- SEMPRE (qualquer modo): lote de grama feito por fix_cut_houses.py (lotes_limpos.tsv), senao a seed
+  gera a meia casa de novo nele.
 - SEMPRE: predio inteiro. Todo chunk mantido leva a area inteira do Lost Cities (8x8 da cidade,
   7x7 das construcoes avulsas) e regen_continuity.py mantem o vizinho quando um predio cruza a
   borda; areas 8x8 tocadas ficam inteiras, ate estabilizar (motivos area_lc / predio_cruza).
+
+- ANTES de tudo (qualquer modo, 2026-11-18): move_pets.py leva cada animal domado (vivo, com dono jogador)
+  que esteja fora dos claims do dono para um ponto seguro dentro deles, com a ancora do Horseman junto.
+  Animal do jogador sem dono nenhum (carinho, name tag, guia) fora de todo claim vai para o claim mais
+  proximo. Dono sem claim ou sem lugar seguro: o animal fica e o relatorio diz.
 
 Para cada chunk apagado tambem some a entrada em entities/ e poi/ (senao villagers/itens
 antigos e pontos de trabalho fantasmas ficariam no chunk novo). Arquivo .mca que fica sem
@@ -53,6 +60,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from nbtmini import NBTReader
 from regen_continuity import grow
 from send_to_bed import send_to_bed
+from move_pets import move_pets
+from fix_cut_houses import cleared_lots
 
 RADIUS = 5
 MIN_INHABITED = 12000  # ticks = 10 min
@@ -138,7 +147,7 @@ def player_animal(e):
         kjs = _val(e.get(tag, (10, {})))
         if isinstance(kjs, dict) and ('affection' in kjs or 'ageLastPet' in kjs):
             return 'carinho'
-    if any(k in e for k in ('Owner', 'OwnerUUID', 'Owner_UUID')) or _flag(e, 'Tame', 'Tamed', 'tamed', 'Trusting'):
+    if any(k in e for k in ('Owner', 'OwnerUUID', 'Owner_UUID')) or _flag(e, 'Tame', 'Tamed', 'tamed', 'Trusting', 'RedomesticateTamed'):
         return 'domado'
     if _flag(e, 'PlayerCreated', 'playerMade'):
         return 'criado'
@@ -152,7 +161,7 @@ def player_animal(e):
     return None
 
 
-def pet_chunks(save, name):
+def pet_chunks(save, name, skip=()):
     """{chunk index: 'motivo:id@x,y,z'} of the entities/<name> chunks holding a player animal."""
     p = os.path.join(save, 'entities', name)
     if not os.path.exists(p) or os.path.getsize(p) < 8192:
@@ -164,7 +173,7 @@ def pet_chunks(save, name):
         d = NBTReader(zlib.decompress(raw[off + 5:off + 4 + ln])).read_tag()[2]
         for e in d.get('Entities', (9, (10, [])))[1][1]:
             why = player_animal(e)
-            if why:
+            if why and tuple(_val(e.get('UUID', (11, [])))) not in skip:
                 x, y, z = (round(v) for v in e['Pos'][1][1])
                 out[i] = '%s:%s@%d,%d,%d' % (why, _val(e['id']), x, y, z)
                 break
@@ -249,15 +258,16 @@ def _enc_payload(tid, v):
     raise ValueError(f'bad tag {tid}')
 
 
-def animal_only(raw, off, ln):
+def animal_only(raw, off, ln, skip=()):
     """entities/ chunk re-encoded with only the player animals (Passengers included), or None.
-    Returns (blob, ['id@x,y,z', ...]). Everything else in the chunk (NPCs, items, ...) is dropped."""
+    Returns (blob, ['id@x,y,z', ...]). Everything else in the chunk (NPCs, items, ...) is dropped.
+    skip: UUIDs move_pets.py moved away (only still here in a dry run)."""
     if raw[off + 4] != 2:
         return None
     name, tid, root = NBTReader(zlib.decompress(raw[off + 5:off + 4 + ln])).read_tag()
     keep, labels = [], []
     for e in root.get('Entities', (9, (10, [])))[1][1]:
-        if player_animal(e):
+        if player_animal(e) and tuple(_val(e.get('UUID', (11, [])))) not in skip:
             keep.append(e)
             x, y, z = (round(v) for v in e['Pos'][1][1])
             labels.append('%s@%d,%d,%d' % (_val(e.get('id', (8, '?'))), x, y, z))
@@ -316,6 +326,9 @@ def main():
         RADIUS = int(sys.argv[sys.argv.index('--radius') + 1])
     if '--so-jogadores' in sys.argv:
         MIN_INHABITED = float('inf')
+    # Every mode (2026-11-18, owner's request): tamed animals outside their owner's claims go into them first,
+    # so new terrain is never born on top of them (the mare Epona suffocated after the strict regen)
+    moved_pets = move_pets(save, dry)
     keep, centers = (set(), []) if apenas_forceload or so_claims else keep_set(save)
     claims, loaded = claimed(save)
     reason = {c: 'player' for c in keep}
@@ -324,6 +337,10 @@ def main():
     for c in claims:
         reason.setdefault(c, 'forceload' if c in loaded else 'claim')
     keep |= claims
+    # Grass lots made by fix_cut_houses.py have no claim; deleting them brings the cut house back
+    for c in cleared_lots(save):
+        keep.add(c)
+        reason.setdefault(c, 'lote_limpo')
     # The origin chunks always stay (2026-11-11): at server start the ALI mod builds one of every entity and the
     # Brewery rope knot reads the block at 0,0,0, so a missing origin chunk is generated synchronously before
     # the first tick. With Lithosphere that took minutes and the world load sat at 0%.
@@ -340,7 +357,7 @@ def main():
             continue
         rx, rz = map(int, os.path.basename(path).split('.')[1:3])
         present[path] = {}
-        pets = {} if strict else pet_chunks(save, os.path.basename(path))
+        pets = {} if strict else pet_chunks(save, os.path.basename(path), moved_pets)
         for i, off, ln in chunks_of(raw):
             cx, cz = rx * 32 + (i % 32), rz * 32 + (i // 32)
             present[path][i] = (cx, cz)
@@ -402,7 +419,7 @@ def main():
             raw_e = open(ent_path, 'rb').read()
             for i, off, ln in chunks_of(raw_e):
                 if i in drop:
-                    found = animal_only(raw_e, off, ln)
+                    found = animal_only(raw_e, off, ln, moved_pets)
                     if found:
                         animal_repl[i] = found[0]
                         for label in found[1]:

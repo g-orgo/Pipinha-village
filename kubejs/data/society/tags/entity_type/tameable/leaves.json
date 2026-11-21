@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "wildernature:giraffe",
+      "required": false
+    }
+  ]
+}

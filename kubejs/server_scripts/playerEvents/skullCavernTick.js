@@ -2,7 +2,7 @@ console.info("[SOCIETY] skullCavernTick.js loaded");
 
 PlayerEvents.tick((e) => {
   const player = e.player;
-  if (player.age % 200 == 0 && player.level.dimension === "society:skull_cavern") {
+  if (global.playerTicks(player) % 200 == 0 && player.level.dimension === "society:skull_cavern") {
     const timeModulo = player.level.dayTime() % 24000;
     const server = player.getServer();
     // 11 PM

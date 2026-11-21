@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.pipinha.deerfix.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AvoidEntityGoalAccessor",
+    "DeerAvoidEntityGoalMixin",
+    "DeerEntityMixin",
+    "DeerFollowLeaderGoalMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

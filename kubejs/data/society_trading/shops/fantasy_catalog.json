@@ -1,6 +1,6 @@
 {
   "shop_id": "fantasy_catalog",
-  "name": "shop.society_trading.fantasy_catalog",
+  "name": {"translate": "shop.society_trading.fantasy_catalog"},
   "hidden_from_selector": true,
   "display_type": "thin",
   "texture": "fantasyfurniture:textures/block/nordic/wool",

@@ -8,8 +8,9 @@ EntityEvents.spawned("vinery:mule", (e) => {
   const old = e.entity;
   let mule;
   let holder = null;
+  let nbt;
   try {
-    const nbt = old.getNbt();
+    nbt = old.getNbt();
     nbt.remove("DespawnDelay");
     mule = e.level.createEntity("minecraft:mule");
     mule.setNbt(nbt);

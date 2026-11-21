@@ -1,13 +1,14 @@
 {
   "shop_id": "book_fair",
-  "name": "shop.society_trading.book_fair",
+  "name": {"translate": "shop.society_trading.book_fair"},
   "texture": "dialog:textures/portraits/librarian",
   "jei_catalyst": {
-    "id": "society:villager_home",
+    "id": "society:villager",
     "components": {
       "minecraft:custom_data": {
         "type": "librarian"
-      }
+      },
+      "minecraft:custom_model_data": 5
     }
   },
   "hidden_from_auto_trader": true,

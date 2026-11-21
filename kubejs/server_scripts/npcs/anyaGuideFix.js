@@ -7,8 +7,9 @@ const ANYA_TYPE = "faunaandorchestra:anya_ghost";
 // 1.21.1: the book is a data component (PatchouliDataComponents.BOOK, a ResourceLocation).
 const anyaPlayerHasBook = (player) => {
   let found = false;
+  let $PatchouliBook;
   try {
-    const $PatchouliBook = Java.loadClass("vazkii.patchouli.common.item.PatchouliDataComponents").BOOK;
+    $PatchouliBook = Java.loadClass("vazkii.patchouli.common.item.PatchouliDataComponents").BOOK;
     player.inventory.items.forEach((item) => {
       if (found || item.id !== "patchouli:guide_book") return;
       const book = item.get($PatchouliBook);

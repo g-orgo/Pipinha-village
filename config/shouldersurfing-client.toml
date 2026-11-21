@@ -239,7 +239,7 @@
 
 	[camera.fov]
 		#Whether to apply the FOV override when in shoulder surfing perspective.
-		fov_override_enabled = true
+		fov_override_enabled = false
 		#The camera FOV when in shoulder surfing perspective. Depends on config option 'fov_override_enabled'.
 		# Default: 70.0
 		# Range: 30.0 ~ 110.0

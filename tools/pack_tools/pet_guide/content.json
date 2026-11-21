@@ -1,0 +1,3097 @@
+{
+  "chapter": {
+    "id": "7F2B6A60431A9D58",
+    "filename": "companheiros",
+    "icon": "minecraft:wolf_spawn_egg",
+    "title": {
+      "en": "Companions",
+      "pt": "Companheiros"
+    },
+    "subtitle": {
+      "en": "Knowledge only: no rewards",
+      "pt": "Só conhecimento: sem recompensas"
+    }
+  },
+  "intro": {
+    "id": "6B4F994116C4DE02",
+    "task": "23DE123D1E4E8067",
+    "icon": "minecraft:lead",
+    "title": {
+      "en": "Companions",
+      "pt": "Companheiros"
+    },
+    "subtitle": {
+      "en": "Knowledge only",
+      "pt": "Só conhecimento"
+    },
+    "task_title": {
+      "en": "Got it!",
+      "pt": "Entendi!"
+    },
+    "lines": {
+      "en": [
+        "Some animals of the valley become &6companions&r, and many others can be tamed or befriended. Each box of this chapter introduces one of them. Nothing here gives a reward: it is only for you to know your animals.",
+        "A box is completed when you get the animal's &6spawn egg&r, or when you pet, tame or befriend one.",
+        "The &6valley companions&r are the boxes around this one, and they get companion hearts. &6Petting&r: right click with an empty hand, once a day. Each pet raises affection, and 100 affection is 1 heart, up to 10 hearts. A hungry or crowded animal loses affection.",
+        "From &65 hearts&r a companion gains bonuses that grow until &610 hearts&r. Its max health also rises: 4 points per heart, up to 40.",
+        "At &610 hearts&r it gives you a gift, only once.",
+        "Companion spawn eggs are made at a crafting table: 4 coins, 3 Bone Blocks, 1 egg and a mineral of each animal.",
+        "The boxes further down show the other animals you can tame. They do not get companion bonuses, but each one has its own use.",
+        "Every animal of the valley can be tamed. The ones with no way of their own accept the treat shown in their box: each try uses one and works 1 time in 3. Tamed, it follows you, never despawns and takes a &6Collar Tag&r with pet enchantments. Each box tells what the animal is good for. Sneak and right click with an empty hand to switch between follow, stay and wander. On valley companions, the first click of the day is the petting."
+      ],
+      "pt": [
+        "Alguns animais do vale viram &6companheiros&r, e muitos outros podem ser domados ou virar amigos. Cada caixa deste capítulo apresenta um deles. Nada aqui dá recompensa: é só para você conhecer seus bichos.",
+        "A caixa se completa quando você pega o &6ovo de spawn&r do animal, ou quando faz carinho, doma ou faz amizade com um deles.",
+        "Os &6companheiros do vale&r são as caixas em volta desta, e ganham corações de companheiro. &6Carinho&r: botão direito com a mão vazia, uma vez por dia. Cada carinho dá afeição, e 100 de afeição é 1 coração, até 10 corações. Animal com fome ou apertado perde afeição.",
+        "A partir de &65 corações&r o companheiro ganha bônus que crescem até os &610 corações&r. A vida máxima também sobe: 4 pontos por coração, até 40.",
+        "Aos &610 corações&r ele te dá um presente, uma vez só.",
+        "Ovos de spawn de companheiro saem na bancada: 4 moedas, 3 Blocos de Osso, 1 ovo e um mineral próprio de cada animal.",
+        "As caixas mais abaixo mostram os outros animais que dá para domar. Eles não ganham os bônus de companheiro, mas cada um tem sua utilidade.",
+        "Todo animal do vale pode ser domado. Quem não tem jeito próprio aceita o petisco da caixa dele: cada tentativa gasta um e dá certo 1 vez em 3. Domado, ele segue você, não some do mundo e aceita a &6Etiqueta de Coleira&r com encantamentos de pet. Cada caixa diz para que serve o animal. Agachado, botão direito com a mão vazia troca entre seguir, ficar e passear. Nos companheiros do vale, o primeiro clique do dia é o carinho."
+      ]
+    }
+  },
+  "groups": {
+    "dog": {
+      "sub": {
+        "en": "Scares skeletons",
+        "pt": "Espanta esqueletos"
+      },
+      "bonus": {
+        "en": "From &65 hearts&r it gains up to &6+4 attack&r and &6+8 armor&r at 10 hearts.",
+        "pt": "A partir de &65 corações&r ganha até &6+4 de ataque&r e &6+8 de armadura&r aos 10 corações."
+      },
+      "scare": {
+        "en": "Every dog of the valley scares &6skeletons&r away (strays, bogged and wither skeletons too) within &66 blocks&r. From 5 hearts the radius grows 2 blocks per heart: &68 blocks&r at 5 hearts and &618 blocks&r at 10.",
+        "pt": "Todo cão do vale espanta &6esqueletos&r (também os errantes, os do pântano e os wither) num raio de &66 blocos&r. A partir de 5 corações o raio cresce 2 blocos por coração: &68 blocos&r aos 5 e &618 blocos&r aos 10."
+      }
+    },
+    "cat": {
+      "sub": {
+        "en": "Scares creepers",
+        "pt": "Espanta creepers"
+      },
+      "bonus": {
+        "en": "From &65 hearts&r it gains up to &6+20% speed&r at 10 hearts.",
+        "pt": "A partir de &65 corações&r ganha até &6+20% de velocidade&r aos 10 corações."
+      },
+      "scare": {
+        "en": "Cats scare &6creepers&r away within &66 blocks&r. From 5 hearts the radius grows 2 blocks per heart: &68 blocks&r at 5 hearts and &618 blocks&r at 10.",
+        "pt": "Gatos espantam &6creepers&r num raio de &66 blocos&r. A partir de 5 corações o raio cresce 2 blocos por coração: &68 blocos&r aos 5 e &618 blocos&r aos 10."
+      }
+    },
+    "horse": {
+      "sub": {
+        "en": "Mount",
+        "pt": "Montaria"
+      },
+      "bonus": {
+        "en": "From &65 hearts&r it gains up to &6+20% speed&r and &6+20% jump&r at 10 hearts.",
+        "pt": "A partir de &65 corações&r ganha até &6+20% de velocidade&r e &6+20% de pulo&r aos 10 corações."
+      }
+    },
+    "bear": {
+      "sub": {
+        "en": "Bodyguard",
+        "pt": "Guarda-costas"
+      },
+      "bonus": {
+        "en": "From &65 hearts&r it gains up to &6+4 attack&r and &6+6 armor&r at 10 hearts.",
+        "pt": "A partir de &65 corações&r ganha até &6+4 de ataque&r e &6+6 de armadura&r aos 10 corações."
+      }
+    },
+    "hunter": {
+      "sub": {
+        "en": "Little hunter",
+        "pt": "Pequeno caçador"
+      },
+      "bonus": {
+        "en": "From &65 hearts&r it gains up to &6+2 attack&r and &6+15% speed&r at 10 hearts.",
+        "pt": "A partir de &65 corações&r ganha até &6+2 de ataque&r e &6+15% de velocidade&r aos 10 corações."
+      }
+    },
+    "nimble": {
+      "sub": {
+        "en": "Nimble",
+        "pt": "Ágil"
+      },
+      "bonus": {
+        "en": "From &65 hearts&r it gains up to &6+20% speed&r at 10 hearts (flying speed too, if it flies).",
+        "pt": "A partir de &65 corações&r ganha até &6+20% de velocidade&r aos 10 corações (de voo também, se voar)."
+      }
+    }
+  },
+  "pets": [
+    {
+      "key": "wolf",
+      "group": "dog",
+      "id": "48A39EF43A6ED258",
+      "task": "080825C0158DA76A",
+      "egg": "minecraft:wolf_spawn_egg",
+      "mineral": "Thunder Egg",
+      "x": -3.0,
+      "y": -3.0,
+      "title": {
+        "en": "Wolf",
+        "pt": "Lobo"
+      },
+      "intro": {
+        "en": "The classic companion. Tame it with &6bones&r.",
+        "pt": "O companheiro clássico. Dome com &6ossos&r."
+      },
+      "gift": {
+        "en": "Gift at 10 hearts: a hat or a fossil. A wolf tamed by you also puts on &6Wolf Armor&r once, if it has none.",
+        "pt": "Presente aos 10 corações: um chapéu ou um fóssil. Um lobo domado por você também ganha uma &6Armadura de Lobo&r, uma vez só, se estiver sem."
+      },
+      "entity": "minecraft:wolf"
+    },
+    {
+      "key": "shiba",
+      "group": "dog",
+      "id": "3FB74D5F629E5B76",
+      "task": "56B4EAED5F38D089",
+      "egg": "quark:shiba_spawn_egg",
+      "mineral": "Hematite",
+      "x": -1.0,
+      "y": -3.0,
+      "title": {
+        "en": "Shiba",
+        "pt": "Shiba"
+      },
+      "intro": {
+        "en": "A loyal little dog from Quark.",
+        "pt": "Um cãozinho fiel do Quark."
+      },
+      "gift": {
+        "en": "Gift at 10 hearts: a hat.",
+        "pt": "Presente aos 10 corações: um chapéu."
+      },
+      "entity": "quark:shiba"
+    },
+    {
+      "key": "foxhound",
+      "group": "dog",
+      "id": "181896459F921040",
+      "task": "672022EC418D2C94",
+      "egg": "quark:foxhound_spawn_egg",
+      "mineral": "Tigerseye",
+      "x": 1.0,
+      "y": -3.0,
+      "title": {
+        "en": "Foxhound",
+        "pt": "Foxhound"
+      },
+      "intro": {
+        "en": "A hound from the Nether, from Quark.",
+        "pt": "Um cão do Nether, do Quark."
+      },
+      "gift": {
+        "en": "Gift at 10 hearts: a hat.",
+        "pt": "Presente aos 10 corações: um chapéu."
+      },
+      "entity": "quark:foxhound"
+    },
+    {
+      "key": "dog",
+      "group": "dog",
+      "id": "25D4764B77361CBA",
+      "task": "437608F91E0A91CD",
+      "egg": "wildernature:dog_spawn_egg",
+      "mineral": "Aquamarine",
+      "x": 3.0,
+      "y": -3.0,
+      "title": {
+        "en": "Dog",
+        "pt": "Cachorro"
+      },
+      "intro": {
+        "en": "A farm dog from Wildernature.",
+        "pt": "Um cão de fazenda do Wildernature."
+      },
+      "gift": {
+        "en": "Gift at 10 hearts: a fossil.",
+        "pt": "Presente aos 10 corações: um fóssil."
+      },
+      "entity": "wildernature:dog"
+    },
+    {
+      "key": "horse",
+      "group": "horse",
+      "id": "350DFEA0CE57756A",
+      "task": "08C64849A01323D0",
+      "egg": "minecraft:horse_spawn_egg",
+      "mineral": "Jagoite",
+      "x": -5.0,
+      "y": 0.0,
+      "title": {
+        "en": "Horse",
+        "pt": "Cavalo"
+      },
+      "intro": {
+        "en": "Your mount. Tame it by riding it until hearts appear.",
+        "pt": "Sua montaria. Dome montando nele até aparecerem corações."
+      },
+      "gift": {
+        "en": "Gift at 10 hearts: a &6Saddle&r.",
+        "pt": "Presente aos 10 corações: uma &6Sela&r."
+      },
+      "entity": "minecraft:horse"
+    },
+    {
+      "key": "axolotl",
+      "group": "hunter",
+      "id": "0E8CF01014C8ED14",
+      "task": "0F25E4708C4C6AEC",
+      "egg": "minecraft:axolotl_spawn_egg",
+      "mineral": "Pure Obsidian",
+      "x": -3.0,
+      "y": 0.0,
+      "title": {
+        "en": "Axolotl",
+        "pt": "Axolote"
+      },
+      "intro": {
+        "en": "Carry it in a &6Bucket of Water&r. Underwater it fights drowned and fish by your side. Tame it with a &6Bucket of Tropical Fish&r.",
+        "pt": "Leve num &6balde d'água&r. Debaixo d'água ele luta contra afogados e peixes ao seu lado. Dome com um &6Balde com Peixe Tropical&r."
+      },
+      "gift": {
+        "en": "Gift at 10 hearts: a hat or a swim ring.",
+        "pt": "Presente aos 10 corações: um chapéu ou uma boia."
+      },
+      "entity": "minecraft:axolotl"
+    },
+    {
+      "key": "polar_bear",
+      "group": "bear",
+      "id": "4E83174CE115538A",
+      "task": "13B213DDBA88638E",
+      "egg": "minecraft:polar_bear_spawn_egg",
+      "mineral": "Opal",
+      "x": 3.0,
+      "y": 0.0,
+      "title": {
+        "en": "Polar Bear",
+        "pt": "Urso-polar"
+      },
+      "intro": {
+        "en": "A big friend from the snow. Tame it with &6Raw Cod&r.",
+        "pt": "Um amigão da neve. Dome com &6Bacalhau Cru&r."
+      },
+      "gift": {
+        "en": "Gift at 10 hearts: a hat.",
+        "pt": "Presente aos 10 corações: um chapéu."
+      },
+      "entity": "minecraft:polar_bear"
+    },
+    {
+      "key": "grizzly_bear",
+      "group": "bear",
+      "id": "232FAB1EF5F6945A",
+      "task": "712F77A0A98611FF",
+      "egg": "buzzier_bees:grizzly_bear_spawn_egg",
+      "mineral": "Beemonican Seal",
+      "coin": "ancient",
+      "x": 5.0,
+      "y": 0.0,
+      "title": {
+        "en": "Grizzly Bear",
+        "pt": "Urso-pardo"
+      },
+      "intro": {
+        "en": "A honey-loving bear from Buzzier Bees. Tame it with &6Sweet Berries&r.",
+        "pt": "Um urso fã de mel, do Buzzier Bees. Dome com &6Bagas Doces&r."
+      },
+      "gift": {
+        "en": "Gift at 10 hearts: a &6Beemonican Seal&r.",
+        "pt": "Presente aos 10 corações: um &6Beemonican Seal&r."
+      },
+      "entity": "buzzier_bees:grizzly_bear"
+    },
+    {
+      "key": "cat",
+      "group": "cat",
+      "id": "1F0FAD7E407A83A9",
+      "task": "16AB52C7B5FC6D3F",
+      "egg": "minecraft:cat_spawn_egg",
+      "mineral": "Nekoite",
+      "x": -3.0,
+      "y": 3.0,
+      "title": {
+        "en": "Cat",
+        "pt": "Gato"
+      },
+      "intro": {
+        "en": "Tame it with raw &6cod&r or &6salmon&r. Phantoms keep away from cats, and a cat sleeping on your bed may bring you a present in the morning.",
+        "pt": "Dome com &6bacalhau&r ou &6salmão&r cru. Phantoms fogem de gatos, e um gato que dorme na sua cama pode trazer um presentinho de manhã."
+      },
+      "gift": {
+        "en": "Gift at 10 hearts: a hat or a fossil.",
+        "pt": "Presente aos 10 corações: um chapéu ou um fóssil."
+      },
+      "entity": "minecraft:cat"
+    },
+    {
+      "key": "hedgehog",
+      "group": "nimble",
+      "id": "354D481CFF63F72C",
+      "task": "3ECD99D574367447",
+      "egg": "wildernature:hedgehog_spawn_egg",
+      "mineral": "Wheel Of Adaptation",
+      "x": -1.0,
+      "y": 3.0,
+      "title": {
+        "en": "Hedgehog",
+        "pt": "Ouriço"
+      },
+      "intro": {
+        "en": "A small and shy hedgehog from Wildernature. Tame it with &6Sweet Berries&r.",
+        "pt": "Um ouriço pequeno e tímido do Wildernature. Dome com &6Bagas Doces&r."
+      },
+      "gift": {
+        "en": "Gift at 10 hearts: a hat.",
+        "pt": "Presente aos 10 corações: um chapéu."
+      },
+      "entity": "wildernature:hedgehog"
+    },
+    {
+      "key": "allay",
+      "group": "nimble",
+      "id": "3ADFE08DDB8E65DA",
+      "task": "24E2557AEB410EDB",
+      "egg": "minecraft:allay_spawn_egg",
+      "mineral": "Celestine",
+      "x": 1.0,
+      "y": 3.0,
+      "title": {
+        "en": "Allay",
+        "pt": "Allay"
+      },
+      "intro": {
+        "en": "Hand it an item and it brings you every copy it finds nearby. It loves note blocks.",
+        "pt": "Dê um item na mão dele e ele traz todas as cópias que achar por perto. Adora blocos musicais."
+      },
+      "gift": {
+        "en": "Gift at 10 hearts: a hat.",
+        "pt": "Presente aos 10 corações: um chapéu."
+      },
+      "entity": "minecraft:allay"
+    },
+    {
+      "key": "ferret",
+      "group": "hunter",
+      "id": "66D2698A1FA73C57",
+      "task": "3AF647046516B4B2",
+      "egg": "crittersandcompanions:ferret_spawn_egg",
+      "mineral": "Glitched VHS",
+      "mineral_pt": "Fita VHS Corrompida",
+      "x": 3.0,
+      "y": 3.0,
+      "title": {
+        "en": "Ferret",
+        "pt": "Furão"
+      },
+      "intro": {
+        "en": "A curious ferret from Critters and Companions.",
+        "pt": "Um furão curioso do Critters and Companions."
+      },
+      "gift": {
+        "en": "Gift at 10 hearts: a Jumping Spider spawn egg.",
+        "pt": "Presente aos 10 corações: um ovo de spawn de Aranha Saltadora."
+      },
+      "entity": "crittersandcompanions:ferret"
+    }
+  ],
+  "task_titles": {
+    "pet": {
+      "en": "Get its spawn egg, or pet or tame one",
+      "pt": "Pegue o ovo de spawn, ou faça carinho ou dome um"
+    },
+    "tame": {
+      "en": "Tame one, or get its spawn egg",
+      "pt": "Dome um, ou pegue o ovo de spawn"
+    },
+    "interact": {
+      "en": "Befriend one, or get its spawn egg",
+      "pt": "Faça amizade com um, ou pegue o ovo de spawn"
+    }
+  },
+  "others": [
+    {
+      "key": "parrot",
+      "entity": "minecraft:parrot",
+      "id": "03DEDE9731E24183",
+      "task": "34E4DC56D46A01D7",
+      "egg": "minecraft:parrot_spawn_egg",
+      "complete": "tame",
+      "x": -6.0,
+      "y": 6.0,
+      "title": {
+        "en": "Parrot",
+        "pt": "Papagaio"
+      },
+      "sub": {
+        "en": "On your shoulder",
+        "pt": "No ombro"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6seeds&r. Never give it a cookie!",
+          "A tamed parrot rides on your shoulder and imitates the sounds of nearby monsters, a free warning."
+        ],
+        "pt": [
+          "Dome com &6sementes&r. Nunca dê biscoito!",
+          "Domado, ele vai no seu ombro e imita o som dos monstros por perto: um aviso de graça."
+        ]
+      }
+    },
+    {
+      "key": "ocelot",
+      "entity": "minecraft:ocelot",
+      "id": "3A924EFB429FED78",
+      "task": "28FBD973F989B910",
+      "egg": "minecraft:ocelot_spawn_egg",
+      "complete": "tame",
+      "x": -4.0,
+      "y": 6.0,
+      "title": {
+        "en": "Ocelot",
+        "pt": "Jaguatirica"
+      },
+      "sub": {
+        "en": "Shy",
+        "pt": "Tímida"
+      },
+      "lines": {
+        "en": [
+          "Stand still and feed it &6Raw Cod&r or &6Raw Salmon&r: each one has a 1 in 3 chance to tame it.",
+          "A tamed ocelot stops running away from you and, like cats, scares creepers."
+        ],
+        "pt": [
+          "Fique parado e dê &6Bacalhau Cru&r ou &6Salmão Cru&r: cada um tem 1 chance em 3 de domar.",
+          "Domada, ela para de fugir de você e, como os gatos, assusta creepers."
+        ]
+      }
+    },
+    {
+      "key": "fox",
+      "entity": "minecraft:fox",
+      "id": "7A4BC47465B34503",
+      "task": "5EA7584019181379",
+      "egg": "minecraft:fox_spawn_egg",
+      "complete": "interact",
+      "x": -2.0,
+      "y": 6.0,
+      "title": {
+        "en": "Fox",
+        "pt": "Raposa"
+      },
+      "sub": {
+        "en": "Trusts you",
+        "pt": "Confia em você"
+      },
+      "lines": {
+        "en": [
+          "Wild foxes run away. Breed two of them with &6sweet berries&r or &6glow berries&r: the baby is born trusting you.",
+          "A trusting fox defends you and loves to carry items in its mouth."
+        ],
+        "pt": [
+          "Raposa selvagem foge. Cruze duas com &6Bagas Doces&r ou &6Bagas Brilhantes&r: o filhote já nasce confiando em você.",
+          "Uma raposa de confiança te defende e adora carregar itens na boca."
+        ]
+      }
+    },
+    {
+      "key": "donkey",
+      "entity": "minecraft:donkey",
+      "id": "137FF8E197C9D53C",
+      "task": "51C6A6DE7CD812A2",
+      "egg": "minecraft:donkey_spawn_egg",
+      "complete": "tame",
+      "x": 0.0,
+      "y": 6.0,
+      "title": {
+        "en": "Donkey",
+        "pt": "Burro"
+      },
+      "sub": {
+        "en": "Pack animal",
+        "pt": "Animal de carga"
+      },
+      "lines": {
+        "en": [
+          "Tame it by riding it until hearts appear.",
+          "Put a &6Chest&r on it to carry 15 stacks with you. Bred with a horse, it gives a mule."
+        ],
+        "pt": [
+          "Dome montando nele até aparecerem corações.",
+          "Coloque um &6Baú&r nele para levar 15 pilhas de itens. Cruzado com cavalo, nasce uma mula."
+        ]
+      }
+    },
+    {
+      "key": "mule",
+      "entity": "minecraft:mule",
+      "id": "5A0EEE6562112771",
+      "task": "250EC043570CBC86",
+      "egg": "minecraft:mule_spawn_egg",
+      "complete": "tame",
+      "x": 2.0,
+      "y": 6.0,
+      "title": {
+        "en": "Mule",
+        "pt": "Mula"
+      },
+      "sub": {
+        "en": "Pack animal",
+        "pt": "Animal de carga"
+      },
+      "lines": {
+        "en": [
+          "Born from a horse and a donkey. Tame it by riding it until hearts appear.",
+          "Carries a &6Chest&r like the donkey, but it cannot have babies."
+        ],
+        "pt": [
+          "Nasce do cruzamento de cavalo com burro. Dome montando nela até aparecerem corações.",
+          "Leva um &6Baú&r como o burro, mas não tem filhotes."
+        ]
+      }
+    },
+    {
+      "key": "llama",
+      "entity": "minecraft:llama",
+      "also": [
+        "minecraft:trader_llama"
+      ],
+      "id": "4E9B756A65B89AD4",
+      "task": "32F9CF6A6A50F2C4",
+      "egg": "minecraft:llama_spawn_egg",
+      "complete": "tame",
+      "x": 4.0,
+      "y": 6.0,
+      "title": {
+        "en": "Llama",
+        "pt": "Lhama"
+      },
+      "sub": {
+        "en": "Caravan",
+        "pt": "Caravana"
+      },
+      "lines": {
+        "en": [
+          "Tame it by riding it until hearts appear. The wandering trader's llamas count too.",
+          "Give it a &6Chest&r and a &6Carpet&r, and lead one with a &6Lead&r: the others follow in a caravan."
+        ],
+        "pt": [
+          "Dome montando nela até aparecerem corações. As lhamas do mercador ambulante também contam.",
+          "Dê um &6Baú&r e um &6Tapete&r, e puxe uma com a &6Corda&r: as outras seguem em caravana."
+        ]
+      }
+    },
+    {
+      "key": "camel",
+      "entity": "minecraft:camel",
+      "also": [
+        "minecraft:camel_husk"
+      ],
+      "id": "53BC0BBC564412AE",
+      "task": "523C821C6D960B52",
+      "egg": "minecraft:camel_spawn_egg",
+      "complete": "interact",
+      "x": 6.0,
+      "y": 6.0,
+      "title": {
+        "en": "Camel",
+        "pt": "Camelo"
+      },
+      "sub": {
+        "en": "Mount for two",
+        "pt": "Montaria para dois"
+      },
+      "lines": {
+        "en": [
+          "No taming needed: just put a &6Saddle&r on it. It carries two riders and dashes forward.",
+          "The &6Camel Husk&r of the desert works the same way and eats &6Rabbit's Foot&r."
+        ],
+        "pt": [
+          "Não precisa domar: é só colocar a &6Sela&r. Leva duas pessoas e dá uma arrancada.",
+          "O &6Camelo Mumificado&r do deserto funciona igual e come &6Pé de Coelho&r."
+        ]
+      }
+    },
+    {
+      "key": "nautilus",
+      "entity": "minecraft:nautilus",
+      "also": [
+        "minecraft:zombie_nautilus"
+      ],
+      "id": "2A22693422EE7D17",
+      "task": "341388578F373084",
+      "egg": "minecraft:nautilus_spawn_egg",
+      "complete": "tame",
+      "x": -6.0,
+      "y": 8.0,
+      "title": {
+        "en": "Nautilus",
+        "pt": "Náutilo"
+      },
+      "sub": {
+        "en": "Sea mount",
+        "pt": "Montaria do mar"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Pufferfish&r or a &6Bucket of Pufferfish&r.",
+          "Then put a &6Saddle&r on it to ride under the sea, with a dash. The zombie nautilus comes with a drowned on top."
+        ],
+        "pt": [
+          "Dome com um &6Baiacu&r ou um &6Balde com Baiacu&r.",
+          "Depois coloque a &6Sela&r para andar debaixo d'água, com arrancada. O náutilo zumbi vem com um afogado montado."
+        ]
+      }
+    },
+    {
+      "key": "happy_ghast",
+      "entity": "minecraft:happy_ghast",
+      "id": "5EC29AFDBE20BBEE",
+      "task": "513A0E5588A8A2D2",
+      "egg": "minecraft:happy_ghast_spawn_egg",
+      "complete": "interact",
+      "x": -4.0,
+      "y": 8.0,
+      "title": {
+        "en": "Happy Ghast",
+        "pt": "Ghast Feliz"
+      },
+      "sub": {
+        "en": "Flying mount",
+        "pt": "Montaria voadora"
+      },
+      "lines": {
+        "en": [
+          "Put a &6Dried Ghast&r block in water and wait: a little ghast is born and grows up friendly. It loves &6Snowballs&r.",
+          "Put a &6Harness&r on it to fly with your friends."
+        ],
+        "pt": [
+          "Coloque um bloco de &6Ghast Seco&r na água e espere: nasce um ghastinho que cresce amigo. Ele adora &6Bolas de Neve&r.",
+          "Coloque um &6Arreio&r nele para voar com os amigos."
+        ]
+      }
+    },
+    {
+      "key": "scorpion",
+      "entity": "wildernature:scorpion",
+      "id": "15ABFF30F95EADA1",
+      "task": "2D8ECD6CCAB676D8",
+      "egg": "wildernature:scorpion_spawn_egg",
+      "complete": "interact",
+      "x": -2.0,
+      "y": 8.0,
+      "title": {
+        "en": "Scorpion",
+        "pt": "Escorpião"
+      },
+      "sub": {
+        "en": "Poisonous friend",
+        "pt": "Amigo venenoso"
+      },
+      "lines": {
+        "en": [
+          "Win its trust little by little, then finish the taming with a &6Fermented Spider Eye&r.",
+          "A tamed scorpion sits on command, and its sting is poisonous."
+        ],
+        "pt": [
+          "Ganhe a confiança dele aos poucos e finalize a doma com um &6Olho de Aranha Fermentado&r.",
+          "Domado, ele senta quando você manda, e a ferroada dele envenena."
+        ]
+      }
+    },
+    {
+      "key": "duck",
+      "entity": "untitledduckmod:duck",
+      "id": "55185DC57EDED459",
+      "task": "42E346D1A01B50C6",
+      "egg": "untitledduckmod:duck_spawn_egg",
+      "complete": "tame",
+      "x": 0.0,
+      "y": 8.0,
+      "title": {
+        "en": "Duck",
+        "pt": "Pato"
+      },
+      "sub": {
+        "en": "Fisher",
+        "pt": "Pescador"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6fish&r, raw or cooked.",
+          "A tamed duck fishes by itself. Carry it around in a &6Duck Sack&r."
+        ],
+        "pt": [
+          "Dome com &6peixe&r, cru ou assado.",
+          "Domado, ele pesca sozinho. Leve ele no &6Saco de Pato&r."
+        ]
+      }
+    },
+    {
+      "key": "goose",
+      "entity": "untitledduckmod:goose",
+      "id": "110B2983ED2A7A45",
+      "task": "4A2766AB14B4AD74",
+      "egg": "untitledduckmod:goose_spawn_egg",
+      "complete": "tame",
+      "x": 2.0,
+      "y": 8.0,
+      "title": {
+        "en": "Goose",
+        "pt": "Ganso"
+      },
+      "sub": {
+        "en": "Guard",
+        "pt": "Guarda"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Kelp&r or &6Seagrass&r.",
+          "A tamed goose follows you and scares off the monsters around."
+        ],
+        "pt": [
+          "Dome com &6Alga&r ou &6Ervas Marinhas&r.",
+          "Domado, ele te segue e intimida os monstros por perto."
+        ]
+      }
+    },
+    {
+      "key": "frostbiter",
+      "entity": "windswept:frostbiter",
+      "id": "7CE269ADEA2460C8",
+      "task": "1076ABE7E69D66A2",
+      "egg": "windswept:frostbiter_spawn_egg",
+      "complete": "tame",
+      "x": 4.0,
+      "y": 8.0,
+      "title": {
+        "en": "Frostbiter",
+        "pt": "Mordigelo"
+      },
+      "sub": {
+        "en": "Snow mount",
+        "pt": "Montaria da neve"
+      },
+      "lines": {
+        "en": [
+          "Feed it &6Holly Berries&r until it accepts you: it may take a few tries.",
+          "Saddle it and steer with &6Holly Berries on a Stick&r. It sheds its antlers and can be milked."
+        ],
+        "pt": [
+          "Dê &6Azevinho&r até ele aceitar você: pode levar algumas tentativas.",
+          "Coloque a &6Sela&r e guie com &6Azevinho na Vara&r. Ele solta os chifres e dá leite."
+        ]
+      }
+    },
+    {
+      "key": "red_panda",
+      "entity": "crittersandcompanions:red_panda",
+      "id": "30A7BAA7AF791393",
+      "task": "51570D407CA751F2",
+      "egg": "crittersandcompanions:red_panda_spawn_egg",
+      "complete": "tame",
+      "x": 6.0,
+      "y": 8.0,
+      "title": {
+        "en": "Red Panda",
+        "pt": "Panda-vermelho"
+      },
+      "sub": {
+        "en": "Little friend",
+        "pt": "Amiguinho"
+      },
+      "lines": {
+        "en": [
+          "&6Sweet Berries&r lure it, and &6Bamboo&r tames it.",
+          "A tamed red panda runs after you and naps when you stop."
+        ],
+        "pt": [
+          "&6Bagas Doces&r atraem e &6Bambu&r doma.",
+          "Domado, ele corre atrás de você e tira uma soneca quando você para."
+        ]
+      }
+    },
+    {
+      "key": "shima_enaga",
+      "entity": "crittersandcompanions:shima_enaga",
+      "id": "46B84873E7AA9767",
+      "task": "572466EA00B9ACB5",
+      "egg": "crittersandcompanions:shima_enaga_spawn_egg",
+      "complete": "tame",
+      "x": -6.0,
+      "y": 10.0,
+      "title": {
+        "en": "Shima Enaga",
+        "pt": "Shima Enaga"
+      },
+      "sub": {
+        "en": "Little bird",
+        "pt": "Passarinho"
+      },
+      "lines": {
+        "en": [
+          "A tiny snow bird. Tame it with &6seeds&r.",
+          "A tamed one flies after you wherever you go."
+        ],
+        "pt": [
+          "Um passarinho da neve. Dome com &6sementes&r.",
+          "Domado, ele voa atrás de você aonde for."
+        ]
+      }
+    },
+    {
+      "key": "ladybug",
+      "entity": "crittersandcompanions:ladybug",
+      "id": "0CAAF6281B2B2635",
+      "task": "351B8A7F19901057",
+      "egg": "crittersandcompanions:ladybug_spawn_egg",
+      "complete": "tame",
+      "x": -4.0,
+      "y": 10.0,
+      "title": {
+        "en": "Ladybug",
+        "pt": "Joaninha"
+      },
+      "sub": {
+        "en": "Healer",
+        "pt": "Curandeira"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6mushrooms&r.",
+          "A tamed ladybug gives off a healing aura."
+        ],
+        "pt": [
+          "Dome com &6cogumelos&r.",
+          "Domada, ela solta uma aura que cura."
+        ]
+      }
+    },
+    {
+      "key": "roly_poly",
+      "entity": "crittersandcompanions:roly_poly",
+      "id": "03B38AF7A1CA1A48",
+      "task": "65365857DD546D90",
+      "egg": "crittersandcompanions:roly_poly_spawn_egg",
+      "complete": "tame",
+      "x": -2.0,
+      "y": 10.0,
+      "title": {
+        "en": "Roly-Poly",
+        "pt": "Tatuzinho"
+      },
+      "sub": {
+        "en": "Tiny porter",
+        "pt": "Carregador"
+      },
+      "lines": {
+        "en": [
+          "&6Mushrooms&r lure it, and a &6Dead Bush&r tames it.",
+          "Put a &6Chest&r on a tamed one and it carries items for you."
+        ],
+        "pt": [
+          "&6Cogumelos&r atraem e um &6Arbusto Morto&r doma.",
+          "Coloque um &6Baú&r nele domado e ele carrega itens para você."
+        ]
+      }
+    },
+    {
+      "key": "snail",
+      "entity": "crittersandcompanions:snail",
+      "id": "5333D675E9C5369B",
+      "task": "4BB0A3BD7BC2221D",
+      "egg": "crittersandcompanions:snail_spawn_egg",
+      "complete": "tame",
+      "x": 0.0,
+      "y": 10.0,
+      "title": {
+        "en": "Snail",
+        "pt": "Caracol"
+      },
+      "sub": {
+        "en": "Slow and steady",
+        "pt": "Devagar e sempre"
+      },
+      "lines": {
+        "en": [
+          "&6Leaves&r lure it, and a &6Carrot&r tames it.",
+          "Use a &6Glass Bottle&r on it to collect &6Snail Slime&r."
+        ],
+        "pt": [
+          "&6Folhas&r atraem e uma &6Cenoura&r doma.",
+          "Use um &6Frasco de Vidro&r nele para pegar &6Gosma de Caracol&r."
+        ]
+      }
+    },
+    {
+      "key": "stag_beetle",
+      "entity": "crittersandcompanions:stag_beetle",
+      "id": "5E3FD2CE963BA0CE",
+      "task": "2FEDC30FD4263936",
+      "egg": "crittersandcompanions:stag_beetle_spawn_egg",
+      "complete": "tame",
+      "x": 2.0,
+      "y": 10.0,
+      "title": {
+        "en": "Stag Beetle",
+        "pt": "Besouro-veado"
+      },
+      "sub": {
+        "en": "Fighter",
+        "pt": "Lutador"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6berries&r.",
+          "A tamed stag beetle fights by your side."
+        ],
+        "pt": [
+          "Dome com &6frutinhas&r.",
+          "Domado, ele luta ao seu lado."
+        ]
+      }
+    },
+    {
+      "key": "stick_bug",
+      "entity": "crittersandcompanions:stick_bug",
+      "id": "7C1C7B9AE139DF40",
+      "task": "5BF801D7DFAE1520",
+      "egg": "crittersandcompanions:stick_bug_spawn_egg",
+      "complete": "tame",
+      "x": 4.0,
+      "y": 10.0,
+      "title": {
+        "en": "Stick Bug",
+        "pt": "Bicho-pau"
+      },
+      "sub": {
+        "en": "Hidden",
+        "pt": "Disfarçado"
+      },
+      "lines": {
+        "en": [
+          "Hard to spot among the twigs. Tame it with &6Leaves&r.",
+          "A tamed one follows you around."
+        ],
+        "pt": [
+          "Difícil de achar no meio dos galhos. Dome com &6Folhas&r.",
+          "Domado, ele te segue por aí."
+        ]
+      }
+    },
+    {
+      "key": "weevil",
+      "entity": "crittersandcompanions:weevil",
+      "id": "6B19BF8484432947",
+      "task": "4C50BE92C855F164",
+      "egg": "crittersandcompanions:weevil_spawn_egg",
+      "complete": "tame",
+      "x": 6.0,
+      "y": 10.0,
+      "title": {
+        "en": "Acorn Weevil",
+        "pt": "Gorgulho"
+      },
+      "sub": {
+        "en": "Sharpshooter",
+        "pt": "Atirador"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Acorn&r.",
+          "A tamed weevil attacks your enemies from a distance."
+        ],
+        "pt": [
+          "Dome com uma &6Bolota&r.",
+          "Domado, ele ataca seus inimigos de longe."
+        ]
+      }
+    },
+    {
+      "key": "penguin",
+      "entity": "faunaandorchestra:penguin",
+      "id": "003377D7813A7DFC",
+      "task": "6EE86CB35C6B8C4A",
+      "egg": "faunaandorchestra:penguin_spawn_egg",
+      "complete": "tame",
+      "x": -6.0,
+      "y": 12.0,
+      "title": {
+        "en": "Penguin",
+        "pt": "Pinguim"
+      },
+      "sub": {
+        "en": "Musician: Flute",
+        "pt": "Músico: Flauta"
+      },
+      "lines": {
+        "en": [
+          "Only the babies learn: play the &6Flute&r near a baby penguin. The adults say they are too old for music.",
+          "Play its instrument near it to teach it music: only about 1 in 3 has the talent. Call a tamed musician back with a &6Whistle&r and carry it in a &6Briefcase&r."
+        ],
+        "pt": [
+          "Só os filhotes aprendem: toque a &6Flauta&r perto de um pinguinzinho. Os adultos dizem que já estão velhos para música.",
+          "Toque o instrumento dele por perto para ensinar música: só 1 em cada 3, mais ou menos, tem talento. Chame um músico domado de volta com o &6Apito&r e leve ele numa &6Maleta&r."
+        ]
+      }
+    },
+    {
+      "key": "mantis",
+      "entity": "faunaandorchestra:mantis",
+      "id": "7F846C3950533683",
+      "task": "28CD40B81CCA4A4C",
+      "egg": "faunaandorchestra:mantis_spawn_egg",
+      "complete": "tame",
+      "x": -4.0,
+      "y": 12.0,
+      "title": {
+        "en": "Mantis",
+        "pt": "Louva-a-deus"
+      },
+      "sub": {
+        "en": "Musician: Violin",
+        "pt": "Músico: Violino"
+      },
+      "lines": {
+        "en": [
+          "Its instrument is the &6Violin&r.",
+          "Play its instrument near it to teach it music: only about 1 in 3 has the talent. Call a tamed musician back with a &6Whistle&r and carry it in a &6Briefcase&r."
+        ],
+        "pt": [
+          "O instrumento dele é o &6Violino&r.",
+          "Toque o instrumento dele por perto para ensinar música: só 1 em cada 3, mais ou menos, tem talento. Chame um músico domado de volta com o &6Apito&r e leve ele numa &6Maleta&r."
+        ]
+      }
+    },
+    {
+      "key": "macaw",
+      "entity": "faunaandorchestra:macaw",
+      "id": "507D6DEB530D6B8D",
+      "task": "306C7B752049E2FE",
+      "egg": "faunaandorchestra:macaw_spawn_egg",
+      "complete": "tame",
+      "x": -2.0,
+      "y": 12.0,
+      "title": {
+        "en": "Macaw",
+        "pt": "Arara"
+      },
+      "sub": {
+        "en": "Musician: Double Bass",
+        "pt": "Música: Contrabaixo"
+      },
+      "lines": {
+        "en": [
+          "Its instrument is the &6Double Bass&r. A wild macaw asks riddles and pays the answer with a feather.",
+          "Play its instrument near it to teach it music: only about 1 in 3 has the talent. Call a tamed musician back with a &6Whistle&r and carry it in a &6Briefcase&r."
+        ],
+        "pt": [
+          "O instrumento dela é o &6Contrabaixo&r. Arara selvagem faz charadas e paga a resposta com uma pena.",
+          "Toque o instrumento dele por perto para ensinar música: só 1 em cada 3, mais ou menos, tem talento. Chame um músico domado de volta com o &6Apito&r e leve ele numa &6Maleta&r."
+        ]
+      }
+    },
+    {
+      "key": "beaver",
+      "entity": "faunaandorchestra:beaver",
+      "id": "710E93F24F2BBAFE",
+      "task": "5F7D9497A2F74964",
+      "egg": "faunaandorchestra:beaver_spawn_egg",
+      "complete": "tame",
+      "x": 0.0,
+      "y": 12.0,
+      "title": {
+        "en": "Beaver",
+        "pt": "Castor"
+      },
+      "sub": {
+        "en": "Musician: Saxophone",
+        "pt": "Músico: Saxofone"
+      },
+      "lines": {
+        "en": [
+          "Its instrument is the &6Saxophone&r.",
+          "Play its instrument near it to teach it music: only about 1 in 3 has the talent. Call a tamed musician back with a &6Whistle&r and carry it in a &6Briefcase&r."
+        ],
+        "pt": [
+          "O instrumento dele é o &6Saxofone&r.",
+          "Toque o instrumento dele por perto para ensinar música: só 1 em cada 3, mais ou menos, tem talento. Chame um músico domado de volta com o &6Apito&r e leve ele numa &6Maleta&r."
+        ]
+      }
+    },
+    {
+      "key": "sea_lion",
+      "entity": "faunaandorchestra:sea_lion",
+      "id": "034271E79166090F",
+      "task": "33DE977FEF5C92E8",
+      "egg": "faunaandorchestra:sea_lion_spawn_egg",
+      "complete": "tame",
+      "x": 2.0,
+      "y": 12.0,
+      "title": {
+        "en": "Sea Lion",
+        "pt": "Leão-marinho"
+      },
+      "sub": {
+        "en": "Musician: Drum",
+        "pt": "Músico: Tambor"
+      },
+      "lines": {
+        "en": [
+          "Its instrument is the &6Drum&r.",
+          "Play its instrument near it to teach it music: only about 1 in 3 has the talent. Call a tamed musician back with a &6Whistle&r and carry it in a &6Briefcase&r."
+        ],
+        "pt": [
+          "O instrumento dele é o &6Tambor&r.",
+          "Toque o instrumento dele por perto para ensinar música: só 1 em cada 3, mais ou menos, tem talento. Chame um músico domado de volta com o &6Apito&r e leve ele numa &6Maleta&r."
+        ]
+      }
+    },
+    {
+      "key": "lemur",
+      "entity": "faunaandorchestra:lemur",
+      "id": "58B7A9407E93302E",
+      "task": "65CC0ACC5ECEFDB6",
+      "egg": "faunaandorchestra:lemur_spawn_egg",
+      "complete": "tame",
+      "x": 4.0,
+      "y": 12.0,
+      "title": {
+        "en": "Lemur",
+        "pt": "Lêmure"
+      },
+      "sub": {
+        "en": "Musician: Oboe",
+        "pt": "Músico: Oboé"
+      },
+      "lines": {
+        "en": [
+          "Its instrument is the &6Oboe&r.",
+          "Play its instrument near it to teach it music: only about 1 in 3 has the talent. Call a tamed musician back with a &6Whistle&r and carry it in a &6Briefcase&r."
+        ],
+        "pt": [
+          "O instrumento dele é o &6Oboé&r.",
+          "Toque o instrumento dele por perto para ensinar música: só 1 em cada 3, mais ou menos, tem talento. Chame um músico domado de volta com o &6Apito&r e leve ele numa &6Maleta&r."
+        ]
+      }
+    },
+    {
+      "key": "fauna_red_panda",
+      "entity": "faunaandorchestra:red_panda",
+      "id": "7AA804869DC7C0F6",
+      "task": "3046CC12EDE4AD7D",
+      "egg": "faunaandorchestra:red_panda_spawn_egg",
+      "complete": "tame",
+      "x": 6.0,
+      "y": 12.0,
+      "title": {
+        "en": "Musician Red Panda",
+        "pt": "Panda-vermelho Músico"
+      },
+      "sub": {
+        "en": "Musician: Keytar",
+        "pt": "Músico: Keytar"
+      },
+      "lines": {
+        "en": [
+          "The red panda of the orchestra. Its instrument is the &6Keytar&r, and &6Bamboo&r turns into Sharp Bamboo in its paws.",
+          "Play its instrument near it to teach it music: only about 1 in 3 has the talent. Call a tamed musician back with a &6Whistle&r and carry it in a &6Briefcase&r."
+        ],
+        "pt": [
+          "O panda-vermelho da orquestra. O instrumento dele é o &6Keytar&r, e o &6Bambu&r vira Bambu Afiado nas patas dele.",
+          "Toque o instrumento dele por perto para ensinar música: só 1 em cada 3, mais ou menos, tem talento. Chame um músico domado de volta com o &6Apito&r e leve ele numa &6Maleta&r."
+        ]
+      }
+    },
+    {
+      "key": "madame_butterfly",
+      "entity": "faunaandorchestra:madame_butterfly",
+      "id": "0D29281FD84CCD06",
+      "task": "6034B5C12008A2D4",
+      "egg": "faunaandorchestra:madame_butterfly_spawn_egg",
+      "complete": "tame",
+      "x": -1.0,
+      "y": 14.0,
+      "title": {
+        "en": "Madame Butterfly",
+        "pt": "Madame Borboleta"
+      },
+      "sub": {
+        "en": "Conductor",
+        "pt": "Regente"
+      },
+      "lines": {
+        "en": [
+          "Lure her with the &6Offering for M. Butterfly&r, then play the &6Cello&r for her.",
+          "She conducts the butterflies around her."
+        ],
+        "pt": [
+          "Atraia ela com a &6Oferenda para M. Borboleta&r e depois toque o &6Violoncelo&r para ela.",
+          "Ela rege as borboletas em volta dela."
+        ]
+      }
+    },
+    {
+      "key": "quirky_frog",
+      "entity": "faunaandorchestra:quirky_frog",
+      "id": "605A3DB021F4A005",
+      "task": "4225BDFC4424367F",
+      "egg": "faunaandorchestra:quirky_frog_spawn_egg",
+      "complete": "tame",
+      "x": 1.0,
+      "y": 14.0,
+      "title": {
+        "en": "Quirky Frog",
+        "pt": "Sapo Excêntrico"
+      },
+      "sub": {
+        "en": "Conductor",
+        "pt": "Regente"
+      },
+      "lines": {
+        "en": [
+          "Find a choir of 5 or more frogs and give the &6Baton&r to the one conducting it.",
+          "It becomes the conductor of your orchestra."
+        ],
+        "pt": [
+          "Ache um coral com 5 sapos ou mais e entregue a &6Batuta&r ao sapo que rege.",
+          "Ele vira o regente da sua orquestra."
+        ]
+      }
+    },
+    {
+      "key": "rabbit",
+      "entity": "minecraft:rabbit",
+      "id": "745E12F1496AAA8E",
+      "task": "38AA8611BD6AD5A7",
+      "egg": "minecraft:rabbit_spawn_egg",
+      "complete": "tame",
+      "x": -6.0,
+      "y": 16.0,
+      "title": {
+        "en": "Rabbit",
+        "pt": "Coelho"
+      },
+      "sub": {
+        "en": "Hops along",
+        "pt": "Saltitante"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Hay Bale&r. The carrot stays for breeding.",
+          "With affection, it brings &6Rabbit's Foot&r and &6Fine Wool&r."
+        ],
+        "pt": [
+          "Dome com um &6Fardo de Feno&r. A cenoura continua sendo para cruzar.",
+          "Com afeição, traz &6Pé de Coelho&r e &6Lã Fina&r."
+        ]
+      }
+    },
+    {
+      "key": "frog",
+      "entity": "minecraft:frog",
+      "id": "4D020AF53048B9EB",
+      "task": "01764A0C4A16AA09",
+      "egg": "minecraft:frog_spawn_egg",
+      "complete": "tame",
+      "x": -4.0,
+      "y": 16.0,
+      "title": {
+        "en": "Frog",
+        "pt": "Sapo"
+      },
+      "sub": {
+        "en": "Bug catcher",
+        "pt": "Pega-inseto"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Spider Eye&r.",
+          "With affection, it brings &6Frog Legs&r and &6Sap&r. It eats small slimes and drops &6Slimeballs&r."
+        ],
+        "pt": [
+          "Dome com um &6Olho de Aranha&r.",
+          "Com afeição, traz &6Coxa de Rã&r e &6Seiva&r. Come slimes pequenos e solta &6Bola de Slime&r."
+        ]
+      }
+    },
+    {
+      "key": "crow",
+      "entity": "hearthandharvest:crow",
+      "id": "7D07451F33AF864E",
+      "task": "54DE786E3967477F",
+      "egg": "hearthandharvest:crow_spawn_egg",
+      "complete": "tame",
+      "x": -2.0,
+      "y": 16.0,
+      "title": {
+        "en": "Crow",
+        "pt": "Corvo"
+      },
+      "sub": {
+        "en": "On your shoulder",
+        "pt": "No ombro"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Corn Kernels&r.",
+          "Tamed, it rides on your shoulder like a parrot and caws when danger comes close."
+        ],
+        "pt": [
+          "Dome com &6Grãos de Milho&r.",
+          "Domado, vai no seu ombro, como o papagaio, e grasna quando um perigo chega perto."
+        ]
+      }
+    },
+    {
+      "key": "cow",
+      "entity": "minecraft:cow",
+      "id": "367D33FEB1D7C90B",
+      "task": "666127F39813F434",
+      "egg": "minecraft:cow_spawn_egg",
+      "complete": "tame",
+      "x": 0.0,
+      "y": 16.0,
+      "title": {
+        "en": "Cow",
+        "pt": "Vaca"
+      },
+      "sub": {
+        "en": "Barn friend",
+        "pt": "Amiga do celeiro"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Apple&r.",
+          "Gives &6Milk&r with the &6Milk Pail&r. Tamed, it follows you to the barn."
+        ],
+        "pt": [
+          "Dome com uma &6Maçã&r.",
+          "Dá &6Leite&r com o &6Balde de Leite&r. Domada, segue você até o celeiro."
+        ]
+      }
+    },
+    {
+      "key": "mooshroom",
+      "entity": "minecraft:mooshroom",
+      "id": "60D0D04231C25779",
+      "task": "39A5EC9878EF9488",
+      "egg": "minecraft:mooshroom_spawn_egg",
+      "complete": "tame",
+      "x": 2.0,
+      "y": 16.0,
+      "title": {
+        "en": "Mooshroom",
+        "pt": "Mooshroom"
+      },
+      "sub": {
+        "en": "Mushroom cow",
+        "pt": "Vaca-cogumelo"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Apple&r.",
+          "Gives &6Milk&r and, with affection, finds &6Truffles&r. A &6Bowl&r gets mushroom stew."
+        ],
+        "pt": [
+          "Dome com uma &6Maçã&r.",
+          "Dá &6Leite&r e, com afeição, acha &6Trufas&r. Uma &6Tigela&r tira ensopado de cogumelo."
+        ]
+      }
+    },
+    {
+      "key": "pig",
+      "entity": "minecraft:pig",
+      "id": "48710754E517BF8D",
+      "task": "35694E1749DE5DAD",
+      "egg": "minecraft:pig_spawn_egg",
+      "complete": "tame",
+      "x": 4.0,
+      "y": 16.0,
+      "title": {
+        "en": "Pig",
+        "pt": "Porco"
+      },
+      "sub": {
+        "en": "Barn friend",
+        "pt": "Amigo do celeiro"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Apple&r.",
+          "With affection, it digs up &6Truffles&r. With a &6Saddle&r and a &6Carrot on a Stick&r, you can ride it."
+        ],
+        "pt": [
+          "Dome com uma &6Maçã&r.",
+          "Com afeição, fuça &6Trufas&r. Com &6Sela&r e &6Vara com Cenoura&r, vira montaria."
+        ]
+      }
+    },
+    {
+      "key": "sheep",
+      "entity": "minecraft:sheep",
+      "id": "3861BE4428797177",
+      "task": "596BAD06E03E4BC3",
+      "egg": "minecraft:sheep_spawn_egg",
+      "complete": "tame",
+      "x": 6.0,
+      "y": 16.0,
+      "title": {
+        "en": "Sheep",
+        "pt": "Ovelha"
+      },
+      "sub": {
+        "en": "Barn friend",
+        "pt": "Amiga do celeiro"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Apple&r.",
+          "Gives wool with shears, &6Sheep Milk&r with the pail and, with affection, &6Fine Wool&r."
+        ],
+        "pt": [
+          "Dome com uma &6Maçã&r.",
+          "Dá lã na tesoura, &6Leite de Ovelha&r no balde e, com afeição, &6Lã Fina&r."
+        ]
+      }
+    },
+    {
+      "key": "chicken",
+      "entity": "minecraft:chicken",
+      "id": "75C199E0A9952048",
+      "task": "73708565855E5C9C",
+      "egg": "minecraft:chicken_spawn_egg",
+      "complete": "tame",
+      "x": -6.0,
+      "y": 18.0,
+      "title": {
+        "en": "Chicken",
+        "pt": "Galinha"
+      },
+      "sub": {
+        "en": "Coop friend",
+        "pt": "Amiga do galinheiro"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Bread&r.",
+          "Lays eggs and, with affection, &6Large Eggs&r."
+        ],
+        "pt": [
+          "Dome com &6Pão&r.",
+          "Bota ovos e, com afeição, &6Ovos Grandes&r."
+        ]
+      }
+    },
+    {
+      "key": "goat",
+      "entity": "minecraft:goat",
+      "id": "67C62E53FD17AC23",
+      "task": "0A0D86F791F13DD9",
+      "egg": "minecraft:goat_spawn_egg",
+      "complete": "tame",
+      "x": -4.0,
+      "y": 18.0,
+      "title": {
+        "en": "Goat",
+        "pt": "Cabra"
+      },
+      "sub": {
+        "en": "Mountain climber",
+        "pt": "Escaladora"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Apple&r.",
+          "Gives &6Goat Milk&r with the &6Milk Pail&r. When it rams, it can drop a &6Goat Horn&r."
+        ],
+        "pt": [
+          "Dome com uma &6Maçã&r.",
+          "Dá &6Leite de Cabra&r com o &6Balde de Leite&r. Quando dá cabeçada, pode soltar um &6Chifre de Cabra&r."
+        ]
+      }
+    },
+    {
+      "key": "bat",
+      "entity": "minecraft:bat",
+      "id": "4520DD204F2E7E17",
+      "task": "7BD0C730204A4D8B",
+      "egg": "minecraft:bat_spawn_egg",
+      "complete": "tame",
+      "x": -2.0,
+      "y": 18.0,
+      "title": {
+        "en": "Bat",
+        "pt": "Morcego"
+      },
+      "sub": {
+        "en": "Night flyer",
+        "pt": "Voador da noite"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Sweet Berries&r.",
+          "With affection, it brings &6Passion Fruit&r."
+        ],
+        "pt": [
+          "Dome com &6Bagas Doces&r.",
+          "Com afeição, traz &6Maracujá&r."
+        ]
+      }
+    },
+    {
+      "key": "bee",
+      "entity": "minecraft:bee",
+      "id": "0A38C32A6C0A2331",
+      "task": "3B628E59CFB9E42A",
+      "egg": "minecraft:bee_spawn_egg",
+      "complete": "tame",
+      "x": 0.0,
+      "y": 18.0,
+      "title": {
+        "en": "Bee",
+        "pt": "Abelha"
+      },
+      "sub": {
+        "en": "Busy",
+        "pt": "Ocupada"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Honey Bottle&r.",
+          "It pollinates the crops it flies over and fills hives with honey."
+        ],
+        "pt": [
+          "Dome com um &6Frasco de Mel&r.",
+          "Poliniza as plantações por onde passa e enche colmeias de mel."
+        ]
+      }
+    },
+    {
+      "key": "turtle",
+      "entity": "minecraft:turtle",
+      "id": "4259B4E591AE0952",
+      "task": "2889D5C66659E990",
+      "egg": "minecraft:turtle_spawn_egg",
+      "complete": "tame",
+      "x": 2.0,
+      "y": 18.0,
+      "title": {
+        "en": "Turtle",
+        "pt": "Tartaruga"
+      },
+      "sub": {
+        "en": "Beach dweller",
+        "pt": "Da praia"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Kelp&r.",
+          "With affection, it brings &6Turtle Eggs&r and &6Dragonfly Wings&r. Babies drop a &6Turtle Scute&r as they grow."
+        ],
+        "pt": [
+          "Dome com &6Alga&r.",
+          "Com afeição, traz &6Ovo de Tartaruga&r e &6Asa de Libélula&r. O filhote solta &6Escama de Tartaruga&r ao crescer."
+        ]
+      }
+    },
+    {
+      "key": "panda",
+      "entity": "minecraft:panda",
+      "id": "7201D9ACFD2DAC26",
+      "task": "7422D7F5EA0E9FEB",
+      "egg": "minecraft:panda_spawn_egg",
+      "complete": "tame",
+      "x": 4.0,
+      "y": 18.0,
+      "title": {
+        "en": "Panda",
+        "pt": "Panda"
+      },
+      "sub": {
+        "en": "Bamboo lover",
+        "pt": "Fã de bambu"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Sugar Cane&r.",
+          "With affection, it brings &6Oranges&r. A sneezing baby drops a &6Slimeball&r."
+        ],
+        "pt": [
+          "Dome com &6Cana-de-Açúcar&r.",
+          "Com afeição, traz &6Laranjas&r. Filhote que espirra solta &6Bola de Slime&r."
+        ]
+      }
+    },
+    {
+      "key": "dolphin",
+      "entity": "minecraft:dolphin",
+      "id": "79C6272D7F3AA36E",
+      "task": "1043636F187E9B99",
+      "egg": "minecraft:dolphin_spawn_egg",
+      "complete": "tame",
+      "x": 6.0,
+      "y": 18.0,
+      "title": {
+        "en": "Dolphin",
+        "pt": "Golfinho"
+      },
+      "sub": {
+        "en": "Sea friend",
+        "pt": "Amigo do mar"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Dried Kelp&r.",
+          "Swimming next to it gives &6Dolphin's Grace&r, and fed fish it leads you to treasure."
+        ],
+        "pt": [
+          "Dome com &6Algas Secas&r.",
+          "Nadar perto dele dá &6Dádiva Marinha&r, e com peixe ele leva você até um tesouro."
+        ]
+      }
+    },
+    {
+      "key": "squid",
+      "entity": "minecraft:squid",
+      "id": "502C5ACC41C89777",
+      "task": "2A714BA7A1CDB17A",
+      "egg": "minecraft:squid_spawn_egg",
+      "complete": "tame",
+      "x": -6.0,
+      "y": 20.0,
+      "title": {
+        "en": "Squid",
+        "pt": "Lula"
+      },
+      "sub": {
+        "en": "Ink maker",
+        "pt": "Faz tinta"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Kelp&r.",
+          "The &6Milk Pail&r gets &6Ink Sacs&r. With affection, it brings &6Antique Ink&r."
+        ],
+        "pt": [
+          "Dome com &6Alga&r.",
+          "O &6Balde de Leite&r tira &6Bolsa de Tinta&r. Com afeição, traz &6Tinta Antiga&r."
+        ]
+      }
+    },
+    {
+      "key": "glow_squid",
+      "entity": "minecraft:glow_squid",
+      "id": "48937E5E5ABA6B3E",
+      "task": "5CD3713E06F362AE",
+      "egg": "minecraft:glow_squid_spawn_egg",
+      "complete": "tame",
+      "x": -4.0,
+      "y": 20.0,
+      "title": {
+        "en": "Glow Squid",
+        "pt": "Lula-Brilhante"
+      },
+      "sub": {
+        "en": "Glows in the dark",
+        "pt": "Brilha no escuro"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Glow Berries&r.",
+          "The &6Milk Pail&r gets &6Glow Ink Sacs&r. With affection, it brings &6Legendary Ink&r."
+        ],
+        "pt": [
+          "Dome com &6Bagas Brilhantes&r.",
+          "O &6Balde de Leite&r tira &6Bolsa de Tinta Brilhante&r. Com afeição, traz &6Tinta Lendária&r."
+        ]
+      }
+    },
+    {
+      "key": "armadillo",
+      "entity": "minecraft:armadillo",
+      "id": "2A6AD09B34353D26",
+      "task": "03DFF3AA1986627A",
+      "egg": "minecraft:armadillo_spawn_egg",
+      "complete": "tame",
+      "x": -2.0,
+      "y": 20.0,
+      "title": {
+        "en": "Armadillo",
+        "pt": "Tatu"
+      },
+      "sub": {
+        "en": "Rolls up",
+        "pt": "Vira bolinha"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Fermented Spider Eye&r.",
+          "Brush it to get &6Armadillo Scutes&r, used for wolf armor."
+        ],
+        "pt": [
+          "Dome com um &6Olho de Aranha Fermentado&r.",
+          "Escove com o &6Pincel&r para tirar &6Escama de Tatu&r, que faz a armadura de lobo."
+        ]
+      }
+    },
+    {
+      "key": "sniffer",
+      "entity": "minecraft:sniffer",
+      "id": "5BC6CFF0A226515F",
+      "task": "320F2572F436F7C8",
+      "egg": "minecraft:sniffer_spawn_egg",
+      "complete": "tame",
+      "x": 0.0,
+      "y": 20.0,
+      "title": {
+        "en": "Sniffer",
+        "pt": "Farejador"
+      },
+      "sub": {
+        "en": "Ancient digger",
+        "pt": "Escavador antigo"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Moss Block&r.",
+          "It sniffs ancient seeds out of the ground and, with affection, brings &6Artifact Shards&r and a &6Sniffer Egg&r."
+        ],
+        "pt": [
+          "Dome com um &6Bloco de Musgo&r.",
+          "Fareja sementes antigas no chão e, com afeição, traz &6Fragmentos de Artefato&r e &6Ovo de Farejador&r."
+        ]
+      }
+    },
+    {
+      "key": "strider",
+      "entity": "minecraft:strider",
+      "id": "103A7D70BC9934F2",
+      "task": "0DF2CB0BD30E9DBF",
+      "egg": "minecraft:strider_spawn_egg",
+      "complete": "tame",
+      "x": 2.0,
+      "y": 20.0,
+      "title": {
+        "en": "Strider",
+        "pt": "Marchador"
+      },
+      "sub": {
+        "en": "Lava walker",
+        "pt": "Anda na lava"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Crimson Fungus&r.",
+          "With a &6Saddle&r and a &6Warped Fungus on a Stick&r, it carries you across lava."
+        ],
+        "pt": [
+          "Dome com um &6Fungo Carmesim&r.",
+          "Com &6Sela&r e &6Vara com Fungo Distorcido&r, leva você por cima da lava."
+        ]
+      }
+    },
+    {
+      "key": "moobloom",
+      "entity": "buzzier_bees:moobloom",
+      "id": "7DB892628987C76B",
+      "task": "26B47F6A1DE1758F",
+      "egg": "buzzier_bees:moobloom_spawn_egg",
+      "complete": "tame",
+      "x": 4.0,
+      "y": 20.0,
+      "title": {
+        "en": "Moobloom",
+        "pt": "Florivaca"
+      },
+      "sub": {
+        "en": "Flower cow",
+        "pt": "Vaca florida"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Apple&r.",
+          "Gives &6Amethyst Milk&r with the pail and, with affection, the &6Totem of Glowth&r."
+        ],
+        "pt": [
+          "Dome com uma &6Maçã&r.",
+          "Dá &6Leite de Ametista&r com o balde e, com afeição, o &6Totem do Brilho&r."
+        ]
+      }
+    },
+    {
+      "key": "snow_pig",
+      "entity": "snowpig:snow_pig",
+      "id": "185AAD8298006233",
+      "task": "0865DA6C56727C7B",
+      "egg": "snowpig:snow_pig_spawn_egg",
+      "complete": "tame",
+      "x": 6.0,
+      "y": 20.0,
+      "title": {
+        "en": "Snow Pig",
+        "pt": "Porco da Neve"
+      },
+      "sub": {
+        "en": "Cold nose",
+        "pt": "Focinho gelado"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Apple&r.",
+          "With affection, it digs up &6Truffles&r, like a common pig."
+        ],
+        "pt": [
+          "Dome com uma &6Maçã&r.",
+          "Com afeição, fuça &6Trufas&r, como o porco comum."
+        ]
+      }
+    },
+    {
+      "key": "water_buffalo",
+      "entity": "meadow:water_buffalo",
+      "id": "51949971F1E01210",
+      "task": "56AF7ED026CBCED7",
+      "egg": "meadow:water_buffalo_spawn_egg",
+      "complete": "tame",
+      "x": -6.0,
+      "y": 22.0,
+      "title": {
+        "en": "Water Buffalo",
+        "pt": "Búfalo-d'água"
+      },
+      "sub": {
+        "en": "Meadow cattle",
+        "pt": "Gado do prado"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Apple&r.",
+          "Gives &6Buffalo Milk&r with the &6Milk Pail&r."
+        ],
+        "pt": [
+          "Dome com uma &6Maçã&r.",
+          "Dá &6Leite de Búfala&r com o &6Balde de Leite&r."
+        ]
+      }
+    },
+    {
+      "key": "wooly_cow",
+      "entity": "meadow:wooly_cow",
+      "id": "51CFED5AEFDECBC2",
+      "task": "1157ED5E7B4D1826",
+      "egg": "meadow:wooly_cow_spawn_egg",
+      "complete": "tame",
+      "x": -4.0,
+      "y": 22.0,
+      "title": {
+        "en": "Highland Cattle",
+        "pt": "Iaque"
+      },
+      "sub": {
+        "en": "Meadow cattle",
+        "pt": "Gado do prado"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Apple&r.",
+          "Gives &6Milk&r with the pail and wool with shears. The umbra and warped variants count too."
+        ],
+        "pt": [
+          "Dome com uma &6Maçã&r.",
+          "Dá &6Leite&r com o balde e lã na tesoura. As variantes sombria e distorcida contam junto."
+        ]
+      },
+      "also": [
+        "meadow:umbra_cow",
+        "meadow:warped_cow",
+        "meadow:wooly_sheep"
+      ]
+    },
+    {
+      "key": "chapple",
+      "entity": "etcetera:chapple",
+      "id": "0AC6822565D0B6D6",
+      "task": "42B70412111E6D83",
+      "egg": "etcetera:chapple_spawn_egg",
+      "complete": "tame",
+      "x": -2.0,
+      "y": 22.0,
+      "title": {
+        "en": "Chapple",
+        "pt": "Brahmaçã"
+      },
+      "sub": {
+        "en": "Apple hen",
+        "pt": "Galinha-maçã"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Bread&r.",
+          "It lays &6Apples&r every so often and can be sheared."
+        ],
+        "pt": [
+          "Dome com &6Pão&r.",
+          "Bota &6Maçãs&r de tempos em tempos e pode ser tosquiada."
+        ]
+      }
+    },
+    {
+      "key": "bison",
+      "entity": "wildernature:bison",
+      "id": "11E9241D2D228614",
+      "task": "5FE1E559BFC9ADFD",
+      "egg": "wildernature:bison_spawn_egg",
+      "complete": "tame",
+      "x": 0.0,
+      "y": 22.0,
+      "title": {
+        "en": "Bison",
+        "pt": "Bisão"
+      },
+      "sub": {
+        "en": "Strong herd",
+        "pt": "Manada forte"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Apple&r.",
+          "Gives &6Buffalo Milk&r with the &6Milk Pail&r."
+        ],
+        "pt": [
+          "Dome com uma &6Maçã&r.",
+          "Dá &6Leite de Búfala&r com o &6Balde de Leite&r."
+        ]
+      }
+    },
+    {
+      "key": "minisheep",
+      "entity": "wildernature:minisheep",
+      "id": "3B61250814C5134C",
+      "task": "47558A02E6443C38",
+      "egg": "wildernature:minisheep_spawn_egg",
+      "complete": "tame",
+      "x": 2.0,
+      "y": 22.0,
+      "title": {
+        "en": "Minisheep",
+        "pt": "Mini Ovelha"
+      },
+      "sub": {
+        "en": "Tiny wool",
+        "pt": "Lã miudinha"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Apple&r.",
+          "Gives &6Sheep Milk&r with the pail and, with affection, &6Fine Wool&r."
+        ],
+        "pt": [
+          "Dome com uma &6Maçã&r.",
+          "Dá &6Leite de Ovelha&r no balde e, com afeição, &6Lã Fina&r."
+        ]
+      }
+    },
+    {
+      "key": "deer",
+      "entity": "wildernature:deer",
+      "id": "5F3A6D74B5373F58",
+      "task": "088A56CEDB7A7AD4",
+      "egg": "wildernature:deer_spawn_egg",
+      "complete": "tame",
+      "x": 4.0,
+      "y": 22.0,
+      "title": {
+        "en": "Deer",
+        "pt": "Cervo"
+      },
+      "sub": {
+        "en": "Forest runner",
+        "pt": "Corredor da mata"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Apple&r.",
+          "With affection, it brings dried berries (blueberry, strawberry, sweet berries and more)."
+        ],
+        "pt": [
+          "Dome com uma &6Maçã&r.",
+          "Com afeição, traz frutinhas secas (mirtilo, morango, bagas doces e outras)."
+        ]
+      }
+    },
+    {
+      "key": "cassowary",
+      "entity": "wildernature:cassowary",
+      "id": "7C3CAB5C225719CA",
+      "task": "6A1E4C5B9615DD9F",
+      "egg": "wildernature:cassowary_spawn_egg",
+      "complete": "tame",
+      "x": 6.0,
+      "y": 22.0,
+      "title": {
+        "en": "Cassowary",
+        "pt": "Casuar"
+      },
+      "sub": {
+        "en": "Big bird",
+        "pt": "Ave grandona"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Sweet Berries&r.",
+          "A fierce bird: tamed, it fights by your side against whoever attacks you."
+        ],
+        "pt": [
+          "Dome com &6Bagas Doces&r.",
+          "Ave brava: domada, briga do seu lado contra quem atacar você."
+        ]
+      }
+    },
+    {
+      "key": "wild_beaver",
+      "entity": "wildernature:beaver",
+      "id": "18362280BD4E74AC",
+      "task": "364332D2FBD73CDA",
+      "egg": "wildernature:beaver_spawn_egg",
+      "complete": "tame",
+      "x": -6.0,
+      "y": 24.0,
+      "title": {
+        "en": "Beaver",
+        "pt": "Castor"
+      },
+      "sub": {
+        "en": "Dam builder",
+        "pt": "Constrói represas"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Sugar Cane&r.",
+          "Give it logs: it gnaws the bark off and hands back &6Stripped Logs&r."
+        ],
+        "pt": [
+          "Dome com &6Cana-de-Açúcar&r.",
+          "Dê toras: ele rói a casca e devolve &6Troncos Descascados&r."
+        ]
+      }
+    },
+    {
+      "key": "elephant",
+      "entity": "wildernature:elephant",
+      "id": "6A939C743A7228BC",
+      "task": "6714A873EB5E67EB",
+      "egg": "wildernature:elephant_spawn_egg",
+      "complete": "tame",
+      "x": -4.0,
+      "y": 24.0,
+      "title": {
+        "en": "Elephant",
+        "pt": "Elefante"
+      },
+      "sub": {
+        "en": "Gentle giant",
+        "pt": "Gigante gentil"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Hay Bale&r.",
+          "You can ride it, and tamed it charges whoever attacks you."
+        ],
+        "pt": [
+          "Dome com um &6Fardo de Feno&r.",
+          "Dá para montar, e domado ele investe contra quem atacar você."
+        ]
+      }
+    },
+    {
+      "key": "giraffe",
+      "entity": "wildernature:giraffe",
+      "id": "1CB2606907846CD6",
+      "task": "4CDBCB051E1C66DC",
+      "egg": "wildernature:giraffe_spawn_egg",
+      "complete": "tame",
+      "x": -2.0,
+      "y": 24.0,
+      "title": {
+        "en": "Giraffe",
+        "pt": "Girafa"
+      },
+      "sub": {
+        "en": "Treetop snacker",
+        "pt": "Come no alto"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Leaves&r.",
+          "You can ride it, and it runs in bursts. It reaches acacia leaves up high."
+        ],
+        "pt": [
+          "Dome com &6Folhas&r.",
+          "Dá para montar e ela corre em arrancadas. Do alto, alcança as folhas das acácias."
+        ]
+      }
+    },
+    {
+      "key": "hippo",
+      "entity": "wildernature:hippo",
+      "id": "2241D48BD94E1431",
+      "task": "197BAA9E7C32C5B7",
+      "egg": "wildernature:hippo_spawn_egg",
+      "complete": "tame",
+      "x": 0.0,
+      "y": 24.0,
+      "title": {
+        "en": "Hippo",
+        "pt": "Hipopótamo"
+      },
+      "sub": {
+        "en": "River king",
+        "pt": "Rei do rio"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Melon Slice&r.",
+          "Strong and fierce: tamed, it bites whoever attacks you."
+        ],
+        "pt": [
+          "Dome com uma &6Fatia de Melancia&r.",
+          "Forte e bravo: domado, morde quem atacar você."
+        ]
+      }
+    },
+    {
+      "key": "lion",
+      "entity": "wildernature:lion",
+      "id": "7E7E4E803D6571FE",
+      "task": "0DC81D7B0A2F82A4",
+      "egg": "wildernature:lion_spawn_egg",
+      "complete": "tame",
+      "x": 2.0,
+      "y": 24.0,
+      "title": {
+        "en": "Lion",
+        "pt": "Leão"
+      },
+      "sub": {
+        "en": "Savanna king",
+        "pt": "Rei da savana"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Steak&r.",
+          "A pouncing hunter: tamed, it attacks whoever attacks you. The lioness counts too and is tamed the same way."
+        ],
+        "pt": [
+          "Dome com &6Filé&r.",
+          "Caçador de bote: domado, ataca quem atacar você. A leoa também conta e se doma do mesmo jeito."
+        ]
+      },
+      "also": [
+        "wildernature:lioness"
+      ]
+    },
+    {
+      "key": "raccoon",
+      "entity": "wildernature:raccoon",
+      "id": "42FA42470529C95D",
+      "task": "7C53BC5C1C7F744E",
+      "egg": "wildernature:raccoon_spawn_egg",
+      "complete": "tame",
+      "x": 4.0,
+      "y": 24.0,
+      "title": {
+        "en": "Raccoon",
+        "pt": "Guaxinim"
+      },
+      "sub": {
+        "en": "Little bandit",
+        "pt": "Pequeno bandido"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Cookie&r.",
+          "With affection, it finds &6Scavenged Food Bags&r, &6Trash Bags&r and even an &6Artifact Trove&r."
+        ],
+        "pt": [
+          "Dome com um &6Biscoito&r.",
+          "Com afeição, acha &6Saco de Comida&r, &6Saco de Lixo&r e até &6Tesouro de Artefatos&r."
+        ]
+      }
+    },
+    {
+      "key": "squirrel",
+      "entity": "wildernature:squirrel",
+      "id": "56EE22F9BC0C9111",
+      "task": "52AC7F08EB3B140C",
+      "egg": "wildernature:squirrel_spawn_egg",
+      "complete": "tame",
+      "x": 6.0,
+      "y": 24.0,
+      "title": {
+        "en": "Squirrel",
+        "pt": "Esquilo"
+      },
+      "sub": {
+        "en": "Nut keeper",
+        "pt": "Guarda nozes"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Acorn&r.",
+          "With affection, it gathers wild berries (salmonberries and boysenberries) for you."
+        ],
+        "pt": [
+          "Dome com uma &6Bolota&r.",
+          "Com afeição, junta frutinhas silvestres (salmonberry e boysenberry) para você."
+        ]
+      }
+    },
+    {
+      "key": "swift_fox",
+      "entity": "wildernature:swift_fox",
+      "id": "037A3F72ADEB17C0",
+      "task": "33B43B53AD26953C",
+      "egg": "wildernature:swift_fox_spawn_egg",
+      "complete": "tame",
+      "x": -6.0,
+      "y": 26.0,
+      "title": {
+        "en": "Swift Fox",
+        "pt": "Raposa-veloz"
+      },
+      "sub": {
+        "en": "Quick feet",
+        "pt": "Pés ligeiros"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Cooked Cod&r.",
+          "Whoever earns its trust gets a gift every now and then."
+        ],
+        "pt": [
+          "Dome com &6Bacalhau Assado&r.",
+          "Quem ganha a confiança dela recebe presentes de vez em quando."
+        ]
+      }
+    },
+    {
+      "key": "otter",
+      "entity": "crittersandcompanions:otter",
+      "id": "17633E40D8FB7D5E",
+      "task": "1DD6C0A27B3091AE",
+      "egg": "crittersandcompanions:otter_spawn_egg",
+      "complete": "tame",
+      "x": -4.0,
+      "y": 26.0,
+      "title": {
+        "en": "Otter",
+        "pt": "Lontra"
+      },
+      "sub": {
+        "en": "River player",
+        "pt": "Brincalhona do rio"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Kelp&r.",
+          "It hunts fish in the river and cracks clams floating on its back."
+        ],
+        "pt": [
+          "Dome com &6Alga&r.",
+          "Caça peixes no rio e quebra mariscos boiando de barriga para cima."
+        ]
+      }
+    },
+    {
+      "key": "dumbo_octopus",
+      "entity": "crittersandcompanions:dumbo_octopus",
+      "id": "1641FE6C605599E4",
+      "task": "7DD0803450B0D638",
+      "egg": "crittersandcompanions:dumbo_octopus_spawn_egg",
+      "complete": "tame",
+      "x": -2.0,
+      "y": 26.0,
+      "title": {
+        "en": "Dumbo Octopus",
+        "pt": "Polvo-Dumbo"
+      },
+      "sub": {
+        "en": "Deep sea",
+        "pt": "Do fundo do mar"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Kelp&r.",
+          "Near it, you get air bubbles underwater. It fits in a bucket."
+        ],
+        "pt": [
+          "Dome com &6Alga&r.",
+          "Perto dele, você ganha bolhas de ar debaixo d'água. Cabe num balde."
+        ]
+      }
+    },
+    {
+      "key": "sea_bunny",
+      "entity": "crittersandcompanions:sea_bunny",
+      "id": "039119DCEAB868F8",
+      "task": "35CEDDE880CE1661",
+      "egg": "crittersandcompanions:sea_bunny_spawn_egg",
+      "complete": "tame",
+      "x": 0.0,
+      "y": 26.0,
+      "title": {
+        "en": "Sea Bunny",
+        "pt": "Coelho-do-Mar"
+      },
+      "sub": {
+        "en": "Tiny slug",
+        "pt": "Lesminha do mar"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Kelp&r.",
+          "A &6Glass Bottle&r collects &6Sea Bunny Slime&r. It fits in a bucket."
+        ],
+        "pt": [
+          "Dome com &6Alga&r.",
+          "Um &6Frasco de Vidro&r tira a &6Gosma de Coelho-do-Mar&r. Cabe num balde."
+        ]
+      }
+    },
+    {
+      "key": "leaf_insect",
+      "entity": "crittersandcompanions:leaf_insect",
+      "id": "47F485C070CAEFB5",
+      "task": "42EC2F1C15AD4A7B",
+      "egg": "crittersandcompanions:leaf_insect_spawn_egg",
+      "complete": "tame",
+      "x": 2.0,
+      "y": 26.0,
+      "title": {
+        "en": "Leaf Insect",
+        "pt": "Inseto-Folha"
+      },
+      "sub": {
+        "en": "Camouflaged",
+        "pt": "Camuflado"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Sugar&r.",
+          "A companion animal: tamed, it follows you and never despawns."
+        ],
+        "pt": [
+          "Dome com &6Açúcar&r.",
+          "Bicho de companhia: domado, segue você e nunca some do mundo."
+        ]
+      }
+    },
+    {
+      "key": "fauna_butterfly",
+      "entity": "faunaandorchestra:butterfly",
+      "id": "447A38475908BEF2",
+      "task": "61C31C1F220240B0",
+      "egg": "faunaandorchestra:butterfly_spawn_egg",
+      "complete": "tame",
+      "x": 4.0,
+      "y": 26.0,
+      "title": {
+        "en": "Butterfly",
+        "pt": "Borboleta"
+      },
+      "sub": {
+        "en": "Garden flyer",
+        "pt": "Voa no jardim"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Sugar&r.",
+          "A companion animal: tamed, it follows you and never despawns."
+        ],
+        "pt": [
+          "Dome com &6Açúcar&r.",
+          "Bicho de companhia: domado, segue você e nunca some do mundo."
+        ]
+      }
+    },
+    {
+      "key": "emperor_penguin",
+      "entity": "faunaandorchestra:emperor_penguin",
+      "id": "19D40D0DC63240D3",
+      "task": "44B2541098EF062C",
+      "egg": "faunaandorchestra:emperor_penguin_spawn_egg",
+      "complete": "tame",
+      "x": 6.0,
+      "y": 26.0,
+      "title": {
+        "en": "Emperor Penguin",
+        "pt": "Pinguim-Imperador"
+      },
+      "sub": {
+        "en": "Too old for music",
+        "pt": "Velho demais para música"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Snowball&r.",
+          "Adults do not learn music, but they breed with fish: the chicks are penguins that can learn the &6Flute&r."
+        ],
+        "pt": [
+          "Dome com uma &6Bola de Neve&r.",
+          "Os adultos não aprendem música, mas cruzam com peixe: os filhotes são pinguinzinhos que aprendem a &6Flauta&r."
+        ]
+      }
+    },
+    {
+      "key": "quark_crab",
+      "entity": "quark:crab",
+      "id": "5BD60DC8674FFEBD",
+      "task": "27750423B12D1664",
+      "egg": "quark:crab_spawn_egg",
+      "complete": "tame",
+      "x": -6.0,
+      "y": 28.0,
+      "title": {
+        "en": "Crab",
+        "pt": "Caranguejo"
+      },
+      "sub": {
+        "en": "Sideways walker",
+        "pt": "Anda de lado"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Kelp&r.",
+          "It dances when music plays nearby. The &6Fiddler Crab Shell&r brews a Potion of Resilience."
+        ],
+        "pt": [
+          "Dome com &6Alga&r.",
+          "Dança quando toca música por perto. A &6Casca de Caranguejo Violinista&r vira Poção de Resiliência."
+        ]
+      }
+    },
+    {
+      "key": "toretoise",
+      "entity": "quark:toretoise",
+      "id": "71ED907267717B78",
+      "task": "772508B55F192878",
+      "egg": "quark:toretoise_spawn_egg",
+      "complete": "tame",
+      "x": -4.0,
+      "y": 28.0,
+      "title": {
+        "en": "Oretoise",
+        "pt": "Pedraruga"
+      },
+      "sub": {
+        "en": "Ore shell",
+        "pt": "Casco de minério"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Melon Slice&r.",
+          "Break the ore on its shell to get the ore. &6Glow Berries&r make it grow back."
+        ],
+        "pt": [
+          "Dome com uma &6Fatia de Melancia&r.",
+          "Quebre o minério do casco para ganhar o minério. &6Bagas Brilhantes&r fazem ele crescer de novo."
+        ]
+      }
+    },
+    {
+      "key": "youkai_deer",
+      "entity": "youkaishomecoming:deer",
+      "id": "42F867F215874DC7",
+      "task": "2C3DD569F2FAA12B",
+      "egg": "youkaishomecoming:deer_spawn_egg",
+      "complete": "tame",
+      "x": -2.0,
+      "y": 28.0,
+      "title": {
+        "en": "Deer",
+        "pt": "Cervo"
+      },
+      "sub": {
+        "en": "From the shrine",
+        "pt": "Do santuário"
+      },
+      "lines": {
+        "en": [
+          "Tame it with an &6Apple&r.",
+          "A companion animal: tamed, it follows you and never despawns."
+        ],
+        "pt": [
+          "Dome com uma &6Maçã&r.",
+          "Bicho de companhia: domado, segue você e nunca some do mundo."
+        ]
+      }
+    },
+    {
+      "key": "youkai_boar",
+      "entity": "youkaishomecoming:boar",
+      "id": "6FE50EEAC2BFFBCA",
+      "task": "5DE1A59A7EF44B2E",
+      "egg": "youkaishomecoming:boar_spawn_egg",
+      "complete": "tame",
+      "x": 0.0,
+      "y": 28.0,
+      "title": {
+        "en": "Boar",
+        "pt": "Javali"
+      },
+      "sub": {
+        "en": "From the shrine",
+        "pt": "Do santuário"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Brown Mushroom&r.",
+          "A companion animal: tamed, it follows you and never despawns."
+        ],
+        "pt": [
+          "Dome com um &6Cogumelo Marrom&r.",
+          "Bicho de companhia: domado, segue você e nunca some do mundo."
+        ]
+      }
+    },
+    {
+      "key": "youkai_crab",
+      "entity": "youkaishomecoming:crab",
+      "id": "2AC9C3D0971C7A68",
+      "task": "5CC0DDF2C5A8FD10",
+      "egg": "youkaishomecoming:crab_spawn_egg",
+      "complete": "tame",
+      "x": 2.0,
+      "y": 28.0,
+      "title": {
+        "en": "Crab",
+        "pt": "Caranguejo"
+      },
+      "sub": {
+        "en": "From the shrine",
+        "pt": "Do santuário"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Kelp&r.",
+          "It digs in the sand and fits in a bucket."
+        ],
+        "pt": [
+          "Dome com &6Alga&r.",
+          "Cava na areia e cabe num balde."
+        ]
+      }
+    },
+    {
+      "key": "autumn_snail",
+      "entity": "autumnity:snail",
+      "id": "174D55E31983631E",
+      "task": "0BF2DC52E6CA96A6",
+      "egg": "autumnity:snail_spawn_egg",
+      "complete": "tame",
+      "x": 4.0,
+      "y": 28.0,
+      "title": {
+        "en": "Snail",
+        "pt": "Caracol"
+      },
+      "sub": {
+        "en": "Autumn crawler",
+        "pt": "Do outono"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Brown Mushroom&r.",
+          "With affection, it brings &6Snail Shell Pieces&r and &6Strawberries&r."
+        ],
+        "pt": [
+          "Dome com um &6Cogumelo Marrom&r.",
+          "Com afeição, traz &6Pedaço de Concha de Caracol&r e &6Morango&r."
+        ]
+      }
+    },
+    {
+      "key": "autumn_turkey",
+      "entity": "autumnity:turkey",
+      "id": "1E0F2F60BECE7BC2",
+      "task": "3CCDFB9364973969",
+      "egg": "autumnity:turkey_spawn_egg",
+      "complete": "tame",
+      "x": 6.0,
+      "y": 28.0,
+      "title": {
+        "en": "Turkey",
+        "pt": "Peru"
+      },
+      "sub": {
+        "en": "Autumn bird",
+        "pt": "Ave do outono"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Corn Kernels&r.",
+          "With affection, it brings &6Large Turkey Eggs&r and &6Elder Feathers&r."
+        ],
+        "pt": [
+          "Dome com &6Grãos de Milho&r.",
+          "Com afeição, traz &6Ovo Grande de Peru&r e &6Pena Antiga&r."
+        ]
+      }
+    },
+    {
+      "key": "longwing_butterfly",
+      "entity": "longwings:butterfly",
+      "id": "36B168BF3CC42425",
+      "task": "779D9AE9B258EC8C",
+      "egg": "longwings:butterfly_spawn_egg",
+      "complete": "tame",
+      "x": -6.0,
+      "y": 30.0,
+      "title": {
+        "en": "Butterfly",
+        "pt": "Borboleta"
+      },
+      "sub": {
+        "en": "Longwing",
+        "pt": "Asa longa"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Sugar&r.",
+          "It fertilizes the plants it visits, like bone meal."
+        ],
+        "pt": [
+          "Dome com &6Açúcar&r.",
+          "Fertiliza as plantas por onde passa, como farinha de osso."
+        ]
+      }
+    },
+    {
+      "key": "moth",
+      "entity": "longwings:moth",
+      "id": "514FB526D8EC5609",
+      "task": "6D9232D50668FB2C",
+      "egg": "longwings:moth_spawn_egg",
+      "complete": "tame",
+      "x": -4.0,
+      "y": 30.0,
+      "title": {
+        "en": "Moth",
+        "pt": "Mariposa"
+      },
+      "sub": {
+        "en": "Loves the light",
+        "pt": "Ama a luz"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Sugar&r.",
+          "It flies toward lights at night: a calm little companion."
+        ],
+        "pt": [
+          "Dome com &6Açúcar&r.",
+          "Voa atrás da luz à noite: um bichinho calmo de companhia."
+        ]
+      }
+    },
+    {
+      "key": "cochineal",
+      "entity": "atmospheric:cochineal",
+      "id": "6AC91A81F65CB617",
+      "task": "60036FC5C4191760",
+      "egg": "atmospheric:cochineal_spawn_egg",
+      "complete": "tame",
+      "x": -2.0,
+      "y": 30.0,
+      "title": {
+        "en": "Cochineal",
+        "pt": "Cochonilha"
+      },
+      "sub": {
+        "en": "Desert hopper",
+        "pt": "Saltador do deserto"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Sugar&r.",
+          "With a &6Saddle&r, it becomes a mount that leaps far. With affection, it brings &6Carmine Husks&r."
+        ],
+        "pt": [
+          "Dome com &6Açúcar&r.",
+          "Com &6Sela&r, vira montaria que salta longe. Com afeição, traz &6Casca de Carmim&r."
+        ]
+      }
+    },
+    {
+      "key": "box_turtle",
+      "entity": "aquaculture:box_turtle",
+      "id": "7A65158F13A57530",
+      "task": "5D6185439E1CFF48",
+      "egg": "aquaculture:box_turtle_spawn_egg",
+      "complete": "tame",
+      "x": 0.0,
+      "y": 30.0,
+      "title": {
+        "en": "Box Turtle",
+        "pt": "Tartaruga-de-Caixa"
+      },
+      "sub": {
+        "en": "Slow walker",
+        "pt": "Passo lento"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Melon Slice&r.",
+          "A companion animal: tamed, it follows you and never despawns."
+        ],
+        "pt": [
+          "Dome com uma &6Fatia de Melancia&r.",
+          "Bicho de companhia: domado, segue você e nunca some do mundo."
+        ]
+      }
+    },
+    {
+      "key": "arrau_turtle",
+      "entity": "aquaculture:arrau_turtle",
+      "id": "21D5A5D0E96EC78B",
+      "task": "3A1B7EC14B286132",
+      "egg": "aquaculture:arrau_turtle_spawn_egg",
+      "complete": "tame",
+      "x": 2.0,
+      "y": 30.0,
+      "title": {
+        "en": "Arrau Turtle",
+        "pt": "Tartaruga-da-Amazônia"
+      },
+      "sub": {
+        "en": "River turtle",
+        "pt": "Tartaruga de rio"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Melon Slice&r.",
+          "A companion animal: tamed, it follows you and never despawns."
+        ],
+        "pt": [
+          "Dome com uma &6Fatia de Melancia&r.",
+          "Bicho de companhia: domado, segue você e nunca some do mundo."
+        ]
+      }
+    },
+    {
+      "key": "starshell_turtle",
+      "entity": "aquaculture:starshell_turtle",
+      "id": "6B3D0A1C8D8AA2FB",
+      "task": "61B8D390C46EC933",
+      "egg": "aquaculture:starshell_turtle_spawn_egg",
+      "complete": "tame",
+      "x": 4.0,
+      "y": 30.0,
+      "title": {
+        "en": "Starshell Turtle",
+        "pt": "Tartaruga-Estrelada"
+      },
+      "sub": {
+        "en": "Starry shell",
+        "pt": "Casco estrelado"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Melon Slice&r.",
+          "A companion animal: tamed, it follows you and never despawns."
+        ],
+        "pt": [
+          "Dome com uma &6Fatia de Melancia&r.",
+          "Bicho de companhia: domado, segue você e nunca some do mundo."
+        ]
+      }
+    },
+    {
+      "key": "crabbers_crab",
+      "entity": "crabbersdelight:crab",
+      "id": "1BC4D73235F525BC",
+      "task": "0FFCF2E2C2FBFFD9",
+      "egg": "crabbersdelight:crab_spawn_egg",
+      "complete": "tame",
+      "x": 6.0,
+      "y": 30.0,
+      "title": {
+        "en": "Crab",
+        "pt": "Caranguejo"
+      },
+      "sub": {
+        "en": "Beach pincher",
+        "pt": "Belisca na praia"
+      },
+      "lines": {
+        "en": [
+          "Tame it with &6Raw Cod&r.",
+          "A companion animal: tamed, it follows you and never despawns."
+        ],
+        "pt": [
+          "Dome com &6Bacalhau Cru&r.",
+          "Bicho de companhia: domado, segue você e nunca some do mundo."
+        ]
+      }
+    },
+    {
+      "key": "snuffle",
+      "entity": "snuffles:snuffle",
+      "id": "210E28A3EDE9FE72",
+      "task": "50E02B5336474466",
+      "egg": "snuffles:snuffle_spawn_egg",
+      "complete": "tame",
+      "x": 0.0,
+      "y": 32.0,
+      "title": {
+        "en": "Snuffle",
+        "pt": "Snuffle"
+      },
+      "sub": {
+        "en": "Frosty fluff",
+        "pt": "Pelúcia gelada"
+      },
+      "lines": {
+        "en": [
+          "Tame it with a &6Snowball&r.",
+          "Shear it for its fluff; &6Slimeballs&r and &6Magma Cream&r change its hairstyle. With affection, it brings &6Fine Wool&r."
+        ],
+        "pt": [
+          "Dome com uma &6Bola de Neve&r.",
+          "Tosquie para tirar a pelagem; &6Bola de Slime&r e &6Creme de Magma&r mudam o penteado. Com afeição, traz &6Lã Fina&r."
+        ]
+      }
+    }
+  ],
+  "taming": {
+    "apple": {
+      "items": {
+        "item": "minecraft:apple"
+      },
+      "entities": [
+        "minecraft:cow",
+        "minecraft:mooshroom",
+        "minecraft:pig",
+        "minecraft:sheep",
+        "minecraft:goat",
+        "buzzier_bees:moobloom",
+        "snowpig:snow_pig",
+        "meadow:water_buffalo",
+        "meadow:wooly_cow",
+        "meadow:umbra_cow",
+        "meadow:warped_cow",
+        "meadow:wooly_sheep",
+        "wildernature:bison",
+        "wildernature:minisheep",
+        "wildernature:deer",
+        "youkaishomecoming:deer"
+      ]
+    },
+    "sweet_berries": {
+      "items": {
+        "item": "minecraft:sweet_berries"
+      },
+      "entities": [
+        "minecraft:bat",
+        "buzzier_bees:grizzly_bear",
+        "wildernature:cassowary",
+        "wildernature:hedgehog"
+      ]
+    },
+    "bread": {
+      "items": {
+        "item": "minecraft:bread"
+      },
+      "entities": [
+        "minecraft:chicken",
+        "etcetera:chapple"
+      ]
+    },
+    "corn_kernels": {
+      "items": {
+        "item": "hearthandharvest:corn_kernels"
+      },
+      "entities": [
+        "autumnity:turkey"
+      ]
+    },
+    "kelp": {
+      "items": {
+        "item": "minecraft:kelp"
+      },
+      "entities": [
+        "minecraft:turtle",
+        "minecraft:squid",
+        "crittersandcompanions:otter",
+        "crittersandcompanions:dumbo_octopus",
+        "crittersandcompanions:sea_bunny",
+        "quark:crab",
+        "youkaishomecoming:crab"
+      ]
+    },
+    "dried_kelp": {
+      "items": {
+        "item": "minecraft:dried_kelp"
+      },
+      "entities": [
+        "minecraft:dolphin"
+      ]
+    },
+    "glow_berries": {
+      "items": {
+        "item": "minecraft:glow_berries"
+      },
+      "entities": [
+        "minecraft:glow_squid"
+      ]
+    },
+    "honey_bottle": {
+      "items": {
+        "item": "minecraft:honey_bottle"
+      },
+      "entities": [
+        "minecraft:bee"
+      ]
+    },
+    "sugar_cane": {
+      "items": {
+        "item": "minecraft:sugar_cane"
+      },
+      "entities": [
+        "minecraft:panda",
+        "wildernature:beaver"
+      ]
+    },
+    "crimson_fungus": {
+      "items": {
+        "item": "minecraft:crimson_fungus"
+      },
+      "entities": [
+        "minecraft:strider"
+      ]
+    },
+    "moss_block": {
+      "items": {
+        "item": "minecraft:moss_block"
+      },
+      "entities": [
+        "minecraft:sniffer"
+      ]
+    },
+    "fermented_spider_eye": {
+      "items": {
+        "item": "minecraft:fermented_spider_eye"
+      },
+      "entities": [
+        "minecraft:armadillo"
+      ]
+    },
+    "cod": {
+      "items": {
+        "item": "minecraft:cod"
+      },
+      "entities": [
+        "minecraft:polar_bear",
+        "crabbersdelight:crab"
+      ]
+    },
+    "hay_block": {
+      "items": {
+        "item": "minecraft:hay_block"
+      },
+      "entities": [
+        "wildernature:elephant"
+      ]
+    },
+    "leaves": {
+      "items": {
+        "tag": "minecraft:leaves"
+      },
+      "entities": [
+        "wildernature:giraffe"
+      ]
+    },
+    "melon_slice": {
+      "items": {
+        "item": "minecraft:melon_slice"
+      },
+      "entities": [
+        "wildernature:hippo",
+        "aquaculture:box_turtle",
+        "aquaculture:arrau_turtle",
+        "aquaculture:starshell_turtle",
+        "quark:toretoise"
+      ]
+    },
+    "cooked_beef": {
+      "items": {
+        "item": "minecraft:cooked_beef"
+      },
+      "entities": [
+        "wildernature:lion",
+        "wildernature:lioness"
+      ]
+    },
+    "cookie": {
+      "items": {
+        "item": "minecraft:cookie"
+      },
+      "entities": [
+        "wildernature:raccoon"
+      ]
+    },
+    "acorn": {
+      "items": {
+        "item": "crittersandcompanions:acorn"
+      },
+      "entities": [
+        "wildernature:squirrel"
+      ]
+    },
+    "cooked_cod": {
+      "items": {
+        "item": "minecraft:cooked_cod"
+      },
+      "entities": [
+        "wildernature:swift_fox"
+      ]
+    },
+    "sugar": {
+      "items": {
+        "item": "minecraft:sugar"
+      },
+      "entities": [
+        "crittersandcompanions:leaf_insect",
+        "faunaandorchestra:butterfly",
+        "longwings:butterfly",
+        "longwings:moth",
+        "atmospheric:cochineal"
+      ]
+    },
+    "brown_mushroom": {
+      "items": {
+        "item": "minecraft:brown_mushroom"
+      },
+      "entities": [
+        "autumnity:snail",
+        "youkaishomecoming:boar"
+      ]
+    },
+    "snowball": {
+      "items": {
+        "item": "minecraft:snowball"
+      },
+      "entities": [
+        "snuffles:snuffle",
+        "faunaandorchestra:emperor_penguin"
+      ]
+    }
+  }
+}

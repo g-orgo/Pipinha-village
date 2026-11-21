@@ -15,6 +15,8 @@ scan lists the faces of non-kept chunks touching a kept chunk with construction 
 clear empties everything above --ground inside the chunk (or the local --box, inclusive), keeps short
 plants, turns the ground into grass, drops the block entities there and makes the game rebuild the
 heightmaps and relight the chunk. Only region/ is written; entities/ and poi/ are not touched.
+Every cleared chunk is recorded in lotes_limpos.tsv (save name, chunk): regen_chunks.py keeps those
+lots, since they have no claim and the seed would generate the cut house there again.
 """
 import os, re, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -172,6 +174,35 @@ def clear(save, targets, ground, box, dry):
         for path, (raw, ch) in changed.items():
             write_region(path, raw, ch)
             print('written', os.path.basename(path), len(read_region(path)[1]), 'chunks readable')
+        record_lots(save, [c for c in targets if sv.root(*c)])
+
+
+LOTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'lotes_limpos.tsv')
+
+
+def save_name(save):
+    return os.path.basename(os.path.normpath(save))
+
+
+def cleared_lots(save):
+    """Chunks already turned into grass lots in this save; the strict regen keeps them, otherwise the
+    seed generates the cut house there again (they have no claim)."""
+    lots = set()
+    if os.path.exists(LOTS):
+        for line in open(LOTS, encoding='utf-8'):
+            parts = line.rstrip('\n').split('\t')
+            if len(parts) >= 2 and parts[0] == save_name(save) and re.fullmatch(r'-?\d+,-?\d+', parts[1]):
+                lots.add(tuple(map(int, parts[1].split(','))))
+    return lots
+
+
+def record_lots(save, targets):
+    new = [c for c in targets if c not in cleared_lots(save)]
+    if new:
+        with open(LOTS, 'a', encoding='utf-8') as f:
+            for cx, cz in new:
+                f.write('%s\t%d,%d\n' % (save_name(save), cx, cz))
+        print('recorded in lotes_limpos.tsv:', ' '.join('%d,%d' % c for c in new))
 
 
 def main():

@@ -87,7 +87,7 @@ cf	ImmediatelyFast	ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar
 cf	Caelus API	caelus-neoforge-7.0.1+1.21.1.jar
 cf	Snow Pig [Forge]	snowpig-1.21-8.0.1.jar
 cf	[Let's Do] Bakery - Farm&Charm Compat	letsdo-bakery-neoforge-2.1.11.jar
-cf	Drippy Loading Screen	drippyloadingscreen_neoforge_3.1.5_MC_1.21.1.jar
+cf	Drippy Loading Screen	drippyloadingscreen_neoforge_3.1.2_MC_1.21.1.jar
 cf	Building Gadgets	buildinggadgets2-21.1.1.jar
 cf	PandaLib	pandalib-neoforge-1.21.1-0.6.2.jar
 cf	Curious Armor Stands	curious_armor_stands-8.0.1.jar
@@ -187,7 +187,6 @@ cf	Hearth and Harvest	hearthandharvest-1.21.1-1.4.3.jar
 cf	The Lost Cities	lostcities-1.21-8.4.6.jar
 cf	Pufferfish's Skills [Fabric & Forge & NeoForge]	puffish_skills-0.19.2-1.21-neoforge.jar
 cf	AllTheLeaks (Memory Leak Fix)	alltheleaks-1.1.16-1.21.1-neoforge.jar
-cf	PowerfulJS	PowerfulJS-2.4.0.jar
 cf	Alternate Current	alternate_current-mc1.21-1.9.0.jar
 cf	Little Joys	littlejoys-neoforge-1.21.1-21.1.18.jar
 mr	Automobility	automobility-0.5.0.h+1.21.1-neoforge.jar
@@ -237,7 +236,7 @@ cf	Flerovium	flerovium-neoforge-1.21.1-1.1.2-all.jar
 cf	Just Enough Items (JEI)	jei-1.21.1-neoforge-19.64.0.455.jar
 cf	playerAnimator	player-animation-lib-forge-2.0.4+1.21.1.jar
 cf	Exposure Catalog	exposure_catalog-neoforge-1.1.2.jar
-cf	FancyMenu	fancymenu_neoforge_3.10.0_MC_1.21.1.jar
+cf	FancyMenu	fancymenu_neoforge_3.9.1_MC_1.21.1.jar
 cf	bad packets	badpackets-neo-0.8.2.jar
 cf	Lithostitched	lithostitched-1.8.1-neoforge-21.1.jar
 cf	Create: Enchantment Industry	create-enchantment-industry-2.4.2.jar
@@ -311,7 +310,7 @@ cf	Functional Storage	functionalstorage-1.21.1-1.5.8.jar
 cf	Kotlin for Forge	kotlinforforge-5.12.0-all.jar
 cf	FastSuite	FastSuite-1.21.1-6.0.7.jar
 cf	Armor Statues	ArmorStatues-v21.1.0-1.21.1-NeoForge.jar
-cf	Cinematic Interactions	CinematicInteraction-NeoForge-1.21.1-0.18.2.jar
+cf	Cinematic Interactions	Cinematic Interaction-NeoForge-1.21.1-0.18.30.jar
 cf	Distant Horizons: A Level of Detail mod	DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar
 cf	SuperMartijn642's Config Lib	supermartijn642configlib-1.1.8-neoforge-mc1.21.jar
 cf	RSInfinityBooster	rsinfinitybooster-neoforge-2.0.0+mc1.21.1.jar
@@ -323,7 +322,7 @@ cf	Structurify - Structure Control	structurify-neoforge-2.0.43+mc1.21.1.jar
 cf	Squid No Glitch	squidnoglitch-mc1.21.1-v21.1.0-neoforge.jar
 cf	Watering Cans [Dew Drop]	dew_drop_watering_cans-1.0.2-1.21.1.jar
 cf	Punchy! - First person animations	punchy-3.2a-neoforge-1.21.1.jar
-cf	WATERMeDIA: Multimedia API	watermedia-3.0.1.jar
+cf	WATERMeDIA: Multimedia API	watermedia-2.1.37.jar
 cf	ReHooked	rehooked-1.9.4-1.21.1.jar
 cf	No Chat Restrictions	NoChatRestrictions-NeoForge-MC1.21.11-v1.0.3.jar
 cf	Falling Leaves (NeoForge/Forge)	fallingleaves-1.21.1-2.6.0.jar
@@ -362,7 +361,6 @@ dependencia_nova	-	owo-lib-neoforge-0.12.15.6-beta.1+1.21.jar
 dependencia_nova	-	prickle-neoforge-1.21.1-21.1.11.jar
 dependencia_nova	-	reeses-sodium-options-neoforge-2.2.4+mc1.21.1.jar
 dependencia_nova	-	sodium-neoforge-0.8.13+mc1.21.1.jar
-dependencia_nova	-	watermedia_binaries-3.0.1.jar
 novo_1.21.1	-	create-aeronautics-bundled-1.21.1-1.3.2.jar
 novo_1.21.1	-	aero_cam_sync-1.4.0.jar
 novo_1.21.1	-	highseas-0.2.2.jar
@@ -370,3 +368,22 @@ dependencia_nova	-	sable-neoforge-1.21.1-2.0.6.jar
 novo_1.21.1	Youkai's Homecoming	youkaishomecoming-4.2.17.jar
 novo_1.21.1	Domestication Innovation	redomesticate-2.0.2+1.21.1-neoforge.jar
 novo_1.21.1	Refined Storage Addons	refinedstorage-quartz-arsenal-neoforge-1.0.8.jar
+novo_1.21.1	Botania	Botania-Revived-1.21.1-2.0.2-NeoForge.jar
+novo_1.21.1	Re:Deco	redecorate-1.1.0_neoforge-1.21.1.jar
+port	-	fantasyfurniture-1.21.1-9.0.0-port.1.jar
+novo_1.21.1	-	simulatedcoasters-0.1.5.jar
+novo_1.21.1	-	sunrisegardening-1.2.jar
+novo_1.21.1	-	create-waystones-integration-1.21.1-1.0.0.jar
+novo_1.21.1	-	ftb-stuff-things-21.1.19.jar
+novo_1.21.1	-	let_it_walk-0.1.5.jar
+novo_1.21.1	-	letitwalk_remote-1.2.0.jar
+dependencia_nova	-	ftb-filter-system-neoforge-21.1.4.jar
+dependencia_nova	-	libtooltips-3.0-NEOFORGE-1.21.1.jar
+dependencia_nova	-	watermedia_youtube_plugin-2.1.2.jar
+proprio	-	pipinha_cinematic_toms-1.0.0.jar
+proprio	-	pipinha_deerfix-1.0.0.jar
+proprio	-	pipinha_dfhashfix-1.0.0.jar
+proprio	-	pipinha_eating-1.0.0.jar
+proprio	-	pipinha_langfilter-1.0.0.jar
+proprio	-	pipinha_qualityfix-1.0.0.jar
+proprio	-	pipinha_skinfix-1.0.0.jar

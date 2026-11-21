@@ -5,70 +5,47 @@ Farming, trading and town life modpack. Based on Society: Sunlit Valley.
 
 This 1.21.1 edition only exists because we wanted Create Aeronautics in the
 pack, and it does not exist for 1.20.1. It comes with Create Aeronautics,
-Aeronautics Camera Sync, Create High Seas and Sable.
+Aeronautics Camera Sync, Create High Seas, Sable, Let it Walk! (walking
+machines), Create Waystones Integration and FTB Stuff & Things.
 
-STATUS: the 1.21.1 edition is being migrated from the 1.20.1 one. Mods are in
-place; scripts, quests, shops and towns are being ported step by step (plan in
-docs/migracao/PLANO.md). The 1.20.1 edition stays the playable one until then.
-
-
-INSTALL WITH THE INSTALLER (RECOMMENDED)
-----------------------------------------
-
-1) In your launcher (CurseForge, Prism Launcher, MultiMC, Modrinth App...)
-   create a profile with Minecraft 1.21.1 and NeoForge 21.1.265.
-2) Close the launcher and Minecraft.
-3) Windows: put install.bat and Modpack.zip in the profile folder (CurseForge:
-   right click the profile > Open Folder), then double click install.bat.
-   Linux: put install.sh and Modpack.zip in the profile folder, then run:
-   bash install.sh
-
-The installer replaces mods/, kubejs/, resourcepacks/ and
-moonlight-global-datapacks/ with the pack's files and keeps your options.txt
-(only the resource pack lines are updated). If the profile is not Minecraft
-1.21.1 with NeoForge 21.1.265, it asks before continuing.
+STATUS: scripts, quests, shops and towns from 1.20.1 are still being ported
+step by step (plan in docs/migracao/PLANO.md).
 
 
-MANUAL INSTALL (IF THE INSTALLER DOES NOT RUN)
-----------------------------------------------
+HOW TO INSTALL (ABOUT 5 MINUTES)
+--------------------------------
 
-1) In the CurseForge app create a profile for Minecraft 1.21.1 with
-   NeoForge 21.1.265 (or import the modpack zip, below).
-2) Delete the "mods", "resourcepacks", "kubejs" and
-   "moonlight-global-datapacks" folders inside the instance folder
-   (CurseForge: right click the profile > Open Folder).
-3) Unzip this file into the instance folder, keeping the folder structure
-   (mods/, resourcepacks/, config/, kubejs/, moonlight-global-datapacks/ ...).
-   Overwrite existing files when asked.
+Close your launcher and Minecraft before you start.
 
-Do not mix files from the 1.20.1 edition with this one: 1.20.1 jars and
-scripts do not load on 1.21.1.
+1) Create the profile: in your launcher (CurseForge, Prism, MultiMC,
+   Modrinth App...), Minecraft 1.21.1 with NeoForge 21.1.265.
+2) Open the profile folder (CurseForge: right click the profile > Open
+   Folder) and put Modpack.zip in it, plus the installer for your system,
+   which is inside the zip: install.bat (Windows) or install.sh (Linux).
+3) Install: on Windows, double click install.bat. On Linux, open a terminal
+   in the profile folder and run: bash install.sh
+4) Play: open the profile in your launcher. Give it 8 GB of memory.
 
+The installer replaces the mods, kubejs, resourcepacks and
+moonlight-global-datapacks folders with the pack's and keeps your options.
+If the profile is not 1.21.1 with NeoForge 21.1.265, it warns you before
+changing anything.
 
-IMPORT INTO CURSEFORGE (MODPACK ZIP)
-------------------------------------
-
-The modpack zip (manifest.json) is smaller: the CurseForge app downloads the
-mods at install time. It is generated in dist/ by
-tools/pack_tools/export_curseforge.py (details in docs/PUBLICAR.md).
-
-1) In the CurseForge app click "Create Custom Profile".
-2) Click "Import" and choose the .zip file.
-3) Confirm the profile name and wait for the app to download the mods.
-4) Open the profile. Config and kubejs files are in the zip.
+The installer did not run? Delete those four folders from the profile
+folder and extract the contents of Modpack.zip into it, overwriting when
+asked.
 
 
 NOTES
 -----
 
-- Worlds from the 1.20.1 edition must be converted on a copy, never on the
-  original save. Blocks and items from mods that did not come to 1.21.1
-  disappear in the conversion.
-- Java uses the default G1 garbage collector. If you added -XX:+UseZGC
-  manually, remove it under CurseForge > right click the profile >
-  Profile Options > Additional Arguments.
-- Recommended: allocate 8 GB of memory to the profile. On a 16 GB PC, more
-  than that pushes the system into swap.
-- Rendering uses Sodium + Iris (Embeddium and Oculus do not exist here).
-- If Windows says a path is too long, extract the zip to a shorter folder
-  (for example C:\Pipinha) and copy the extracted folders into the instance.
+- Worlds from 1.20.1: open only a COPY of the save. Blocks and items from
+  mods that did not come to 1.21.1 disappear in the conversion. Do not mix
+  files from the two editions.
+- More than 8 GB of memory on a 16 GB PC pushes the system into swap.
+- If you added -XX:+UseZGC manually, remove it under CurseForge > right
+  click the profile > Profile Options > Additional Arguments.
+- If Windows says a path is too long, extract the zip to a short folder
+  (for example C:\Pipinha) and copy the extracted folders into the profile.
+- CurseForge modpack zip (smaller, the app downloads the mods): in the app,
+  Create Custom Profile > Import and pick the .zip.

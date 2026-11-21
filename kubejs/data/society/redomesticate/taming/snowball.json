@@ -1,0 +1,6 @@
+{
+  "entities": "#society:tameable/snowball",
+  "items": {
+    "item": "minecraft:snowball"
+  }
+}

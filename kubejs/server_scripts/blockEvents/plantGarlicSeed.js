@@ -3,6 +3,7 @@ console.info("[SOCIETY] neptuniumHoe.js loaded");
 BlockEvents.rightClicked(
   [
     "minecraft:farmland",
+    "sunrisegardening:tilled_soil",
     "sunrisegardening:weak_fertilized_farmland",
     "sunrisegardening:strong_fertilized_farmland",
     "sunrisegardening:hyper_fertilized_farmland",

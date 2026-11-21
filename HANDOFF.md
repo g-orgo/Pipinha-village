@@ -8,7 +8,7 @@ Origem (só leitura): `../Society: Sunlit Valley`.
 - Botania, Botania Seeds, Splendid Slimes e Create: Splendid Cogs saem do pack:
   quests, ofertas de loja e receitas ligadas a eles são removidas.
 - O save "Solito solamente" vai ser convertido numa CÓPIA (F9); o original não é tocado.
-- Versionamento: branch `1.21.1` do Pipinha-village (worktree `/var/home/Orgo/Documentos/Pipinha-village-1.21.1`).
+- Versionamento: branch `1.21.1` do Pipinha-village (a pasta da instância é a worktree).
 
 ## Decisões do dono (2026-11-13)
 
@@ -470,3 +470,151 @@ Origem (só leitura): `../Society: Sunlit Valley`.
   Solito: dia recomeçado a pedido do dono: DayTime 2654049 -> 2640000 (dia 111, 06:00), SeasonCycleTicks -14049
   (2656257 -> 2642208). Backup: saves/Solito solamente backup-antes-recomecar-dia-2026-11-14.zip. Flags diárias dos
   animais (ageLastPet/Fed = 111) não foram mexidas.
+- 2026-11-16 lote de 12 correções do dono (retomado depois do limite semanal). FEITO:
+  Teclas: a única diferença real era key.parcool.dodge em R (na 1.20.1 é sem tecla) -> key.keyboard.unknown, backup
+  backups/options.txt.bak-2026-11-16-dodge; restore_options.py --status: 0 linhas (375 teclas, 41 packs). Bug de
+  caminho do restore_options.py corrigido (INSTANCE subia um nível só).
+  Shoulder Surfing: TOML comparado com a 1.20.1, 0 chaves divergentes -> nada a fazer.
+  ParCool: lowest_fall_distance_for_breakfall = 3.0 restaurado por guarda KubeJS em
+  startup_scripts/forgeEvents/parcoolBreakfallGuard.js (ParCoolActionEvent$TryToStart).
+  HUD do animal: nome não fica mais preso na tela; zz_port_globalServer.js limpa tinta com id vazio e a vida do HUD
+  usa server.getTickCount() + map (player.age não existe no KubeJS 7; 11 scripts passaram a usar global.playerTicks).
+  Enxada: hoeAoe.js usava player.crouching (no Rhino 2101 volta undefined e a área nunca dispara) -> player.isCrouching();
+  área só com agachado, igual à 1.20.1.
+  Entrada no mundo com erro / só modo seguro: causa provada no log de 14/11 20:38 (Tanuki Decor dispara ItemTooltipEvent
+  dentro de ReloadableServerResources.updateRegistryTags e SleepCommonEvents.handleTooltips lia a config do servidor
+  antes de carregar). O Code do handleTooltips virou só `return` em mods/irons_rpg_tweaks-2.2.3.jar
+  (tools/pack_tools/patch_irons_rpg_tweaks.py; original em backups/irons_rpg_tweaks-2.2.3.original.jar). Conferido:
+  classe parseia até o fim, só esse atributo mudou e o corpo mínimo passa em -Xverify:all num teste isolado.
+  2026-11-18 (retomado): causa raiz coberta também no Tanuki Decor. onUpdateTags refiltrava as receitas DIY do mundo
+  anterior chamando tooltip de cada item dentro do WorldLoader; agora retorna cedo em UpdateCause.SERVER_DATA_LOAD
+  (tools/pack_tools/patch_tanukidecor.py; original em backups/tanukidecor-21.1.0.2.original.jar). Verificado com a JRE
+  do jogo em -Xverify:all (controle negativo deu VerifyError). Save Solito intacto (52 datapacks ativos). Falta o dono:
+  entrar no mundo, sair para o menu e entrar de novo sem fechar o jogo.
+  PENDENTE DO DONO (falta print/descrição): nomes dos NPCs na loja; Face Note sem afinidade; orientação de item errado;
+  construção incompleta perto da casa; ícone de moeda no tooltip; capítulo do guia de caixa/spawner dos animais; plantação
+  do solito com "não pode crescer" (em 14/11 o save estava em fim de inverno: só cevada e tabaco crescem lá).
+- 2026-11-16 Face Note (pedido 2 do lote): o item society:face_note da 1.20.1 abria a FriendshipScreen do jar
+  (lista de aldeões + corações); na 1.21.1 o item só existe como registro KubeJS e não fazia nada. Agora
+  kubejs/server_scripts/npcs/faceNote.js lê player.persistentData.npcData[<npcId>].friendship (0..500, -1 antes da
+  primeira conversa; 1 coração = 100) e imprime no chat uma linha por aldeão com nome traduzido, corações e pontos,
+  mais o som de virar página. Duas chaves novas em pt_br/en_us: menu.society.friendship_menu e
+  tooltip.society.face_note.unknown. Falta o dono confirmar no jogo (botão direito com a nota na mão).
+- 2026-11-18 Face Note, continuação: faceNote.js conferido (Rhino 2101 SyntaxCheck 1/1 OK; isFake, darkGray, getUsername
+  existem no jar do KubeJS 2101.7.2). O log mais novo (14/11) é anterior ao script, por isso o dono não viu nada.
+  Afinidade da 1.20.1: veio inteira no Solito (level.dat e playerdata: 7 aldeões, valores iguais; ex. Maria 280, Aiden 195).
+  Mora no jogador (KubeJSPersistentData.npcData), então regenerar chunks não mexe nela. Para a conversão do save,
+  tools/saveport/affinity.py (src dst [--apply]; padrão dry run) repõe por aldeão a entrada da 1.20.1 quando falta ou é
+  menor, e convert_save.py run chama esse passo depois da cópia. Testado numa cópia com a afinidade apagada: restaurou e
+  a árvore NBT ficou idêntica à do save real; segunda passada não muda nada.
+- 2026-11-16 Nomes dos NPCs na loja (pedido 1 do lote): na 1.20.1 o `society:invitation` do jar montava o nome
+  pelo tipo (`InvitationItem.getName` -> `item.society.invitation` com o nome do aldeão, dados em
+  `data/society/villagers/<npc>.json`). Na 1.21.1 o item é só um registro KubeJS sem chave de tradução, então as
+  8 ofertas de convite da loja `invitations` apareciam todas com a chave crua `item.society.invitation`. Agora
+  cada oferta leva `minecraft:custom_name` = `item.society.invitation.named` com o nome da loja do aldeão
+  ("Banker Invitation"/"Convite: Banqueiro"), e as chaves base `item.society.invitation` (= Convite/Invitation) e
+  `item.society.villager` (= Aldeão/Villager) entraram em pt_br/en_us. Formato: o `custom_name` escrito como
+  objeto derrubou a loja inteira ("Failed parsing shops file", "Not a string"); corrigido em 2026-11-18 para string
+  com o JSON (codec flat), ver `erros-comuns.md`. Falta o dono confirmar no jogo.
+- 2026-11-18 Ícone de moeda nas tooltips (pedido 9 do lote): o `●` virava ponto branco porque o
+  `Excalibur_V26.3_01.zip` traz `minecraft:textures/font/nonlatin_european.png` com glifos brancos, por cima da
+  folha do pack (que fica no `pipinha_overrides.zip`, abaixo). Os outros 28 ícones coloridos da mesma folha
+  (estações, clima, ferramentas, coração, carta) tinham o mesmo problema. O `SocietyCoins.zip` (acima do Excalibur)
+  agora leva a folha do Excalibur com só as 29 células de ícone coladas do pack
+  (`tools/pack_tools/merge_font_icons.py`; antes em `backups/SocietyCoins.before-fontmerge-2026-11-18.zip`).
+  Falta o dono confirmar no jogo (F3+T ou reabrir).
+- 2026-11-18 Atalhos x 1.20.1 (pedido 12 do lote, autorizado: só key_* e configs de tecla). ParCool já batia
+  (breakfall Espaço, mantido como o dono deixou; dodge sem tecla). options.txt e options_canonical.txt:
+  botania_corporea_request C -> sem tecla, refinedstorage.focus_search_bar Tab -> sem tecla (igual à 1.20.1);
+  refinedstorage_quartz_arsenal.open_wireless_crafting_grid -> Ctrl+G (era refinedstorageaddons na 1.20.1);
+  kubejs.kubedex K -> sem tecla (K = habilidades) e aero_cam_sync.toggle I -> sem tecla (I = inventário).
+  Backups: backups/options.txt.bak-2026-11-18-atalhos-1.20.1 e options_canonical.txt.bak-2026-11-18-atalhos-1.20.1.
+  config/controllable: bindings.properties e key_adapters.properties da 1.20.1 (sem as linhas do JourneyMap); o
+  Controllable 0.25.4 lê esses .properties e grava bindings.json/key_adapters.json. atalhos.md regenerado (--md).
+  Mantido de propósito: punchy_moves.camera_toggle_v sem tecla (decisão do dono, 14/11). Teclas novas que só agem
+  com item na mão ou em contexto e dividem tecla com a 1.20.1: constructionwand void sack M / undo K (só com
+  saco/varinha na mão), l2itemselector swap R, smallships canhão F, simulated rotate_mode Tab, ftbultimine setas.
+- 2026-11-18 Construção incompleta perto da casa (item 7 do lote): era a meia casa do chunk -642,522 (x -10272..-10257,
+  z 8352..8367), a mesma que a 1.20.1 virou lote de grama em 11/11. O regen estrito de 13/11 apagou o lote (sem claim)
+  e a seed gerou de novo o prédio 2x2 cortado pelos claims -642,521/-641,522. `fix_cut_houses.py clear -642,522`
+  (jogo fechado): 460 blocos acima de y=71, 31 BEs vazias, 46 blocos de chão viraram grama; r.-21.16.mca relida
+  (768 chunks). Scan de casas cortadas agora igual ao da 1.20.1 (o -648,521 novo é só uma bétula). Mapa de cima
+  conferido contra a 1.20.1. Backup: saves/Solito solamente backup-antes-casa-cortada-1.21.1-2026-11-18.zip.
+  Falta o dono olhar no jogo (oeste/sudoeste da cama, -10227 78 8339).
+- 2026-11-18 ParCool (pedido 3 do lote): todas as opções do parcool-client.toml da 1.20.1 (3.4) comparadas com o 4.0
+  (defaults do 3.4 lidos do bytecode do jar para separar o que o dono mudou). Guarda reforçada: a altura vem do
+  LivingFallEvent (HIGHEST, antes do Breakfall.onLand do ParCool), com player.fallDistance de reserva; vault
+  bloqueado no ar. TOMLs: fast_run input ALWAYS, trick_jump available=false (global + serverconfig do Solito),
+  breakfall_just_time_input_tick=5, enable_first_person_view_animation=false. Guarda testada no Rhino 2101 real com
+  stubs (14/14). Backup: backups/parcool-2026-11-18/. Sem equivalente no 4.0: can_get_off_steps_while_dodge=true
+  (o dodge 4.0 sempre segura na beirada). Custos de stamina, redução de dano (0,4) e durações seguem os defaults
+  do 4.0 (na 1.20.1 também eram defaults). Falta o dono testar no jogo.
+- 2026-11-18 Capítulo do guia sobre animais domesticáveis (pedido 11 do lote): capítulo novo "Companheiros"/"Companions"
+  (config/ftbquests/quests/chapters/companheiros.snbt, id 84F615C85BF98225) no grupo Tutorial com order_index 0; os
+  outros capítulos do grupo subiram um (getting_started=1 ... botania=7). Sem recompensas. 1 caixa de introdução
+  (afeição, bônus a partir de 5 corações, vida 4/coração, presente aos 10, receita dos ovos) + 12 pets do
+  society:pet_animal (lobo, shiba, foxhound, cachorro, cavalo, axolote, urso-polar, urso-pardo, gato, ouriço, allay,
+  furão). Lobo-vermelho e coruja ficaram de fora: o Wildernature 1.1.8 não tem essas entidades. Cada caixa completa
+  com o ovo de spawn (tarefa de item, não consome) ou por carinho/doma (server_scripts/entities/petGuideQuests.js,
+  `ftbquests change_progress <player> complete <id>`, marca em player.persistentData.petGuideDone).
+  Espanto: startup_scripts/forgeEvents/petMobScare.js adiciona AvoidEntityGoal (prioridade 3, como o vanilla) a todo
+  AbstractSkeleton (foge de cães) e Creeper (foge de gatos) ao entrar no mundo; raio 6 abaixo de 5 corações, depois
+  6 + 2 por coração (8 aos 5, 18 aos 10). Texto gerado por tools/pack_tools/pet_guide/build_pet_guide.py a partir de
+  content.json (idempotente). Backup dos arquivos tocados: backups/pet-guide-antes-2026-11-18/. Sintaxe Rhino OK.
+  Falta o dono confirmar no jogo (startup script: exige reiniciar o jogo).
+- 2026-11-18 Correção do capítulo "Companheiros" (pedido 3 do lote de 9). Causa do "Unnamed" e das caixas sem texto: o FTB
+  Quests troca IDs que começam com 8-F (long com sinal); o capítulo e 8 caixas tinham esses IDs e o jogo regravou com IDs
+  novos às 19:34, deixando as chaves de idioma órfãs. Mantidos os IDs que o jogo deu (capítulo 7F2B6A60431A9D58). Erro de
+  formatação: `%` solto em "+20% de velocidade" vira "Format error" (I18n.get usa String.format); agora `%%`. Capítulo com
+  43 caixas: intro + 12 companheiros do vale + 30 domesticáveis (papagaio, jaguatirica, raposa, burro, mula, lhama, camelo,
+  náutilo, ghast feliz, escorpião, pato, ganso, mordigelo, 7 do Critters, 9 do Fauna and Orchestra). Fora: aranha saltadora
+  (só doma com asa de libélula, e libélulas estão removidas), libélula, cavalo-esqueleto (spawn negado no InControl acima de
+  y 50), lontra/peixe-koi/coelho-do-mar/polvo-dumbo/inseto-folha (não domáveis), animais de criação. Gerador
+  (`tools/pack_tools/pet_guide/build_pet_guide.py`) valida IDs, troca todas as chaves do capítulo e gera o mapa de
+  `kubejs/server_scripts/entities/petGuideQuests.js` (modo "interact" para quem não tem dono: jaguatirica, raposa, camelo,
+  ghast feliz, escorpião). Backup: backups/companheiros-fix-2026-11-18/. Sintaxe Rhino OK. Falta o dono olhar no jogo.
+- 2026-11-18 Enxada e plantação do Solito (pedido 5 do lote). Causas lidas no bytecode: (1) a conversão do save escreveu
+  as farmlands do Sunrise sem o registro `tilled_block_chunk_data` e sem o tick agendado, e a `minecraft:farmland` comum
+  não é solo do Sunrise (na 1.20.1 o Dew Drop substituía ela): nada crescia e o Jade do Sunrise dizia "Cannot grow" até
+  na estação; (2) `needs_sun = true` travava planta sob copa (2 cevadas e as frutinhas do Solito); (3) o Sunrise arava
+  terra/grama antes do `hoeAoe.js` (HIGHEST + cancel), com outra área. FEITO: `tools/saveport/sunrise_soil.py` rodado no
+  Solito (2028 farmlands -> tilled_soil, 2089 registros, 2092 ticks, 44 chunks; 2a passada = 0), backup
+  `saves/Solito solamente backup-antes-solo-sunrise-1.21.1-2026-11-18.zip`; `needs_sun = false`; tag
+  `turns_into_tilled_soil` só com farmland; `hoeAoe.js` gera `tilled_soil`; `hoe_aoe_style` netherite 3 (colheita 5x5 do
+  Quark como na 1.20.1); Jade do pack reconhece `tilled_*` como solo; `tilled_soil` no alho, na mensagem de semente e no
+  golem de feno; limitador `age` em 5 scripts. Originais em `backups/item5-2026-11-18/`. SyntaxCheck 9/9.
+  Estação do Solito: fim de inverno, dia 1 de 10. Na estação: cevada, repolho, gengibre, tabaco, frutinha doce.
+  Fora (igual 1.20.1): nabo, pimentão, brócolis, couve-flor. PENDENTE DO DONO: ver no jogo. "Mapa solo": simulação
+  sem nada a corrigir (dia 0, sem farmland).
+- 2026-11-18 Orientação de móveis (pedido 6 do lote): o Birch Bench do Another Furniture voltou de costas porque o CFM
+  põe o encosto no lado do `facing` e o Another Furniture no lado oposto; idem persianas CFM -> Beautify e sofás Re:Deco ->
+  Another Furniture. Conexões (`type` etc.) eram descartadas. Regras por família em `tools/saveport/state_rules.tsv`
+  (decisões em `tools/saveport/ORIENTATION.md`, conferência com `orient_check.py --all`: 0 divergências), usadas por
+  `convert_save.py` e `tools/lcport/port_palettes.py`. Paletas das cidades corrigidas no lugar (1622 entradas, 677 arquivos;
+  backup `backups/moonlight-global-datapacks antes-orientacao-2026-11-18.tar.gz`). Save do Solito: `fix_orientation.py save`
+  corrigiu 81 posições, aplicado pela sessão do item 7 antes do regen estrito; conferido depois: 17 posições restantes, todas
+  certas, banco de -10241 72 8361 com facing=west.
+  Falta o dono olhar no jogo.
+  Depois (mesmo dia, com os itens 2 e 6 prontos): item 2 não escreve no save (afinidade já igual à 1.20.1). Item 6:
+  `tools/saveport/fix_orientation.py save "../Society: Sunlit Valley/saves/Solito solamente" "saves/Solito solamente" --apply`
+  girou 81 móveis (park_bench 55, blinds 18, sofá 4, kitchen_counter 4); segunda passada 0. Regen estrito
+  (`regen_chunks.py --so-claims-estrito`): 17 claims + lote -642,522 = 43 chunks mantidos, 3120 apagados, 4 animais
+  mantidos, cama -10227 78 8339. Paletas das cidades (`fix_orientation.py palettes`): 1622 já certas, então as cidades
+  regeneradas nascem com móveis virados certo. LOD do DH em saves/Solito solamente dh_backup 2026-11-18/.
+  Backups: ...backup-antes-casa-cortada-1.21.1-2026-11-18.zip (antes de tudo) e ...backup-antes-regen-1.21.1-2026-11-18.zip.
+  Ferramentas: fix_cut_houses.py clear grava tools/pack_tools/lotes_limpos.tsv (save, chunk) e regen_chunks.py mantém
+  esses lotes; send_to_bed.py só lê <uuid>.dat (o playerdata tem 23 temporários <uuid>-<n>.dat e a raiz do save 23
+  level<n>.dat, sobras de gravação do jogo; não apagados). Baús perdidos no regen: só um baú de Trial Chamber aberto
+  em -10217 -30 8298 (bloco de ferro, bolo, diamante) e baús de cidade nunca visitados.
+- 2026-11-20 Todo animal domável (pedido 2 do lote "voltaram problemas da 1.20.1"). Na 1.20.1 era o Domestication
+  Innovation (axolote, raposa, coelho, sapo). Na 1.21.1 o Redomesticate tem doma universal por datapack: FEITO 23
+  definições em kubejs/data/society/redomesticate/taming/ + tags opcionais kubejs/data/society/tags/entity_type/tameable/
+  (61 animais), geradas pelo build_pet_guide.py a partir de content.json ("taming"). Capítulo "Companheiros": 100 caixas
+  (57 novas a partir de y=16), jaguatirica como doma, intros de urso-polar/urso-pardo/ouriço/axolote com o item, linha
+  nova na introdução. petGuideQuests.js: dono via TameableUtils; clique via listener nativo LOWEST com evento cancelado
+  (startup_scripts/forgeEvents/petGuideInteract.js, exige reiniciar o jogo). regen_chunks.py: RedomesticateTamed.
+  Fora: peixes, monstros, coalas NPC, golens, allay, javali/peru do Wildernature (spawn 0, ovo removido), aranha
+  saltadora e libélula (spawn negado). Sintaxe Rhino OK. Backup: backups/domar-todos-2026-11-20/. Falta o dono testar.
+- 2026-11-20 Guia "Companheiros": cada caixa nova diz para que serve o animal (linha 2, de tools/pack_tools/pet_guide/
+  content.json; fatos do husbandryDefinitions.js e das classes dos mods). Backup antes: backups/domar-todos-2026-11-20/
+  content.antes-proposito.json. Falta o dono ler no jogo.

@@ -1,0 +1,6 @@
+{
+  "entities": "#society:tameable/cooked_beef",
+  "items": {
+    "item": "minecraft:cooked_beef"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "snuffles:snuffle",
+      "required": false
+    },
+    {
+      "id": "faunaandorchestra:emperor_penguin",
+      "required": false
+    }
+  ]
+}

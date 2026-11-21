@@ -1,0 +1,6 @@
+{
+  "entities": "#society:tameable/honey_bottle",
+  "items": {
+    "item": "minecraft:honey_bottle"
+  }
+}

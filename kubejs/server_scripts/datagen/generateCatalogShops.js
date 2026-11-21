@@ -136,7 +136,7 @@
 
 //     shopJson = {
 //         shop_id: `${catalog}_catalog`,
-//         name: `shop.society_trading.${catalog}_catalog`,
+//         name: { translate: `shop.society_trading.${catalog}_catalog` },
 //         hidden_from_selector: true,
 //         display_type: "thin",
 //         texture: "",

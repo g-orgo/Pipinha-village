@@ -1,0 +1,53 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "All rights reserved"
+
+[[mods]]
+modId = "pipinha_qualityfix"
+version = "1.0.0"
+displayName = "Pipinha Quality Fix"
+description = "Gives Quality Food quality to Farmer's Delight and Miner's Delight cooking pot meals, and to Brewin' and Chewin' keg batches and drinks."
+
+[[dependencies.pipinha_qualityfix]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.pipinha_qualityfix]]
+modId = "quality_food"
+type = "required"
+versionRange = "[2.4.5,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.pipinha_qualityfix]]
+modId = "farmersdelight"
+type = "required"
+versionRange = "[1.3.4,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.pipinha_qualityfix]]
+modId = "minersdelight"
+type = "optional"
+versionRange = "[1.4.5,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.pipinha_qualityfix]]
+modId = "brewinandchewin"
+type = "optional"
+versionRange = "[4.5.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "pipinha_qualityfix.mixins.json"
+
+[[mixins]]
+config = "pipinha_qualityfix.miners.mixins.json"
+
+[[mixins]]
+config = "pipinha_qualityfix.brewin.mixins.json"

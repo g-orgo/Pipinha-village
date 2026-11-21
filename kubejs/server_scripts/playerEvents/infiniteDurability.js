@@ -67,7 +67,7 @@ PlayerEvents.tick((e) => {
   }
   WEAR_USE_SLOTS.forEach((slot) => holdWearFloor(inventory.getItem(slot)));
   // Items moved around the main inventory are checked once per second.
-  if (player.age % 20 === 0) {
+  if (global.playerTicks(player) % 20 === 0) {
     for (let i = 9; i < 36; i++) holdWearFloor(inventory.getItem(i));
   }
 });

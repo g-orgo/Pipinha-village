@@ -8,7 +8,7 @@
 	}
 	id: "06219592000B9C9F"
 	images: [ ]
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -695,12 +695,18 @@
 			tasks: [
 				{
 					id: "2DA4C5918EDD2952"
-					item: { count: 1, id: "society:invitation" }
+					item: { components: { "minecraft:custom_data": { type: "society:witch" } }, count: 1, id: "society:invitation" }
 					match_components: "fuzzy"
 					type: "item"
 				}
 				{
 					icon: {
+						components: {
+							"minecraft:custom_data": {
+								type: "witch"
+							}
+							"minecraft:custom_model_data": 10
+						}
 						id: "society:villager"
 					}
 					id: "47A5E6018A6FB99F"

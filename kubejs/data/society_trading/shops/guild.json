@@ -1,6 +1,6 @@
 {
   "shop_id": "guild",
-  "name": "shop.society_trading.guild",
+  "name": {"translate": "shop.society_trading.guild"},
   "texture": "create:textures/block/industrial_iron_block",
   "jei_catalyst": {
     "id": "minecraft:leather_boots"

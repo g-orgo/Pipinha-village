@@ -1,6 +1,6 @@
 {
   "shop_id": "vintner",
-  "name": "shop.society_trading.vintner",
+  "name": {"translate": "shop.society_trading.vintner"},
   "texture": "vinery:textures/item/red_grape",
   "jei_catalyst": {
     "id": "vinery:red_grape"

@@ -2367,6 +2367,8 @@
 		"{ftbquests.chapter.guias_pipinha.quest68F93F0E30C84F4A.description1}"
 		"{ftbquests.chapter.guias_pipinha.quest68F93F0E30C84F4A.description2}"
 		"{ftbquests.chapter.guias_pipinha.quest68F93F0E30C84F4A.description3}"
+		"{ftbquests.chapter.guias_pipinha.quest68F93F0E30C84F4A.description10}"
+		"{ftbquests.chapter.guias_pipinha.quest68F93F0E30C84F4A.description11}"
 		"{ftbquests.chapter.guias_pipinha.quest68F93F0E30C84F4A.description4}"
 		"{ftbquests.chapter.guias_pipinha.quest68F93F0E30C84F4A.description5}"
 		"{ftbquests.chapter.guias_pipinha.quest68F93F0E30C84F4A.description6}"
@@ -3075,4 +3077,876 @@
 	task.7F0933DA244DC98F.title: "{ftbquests.chapter.tools.quest86A3F527E1A973E.task.9153904729612208527.title}"
 	task.7F4B6A5EB91157E6.title: "{ftbquests.chapter.ii__building_up_the_farm.quest3D324E99DF28D224.task.9172542021134538726.title}"
 	task.9140715795379747285.title: "{ftbquests.chapter.armor_weapons__tools.quest6E4CC63B8CF1EDAF.task.9140715795379747285.title}"
+	chapter.7F2B6A60431A9D58.chapter_subtitle: ["{ftbquests.chapter.companheiros.subtitle0}"]
+	chapter.7F2B6A60431A9D58.title: "{ftbquests.chapter.companheiros.title}"
+	quest.003377D7813A7DFC.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest003377D7813A7DFC.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest003377D7813A7DFC.description2}"
+	]
+	quest.003377D7813A7DFC.quest_subtitle: "{ftbquests.chapter.companheiros.quest003377D7813A7DFC.subtitle}"
+	quest.003377D7813A7DFC.title: "{ftbquests.chapter.companheiros.quest003377D7813A7DFC.title}"
+	quest.034271E79166090F.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest034271E79166090F.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest034271E79166090F.description2}"
+	]
+	quest.034271E79166090F.quest_subtitle: "{ftbquests.chapter.companheiros.quest034271E79166090F.subtitle}"
+	quest.034271E79166090F.title: "{ftbquests.chapter.companheiros.quest034271E79166090F.title}"
+	quest.037A3F72ADEB17C0.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest037A3F72ADEB17C0.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest037A3F72ADEB17C0.description2}"
+	]
+	quest.037A3F72ADEB17C0.quest_subtitle: "{ftbquests.chapter.companheiros.quest037A3F72ADEB17C0.subtitle}"
+	quest.037A3F72ADEB17C0.title: "{ftbquests.chapter.companheiros.quest037A3F72ADEB17C0.title}"
+	quest.039119DCEAB868F8.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest039119DCEAB868F8.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest039119DCEAB868F8.description2}"
+	]
+	quest.039119DCEAB868F8.quest_subtitle: "{ftbquests.chapter.companheiros.quest039119DCEAB868F8.subtitle}"
+	quest.039119DCEAB868F8.title: "{ftbquests.chapter.companheiros.quest039119DCEAB868F8.title}"
+	quest.03B38AF7A1CA1A48.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest03B38AF7A1CA1A48.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest03B38AF7A1CA1A48.description2}"
+	]
+	quest.03B38AF7A1CA1A48.quest_subtitle: "{ftbquests.chapter.companheiros.quest03B38AF7A1CA1A48.subtitle}"
+	quest.03B38AF7A1CA1A48.title: "{ftbquests.chapter.companheiros.quest03B38AF7A1CA1A48.title}"
+	quest.03DEDE9731E24183.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest03DEDE9731E24183.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest03DEDE9731E24183.description2}"
+	]
+	quest.03DEDE9731E24183.quest_subtitle: "{ftbquests.chapter.companheiros.quest03DEDE9731E24183.subtitle}"
+	quest.03DEDE9731E24183.title: "{ftbquests.chapter.companheiros.quest03DEDE9731E24183.title}"
+	quest.0A38C32A6C0A2331.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest0A38C32A6C0A2331.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest0A38C32A6C0A2331.description2}"
+	]
+	quest.0A38C32A6C0A2331.quest_subtitle: "{ftbquests.chapter.companheiros.quest0A38C32A6C0A2331.subtitle}"
+	quest.0A38C32A6C0A2331.title: "{ftbquests.chapter.companheiros.quest0A38C32A6C0A2331.title}"
+	quest.0AC6822565D0B6D6.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest0AC6822565D0B6D6.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest0AC6822565D0B6D6.description2}"
+	]
+	quest.0AC6822565D0B6D6.quest_subtitle: "{ftbquests.chapter.companheiros.quest0AC6822565D0B6D6.subtitle}"
+	quest.0AC6822565D0B6D6.title: "{ftbquests.chapter.companheiros.quest0AC6822565D0B6D6.title}"
+	quest.0CAAF6281B2B2635.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest0CAAF6281B2B2635.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest0CAAF6281B2B2635.description2}"
+	]
+	quest.0CAAF6281B2B2635.quest_subtitle: "{ftbquests.chapter.companheiros.quest0CAAF6281B2B2635.subtitle}"
+	quest.0CAAF6281B2B2635.title: "{ftbquests.chapter.companheiros.quest0CAAF6281B2B2635.title}"
+	quest.0D29281FD84CCD06.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest0D29281FD84CCD06.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest0D29281FD84CCD06.description2}"
+	]
+	quest.0D29281FD84CCD06.quest_subtitle: "{ftbquests.chapter.companheiros.quest0D29281FD84CCD06.subtitle}"
+	quest.0D29281FD84CCD06.title: "{ftbquests.chapter.companheiros.quest0D29281FD84CCD06.title}"
+	quest.0E8CF01014C8ED14.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest0E8CF01014C8ED14.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest0E8CF01014C8ED14.description2}"
+		""
+		"{ftbquests.chapter.companheiros.quest0E8CF01014C8ED14.description3}"
+		""
+		"{ftbquests.chapter.companheiros.quest0E8CF01014C8ED14.description4}"
+	]
+	quest.0E8CF01014C8ED14.quest_subtitle: "{ftbquests.chapter.companheiros.quest0E8CF01014C8ED14.subtitle}"
+	quest.0E8CF01014C8ED14.title: "{ftbquests.chapter.companheiros.quest0E8CF01014C8ED14.title}"
+	quest.103A7D70BC9934F2.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest103A7D70BC9934F2.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest103A7D70BC9934F2.description2}"
+	]
+	quest.103A7D70BC9934F2.quest_subtitle: "{ftbquests.chapter.companheiros.quest103A7D70BC9934F2.subtitle}"
+	quest.103A7D70BC9934F2.title: "{ftbquests.chapter.companheiros.quest103A7D70BC9934F2.title}"
+	quest.110B2983ED2A7A45.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest110B2983ED2A7A45.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest110B2983ED2A7A45.description2}"
+	]
+	quest.110B2983ED2A7A45.quest_subtitle: "{ftbquests.chapter.companheiros.quest110B2983ED2A7A45.subtitle}"
+	quest.110B2983ED2A7A45.title: "{ftbquests.chapter.companheiros.quest110B2983ED2A7A45.title}"
+	quest.11E9241D2D228614.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest11E9241D2D228614.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest11E9241D2D228614.description2}"
+	]
+	quest.11E9241D2D228614.quest_subtitle: "{ftbquests.chapter.companheiros.quest11E9241D2D228614.subtitle}"
+	quest.11E9241D2D228614.title: "{ftbquests.chapter.companheiros.quest11E9241D2D228614.title}"
+	quest.137FF8E197C9D53C.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest137FF8E197C9D53C.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest137FF8E197C9D53C.description2}"
+	]
+	quest.137FF8E197C9D53C.quest_subtitle: "{ftbquests.chapter.companheiros.quest137FF8E197C9D53C.subtitle}"
+	quest.137FF8E197C9D53C.title: "{ftbquests.chapter.companheiros.quest137FF8E197C9D53C.title}"
+	quest.15ABFF30F95EADA1.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest15ABFF30F95EADA1.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest15ABFF30F95EADA1.description2}"
+	]
+	quest.15ABFF30F95EADA1.quest_subtitle: "{ftbquests.chapter.companheiros.quest15ABFF30F95EADA1.subtitle}"
+	quest.15ABFF30F95EADA1.title: "{ftbquests.chapter.companheiros.quest15ABFF30F95EADA1.title}"
+	quest.1641FE6C605599E4.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest1641FE6C605599E4.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest1641FE6C605599E4.description2}"
+	]
+	quest.1641FE6C605599E4.quest_subtitle: "{ftbquests.chapter.companheiros.quest1641FE6C605599E4.subtitle}"
+	quest.1641FE6C605599E4.title: "{ftbquests.chapter.companheiros.quest1641FE6C605599E4.title}"
+	quest.174D55E31983631E.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest174D55E31983631E.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest174D55E31983631E.description2}"
+	]
+	quest.174D55E31983631E.quest_subtitle: "{ftbquests.chapter.companheiros.quest174D55E31983631E.subtitle}"
+	quest.174D55E31983631E.title: "{ftbquests.chapter.companheiros.quest174D55E31983631E.title}"
+	quest.17633E40D8FB7D5E.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest17633E40D8FB7D5E.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest17633E40D8FB7D5E.description2}"
+	]
+	quest.17633E40D8FB7D5E.quest_subtitle: "{ftbquests.chapter.companheiros.quest17633E40D8FB7D5E.subtitle}"
+	quest.17633E40D8FB7D5E.title: "{ftbquests.chapter.companheiros.quest17633E40D8FB7D5E.title}"
+	quest.181896459F921040.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest181896459F921040.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest181896459F921040.description2}"
+		""
+		"{ftbquests.chapter.companheiros.quest181896459F921040.description3}"
+		""
+		"{ftbquests.chapter.companheiros.quest181896459F921040.description4}"
+		""
+		"{ftbquests.chapter.companheiros.quest181896459F921040.description5}"
+	]
+	quest.181896459F921040.quest_subtitle: "{ftbquests.chapter.companheiros.quest181896459F921040.subtitle}"
+	quest.181896459F921040.title: "{ftbquests.chapter.companheiros.quest181896459F921040.title}"
+	quest.18362280BD4E74AC.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest18362280BD4E74AC.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest18362280BD4E74AC.description2}"
+	]
+	quest.18362280BD4E74AC.quest_subtitle: "{ftbquests.chapter.companheiros.quest18362280BD4E74AC.subtitle}"
+	quest.18362280BD4E74AC.title: "{ftbquests.chapter.companheiros.quest18362280BD4E74AC.title}"
+	quest.185AAD8298006233.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest185AAD8298006233.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest185AAD8298006233.description2}"
+	]
+	quest.185AAD8298006233.quest_subtitle: "{ftbquests.chapter.companheiros.quest185AAD8298006233.subtitle}"
+	quest.185AAD8298006233.title: "{ftbquests.chapter.companheiros.quest185AAD8298006233.title}"
+	quest.19D40D0DC63240D3.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest19D40D0DC63240D3.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest19D40D0DC63240D3.description2}"
+	]
+	quest.19D40D0DC63240D3.quest_subtitle: "{ftbquests.chapter.companheiros.quest19D40D0DC63240D3.subtitle}"
+	quest.19D40D0DC63240D3.title: "{ftbquests.chapter.companheiros.quest19D40D0DC63240D3.title}"
+	quest.1BC4D73235F525BC.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest1BC4D73235F525BC.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest1BC4D73235F525BC.description2}"
+	]
+	quest.1BC4D73235F525BC.quest_subtitle: "{ftbquests.chapter.companheiros.quest1BC4D73235F525BC.subtitle}"
+	quest.1BC4D73235F525BC.title: "{ftbquests.chapter.companheiros.quest1BC4D73235F525BC.title}"
+	quest.1CB2606907846CD6.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest1CB2606907846CD6.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest1CB2606907846CD6.description2}"
+	]
+	quest.1CB2606907846CD6.quest_subtitle: "{ftbquests.chapter.companheiros.quest1CB2606907846CD6.subtitle}"
+	quest.1CB2606907846CD6.title: "{ftbquests.chapter.companheiros.quest1CB2606907846CD6.title}"
+	quest.1E0F2F60BECE7BC2.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest1E0F2F60BECE7BC2.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest1E0F2F60BECE7BC2.description2}"
+	]
+	quest.1E0F2F60BECE7BC2.quest_subtitle: "{ftbquests.chapter.companheiros.quest1E0F2F60BECE7BC2.subtitle}"
+	quest.1E0F2F60BECE7BC2.title: "{ftbquests.chapter.companheiros.quest1E0F2F60BECE7BC2.title}"
+	quest.1F0FAD7E407A83A9.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest1F0FAD7E407A83A9.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest1F0FAD7E407A83A9.description2}"
+		""
+		"{ftbquests.chapter.companheiros.quest1F0FAD7E407A83A9.description3}"
+		""
+		"{ftbquests.chapter.companheiros.quest1F0FAD7E407A83A9.description4}"
+		""
+		"{ftbquests.chapter.companheiros.quest1F0FAD7E407A83A9.description5}"
+	]
+	quest.1F0FAD7E407A83A9.quest_subtitle: "{ftbquests.chapter.companheiros.quest1F0FAD7E407A83A9.subtitle}"
+	quest.1F0FAD7E407A83A9.title: "{ftbquests.chapter.companheiros.quest1F0FAD7E407A83A9.title}"
+	quest.210E28A3EDE9FE72.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest210E28A3EDE9FE72.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest210E28A3EDE9FE72.description2}"
+	]
+	quest.210E28A3EDE9FE72.quest_subtitle: "{ftbquests.chapter.companheiros.quest210E28A3EDE9FE72.subtitle}"
+	quest.210E28A3EDE9FE72.title: "{ftbquests.chapter.companheiros.quest210E28A3EDE9FE72.title}"
+	quest.21D5A5D0E96EC78B.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest21D5A5D0E96EC78B.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest21D5A5D0E96EC78B.description2}"
+	]
+	quest.21D5A5D0E96EC78B.quest_subtitle: "{ftbquests.chapter.companheiros.quest21D5A5D0E96EC78B.subtitle}"
+	quest.21D5A5D0E96EC78B.title: "{ftbquests.chapter.companheiros.quest21D5A5D0E96EC78B.title}"
+	quest.2241D48BD94E1431.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest2241D48BD94E1431.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest2241D48BD94E1431.description2}"
+	]
+	quest.2241D48BD94E1431.quest_subtitle: "{ftbquests.chapter.companheiros.quest2241D48BD94E1431.subtitle}"
+	quest.2241D48BD94E1431.title: "{ftbquests.chapter.companheiros.quest2241D48BD94E1431.title}"
+	quest.232FAB1EF5F6945A.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest232FAB1EF5F6945A.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest232FAB1EF5F6945A.description2}"
+		""
+		"{ftbquests.chapter.companheiros.quest232FAB1EF5F6945A.description3}"
+		""
+		"{ftbquests.chapter.companheiros.quest232FAB1EF5F6945A.description4}"
+	]
+	quest.232FAB1EF5F6945A.quest_subtitle: "{ftbquests.chapter.companheiros.quest232FAB1EF5F6945A.subtitle}"
+	quest.232FAB1EF5F6945A.title: "{ftbquests.chapter.companheiros.quest232FAB1EF5F6945A.title}"
+	quest.25D4764B77361CBA.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest25D4764B77361CBA.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest25D4764B77361CBA.description2}"
+		""
+		"{ftbquests.chapter.companheiros.quest25D4764B77361CBA.description3}"
+		""
+		"{ftbquests.chapter.companheiros.quest25D4764B77361CBA.description4}"
+		""
+		"{ftbquests.chapter.companheiros.quest25D4764B77361CBA.description5}"
+	]
+	quest.25D4764B77361CBA.quest_subtitle: "{ftbquests.chapter.companheiros.quest25D4764B77361CBA.subtitle}"
+	quest.25D4764B77361CBA.title: "{ftbquests.chapter.companheiros.quest25D4764B77361CBA.title}"
+	quest.2A22693422EE7D17.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest2A22693422EE7D17.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest2A22693422EE7D17.description2}"
+	]
+	quest.2A22693422EE7D17.quest_subtitle: "{ftbquests.chapter.companheiros.quest2A22693422EE7D17.subtitle}"
+	quest.2A22693422EE7D17.title: "{ftbquests.chapter.companheiros.quest2A22693422EE7D17.title}"
+	quest.2A6AD09B34353D26.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest2A6AD09B34353D26.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest2A6AD09B34353D26.description2}"
+	]
+	quest.2A6AD09B34353D26.quest_subtitle: "{ftbquests.chapter.companheiros.quest2A6AD09B34353D26.subtitle}"
+	quest.2A6AD09B34353D26.title: "{ftbquests.chapter.companheiros.quest2A6AD09B34353D26.title}"
+	quest.2AC9C3D0971C7A68.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest2AC9C3D0971C7A68.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest2AC9C3D0971C7A68.description2}"
+	]
+	quest.2AC9C3D0971C7A68.quest_subtitle: "{ftbquests.chapter.companheiros.quest2AC9C3D0971C7A68.subtitle}"
+	quest.2AC9C3D0971C7A68.title: "{ftbquests.chapter.companheiros.quest2AC9C3D0971C7A68.title}"
+	quest.30A7BAA7AF791393.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest30A7BAA7AF791393.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest30A7BAA7AF791393.description2}"
+	]
+	quest.30A7BAA7AF791393.quest_subtitle: "{ftbquests.chapter.companheiros.quest30A7BAA7AF791393.subtitle}"
+	quest.30A7BAA7AF791393.title: "{ftbquests.chapter.companheiros.quest30A7BAA7AF791393.title}"
+	quest.350DFEA0CE57756A.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest350DFEA0CE57756A.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest350DFEA0CE57756A.description2}"
+		""
+		"{ftbquests.chapter.companheiros.quest350DFEA0CE57756A.description3}"
+		""
+		"{ftbquests.chapter.companheiros.quest350DFEA0CE57756A.description4}"
+	]
+	quest.350DFEA0CE57756A.quest_subtitle: "{ftbquests.chapter.companheiros.quest350DFEA0CE57756A.subtitle}"
+	quest.350DFEA0CE57756A.title: "{ftbquests.chapter.companheiros.quest350DFEA0CE57756A.title}"
+	quest.354D481CFF63F72C.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest354D481CFF63F72C.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest354D481CFF63F72C.description2}"
+		""
+		"{ftbquests.chapter.companheiros.quest354D481CFF63F72C.description3}"
+		""
+		"{ftbquests.chapter.companheiros.quest354D481CFF63F72C.description4}"
+	]
+	quest.354D481CFF63F72C.quest_subtitle: "{ftbquests.chapter.companheiros.quest354D481CFF63F72C.subtitle}"
+	quest.354D481CFF63F72C.title: "{ftbquests.chapter.companheiros.quest354D481CFF63F72C.title}"
+	quest.367D33FEB1D7C90B.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest367D33FEB1D7C90B.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest367D33FEB1D7C90B.description2}"
+	]
+	quest.367D33FEB1D7C90B.quest_subtitle: "{ftbquests.chapter.companheiros.quest367D33FEB1D7C90B.subtitle}"
+	quest.367D33FEB1D7C90B.title: "{ftbquests.chapter.companheiros.quest367D33FEB1D7C90B.title}"
+	quest.36B168BF3CC42425.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest36B168BF3CC42425.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest36B168BF3CC42425.description2}"
+	]
+	quest.36B168BF3CC42425.quest_subtitle: "{ftbquests.chapter.companheiros.quest36B168BF3CC42425.subtitle}"
+	quest.36B168BF3CC42425.title: "{ftbquests.chapter.companheiros.quest36B168BF3CC42425.title}"
+	quest.3861BE4428797177.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest3861BE4428797177.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest3861BE4428797177.description2}"
+	]
+	quest.3861BE4428797177.quest_subtitle: "{ftbquests.chapter.companheiros.quest3861BE4428797177.subtitle}"
+	quest.3861BE4428797177.title: "{ftbquests.chapter.companheiros.quest3861BE4428797177.title}"
+	quest.3A924EFB429FED78.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest3A924EFB429FED78.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest3A924EFB429FED78.description2}"
+	]
+	quest.3A924EFB429FED78.quest_subtitle: "{ftbquests.chapter.companheiros.quest3A924EFB429FED78.subtitle}"
+	quest.3A924EFB429FED78.title: "{ftbquests.chapter.companheiros.quest3A924EFB429FED78.title}"
+	quest.3ADFE08DDB8E65DA.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest3ADFE08DDB8E65DA.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest3ADFE08DDB8E65DA.description2}"
+		""
+		"{ftbquests.chapter.companheiros.quest3ADFE08DDB8E65DA.description3}"
+		""
+		"{ftbquests.chapter.companheiros.quest3ADFE08DDB8E65DA.description4}"
+	]
+	quest.3ADFE08DDB8E65DA.quest_subtitle: "{ftbquests.chapter.companheiros.quest3ADFE08DDB8E65DA.subtitle}"
+	quest.3ADFE08DDB8E65DA.title: "{ftbquests.chapter.companheiros.quest3ADFE08DDB8E65DA.title}"
+	quest.3B61250814C5134C.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest3B61250814C5134C.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest3B61250814C5134C.description2}"
+	]
+	quest.3B61250814C5134C.quest_subtitle: "{ftbquests.chapter.companheiros.quest3B61250814C5134C.subtitle}"
+	quest.3B61250814C5134C.title: "{ftbquests.chapter.companheiros.quest3B61250814C5134C.title}"
+	quest.3FB74D5F629E5B76.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest3FB74D5F629E5B76.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest3FB74D5F629E5B76.description2}"
+		""
+		"{ftbquests.chapter.companheiros.quest3FB74D5F629E5B76.description3}"
+		""
+		"{ftbquests.chapter.companheiros.quest3FB74D5F629E5B76.description4}"
+		""
+		"{ftbquests.chapter.companheiros.quest3FB74D5F629E5B76.description5}"
+	]
+	quest.3FB74D5F629E5B76.quest_subtitle: "{ftbquests.chapter.companheiros.quest3FB74D5F629E5B76.subtitle}"
+	quest.3FB74D5F629E5B76.title: "{ftbquests.chapter.companheiros.quest3FB74D5F629E5B76.title}"
+	quest.4259B4E591AE0952.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest4259B4E591AE0952.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest4259B4E591AE0952.description2}"
+	]
+	quest.4259B4E591AE0952.quest_subtitle: "{ftbquests.chapter.companheiros.quest4259B4E591AE0952.subtitle}"
+	quest.4259B4E591AE0952.title: "{ftbquests.chapter.companheiros.quest4259B4E591AE0952.title}"
+	quest.42F867F215874DC7.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest42F867F215874DC7.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest42F867F215874DC7.description2}"
+	]
+	quest.42F867F215874DC7.quest_subtitle: "{ftbquests.chapter.companheiros.quest42F867F215874DC7.subtitle}"
+	quest.42F867F215874DC7.title: "{ftbquests.chapter.companheiros.quest42F867F215874DC7.title}"
+	quest.42FA42470529C95D.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest42FA42470529C95D.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest42FA42470529C95D.description2}"
+	]
+	quest.42FA42470529C95D.quest_subtitle: "{ftbquests.chapter.companheiros.quest42FA42470529C95D.subtitle}"
+	quest.42FA42470529C95D.title: "{ftbquests.chapter.companheiros.quest42FA42470529C95D.title}"
+	quest.447A38475908BEF2.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest447A38475908BEF2.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest447A38475908BEF2.description2}"
+	]
+	quest.447A38475908BEF2.quest_subtitle: "{ftbquests.chapter.companheiros.quest447A38475908BEF2.subtitle}"
+	quest.447A38475908BEF2.title: "{ftbquests.chapter.companheiros.quest447A38475908BEF2.title}"
+	quest.4520DD204F2E7E17.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest4520DD204F2E7E17.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest4520DD204F2E7E17.description2}"
+	]
+	quest.4520DD204F2E7E17.quest_subtitle: "{ftbquests.chapter.companheiros.quest4520DD204F2E7E17.subtitle}"
+	quest.4520DD204F2E7E17.title: "{ftbquests.chapter.companheiros.quest4520DD204F2E7E17.title}"
+	quest.46B84873E7AA9767.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest46B84873E7AA9767.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest46B84873E7AA9767.description2}"
+	]
+	quest.46B84873E7AA9767.quest_subtitle: "{ftbquests.chapter.companheiros.quest46B84873E7AA9767.subtitle}"
+	quest.46B84873E7AA9767.title: "{ftbquests.chapter.companheiros.quest46B84873E7AA9767.title}"
+	quest.47F485C070CAEFB5.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest47F485C070CAEFB5.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest47F485C070CAEFB5.description2}"
+	]
+	quest.47F485C070CAEFB5.quest_subtitle: "{ftbquests.chapter.companheiros.quest47F485C070CAEFB5.subtitle}"
+	quest.47F485C070CAEFB5.title: "{ftbquests.chapter.companheiros.quest47F485C070CAEFB5.title}"
+	quest.48710754E517BF8D.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest48710754E517BF8D.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest48710754E517BF8D.description2}"
+	]
+	quest.48710754E517BF8D.quest_subtitle: "{ftbquests.chapter.companheiros.quest48710754E517BF8D.subtitle}"
+	quest.48710754E517BF8D.title: "{ftbquests.chapter.companheiros.quest48710754E517BF8D.title}"
+	quest.48937E5E5ABA6B3E.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest48937E5E5ABA6B3E.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest48937E5E5ABA6B3E.description2}"
+	]
+	quest.48937E5E5ABA6B3E.quest_subtitle: "{ftbquests.chapter.companheiros.quest48937E5E5ABA6B3E.subtitle}"
+	quest.48937E5E5ABA6B3E.title: "{ftbquests.chapter.companheiros.quest48937E5E5ABA6B3E.title}"
+	quest.48A39EF43A6ED258.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest48A39EF43A6ED258.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest48A39EF43A6ED258.description2}"
+		""
+		"{ftbquests.chapter.companheiros.quest48A39EF43A6ED258.description3}"
+		""
+		"{ftbquests.chapter.companheiros.quest48A39EF43A6ED258.description4}"
+		""
+		"{ftbquests.chapter.companheiros.quest48A39EF43A6ED258.description5}"
+	]
+	quest.48A39EF43A6ED258.quest_subtitle: "{ftbquests.chapter.companheiros.quest48A39EF43A6ED258.subtitle}"
+	quest.48A39EF43A6ED258.title: "{ftbquests.chapter.companheiros.quest48A39EF43A6ED258.title}"
+	quest.4D020AF53048B9EB.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest4D020AF53048B9EB.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest4D020AF53048B9EB.description2}"
+	]
+	quest.4D020AF53048B9EB.quest_subtitle: "{ftbquests.chapter.companheiros.quest4D020AF53048B9EB.subtitle}"
+	quest.4D020AF53048B9EB.title: "{ftbquests.chapter.companheiros.quest4D020AF53048B9EB.title}"
+	quest.4E83174CE115538A.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest4E83174CE115538A.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest4E83174CE115538A.description2}"
+		""
+		"{ftbquests.chapter.companheiros.quest4E83174CE115538A.description3}"
+		""
+		"{ftbquests.chapter.companheiros.quest4E83174CE115538A.description4}"
+	]
+	quest.4E83174CE115538A.quest_subtitle: "{ftbquests.chapter.companheiros.quest4E83174CE115538A.subtitle}"
+	quest.4E83174CE115538A.title: "{ftbquests.chapter.companheiros.quest4E83174CE115538A.title}"
+	quest.4E9B756A65B89AD4.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest4E9B756A65B89AD4.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest4E9B756A65B89AD4.description2}"
+	]
+	quest.4E9B756A65B89AD4.quest_subtitle: "{ftbquests.chapter.companheiros.quest4E9B756A65B89AD4.subtitle}"
+	quest.4E9B756A65B89AD4.title: "{ftbquests.chapter.companheiros.quest4E9B756A65B89AD4.title}"
+	quest.502C5ACC41C89777.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest502C5ACC41C89777.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest502C5ACC41C89777.description2}"
+	]
+	quest.502C5ACC41C89777.quest_subtitle: "{ftbquests.chapter.companheiros.quest502C5ACC41C89777.subtitle}"
+	quest.502C5ACC41C89777.title: "{ftbquests.chapter.companheiros.quest502C5ACC41C89777.title}"
+	quest.507D6DEB530D6B8D.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest507D6DEB530D6B8D.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest507D6DEB530D6B8D.description2}"
+	]
+	quest.507D6DEB530D6B8D.quest_subtitle: "{ftbquests.chapter.companheiros.quest507D6DEB530D6B8D.subtitle}"
+	quest.507D6DEB530D6B8D.title: "{ftbquests.chapter.companheiros.quest507D6DEB530D6B8D.title}"
+	quest.514FB526D8EC5609.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest514FB526D8EC5609.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest514FB526D8EC5609.description2}"
+	]
+	quest.514FB526D8EC5609.quest_subtitle: "{ftbquests.chapter.companheiros.quest514FB526D8EC5609.subtitle}"
+	quest.514FB526D8EC5609.title: "{ftbquests.chapter.companheiros.quest514FB526D8EC5609.title}"
+	quest.51949971F1E01210.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest51949971F1E01210.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest51949971F1E01210.description2}"
+	]
+	quest.51949971F1E01210.quest_subtitle: "{ftbquests.chapter.companheiros.quest51949971F1E01210.subtitle}"
+	quest.51949971F1E01210.title: "{ftbquests.chapter.companheiros.quest51949971F1E01210.title}"
+	quest.51CFED5AEFDECBC2.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest51CFED5AEFDECBC2.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest51CFED5AEFDECBC2.description2}"
+	]
+	quest.51CFED5AEFDECBC2.quest_subtitle: "{ftbquests.chapter.companheiros.quest51CFED5AEFDECBC2.subtitle}"
+	quest.51CFED5AEFDECBC2.title: "{ftbquests.chapter.companheiros.quest51CFED5AEFDECBC2.title}"
+	quest.5333D675E9C5369B.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest5333D675E9C5369B.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest5333D675E9C5369B.description2}"
+	]
+	quest.5333D675E9C5369B.quest_subtitle: "{ftbquests.chapter.companheiros.quest5333D675E9C5369B.subtitle}"
+	quest.5333D675E9C5369B.title: "{ftbquests.chapter.companheiros.quest5333D675E9C5369B.title}"
+	quest.53BC0BBC564412AE.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest53BC0BBC564412AE.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest53BC0BBC564412AE.description2}"
+	]
+	quest.53BC0BBC564412AE.quest_subtitle: "{ftbquests.chapter.companheiros.quest53BC0BBC564412AE.subtitle}"
+	quest.53BC0BBC564412AE.title: "{ftbquests.chapter.companheiros.quest53BC0BBC564412AE.title}"
+	quest.55185DC57EDED459.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest55185DC57EDED459.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest55185DC57EDED459.description2}"
+	]
+	quest.55185DC57EDED459.quest_subtitle: "{ftbquests.chapter.companheiros.quest55185DC57EDED459.subtitle}"
+	quest.55185DC57EDED459.title: "{ftbquests.chapter.companheiros.quest55185DC57EDED459.title}"
+	quest.56EE22F9BC0C9111.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest56EE22F9BC0C9111.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest56EE22F9BC0C9111.description2}"
+	]
+	quest.56EE22F9BC0C9111.quest_subtitle: "{ftbquests.chapter.companheiros.quest56EE22F9BC0C9111.subtitle}"
+	quest.56EE22F9BC0C9111.title: "{ftbquests.chapter.companheiros.quest56EE22F9BC0C9111.title}"
+	quest.58B7A9407E93302E.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest58B7A9407E93302E.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest58B7A9407E93302E.description2}"
+	]
+	quest.58B7A9407E93302E.quest_subtitle: "{ftbquests.chapter.companheiros.quest58B7A9407E93302E.subtitle}"
+	quest.58B7A9407E93302E.title: "{ftbquests.chapter.companheiros.quest58B7A9407E93302E.title}"
+	quest.5A0EEE6562112771.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest5A0EEE6562112771.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest5A0EEE6562112771.description2}"
+	]
+	quest.5A0EEE6562112771.quest_subtitle: "{ftbquests.chapter.companheiros.quest5A0EEE6562112771.subtitle}"
+	quest.5A0EEE6562112771.title: "{ftbquests.chapter.companheiros.quest5A0EEE6562112771.title}"
+	quest.5BC6CFF0A226515F.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest5BC6CFF0A226515F.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest5BC6CFF0A226515F.description2}"
+	]
+	quest.5BC6CFF0A226515F.quest_subtitle: "{ftbquests.chapter.companheiros.quest5BC6CFF0A226515F.subtitle}"
+	quest.5BC6CFF0A226515F.title: "{ftbquests.chapter.companheiros.quest5BC6CFF0A226515F.title}"
+	quest.5BD60DC8674FFEBD.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest5BD60DC8674FFEBD.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest5BD60DC8674FFEBD.description2}"
+	]
+	quest.5BD60DC8674FFEBD.quest_subtitle: "{ftbquests.chapter.companheiros.quest5BD60DC8674FFEBD.subtitle}"
+	quest.5BD60DC8674FFEBD.title: "{ftbquests.chapter.companheiros.quest5BD60DC8674FFEBD.title}"
+	quest.5E3FD2CE963BA0CE.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest5E3FD2CE963BA0CE.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest5E3FD2CE963BA0CE.description2}"
+	]
+	quest.5E3FD2CE963BA0CE.quest_subtitle: "{ftbquests.chapter.companheiros.quest5E3FD2CE963BA0CE.subtitle}"
+	quest.5E3FD2CE963BA0CE.title: "{ftbquests.chapter.companheiros.quest5E3FD2CE963BA0CE.title}"
+	quest.5EC29AFDBE20BBEE.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest5EC29AFDBE20BBEE.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest5EC29AFDBE20BBEE.description2}"
+	]
+	quest.5EC29AFDBE20BBEE.quest_subtitle: "{ftbquests.chapter.companheiros.quest5EC29AFDBE20BBEE.subtitle}"
+	quest.5EC29AFDBE20BBEE.title: "{ftbquests.chapter.companheiros.quest5EC29AFDBE20BBEE.title}"
+	quest.5F3A6D74B5373F58.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest5F3A6D74B5373F58.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest5F3A6D74B5373F58.description2}"
+	]
+	quest.5F3A6D74B5373F58.quest_subtitle: "{ftbquests.chapter.companheiros.quest5F3A6D74B5373F58.subtitle}"
+	quest.5F3A6D74B5373F58.title: "{ftbquests.chapter.companheiros.quest5F3A6D74B5373F58.title}"
+	quest.605A3DB021F4A005.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest605A3DB021F4A005.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest605A3DB021F4A005.description2}"
+	]
+	quest.605A3DB021F4A005.quest_subtitle: "{ftbquests.chapter.companheiros.quest605A3DB021F4A005.subtitle}"
+	quest.605A3DB021F4A005.title: "{ftbquests.chapter.companheiros.quest605A3DB021F4A005.title}"
+	quest.60D0D04231C25779.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest60D0D04231C25779.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest60D0D04231C25779.description2}"
+	]
+	quest.60D0D04231C25779.quest_subtitle: "{ftbquests.chapter.companheiros.quest60D0D04231C25779.subtitle}"
+	quest.60D0D04231C25779.title: "{ftbquests.chapter.companheiros.quest60D0D04231C25779.title}"
+	quest.66D2698A1FA73C57.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest66D2698A1FA73C57.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest66D2698A1FA73C57.description2}"
+		""
+		"{ftbquests.chapter.companheiros.quest66D2698A1FA73C57.description3}"
+		""
+		"{ftbquests.chapter.companheiros.quest66D2698A1FA73C57.description4}"
+	]
+	quest.66D2698A1FA73C57.quest_subtitle: "{ftbquests.chapter.companheiros.quest66D2698A1FA73C57.subtitle}"
+	quest.66D2698A1FA73C57.title: "{ftbquests.chapter.companheiros.quest66D2698A1FA73C57.title}"
+	quest.67C62E53FD17AC23.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest67C62E53FD17AC23.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest67C62E53FD17AC23.description2}"
+	]
+	quest.67C62E53FD17AC23.quest_subtitle: "{ftbquests.chapter.companheiros.quest67C62E53FD17AC23.subtitle}"
+	quest.67C62E53FD17AC23.title: "{ftbquests.chapter.companheiros.quest67C62E53FD17AC23.title}"
+	quest.6A939C743A7228BC.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest6A939C743A7228BC.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest6A939C743A7228BC.description2}"
+	]
+	quest.6A939C743A7228BC.quest_subtitle: "{ftbquests.chapter.companheiros.quest6A939C743A7228BC.subtitle}"
+	quest.6A939C743A7228BC.title: "{ftbquests.chapter.companheiros.quest6A939C743A7228BC.title}"
+	quest.6AC91A81F65CB617.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest6AC91A81F65CB617.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest6AC91A81F65CB617.description2}"
+	]
+	quest.6AC91A81F65CB617.quest_subtitle: "{ftbquests.chapter.companheiros.quest6AC91A81F65CB617.subtitle}"
+	quest.6AC91A81F65CB617.title: "{ftbquests.chapter.companheiros.quest6AC91A81F65CB617.title}"
+	quest.6B19BF8484432947.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest6B19BF8484432947.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest6B19BF8484432947.description2}"
+	]
+	quest.6B19BF8484432947.quest_subtitle: "{ftbquests.chapter.companheiros.quest6B19BF8484432947.subtitle}"
+	quest.6B19BF8484432947.title: "{ftbquests.chapter.companheiros.quest6B19BF8484432947.title}"
+	quest.6B3D0A1C8D8AA2FB.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest6B3D0A1C8D8AA2FB.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest6B3D0A1C8D8AA2FB.description2}"
+	]
+	quest.6B3D0A1C8D8AA2FB.quest_subtitle: "{ftbquests.chapter.companheiros.quest6B3D0A1C8D8AA2FB.subtitle}"
+	quest.6B3D0A1C8D8AA2FB.title: "{ftbquests.chapter.companheiros.quest6B3D0A1C8D8AA2FB.title}"
+	quest.6B4F994116C4DE02.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest6B4F994116C4DE02.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest6B4F994116C4DE02.description2}"
+		""
+		"{ftbquests.chapter.companheiros.quest6B4F994116C4DE02.description3}"
+		""
+		"{ftbquests.chapter.companheiros.quest6B4F994116C4DE02.description4}"
+		""
+		"{ftbquests.chapter.companheiros.quest6B4F994116C4DE02.description5}"
+		""
+		"{ftbquests.chapter.companheiros.quest6B4F994116C4DE02.description6}"
+		""
+		"{ftbquests.chapter.companheiros.quest6B4F994116C4DE02.description7}"
+		""
+		"{ftbquests.chapter.companheiros.quest6B4F994116C4DE02.description8}"
+	]
+	quest.6B4F994116C4DE02.quest_subtitle: "{ftbquests.chapter.companheiros.quest6B4F994116C4DE02.subtitle}"
+	quest.6B4F994116C4DE02.title: "{ftbquests.chapter.companheiros.quest6B4F994116C4DE02.title}"
+	quest.6FE50EEAC2BFFBCA.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest6FE50EEAC2BFFBCA.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest6FE50EEAC2BFFBCA.description2}"
+	]
+	quest.6FE50EEAC2BFFBCA.quest_subtitle: "{ftbquests.chapter.companheiros.quest6FE50EEAC2BFFBCA.subtitle}"
+	quest.6FE50EEAC2BFFBCA.title: "{ftbquests.chapter.companheiros.quest6FE50EEAC2BFFBCA.title}"
+	quest.710E93F24F2BBAFE.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest710E93F24F2BBAFE.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest710E93F24F2BBAFE.description2}"
+	]
+	quest.710E93F24F2BBAFE.quest_subtitle: "{ftbquests.chapter.companheiros.quest710E93F24F2BBAFE.subtitle}"
+	quest.710E93F24F2BBAFE.title: "{ftbquests.chapter.companheiros.quest710E93F24F2BBAFE.title}"
+	quest.71ED907267717B78.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest71ED907267717B78.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest71ED907267717B78.description2}"
+	]
+	quest.71ED907267717B78.quest_subtitle: "{ftbquests.chapter.companheiros.quest71ED907267717B78.subtitle}"
+	quest.71ED907267717B78.title: "{ftbquests.chapter.companheiros.quest71ED907267717B78.title}"
+	quest.7201D9ACFD2DAC26.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest7201D9ACFD2DAC26.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest7201D9ACFD2DAC26.description2}"
+	]
+	quest.7201D9ACFD2DAC26.quest_subtitle: "{ftbquests.chapter.companheiros.quest7201D9ACFD2DAC26.subtitle}"
+	quest.7201D9ACFD2DAC26.title: "{ftbquests.chapter.companheiros.quest7201D9ACFD2DAC26.title}"
+	quest.745E12F1496AAA8E.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest745E12F1496AAA8E.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest745E12F1496AAA8E.description2}"
+	]
+	quest.745E12F1496AAA8E.quest_subtitle: "{ftbquests.chapter.companheiros.quest745E12F1496AAA8E.subtitle}"
+	quest.745E12F1496AAA8E.title: "{ftbquests.chapter.companheiros.quest745E12F1496AAA8E.title}"
+	quest.75C199E0A9952048.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest75C199E0A9952048.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest75C199E0A9952048.description2}"
+	]
+	quest.75C199E0A9952048.quest_subtitle: "{ftbquests.chapter.companheiros.quest75C199E0A9952048.subtitle}"
+	quest.75C199E0A9952048.title: "{ftbquests.chapter.companheiros.quest75C199E0A9952048.title}"
+	quest.79C6272D7F3AA36E.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest79C6272D7F3AA36E.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest79C6272D7F3AA36E.description2}"
+	]
+	quest.79C6272D7F3AA36E.quest_subtitle: "{ftbquests.chapter.companheiros.quest79C6272D7F3AA36E.subtitle}"
+	quest.79C6272D7F3AA36E.title: "{ftbquests.chapter.companheiros.quest79C6272D7F3AA36E.title}"
+	quest.7A4BC47465B34503.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest7A4BC47465B34503.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest7A4BC47465B34503.description2}"
+	]
+	quest.7A4BC47465B34503.quest_subtitle: "{ftbquests.chapter.companheiros.quest7A4BC47465B34503.subtitle}"
+	quest.7A4BC47465B34503.title: "{ftbquests.chapter.companheiros.quest7A4BC47465B34503.title}"
+	quest.7A65158F13A57530.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest7A65158F13A57530.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest7A65158F13A57530.description2}"
+	]
+	quest.7A65158F13A57530.quest_subtitle: "{ftbquests.chapter.companheiros.quest7A65158F13A57530.subtitle}"
+	quest.7A65158F13A57530.title: "{ftbquests.chapter.companheiros.quest7A65158F13A57530.title}"
+	quest.7AA804869DC7C0F6.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest7AA804869DC7C0F6.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest7AA804869DC7C0F6.description2}"
+	]
+	quest.7AA804869DC7C0F6.quest_subtitle: "{ftbquests.chapter.companheiros.quest7AA804869DC7C0F6.subtitle}"
+	quest.7AA804869DC7C0F6.title: "{ftbquests.chapter.companheiros.quest7AA804869DC7C0F6.title}"
+	quest.7C1C7B9AE139DF40.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest7C1C7B9AE139DF40.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest7C1C7B9AE139DF40.description2}"
+	]
+	quest.7C1C7B9AE139DF40.quest_subtitle: "{ftbquests.chapter.companheiros.quest7C1C7B9AE139DF40.subtitle}"
+	quest.7C1C7B9AE139DF40.title: "{ftbquests.chapter.companheiros.quest7C1C7B9AE139DF40.title}"
+	quest.7C3CAB5C225719CA.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest7C3CAB5C225719CA.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest7C3CAB5C225719CA.description2}"
+	]
+	quest.7C3CAB5C225719CA.quest_subtitle: "{ftbquests.chapter.companheiros.quest7C3CAB5C225719CA.subtitle}"
+	quest.7C3CAB5C225719CA.title: "{ftbquests.chapter.companheiros.quest7C3CAB5C225719CA.title}"
+	quest.7CE269ADEA2460C8.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest7CE269ADEA2460C8.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest7CE269ADEA2460C8.description2}"
+	]
+	quest.7CE269ADEA2460C8.quest_subtitle: "{ftbquests.chapter.companheiros.quest7CE269ADEA2460C8.subtitle}"
+	quest.7CE269ADEA2460C8.title: "{ftbquests.chapter.companheiros.quest7CE269ADEA2460C8.title}"
+	quest.7D07451F33AF864E.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest7D07451F33AF864E.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest7D07451F33AF864E.description2}"
+	]
+	quest.7D07451F33AF864E.quest_subtitle: "{ftbquests.chapter.companheiros.quest7D07451F33AF864E.subtitle}"
+	quest.7D07451F33AF864E.title: "{ftbquests.chapter.companheiros.quest7D07451F33AF864E.title}"
+	quest.7DB892628987C76B.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest7DB892628987C76B.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest7DB892628987C76B.description2}"
+	]
+	quest.7DB892628987C76B.quest_subtitle: "{ftbquests.chapter.companheiros.quest7DB892628987C76B.subtitle}"
+	quest.7DB892628987C76B.title: "{ftbquests.chapter.companheiros.quest7DB892628987C76B.title}"
+	quest.7E7E4E803D6571FE.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest7E7E4E803D6571FE.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest7E7E4E803D6571FE.description2}"
+	]
+	quest.7E7E4E803D6571FE.quest_subtitle: "{ftbquests.chapter.companheiros.quest7E7E4E803D6571FE.subtitle}"
+	quest.7E7E4E803D6571FE.title: "{ftbquests.chapter.companheiros.quest7E7E4E803D6571FE.title}"
+	quest.7F846C3950533683.quest_desc: [
+		"{ftbquests.chapter.companheiros.quest7F846C3950533683.description1}"
+		""
+		"{ftbquests.chapter.companheiros.quest7F846C3950533683.description2}"
+	]
+	quest.7F846C3950533683.quest_subtitle: "{ftbquests.chapter.companheiros.quest7F846C3950533683.subtitle}"
+	quest.7F846C3950533683.title: "{ftbquests.chapter.companheiros.quest7F846C3950533683.title}"
+	task.01764A0C4A16AA09.title: "{ftbquests.chapter.companheiros.quest4D020AF53048B9EB.task.title}"
+	task.03DFF3AA1986627A.title: "{ftbquests.chapter.companheiros.quest2A6AD09B34353D26.task.title}"
+	task.080825C0158DA76A.title: "{ftbquests.chapter.companheiros.quest48A39EF43A6ED258.task.title}"
+	task.0865DA6C56727C7B.title: "{ftbquests.chapter.companheiros.quest185AAD8298006233.task.title}"
+	task.088A56CEDB7A7AD4.title: "{ftbquests.chapter.companheiros.quest5F3A6D74B5373F58.task.title}"
+	task.08C64849A01323D0.title: "{ftbquests.chapter.companheiros.quest350DFEA0CE57756A.task.title}"
+	task.0A0D86F791F13DD9.title: "{ftbquests.chapter.companheiros.quest67C62E53FD17AC23.task.title}"
+	task.0BF2DC52E6CA96A6.title: "{ftbquests.chapter.companheiros.quest174D55E31983631E.task.title}"
+	task.0DC81D7B0A2F82A4.title: "{ftbquests.chapter.companheiros.quest7E7E4E803D6571FE.task.title}"
+	task.0DF2CB0BD30E9DBF.title: "{ftbquests.chapter.companheiros.quest103A7D70BC9934F2.task.title}"
+	task.0F25E4708C4C6AEC.title: "{ftbquests.chapter.companheiros.quest0E8CF01014C8ED14.task.title}"
+	task.0FFCF2E2C2FBFFD9.title: "{ftbquests.chapter.companheiros.quest1BC4D73235F525BC.task.title}"
+	task.1043636F187E9B99.title: "{ftbquests.chapter.companheiros.quest79C6272D7F3AA36E.task.title}"
+	task.1076ABE7E69D66A2.title: "{ftbquests.chapter.companheiros.quest7CE269ADEA2460C8.task.title}"
+	task.1157ED5E7B4D1826.title: "{ftbquests.chapter.companheiros.quest51CFED5AEFDECBC2.task.title}"
+	task.13B213DDBA88638E.title: "{ftbquests.chapter.companheiros.quest4E83174CE115538A.task.title}"
+	task.16AB52C7B5FC6D3F.title: "{ftbquests.chapter.companheiros.quest1F0FAD7E407A83A9.task.title}"
+	task.197BAA9E7C32C5B7.title: "{ftbquests.chapter.companheiros.quest2241D48BD94E1431.task.title}"
+	task.1DD6C0A27B3091AE.title: "{ftbquests.chapter.companheiros.quest17633E40D8FB7D5E.task.title}"
+	task.23DE123D1E4E8067.title: "{ftbquests.chapter.companheiros.quest6B4F994116C4DE02.task.title}"
+	task.24E2557AEB410EDB.title: "{ftbquests.chapter.companheiros.quest3ADFE08DDB8E65DA.task.title}"
+	task.250EC043570CBC86.title: "{ftbquests.chapter.companheiros.quest5A0EEE6562112771.task.title}"
+	task.26B47F6A1DE1758F.title: "{ftbquests.chapter.companheiros.quest7DB892628987C76B.task.title}"
+	task.27750423B12D1664.title: "{ftbquests.chapter.companheiros.quest5BD60DC8674FFEBD.task.title}"
+	task.2889D5C66659E990.title: "{ftbquests.chapter.companheiros.quest4259B4E591AE0952.task.title}"
+	task.28CD40B81CCA4A4C.title: "{ftbquests.chapter.companheiros.quest7F846C3950533683.task.title}"
+	task.28FBD973F989B910.title: "{ftbquests.chapter.companheiros.quest3A924EFB429FED78.task.title}"
+	task.2A714BA7A1CDB17A.title: "{ftbquests.chapter.companheiros.quest502C5ACC41C89777.task.title}"
+	task.2C3DD569F2FAA12B.title: "{ftbquests.chapter.companheiros.quest42F867F215874DC7.task.title}"
+	task.2D8ECD6CCAB676D8.title: "{ftbquests.chapter.companheiros.quest15ABFF30F95EADA1.task.title}"
+	task.2FEDC30FD4263936.title: "{ftbquests.chapter.companheiros.quest5E3FD2CE963BA0CE.task.title}"
+	task.3046CC12EDE4AD7D.title: "{ftbquests.chapter.companheiros.quest7AA804869DC7C0F6.task.title}"
+	task.306C7B752049E2FE.title: "{ftbquests.chapter.companheiros.quest507D6DEB530D6B8D.task.title}"
+	task.320F2572F436F7C8.title: "{ftbquests.chapter.companheiros.quest5BC6CFF0A226515F.task.title}"
+	task.32F9CF6A6A50F2C4.title: "{ftbquests.chapter.companheiros.quest4E9B756A65B89AD4.task.title}"
+	task.33B43B53AD26953C.title: "{ftbquests.chapter.companheiros.quest037A3F72ADEB17C0.task.title}"
+	task.33DE977FEF5C92E8.title: "{ftbquests.chapter.companheiros.quest034271E79166090F.task.title}"
+	task.341388578F373084.title: "{ftbquests.chapter.companheiros.quest2A22693422EE7D17.task.title}"
+	task.34E4DC56D46A01D7.title: "{ftbquests.chapter.companheiros.quest03DEDE9731E24183.task.title}"
+	task.351B8A7F19901057.title: "{ftbquests.chapter.companheiros.quest0CAAF6281B2B2635.task.title}"
+	task.35694E1749DE5DAD.title: "{ftbquests.chapter.companheiros.quest48710754E517BF8D.task.title}"
+	task.35CEDDE880CE1661.title: "{ftbquests.chapter.companheiros.quest039119DCEAB868F8.task.title}"
+	task.364332D2FBD73CDA.title: "{ftbquests.chapter.companheiros.quest18362280BD4E74AC.task.title}"
+	task.38AA8611BD6AD5A7.title: "{ftbquests.chapter.companheiros.quest745E12F1496AAA8E.task.title}"
+	task.39A5EC9878EF9488.title: "{ftbquests.chapter.companheiros.quest60D0D04231C25779.task.title}"
+	task.3A1B7EC14B286132.title: "{ftbquests.chapter.companheiros.quest21D5A5D0E96EC78B.task.title}"
+	task.3AF647046516B4B2.title: "{ftbquests.chapter.companheiros.quest66D2698A1FA73C57.task.title}"
+	task.3B628E59CFB9E42A.title: "{ftbquests.chapter.companheiros.quest0A38C32A6C0A2331.task.title}"
+	task.3CCDFB9364973969.title: "{ftbquests.chapter.companheiros.quest1E0F2F60BECE7BC2.task.title}"
+	task.3ECD99D574367447.title: "{ftbquests.chapter.companheiros.quest354D481CFF63F72C.task.title}"
+	task.4225BDFC4424367F.title: "{ftbquests.chapter.companheiros.quest605A3DB021F4A005.task.title}"
+	task.42B70412111E6D83.title: "{ftbquests.chapter.companheiros.quest0AC6822565D0B6D6.task.title}"
+	task.42E346D1A01B50C6.title: "{ftbquests.chapter.companheiros.quest55185DC57EDED459.task.title}"
+	task.42EC2F1C15AD4A7B.title: "{ftbquests.chapter.companheiros.quest47F485C070CAEFB5.task.title}"
+	task.437608F91E0A91CD.title: "{ftbquests.chapter.companheiros.quest25D4764B77361CBA.task.title}"
+	task.44B2541098EF062C.title: "{ftbquests.chapter.companheiros.quest19D40D0DC63240D3.task.title}"
+	task.47558A02E6443C38.title: "{ftbquests.chapter.companheiros.quest3B61250814C5134C.task.title}"
+	task.4A2766AB14B4AD74.title: "{ftbquests.chapter.companheiros.quest110B2983ED2A7A45.task.title}"
+	task.4BB0A3BD7BC2221D.title: "{ftbquests.chapter.companheiros.quest5333D675E9C5369B.task.title}"
+	task.4C50BE92C855F164.title: "{ftbquests.chapter.companheiros.quest6B19BF8484432947.task.title}"
+	task.4CDBCB051E1C66DC.title: "{ftbquests.chapter.companheiros.quest1CB2606907846CD6.task.title}"
+	task.50E02B5336474466.title: "{ftbquests.chapter.companheiros.quest210E28A3EDE9FE72.task.title}"
+	task.513A0E5588A8A2D2.title: "{ftbquests.chapter.companheiros.quest5EC29AFDBE20BBEE.task.title}"
+	task.51570D407CA751F2.title: "{ftbquests.chapter.companheiros.quest30A7BAA7AF791393.task.title}"
+	task.51C6A6DE7CD812A2.title: "{ftbquests.chapter.companheiros.quest137FF8E197C9D53C.task.title}"
+	task.523C821C6D960B52.title: "{ftbquests.chapter.companheiros.quest53BC0BBC564412AE.task.title}"
+	task.52AC7F08EB3B140C.title: "{ftbquests.chapter.companheiros.quest56EE22F9BC0C9111.task.title}"
+	task.54DE786E3967477F.title: "{ftbquests.chapter.companheiros.quest7D07451F33AF864E.task.title}"
+	task.56AF7ED026CBCED7.title: "{ftbquests.chapter.companheiros.quest51949971F1E01210.task.title}"
+	task.56B4EAED5F38D089.title: "{ftbquests.chapter.companheiros.quest3FB74D5F629E5B76.task.title}"
+	task.572466EA00B9ACB5.title: "{ftbquests.chapter.companheiros.quest46B84873E7AA9767.task.title}"
+	task.596BAD06E03E4BC3.title: "{ftbquests.chapter.companheiros.quest3861BE4428797177.task.title}"
+	task.5BF801D7DFAE1520.title: "{ftbquests.chapter.companheiros.quest7C1C7B9AE139DF40.task.title}"
+	task.5CC0DDF2C5A8FD10.title: "{ftbquests.chapter.companheiros.quest2AC9C3D0971C7A68.task.title}"
+	task.5CD3713E06F362AE.title: "{ftbquests.chapter.companheiros.quest48937E5E5ABA6B3E.task.title}"
+	task.5D6185439E1CFF48.title: "{ftbquests.chapter.companheiros.quest7A65158F13A57530.task.title}"
+	task.5DE1A59A7EF44B2E.title: "{ftbquests.chapter.companheiros.quest6FE50EEAC2BFFBCA.task.title}"
+	task.5EA7584019181379.title: "{ftbquests.chapter.companheiros.quest7A4BC47465B34503.task.title}"
+	task.5F7D9497A2F74964.title: "{ftbquests.chapter.companheiros.quest710E93F24F2BBAFE.task.title}"
+	task.5FE1E559BFC9ADFD.title: "{ftbquests.chapter.companheiros.quest11E9241D2D228614.task.title}"
+	task.60036FC5C4191760.title: "{ftbquests.chapter.companheiros.quest6AC91A81F65CB617.task.title}"
+	task.6034B5C12008A2D4.title: "{ftbquests.chapter.companheiros.quest0D29281FD84CCD06.task.title}"
+	task.61B8D390C46EC933.title: "{ftbquests.chapter.companheiros.quest6B3D0A1C8D8AA2FB.task.title}"
+	task.61C31C1F220240B0.title: "{ftbquests.chapter.companheiros.quest447A38475908BEF2.task.title}"
+	task.65365857DD546D90.title: "{ftbquests.chapter.companheiros.quest03B38AF7A1CA1A48.task.title}"
+	task.65CC0ACC5ECEFDB6.title: "{ftbquests.chapter.companheiros.quest58B7A9407E93302E.task.title}"
+	task.666127F39813F434.title: "{ftbquests.chapter.companheiros.quest367D33FEB1D7C90B.task.title}"
+	task.6714A873EB5E67EB.title: "{ftbquests.chapter.companheiros.quest6A939C743A7228BC.task.title}"
+	task.672022EC418D2C94.title: "{ftbquests.chapter.companheiros.quest181896459F921040.task.title}"
+	task.6A1E4C5B9615DD9F.title: "{ftbquests.chapter.companheiros.quest7C3CAB5C225719CA.task.title}"
+	task.6D9232D50668FB2C.title: "{ftbquests.chapter.companheiros.quest514FB526D8EC5609.task.title}"
+	task.6EE86CB35C6B8C4A.title: "{ftbquests.chapter.companheiros.quest003377D7813A7DFC.task.title}"
+	task.712F77A0A98611FF.title: "{ftbquests.chapter.companheiros.quest232FAB1EF5F6945A.task.title}"
+	task.73708565855E5C9C.title: "{ftbquests.chapter.companheiros.quest75C199E0A9952048.task.title}"
+	task.7422D7F5EA0E9FEB.title: "{ftbquests.chapter.companheiros.quest7201D9ACFD2DAC26.task.title}"
+	task.772508B55F192878.title: "{ftbquests.chapter.companheiros.quest71ED907267717B78.task.title}"
+	task.779D9AE9B258EC8C.title: "{ftbquests.chapter.companheiros.quest36B168BF3CC42425.task.title}"
+	task.7BD0C730204A4D8B.title: "{ftbquests.chapter.companheiros.quest4520DD204F2E7E17.task.title}"
+	task.7C53BC5C1C7F744E.title: "{ftbquests.chapter.companheiros.quest42FA42470529C95D.task.title}"
+	task.7DD0803450B0D638.title: "{ftbquests.chapter.companheiros.quest1641FE6C605599E4.task.title}"
 }

@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="pipinha_dfhashfix"
+version="1.0.0"
+displayName="Pipinha's Village Density Hash Fix"
+description="Speeds up terrain generation with huge density-function packs (Lithosphere): memoizes density-function hashes and reference mapping."
+
+[[mixins]]
+config="pipinha_dfhashfix.mixins.json"
+
+[[dependencies.pipinha_dfhashfix]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.pipinha_dfhashfix]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"

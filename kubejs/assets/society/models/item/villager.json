@@ -2,5 +2,17 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "society:item/villager_icons/shepherd"
-  }
+  },
+  "overrides": [
+    { "predicate": { "custom_model_data": 1 }, "model": "society:item/villager/banker" },
+    { "predicate": { "custom_model_data": 2 }, "model": "society:item/villager/blacksmith" },
+    { "predicate": { "custom_model_data": 3 }, "model": "society:item/villager/carpenter" },
+    { "predicate": { "custom_model_data": 4 }, "model": "society:item/villager/fisher" },
+    { "predicate": { "custom_model_data": 5 }, "model": "society:item/villager/librarian" },
+    { "predicate": { "custom_model_data": 6 }, "model": "society:item/villager/market" },
+    { "predicate": { "custom_model_data": 7 }, "model": "society:item/villager/shepherd" },
+    { "predicate": { "custom_model_data": 8 }, "model": "society:item/villager/trader" },
+    { "predicate": { "custom_model_data": 9 }, "model": "society:item/villager/wise_oak" },
+    { "predicate": { "custom_model_data": 10 }, "model": "society:item/villager/witch" }
+  ]
 }

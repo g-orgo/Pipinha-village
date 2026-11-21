@@ -1,0 +1,6 @@
+{
+  "entities": "#society:tameable/hay_block",
+  "items": {
+    "item": "minecraft:hay_block"
+  }
+}

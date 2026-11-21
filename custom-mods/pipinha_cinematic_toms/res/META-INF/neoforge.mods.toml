@@ -1,0 +1,68 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "All Rights Reserved"
+issueTrackerURL = ""
+
+[[mods]]
+modId = "pipinha_cinematic_toms"
+version = "1.0.0"
+displayName = "Pipinha's Village Cinematic Storage"
+description = '''
+Cinematic Interactions scene for Tom's Simple Storage terminals: sortable item panel with search, crafting grid, JEI and EMI support in the scene, and a trash slot.
+'''
+
+[[mixins]]
+config = "pipinha_cinematic_toms.mixins.json"
+
+# EMI is optional: this config only applies when EMI is present.
+[[mixins]]
+config = "pipinha_cinematic_toms.emi.mixins.json"
+
+[[dependencies.pipinha_cinematic_toms]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.pipinha_cinematic_toms]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.pipinha_cinematic_toms]]
+modId = "cinematic"
+type = "required"
+versionRange = "[0.18.2,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.pipinha_cinematic_toms]]
+modId = "toms_storage"
+type = "required"
+versionRange = "[2.4.2,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.pipinha_cinematic_toms]]
+modId = "emi"
+type = "optional"
+versionRange = "[1.1.24,)"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.pipinha_cinematic_toms]]
+modId = "jei"
+type = "optional"
+versionRange = "[19.64.0.455,)"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.pipinha_cinematic_toms]]
+modId = "trashslot"
+type = "optional"
+versionRange = "[21.1.11,)"
+ordering = "AFTER"
+side = "CLIENT"

@@ -5,7 +5,7 @@
     }
   ],
   "shop_id": "wandering_baker",
-  "name": "shop.society_trading.wandering_baker",
+  "name": {"translate": "shop.society_trading.wandering_baker"},
   "texture": "bakery:textures/block/baker_station_1",
   "entity": "bakery:wandering_baker",
   "hidden_from_selector": true,

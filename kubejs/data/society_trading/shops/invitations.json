@@ -1,14 +1,15 @@
 {
   "shop_id": "invitations",
-  "name": "shop.society_trading.invitations",
+  "name": {"translate": "shop.society_trading.invitations"},
   "texture": "dialog:textures/portraits/carpenter",
   "hidden_from_auto_trader": true,
   "jei_catalyst": {
-    "id": "society:invitation",
+    "id": "society:villager",
     "components": {
       "minecraft:custom_data": {
-        "type": "society:carpenter"
-      }
+        "type": "carpenter"
+      },
+      "minecraft:custom_model_data": 3
     }
   },
   "selector_weight": -96,
@@ -44,7 +45,8 @@
         "components": {
           "minecraft:custom_data": {
             "type": "society:market"
-          }
+          },
+          "minecraft:custom_name": "{\"translate\":\"item.society.invitation.named\",\"with\":[{\"translate\":\"shop.society_trading.market\"}],\"italic\":false}"
         }
       },
       "request": {
@@ -60,7 +62,8 @@
         "components": {
           "minecraft:custom_data": {
             "type": "society:blacksmith"
-          }
+          },
+          "minecraft:custom_name": "{\"translate\":\"item.society.invitation.named\",\"with\":[{\"translate\":\"shop.society_trading.blacksmith\"}],\"italic\":false}"
         }
       },
       "request": {
@@ -76,7 +79,8 @@
         "components": {
           "minecraft:custom_data": {
             "type": "society:shepherd"
-          }
+          },
+          "minecraft:custom_name": "{\"translate\":\"item.society.invitation.named\",\"with\":[{\"translate\":\"shop.society_trading.shepherd\"}],\"italic\":false}"
         }
       },
       "request": {
@@ -92,7 +96,8 @@
         "components": {
           "minecraft:custom_data": {
             "type": "society:fisher"
-          }
+          },
+          "minecraft:custom_name": "{\"translate\":\"item.society.invitation.named\",\"with\":[{\"translate\":\"shop.society_trading.fisher\"}],\"italic\":false}"
         }
       },
       "request": {
@@ -110,7 +115,8 @@
         "components": {
           "minecraft:custom_data": {
             "type": "society:banker"
-          }
+          },
+          "minecraft:custom_name": "{\"translate\":\"item.society.invitation.named\",\"with\":[{\"translate\":\"shop.society_trading.banker\"}],\"italic\":false}"
         }
       },
       "request": {
@@ -128,7 +134,8 @@
         "components": {
           "minecraft:custom_data": {
             "type": "society:librarian"
-          }
+          },
+          "minecraft:custom_name": "{\"translate\":\"item.society.invitation.named\",\"with\":[{\"translate\":\"shop.society_trading.librarian\"}],\"italic\":false}"
         }
       },
       "request": {
@@ -146,7 +153,8 @@
         "components": {
           "minecraft:custom_data": {
             "type": "society:witch"
-          }
+          },
+          "minecraft:custom_name": "{\"translate\":\"item.society.invitation.named\",\"with\":[{\"translate\":\"shop.society_trading.witch\"}],\"italic\":false}"
         }
       },
       "request": {
@@ -164,7 +172,8 @@
         "components": {
           "minecraft:custom_data": {
             "type": "society:trader"
-          }
+          },
+          "minecraft:custom_name": "{\"translate\":\"item.society.invitation.named\",\"with\":[{\"translate\":\"shop.society_trading.trader\"}],\"italic\":false}"
         }
       },
       "request": {

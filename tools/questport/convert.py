@@ -1,10 +1,12 @@
 """Item stack conversion: 1.20.1 FTB Quests NBT -> 1.21.1 ids and data components."""
-import json, os, pickle, collections
+import json, os, pickle, collections, sys
 from snbt import Raw
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 K, _ = pickle.load(open(HERE + '/known.pkl', 'rb'))
 ROOT = "/var/home/Orgo/Documentos/curseforge/minecraft/Instances/Pipinha's Village"
+sys.path.insert(0, ROOT + '/tools/dataport')
+from fix_shops import VILLAGER_ICON_CMD  # face number per villager type (models/item/villager.json)
 RENAME = json.load(open(ROOT + '/tools/kjsport/idscan_renames.json'))
 RENAME.update({  # each target checked in the 1.21.1 jars (lang/model) on 2026-11-13
     'bakery:bakery_standard': 'bakery:bakery_banner',
@@ -68,7 +70,16 @@ def components(st, role):
         elif k == 'quality_food':
             lv = as_int(v['quality'])
             out['quality_food:quality'] = {'type': 'quality_food:' + QUALITY[lv], 'level': Raw(str(lv))}
-        elif k == 'type' and iid in ('society:invitation', 'society:villager'): custom['type'] = v
+        elif k == 'type' and iid == 'society:villager':
+            # 1.20.1 {type:{id:"society:X"}} -> custom_data {type:"X"} plus the face number,
+            # same shape as the shop icons (tools/dataport/fix_shops.py).
+            t = str(v['id'] if isinstance(v, dict) else v).split(':')[-1]
+            custom['type'] = t
+            if t in VILLAGER_ICON_CMD: out['minecraft:custom_model_data'] = Raw(str(VILLAGER_ICON_CMD[t]))
+            else: LOG['villager type without face'][t] += 1
+        elif k == 'type' and iid == 'society:invitation':
+            # npcInvite.js reads getString("type"): keep "society:X" as a plain string.
+            custom['type'] = str(v['id'] if isinstance(v, dict) else v)
         elif k == 'StoredEnchantments':
             out['minecraft:stored_enchantments'] = {'levels': {e['id']: Raw(str(as_int(e['lvl']))) for e in v}}
         elif k == 'Potion': out['minecraft:potion_contents'] = {'potion': v}
@@ -77,7 +88,7 @@ def components(st, role):
     if custom: out['minecraft:custom_data'] = custom
     if role == 'icon':  # icons keep only what changes the look
         keep = ('trofers:trophy', 'longwings:variant', 'patchouli:book', 'minecraft:potion_contents',
-                'minecraft:custom_data', 'minecraft:stored_enchantments')
+                'minecraft:custom_data', 'minecraft:custom_model_data', 'minecraft:stored_enchantments')
         out = {k: v for k, v in out.items() if k in keep and not (k == 'minecraft:custom_data' and 'type' not in v)}
     return out
 

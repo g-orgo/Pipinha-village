@@ -1,0 +1,19 @@
+# Own mods port to NeoForge 1.21.1 (progress)
+
+Owner approved on 2026-11-13: port langfilter, dfhashfix, qualityfix, eating, cinematic_toms as pipinha_*.
+Left out: clockfix, handsonfix, texturefix, sortfix, replayfix, hangdump (fixed upstream or mod gone).
+Build: each mod has its own build.sh (detached eclipse-temurin:21-jdk container, javac, jar copied to mods/).
+No game launch by the agent; in-game tests belong to the owner. No commits from this job.
+
+| Mod | State |
+|---|---|
+| pipinha_langfilter | done, jar in mods/ (build, mixscan, ranges ok) |
+| pipinha_dfhashfix | done, jar in mods/ (18 hashCode targets + mapAll verified) |
+| pipinha_qualityfix | done: pots (4 injects, MD optional) + keg (BnC optional; batch rolled on fermentation, applied to poured drinks/item result, reset when tank empty via KegBatchAccess, key "SunlitQuality" with legacy int migration; "held drink back into keg" rule dropped). Phase B notes, reduced: QF 2.4.5 already covers copper pot queue/result/menu (mixin/miners_delight); only extract + useHeldItemOnMeal on FD and copper pots. Phase C (keg, migrate legacy "SunlitQuality") pending |
+
+Build notes: mount libraries at /opt/libs (mounting at /lib breaks the image); skip unreadable jars (some forge 1.20.1 jars in Install/libraries fail `jar tf`; they belong to the 1.20.1 install, do not touch). ranges.py needs the NeoForge version as 2nd arg (`ranges.py mods 21.1.265`).
+| pipinha_eating | poses + hotbar built and installed (bowl detection via FoodProperties.usingConvertsTo, brain fix); ImmersiveEatingGuard and GameplayEventsMixin dropped (fixed in IE 1.21); phase 3 (in-hand model) done and installed; brain fixed the model stem order (path__namespace, fallback path, as in 1.20.1) |
+| pipinha_cinematic_toms | phase 1 done (copy, rename, PORTING.md; 260 javac errors vs 0.18.2). Cinematic upgraded 0.18.2 -> 0.18.30 (CurseForge file 9345403, size checked; old jar in backups/mods-substituidos/) because only 0.18.28+ has the addon API. All files compile, jar installed. StorageStrip uses the Tom's 2.4.2 "c" message {s, st, m} (brain found the old {d} packing); "pinned" has no 2.4.2 bit, now local state only. EMI mixin moved to optional pipinha_cinematic_toms.emi.mixins.json; TrashSlot guarded by ModList. build.sh supports OUT_DIR for parallel builds |
+| pipinha_skinfix | done 2026-11-14, jar in mods/. Retries the startup player profile lookup (Minecraft lambda$new$1 -> fetchProfile, redirect) up to 5 times (2/4/8/15/15 s) when the session server fails; without it a failed lookup left the player with a default skin all session. build.sh puts authlib 6.0.54 first on the classpath (Install/libraries also has the 1.20.1 authlib). mixscan ok |
+| pipinha_deerfix | done 2026-11-14, jar in mods/. Tamed Wilder Nature deer (KubeJS persistentData affection > 0, or bred from a tamed parent: marker "pipinha_tame_deer") do not flee from players: DeerAvoidEntityGoal(Player).canUse false, updateAwareness cancelled, no player wake-up panic, ignore herd alarms (onHeardCall, triggerPanic list filtered), no following a fleeing leader. Pillager/villager avoidance untouched. Built against wildernature 1.1.8 + kubejs 2101.7.2 (rebuild if they update). mixscan ok |
+| pipinha_curiosfix | done 2026-11-20, jar in mods/. Curios inventory tooltips get the hovered stack (redirect of the 4-arg GuiGraphics.renderTooltip in CuriosScreen), so Quark and LSO stack tooltips show there; TrashSlot enabled by default on CuriosScreen (client setup, only when trashslot and curios load). mixscan ok, ranges ok Trash slot still unconfirmed (owner: T did nothing there, save state never rewritten); temporary TrashSlotDiagnostics logs "[CuriosFix/TrashSlot]" lines, remove after the test. |

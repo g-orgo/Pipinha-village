@@ -1,0 +1,13 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.pipinha.cinematictoms.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "EmiScreenManagerMixin",
+    "TomsEmiTransferHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

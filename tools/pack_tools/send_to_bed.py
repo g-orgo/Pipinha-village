@@ -9,6 +9,7 @@ playerdata/<uuid>.dat. Players without a bed, or riding something, are left wher
 
 Usage: python3 send_to_bed.py "Solito solamente" [--dry]
 """
+import re
 import sys, os, glob, gzip, shutil
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from nbtmini import NBTReader
@@ -47,7 +48,10 @@ def send_to_bed(save, dry=False):
     level = os.path.join(base, 'level.dat')
     res = _rewrite(level, lambda r: _move(r['Data'][1]['Player'][1]) if 'Player' in r['Data'][1] else None, dry)
     print(f'{tag}cama level.dat: {res or "sem cama, posicao mantida"}')
+    # Only <uuid>.dat: the game leaves temp files named <uuid>-<number>.dat behind, which it never reads
     for f in sorted(glob.glob(os.path.join(base, 'playerdata', '*.dat'))):
+        if not re.fullmatch(r'[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}\.dat', os.path.basename(f)):
+            continue
         res = _rewrite(f, _move, dry)
         print(f'{tag}cama {os.path.basename(f)}: {res or "sem cama, posicao mantida"}')
 

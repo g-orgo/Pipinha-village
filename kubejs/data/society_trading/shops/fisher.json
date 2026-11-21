@@ -1,15 +1,16 @@
 {
   "shop_id": "fisher",
-  "name": "shop.society_trading.fisher",
+  "name": {"translate": "shop.society_trading.fisher"},
   "texture": "dialog:textures/portraits/fisher",
   "villager_profession": "fisherman",
   "stage_required": "invited_fisher",
   "jei_catalyst": {
-    "id": "society:villager_home",
+    "id": "society:villager",
     "components": {
       "minecraft:custom_data": {
         "type": "fisher"
-      }
+      },
+      "minecraft:custom_model_data": 4
     }
   },
   "selector_weight": -95,

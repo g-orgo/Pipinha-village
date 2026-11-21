@@ -1,0 +1,17 @@
+{
+  "pipinha_cinematic_toms.hint.terminal": "Clique na tela para guardar o item na mão  |  Clique nos itens embaixo para pegar  |  Botão direito: pegar um  |  Roda: rolar  |  Barra de pesquisa: filtrar  |  E: abrir terminal",
+  "pipinha_cinematic_toms.hint.terminal.search": "Digite para pesquisar  |  ESC: fechar a pesquisa  |  Botão direito na barra: limpar  |  Botões acima: ordenação e modo de pesquisa",
+  "pipinha_cinematic_toms.strip.empty": "Nada guardado",
+  "pipinha_cinematic_toms.strip.no_match": "Nada encontrado",
+  "pipinha_cinematic_toms.strip.count": "Guardado: %s",
+  "pipinha_cinematic_toms.strip.search": "Pesquisar itens...",
+  "pipinha_cinematic_toms.strip.sort_0": "Classificar por quantidade do item",
+  "pipinha_cinematic_toms.strip.sort_1": "Classificar por nome do item",
+  "pipinha_cinematic_toms.strip.sort_2": "Classificar por mod",
+  "pipinha_cinematic_toms.strip.order_asc": "Ordem: crescente",
+  "pipinha_cinematic_toms.strip.order_desc": "Ordem: decrescente",
+  "pipinha_cinematic_toms.strip.search_plain": "Pesquisa padrão (limpa ao fechar)",
+  "pipinha_cinematic_toms.strip.search_keep": "Manter a pesquisa ao fechar",
+  "pipinha_cinematic_toms.strip.pin_off": "Abre só ao passar o mouse",
+  "pipinha_cinematic_toms.strip.pin_on": "Fica sempre aberto"
+}

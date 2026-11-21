@@ -82,7 +82,7 @@ BlockEvents.rightClicked((e) => {
 // that is dry today gets one extra moist day. Once per real watering.
 PlayerEvents.tick((e) => {
   let player = e.player;
-  if (!player || player.isFake() || player.age % 200 != 0) return;
+  if (!player || player.isFake() || global.playerTicks(player) % 200 != 0) return;
   try {
     if (global.specialtyChance(player, "farming", "hydration") < 1) return;
     let level = player.level;

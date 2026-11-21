@@ -133,7 +133,7 @@ const catadorCheckStructures = (server, player, level, pos) => {
 PlayerEvents.tick((e) => {
   let player = e.player;
   if (!player || player.isFake() || player.isSpectator()) return;
-  if (player.age % CATADOR_CHECK_TICKS != 0) return;
+  if (global.playerTicks(player) % CATADOR_CHECK_TICKS != 0) return;
   let server = e.server;
   let level = player.level;
   let pos = player.blockPosition();

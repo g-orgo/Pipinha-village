@@ -12,6 +12,9 @@ Esta versão só existe porque queríamos o Create Aeronautics no pack, e ele n�
 + Aeronautics Camera Sync: a câmera acompanha a aeronave em que você está
 + Create High Seas: construções com física flutuam na água e podem alagar por dentro
 + Sable: estruturas de blocos que se movem com física
++ Let it Walk!: máquinas que andam no Create, com pernas movidas pela física do Sable, e um controle remoto para pilotar de longe
++ Create Waystones Integration: waystones viajam em contraptions do Create e voltam a funcionar onde pararem
++ FTB Stuff & Things: martelos, peneiras, geradores de pedregulho, blocos comprimidos e outras maquininhas
 + Create 6 com os addons atualizados
 + Botania Revived no lugar do Botania: a mesma experiência da 1.20.1, com as sementes recriadas
 + Sodium + Iris no lugar de Embeddium + Oculus: shaders e desempenho na versão nova

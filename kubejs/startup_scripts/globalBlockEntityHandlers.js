@@ -73,6 +73,43 @@ global.nbtBool = (tag) => {
   return value !== 0;
 };
 
+// Artisan machine diagnostics (2026-11-18): one line per click, dawn tick, first tick and
+// progress HUD decision, prefixed "[artisandebug]" in logs/latest.log.
+// Turn off only after the owner confirms the machines in game.
+global.ARTISAN_DEBUG = true;
+global.artisanDebug = (makeMessage) => {
+  if (!global.ARTISAN_DEBUG) return;
+  try {
+    console.info(`[artisandebug] ${makeMessage()}`);
+  } catch (err) {
+    console.warn(`[artisandebug] log failed: ${err}`);
+  }
+};
+
+// Reads the live block state, since a LevelBlock may keep the state from before block.set().
+global.artisanDebugState = (level, block) => {
+  let props = level.getBlock(block.pos).getProperties();
+  let data = block.getEntityData().data;
+  return `working=${props.get("working")} mature=${props.get("mature")} recipe='${global.nbtStr(data.recipe)}' stage=${global.nbtNum(data.stage)}`;
+};
+
+// 1.21.1 (KubeJS 7): Entity#age is not exposed anymore, so "player.age" is undefined and
+// every "player.age % N" poll silently never ran, plus the HUD lifetime went NaN and the
+// animal name stayed on screen. Use the public tickCount field with a server fallback.
+global.playerTicks = (player) => {
+  let ticks;
+  let server;
+  if (!player) return 0;
+  ticks = Number(player.tickCount);
+  if (!isNaN(ticks)) return ticks;
+  server = player.getServer();
+  if (server) {
+    ticks = Number(server.tickCount);
+    if (!isNaN(ticks)) return ticks;
+  }
+  return 0;
+};
+
 function rnd(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -372,6 +409,7 @@ global.handleBERightClick = (
   if (player.isFake()) return;
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND") {
+    global.artisanDebug(() => `click ${block.id} at ${block.x} ${block.y} ${block.z} item=${item.id} accepts=${!!recipes.get(String(item.id))} ${global.artisanDebugState(level, block)}`);
     global.convertFromLegacy(recipes, level, block);
     global.artisanHarvest(
       block,
@@ -399,6 +437,7 @@ global.handleBERightClick = (
         player
       );
     }
+    global.artisanDebug(() => `after click ${block.id} at ${block.x} ${block.y} ${block.z}: ${global.artisanDebugState(level, block)}`);
   }
 };
 
@@ -646,37 +685,47 @@ global.handleBERandomTick = (tickEvent, rndFunction, stageCount) => {
   }
 };
 
+// Rhino 2101: a const inside a nested block throws "redeclaration of var" when the function
+// holds a closure (the artisanDebug arrows below), so every local is declared up here.
 global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
   const { level, block } = entity;
   let dayTime = level.getDayTime();
   let morningModulo = dayTime % 24000;
+  let blockProperties;
+  let nbt;
+  let mature;
+  let recipe;
+  let resolvedStage;
+  let nbtStage;
+  let newProperties;
 
   if (
     forced ||
     (morningModulo >= artMachineProgTime &&
       morningModulo < artMachineProgTime + artMachineTickRate)
   ) {
-    let blockProperties = level.getBlock(block.pos).getProperties();
+    blockProperties = level.getBlock(block.pos).getProperties();
 
+    global.artisanDebug(() => `dawn tick ${block.id} at ${block.x} ${block.y} ${block.z} dayTime=${dayTime} forced=${!!forced} before: ${global.artisanDebugState(level, block)}`);
     if (blockProperties.get("working").toLowerCase() === "false") return;
     global.convertFromLegacy(recipes, level, block);
-    let nbt = block.getEntityData();
-    let mature;
-    let recipe = recipes && recipes.get(global.nbtStr(nbt.data.recipe));
-    let resolvedStage = (recipe && recipe.time) || stageCount;
+    nbt = block.getEntityData();
+    recipe = recipes && recipes.get(global.nbtStr(nbt.data.recipe));
+    resolvedStage = (recipe && recipe.time) || stageCount;
 
-    const nbtStage = global.nbtNum(nbt.data.stage);
+    nbtStage = global.nbtNum(nbt.data.stage);
     if (halveTime && blockProperties.get("upgraded").toLowerCase() == "true") {
       mature = Number(nbtStage) >= resolvedStage / 2 - 1;
     } else {
       mature = Number(nbtStage) >= resolvedStage - 1;
     }
 
-    let newProperties = level.getBlock(block.pos).getProperties();
+    newProperties = level.getBlock(block.pos).getProperties();
     newProperties.mature = mature;
     if (mature) newProperties.working = false;
     increaseDataStage(block);
     block.set(block.id, newProperties);
+    global.artisanDebug(() => `dawn tick ${block.id} at ${block.x} ${block.y} ${block.z} after: ${global.artisanDebugState(level, block)} days=${resolvedStage}`);
   }
 };
 

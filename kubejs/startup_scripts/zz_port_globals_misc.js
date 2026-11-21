@@ -125,11 +125,11 @@ global.autoClaimChunk = (player, block) => {
     let modifierId = modifierIdOf(attrId);
     let current = instance.getModifier(modifierId);
     if (amount <= 0) {
-      if (current) instance.removeModifier(modifierId);
+      if (current) instance["removeModifier(net.minecraft.resources.ResourceLocation)"](modifierId);
       return;
     }
     if (current && Math.abs(current.amount() - amount) < 0.0001) return;
-    if (current) instance.removeModifier(modifierId);
+    if (current) instance["removeModifier(net.minecraft.resources.ResourceLocation)"](modifierId);
     instance.addPermanentModifier(
       new $AttributeModifier(modifierId, amount, $Operation[opName])
     );

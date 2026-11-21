@@ -6,11 +6,13 @@ O que está pronto, em andamento e pendente na migração para a 1.21.1. O plano
 
 A migração saiu da fundação e entrou na reta final. A instância 1.21.1 (NeoForge 21.1.265, KubeJS 2101, **364 mods**) abriu com boot limpo em 2026-11-12, e desde então o trabalho é converter conteúdo: **configs**, **dados**, **scripts KubeJS**, **quests**, **Lost Cities**, **save** e **menu**. A razão do pack existir nesta versão é o **Create Aeronautics**, que não tem versão para 1.20.1; o pacote completo (Aeronautics, Simulated, Offroad), o **Aeronautics Camera Sync** e o **Sable** já estão em `mods/`.
 
-O grosso do código já foi convertido. O port estático do **KubeJS** fechou em 379 de 379 scripts com sintaxe Rhino válida (commit `10f2eb5e`), e os launches seguintes serviram para caçar o que só aparece em execução: formato de receita 1.21, ciclo de tags, loot com LootJS 3.7, ids de mods renomeados, itens do mod `society` que não existem mais. Cada launch gerou um lote de correções e um commit na branch **1.21.1**; a instância e a worktree andam juntas.
+O grosso do código já foi convertido. O port estático do **KubeJS** fechou em 379 de 379 scripts com sintaxe Rhino válida (commit `10f2eb5e`), e os launches seguintes serviram para caçar o que só aparece em execução: formato de receita 1.21, ciclo de tags, loot com LootJS 3.7, ids de mods renomeados, itens do mod `society` que não existem mais. Cada launch gerou um lote de correções e um commit na branch **1.21.1**; desde 2026-11-20 a própria pasta da instância é a worktree.
 
 O **save** "Solito solamente" foi convertido em cópia, com a origem intacta por md5, e o **validator** passou. Como o dono reinstalou o **Botania** (via Botania Revived, mesmo mod id) e o port do **Fantasy's Furniture**, o save foi refeito sem as linhas desses dois no mapa de ids. O que falta de verdade é: abrir o jogo uma vez para ler `logs/kubejs/*.log`, fechar **F6** (quests) e **F7** (o que o mod `society` fazia), terminar **F8** (Lost Cities), e então **F10** e **F11**.
 
 Do lado dos mods, o quadro mudou bastante em 2026-11-13. Saíram **Splendid Slimes** e **Splendid Cogs**, sem port. Voltaram **Botania** e **Botania Seeds** (as 16 sementes recriadas em KubeJS). Entraram os sucessores escolhidos pelo dono: **Redecorate** no lugar do Re:Deco, **Redomesticate** no lugar do Domestication Innovation, **Quartz Arsenal** no lugar do Refined Storage Addons, **Youkai's Homecoming**, **Fantasy's Furniture** e **Sunrise Gardening** no lugar do Sturdy Farmland.
+
+Entre 2026-11-16 e 2026-11-20 o dono adicionou mais quatro mods, e a instância está com **388 jars**. **Let it Walk!** traz máquinas que andam para o Create, com pernas, pés e controles de piloto movidos pela física do Sable, e o **Let it Walk: Remote Control** é o controle de mão que pilota esses andadores à distância depois de ligado aos controles de bordo. **Create Waystones Integration** deixa as contraptions do Create carregarem **waystones**: em movimento a pedra recusa teleporte e, ao montar de novo, continua funcionando no lugar novo com o mesmo nome. **FTB Stuff & Things** traz máquinas e blocos pequenos: martelos e auto-martelos, peneiras (sluice), geradores de pedregulho e basalto, blocos comprimidos, ferro fundido, jarros e barris. A lista completa de jars está em `../migracao/mods_instalados.tsv`.
 
 ## Baixo nível
 
@@ -93,6 +95,8 @@ sturdy_farmland = "terra arada -> farmland, aspersores -> ar"
 - Loot usa LootJS 3.7: `addTableModifier`, `addTypeModifier`, `addBlockModifier` e `customAction` no lugar de `apply`.
 - Script de startup roda duas vezes por sessão, então preço e contador precisam de flag de idempotência.
 - Texto para o jogador é em pt-BR; código e comentário em inglês.
+- Roupa de mod novo ganha valor de temperatura do LSO na mesma entrega (ver [[conventions]], Harmonização).
+- Animal de mod novo ganha doma na mesma entrega: grupo em `taming` e caixa no `tools/pack_tools/pet_guide/content.json`, depois `build_pet_guide.py` (ver [[decisions]], 2026-11-20).
 - Todo texto novo (menu, quests, docs) sobre o pack de origem se resume à linha de crédito de rodapé, sem outras menções.
 
 ## Anotações
@@ -111,5 +115,11 @@ Por que o Botania voltou se tinha saído em 2026-11-12?
 
 O que ainda depende do dono no jogo?
 > Ver a câmera do Sable com o Shoulder Surfing 5.3.1, a mana das máquinas do Botania (listener no mod bus), os tooltips de preço e moeda, os textos flutuantes, a chave do carro, as plushies, a aposta da corrida de porcos e as 34 tarefas de quest marcadas como `ftbquests:missing_item`.
+
+O FTB Stuff & Things já conversa com o resto do pack?
+> Ainda não. Martelos, peneiras, geradores de pedregulho e blocos comprimidos entraram com as receitas do próprio mod; nenhuma receita, tag ou loja do pack usa esses itens ainda, e o ferro fundido não está ligado às tags de lingote.
+
+Ovo, carne, peixe e leite valem "qualquer um da espécie" nas receitas?
+> Sim desde 2026-11-20, pelas famílias de `harmonizeFoodTags.js` e pelos alvos novos de `normalizeEquivalentItems.js` (ver [[conventions]], Harmonização). **Ainda em aberto:** confirmar no jogo; o `logs/kubejs/server.log` deve ter a linha `[sunlit] harmonizeFoodTags:` com o tamanho de cada família, e as receitas de `veggiesdelight:compat/culturaldelight/*` não devem mais aparecer com `is not allowed to be empty`.
 
 **Ainda em aberto:** a prova de que o listener de mana do Botania chega ao mod bus; o Sable com o Shoulder Surfing 5.3.1 (os mixins de compat miram classes renomeadas); 10 lojas do `society_trading` que falham inteiras por ids ausentes (renomear ou tirar a oferta); o extrusor 1.21, que só aceita blocos laterais, com `blackstone` e `cobbled_limestone` sem substituto escolhido; o Fantasy's Furniture nas paletas, se o port mantiver os ids; os 11 mods próprios a portar; a lista de resource packs na F10; e o ajuste do `export_curseforge.py` antes de gerar o zip.

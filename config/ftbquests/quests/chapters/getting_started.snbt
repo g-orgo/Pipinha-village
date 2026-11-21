@@ -9,7 +9,7 @@
 	}
 	id: "1F990A2A648BE4A1"
 	images: [ ]
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -130,13 +130,19 @@
 			tasks: [
 				{
 					id: "44E951A44F1CF7F0"
-					item: { count: 1, id: "society:invitation" }
+					item: { components: { "minecraft:custom_data": { type: "society:carpenter" } }, count: 1, id: "society:invitation" }
 					match_components: "fuzzy"
 					type: "item"
 				}
 				{
 					disable_toast: true
 					icon: {
+						components: {
+							"minecraft:custom_data": {
+								type: "carpenter"
+							}
+							"minecraft:custom_model_data": 3
+						}
 						id: "society:villager"
 					}
 					id: "77941199A5AAA562"
@@ -464,13 +470,19 @@
 			tasks: [
 				{
 					id: "59E084CB052A33AC"
-					item: { count: 1, id: "society:invitation" }
+					item: { components: { "minecraft:custom_data": { type: "society:banker" } }, count: 1, id: "society:invitation" }
 					match_components: "fuzzy"
 					type: "item"
 				}
 				{
 					disable_toast: true
 					icon: {
+						components: {
+							"minecraft:custom_data": {
+								type: "banker"
+							}
+							"minecraft:custom_model_data": 1
+						}
 						id: "society:villager"
 					}
 					id: "3289EF10C786A325"
@@ -526,13 +538,19 @@
 			tasks: [
 				{
 					id: "425CE445701BE19E"
-					item: { count: 1, id: "society:invitation" }
+					item: { components: { "minecraft:custom_data": { type: "society:blacksmith" } }, count: 1, id: "society:invitation" }
 					match_components: "fuzzy"
 					type: "item"
 				}
 				{
 					disable_toast: true
 					icon: {
+						components: {
+							"minecraft:custom_data": {
+								type: "blacksmith"
+							}
+							"minecraft:custom_model_data": 2
+						}
 						id: "society:villager"
 					}
 					id: "66EF68859A260B35"

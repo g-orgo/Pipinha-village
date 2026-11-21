@@ -188,7 +188,7 @@
 			need_learning = true
 
 		[action.parcool.trick_jump]
-			available = true
+			available = false
 			# Default: 0
 			# Range: 0 ~ 32767
 			cost_start = 0
@@ -405,7 +405,7 @@
 	#Input acceptance duration of perfect-breakfall in tick, perfect breakfall is disabled if this value is 0
 	# Default: 0
 	# Range: > 0
-	breakfall_just_time_input_tick = 0
+	breakfall_just_time_input_tick = 5
 
 [grappling_hook]
 	#max reach in blocks

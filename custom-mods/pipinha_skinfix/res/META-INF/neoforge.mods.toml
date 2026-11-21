@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="pipinha_skinfix"
+version="1.0.0"
+displayName="Pipinha's Village Skin Fix"
+description="Retries the player's profile lookup at startup when the session server fails, so the player's own skin is not replaced by a default one for the whole session."
+
+[[mixins]]
+config="pipinha_skinfix.mixins.json"
+
+[[dependencies.pipinha_skinfix]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.pipinha_skinfix]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"

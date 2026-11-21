@@ -1,5 +1,39 @@
-__pycache__/
-tools/configport/backup-*.tar.gz
+# This instance folder is the git repository (branch 1.21.1 of Pipinha-village).
+# Everything is ignored except what Modpack.zip ships (tools/pack_tools/build_modpack.py:
+# INCLUDE_DIRS / INCLUDE_FILES) plus the dev files (docs, tools, custom mod sources, agent notes).
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/mods/
+!/config/
+!/defaultconfigs/
+!/kubejs/
+!/resourcepacks/
+!/shaderpacks/
+!/moonlight-global-datapacks/
+!/patchouli_books/
+!/keybinding presets/
+!/options.txt
+!/install.bat
+!/install.sh
+!/README.txt
+!/READ_FIRST.txt
+!/READ_FIRST_PT-BR.txt
+!/atalhos.md
+!/LEIA-ME-ATUALIZACAO-2026-11-13.txt
+!/docs/
+!/tools/
+!/custom-mods/
+!/AGENTS.md
+!/CLAUDE.md
+!/HANDOFF.md
 
-# Runtime logs written by mods
+# Tool artifacts, same rules as the zip builder.
+__pycache__/
+node_modules/
 *.log
+*.bak*
+*.pyc
+.DS_Store
+/tools/configport/backup-*.tar.gz

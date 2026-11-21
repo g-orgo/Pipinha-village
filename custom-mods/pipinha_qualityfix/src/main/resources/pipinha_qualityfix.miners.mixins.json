@@ -1,0 +1,14 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.pipinha.qualityfix.md",
+  "plugin": "com.pipinha.qualityfix.md.MinersDelightPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CopperPotBlockEntityMixin",
+    "CopperPotItemHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

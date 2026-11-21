@@ -1,0 +1,1017 @@
+{
+	autofocus_id: "6B4F994116C4DE02"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "companheiros"
+	group: "457DCF55318282CA"
+	icon: {
+		id: "minecraft:wolf_spawn_egg"
+	}
+	id: "7F2B6A60431A9D58"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: { id: "minecraft:lead" }
+			id: "6B4F994116C4DE02"
+			size: 2.0d
+			tasks: [{
+				id: "23DE123D1E4E8067"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "48A39EF43A6ED258"
+			tasks: [{
+				id: "080825C0158DA76A"
+				item: { count: 1, id: "minecraft:wolf_spawn_egg" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			id: "3FB74D5F629E5B76"
+			tasks: [{
+				id: "56B4EAED5F38D089"
+				item: { count: 1, id: "quark:shiba_spawn_egg" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			id: "181896459F921040"
+			tasks: [{
+				id: "672022EC418D2C94"
+				item: { count: 1, id: "quark:foxhound_spawn_egg" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			id: "25D4764B77361CBA"
+			tasks: [{
+				id: "437608F91E0A91CD"
+				item: { count: 1, id: "wildernature:dog_spawn_egg" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			id: "350DFEA0CE57756A"
+			tasks: [{
+				id: "08C64849A01323D0"
+				item: { count: 1, id: "minecraft:horse_spawn_egg" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			id: "0E8CF01014C8ED14"
+			tasks: [{
+				id: "0F25E4708C4C6AEC"
+				item: { count: 1, id: "minecraft:axolotl_spawn_egg" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			id: "4E83174CE115538A"
+			tasks: [{
+				id: "13B213DDBA88638E"
+				item: { count: 1, id: "minecraft:polar_bear_spawn_egg" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			id: "232FAB1EF5F6945A"
+			tasks: [{
+				id: "712F77A0A98611FF"
+				item: { count: 1, id: "buzzier_bees:grizzly_bear_spawn_egg" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			id: "1F0FAD7E407A83A9"
+			tasks: [{
+				id: "16AB52C7B5FC6D3F"
+				item: { count: 1, id: "minecraft:cat_spawn_egg" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			id: "354D481CFF63F72C"
+			tasks: [{
+				id: "3ECD99D574367447"
+				item: { count: 1, id: "wildernature:hedgehog_spawn_egg" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			id: "3ADFE08DDB8E65DA"
+			tasks: [{
+				id: "24E2557AEB410EDB"
+				item: { count: 1, id: "minecraft:allay_spawn_egg" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			id: "66D2698A1FA73C57"
+			tasks: [{
+				id: "3AF647046516B4B2"
+				item: { count: 1, id: "crittersandcompanions:ferret_spawn_egg" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "03DEDE9731E24183"
+			tasks: [{
+				id: "34E4DC56D46A01D7"
+				item: { count: 1, id: "minecraft:parrot_spawn_egg" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			id: "3A924EFB429FED78"
+			tasks: [{
+				id: "28FBD973F989B910"
+				item: { count: 1, id: "minecraft:ocelot_spawn_egg" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			id: "7A4BC47465B34503"
+			tasks: [{
+				id: "5EA7584019181379"
+				item: { count: 1, id: "minecraft:fox_spawn_egg" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			id: "137FF8E197C9D53C"
+			tasks: [{
+				id: "51C6A6DE7CD812A2"
+				item: { count: 1, id: "minecraft:donkey_spawn_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "5A0EEE6562112771"
+			tasks: [{
+				id: "250EC043570CBC86"
+				item: { count: 1, id: "minecraft:mule_spawn_egg" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			id: "4E9B756A65B89AD4"
+			tasks: [{
+				id: "32F9CF6A6A50F2C4"
+				item: { count: 1, id: "minecraft:llama_spawn_egg" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			id: "53BC0BBC564412AE"
+			tasks: [{
+				id: "523C821C6D960B52"
+				item: { count: 1, id: "minecraft:camel_spawn_egg" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			id: "2A22693422EE7D17"
+			tasks: [{
+				id: "341388578F373084"
+				item: { count: 1, id: "minecraft:nautilus_spawn_egg" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 8.0d
+		}
+		{
+			id: "5EC29AFDBE20BBEE"
+			tasks: [{
+				id: "513A0E5588A8A2D2"
+				item: { count: 1, id: "minecraft:happy_ghast_spawn_egg" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			id: "15ABFF30F95EADA1"
+			tasks: [{
+				id: "2D8ECD6CCAB676D8"
+				item: { count: 1, id: "wildernature:scorpion_spawn_egg" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			id: "55185DC57EDED459"
+			tasks: [{
+				id: "42E346D1A01B50C6"
+				item: { count: 1, id: "untitledduckmod:duck_spawn_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			id: "110B2983ED2A7A45"
+			tasks: [{
+				id: "4A2766AB14B4AD74"
+				item: { count: 1, id: "untitledduckmod:goose_spawn_egg" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			id: "7CE269ADEA2460C8"
+			tasks: [{
+				id: "1076ABE7E69D66A2"
+				item: { count: 1, id: "windswept:frostbiter_spawn_egg" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			id: "30A7BAA7AF791393"
+			tasks: [{
+				id: "51570D407CA751F2"
+				item: { count: 1, id: "crittersandcompanions:red_panda_spawn_egg" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			id: "46B84873E7AA9767"
+			tasks: [{
+				id: "572466EA00B9ACB5"
+				item: { count: 1, id: "crittersandcompanions:shima_enaga_spawn_egg" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 10.0d
+		}
+		{
+			id: "0CAAF6281B2B2635"
+			tasks: [{
+				id: "351B8A7F19901057"
+				item: { count: 1, id: "crittersandcompanions:ladybug_spawn_egg" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 10.0d
+		}
+		{
+			id: "03B38AF7A1CA1A48"
+			tasks: [{
+				id: "65365857DD546D90"
+				item: { count: 1, id: "crittersandcompanions:roly_poly_spawn_egg" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			id: "5333D675E9C5369B"
+			tasks: [{
+				id: "4BB0A3BD7BC2221D"
+				item: { count: 1, id: "crittersandcompanions:snail_spawn_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			id: "5E3FD2CE963BA0CE"
+			tasks: [{
+				id: "2FEDC30FD4263936"
+				item: { count: 1, id: "crittersandcompanions:stag_beetle_spawn_egg" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			id: "7C1C7B9AE139DF40"
+			tasks: [{
+				id: "5BF801D7DFAE1520"
+				item: { count: 1, id: "crittersandcompanions:stick_bug_spawn_egg" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			id: "6B19BF8484432947"
+			tasks: [{
+				id: "4C50BE92C855F164"
+				item: { count: 1, id: "crittersandcompanions:weevil_spawn_egg" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			id: "003377D7813A7DFC"
+			tasks: [{
+				id: "6EE86CB35C6B8C4A"
+				item: { count: 1, id: "faunaandorchestra:penguin_spawn_egg" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 12.0d
+		}
+		{
+			id: "7F846C3950533683"
+			tasks: [{
+				id: "28CD40B81CCA4A4C"
+				item: { count: 1, id: "faunaandorchestra:mantis_spawn_egg" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 12.0d
+		}
+		{
+			id: "507D6DEB530D6B8D"
+			tasks: [{
+				id: "306C7B752049E2FE"
+				item: { count: 1, id: "faunaandorchestra:macaw_spawn_egg" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 12.0d
+		}
+		{
+			id: "710E93F24F2BBAFE"
+			tasks: [{
+				id: "5F7D9497A2F74964"
+				item: { count: 1, id: "faunaandorchestra:beaver_spawn_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			id: "034271E79166090F"
+			tasks: [{
+				id: "33DE977FEF5C92E8"
+				item: { count: 1, id: "faunaandorchestra:sea_lion_spawn_egg" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			id: "58B7A9407E93302E"
+			tasks: [{
+				id: "65CC0ACC5ECEFDB6"
+				item: { count: 1, id: "faunaandorchestra:lemur_spawn_egg" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			id: "7AA804869DC7C0F6"
+			tasks: [{
+				id: "3046CC12EDE4AD7D"
+				item: { count: 1, id: "faunaandorchestra:red_panda_spawn_egg" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			id: "0D29281FD84CCD06"
+			tasks: [{
+				id: "6034B5C12008A2D4"
+				item: { count: 1, id: "faunaandorchestra:madame_butterfly_spawn_egg" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 14.0d
+		}
+		{
+			id: "605A3DB021F4A005"
+			tasks: [{
+				id: "4225BDFC4424367F"
+				item: { count: 1, id: "faunaandorchestra:quirky_frog_spawn_egg" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 14.0d
+		}
+		{
+			id: "745E12F1496AAA8E"
+			tasks: [{
+				id: "38AA8611BD6AD5A7"
+				item: { count: 1, id: "minecraft:rabbit_spawn_egg" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 16.0d
+		}
+		{
+			id: "4D020AF53048B9EB"
+			tasks: [{
+				id: "01764A0C4A16AA09"
+				item: { count: 1, id: "minecraft:frog_spawn_egg" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 16.0d
+		}
+		{
+			id: "7D07451F33AF864E"
+			tasks: [{
+				id: "54DE786E3967477F"
+				item: { count: 1, id: "hearthandharvest:crow_spawn_egg" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 16.0d
+		}
+		{
+			id: "367D33FEB1D7C90B"
+			tasks: [{
+				id: "666127F39813F434"
+				item: { count: 1, id: "minecraft:cow_spawn_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			id: "60D0D04231C25779"
+			tasks: [{
+				id: "39A5EC9878EF9488"
+				item: { count: 1, id: "minecraft:mooshroom_spawn_egg" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			id: "48710754E517BF8D"
+			tasks: [{
+				id: "35694E1749DE5DAD"
+				item: { count: 1, id: "minecraft:pig_spawn_egg" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 16.0d
+		}
+		{
+			id: "3861BE4428797177"
+			tasks: [{
+				id: "596BAD06E03E4BC3"
+				item: { count: 1, id: "minecraft:sheep_spawn_egg" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 16.0d
+		}
+		{
+			id: "75C199E0A9952048"
+			tasks: [{
+				id: "73708565855E5C9C"
+				item: { count: 1, id: "minecraft:chicken_spawn_egg" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 18.0d
+		}
+		{
+			id: "67C62E53FD17AC23"
+			tasks: [{
+				id: "0A0D86F791F13DD9"
+				item: { count: 1, id: "minecraft:goat_spawn_egg" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 18.0d
+		}
+		{
+			id: "4520DD204F2E7E17"
+			tasks: [{
+				id: "7BD0C730204A4D8B"
+				item: { count: 1, id: "minecraft:bat_spawn_egg" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 18.0d
+		}
+		{
+			id: "0A38C32A6C0A2331"
+			tasks: [{
+				id: "3B628E59CFB9E42A"
+				item: { count: 1, id: "minecraft:bee_spawn_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			id: "4259B4E591AE0952"
+			tasks: [{
+				id: "2889D5C66659E990"
+				item: { count: 1, id: "minecraft:turtle_spawn_egg" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 18.0d
+		}
+		{
+			id: "7201D9ACFD2DAC26"
+			tasks: [{
+				id: "7422D7F5EA0E9FEB"
+				item: { count: 1, id: "minecraft:panda_spawn_egg" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 18.0d
+		}
+		{
+			id: "79C6272D7F3AA36E"
+			tasks: [{
+				id: "1043636F187E9B99"
+				item: { count: 1, id: "minecraft:dolphin_spawn_egg" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			id: "502C5ACC41C89777"
+			tasks: [{
+				id: "2A714BA7A1CDB17A"
+				item: { count: 1, id: "minecraft:squid_spawn_egg" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 20.0d
+		}
+		{
+			id: "48937E5E5ABA6B3E"
+			tasks: [{
+				id: "5CD3713E06F362AE"
+				item: { count: 1, id: "minecraft:glow_squid_spawn_egg" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 20.0d
+		}
+		{
+			id: "2A6AD09B34353D26"
+			tasks: [{
+				id: "03DFF3AA1986627A"
+				item: { count: 1, id: "minecraft:armadillo_spawn_egg" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 20.0d
+		}
+		{
+			id: "5BC6CFF0A226515F"
+			tasks: [{
+				id: "320F2572F436F7C8"
+				item: { count: 1, id: "minecraft:sniffer_spawn_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			id: "103A7D70BC9934F2"
+			tasks: [{
+				id: "0DF2CB0BD30E9DBF"
+				item: { count: 1, id: "minecraft:strider_spawn_egg" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 20.0d
+		}
+		{
+			id: "7DB892628987C76B"
+			tasks: [{
+				id: "26B47F6A1DE1758F"
+				item: { count: 1, id: "buzzier_bees:moobloom_spawn_egg" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 20.0d
+		}
+		{
+			id: "185AAD8298006233"
+			tasks: [{
+				id: "0865DA6C56727C7B"
+				item: { count: 1, id: "snowpig:snow_pig_spawn_egg" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 20.0d
+		}
+		{
+			id: "51949971F1E01210"
+			tasks: [{
+				id: "56AF7ED026CBCED7"
+				item: { count: 1, id: "meadow:water_buffalo_spawn_egg" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 22.0d
+		}
+		{
+			id: "51CFED5AEFDECBC2"
+			tasks: [{
+				id: "1157ED5E7B4D1826"
+				item: { count: 1, id: "meadow:wooly_cow_spawn_egg" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 22.0d
+		}
+		{
+			id: "0AC6822565D0B6D6"
+			tasks: [{
+				id: "42B70412111E6D83"
+				item: { count: 1, id: "etcetera:chapple_spawn_egg" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 22.0d
+		}
+		{
+			id: "11E9241D2D228614"
+			tasks: [{
+				id: "5FE1E559BFC9ADFD"
+				item: { count: 1, id: "wildernature:bison_spawn_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			id: "3B61250814C5134C"
+			tasks: [{
+				id: "47558A02E6443C38"
+				item: { count: 1, id: "wildernature:minisheep_spawn_egg" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 22.0d
+		}
+		{
+			id: "5F3A6D74B5373F58"
+			tasks: [{
+				id: "088A56CEDB7A7AD4"
+				item: { count: 1, id: "wildernature:deer_spawn_egg" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 22.0d
+		}
+		{
+			id: "7C3CAB5C225719CA"
+			tasks: [{
+				id: "6A1E4C5B9615DD9F"
+				item: { count: 1, id: "wildernature:cassowary_spawn_egg" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 22.0d
+		}
+		{
+			id: "18362280BD4E74AC"
+			tasks: [{
+				id: "364332D2FBD73CDA"
+				item: { count: 1, id: "wildernature:beaver_spawn_egg" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 24.0d
+		}
+		{
+			id: "6A939C743A7228BC"
+			tasks: [{
+				id: "6714A873EB5E67EB"
+				item: { count: 1, id: "wildernature:elephant_spawn_egg" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 24.0d
+		}
+		{
+			id: "1CB2606907846CD6"
+			tasks: [{
+				id: "4CDBCB051E1C66DC"
+				item: { count: 1, id: "wildernature:giraffe_spawn_egg" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 24.0d
+		}
+		{
+			id: "2241D48BD94E1431"
+			tasks: [{
+				id: "197BAA9E7C32C5B7"
+				item: { count: 1, id: "wildernature:hippo_spawn_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 24.0d
+		}
+		{
+			id: "7E7E4E803D6571FE"
+			tasks: [{
+				id: "0DC81D7B0A2F82A4"
+				item: { count: 1, id: "wildernature:lion_spawn_egg" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 24.0d
+		}
+		{
+			id: "42FA42470529C95D"
+			tasks: [{
+				id: "7C53BC5C1C7F744E"
+				item: { count: 1, id: "wildernature:raccoon_spawn_egg" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 24.0d
+		}
+		{
+			id: "56EE22F9BC0C9111"
+			tasks: [{
+				id: "52AC7F08EB3B140C"
+				item: { count: 1, id: "wildernature:squirrel_spawn_egg" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 24.0d
+		}
+		{
+			id: "037A3F72ADEB17C0"
+			tasks: [{
+				id: "33B43B53AD26953C"
+				item: { count: 1, id: "wildernature:swift_fox_spawn_egg" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 26.0d
+		}
+		{
+			id: "17633E40D8FB7D5E"
+			tasks: [{
+				id: "1DD6C0A27B3091AE"
+				item: { count: 1, id: "crittersandcompanions:otter_spawn_egg" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 26.0d
+		}
+		{
+			id: "1641FE6C605599E4"
+			tasks: [{
+				id: "7DD0803450B0D638"
+				item: { count: 1, id: "crittersandcompanions:dumbo_octopus_spawn_egg" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 26.0d
+		}
+		{
+			id: "039119DCEAB868F8"
+			tasks: [{
+				id: "35CEDDE880CE1661"
+				item: { count: 1, id: "crittersandcompanions:sea_bunny_spawn_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 26.0d
+		}
+		{
+			id: "47F485C070CAEFB5"
+			tasks: [{
+				id: "42EC2F1C15AD4A7B"
+				item: { count: 1, id: "crittersandcompanions:leaf_insect_spawn_egg" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 26.0d
+		}
+		{
+			id: "447A38475908BEF2"
+			tasks: [{
+				id: "61C31C1F220240B0"
+				item: { count: 1, id: "faunaandorchestra:butterfly_spawn_egg" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 26.0d
+		}
+		{
+			id: "19D40D0DC63240D3"
+			tasks: [{
+				id: "44B2541098EF062C"
+				item: { count: 1, id: "faunaandorchestra:emperor_penguin_spawn_egg" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 26.0d
+		}
+		{
+			id: "5BD60DC8674FFEBD"
+			tasks: [{
+				id: "27750423B12D1664"
+				item: { count: 1, id: "quark:crab_spawn_egg" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 28.0d
+		}
+		{
+			id: "71ED907267717B78"
+			tasks: [{
+				id: "772508B55F192878"
+				item: { count: 1, id: "quark:toretoise_spawn_egg" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 28.0d
+		}
+		{
+			id: "42F867F215874DC7"
+			tasks: [{
+				id: "2C3DD569F2FAA12B"
+				item: { count: 1, id: "youkaishomecoming:deer_spawn_egg" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 28.0d
+		}
+		{
+			id: "6FE50EEAC2BFFBCA"
+			tasks: [{
+				id: "5DE1A59A7EF44B2E"
+				item: { count: 1, id: "youkaishomecoming:boar_spawn_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 28.0d
+		}
+		{
+			id: "2AC9C3D0971C7A68"
+			tasks: [{
+				id: "5CC0DDF2C5A8FD10"
+				item: { count: 1, id: "youkaishomecoming:crab_spawn_egg" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 28.0d
+		}
+		{
+			id: "174D55E31983631E"
+			tasks: [{
+				id: "0BF2DC52E6CA96A6"
+				item: { count: 1, id: "autumnity:snail_spawn_egg" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 28.0d
+		}
+		{
+			id: "1E0F2F60BECE7BC2"
+			tasks: [{
+				id: "3CCDFB9364973969"
+				item: { count: 1, id: "autumnity:turkey_spawn_egg" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 28.0d
+		}
+		{
+			id: "36B168BF3CC42425"
+			tasks: [{
+				id: "779D9AE9B258EC8C"
+				item: { count: 1, id: "longwings:butterfly_spawn_egg" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 30.0d
+		}
+		{
+			id: "514FB526D8EC5609"
+			tasks: [{
+				id: "6D9232D50668FB2C"
+				item: { count: 1, id: "longwings:moth_spawn_egg" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 30.0d
+		}
+		{
+			id: "6AC91A81F65CB617"
+			tasks: [{
+				id: "60036FC5C4191760"
+				item: { count: 1, id: "atmospheric:cochineal_spawn_egg" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 30.0d
+		}
+		{
+			id: "7A65158F13A57530"
+			tasks: [{
+				id: "5D6185439E1CFF48"
+				item: { count: 1, id: "aquaculture:box_turtle_spawn_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 30.0d
+		}
+		{
+			id: "21D5A5D0E96EC78B"
+			tasks: [{
+				id: "3A1B7EC14B286132"
+				item: { count: 1, id: "aquaculture:arrau_turtle_spawn_egg" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 30.0d
+		}
+		{
+			id: "6B3D0A1C8D8AA2FB"
+			tasks: [{
+				id: "61B8D390C46EC933"
+				item: { count: 1, id: "aquaculture:starshell_turtle_spawn_egg" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 30.0d
+		}
+		{
+			id: "1BC4D73235F525BC"
+			tasks: [{
+				id: "0FFCF2E2C2FBFFD9"
+				item: { count: 1, id: "crabbersdelight:crab_spawn_egg" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 30.0d
+		}
+		{
+			id: "210E28A3EDE9FE72"
+			tasks: [{
+				id: "50E02B5336474466"
+				item: { count: 1, id: "snuffles:snuffle_spawn_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 32.0d
+		}
+	]
+}

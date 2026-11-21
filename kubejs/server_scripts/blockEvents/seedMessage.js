@@ -1,7 +1,9 @@
 console.info("[SOCIETY] seedMessage.js loaded");
 
 const seedMessageThrottle = ((temp) => (entity, tick, identifier) => {
-  const { age, uuid } = entity;
+  // KubeJS 7: entity.age is undefined, so the throttle never held. Use the tick count.
+  const { uuid } = entity;
+  const age = global.playerTicks(entity);
   const key = `${uuid}${identifier}`;
   const now = temp[key];
   if (!now || age - now >= tick) {
@@ -14,6 +16,7 @@ const seedMessageThrottle = ((temp) => (entity, tick, identifier) => {
 BlockEvents.rightClicked(
   [
     "minecraft:farmland",
+    "sunrisegardening:tilled_soil",
     "sunrisegardening:weak_fertilized_farmland",
     "sunrisegardening:strong_fertilized_farmland",
     "sunrisegardening:hyper_fertilized_farmland",

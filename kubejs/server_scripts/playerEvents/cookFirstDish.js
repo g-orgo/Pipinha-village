@@ -137,7 +137,7 @@ PlayerEvents.tick((e) => {
   try {
     let menu = player.containerMenu;
     if (menu && COOK_FD_SHOP_MENU.test(String(menu).split("@")[0].split(".").pop())) state.shop = true;
-    if (player.age % COOK_FD_POLL_TICKS != 0) return;
+    if (global.playerTicks(player) % COOK_FD_POLL_TICKS != 0) return;
     // Only cooks are polled; the baseline restarts when the player becomes one.
     cookFdBaseline(player);
     if (!cookFdIsCook(player)) {

@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="pipinha_langfilter"
+version="1.0.0"
+displayName="Pipinha's Village Language Filter"
+description="Limits the language list to English (US) and Brazilian Portuguese."
+
+[[mixins]]
+config="pipinha_langfilter.mixins.json"
+
+[[dependencies.pipinha_langfilter]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.pipinha_langfilter]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="CLIENT"

@@ -12,6 +12,9 @@
 + Aeronautics Camera Sync：镜头跟随你乘坐的飞行器
 + Create High Seas：物理装置可以漂浮在水上，内部也会进水
 + Sable：带物理效果的移动方块结构
++ Let it Walk!：Create 的步行机器，腿部由 Sable 物理驱动，还有可远程驾驶的遥控器
++ Create Waystones Integration：传送石可以随 Create 装置移动，停下后在新位置继续使用
++ FTB Stuff & Things：锤子、筛矿槽、圆石生成器、压缩方块等小机器
 + Create 6 及其更新后的附属模组
 + Botania Revived 取代 Botania：与 1.20.1 体验一致，种子已重新制作
 + 使用 Sodium + Iris 代替 Embeddium + Oculus：新版本的光影与性能

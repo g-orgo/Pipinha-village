@@ -1,13 +1,14 @@
 {
   "shop_id": "banker",
-  "name": "shop.society_trading.banker",
+  "name": {"translate": "shop.society_trading.banker"},
   "texture": "dialog:textures/portraits/banker",
   "jei_catalyst": {
-    "id": "society:villager_home",
+    "id": "society:villager",
     "components": {
       "minecraft:custom_data": {
         "type": "banker"
-      }
+      },
+      "minecraft:custom_model_data": 1
     }
   },
   "villager_profession": "cartographer",

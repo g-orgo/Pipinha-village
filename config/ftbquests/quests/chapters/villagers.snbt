@@ -5,6 +5,12 @@
 	filename: "villagers"
 	group: "439B0423947443D3"
 	icon: {
+		components: {
+			"minecraft:custom_data": {
+				type: "carpenter"
+			}
+			"minecraft:custom_model_data": 3
+		}
 		id: "society:villager"
 	}
 	id: "20D348A9B6875391"
@@ -97,6 +103,12 @@
 		{
 			dependencies: ["664E4A3806C40A78"]
 			icon: {
+				components: {
+					"minecraft:custom_data": {
+						type: "shepherd"
+					}
+					"minecraft:custom_model_data": 7
+				}
 				id: "society:villager"
 			}
 			id: "3CF0897E67574877"
@@ -111,7 +123,7 @@
 			}]
 			tasks: [{
 				id: "587C3337DCD6144D"
-				item: { count: 1, id: "society:invitation" }
+				item: { components: { "minecraft:custom_data": { type: "society:shepherd" } }, count: 1, id: "society:invitation" }
 				match_components: "fuzzy"
 				type: "item"
 			}]
@@ -122,6 +134,12 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			icon: {
+				components: {
+					"minecraft:custom_data": {
+						type: "carpenter"
+					}
+					"minecraft:custom_model_data": 3
+				}
 				id: "society:villager"
 			}
 			id: "664E4A3806C40A78"
@@ -136,7 +154,7 @@
 			}]
 			tasks: [{
 				id: "0B63F83931AB06AE"
-				item: { count: 1, id: "society:invitation" }
+				item: { components: { "minecraft:custom_data": { type: "society:carpenter" } }, count: 1, id: "society:invitation" }
 				match_components: "fuzzy"
 				type: "item"
 			}]
@@ -148,6 +166,12 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			icon: {
+				components: {
+					"minecraft:custom_data": {
+						type: "market"
+					}
+					"minecraft:custom_model_data": 6
+				}
 				id: "society:villager"
 			}
 			id: "048655663A5A82FC"
@@ -162,7 +186,7 @@
 			}]
 			tasks: [{
 				id: "233BA4DFB56C7C30"
-				item: { count: 1, id: "society:invitation" }
+				item: { components: { "minecraft:custom_data": { type: "society:market" } }, count: 1, id: "society:invitation" }
 				match_components: "fuzzy"
 				type: "item"
 			}]
@@ -172,6 +196,12 @@
 		{
 			dependencies: ["048655663A5A82FC"]
 			icon: {
+				components: {
+					"minecraft:custom_data": {
+						type: "fisher"
+					}
+					"minecraft:custom_model_data": 4
+				}
 				id: "society:villager"
 			}
 			id: "2A64214504AAD5E5"
@@ -186,7 +216,7 @@
 			}]
 			tasks: [{
 				id: "550ADDBC7FEA01A9"
-				item: { count: 1, id: "society:invitation" }
+				item: { components: { "minecraft:custom_data": { type: "society:fisher" } }, count: 1, id: "society:invitation" }
 				match_components: "fuzzy"
 				type: "item"
 			}]
@@ -196,6 +226,12 @@
 		{
 			dependencies: ["664E4A3806C40A78"]
 			icon: {
+				components: {
+					"minecraft:custom_data": {
+						type: "blacksmith"
+					}
+					"minecraft:custom_model_data": 2
+				}
 				id: "society:villager"
 			}
 			id: "499871FDD2A65F2C"
@@ -210,7 +246,7 @@
 			}]
 			tasks: [{
 				id: "432B8C3C9C058DD3"
-				item: { count: 1, id: "society:invitation" }
+				item: { components: { "minecraft:custom_data": { type: "society:blacksmith" } }, count: 1, id: "society:invitation" }
 				match_components: "fuzzy"
 				type: "item"
 			}]
@@ -222,6 +258,12 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			icon: {
+				components: {
+					"minecraft:custom_data": {
+						type: "banker"
+					}
+					"minecraft:custom_model_data": 1
+				}
 				id: "society:villager"
 			}
 			id: "4633C0427ACA18D3"
@@ -235,7 +277,7 @@
 			}]
 			tasks: [{
 				id: "6A559CD37BBF1E5B"
-				item: { count: 1, id: "society:invitation" }
+				item: { components: { "minecraft:custom_data": { type: "society:banker" } }, count: 1, id: "society:invitation" }
 				match_components: "fuzzy"
 				type: "item"
 			}]
@@ -258,6 +300,12 @@
 			dependencies: ["048655663A5A82FC"]
 			hide_dependency_lines: true
 			icon: {
+				components: {
+					"minecraft:custom_data": {
+						type: "librarian"
+					}
+					"minecraft:custom_model_data": 5
+				}
 				id: "society:villager"
 			}
 			id: "49477F09DF6EBA50"
@@ -297,6 +345,12 @@
 		{
 			dependencies: ["66E1AC55824DF1D9"]
 			icon: {
+				components: {
+					"minecraft:custom_data": {
+						type: "witch"
+					}
+					"minecraft:custom_model_data": 10
+				}
 				id: "society:villager"
 			}
 			id: "52F1DCA9462F825F"
@@ -310,6 +364,12 @@
 		{
 			dependencies: ["5A369FC904BCF5EE"]
 			icon: {
+				components: {
+					"minecraft:custom_data": {
+						type: "trader"
+					}
+					"minecraft:custom_model_data": 8
+				}
 				id: "society:villager"
 			}
 			id: "1348507AE17E187E"

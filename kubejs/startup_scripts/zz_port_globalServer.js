@@ -33,6 +33,7 @@ global.mainUiElementIds = [
 const clearUiPaint = (player, ids) => {
   let removedText = {};
   let removedShadow = {};
+  if (!ids || ids.length === 0) return;
   // Spawn and clear instance of paint element to prevent warnings that they don't exist
   ids.forEach((id) => {
     removedText[id] = { type: "text" };
@@ -48,13 +49,22 @@ const clearUiPaint = (player, ids) => {
   global.paintUi(player, removedShadow);
 };
 
+// HUD lifetime: a message stays on screen for 100 ticks after the last update of that
+// player. The clock is the server tick count, because Entity#age is not exposed by the
+// KubeJS 7 wrapper: the old comparison produced NaN and the animal name never left the screen.
+global.lastUiShownTick = {};
+const UI_TEXT_LIFETIME_TICKS = 100;
+const uiShownKey = (player) => String(player.uuid);
+
 global.renderUiText = (player, server, messages, clearedMessages) => {
   server.scheduleInTicks(0, () => {
+    const key = uiShownKey(player);
     clearUiPaint(player, clearedMessages);
     global.paintUi(player, messages);
-    player.persistentData.ageLastShownMessage = player.age;
-    server.scheduleInTicks(100, () => {
-      if (player.age - global.nbtNum(player.persistentData.get("ageLastShownMessage")) >= 100)
+    global.lastUiShownTick[key] = server.getTickCount();
+    server.scheduleInTicks(UI_TEXT_LIFETIME_TICKS, () => {
+      const shown = global.lastUiShownTick[key];
+      if (shown === undefined || server.getTickCount() - shown >= UI_TEXT_LIFETIME_TICKS)
         clearUiPaint(player, clearedMessages);
     });
   });

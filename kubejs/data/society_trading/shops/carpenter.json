@@ -1,13 +1,14 @@
 {
   "shop_id": "carpenter",
-  "name": "shop.society_trading.carpenter",
+  "name": {"translate": "shop.society_trading.carpenter"},
   "texture": "dialog:textures/portraits/carpenter",
   "jei_catalyst": {
-    "id": "society:villager_home",
+    "id": "society:villager",
     "components": {
       "minecraft:custom_data": {
         "type": "carpenter"
-      }
+      },
+      "minecraft:custom_model_data": 3
     }
   },
   "selector_weight": -96,

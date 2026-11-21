@@ -927,8 +927,12 @@ ServerEvents.recipes((e) => {
     c: "society:charging_rod",
   });
 
-  // dropped in 1.21.1: species:ichor_bottle no longer exists
-
+  e.shaped("society:gnome", [" h ", "iti", " s "], {
+    t: "society:tiny_gnome",
+    i: "minecraft:experience_bottle",
+    h: "simplehats:gnome",
+    s: "paraglider:spirit_orb",
+  });
   e.shaped("society:cornucopia", [" p ", "php", " p "], {
     p: "botania:pixie_dust",
     h: "botania:horn_grass",
@@ -1000,7 +1004,11 @@ ServerEvents.recipes((e) => {
     b: "etcetera:light_bulb",
   });
   [
-    // dropped in 1.21.1: meadow:flecked_wool, highland_wool, patched_wool, rocky_wool, umbra_wool, inky_wool no longer exist
+    { input: "meadow:rustic_wool", output: "minecraft:brown_wool" },
+    { input: "meadow:jacquard_wool", output: "minecraft:blue_wool" },
+    { input: "meadow:plaid_wool", output: "minecraft:light_gray_wool" },
+    { input: "meadow:chambray_wool", output: "minecraft:light_blue_wool" },
+    { input: "meadow:tweed_wool", output: "minecraft:black_wool" },
     { input: "meadow:warped_wool", output: "minecraft:cyan_wool" },
   ].forEach((recipe) => {
     e.shapeless(recipe.output, [recipe.input]);

@@ -12,6 +12,9 @@
 + Aeronautics Camera Sync: 탑승한 비행체를 카메라가 따라갑니다
 + Create High Seas: 물리 구조물이 물에 뜨고 내부에 물이 찰 수 있습니다
 + Sable: 물리로 움직이는 블록 구조물
++ Let it Walk!: Sable 물리로 다리가 움직이는 Create용 걷는 기계, 멀리서 조종하는 리모컨 포함
++ Create Waystones Integration: 웨이스톤을 Create 장치에 실어 옮길 수 있고, 멈춘 곳에서 다시 작동합니다
++ FTB Stuff & Things: 망치, 체(sluice), 조약돌 생성기, 압축 블록 등 작은 기계들
 + 애드온이 업데이트된 Create 6
 + Botania Revived가 Botania를 대신합니다: 1.20.1과 같은 경험, 씨앗은 다시 만들어졌습니다
 + Embeddium + Oculus 대신 Sodium + Iris: 새 버전의 셰이더와 성능

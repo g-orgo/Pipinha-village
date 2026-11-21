@@ -120,7 +120,7 @@
     "pipe": true
   },
   "sunrisegardening": {
-    "crop_info": true
+    "crop_info": false
   },
   "quark": {
     "oretoise_eating_cooldown": true
@@ -151,6 +151,10 @@
   "functionalstorage": {
     "armory": true,
     "drawer": true
+  },
+  "ftbstuff": {
+    "pump": true,
+    "autohammer": true
   },
   "jadeaddons": {
     "equipment_requirement": ""

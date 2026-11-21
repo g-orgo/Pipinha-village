@@ -1,6 +1,6 @@
 {
   "shop_id": "modern_catalog",
-  "name": "shop.society_trading.modern_catalog",
+  "name": {"translate": "shop.society_trading.modern_catalog"},
   "hidden_from_selector": true,
   "display_type": "thin",
   "texture": "minecraft:textures/block/quartz_block_side",

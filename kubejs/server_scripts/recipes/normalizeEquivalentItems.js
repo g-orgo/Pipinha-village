@@ -62,26 +62,33 @@ const SUNLIT_EQUIVALENT_GROUPS = [
   },
 ];
 
-// Meat and fish species (tags filled in tags/harmonizeMeatTags.js): a dish that asks for the
-// vanilla item accepts every meat of the same species (duck where chicken goes, bison where
-// beef goes, halibut where cod goes). dishesOnly keeps one-input transforms item-specific:
-// cooking, cutting and mincing a chicken still make chicken products.
+// Food families (tags filled in tags/harmonizeMeatTags.js and tags/harmonizeFoodTags.js): a dish
+// that asks for the vanilla item accepts every item of the family (duck where chicken goes, bison
+// where beef goes, halibut where cod goes, any egg, any milk of the same size). The targets are the
+// 1.21 tags most recipes already use. dishesOnly keeps one-input transforms item-specific:
+// cooking, cutting and mincing a chicken still make chicken products. The third entry lists
+// recipes that are not food (crafts) or convert containers, and stay as they are.
 [
-  ["minecraft:chicken", "c:raw_chicken"],
-  ["minecraft:cooked_chicken", "c:cooked_chicken"],
-  ["minecraft:beef", "c:raw_beef"],
-  ["minecraft:cooked_beef", "c:cooked_beef"],
-  ["minecraft:porkchop", "c:raw_pork"],
-  ["minecraft:cooked_porkchop", "c:cooked_pork"],
-  ["minecraft:mutton", "c:raw_mutton"],
-  ["minecraft:cooked_mutton", "c:cooked_mutton"],
+  ["minecraft:chicken", "c:foods/raw_chicken"],
+  ["minecraft:cooked_chicken", "c:foods/cooked_chicken"],
+  ["minecraft:beef", "c:foods/raw_beef"],
+  ["minecraft:cooked_beef", "c:foods/cooked_beef"],
+  ["minecraft:porkchop", "c:foods/raw_pork"],
+  ["minecraft:cooked_porkchop", "c:foods/cooked_pork"],
+  ["minecraft:mutton", "c:foods/raw_mutton"],
+  ["minecraft:cooked_mutton", "c:foods/cooked_mutton"],
   ["minecraft:cod", "c:foods/raw_cod"],
   ["minecraft:cooked_cod", "c:foods/cooked_cod"],
   ["minecraft:salmon", "c:foods/raw_salmon"],
   ["minecraft:cooked_salmon", "c:foods/cooked_salmon"],
-  ["youkaishomecoming:raw_tuna", "forge:raw_fishes/tuna"],
+  ["youkaishomecoming:raw_tuna", "c:foods/raw_tuna"],
   ["quark:crab_leg", "sunlit:compat/crab_leg"],
-].forEach((pair) => SUNLIT_EQUIVALENT_GROUPS.push({ tag: pair[1], items: [pair[0]], tags: [], dishesOnly: true }));
+  ["minecraft:egg", "c:eggs", ["etcetera:rubber_chicken", "whimsy_deco:gatcha_machine"]],
+  ["minecraft:milk_bucket", "society:large_milk"],
+  ["farmersdelight:milk_bottle", "society:small_milk", ["farmersdelight:milk_bucket_from_bottles"]],
+].forEach((pair) =>
+  SUNLIT_EQUIVALENT_GROUPS.push({ tag: pair[1], items: [pair[0]], tags: [], dishesOnly: true, exclude: pair[2] || [] })
+);
 
 const SUNLIT_EQUIVALENT_OUTPUT_KEYS = ["result", "results", "output", "outputs"];
 // Keys that are not food inputs when counting the distinct inputs of a dish.

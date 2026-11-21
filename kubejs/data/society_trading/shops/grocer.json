@@ -1,6 +1,6 @@
 {
   "shop_id": "grocer",
-  "name": "shop.society_trading.grocer",
+  "name": {"translate": "shop.society_trading.grocer"},
   "texture": "farmersdelight:textures/block/cabbage_crate_top",
   "jei_catalyst": {
     "id": "farmersdelight:cabbage_crate"

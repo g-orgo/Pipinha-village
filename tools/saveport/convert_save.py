@@ -16,6 +16,10 @@ Notes:
 - Block entities: renamed when mapped and kept; dropped when mapped to air, or when their
   namespace is unknown. Dropped block entities that hold items are listed as lost items.
 - DataVersion is never touched, so the game's DataFixer upgrades the world on load.
+- Furniture that changes mod is turned and reconnected by state_rules.tsv (state_rules.py);
+  check the table with orient_check.py and fix an already converted save with fix_orientation.py.
+- Villager affinity (player KubeJSPersistentData.npcData) is checked against src after the
+  copy and restored per NPC when missing or lower (affinity.py; also runs on its own).
 """
 
 import glob
@@ -40,6 +44,8 @@ from nbtmini import NBTReader  # noqa: E402
 from nbtwrite import w_tag  # noqa: E402
 from retrofit_hedges import write_region  # noqa: E402
 import lc_ids  # noqa: E402
+from affinity import merge_affinity  # noqa: E402
+import state_rules  # noqa: E402
 
 MAP_FILE = os.path.join(HERE, 'id_map.tsv')
 DEFAULT_REPORT = os.path.join(HERE, 'REPORT.md')
@@ -243,6 +249,23 @@ def read_dat(path):
         return NBTReader(f.read()).read_tag()
 
 
+def convert_props(name, rule, props, accepted):
+    """New block props for an old block state: state_rules.tsv (turn and connection
+    values between mods), then prop renames, forced values and the accepted-state filter."""
+    new, ren, sets = rule
+    srule = state_rules.find(name, new)
+    if srule:
+        props = state_rules.apply(srule, props)
+    if new.startswith('redecorate:'):
+        ren = dict(ren, upholstery='fabric')
+    props = {ren.get(k, k): v for k, v in props.items()}
+    props.update(sets)
+    acc = None if new.startswith('minecraft:') else accepted(new)
+    if acc is not None:
+        props = {k: v for k, v in props.items() if k in acc and (acc[k] is None or v in acc[k])}
+    return props
+
+
 def val(d, key, default=None):
     return d[key][1] if key in d else default
 
@@ -280,13 +303,7 @@ class Job:
             self.changed = True
             return
         props = {k: v[1] for k, v in d['Properties'][1].items()} if 'Properties' in d else {}
-        if new.startswith('redecorate:'):
-            ren = dict(ren, upholstery='fabric')
-        props = {ren.get(k, k): v for k, v in props.items()}
-        props.update(sets)
-        acc = None if new.startswith('minecraft:') else self.accepted(new)
-        if acc is not None:
-            props = {k: v for k, v in props.items() if k in acc and (acc[k] is None or v in acc[k])}
+        props = convert_props(name, rule, props, self.accepted)
         d['Name'] = (8, new)
         if props:
             d['Properties'] = (10, {k: (8, v) for k, v in sorted(props.items())})
@@ -582,6 +599,10 @@ def run_convert(src, dst, t, lost_path):
         if job.changed:
             with gzip.open(path, 'wb') as f:
                 f.write(w_tag(name or '', tid, root))
+    # Society villager affinity (player KubeJSPersistentData.npcData): checked against the
+    # source and restored per NPC when missing or lower, see affinity.py.
+    for line in merge_affinity(src, dst, True):
+        print(f'affinity: {line}')
     if lost_path:
         with open(lost_path, 'w', encoding='utf-8') as f:
             for w, b, x, y, z, i, c in job.lost:

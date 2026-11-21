@@ -1,15 +1,16 @@
 {
   "shop_id": "librarian",
-  "name": "shop.society_trading.librarian",
+  "name": {"translate": "shop.society_trading.librarian"},
   "texture": "dialog:textures/portraits/librarian",
   "villager_profession": "weaponsmith",
   "stage_required": "invited_librarian",
   "jei_catalyst": {
-    "id": "society:villager_home",
+    "id": "society:villager",
     "components": {
       "minecraft:custom_data": {
         "type": "librarian"
-      }
+      },
+      "minecraft:custom_model_data": 5
     }
   },
   "trades": [

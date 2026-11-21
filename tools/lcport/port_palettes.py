@@ -10,7 +10,9 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "saveport"))
 import lc_ids
+import state_rules
 
 ROOT = lc_ids.ROOT
 MAP_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "block_map.tsv")
@@ -61,7 +63,11 @@ def transform(value, mapping):
     new_id, forced, rule = mapping[base]
     accepted = lc_ids.accepted_states(new_id)
     props = []
-    for k, v in parse_props(value):
+    pairs = parse_props(value)
+    srule = state_rules.find(base, new_id)
+    if srule:  # turn and reconnect furniture that changes mod (saveport/state_rules.tsv)
+        pairs = list(state_rules.apply(srule, dict(pairs)).items())
+    for k, v in pairs:
         if k == "upholstery" and new_id.startswith("redecorate:"):
             k = "fabric"  # Redecorate renamed Re:Deco's upholstery property
         if accepted is not None and k in accepted:

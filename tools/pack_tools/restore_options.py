@@ -18,7 +18,7 @@ import sys
 import time
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-INSTANCE = os.path.dirname(BASE)
+INSTANCE = os.path.dirname(os.path.dirname(BASE))
 OPTIONS = os.path.join(INSTANCE, "options.txt")
 CANON = os.path.join(BASE, "options_canonical.txt")
 PACKS = os.path.join(BASE, "packs_canonical.txt")

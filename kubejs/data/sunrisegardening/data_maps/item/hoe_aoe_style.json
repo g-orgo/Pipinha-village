@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": {
+    "minecraft:iron_hoe": 1,
+    "minecraft:golden_hoe": 2,
+    "minecraft:diamond_hoe": 3,
+    "minecraft:netherite_hoe": 3
+  }
+}

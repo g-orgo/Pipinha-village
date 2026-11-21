@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:bat",
+      "required": false
+    },
+    {
+      "id": "buzzier_bees:grizzly_bear",
+      "required": false
+    },
+    {
+      "id": "wildernature:cassowary",
+      "required": false
+    },
+    {
+      "id": "wildernature:hedgehog",
+      "required": false
+    }
+  ]
+}

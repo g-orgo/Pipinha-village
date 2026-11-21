@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:polar_bear",
+      "required": false
+    },
+    {
+      "id": "crabbersdelight:crab",
+      "required": false
+    }
+  ]
+}

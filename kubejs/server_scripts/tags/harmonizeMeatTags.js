@@ -12,8 +12,8 @@
 
 const SUNLIT_MEAT_SPECIES = [
   {
-    raw: ["c:raw_chicken", "c:raw_chicken", "farm_and_charm:raw_chicken"],
-    cooked: ["c:cooked_chicken", "c:cooked_chicken", "farm_and_charm:cooked_chicken"],
+    raw: ["c:foods/raw_chicken", "c:raw_chicken", "farm_and_charm:raw_chicken"],
+    cooked: ["c:foods/cooked_chicken", "c:cooked_chicken", "farm_and_charm:cooked_chicken"],
     rawItems: [
       "untitledduckmod:raw_duck",
       "untitledduckmod:raw_goose",
@@ -21,6 +21,7 @@ const SUNLIT_MEAT_SPECIES = [
       "autumnity:turkey_piece",
       "wildernature:pelican_meat",
       "wildernature:cassowary_meat",
+      "wildernature:turkey_meat",
     ],
     cookedItems: [
       "untitledduckmod:cooked_duck",
@@ -29,11 +30,12 @@ const SUNLIT_MEAT_SPECIES = [
       "autumnity:cooked_turkey_piece",
       "wildernature:cooked_pelican_meat",
       "wildernature:cooked_cassowary_meat",
+      "wildernature:cooked_turkey_meat",
     ],
   },
   {
-    raw: ["c:raw_beef", "c:raw_beef", "farm_and_charm:raw_beef"],
-    cooked: ["c:cooked_beef", "c:cooked_beef", "farm_and_charm:cooked_beef"],
+    raw: ["c:foods/raw_beef", "c:raw_beef", "farm_and_charm:raw_beef"],
+    cooked: ["c:foods/cooked_beef", "c:cooked_beef", "farm_and_charm:cooked_beef"],
     rawItems: [
       "meadow:raw_buffalo_meat",
       "wildernature:bison_meat",
@@ -48,14 +50,14 @@ const SUNLIT_MEAT_SPECIES = [
     ],
   },
   {
-    raw: ["c:raw_pork", "c:raw_pork", "farm_and_charm:raw_pork"],
-    cooked: ["c:cooked_pork", "c:cooked_pork", "farm_and_charm:cooked_pork"],
+    raw: ["c:foods/raw_pork", "c:raw_pork", "farm_and_charm:raw_pork"],
+    cooked: ["c:foods/cooked_pork", "c:cooked_pork", "farm_and_charm:cooked_pork"],
     rawItems: ["youkaishomecoming:raw_boarchop", "snowpig:frozen_porkchop"],
     cookedItems: ["youkaishomecoming:grilled_boarchop"],
   },
   {
-    raw: ["c:raw_mutton", "c:raw_mutton", "farm_and_charm:raw_mutton"],
-    cooked: ["c:cooked_mutton", "c:cooked_mutton", "farm_and_charm:cooked_mutton"],
+    raw: ["c:foods/raw_mutton", "c:raw_mutton", "farm_and_charm:raw_mutton"],
+    cooked: ["c:foods/cooked_mutton", "c:cooked_mutton", "farm_and_charm:cooked_mutton"],
     rawItems: ["windswept:goat", "large_meals:raw_mutton_rack"],
     cookedItems: ["windswept:cooked_goat"],
   },
@@ -74,13 +76,13 @@ const SUNLIT_DISHES_NOT_COOKED_MEAT = [
   "farm_and_charm:lamb_with_corn",
 ];
 const SUNLIT_PLAIN_COOKED_TAGS = [
+  "c:foods/cooked_chicken",
   "c:cooked_chicken",
-  "c:cooked_chicken",
+  "c:foods/cooked_beef",
   "c:cooked_beef",
-  "c:cooked_beef",
+  "c:foods/cooked_pork",
   "c:cooked_pork",
-  "c:cooked_pork",
-  "c:cooked_mutton",
+  "c:foods/cooked_mutton",
   "c:cooked_mutton",
 ];
 
@@ -93,26 +95,29 @@ const SUNLIT_NOT_GENERIC_MEAT = [
   "candlelight:beef_tartare",
 ];
 
+// 1.21 names (the 1.20.1 forge:raw_fishes/* tags are kept as synonyms in harmonizeFoodTags.js).
 const SUNLIT_FISH_SPECIES = {
-  "forge:raw_fishes/cod": [
+  "c:foods/raw_cod": [
     "aquaculture:atlantic_cod",
     "aquaculture:pollock",
     "aquaculture:atlantic_halibut",
     "aquaculture:pacific_halibut",
   ],
-  "forge:raw_fishes/salmon": ["aquaculture:pink_salmon", "aquaculture:rainbow_trout", "aquaculture:brown_trout"],
-  "forge:raw_fishes/tuna": ["aquaculture:tuna"],
+  "c:foods/raw_salmon": ["aquaculture:pink_salmon", "aquaculture:rainbow_trout", "aquaculture:brown_trout"],
+  "c:foods/raw_tuna": ["youkaishomecoming:raw_tuna", "aquaculture:tuna", "unusualfishmod:raw_blizzard_tuna"],
 };
 
 ServerEvents.tags("item", (e) => {
   SUNLIT_MEAT_SPECIES.forEach((species) => {
     species.rawItems.forEach((item) => {
       species.raw.forEach((tag) => e.add(tag, item));
+      e.add("c:foods/raw_meat", item);
       e.add("c:raw_meat", item);
       e.add("brewinandchewin:raw_meats", item);
     });
     species.cookedItems.forEach((item) => {
       species.cooked.forEach((tag) => e.add(tag, item));
+      e.add("c:foods/cooked_meat", item);
       e.add("c:cooked_meat", item);
     });
   });
@@ -124,12 +129,13 @@ ServerEvents.tags("item", (e) => {
     SUNLIT_PLAIN_COOKED_TAGS.forEach((tag) => e.remove(tag, dish));
   });
   SUNLIT_NOT_GENERIC_MEAT.forEach((item) => {
-    ["c:raw_meat", "brewinandchewin:raw_meats"].forEach((tag) => e.remove(tag, item));
+    ["c:foods/raw_meat", "c:raw_meat", "brewinandchewin:raw_meats"].forEach((tag) => e.remove(tag, item));
   });
-  // Miner's Delight puts its whole insect tag in forge:raw_meat; Candlelight puts the
+  // Miner's Delight puts its whole insect tag in c:foods/raw_meat; Candlelight puts the
   // tartare dish in its raw beef tag, which forge:raw_beef and c:raw_beef include.
+  e.remove("c:foods/raw_meat", "#minersdelight:raw_insect_meat");
   e.remove("c:raw_meat", "#minersdelight:raw_insect_meat");
-  ["c:raw_beef", "c:raw_beef", "candlelight:raw_beef"].forEach((tag) => e.remove(tag, "candlelight:beef_tartare"));
+  ["c:foods/raw_beef", "c:raw_beef", "candlelight:raw_beef"].forEach((tag) => e.remove(tag, "candlelight:beef_tartare"));
 
   Object.keys(SUNLIT_FISH_SPECIES).forEach((tag) => {
     SUNLIT_FISH_SPECIES[tag].forEach((fish) => e.add(tag, fish));

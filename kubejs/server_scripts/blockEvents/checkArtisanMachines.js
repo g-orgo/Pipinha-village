@@ -87,16 +87,21 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
   let id;
   let duration;
   const isChargingRod = machineId.equals("society:charging_rod");
-  if (!recipe && !isChargingRod) return;
+  if (!recipe && !isChargingRod) {
+    global.artisanDebug(() => `hud skipped ${machineId}: machine is empty`);
+    return;
+  }
   if (isChargingRod) {
     id = "society:battery";
     duration = stageCount;
   } else {
-    if (!recipes.get(recipe)) return;
+    if (!recipes.get(recipe)) {
+      global.artisanDebug(() => `hud skipped ${machineId}: no recipe '${recipe}'`);
+      return;
+    }
     id = String(Item.of(recipes.get(recipe).output[0]).id);
     primaryOutput = idMap.get(id);
     duration = recipes.get(recipe).time || stageCount;
-    if (recipe === `${item.id}`) return;
   }
   if (
     machineId == "society:aging_cask" &&
@@ -181,6 +186,22 @@ const sendProgressMessage = (clickEvent, recipes, nbt, stageCount, machineId, ma
     },
     global.mainUiElementIds
   );
+  global.artisanDebug(() => `hud sent ${machineId}: ${id} ${blockStage}/${pipCount}`);
+};
+
+// True when this click hands the held item to an idle machine, so the progress HUD stays out of the way.
+// Any other held item (a tool, an upgrade, food) still shows the progress.
+const artisanHudInsertsItem = (machine, item, working) => {
+  let recipes = machine.recipes;
+  let itemId = String(item.id);
+  let inserts = false;
+  if (working || item.isEmpty()) return false;
+  if (!recipes || typeof recipes.get !== "function") return false;
+  if (recipes.get(itemId)) return true;
+  Array.from(recipes.keys()).forEach((key) => {
+    if (String(key).startsWith("#") && item.hasTag(String(key).substring(1))) inserts = true;
+  });
+  return inserts;
 };
 
 BlockEvents.rightClicked(
@@ -207,10 +228,16 @@ BlockEvents.rightClicked(
   ],
   (e) => {
     const { block, hand, item } = e;
-    if (hand == "OFF_HAND" || item !== "minecraft:air") return;
+    if (hand == "OFF_HAND") return;
     const machine = global.artisanMachineDefinitions.filter((obj) => {
       return obj.id === block.id;
     })[0];
+    if (!machine) return;
+    const working = block.properties.get("working").toLowerCase() === "true";
+    if (artisanHudInsertsItem(machine, item, working)) {
+      global.artisanDebug(() => `hud skipped ${block.id}: click inserts ${item.id}`);
+      return;
+    }
     if (block.properties.get("mature").toLowerCase() === "false") {
       let nbt = block.getEntityData();
       if (nbt.data.contains("type") && global.nbtNum(nbt.data.type) == 0) return;

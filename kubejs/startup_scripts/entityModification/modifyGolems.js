@@ -14,7 +14,7 @@ global.handleHayGolem = (entity) => {
       if (!level.isLoaded(pos)) continue;
       scanBlock = level.getBlock(pos);
       if (rnd10() && scanBlock.hasTag("society:hay_golem_improvable")) {
-        if (scanBlock.id.equals("minecraft:farmland")) {
+        if (scanBlock.id.equals("minecraft:farmland") || scanBlock.id.equals("sunrisegardening:tilled_soil")) {
           scanBlock.set(
             "sunrisegardening:low_quality_fertilized_farmland",
             scanBlock.getProperties()

@@ -42,7 +42,7 @@ PlayerEvents.tick((e) => {
   let morningModulo = dayTime % dayTickDuration;
   let maxPlayTime = 20 * 60 * 30 * 4
   if (
-    player.age % playerTickRate == 0 &&
+    global.playerTicks(player) % playerTickRate == 0 &&
     morningModulo >= playerProgTime &&
     morningModulo < playerProgTime + playerTickRate
   ) {
@@ -74,7 +74,7 @@ PlayerEvents.tick((e) => {
       }
     }
   }
-  if (player.age % 400 == 0) {
+  if (global.playerTicks(player) % 400 == 0) {
     if (
       player.stages.has("mining_mastery") &&
       player.persistentData.days &&

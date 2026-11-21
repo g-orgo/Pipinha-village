@@ -41,8 +41,8 @@ global.handleParCoolStart = (e) => {
   if (action instanceof Java.loadClass(SLIDE_ACTION)) {
     const id = String(player.getUuid());
     const last = global.parkourSlideCooldown[id];
-    if (last !== undefined && player.age - last < SLIDE_COOLDOWN_TICKS) return;
-    global.parkourSlideCooldown[id] = player.age;
+    if (last !== undefined && global.playerTicks(player) - last < SLIDE_COOLDOWN_TICKS) return;
+    global.parkourSlideCooldown[id] = global.playerTicks(player);
     global.grantParkourXp(player, SLIDE_XP);
   }
 };

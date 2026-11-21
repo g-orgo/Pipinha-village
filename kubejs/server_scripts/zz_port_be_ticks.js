@@ -29,9 +29,16 @@ const portBeFacade = (e) => {
   };
 };
 
+// Diagnostics: logs the first tick of each block type per session, to prove the event fires.
+const portBeTickSeen = {};
+
 Object.keys(global.portBeTicks).forEach((id) => {
   BlockEvents.blockEntityTick(id, (e) => {
     let facade = portBeFacade(e);
+    if (!portBeTickSeen[id]) {
+      portBeTickSeen[id] = true;
+      global.artisanDebug(() => `first tick ${id} at ${e.block.x} ${e.block.y} ${e.block.z} facade=${!!facade} dayTime=${e.level.getDayTime()}`);
+    }
     if (facade) global.portBeTicks[id](facade);
   });
 });

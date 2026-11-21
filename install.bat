@@ -134,35 +134,15 @@ try {
     robocopy "$src" "$gameDir" /E /R:1 /W:1 /NFL /NDL /NJH /NJS /NP /XD $xd /XF $xf | Out-Null
     if ($LASTEXITCODE -ge 8) { throw "robocopy failed with code $LASTEXITCODE" }
 
-    # 6) options.txt: keep the player's file, only the resource pack lines come from the pack.
+    # 6) options.txt: the pack's file replaces the player's; the old one is kept as options.txt.bak.
     $packOpt = Join-Path $src 'options.txt'
     $gameOpt = Join-Path $gameDir 'options.txt'
-    $utf8 = New-Object Text.UTF8Encoding($false)
     if (Test-Path -LiteralPath $packOpt -PathType Leaf) {
-        if (-not (Test-Path -LiteralPath $gameOpt -PathType Leaf)) {
-            Copy-Item -LiteralPath $packOpt -Destination $gameOpt
-        } else {
-            $packLines = [IO.File]::ReadAllLines($packOpt, [Text.Encoding]::UTF8)
-            $rp = $packLines | Where-Object { $_ -like 'resourcePacks:*' } | Select-Object -First 1
-            $irp = $packLines | Where-Object { $_ -like 'incompatibleResourcePacks:*' } | Select-Object -First 1
-            $out = New-Object 'System.Collections.Generic.List[string]'
-            $rpDone = $false
-            $irpDone = $false
-            foreach ($line in [IO.File]::ReadAllLines($gameOpt, [Text.Encoding]::UTF8)) {
-                if ($line -like 'resourcePacks:*') {
-                    if ($rp) { $out.Add($rp) }
-                    $rpDone = $true
-                } elseif ($line -like 'incompatibleResourcePacks:*') {
-                    if ($irp) { $out.Add($irp) }
-                    $irpDone = $true
-                } else {
-                    $out.Add($line)
-                }
-            }
-            if (-not $rpDone -and $rp) { $out.Add($rp) }
-            if (-not $irpDone -and $irp) { $out.Add($irp) }
-            [IO.File]::WriteAllLines($gameOpt, $out, $utf8)
+        if (Test-Path -LiteralPath $gameOpt -PathType Leaf) {
+            Copy-Item -LiteralPath $gameOpt -Destination (Join-Path $gameDir 'options.txt.bak') -Force
+            Write-Host 'Your previous options.txt was saved as options.txt.bak'
         }
+        Copy-Item -LiteralPath $packOpt -Destination $gameOpt -Force
     }
 } finally {
     # 7) Remove the temp folder, also when something failed.

@@ -168,33 +168,14 @@ for entry in "$SRC"/* "$SRC"/.[!.]*; do
     cp -a -- "$entry" "$GAMEDIR/"
 done
 
-# 6) options.txt: keep the player's file, only the resource pack lines come from the pack.
+# 6) options.txt: the pack's file replaces the player's; the old one is kept as options.txt.bak.
 PACK_OPT="$SRC/options.txt"
 if [ -f "$PACK_OPT" ]; then
-    if [ ! -f "$GAMEDIR/options.txt" ]; then
-        cp -- "$PACK_OPT" "$GAMEDIR/options.txt"
-    else
-        PACK_RP="$(grep -m1 '^resourcePacks:' "$PACK_OPT" || true)"
-        PACK_IRP="$(grep -m1 '^incompatibleResourcePacks:' "$PACK_OPT" || true)"
-        OPT_NEW="$GAMEDIR/.pipinha_options.new"
-        RP="$PACK_RP" IRP="$PACK_IRP" awk '
-            BEGIN { rp_done = 0; irp_done = 0 }
-            /^resourcePacks:/ {
-                if (ENVIRON["RP"] != "") print ENVIRON["RP"]
-                rp_done = 1; next
-            }
-            /^incompatibleResourcePacks:/ {
-                if (ENVIRON["IRP"] != "") print ENVIRON["IRP"]
-                irp_done = 1; next
-            }
-            { print }
-            END {
-                if (ENVIRON["RP"] != "" && !rp_done) print ENVIRON["RP"]
-                if (ENVIRON["IRP"] != "" && !irp_done) print ENVIRON["IRP"]
-            }
-        ' "$GAMEDIR/options.txt" > "$OPT_NEW"
-        mv -- "$OPT_NEW" "$GAMEDIR/options.txt"
+    if [ -f "$GAMEDIR/options.txt" ]; then
+        cp -- "$GAMEDIR/options.txt" "$GAMEDIR/options.txt.bak"
+        echo "Your previous options.txt was saved as options.txt.bak"
     fi
+    cp -- "$PACK_OPT" "$GAMEDIR/options.txt"
 fi
 
 cleanup

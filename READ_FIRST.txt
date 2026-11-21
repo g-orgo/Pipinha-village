@@ -27,7 +27,9 @@ Close your launcher and Minecraft before you start.
 4) Play: open the profile in your launcher. Give it 8 GB of memory.
 
 The installer replaces the mods, kubejs, resourcepacks and
-moonlight-global-datapacks folders with the pack's and keeps your options.
+moonlight-global-datapacks folders with the pack's and copies the pack's
+config and options.txt over yours (your old options.txt is saved as
+options.txt.bak).
 If the profile is not 1.21.1 with NeoForge 21.1.265, it warns you before
 changing anything.
 

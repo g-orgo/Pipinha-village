@@ -112,7 +112,7 @@ class BuildModpack:
 - O zip leva só o conteúdo do pack. Saves, logs e a documentação do repositório nunca entram.
 - Se faltar `mods`, `config`, `kubejs` ou `resourcepacks`, o build para sem gerar nada.
 - Qualquer arquivo acima de 95 MB para o build.
-- Os instaladores trocam `mods`, `kubejs`, `resourcepacks` e `moonlight-global-datapacks`. O `options.txt` do jogador só recebe as linhas de resource pack.
+- Os instaladores trocam `mods`, `kubejs`, `resourcepacks` e `moonlight-global-datapacks`. O `options.txt` do pack substitui o do jogador, que fica salvo como `options.txt.bak`.
 - O instalador confere o perfil (Minecraft 1.21.1 com NeoForge 21.1.265) antes de mexer em qualquer arquivo. Se não bater, pergunta antes de seguir.
 - `tools/pack_tools/sync_repo.py` faz o commit e o push da própria instância na branch `main`. Ele recusa arquivo acima de 95 MB, `servers.dat`, `usercache.json`, `usernamecache.json` e `options.txt` com `lastServer` preenchido.
 - Num clone do repositório, o instalador aceita a pasta do perfil como argumento: `bash install.sh "/caminho/do/perfil"`, ou arraste a pasta para cima do `install.bat`.

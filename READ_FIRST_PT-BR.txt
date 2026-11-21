@@ -27,7 +27,9 @@ Feche o launcher e o Minecraft antes de comecar.
 4) Jogue: abra o perfil no launcher. Reserve 8 GB de memoria para ele.
 
 O instalador troca as pastas mods, kubejs, resourcepacks e
-moonlight-global-datapacks pelas do pack e mantem suas opcoes. Se o perfil
+moonlight-global-datapacks pelas do pack e copia o config e o options.txt
+do pack por cima dos seus (o options.txt antigo fica salvo como
+options.txt.bak). Se o perfil
 nao for 1.21.1 com NeoForge 21.1.265, ele avisa antes de mudar qualquer
 coisa.
 

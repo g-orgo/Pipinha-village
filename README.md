@@ -19,7 +19,7 @@ It takes about 5 minutes. Close the launcher and Minecraft before you start.
 4. **Install.** Windows: double-click `install.bat`. Linux: open a terminal in the profile folder and run `bash install.sh`.
 5. **Play.** Start the profile from the launcher. Give it 8 GB of memory.
 
-The installer replaces the `mods`, `kubejs`, `resourcepacks` and `moonlight-global-datapacks` folders with the pack's and keeps your options. If the profile is not 1.21.1 with NeoForge 21.1.265, it warns you before changing anything.
+The installer replaces the `mods`, `kubejs`, `resourcepacks` and `moonlight-global-datapacks` folders with the pack's and copies the pack's `config` and `options.txt` over yours (your old `options.txt` is saved as `options.txt.bak`). If the profile is not 1.21.1 with NeoForge 21.1.265, it warns you before changing anything.
 
 - **Got a `Modpack.zip`?** Do the same, using it instead of the GitHub zip (the installer is inside it).
 - **The installer did not run?** Delete the four folders above from the profile folder and extract the zip contents into it (for the GitHub zip, what is inside `Pipinha-village-main`), replacing anything it asks about.

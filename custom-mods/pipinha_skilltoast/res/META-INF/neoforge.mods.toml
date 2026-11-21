@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="pipinha_skilltoast"
+version="1.0.0"
+displayName="Pipinha's Village Skill Toast"
+description="Shows the translated Puffish skill tree title in the SkillExpNotifier XP toast (for example Scavenger for the catador tree) instead of the raw capitalized category id."
+
+[[mixins]]
+config="pipinha_skilltoast.mixins.json"
+
+[[dependencies.pipinha_skilltoast]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.pipinha_skilltoast]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.pipinha_skilltoast]]
+modId="skillexpnotifier"
+type="required"
+versionRange="[8.1,)"
+ordering="AFTER"
+side="BOTH"

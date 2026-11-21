@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.pipinha.skilltoast.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "XpToastMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

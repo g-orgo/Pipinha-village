@@ -9,7 +9,10 @@ Mapa rápido do que está documentado para o Pipinha's Village (1.21.1). Cada li
 - `history.md`: log append-only das unidades concluídas.
 - `../migracao/PLANO.md`: plano da migração, fases F0 a F11, status de mods e anotações.
 - `../PUBLICAR.md`: como gerar e publicar a distribuição.
-- `../atalhos.md`: atalhos e teclas do pack.
+- `../../atalhos.md`: atalhos e teclas do pack (arquivo na raiz da instância).
+- `../migracao/mods_instalados.tsv`: lista dos jars instalados em `mods/` (388, com a versão de cada um).
+- `../migracao/mods_1.21.1.tsv`: mods avaliados para a 1.21.1, com status de port.
+- `../migracao/modpacks_comparados.tsv`: comparação com outros modpacks usados como referência.
 - `../animacoes-de-comida.md`: animações de comida.
 - `../animacoes-inventario.md`: animações de inventário.
 

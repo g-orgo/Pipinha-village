@@ -18,6 +18,13 @@ Esta versão só existe porque queríamos o Create Aeronautics no pack, e ele n�
 + Create 6 com os addons atualizados
 + Botania Revived no lugar do Botania: a mesma experiência da 1.20.1, com as sementes recriadas
 + Sodium + Iris no lugar de Embeddium + Oculus: shaders e desempenho na versão nova
++ Câmera livre: segure Alt esquerdo montado num cavalo ou outra montaria para olhar em volta sem virar o personagem
++ Auto Hide HUD: a interface some sozinha quando não está em uso
++ Roupas de qualquer mod vestem nos slots de cabeça, corpo e pés do Curios
++ Lanternas e itens quentes ou frios contam em qualquer mão e também no Curios
++ Mobs hostis só nascem abaixo do nível 50 ou em outras dimensões, então a superfície do overworld fica mais tranquila
++ Cidades com o traçado de ruas clássico da 1.20.1
++ Portas altas do Dramatic Doors completas nas casas de NPC e nos blueprints
 
 ### Mudou
 + Minecraft 1.21.1 com NeoForge 21.1.265
@@ -26,9 +33,9 @@ Esta versão só existe porque queríamos o Create Aeronautics no pack, e ele n�
 
 ### Saiu
 - Splendid Slimes e Create: Splendid Cogs, junto com as missões, ofertas e receitas ligadas a eles
-- Mods sem versão para 1.21.1, como Species, Re:Deco, Quark Delight e Refined Storage Addons
+- Mods sem versão para 1.21.1, como Species, Quark Delight e Refined Storage Addons
 
 ### Em andamento
-+ Lojas, profissões, economia, animações de comida, vilas e missões da edição 1.20.1 estão sendo trazidos aos poucos
++ Lojas, profissões, economia, animações de comida e missões da edição 1.20.1 estão sendo trazidos aos poucos
 
 Dúvidas? Abra o capítulo Welcome no livro de missões, os Guias estão lá.

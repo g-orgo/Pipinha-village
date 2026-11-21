@@ -93,6 +93,7 @@ time_call = "overworld.getLevelData().getGameTime()"   # getGameTime() não exis
 - Baú bônus tem conteúdo fixo: copper backpack, iron pickaxe e axe, 3 pães e cantil vazio. O kit inicial só é entregue se não houver baú bônus perto do spawn (**a portar** em `spawn_bonus_chest.json` e `addQuestbook.js`).
 - Nada bloqueado nasce nas cidades. Itens em `global.removedItems`, `hiddenItems` e `stripTags` são limpos dos baús, e `itemcheck.BANNED` e `bad_item` / `bad_crop` valem na geração (**a portar**).
 - Lost Cities roda com `generateSpawners` falso.
+- Lost Cities roda com `streetGenerationMode = LEGACY` no `sunlit_cozy` (o traçado da 1.20.1: rua em volta de todo prédio). O `HIERARCHICAL_GRID_V1`, padrão do 8.4, não volta: deixa lote aberto 1 bloco acima da rua, quadra sem estrada e casa virada para o nada. O modo fica gravado no save (`data/LostCityWorldGenData.dat`); trocar num save jogado é com `tools/pack_tools/lc_street_mode.py`, jogo fechado e junto com o regen das cidades.
 - Estrutura de mod de superfície não nasce dentro da cidade: ela entra em `avoidStructures` do `lostcities-server.toml` (gerado por `tools/pack_tools/lc_avoid_structures.py`, com `avoidFlattening = true`), e a cidade deixa a área dela no terreno natural. Depois de um regen, `fix_floating_structures.py scan` confere se sobrou estrutura flutuando nos chunks mantidos.
 
 #### Gameplay e economia
@@ -121,6 +122,7 @@ time_call = "overworld.getLevelData().getGameTime()"   # getGameTime() não exis
 - Culinária, Vinicultura e demais árvores têm um ponto e um nível a mais por nó de Especialidade. Mining, adventuring, parkour, mastery, mercantil e books não mudaram.
 - Prato de primeiro preparo paga XP `15 + valor/10` (teto 120) ao Cozinheiro, uma vez por prato por jogador. Loja e estação não pagam.
 - Dificuldade fica travada em Difícil. Ninguém troca. Mobs hostis podem ser desligados pelo botão ao lado da dificuldade, sem apagar mobs que já existem.
+- Mob hostil só nasce em caverna (overworld abaixo de y 50, afogado abaixo de y 30) ou em outra dimensão (`surfaceHostileSpawns.js`). Raid, ovo e comando continuam. Drop de mob que só aparecia na superfície sai de baú de loot.
 - Dia claro é de 15 minutos: o relógio segura 9 de cada 25 ticks entre os ticks 1300 e 12000 (**a portar** em `sunlitLongerDay.js`, com o tempo lido por `getLevelData().getGameTime()`).
 
 #### Harmonização e KubeJS
@@ -143,6 +145,9 @@ time_call = "overworld.getLevelData().getGameTime()"   # getGameTime() não exis
 - `global.extractinatorRecipes` é lista de `{ input, output }`, não `Map`.
 - Roupa vestível (armadura de pano, chapéu, Curios de vestir) de qualquer mod tem valor de temperatura do LSO em `kubejs/data/<mod>/legendarysurvivaloverhaul/temperature/items/`, na escala do próprio LSO (peça de 0,5 a 3,5; peito maior, bota menor). Lã, suéter, gorro e pele vão em `cold_resistance` (protege do frio); palha, boné, óculos escuros e roupa leve de trabalho vão em `heat_resistance`. Peças equivalentes de mods diferentes têm o mesmo valor (chapéu de palha 3,0, chapéu de chef 1,0). Mod novo com roupa entra nessa tabela na mesma entrega. Fantasia e máscara ficam neutras.
 - A temperatura das peças conta na armadura vestida e nos slots do Curios (o próprio LSO soma os dois). O slot do Cosmetic Armor é só aparência e não protege (decisão do dono, 2026-11-20).
+- Item quente ou frio (lanterna +1,5, lanterna de alma -1,5, qualquer item com `temperature` no LSO) conta pendurado no slot do Curios e segurado em qualquer mão, uma vez por pilha. O LSO sozinho não conta item de Curios na mão nem a mão secundária; `kubejs/server_scripts/curiosHeldTemperature.js` completa isso e reaplica os modificadores do Curios depois de entrar no mundo (2026-11-21).
+- Roupa de qualquer mod veste também no slot equivalente do Curios: cabeça em `curios:head`, peito em `curios:body`, pés em `curios:feet` (`harmonizeClothingCurios.js`, regra automática sobre todo item vestível). Armadura de verdade fica fora: todo item `minecraft:` (couro, cota, ferro, ouro, diamante, netherite, tartaruga, cobre do VanillaBackport), Botania, Create, Aquaculture, Mapperbase e as peças avulsas da lista do script (casca de caracol, bota do Soul Sucker, elmo das marés, mochila do Quark, baldes de madeira). Mod novo com armadura entra nessa lista na mesma entrega. No Curios a peça não dá pontos de armadura, mas conta a temperatura do LSO. Calça não tem slot no Curios.
+- Item vestido no Curios é peça a mais, nunca troca o visual da armadura: o `pipinha_curiosfix` desenha a roupa do Curios por cima da peça do slot normal (modelo um pouco maior quando o slot normal está ocupado) e impede o Simple Hats de esconder o capacete quando há chapéu ou chifre no Curios. Só o Cosmetic Armor troca o visual.
 - Itens de mesma origem são unificados: canônico Kaleidoscope, depois Farmer's Delight, depois `society:`, depois addons do FD, depois o resto. Item que o pack remove nunca é canônico.
 - Botões de mouse do JEI ficam sem tecla. Os lookups de receita e uso ficam só em R e U.
 

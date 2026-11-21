@@ -4,7 +4,7 @@ O que está pronto, em andamento e pendente na migração para a 1.21.1. O plano
 
 ## Alto nível
 
-A migração saiu da fundação e entrou na reta final. A instância 1.21.1 (NeoForge 21.1.265, KubeJS 2101, **364 mods**) abriu com boot limpo em 2026-11-12, e desde então o trabalho é converter conteúdo: **configs**, **dados**, **scripts KubeJS**, **quests**, **Lost Cities**, **save** e **menu**. A razão do pack existir nesta versão é o **Create Aeronautics**, que não tem versão para 1.20.1; o pacote completo (Aeronautics, Simulated, Offroad), o **Aeronautics Camera Sync** e o **Sable** já estão em `mods/`.
+A migração saiu da fundação e entrou na reta final. A instância 1.21.1 (NeoForge 21.1.265, KubeJS 2101, **364 mods** no boot, **388 jars** hoje) abriu com boot limpo em 2026-11-12, e desde então o trabalho é converter conteúdo: **configs**, **dados**, **scripts KubeJS**, **quests**, **Lost Cities**, **save** e **menu**. A razão do pack existir nesta versão é o **Create Aeronautics**, que não tem versão para 1.20.1; o pacote completo (Aeronautics, Simulated, Offroad), o **Aeronautics Camera Sync** e o **Sable** já estão em `mods/`.
 
 O grosso do código já foi convertido. O port estático do **KubeJS** fechou em 379 de 379 scripts com sintaxe Rhino válida (commit `10f2eb5e`), e os launches seguintes serviram para caçar o que só aparece em execução: formato de receita 1.21, ciclo de tags, loot com LootJS 3.7, ids de mods renomeados, itens do mod `society` que não existem mais. Cada launch gerou um lote de correções e um commit na branch **1.21.1**; desde 2026-11-20 a própria pasta da instância é a worktree.
 
@@ -99,8 +99,13 @@ sturdy_farmland = "terra arada -> farmland, aspersores -> ar"
 - Animal de mod novo ganha doma na mesma entrega: grupo em `taming` e caixa no `tools/pack_tools/pet_guide/content.json`, depois `build_pet_guide.py` (ver [[decisions]], 2026-11-20).
 - Todo texto novo (menu, quests, docs) sobre o pack de origem se resume à linha de crédito de rodapé, sem outras menções.
 - Skills do Puffish (2026-11-21): nós espelho dos 25 livros na árvore própria e reaplicação dos comandos das skills no login e no desbloqueio (`skillPerkSync.js`); aguardando o dono testar no jogo.
+- Roupa de mod novo entra nos slots do Curios por regra automática em `harmonizeClothingCurios.js` (2026-11-21); armadura de verdade fica fora.
+- Mob hostil só nasce em caverna ou outra dimensão: `surfaceHostileSpawns.js` barra na superfície do overworld o que vier de patrulha, cerco, estrutura ou mod (2026-11-21).
 
 ## Anotações
+
+O que foi feito em 2026-11-20 e 2026-11-21 e ainda não foi visto no jogo?
+> Ficou sem teste no jogo: caixas do capítulo "Companheiros" com o propósito de cada animal, doma universal de 61 animais, EMI na crafting station, tags de comida, câmera livre montada, roupas no Curios, temperatura segurada do LSO, skills do Puffish, hostis só fora da superfície, porta alta do Dramatic Doors e cidades no modo LEGACY do Lost Cities. O histórico de cada item está em `history.md`.
 
 A migração está perto do fim?
 > Sim, no papel. F0, F1, F3 e F4 estão fechadas e a F5 está pronta em modo estático; F6, F7, F8 e F9 andam em paralelo, e F10 e F11 dependem do dono.
@@ -124,3 +129,6 @@ Ovo, carne, peixe e leite valem "qualquer um da espécie" nas receitas?
 > Sim desde 2026-11-20, pelas famílias de `harmonizeFoodTags.js` e pelos alvos novos de `normalizeEquivalentItems.js` (ver [[conventions]], Harmonização). **Ainda em aberto:** confirmar no jogo; o `logs/kubejs/server.log` deve ter a linha `[sunlit] harmonizeFoodTags:` com o tamanho de cada família, e as receitas de `veggiesdelight:compat/culturaldelight/*` não devem mais aparecer com `is not allowed to be empty`.
 
 **Ainda em aberto:** a prova de que o listener de mana do Botania chega ao mod bus; o Sable com o Shoulder Surfing 5.3.1 (os mixins de compat miram classes renomeadas); 10 lojas do `society_trading` que falham inteiras por ids ausentes (renomear ou tirar a oferta); o extrusor 1.21, que só aceita blocos laterais, com `blackstone` e `cobbled_limestone` sem substituto escolhido; o Fantasy's Furniture nas paletas, se o port mantiver os ids; os 11 mods próprios a portar; a lista de resource packs na F10; e o ajuste do `export_curseforge.py` antes de gerar o zip.
+
+O que ainda falta decidir com o dono?
+> Quatro coisas: **Ainda em aberto:** substitutos de hyper_experience (CEI 2 não tem), sap e aloe_gel (Central Kitchen 1.21 não registra) e o ovo do Species (mod ausente), cujas receitas o guard pula; o vidro da estufa, hoje `minecraft:glass` x24 no lugar do vidro do More Minecarts (reversível, avisar o dono); nomes com a origem (Crystal, Flux, Singing Frog, Market) e o link da wiki; e a F11, que só vai para a `main` e gera Modpack.zip novo com confirmação do dono.

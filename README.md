@@ -6,8 +6,9 @@ Esta branch é a versão 1.21.1, que existe porque queríamos o **Create Aeronau
 
 ## Estado
 
-- Mods, configs e dados no formato 1.21 já estão no lugar, e o pack abre limpo.
-- Scripts KubeJS, missões, lojas e vilas estão sendo portados por etapas. Até o fim da migração, a 1.20.1 continua sendo a edição jogável.
+- Mods, configs e o conteúdo estático (receitas, tags e dados) já estão no formato 1.21, e o save de teste foi convertido sem perda.
+- Em andamento: missões, lojas, vilas e a cidade gerada pelo Lost Cities. Scripts e blocos ainda sem porte ficam listados em `docs/context/state.md`.
+- Até o fim da migração, a 1.20.1 continua sendo a edição jogável.
 - Plano, fases e decisões: `docs/migracao/PLANO.md` e `docs/context/`.
 
 ## Instalação

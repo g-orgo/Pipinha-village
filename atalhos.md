@@ -258,13 +258,6 @@
 - parcool open setting skilltree: **p + Alt**
 - parcool enable: **p + Control**
 - paraglider paragliderSettings: **p + Control**
-- l2mods up: **Seta cima**
-- l2mods down: **Seta baixo**
-- l2mods left: **Seta esq.**
-- l2mods right: **Seta dir.**
-- l2mods swap: **r**
-- l2mods shift: **Shift esq.**
-- l2mods alt: **Alt esq.**
 - ponder ponder: **w**
 - punchy triggerable punchy sword inspect rework: **g**
 - punchy triggerable punchy sword inspect old: **j**
@@ -377,3 +370,11 @@ Sem tecla: `seasonhud keybind options`
 - keyinfo alt modifier: **Alt esq.**
 
 Sem tecla: `keyinfo rotate menu`
+
+## pipinha_freelook (1 ativos, 0 sem tecla)
+
+- Câmera livre (montado): **Alt esq.** (categoria "Pipinha's Village"; segurar em cavalo, camelo ou outra montaria viva; soltar volta seco). O Relics usa a mesma tecla para a lista de habilidades ativas, então lembre disso ao montar com habilidade equipada.
+
+## autohidehud (1 ativos, 0 sem tecla)
+
+- Reveal HUD (mostra a HUD escondida pelo Auto Hide HUD): **r**

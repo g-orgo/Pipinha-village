@@ -1359,7 +1359,7 @@
   "ftbquests.chapter.welcome.quest4F7FB7C8808AF152.title": "Shaders?",
   "ftbquests.chapter.welcome.quest5FB57C45A25D41F0.description1": "Pipinha's Village is a more peaceful oriented modpack! This means:",
   "ftbquests.chapter.welcome.quest5FB57C45A25D41F0.description2": "- Inventory is kept on death (Though tool durability will be lost)",
-  "ftbquests.chapter.welcome.quest5FB57C45A25D41F0.description3": "- Mobs don't spawn above ground",
+  "ftbquests.chapter.welcome.quest5FB57C45A25D41F0.description3": "- Hostile mobs only spawn below level 50 or in other dimensions",
   "ftbquests.chapter.welcome.quest5FB57C45A25D41F0.description4": "- Phantoms and Pillager patrols no longer spawn",
   "ftbquests.chapter.welcome.quest5FB57C45A25D41F0.description5": "- Creepers are festive!",
   "ftbquests.chapter.welcome.quest5FB57C45A25D41F0.description6": "This doesn't mean there's no danger however. &6The underground, Nether, and Skull Cavern are as dangerous as ever&r....",

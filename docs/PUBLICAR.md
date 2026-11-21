@@ -35,7 +35,7 @@ Saída: `dist/<nome>-<versão>.zip`. A pasta `dist/` não entra no próprio zip.
 
 ### Ponto de atenção no script
 
-O script `tools/pack_tools/export_curseforge.py` ainda grava `minecraft 1.20.1` e `forge-47.4.0` no manifesto, e o texto de uso ainda cita `sunlit_tools/`. Isso foi conferido no script em 2026-11-13 e continua assim. Antes de gerar o zip da 1.21.1, esses valores precisam virar `1.21.1` e `neoforge-21.1.265`, e o caminho de uso precisa apontar para `tools/pack_tools/`. A alteração é pequena e reversível, mas ainda não foi feita: o item está **pendente** na fase F11, e o script não foi editado.
+O script `tools/pack_tools/export_curseforge.py` ainda grava `"version": "1.20.1"` e `forge-47.4.0` no manifesto, e o texto de uso ainda cita `sunlit_tools/`. Isso foi conferido no script em 2026-11-13 e continua assim. Antes de gerar o zip da 1.21.1, esses valores precisam virar `1.21.1` e `neoforge-21.1.265`, e o caminho de uso precisa apontar para `tools/pack_tools/`. A alteração é pequena e reversível, mas ainda não foi feita: o item está **pendente** na fase F11, e o script não foi editado.
 
 ## Como um amigo instala no CurseForge
 

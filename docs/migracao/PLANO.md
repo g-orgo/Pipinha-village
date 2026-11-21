@@ -113,7 +113,7 @@ F11_entrega    # 1.21.1 vai para a main + Modpack.zip novo; 1.20.1 numa branch p
 
 ## Estado (2026-11-11)
 
-F0 e F1 prontas: 364 jars em `mods/`, lista em `mods_instalados.tsv`. Conferido sem abrir o
+F0 e F1 prontas: 364 jars no boot limpo de 2026-11-12; hoje são 388 jars em `mods/` (adições de 2026-11-16 a 2026-11-20). Lista em `mods_instalados.tsv`. Conferido sem abrir o
 jogo: todo jar tem `neoforge.mods.toml`, toda dependência obrigatória está presente (incluindo
 as que vêm dentro de outros jars) nenhuma incompatibilidade declarada bate com a versão
 instalada e as faixas de versão das dependências conferem (checker com versionRange desde 2026-11-12).

@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.pipinha.hudfade.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "HeartDrawingMixin",
+    "RenderEventHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,285 @@
+[general]
+	#Enable auto hiding
+	enableAutoHiding = true
+	#How long in game ticks before hiding (20 ticks = 1 sec)
+	# Default: 100
+	# Range: > 1
+	ticksBeforeHiding = 100
+	#Fade out duration in seconds
+	# Default: 1.0
+	# Range: 0.0 ~ 2.147483647E9
+	fadeOutSpeed = 1.0
+	#The final opacity of the hud elements
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	targetOpacity = 0.2
+
+[hide]
+	#Hides the hotbar
+	hideHotbar = true
+	#Hides the selected hotbar item name
+	hideSelectedItemName = true
+	#Hides the player armor
+	hideArmorLevel = true
+	#Hides the player health
+	hideHealthBar = true
+	#Hides the vehicle health
+	hideVehicleHealth = true
+	#Hides the player food level
+	hideFoodLevel = true
+	#Hides the player air level
+	hideAirLevel = true
+	#Hides the player level
+	hideExperienceLevel = true
+	#Hides the crosshairs
+	hideCrossHair = false
+	#Hides the player status effects
+	hideStatusEffects = true
+	#Hides the chat messages
+	hideChatMessages = true
+	#Hides the sleep overlay while in bed
+	hideSleepOverlay = true
+	#A list of custom GUI layer ids to hide
+	additionalLayerIds = ["legendarysurvivaloverhaul:health_overhaul", "legendarysurvivaloverhaul:thirst", "legendarysurvivaloverhaul:body_damage", "legendarysurvivaloverhaul:cold_hunger", "legendarysurvivaloverhaul:wetness", "create:toolbox"]
+
+[reveal]
+	#Reveals the HUD while player health is below % (0 = disabled)
+	# Default: 50
+	# Range: 0 ~ 100
+	revealWhenPlayerHealthChangedBelow = 50
+	#Reveals the HUD while player food is below % (0 = disabled)
+	# Default: 50
+	# Range: 0 ~ 100
+	revealWhenPlayerFoodChangedBelow = 50
+	#Reveals the HUD while mount health is below % (0 = disabled)
+	# Default: 50
+	# Range: 0 ~ 100
+	revealWhenVehicleHealthChangedBelow = 50
+	#Reveals the HUD while player air is below % (0 = disabled)
+	# Default: 50
+	# Range: 0 ~ 100
+	revealWhenPlayerAirChangedBelow = 50
+	#Reveals the HUD when selected hotbar item durability is below % (0 = disabled)
+	# Default: 15
+	# Range: 0 ~ 100
+	revealOnSelectedHotbarDurabilityChange = 15
+	#Temp reveals the HUD when player experience level changes and is a multiple of value (0 = disabled)
+	# Default: 1
+	# Range: > 0
+	revealOnPlayerExperienceLevelChange = 1
+	#Temp reveals the HUD when player experience progress changes
+	revealOnPlayerExperienceProgressChange = true
+	#Temp reveals the HUD when player armour changes
+	revealOnPlayerArmorChange = true
+	#Temp reveals the HUD when selected hotbar slot changes
+	revealOnPlayerHotbarSlotChange = true
+	#When closing a menu, should the HUD instantly fade if it was hidden before the menu was opened?
+	returnToStateFromMenu = true
+	#Reveals the HUD while in creative mode
+	revealIfInCreative = true
+
+[position]
+	#Global X offset applied to all core HUD elements (hotbar, health, armor, food, air, vehicle health, xp level, selected item name)
+	# Default: 0
+	# Range: -500 ~ 500
+	globalOffsetX = 0
+	#Global Y offset applied to all core HUD elements (positive moves down toward bottom of screen)
+	# Default: 0
+	# Range: -500 ~ 500
+	globalOffsetY = 0
+	#Per-element X offset added on top of global
+	# Default: 0
+	# Range: -500 ~ 500
+	hotbarOffsetX = 0
+	#Per-element Y offset added on top of global
+	# Default: 0
+	# Range: -500 ~ 500
+	hotbarOffsetY = 0
+	#Per-element X offset added on top of global; also applied to AppleSkin health overlays
+	# Default: 0
+	# Range: -500 ~ 500
+	healthBarOffsetX = 0
+	#Per-element Y offset added on top of global; also applied to AppleSkin health overlays
+	# Default: 0
+	# Range: -500 ~ 500
+	healthBarOffsetY = 0
+	#Per-element X offset added on top of global
+	# Default: 0
+	# Range: -500 ~ 500
+	armorOffsetX = 0
+	#Per-element Y offset added on top of global
+	# Default: 0
+	# Range: -500 ~ 500
+	armorOffsetY = 0
+	#Per-element X offset added on top of global; also applied to AppleSkin food/saturation overlays
+	# Default: 0
+	# Range: -500 ~ 500
+	foodOffsetX = 0
+	#Per-element Y offset added on top of global; also applied to AppleSkin food/saturation overlays
+	# Default: 0
+	# Range: -500 ~ 500
+	foodOffsetY = 0
+	#Per-element X offset added on top of global
+	# Default: 0
+	# Range: -500 ~ 500
+	airOffsetX = 0
+	#Per-element Y offset added on top of global
+	# Default: 0
+	# Range: -500 ~ 500
+	airOffsetY = 0
+	#Per-element X offset added on top of global
+	# Default: 0
+	# Range: -500 ~ 500
+	vehicleHealthOffsetX = 0
+	#Per-element Y offset added on top of global
+	# Default: 0
+	# Range: -500 ~ 500
+	vehicleHealthOffsetY = 0
+	#Per-element X offset added on top of global
+	# Default: 0
+	# Range: -500 ~ 500
+	experienceLevelOffsetX = 0
+	#Per-element Y offset added on top of global
+	# Default: 0
+	# Range: -500 ~ 500
+	experienceLevelOffsetY = 0
+	#Per-element X offset added on top of global
+	# Default: 0
+	# Range: -500 ~ 500
+	selectedItemNameOffsetX = 0
+	#Per-element Y offset added on top of global
+	# Default: 0
+	# Range: -500 ~ 500
+	selectedItemNameOffsetY = 0
+	#X offset for status effects (top-right cluster); global offset does NOT apply
+	# Default: 0
+	# Range: -500 ~ 500
+	statusEffectsOffsetX = 0
+	#Y offset for status effects (top-right cluster); global offset does NOT apply
+	# Default: 0
+	# Range: -500 ~ 500
+	statusEffectsOffsetY = 0
+	#X offset for chat; global offset does NOT apply
+	# Default: 0
+	# Range: -500 ~ 500
+	chatOffsetX = 0
+	#Y offset for chat; global offset does NOT apply
+	# Default: 0
+	# Range: -500 ~ 500
+	chatOffsetY = 0
+	#X offset for crosshair; global offset does NOT apply
+	# Default: 0
+	# Range: -500 ~ 500
+	crosshairOffsetX = 0
+	#Y offset for crosshair; global offset does NOT apply
+	# Default: 0
+	# Range: -500 ~ 500
+	crosshairOffsetY = 0
+
+[rotation]
+	#Global rotation (degrees) applied to all core HUD elements
+	# Default: 0
+	# Range: 0 ~ 360
+	globalRotation = 0
+	#Per-element rotation added on top of global
+	# Default: 0
+	# Range: 0 ~ 360
+	hotbarRotation = 0
+	#Per-element rotation added on top of global; also applied to AppleSkin health overlays
+	# Default: 0
+	# Range: 0 ~ 360
+	healthBarRotation = 0
+	#Per-element rotation added on top of global
+	# Default: 0
+	# Range: 0 ~ 360
+	armorRotation = 0
+	#Per-element rotation added on top of global; also applied to AppleSkin food/saturation overlays
+	# Default: 0
+	# Range: 0 ~ 360
+	foodRotation = 0
+	#Per-element rotation added on top of global
+	# Default: 0
+	# Range: 0 ~ 360
+	airRotation = 0
+	#Per-element rotation added on top of global
+	# Default: 0
+	# Range: 0 ~ 360
+	vehicleHealthRotation = 0
+	#Per-element rotation added on top of global
+	# Default: 0
+	# Range: 0 ~ 360
+	experienceLevelRotation = 0
+	#Per-element rotation added on top of global
+	# Default: 0
+	# Range: 0 ~ 360
+	selectedItemNameRotation = 0
+	#Rotation for status effects; global rotation does NOT apply
+	# Default: 0
+	# Range: 0 ~ 360
+	statusEffectsRotation = 0
+	#Rotation for chat; global rotation does NOT apply
+	# Default: 0
+	# Range: 0 ~ 360
+	chatRotation = 0
+	#Rotation for crosshair; global rotation does NOT apply
+	# Default: 0
+	# Range: 0 ~ 360
+	crosshairRotation = 0
+
+[dataServer]
+	#Should the data server start automatically when in a world
+	autoStartPlayerDataServer = false
+	#Specifies the data server port number. Changing this while connected will also set the port of the companion app. Otherwise, you will need to manually set it. (Requires companion to be restarted)
+	# Default: 25922
+	# Range: 1 ~ 65535
+	playerDataServerPort = 25922
+	#How often will the data server send updates to the companion app in game ticks (20 ticks = 1 sec)
+	# Default: 1
+	# Range: > 1
+	playerDataServerTickRate = 1
+	#Displays the player's position on the companion app
+	showPosition = true
+	#Displays the player's facing (North, East, South, West) on the companion app
+	showFacing = true
+	#Displays the player's armor level on the companion app
+	showArmorLevel = true
+	#Displays the player's health on the companion app
+	showHealth = true
+	#Displays a low health warning on the companion app if players health is below % (0 = disabled)
+	# Default: 30
+	# Range: 0 ~ 100
+	showHealthWarning = 30
+	#Displays the player's mount health on the companion app
+	showVehicleHealth = true
+	#Displays the player's food level on the companion app
+	showFoodLevel = true
+	#Displays the player's food saturation on the companion app
+	showSaturationLevel = true
+	#Displays the player's remaining air on the companion app
+	showAirLevel = true
+	#Displays the player's level on the companion app
+	showExperienceLevel = true
+	#Displays the player's experience progress on the companion app
+	showExperienceProgress = true
+	#Displays the player's status effects on the companion app
+	showStatusEffects = true
+	#Displays the player's hotbar items on the companion app
+	showHotbarItems = true
+	#Displays the player's hotbar items durability on the companion app
+	showHotbarItemsDurability = true
+	#Displays the player's hotbar items durability as a % when 'Display Item Durability' is ON
+	showHotbarItemsDurabilityPercent = true
+	#Displays 'SELECTED' next to the selected hotbar item in addition to color highlight
+	showSelectedItemLabel = false
+	#Sets the companion app's background color while in focus (6-digit hex format with or without #)
+	focusedBackgroundColor = "#000000"
+	#Sets the companion app's background opacity while in focus (0 = transparent)
+	# Default: 100
+	# Range: 0 ~ 100
+	focusedBackgroundOpacity = 100
+	#Sets the companion app's background color while not in focus (6-digit hex format with or without #)
+	notFocusedBackgroundColor = "#000000"
+	#Sets the companion app's background opacity while not in focus (0 = transparent)
+	# Default: 0
+	# Range: 0 ~ 100
+	notFocusedBackgroundOpacity = 0

@@ -1,0 +1,40 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="pipinha_hudfade"
+version="1.0.0"
+displayName="Pipinha's Village HUD Fade"
+description="Makes the Colorful Hearts health bar fade together with the rest of the HUD when Auto Hide HUD hides it."
+
+[[mixins]]
+config="pipinha_hudfade.mixins.json"
+
+[[dependencies.pipinha_hudfade]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.pipinha_hudfade]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.pipinha_hudfade]]
+modId="autohidehud"
+type="required"
+versionRange="[1.3,)"
+ordering="AFTER"
+side="CLIENT"
+
+[[dependencies.pipinha_hudfade]]
+modId="colorfulhearts"
+type="required"
+versionRange="[10.5,)"
+ordering="AFTER"
+side="CLIENT"

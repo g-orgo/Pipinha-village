@@ -136,7 +136,7 @@ if [ -n "$ZIP" ]; then
         exit 1
     fi
     SRC="$TMP"
-    # The GitHub zip wraps everything in one top folder (Pipinha-village-1.21.1).
+    # The GitHub zip wraps everything in one top folder (Pipinha-village-main).
     if [ ! -d "$SRC/mods" ]; then
         for d in "$TMP"/*/; do
             if [ -d "$d/mods" ]; then

@@ -27,7 +27,7 @@ F7 = "em andamento"                    # society: VillageLoot, EmbersTextAPI
 F8 = "em andamento"                    # paletas e loot prontos; perfis e estruturas faltam
 F9 = "cópia convertida, validator PASS"# refeita após Botania, Fantasy's Furniture e Sunrise
 F10 = "pendente"                       # resource packs, FancyMenu, atalhos
-F11 = "pendente"                       # main e Modpack.zip novo, só com o dono
+F11 = "em parte"                       # main virou a 1.21.1 (2026-11-21); Modpack.zip novo pendente
 ```
 
 ```py title:Ambiente
@@ -83,7 +83,7 @@ sturdy_farmland = "terra arada -> farmland, aspersores -> ar"
 #### Regras de negócio
 
 - Toda decisão de conteúdo passa por `../context/decisions.md`; decisão nova do dono entra datada e com o porquê.
-- Commit e push só na branch `1.21.1`, sempre por unidade fechada; a `main` só muda na F11, com confirmação do dono.
+- Commit e push na `main` (a 1.21.1 desde 2026-11-21), sempre por unidade fechada; a branch `1.20.1` não é tocada.
 - O agente não roda o jogo nem cliente headless. Verificação leve é jar, dado, grep e `logs/latest.log`.
 - `options.txt`, atalhos, idioma, escala de GUI e resource packs só mudam quando o dono autoriza.
 - Nenhum arquivo de dados `meadow:` pode usar um id da lista antiga do `DataFixerMixin`, senão duplica receita e derruba a criação do mundo.

@@ -8,7 +8,7 @@ Esta versão só existe porque queríamos o **Create Aeronautics** no pack, e el
 
 O pacote é um **zip de perfil** do CurseForge. Ele não carrega os mods de terceiros: traz um `manifest.json` com a lista de arquivos do CurseForge, e o próprio app baixa cada mod na instalação. Só o que não vem do CurseForge entra dentro do zip, como as configs, o KubeJS e os resource packs que não são do CurseForge.
 
-O repositório fica na branch **1.21.1** do https://github.com/g-orgo/Pipinha-village.git. A worktree local é a própria pasta da instância: o `.gitignore` da raiz deixa entrar só o que o zip leva (as listas `INCLUDE_DIRS` e `INCLUDE_FILES` do `build_modpack.py`) mais `docs`, `tools`, `custom-mods` e as notas de agente. A `main` continua sendo a 1.20.1 até a fase F11, quando a 1.21.1 vai para a `main` e a 1.20.1 vai para uma branch própria. Essa troca é decisão do dono.
+O repositório fica na branch **main** do https://github.com/g-orgo/Pipinha-village.git. A worktree local é a própria pasta da instância: o `.gitignore` da raiz deixa entrar só o que o zip leva (as listas `INCLUDE_DIRS` e `INCLUDE_FILES` do `build_modpack.py`) mais `docs`, `tools`, `custom-mods` e as notas de agente. Desde 2026-11-21 a `main` é a 1.21.1 e a 1.20.1 fica na branch `1.20.1` (troca pedida pelo dono).
 
 O zip final tem três partes: o **manifest.json**, a **modlist.html** (lista simples dos mods, com link para a página de cada um) e a pasta **overrides/**, com o conteúdo do pack que não vem do CurseForge.
 
@@ -114,12 +114,12 @@ class BuildModpack:
 - Qualquer arquivo acima de 95 MB para o build.
 - Os instaladores trocam `mods`, `kubejs`, `resourcepacks` e `moonlight-global-datapacks`. O `options.txt` do jogador só recebe as linhas de resource pack.
 - O instalador confere o perfil (Minecraft 1.21.1 com NeoForge 21.1.265) antes de mexer em qualquer arquivo. Se não bater, pergunta antes de seguir.
-- `tools/pack_tools/sync_repo.py` faz o commit e o push da própria instância na branch `1.21.1`. Ele recusa arquivo acima de 95 MB, `servers.dat`, `usercache.json`, `usernamecache.json` e `options.txt` com `lastServer` preenchido.
+- `tools/pack_tools/sync_repo.py` faz o commit e o push da própria instância na branch `main`. Ele recusa arquivo acima de 95 MB, `servers.dat`, `usercache.json`, `usernamecache.json` e `options.txt` com `lastServer` preenchido.
 - Pasta nova que o zip passa a levar entra também no `.gitignore` da raiz, senão fica fora do repositório.
 
 ## Anotações
 
-> Por que a branch é a 1.21.1 e não a `main`? Porque a `main` segue sendo a 1.20.1 até a fase F11. A troca só acontece quando o dono decidir.
+> Onde fica cada edição? A 1.21.1 está na `main` desde 2026-11-21; a 1.20.1 ficou na branch `1.20.1`. A antiga branch `1.21.1` foi removida, porque o conteúdo dela é a `main`.
 
 > O nome público vai ser o mesmo do pack? Sim, Pipinha's Village. O nome da edição com o original não entra como título, só na linha de crédito.
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Commit and push the instance folder, which is itself the Pipinha-village repository.
 
-The instance is a git worktree on branch 1.21.1. What gets versioned is set by the root
+The instance is a git worktree on branch main (the 1.21.1 edition since 2026-11-21). What gets versioned is set by the root
 .gitignore: the Modpack.zip file set (tools/pack_tools/build_modpack.py INCLUDE_DIRS and
 INCLUDE_FILES, same artifact exclusions) plus the dev files (docs, tools, custom-mods, agent
 notes). Keep the two lists in step when either changes.
@@ -16,7 +16,7 @@ import subprocess
 import sys
 
 INSTANCE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-BRANCH = "1.21.1"
+BRANCH = "main"
 MAX_BYTES = 95 * 1024 * 1024  # GitHub rejects files over 100 MB.
 ATTRIBUTION = "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 PRIVATE_FILES = {"servers.dat", "usernamecache.json", "usercache.json"}

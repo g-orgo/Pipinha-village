@@ -31,4 +31,7 @@
 ### 进行中
 + 1.20.1 版的商店、职业、经济、进食动画、村庄和任务正在逐步迁移
 
+### 致谢
+感谢游玩 Pipinha's Village！想了解开发进展或打个招呼，请[访问整合包作者的 LinkedIn](https://www.linkedin.com/in/gabrielorgo/)。
+
 有疑问？打开任务书中的 Welcome 章节，指南都在那里。

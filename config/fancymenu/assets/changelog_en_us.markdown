@@ -38,4 +38,7 @@ This version only exists because we wanted Create Aeronautics in the pack, and i
 ### In progress
 + Shops, professions, economy, eating animations and quests from the 1.20.1 edition are being brought over step by step
 
+### Thanks
+Thank you for playing Pipinha's Village! The pack is made with a lot of care, through tweaks, tests and many hours of play. To follow its development or say hi, [visit the pack developer's LinkedIn](https://www.linkedin.com/in/gabrielorgo/).
+
 Questions? Open the Welcome chapter in the quest book, the Guides are there.

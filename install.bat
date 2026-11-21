@@ -108,7 +108,7 @@ try {
         Add-Type -AssemblyName System.IO.Compression.FileSystem
         [IO.Compression.ZipFile]::ExtractToDirectory($zip, $tmp)
         $src = $tmp
-        # The GitHub zip wraps everything in one top folder (Pipinha-village-1.21.1).
+        # The GitHub zip wraps everything in one top folder (Pipinha-village-main).
         if (-not (Test-Path -LiteralPath (Join-Path $src 'mods'))) {
             $top = Get-ChildItem -LiteralPath $src -Directory | Where-Object { Test-Path -LiteralPath (Join-Path $_.FullName 'mods') } | Select-Object -First 1
             if ($top) { $src = $top.FullName }

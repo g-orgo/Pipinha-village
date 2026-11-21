@@ -16,6 +16,6 @@ Mapa rápido do que está documentado para o Pipinha's Village (1.21.1). Cada li
 - `../animacoes-de-comida.md`: animações de comida.
 - `../animacoes-inventario.md`: animações de inventário.
 
-Esta é a documentação da instância 1.21.1 (`Pipinha's Village`). A 1.20.1 de origem fica na instância `Society: Sunlit Valley` e na `main` do repositório, e não é alterada pela migração. O pack é baseado no Society: Sunlit Valley.
+Esta é a documentação da instância 1.21.1 (`Pipinha's Village`). A 1.20.1 de origem fica na instância `Society: Sunlit Valley` e na branch `1.20.1` do repositório, e não é alterada pela migração. A `main` é a 1.21.1 desde 2026-11-21. O pack é baseado no Society: Sunlit Valley.
 
 O pack existe em 1.21.1 porque queremos o **Create Aeronautics**, que não existe para 1.20.1 (ver `decisions.md`, 2026-11-11).

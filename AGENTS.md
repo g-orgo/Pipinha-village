@@ -30,8 +30,8 @@ A instância 1.20.1 de origem fica em `../Society: Sunlit Valley` e é só leitu
 
 # REGRA OBRIGATÓRIA: NADA DA 1.20.1 É ALTERADO
 
-- A instância `Society: Sunlit Valley`, o `Modpack.zip` dela, os saves dela e a `main` do
-  repositório Pipinha-village não são tocados durante a migração.
+- A instância `Society: Sunlit Valley`, o `Modpack.zip` dela, os saves dela e a branch `1.20.1`
+  do repositório Pipinha-village não são tocados por esta instância.
 - Conteúdo da 1.20.1 só é copiado para cá e convertido aqui.
 
 # REGRA OBRIGATÓRIA: IDENTIDADE DO PACK
@@ -46,10 +46,10 @@ A instância 1.20.1 de origem fica em `../Society: Sunlit Valley` e é só leitu
 
 # REGRA OBRIGATÓRIA: REPOSITÓRIO
 
-- Versionado na branch `1.21.1` do https://github.com/g-orgo/Pipinha-village.git
+- Versionado na branch `main` do https://github.com/g-orgo/Pipinha-village.git
   (a própria pasta desta instância é a worktree; o `.gitignore` da raiz define o que entra,
-  igual ao conjunto do `Modpack.zip` mais docs, tools e `custom-mods`). A `main` segue sendo
-  a 1.20.1 até o dono decidir trocar. A 1.20.1 trabalha na branch `1.20.1` (clone
+  igual ao conjunto do `Modpack.zip` mais docs, tools e `custom-mods`). A `main` é a 1.21.1
+  desde 2026-11-21 (troca pedida pelo dono). A 1.20.1 fica na branch `1.20.1` (clone
   `/var/home/Orgo/Documentos/Pipinha-village`); esta instância nunca escreve nela.
-- Commits e pushes nessa branch são autorizados pelo dono; nunca force-push, nunca na `main`.
+- Commits e pushes na `main` são autorizados pelo dono; nunca force-push, nunca na `1.20.1`.
 - Nenhum arquivo acima de 95 MB, nenhum save, log, cache, token ou dado pessoal.

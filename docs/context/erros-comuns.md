@@ -112,6 +112,7 @@ nested_const_check = "NODE_PATH=<acorn> node tools/kjsport/find_nested_const.js 
 - Código que roda a cada quadro (HUD) fica dentro de `try`, registra o erro uma vez e para de desenhar, para não derrubar o cliente.
 - Logs de diagnóstico ficam atrás de uma chave e só são desligados depois da confirmação do dono no jogo.
 - Antes de culpar um script por algo visual (ícone sumindo, HUD), procure mixins de outros mods no mesmo ponto da tela.
+- O class filter do KubeJS 2101 bloqueia `java.lang.System`, `Runtime`, `Thread` e reflexão: `Java.loadClass` delas falha no carregamento e o script inteiro não registra nada. Relógio em script usa `Date.now()` do JS. Caso de 2026-11-21: `surfaceHostileSpawns.js` carregava `java.lang.System` e a regra de mobs hostis na superfície nunca chegou a valer.
 - Jar de terceiro só é alterado quando não há versão compatível, com o original guardado em `backups/` e a alteração anotada aqui.
 
 ## Compatibilidade entre mods

@@ -248,15 +248,16 @@ key_placebo.toggleWings:key.keyboard.keypad.8
 key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
 key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
 key_key.carry.desc:key.keyboard.left.shift
 key_key.hypertube.tube_escape:key.keyboard.left.shift
 key_key.moreoverlays.lightoverlay.desc:key.keyboard.f7
 key_key.moreoverlays.chunkbounds.desc:key.keyboard.f9
+key_key.pipinha_freelook.free_look:key.keyboard.left.alt
 key_keyinfo.copycats.fill_copycat:key.keyboard.left.alt
 key_key.toastcontrol.clear:key.keyboard.j
 key_key.buildinggadgets2.settings_menu:key.keyboard.g
@@ -461,8 +462,6 @@ key_key.let_it_walk.grab:key.keyboard.r
 key_key.let_it_walk.crab:key.keyboard.v
 key_key.let_it_walk.lean_mode:key.keyboard.tab
 key_key.pickup.item:key.keyboard.unknown
-key_key.punchy.triggerable.punchy_sword_inspect_old:key.keyboard.j
-key_key.punchy.triggerable.punchy_sword_inspect_rework:key.keyboard.g
 key_key.punchy_moves.camera_toggle_v:key.keyboard.unknown
 key_key.punchy_moves.camera_editor:key.keyboard.f7
 key_key.punchy_moves.free_camera:key.keyboard.unknown
@@ -471,6 +470,8 @@ key_key.punchy_moves.emote.hello:key.keyboard.unknown
 key_key.punchy_moves.emote.hello_b:key.keyboard.unknown
 key_key.punchy_moves.emote.cool_emote:key.keyboard.unknown
 key_key.punchy_moves.emote.shuuba_dance:key.keyboard.unknown
+key_key.punchy.triggerable.punchy_sword_inspect_old:key.keyboard.j
+key_key.punchy.triggerable.punchy_sword_inspect_rework:key.keyboard.g
 soundCategory_master:0.3024282560706401
 soundCategory_music:0.2007042253521127
 soundCategory_record:1.0

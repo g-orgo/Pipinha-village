@@ -6,7 +6,7 @@ license="All Rights Reserved"
 modId="pipinha_hudfade"
 version="1.0.0"
 displayName="Pipinha's Village HUD Fade"
-description="Makes the Colorful Hearts health bar fade together with the rest of the HUD when Auto Hide HUD hides it."
+description="Makes mod HUD layers (Colorful Hearts, Legendary Survival Overhaul, Create, ParCool and others) fade together with the rest of the HUD when Auto Hide HUD hides it."
 
 [[mixins]]
 config="pipinha_hudfade.mixins.json"

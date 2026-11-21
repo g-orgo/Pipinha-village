@@ -44,7 +44,6 @@ var SURFACE_HOSTILE_KEEP_TYPES = [
 ];
 var SURFACE_HOSTILE_REGISTRY = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries").ENTITY_TYPE;
 var SURFACE_HOSTILE_RL = Java.loadClass("net.minecraft.resources.ResourceLocation");
-var SURFACE_HOSTILE_SYSTEM = Java.loadClass("java.lang.System");
 var surfaceHostileFailed = false;
 var surfaceHostileDebugCounts = {};
 var surfaceHostileDebugSince = 0;
@@ -61,7 +60,7 @@ function surfaceHostileDebug(id, reason) {
   if (!SURFACE_HOSTILE_DEBUG) return;
   try {
     var key = id + "/" + reason;
-    var now = Number(SURFACE_HOSTILE_SYSTEM.currentTimeMillis());
+    var now = Date.now();
     var parts = [];
     surfaceHostileDebugCounts[key] = (surfaceHostileDebugCounts[key] || 0) + 1;
     if (surfaceHostileDebugSince === 0) surfaceHostileDebugSince = now;

@@ -12,7 +12,7 @@
 	#The final opacity of the hud elements
 	# Default: 0.0
 	# Range: 0.0 ~ 1.0
-	targetOpacity = 0.2
+	targetOpacity = 0.05
 
 [hide]
 	#Hides the hotbar
@@ -40,7 +40,7 @@
 	#Hides the sleep overlay while in bed
 	hideSleepOverlay = true
 	#A list of custom GUI layer ids to hide
-	additionalLayerIds = ["legendarysurvivaloverhaul:health_overhaul", "legendarysurvivaloverhaul:thirst", "legendarysurvivaloverhaul:body_damage", "legendarysurvivaloverhaul:cold_hunger", "legendarysurvivaloverhaul:wetness", "create:toolbox"]
+	additionalLayerIds = ["legendarysurvivaloverhaul:health_overhaul", "legendarysurvivaloverhaul:thirst", "legendarysurvivaloverhaul:body_damage", "legendarysurvivaloverhaul:cold_hunger", "legendarysurvivaloverhaul:wetness", "create:toolbox", "create:remaining_air", "farmersdelight:comfort", "farmersdelight:nourishment", "brewinandchewin:intoxication", "parcool:hud.stamina.host"]
 
 [reveal]
 	#Reveals the HUD while player health is below % (0 = disabled)

@@ -154,5 +154,23 @@
     "x": 352,
     "y": 0,
     "root": false
+  },
+  "ki2pj35urk12wil7": {
+    "definition": "book_bluegill_meridian",
+    "x": -32,
+    "y": 192,
+    "root": false
+  },
+  "m1oqt3lv7vj8kfc9": {
+    "definition": "book_bullfish_jobs",
+    "x": 0,
+    "y": 192,
+    "root": false
+  },
+  "ranpisf1xfau1ubj": {
+    "definition": "book_pond_house_five",
+    "x": 32,
+    "y": 192,
+    "root": false
   }
 }

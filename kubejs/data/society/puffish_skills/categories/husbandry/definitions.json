@@ -376,5 +376,57 @@
         }
       }
     ]
+  },
+  "book_animal_fancy": {
+    "title": {"translate": "item.society.animal_fancy"},
+    "description": {"translate": "society_skills.books.animal_fancy.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:animal_fancy"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_no_name_for_the_sheep": {
+    "title": {"translate": "item.society.no_name_for_the_sheep"},
+    "description": {"translate": "society_skills.books.no_name_for_the_sheep.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:no_name_for_the_sheep"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_slime_contain_protect": {
+    "title": {"translate": "item.society.slime_contain_protect"},
+    "description": {"translate": "society_skills.books.slime_contain_protect.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:slime_contain_protect"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_women_who_run_with_the_plushies": {
+    "title": {"translate": "item.society.women_who_run_with_the_plushies"},
+    "description": {"translate": "society_skills.books.women_who_run_with_the_plushies.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:women_who_run_with_the_plushies"
+      }
+    },
+    "cost": 0,
+    "rewards": []
   }
 }

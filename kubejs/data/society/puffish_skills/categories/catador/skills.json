@@ -34,5 +34,23 @@
     "x": -224,
     "y": 128,
     "root": false
+  },
+  "vcst3i9r9qkh9v9d": {
+    "definition": "book_alias_moss",
+    "x": -208,
+    "y": 192,
+    "root": false
+  },
+  "mox09q14zw7o8qil": {
+    "definition": "book_phenomenology_of_treasure",
+    "x": -176,
+    "y": 192,
+    "root": false
+  },
+  "6xngpwj5vkm9diuk": {
+    "definition": "book_the_metamorphosize",
+    "x": -144,
+    "y": 192,
+    "root": false
   }
 }

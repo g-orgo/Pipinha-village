@@ -143,5 +143,44 @@
         }
       }
     ]
+  },
+  "book_alias_moss": {
+    "title": {"translate": "item.society.alias_moss"},
+    "description": {"translate": "society_skills.books.alias_moss.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:alias_moss"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_phenomenology_of_treasure": {
+    "title": {"translate": "item.society.phenomenology_of_treasure"},
+    "description": {"translate": "society_skills.books.phenomenology_of_treasure.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:phenomenology_of_treasure"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_the_metamorphosize": {
+    "title": {"translate": "item.society.the_metamorphosize"},
+    "description": {"translate": "society_skills.books.the_metamorphosize.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:the_metamorphosize"
+      }
+    },
+    "cost": 0,
+    "rewards": []
   }
 }

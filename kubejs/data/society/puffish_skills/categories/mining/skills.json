@@ -148,5 +148,17 @@
     "x": -96,
     "y": 160,
     "root": false
+  },
+  "nzq5150e6bzqac8i": {
+    "definition": "book_intro_to_algorithms",
+    "x": -16,
+    "y": 224,
+    "root": false
+  },
+  "wz4vtnlenvs97o03": {
+    "definition": "book_the_spark_also_rises",
+    "x": 16,
+    "y": 224,
+    "root": false
   }
 }

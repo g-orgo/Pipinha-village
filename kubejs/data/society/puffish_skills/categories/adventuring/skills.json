@@ -142,5 +142,29 @@
     "x": 352,
     "y": 128,
     "root": false
+  },
+  "f8d7ax31hlnillz8": {
+    "definition": "book_debt_caverns",
+    "x": -48,
+    "y": 192,
+    "root": false
+  },
+  "ssq79yvxpoadyboq": {
+    "definition": "book_first_aid_guide",
+    "x": -16,
+    "y": 192,
+    "root": false
+  },
+  "hby9o7f6p6tng5mt": {
+    "definition": "book_hitting_hard_and_soft",
+    "x": 16,
+    "y": 192,
+    "root": false
+  },
+  "63a16nyysmonnrja": {
+    "definition": "book_the_red_and_the_black",
+    "x": 48,
+    "y": 192,
+    "root": false
   }
 }

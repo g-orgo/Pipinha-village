@@ -365,5 +365,31 @@
         }
       }
     ]
+  },
+  "book_intro_to_algorithms": {
+    "title": {"translate": "item.society.intro_to_algorithms"},
+    "description": {"translate": "society_skills.books.intro_to_algorithms.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:intro_to_algorithms"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_the_spark_also_rises": {
+    "title": {"translate": "item.society.the_spark_also_rises"},
+    "description": {"translate": "society_skills.books.the_spark_also_rises.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:the_spark_also_rises"
+      }
+    },
+    "cost": 0,
+    "rewards": []
   }
 }

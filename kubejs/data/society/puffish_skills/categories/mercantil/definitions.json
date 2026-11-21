@@ -145,5 +145,18 @@
         }
       }
     ]
+  },
+  "book_frogs_bounty_bazaar": {
+    "title": {"translate": "item.society.frogs_bounty_bazaar"},
+    "description": {"translate": "society_skills.books.frogs_bounty_bazaar.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:frogs_bounty_bazaar"
+      }
+    },
+    "cost": 0,
+    "rewards": []
   }
 }

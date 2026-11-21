@@ -1,6 +1,11 @@
 console.info("[SOCIETY] skillBooks.js loaded");
 
-[
+// Skill books of the "books" tree. Learning a book unlocks its skill (0 points) and the mirror node
+// of the same perk in its own tree; skillPerkSync.js does the mirror and reapplies the rewards.
+// The learned check reads the Puffish state, so it does not depend on stages.
+const SKILL_BOOK_API = Java.loadClass("net.puffish.skillsmod.api.SkillsAPI");
+const SKILL_BOOK_TREE = "society:books";
+const SKILL_BOOK_BOOKS = [
   { id: "society:alias_moss", skillId: "b2zbjhxyrcwlwb9e" },
   { id: "society:animal_fancy", skillId: "dk83vl5zi9fw3ovi" },
   { id: "society:banana_karenina", skillId: "76yv8nz8x47d80oe" },
@@ -26,13 +31,36 @@ console.info("[SOCIETY] skillBooks.js loaded");
   { id: "society:the_red_and_the_black", skillId: "ysthrzir822oedus" },
   { id: "society:women_who_run_with_the_plushies", skillId: "2vo8noqvq4aj1egy" },
   { id: "society:the_metamorphosize", skillId: "gjvl3ej2fhc4cwzb" },
-].forEach((book) => {
+];
+
+// True when the book skill is already UNLOCKED for the player. Logs and returns false on error.
+const skillBookIsLearned = (player, skillId) => {
+  let learned = false;
+  let category = null;
+  let optional = null;
+  let i = 0;
+  let categories = null;
+  try {
+    categories = SKILL_BOOK_API.streamCategories().toList();
+    for (i = 0; i < categories.size(); i++) {
+      if (String(categories.get(i).getId()) === SKILL_BOOK_TREE) category = categories.get(i);
+    }
+    if (category) {
+      optional = category.getSkill(skillId);
+      if (optional.isPresent()) learned = String(optional.get().getState(player)) === "UNLOCKED";
+    }
+  } catch (err) {
+    console.error("[SOCIETY] skillBooks: state check failed for " + skillId + ": " + err);
+  }
+  return learned;
+};
+
+SKILL_BOOK_BOOKS.forEach((book) => {
   ItemEvents.rightClicked(book.id, (e) => {
     const { player, item, server } = e;
-    const stageName = String(item.id).path;
-    if (!player.stages.has(stageName)) {
+    if (!skillBookIsLearned(player, book.skillId)) {
       server.runCommandSilent(
-        `puffish_skills skills unlock ${player.username} society:books ${book.skillId}`
+        `puffish_skills skills unlock ${player.username} ${SKILL_BOOK_TREE} ${book.skillId}`
       );
       player.tell(Text.translatable("society.skill_book.learn").green());
       server.runCommandSilent(

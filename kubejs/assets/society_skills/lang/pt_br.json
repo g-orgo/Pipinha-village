@@ -48,5 +48,6 @@
   "society_skills.catador.keen_nose_2": "Faro Apurado",
   "society_skills.catador.keen_nose_2.description": "Cada estrutura nova que você descobre rende mais §e1 Bevel§7 (8 spurs).",
   "society_skills.mining.industrial_miner": "Minerador Industrial",
-  "society_skills.mining.industrial_miner.description": "Minérios processados pelo Create (triturados, pepitas, lingotes e blocos de ferro, ouro, cobre e zinco) vendem por +25%%."
+  "society_skills.mining.industrial_miner.description": "Minérios processados pelo Create (triturados, pepitas, lingotes e blocos de ferro, ouro, cobre e zinco) vendem por +25%%.",
+  "society_skills.book_mirror.extra": "Aprendido com um livro."
 }

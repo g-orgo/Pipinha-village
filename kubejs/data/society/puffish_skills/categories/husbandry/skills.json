@@ -154,5 +154,29 @@
     "x": 352,
     "y": 0,
     "root": false
+  },
+  "5h7sf2lqiuyut206": {
+    "definition": "book_animal_fancy",
+    "x": -48,
+    "y": 192,
+    "root": false
+  },
+  "2g9e4f6ywfkk5w4b": {
+    "definition": "book_no_name_for_the_sheep",
+    "x": -16,
+    "y": 192,
+    "root": false
+  },
+  "imim4br8q5mxgwqi": {
+    "definition": "book_slime_contain_protect",
+    "x": 16,
+    "y": 192,
+    "root": false
+  },
+  "j8at3i3fx8i650nu": {
+    "definition": "book_women_who_run_with_the_plushies",
+    "x": 48,
+    "y": 192,
+    "root": false
   }
 }

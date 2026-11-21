@@ -98,6 +98,7 @@ sturdy_farmland = "terra arada -> farmland, aspersores -> ar"
 - Roupa de mod novo ganha valor de temperatura do LSO na mesma entrega (ver [[conventions]], Harmonização).
 - Animal de mod novo ganha doma na mesma entrega: grupo em `taming` e caixa no `tools/pack_tools/pet_guide/content.json`, depois `build_pet_guide.py` (ver [[decisions]], 2026-11-20).
 - Todo texto novo (menu, quests, docs) sobre o pack de origem se resume à linha de crédito de rodapé, sem outras menções.
+- Skills do Puffish (2026-11-21): nós espelho dos 25 livros na árvore própria e reaplicação dos comandos das skills no login e no desbloqueio (`skillPerkSync.js`); aguardando o dono testar no jogo.
 
 ## Anotações
 

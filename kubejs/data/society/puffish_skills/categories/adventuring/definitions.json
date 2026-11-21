@@ -373,5 +373,57 @@
         }
       }
     ]
+  },
+  "book_debt_caverns": {
+    "title": {"translate": "item.society.debt_caverns"},
+    "description": {"translate": "society_skills.books.debt_caverns.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:debt_caverns"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_first_aid_guide": {
+    "title": {"translate": "item.society.first_aid_guide"},
+    "description": {"translate": "society_skills.books.first_aid_guide.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:first_aid_guide"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_hitting_hard_and_soft": {
+    "title": {"translate": "item.society.hitting_hard_and_soft"},
+    "description": {"translate": "society_skills.books.hitting_hard_and_soft.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:hitting_hard_and_soft"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_the_red_and_the_black": {
+    "title": {"translate": "item.society.the_red_and_the_black"},
+    "description": {"translate": "society_skills.books.the_red_and_the_black.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:the_red_and_the_black"
+      }
+    },
+    "cost": 0,
+    "rewards": []
   }
 }

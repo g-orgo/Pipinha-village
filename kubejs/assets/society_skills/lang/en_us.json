@@ -298,5 +298,6 @@
   "society_skills.catador.keen_nose_1": "Treasure Nose",
   "society_skills.catador.keen_nose_1.description": "Every new structure you discover is worth §e1 Bevel§7 (8 spurs).",
   "society_skills.catador.keen_nose_2": "Sharp Nose",
-  "society_skills.catador.keen_nose_2.description": "Every new structure you discover is worth §e1 more Bevel§7 (8 spurs)."
+  "society_skills.catador.keen_nose_2.description": "Every new structure you discover is worth §e1 more Bevel§7 (8 spurs).",
+  "society_skills.book_mirror.extra": "Learned from a book."
 }

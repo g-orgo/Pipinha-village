@@ -414,5 +414,109 @@
         }
       }
     ]
+  },
+  "book_banana_karenina": {
+    "title": {"translate": "item.society.banana_karenina"},
+    "description": {"translate": "society_skills.books.banana_karenina.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:banana_karenina"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_brine_and_punishment": {
+    "title": {"translate": "item.society.brine_and_punishment"},
+    "description": {"translate": "society_skills.books.brine_and_punishment.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:brine_and_punishment"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_canadian_and_famous": {
+    "title": {"translate": "item.society.canadian_and_famous"},
+    "description": {"translate": "society_skills.books.canadian_and_famous.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:canadian_and_famous"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_paradise_crop": {
+    "title": {"translate": "item.society.paradise_crop"},
+    "description": {"translate": "society_skills.books.paradise_crop.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:paradise_crop"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_slouching_towards_artistry": {
+    "title": {"translate": "item.society.slouching_towards_artistry"},
+    "description": {"translate": "society_skills.books.slouching_towards_artistry.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:slouching_towards_artistry"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_the_quality_of_the_earth": {
+    "title": {"translate": "item.society.the_quality_of_the_earth"},
+    "description": {"translate": "society_skills.books.the_quality_of_the_earth.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:the_quality_of_the_earth"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_universal_methods_of_farming": {
+    "title": {"translate": "item.society.universal_methods_of_farming"},
+    "description": {"translate": "society_skills.books.universal_methods_of_farming.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:universal_methods_of_farming"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_wuthering_logs": {
+    "title": {"translate": "item.society.wuthering_logs"},
+    "description": {"translate": "society_skills.books.wuthering_logs.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:wuthering_logs"
+      }
+    },
+    "cost": 0,
+    "rewards": []
   }
 }

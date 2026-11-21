@@ -355,5 +355,44 @@
         }
       }
     ]
+  },
+  "book_bluegill_meridian": {
+    "title": {"translate": "item.society.bluegill_meridian"},
+    "description": {"translate": "society_skills.books.bluegill_meridian.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:bluegill_meridian"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_bullfish_jobs": {
+    "title": {"translate": "item.society.bullfish_jobs"},
+    "description": {"translate": "society_skills.books.bullfish_jobs.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:bullfish_jobs"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "book_pond_house_five": {
+    "title": {"translate": "item.society.pond_house_five"},
+    "description": {"translate": "society_skills.books.pond_house_five.description"},
+    "extra_description": {"translate": "society_skills.book_mirror.extra"},
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:pond_house_five"
+      }
+    },
+    "cost": 0,
+    "rewards": []
   }
 }

@@ -161,7 +161,7 @@ console.info("[SOCIETY] petGuideQuests.js loaded");
 
   // Called by startup_scripts/forgeEvents/petGuideInteract.js (native listener at LOWEST that
   // also receives the taming clicks Redomesticate cancels). Server side only.
-  global.petGuideOnInteract = (e) => {
+  global.runtime.petGuideOnInteract = (e) => {
     let player = e.getEntity();
     let target = e.getTarget();
     let server = null;

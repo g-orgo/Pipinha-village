@@ -52,6 +52,16 @@ item_text_component_as_object = '"minecraft:custom_name": {"translate": ...} den
 fix_item_text_component = '"minecraft:custom_name": "{\\"translate\\":\\"chave.lang\\"}"'   # custom_name, item_name e lore usam o codec "flat": string com o JSON
 # casos já vistos: society_trading shops/invitations (loja sumiu da lista, "Failed parsing shops file", 2026-11-18)
 # atenção: é o oposto do "name" da loja acima, que é objeto; o componente do item é sempre string
+
+global_readonly = "'global' cannot be assigned to in client or server scripts"   # global.x = ... fora de startup; o script inteiro para ali
+fix_global = "global.runtime.x = ... (startup_scripts/000_port_runtime.js)"   # só startup grava no topo do global
+# casos já vistos: petGuideQuests.js (global.petGuideOnInteract), quest "Companheiros" não completava por carinho/doma (2026-11-21)
+
+removed_item_empty_tag = "Component 'ingredient' is not allowed to be empty! Falling back to vanilla"   # tag vazia: a receita carrega, mas fica impossível
+# causa: handleItemBlockFluidTags.js tira todas as tags dos global.removedItems; se o item canônico não está na tag, ela esvazia
+fix_removed_item_tag = "pôr o item canônico (global.canonicalItems) em kubejs/data/<ns>/tags/item/<tag>.json"
+# casos já vistos: c:foods/onion sem farmersdelight:onion (vegan_* do Miner's Delight, raw_bun do Youkai, 2026-11-21)
+# c:silicon vazio é esperado: a cadeia de processadores do Refined Storage inteira está em removedItems
 ```
 
 ```py title:KubeJS 7 (2101): ticks por jogador
@@ -88,6 +98,8 @@ nested_const_check = "NODE_PATH=<acorn> node tools/kjsport/find_nested_const.js 
 - Quebra de API do KubeJS 7: ao achar um padrão quebrado, varrer todo o `kubejs/` pelo mesmo padrão e corrigir todos os usos na mesma entrega.
 - Nenhum `const` ou `let` dentro de `if`, `try`, `for` ou outro bloco aninhado, em nenhum tipo de script. Declare no topo da função e atribua dentro do bloco.
 - Todo campo lido de NBT de bloco (`nbt.data.x`, `getServerData().x`), de entidade (`getNbt().x`, `entity.nbt.x`) ou de `persistentData.x` (jogador, servidor, bloco, animal) passa por `global.nbtStr`, `global.nbtNum` ou `global.nbtBool` antes de virar chave de `Map`, ser comparado, somado ou testado como verdadeiro. Leituras por `getInt`, `getString`, `getBoolean` e `contains` já são seguras e ficam como estão. Em 2026-11-14 isso travava todas as máquinas artesanais: o tapper ficava com "!", o HUD de progresso não abria e nada amadurecia.
+- Server e client scripts nunca gravam direto no `global` (`global.x = ...`); estado e ganchos que mudam em `/reload` vão em `global.runtime`.
+- Item duplicado que entra em `global.removedItems` passa as tags dele para o item canônico; qualquer aviso "not allowed to be empty" no `server.log` aponta uma tag que esvaziou.
 - Toda chamada Java com mais de uma versão (sobrecarga) que recebe número ou string do JS usa a assinatura explícita.
 - `catch` vazio é proibido: toda falha é registrada no log pelo menos uma vez.
 - Código de debug nunca pode derrubar a função que observa: cada mensagem de debug roda dentro do próprio `try` (`paintDebug` em `paintHud.js`). Em 2026-11-14 um `getClass()` num log desligou o HUD inteiro.

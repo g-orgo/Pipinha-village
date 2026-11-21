@@ -31,6 +31,6 @@ side="CLIENT"
 [[dependencies.pipinha_freelook]]
 modId="shouldersurfing"
 type="optional"
-versionRange="[5.3,)"
+versionRange="[1.21.1-5.3,)"
 ordering="AFTER"
 side="CLIENT"

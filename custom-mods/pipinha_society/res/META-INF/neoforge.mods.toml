@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="society"
+version="1.0.0"
+displayName="Society"
+authors="Chakyl, Nitbe"
+description="Pipinha's Village content (based on Society: Sunlit Valley). Gives the society: namespace its mod name."
+
+[[dependencies.society]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.society]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"

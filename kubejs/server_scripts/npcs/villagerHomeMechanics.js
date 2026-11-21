@@ -114,7 +114,10 @@ BlockEvents.placed("society:villager_home", (e) => {
 BlockEvents.broken("society:villager_home", (e) => {
   const { block, player, level, server } = e;
   let nbt = block.getEntityData();
-  const { type, placer, boundNpc } = nbt.data;
+  // 1.21.1: block entity fields arrive as StringTag (quoted when stringified); normalize them.
+  let type = global.nbtStr(nbt.data.type);
+  let placer = global.nbtStr(nbt.data.placer);
+  let boundNpc = global.nbtStr(nbt.data.boundNpc);
   if (player.getUuid().toString() !== placer && placer != -1 && !player.isCreative()) {
     player.tell(
       Text.translatable(
@@ -123,6 +126,7 @@ BlockEvents.broken("society:villager_home", (e) => {
       ).red()
     );
     e.cancel();
+    return;
   }
 
   let foundNpc = getBoundNpc(level, block, boundNpc);
@@ -152,7 +156,7 @@ BlockEvents.broken("society:villager_home", (e) => {
     block.popItem(Item.of(`${block.id}[minecraft:custom_data={type:"${type}"}]`));
     player.persistentData.npcData[type].dayLastPlaced = -10
   } else {
-    if (!(type == undefined || placer == undefined || boundNpc == undefined)) {
+    if (!(type === "" || placer === "" || boundNpc === "")) {
       if (!player.isCreative()) {
         e.cancel();
       } else {

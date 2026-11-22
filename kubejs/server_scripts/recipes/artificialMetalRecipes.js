@@ -7,24 +7,57 @@
 
 // 1.21.1: the mark is a data component (custom_data), not NBT.
 const ARTIFICIAL_DATA = "[minecraft:custom_data={SunlitArtificial:1b}]";
+const ARTIFICIAL_RECIPE_PREFIX = "society:artificial/";
 
-// True when any stack in the grid that matches one of the ingredient specs is marked.
-const hasArtificialInput = (grid, specs) =>
-  specs.some((spec) => {
-    const found = grid.findAll(Ingredient.of(spec));
-    for (let i = 0; i < found.size(); i++) {
-      let stack = found.get(i);
-      let data = stack.customData;
-      if (data && String(data).indexOf("SunlitArtificial") >= 0) return true;
-    }
-    return false;
-  });
+// All recipes in this file contain only one metal type, so any marked input must be
+// the metal that is being converted.
+const hasArtificialInput = (grid) => {
+  let i;
+  let stack;
+  let data;
+  for (i = 0; i < grid.size(); i++) {
+    stack = grid.getItem(i);
+    data = stack.customData;
+    if (data && String(data).indexOf("SunlitArtificial") >= 0) return true;
+  }
+  return false;
+};
 
-// Keeps the result unchanged unless a marked input is present in the grid.
-const propagateArtificial = (grid, result, specs) =>
-  hasArtificialInput(grid, specs)
-    ? Item.of(result.id + ARTIFICIAL_DATA, result.count)
-    : result;
+// KubeJS 7 requires recipe-result changes through ServerEvents.modifyRecipeResult.
+// The event begins with the normal result, so leaving event.item untouched preserves it.
+const propagateArtificial = (event) => {
+  let result;
+  try {
+    if (!hasArtificialInput(event.grid)) return;
+    result = Item.of(event.item.id + ARTIFICIAL_DATA, event.item.count);
+    if (!result.isEmpty()) event.item = result;
+  } catch (err) {
+    console.error("[SOCIETY] artificial metal result propagation failed; preserving normal recipe result:", err);
+  }
+};
+
+const artificialRecipeIds = [
+  "iron_ingot_from_nuggets_manual_only",
+  "iron_nugget_manual_only",
+  "iron_block_manual_only",
+  "iron_ingot_from_block_manual_only",
+  "gold_ingot_from_nuggets_manual_only",
+  "gold_nugget_manual_only",
+  "gold_block_manual_only",
+  "gold_ingot_from_block_manual_only",
+  "copper_ingot_from_nuggets_manual_only",
+  "copper_nugget_manual_only",
+  "copper_block_manual_only",
+  "copper_ingot_from_block_manual_only",
+  "zinc_ingot_from_nuggets_manual_only",
+  "zinc_nugget_manual_only",
+  "zinc_block_manual_only",
+  "zinc_ingot_from_block_manual_only",
+];
+
+artificialRecipeIds.forEach((id) => {
+  ServerEvents.modifyRecipeResult(ARTIFICIAL_RECIPE_PREFIX + id, propagateArtificial);
+});
 
 ServerEvents.recipes((e) => {
   const removedIds = [
@@ -48,109 +81,75 @@ ServerEvents.recipes((e) => {
   removedIds.forEach((id) => e.remove({ id: id }));
 
   const NINE = 9;
-  const PREFIX = "society:artificial/";
-
   // Iron
   e.shaped(Item.of("minecraft:iron_ingot", 1), ["###", "###", "###"], {
     "#": "minecraft:iron_nugget",
   })
-    .id(PREFIX + "iron_ingot_from_nuggets_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["minecraft:iron_nugget"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "iron_ingot_from_nuggets_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "iron_ingot_from_nuggets_manual_only");
   e.shapeless(Item.of("minecraft:iron_nugget", NINE), ["minecraft:iron_ingot"])
-    .id(PREFIX + "iron_nugget_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["minecraft:iron_ingot"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "iron_nugget_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "iron_nugget_manual_only");
   e.shaped(Item.of("minecraft:iron_block", 1), ["###", "###", "###"], {
     "#": "minecraft:iron_ingot",
   })
-    .id(PREFIX + "iron_block_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["minecraft:iron_ingot"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "iron_block_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "iron_block_manual_only");
   e.shapeless(Item.of("minecraft:iron_ingot", NINE), ["minecraft:iron_block"])
-    .id(PREFIX + "iron_ingot_from_block_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["minecraft:iron_block"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "iron_ingot_from_block_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "iron_ingot_from_block_manual_only");
 
   // Gold
   e.shaped(Item.of("minecraft:gold_ingot", 1), ["###", "###", "###"], {
     "#": "minecraft:gold_nugget",
   })
-    .id(PREFIX + "gold_ingot_from_nuggets_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["minecraft:gold_nugget"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "gold_ingot_from_nuggets_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "gold_ingot_from_nuggets_manual_only");
   e.shapeless(Item.of("minecraft:gold_nugget", NINE), ["minecraft:gold_ingot"])
-    .id(PREFIX + "gold_nugget_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["minecraft:gold_ingot"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "gold_nugget_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "gold_nugget_manual_only");
   e.shaped(Item.of("minecraft:gold_block", 1), ["###", "###", "###"], {
     "#": "minecraft:gold_ingot",
   })
-    .id(PREFIX + "gold_block_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["minecraft:gold_ingot"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "gold_block_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "gold_block_manual_only");
   e.shapeless(Item.of("minecraft:gold_ingot", NINE), ["minecraft:gold_block"])
-    .id(PREFIX + "gold_ingot_from_block_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["minecraft:gold_block"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "gold_ingot_from_block_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "gold_ingot_from_block_manual_only");
 
   // Copper
   e.shaped(Item.of("minecraft:copper_ingot", 1), ["CCC", "CCC", "CCC"], {
     C: "#c:nuggets/copper",
   })
-    .id(PREFIX + "copper_ingot_from_nuggets_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["#c:nuggets/copper"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "copper_ingot_from_nuggets_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "copper_ingot_from_nuggets_manual_only");
   e.shapeless(Item.of("create:copper_nugget", NINE), ["#c:ingots/copper"])
-    .id(PREFIX + "copper_nugget_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["#c:ingots/copper"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "copper_nugget_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "copper_nugget_manual_only");
   e.shaped(Item.of("minecraft:copper_block", 1), ["###", "###", "###"], {
     "#": "minecraft:copper_ingot",
   })
-    .id(PREFIX + "copper_block_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["minecraft:copper_ingot"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "copper_block_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "copper_block_manual_only");
   e.shapeless(Item.of("minecraft:copper_ingot", NINE), ["minecraft:copper_block"])
-    .id(PREFIX + "copper_ingot_from_block_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["minecraft:copper_block"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "copper_ingot_from_block_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "copper_ingot_from_block_manual_only");
 
   // Zinc
   e.shaped(Item.of("create:zinc_ingot", 1), ["###", "###", "###"], {
     "#": "#c:nuggets/zinc",
   })
-    .id(PREFIX + "zinc_ingot_from_nuggets_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["#c:nuggets/zinc"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "zinc_ingot_from_nuggets_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "zinc_ingot_from_nuggets_manual_only");
   e.shapeless(Item.of("create:zinc_nugget", NINE), ["#c:ingots/zinc"])
-    .id(PREFIX + "zinc_nugget_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["#c:ingots/zinc"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "zinc_nugget_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "zinc_nugget_manual_only");
   e.shaped(Item.of("create:zinc_block", 1), ["###", "###", "###"], {
     "#": "#c:ingots/zinc",
   })
-    .id(PREFIX + "zinc_block_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["#c:ingots/zinc"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "zinc_block_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "zinc_block_manual_only");
   e.shapeless(Item.of("create:zinc_ingot", NINE), ["#c:storage_blocks/zinc"])
-    .id(PREFIX + "zinc_ingot_from_block_manual_only")
-    .modifyResult((grid, result) =>
-      propagateArtificial(grid, result, ["#c:storage_blocks/zinc"])
-    );
+    .id(ARTIFICIAL_RECIPE_PREFIX + "zinc_ingot_from_block_manual_only")
+    .modifyResult(ARTIFICIAL_RECIPE_PREFIX + "zinc_ingot_from_block_manual_only");
 });

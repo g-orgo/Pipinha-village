@@ -105,7 +105,7 @@ sturdy_farmland = "terra arada -> farmland, aspersores -> ar"
 ## Anotações
 
 O que foi feito em 2026-11-20 e 2026-11-21 e ainda não foi visto no jogo?
-> Ficou sem teste no jogo: caixas do capítulo "Companheiros" com o propósito de cada animal, doma universal de 61 animais, EMI na crafting station, tags de comida, câmera livre montada, roupas no Curios, temperatura segurada do LSO, skills do Puffish, hostis só fora da superfície, porta alta do Dramatic Doors e cidades no modo LEGACY do Lost Cities. O histórico de cada item está em `history.md`.
+> Ficou sem teste no jogo: caixas do capítulo "Companheiros" com o propósito de cada animal, doma universal de 61 animais, EMI na crafting station, saída e clique duplo da crafting station, tags de comida, câmera livre montada, roupas no Curios, temperatura segurada do LSO, skills do Puffish, hostis só fora da superfície, porta alta do Dramatic Doors e cidades no modo LEGACY do Lost Cities. O histórico de cada item está em `history.md`.
 
 A migração está perto do fim?
 > Sim, no papel. F0, F1, F3 e F4 estão fechadas e a F5 está pronta em modo estático; F6, F7, F8 e F9 andam em paralelo, e F10 e F11 dependem do dono.

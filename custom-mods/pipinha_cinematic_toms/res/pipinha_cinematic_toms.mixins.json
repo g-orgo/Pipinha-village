@@ -4,7 +4,8 @@
   "package": "com.pipinha.cinematictoms.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "NetworkHandlerMixin"
+    "NetworkHandlerMixin",
+    "TomsCraftingResultMixin"
   ],
   "client": [
     "CinematicEventsMixin",

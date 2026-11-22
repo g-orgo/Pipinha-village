@@ -1,6 +1,8 @@
 {
   "shop_id": "librarian",
-  "name": {"translate": "shop.society_trading.librarian"},
+  "name": {
+    "translate": "shop.society_trading.librarian"
+  },
   "texture": "dialog:textures/portraits/librarian",
   "villager_profession": "weaponsmith",
   "stage_required": "invited_librarian",
@@ -2191,6 +2193,438 @@
       },
       "numismatics_cost": 16,
       "trade_id": "librarian_schematic_and_quill_for_sprocket"
+    },
+    {
+      "offer": {
+        "id": "simulated:white_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_white_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:orange_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_orange_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:magenta_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_magenta_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:light_blue_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_light_blue_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:yellow_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_yellow_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:lime_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_lime_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:pink_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_pink_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:gray_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_gray_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:light_gray_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_light_gray_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:cyan_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_cyan_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:purple_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_purple_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:blue_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_blue_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:brown_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_brown_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:green_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_green_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:red_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_red_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:black_portable_engine",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16384,
+      "trade_id": "librarian_simulated_black_portable_engine"
+    },
+    {
+      "offer": {
+        "id": "simulated:steering_wheel",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:bevel",
+        "count": 4
+      },
+      "numismatics_cost": 32,
+      "trade_id": "librarian_simulated_steering_wheel"
+    },
+    {
+      "offer": {
+        "id": "simulated:throttle_lever",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_simulated_throttle_lever"
+    },
+    {
+      "offer": {
+        "id": "simulated:physics_assembler",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 2
+      },
+      "numismatics_cost": 8192,
+      "trade_id": "librarian_simulated_physics_assembler"
+    },
+    {
+      "offer": {
+        "id": "simulated:rope_winch",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "librarian_simulated_rope_winch"
+    },
+    {
+      "offer": {
+        "id": "simulated:docking_connector",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:bevel",
+        "count": 4
+      },
+      "numismatics_cost": 32,
+      "trade_id": "librarian_simulated_docking_connector"
+    },
+    {
+      "offer": {
+        "id": "simulated:navigation_table",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 8
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_simulated_navigation_table"
+    },
+    {
+      "offer": {
+        "id": "simulated:engine_assembly",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "librarian_simulated_engine_assembly"
+    },
+    {
+      "offer": {
+        "id": "simulated:gyroscopic_mechanism",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "librarian_simulated_gyroscopic_mechanism"
+    },
+    {
+      "offer": {
+        "id": "aeronautics:wooden_propeller",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 8
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_aeronautics_wooden_propeller"
+    },
+    {
+      "offer": {
+        "id": "aeronautics:andesite_propeller",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_aeronautics_andesite_propeller"
+    },
+    {
+      "offer": {
+        "id": "aeronautics:smart_propeller",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "librarian_aeronautics_smart_propeller"
+    },
+    {
+      "offer": {
+        "id": "aeronautics:propeller_bearing",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "librarian_aeronautics_propeller_bearing"
+    },
+    {
+      "offer": {
+        "id": "aeronautics:gyroscopic_propeller_bearing",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "librarian_aeronautics_gyroscopic_propeller_bearing"
+    },
+    {
+      "offer": {
+        "id": "aeronautics:adjustable_burner",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 2
+      },
+      "numismatics_cost": 1024,
+      "trade_id": "librarian_aeronautics_adjustable_burner"
+    },
+    {
+      "offer": {
+        "id": "aeronautics:steam_vent",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:bevel",
+        "count": 6
+      },
+      "numismatics_cost": 48,
+      "trade_id": "librarian_aeronautics_steam_vent"
+    },
+    {
+      "offer": {
+        "id": "offroad:wheel_mount",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_offroad_wheel_mount"
+    },
+    {
+      "offer": {
+        "id": "offroad:rockcutting_wheel",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_offroad_rockcutting_wheel"
+    },
+    {
+      "offer": {
+        "id": "offroad:small_tire",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:cog",
+        "count": 8
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_offroad_small_tire"
+    },
+    {
+      "offer": {
+        "id": "offroad:tire",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "librarian_offroad_tire"
+    },
+    {
+      "offer": {
+        "id": "offroad:large_tire",
+        "count": 1
+      },
+      "request": {
+        "id": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "librarian_offroad_large_tire"
     }
   ]
 }

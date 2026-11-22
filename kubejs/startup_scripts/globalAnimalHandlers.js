@@ -1,6 +1,11 @@
 // KubeJS 7 removed entity.entityType (it was always undefined, so every husbandry
 // check returned false). entity.type is the id string; look the EntityType up in
 // the registry and use RegistryObjectKJS.hasTag(ResourceLocation).
+const $LootParams = Java.loadClass("net.minecraft.world.level.storage.loot.LootParams");
+const $LootContextParams = Java.loadClass("net.minecraft.world.level.storage.loot.parameters.LootContextParams");
+const $LootContextParamSets = Java.loadClass("net.minecraft.world.level.storage.loot.parameters.LootContextParamSets");
+const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
+const HUSBANDRY_OUTPUT_DEBUG = true;
 global.checkEntityTag = (() => {
   const registries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries");
   const location = Java.loadClass("net.minecraft.resources.ResourceLocation");
@@ -196,6 +201,7 @@ global.handleSpecialHarvest = (
   const freshAnimal = global.isFresh(day, ageLastDroppedSpecial);
   const hungry = global.compareDay(day, ageLastFed, 1)
   const crackerBonus = data.animalCracker ? 2 : 1;
+  if (HUSBANDRY_OUTPUT_DEBUG && type === "minecraft:pig") console.info(`[pigForage] day=${day} last=${ageLastDroppedSpecial} available=${freshAnimal || day > ageLastDroppedSpecial} fed=${!hungry} hearts=${Math.floor((data.getInt("affection") || 0) / 100)}`);
   if (freshAnimal || day > ageLastDroppedSpecial) {
     let resolvedCount;
     let resolvedItem;
@@ -381,11 +387,20 @@ global.getMagicShearsOutput = (level, target, player, plushieModifiers, stages) 
     target.type === "meadow:wooly_cow"
       ? ["minecraft", "cow"]
       : target.type.split(":");
-  const droppedLoot = Utils.rollChestLoot(
-    `${targetId[0]}:entities/${targetId[1]}`
-  ).toArray();
+  const lootTableId = $ResourceLocation.parse(`${targetId[0]}:entities/${targetId[1]}`);
+  const lootTable = level.server.reloadableRegistries().getLootTable(lootTableId);
+  const lootParams = new $LootParams.Builder(level)
+    .withParameter($LootContextParams.ORIGIN, target.position())
+    .withParameter($LootContextParams.THIS_ENTITY, target)
+    .withParameter($LootContextParams.DAMAGE_SOURCE, target.damageSources().generic())
+    .withParameter($LootContextParams.TOOL, player ? player.getMainHandItem() : Item.empty)
+    .withLuck(player && !player.isFake() ? player.getLuck() : 0)
+    .create($LootContextParamSets.ENTITY);
+  const droppedLoot = lootTable.getRandomItems(lootParams).toArray();
+  let harvestReady = hearts >= 5 && (freshAnimal || day > ageLastMagicHarvested);
+  if (HUSBANDRY_OUTPUT_DEBUG) console.info(`[magicShears] target=${target.type} hearts=${hearts} mood=${mood} quality=${mood >= 160 ? global.getHusbandryQuality(hearts, mood) : 0} day=${day} last=${ageLastMagicHarvested} ready=${harvestReady} table=${lootTableId} tableDrops=${droppedLoot.length}`);
   let newLoot = [];
-  if (hearts >= 5 && (freshAnimal || day > ageLastMagicHarvested)) {
+  if (harvestReady) {
     if (!plushieModifiers || !plushieModifiers.resetDay) {
       data.ageLastMagicHarvested = day;
     }
@@ -407,7 +422,6 @@ global.getMagicShearsOutput = (level, target, player, plushieModifiers, stages) 
     if (mood >= 160) {
       let quality = global.getHusbandryQuality(hearts, mood);
       for (let i = 0; i < droppedLoot.length; i++) {
-        droppedLoot[i] = Item.of(droppedLoot[i].id);
         global.setQualityLevel(droppedLoot[i], quality);
       }
     }

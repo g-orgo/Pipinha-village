@@ -1,13 +1,13 @@
 console.info("[SOCIETY] culinariaCooking.js loaded");
 
-// Cooking XP and perks for the society:culinaria Puffish category.
+// Cooking perks for the society:culinaria Puffish category. Repeatable XP is
+// tracked in cookFirstDish.js from food output stats and station input actions.
 // While a Farmer's Delight cooking pot menu is open, the pot's output slot
 // (CookingPotMenu.INDEX_OUTPUT = 8) is snapshotted every tick. XP is granted
 // only when that slot shrinks and the player (inventory plus cursor) gained
 // the same item in that tick, so moving ingredients in and out gives nothing.
 // Perk stages are granted by the culinaria definitions through
 // "kubejs stages add @s <stage>".
-const COOKING_XP = 4;
 const COOKING_POT_OUTPUT_SLOT = 8;
 const CULINARIA_EXTRA_CHANCE = 1 / 3;
 const CULINARIA_DOUBLE_CHANCE = 1 / 50;
@@ -49,7 +49,6 @@ PlayerEvents.tick((e) => {
       if (taken > 0) {
         let held = countHeld(player, menu, Item.of(last.itemId));
         if (held - last.held >= taken) {
-          global.grantCulinariaXp(player, COOKING_XP * taken);
           if (player.stages.has("culinaria_extra") && Math.random() < CULINARIA_EXTRA_CHANCE) {
             player.give(Item.of(last.itemId, 1));
           }

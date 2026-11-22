@@ -17,6 +17,9 @@ fix = "declarar com let no topo da função e só atribuir dentro do bloco"
 const_nested_with_closure = "const em bloco aninhado falha já na 1ª execução se a função tem closure (arrow ou função interna, inclusive log de debug)"
 # caso já visto: global.handleBETick (const nbtStage no if do amanhecer) quebrou quando os logs [artisandebug] entraram;
 # nenhuma máquina artesanal avançava ao amanhecer (2026-11-20). Sem closure o mesmo const funcionava.
+# temporal_dead_zone = "let/const usado antes da declaração interrompe o callback"  # Rhino 2101 aplica TDZ; KubeJS 6 podia deixar o port antigo passar
+# itemstack_string_compare = "ItemStack === 'namespace:id' é sempre falso"  # compare item.id com o id, não o objeto do stack
+# casos vistos: zz_port_globals_misc.js lia mood antes da declaração (toda interação animal falhava); Milk Pail e Magic Shears comparavam stack com string (2026-11-22).
 top_of_arrow_callback = "ok"               # forEach((x) => { const y = ...; }) no início do corpo funciona
 
 ambiguous_overload = "InternalError: The choice of Java method ... is ambiguous"
@@ -52,6 +55,28 @@ item_text_component_as_object = '"minecraft:custom_name": {"translate": ...} den
 fix_item_text_component = '"minecraft:custom_name": "{\\"translate\\":\\"chave.lang\\"}"'   # custom_name, item_name e lore usam o codec "flat": string com o JSON
 # casos já vistos: society_trading shops/invitations (loja sumiu da lista, "Failed parsing shops file", 2026-11-18)
 # atenção: é o oposto do "name" da loja acima, que é objeto; o componente do item é sempre string
+
+shop_unknown_item = '"Unknown registry key in minecraft:item"'   # uma oferta inválida faz o society_trading descartar a loja toda; chave em assets/*/lang não garante Item registrado
+# caso visto: society_trading:librarian com simulated:paired_docking_connector (2026-11-22); usar somente IDs realmente registrados como item
+
+entity_interact_canceled_before_kubejs = "ItemEvents.entityInteracted pode não receber PlayerInteractEvent.EntityInteract cancelado antes por outro mod"  # interceptar separadamente cada fluxo que precisa preceder o mod
+# casos vistos na migração 1.20.1 -> 1.21.1 (2026-11-22): carinho diário em pet usa petFirstInteraction.js; Milk Pail/Magic Shears de husbandry usam husbandryTools.js. Confirmar pelo log [SOCIETY] pet-first / husbandry-tool
+
+missing_kubejs_rollChestLoot = "Utils.rollChestLoot foi removido no KubeJS 2101"  # obter a LootTable do servidor, criar LootParams com entidade/contexto e chamar getRandomItems
+# caso visto no port da Magic Shears (2026-11-22): `globalAnimalHandlers.js` ainda chamava a API da 1.20.1, abortando antes de produzir qualquer drop
+id_interface_not_factory = "ID é interface/helper de tipos, não uma fábrica Java instanciável em runtime"  # para criar ResourceLocation, usar ResourceLocation.parse(id)
+# caso visto na adaptação da Magic Shears (2026-11-22): a primeira troca de rollChestLoot usou ID(string) e o Rhino rejeitou antes da rolagem
+ambiguous_immersivemessage_ctor = "new ImmersiveMessage(component, number) e também a lista podem ser ambíguos no Rhino 2101"  # escolher o construtor pela assinatura explícita
+# caso visto nas mensagens de Magic Shears (2026-11-22): Collections.singletonList ainda deixava os construtores List/Component ambíguos; `embersTextSendCustom.js` seleciona `['(java.util.List,int)']`
+
+nbt_numeric_property_comparison = "comparar `day > data.ageLastFed` usa o wrapper Tag, não um número"  # ler via getInt antes de comparar ou calcular
+# caso visto na alimentação automática do cocho (2026-11-22): port antigo repetia o acesso direto; corrigido em powerfulMachines/feedingTrough.js
+
+spawnParticles_missing_particle_id = "spawnParticles(boolean,x,y,z,...) não encontra método no KubeJS 2101"  # primeiro argumento é o id da partícula, depois vem o boolean longDistance
+# caso visto no cocho (2026-11-22): o id `legendarycreatures:wisp_particle` da origem 1.20.1 dependia de mod ausente na 1.21.1; usar `minecraft:heart` e preservar os argumentos restantes
+
+quality_food_legacy_nbt = "quality_food:{quality:N} dentro do segundo argumento de Item.of é formato NBT da 1.20.1"  # na 1.21 criar o stack e chamar global.setQualityLevel(stack, N)
+# caso visto nos drops especiais de husbandry (trufa, lã fina etc., 2026-11-22): a afinidade calculava a qualidade, mas o NBT antigo não aplicava o componente Quality Food 2.x
 
 global_readonly = "'global' cannot be assigned to in client or server scripts"   # global.x = ... fora de startup; o script inteiro para ali
 fix_global = "global.runtime.x = ... (startup_scripts/000_port_runtime.js)"   # só startup grava no topo do global
@@ -116,6 +141,11 @@ nested_const_check = "NODE_PATH=<acorn> node tools/kjsport/find_nested_const.js 
 - Jar de terceiro só é alterado quando não há versão compatível, com o original guardado em `backups/` e a alteração anotada aqui.
 
 ## Compatibilidade entre mods
+
+- **Tom's Storage 2.4.2: crafting terminal envia `null` para a saída**: ao alterar a matriz sem receita válida, `CraftingTerminalBlockEntity.onCraftingMatrixChanged` chama `ResultContainer.setItem` com `null`. No Minecraft 1.21.1, `NonNullList` rejeita esse valor com NPE e interrompe a atualização da matriz/saída. No `pipinha_cinematic_toms`, converter o argumento nulo em `ItemStack.EMPTY` com mixin; conferir no `latest.log` e recolher uma receita completa no jogo.
+- **`modifyResult` do KubeJS 6 não aceita callback na 1.21.1**: no KubeJS 7, `.modifyResult()` recebe a chave textual de `ServerEvents.modifyRecipeResult`, e a função antiga vira uma chave sem listener. O `KubeJSCraftingRecipe` pede o resultado desse listener e recebe `null`, causando NPE em `CraftingMenu.slotChangedCraftingGrid`; a receita deixa de aparecer na mesa e no terminal do Tom's. Migrar a receita para `.modifyResult("chave")` e registrar `ServerEvents.modifyRecipeResult("chave", event => { event.item = ... })` (2026-11-22).
+- **Harmonização ampla demais para receitas culinárias nomeadas**: algumas receitas de mod já usam tags genéricas como `c:foods/cooked_fish`, independentemente de `normalizeEquivalentItems.js`. Se o prato pede uma espécie ou ingrediente específico, sobrescrever a receita em `kubejs/data/<mod>/recipe/` com o ingrediente nominal; exemplo `crabbersdelight:stuffed_nautilus_shell` (2026-11-22).
+- **Crafting terminal no Cinematic: clique duplo não equivale ao vanilla**: o addon encaminha cada clique de forma individual. Para recolher itens iguais da grade até um stack, detectar o segundo clique no mesmo slot e enviar `ClickType.PICKUP_ALL`; o menu vanilla respeita o limite do stack e prioriza os slots iniciais da grade.
 
 - **Sunrise Gardening 1.2 x Cultural Delights 0.19.8**: o Sunrise usa `CornUpperBlock`, que o Cultural Delights removeu na 0.18. Crash ao secar terra arada perto de plantação. O jar foi alterado para não ativar essa compatibilidade (`isLoaded("culturaldelights")` virou `"culturaldelightx"`); o original está em `backups/sunrisegardening-1.2.original.jar`. Ao atualizar o Sunrise, conferir se o autor corrigiu e trocar pelo jar oficial.
 - **Sunrise Gardening 1.2 x save convertido e enxada**: o Sunrise só faz crescer planta em solo próprio (`tilled_soil`, farmlands e areia arada) com registro em `sunrisegardening:tilled_block_chunk_data` e tick agendado de 10 ticks no chunk. Bloco escrito direto no save não tem nenhum dos dois: a planta para e o Jade do Sunrise mostra "Cannot grow" mesmo na estação. `minecraft:farmland` comum também não cresce nada (na 1.20.1 era a farmland do Dew Drop). Depois de converter ou mexer em save, rodar `tools/saveport/sunrise_soil.py "<save>"` (primeiro com `--dry`). O Sunrise também trata o clique com enxada em prioridade HIGHEST e cancela o evento: bloco da tag `turns_into_tilled_soil` nunca chega ao `hoeAoe.js` (no pack a tag tem só `minecraft:farmland`). Ver `decisions.md` (2026-11-18).

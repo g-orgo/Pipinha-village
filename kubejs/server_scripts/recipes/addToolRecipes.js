@@ -1,5 +1,25 @@
 console.info("[SOCIETY] addToolRecipes.js loaded");
 
+const TERASTEEL_RESULT_EVENT = "society:terrasteel_upgrade";
+
+const copyManasteelDataToTerrasteel = (event) => {
+  let i;
+  let input;
+  try {
+    for (i = 0; i < event.grid.size(); i++) {
+      input = event.grid.getItem(i);
+      if (String(input.id).indexOf("botania:manasteel_") === 0) {
+        event.item = event.item.withNBT(input.nbt);
+        return;
+      }
+    }
+  } catch (err) {
+    console.error("[SOCIETY] terrasteel data propagation failed; preserving normal recipe result:", err);
+  }
+};
+
+ServerEvents.modifyRecipeResult(TERASTEEL_RESULT_EVENT, copyManasteelDataToTerrasteel);
+
 ServerEvents.recipes((e) => {
   const toolTypes = ["pickaxe", "shovel", "hoe", "sword", "axe"];
   const armorTypes = ["helmet", "chestplate", "leggings", "boots"];
@@ -97,10 +117,9 @@ ServerEvents.recipes((e) => {
       m: "botania:terrasteel_ingot",
       c: "society:botanical_tribute",
       r: `botania:rune_${runes[runeIndex]}`,
-    }).modifyResult((grid, result) => {
-      let item = grid.find(Item.of(`botania:manasteel_${type}`));
-      return result.withNBT(item.nbt);
-    });
+    })
+      .id(`society:tools/terrasteel_${type}_upgrade`)
+      .modifyResult(TERASTEEL_RESULT_EVENT);
   };
   const neptuniumUpgrades = (type) => {
     e.smithing(

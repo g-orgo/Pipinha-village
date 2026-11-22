@@ -240,6 +240,9 @@ O pack passa a existir em 1.21.1 porque queremos o **Create Aeronautics**, que n
 - Itens com Kinetic Blueprint só liberam com `boiler_room_complete`. Broca, serra e colheitadeira mecânicas custam 2 moedas ancestrais.
 - Ficam de fora: variantes de cor, blocos decorativos, itens criativos e ferramentas que outras lojas já vendem.
 
+#### 2026-11-22: Artesã vende componentes dos addons de Create
+O pedido de expansão da loja inclui os Portable Engines do Simulated em todas as 16 cores e componentes funcionais do Simulated, Create Aeronautics e Offroad. Esses motores são vendidos a 4 sóis cada; os demais componentes seguem os preços por categoria já usados na loja. Não incluir blocos decorativos nem itens criativos. Conferir o registro de item no jogo: uma chave de tradução do addon não garante que exista um Item com aquele id.
+
 #### 2026-11-11: regen só preserva claims; claim automático ao construir
 - **Problema**: no modo antigo, todo baú de loot aberto contava como armazenamento do jogador e segurava o chunk para sempre.
 - **Decisão**: `regen_chunks.py --so-claims-estrito` vira o padrão: só claim FTB (forceload incluso), animais do jogador e prédio que cruza a borda. Nada de jogador, cama, baú ou InhabitedTime.
@@ -321,6 +324,17 @@ Se o servidor ficar 90 s sem completar um tick, grava a pilha de todas as thread
 - **Causa**: o Tom's 2.4.2 passou a exigir a tela dele com "smart features" ligado para contar o estoque no `getInventory` do handler EMI; a cena usa a `SceneLookupScreen` como janela por trás da página de receita.
 - **Decisão**: mixin no `pipinha_cinematic_toms` (config `pipinha_cinematic_toms.emi.mixins.json`) que, só quando a janela é a `SceneLookupScreen` com `CraftingTerminalMenu`, monta o inventário com os slots do menu mais `getStoredItems()` e desenha as marcas de ingrediente faltando com o `handleRecipe` do próprio Tom's. A tela normal do Tom's segue respeitando o botão "smart features" dele (o aviso do mod é que pode pesar).
 - **Verificação**: bytecode do `EmiTransferHandler` 2.4.2 e 1.7.1 comparado com `javap`; `getStoredItems()` lê o `itemList` que o `receiveClientNBTPacket` preenche, e o `NetworkHandlerMixin` do addon entrega esse pacote na cena. Build sem erro (`build.sh`), jar 73354 bytes em `mods/`. Pendente teste no jogo.
+
+#### 2026-11-22: saída e clique duplo na crafting station
+- **Sintomas**: receita completa podia ficar sem saída para recolher; clique duplo num item da grade não juntava os itens correspondentes até um stack.
+- **Causa da saída**: Tom's Storage 2.4.2 passa `null` ao `ResultContainer.setItem` quando a matriz deixa de formar uma receita. Em Minecraft 1.21.1 a lista não aceita `null`; `latest.log` mostra NPE em `CraftingTerminalBlockEntity.onCraftingMatrixChanged`.
+- **Decisão**: no addon, trocar esse `null` por `ItemStack.EMPTY`; na grade da cena, reconhecer clique duplo no mesmo slot em 250 ms e encaminhar `PICKUP_ALL` do menu vanilla, que respeita o limite do stack e percorre primeiro os slots da grade.
+- **Verificação**: log da sessão confirmou o NPE e stack trace; build do addon e inspeção do jar ficam pendentes nesta entrega. Dono confirma saída e clique duplo no jogo.
+
+#### 2026-11-22: XP por ações culinárias e nautilus recheado
+- **Causa**: o XP culinário repetível só cobria a retirada de pratos da panela do Farmer's Delight e cortes confirmados na tábua dele; outras comidas, itens cozidos e o ato de pôr ingredientes em estações não davam XP. A receita do Crabber's Delight usava a tag genérica `c:foods/cooked_fish` para `stuffed_nautilus_shell`.
+- **Decisão**: dar 4 XP por item com componente de comida/bebida produzido (inclui saída de forno), 3 por corte confirmado e 1 por ação de inserir item numa estação culinária; o bônus de primeiro prato e moedas fica separado e continua exclusivo do Cozinheiro. A receita do nautilus passa a exigir uma `minecraft:nautilus_shell` e três algas, sem peixe substituto.
+- **Verificação**: IDs do prato, casca, tags e tipo de receita conferidos no jar `crabbersdelight-1.21.1-1.3.1.jar`; XP e receita aguardam teste do dono no jogo.
 
 #### 2026-11-20: a pasta da instância é o repositório
 - **Causa**: a branch `1.21.1` vivia numa worktree separada (`Pipinha-village-1.21.1`), alimentada por cópia pelo `sync_repo.py`; o que mudava na instância só chegava ao git no próximo sync, e editar a worktree direto deixava as duas fora de passo.

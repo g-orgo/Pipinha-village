@@ -8,6 +8,7 @@
 // fadeIn, fadeOut, typewriter (old chars per tick), shakeRandom/charShakeRandom (amplitude).
 
 const $ImmersiveMessage = Java.loadClass("net.tysontheember.emberstextapi.immersivemessages.api.ImmersiveMessage");
+const $Collections = Java.loadClass("java.util.Collections");
 const $TextAnchor = Java.loadClass("net.tysontheember.emberstextapi.immersivemessages.api.TextAnchor");
 const $TextAlign = Java.loadClass("net.tysontheember.emberstextapi.immersivemessages.api.TextAlign");
 const $EmbersTextAPI = Java.loadClass("net.tysontheember.emberstextapi.EmbersTextAPI");
@@ -44,7 +45,11 @@ const etaAlign = (value) => {
 
 const etaBuildMessage = (server, data, duration, text) => {
   let component = $ComponentSerializer.fromJson(text, server.registryAccess());
-  let msg = new $ImmersiveMessage(component, Math.max(1, Math.round(duration)));
+  let messageDuration = Math.max(1, Math.round(duration));
+  let msg = new $ImmersiveMessage["(java.util.List,int)"](
+    $Collections.singletonList(component),
+    messageDuration
+  );
   let offsetX = 0;
   let offsetY = 0;
   let keys = data.getAllKeys().iterator();

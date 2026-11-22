@@ -2,6 +2,7 @@
 // Runtime state lives in global.runtime (see 000_port_runtime.js); nothing here reads it at load time.
 
 (function () {
+const HUSBANDRY_OUTPUT_DEBUG = true;
 const $FTBChunksAPI = Java.loadClass("dev.ftb.mods.ftbchunks.api.FTBChunksAPI");
 const $ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos");
 const $ChunkDimPos = Java.loadClass("dev.ftb.mods.ftblibrary.math.ChunkDimPos");
@@ -505,7 +506,8 @@ const handleMilk = (name, data, day, hungry, e) => {
   let { player, item, target, level, server } = e;
   if (player.cooldowns.isOnCooldown(item)) return;
   if (player.isFake() && data.getInt("affection") < 100) return;
-  let errorText;
+  let errorText = null;
+  let messageSent = false;
   let milkItem = global.getMilk(level, target, data, player, day, true, undefined, player.stages);
 
   if (milkItem !== -1) {
@@ -535,27 +537,30 @@ const handleMilk = (name, data, day, hungry, e) => {
     errorText = Text.translatable(
       "society.husbandry.action.young",
       name
-    ).toJson();
+    );
   } else if (hungry) {
     errorText = Text.translatable(
       "society.husbandry.action.hungry",
       name
-    ).toJson();
+    );
   } else {
     errorText = Text.translatable(
       "society.husbandry.action.cooldown_1",
       name
-    ).toJson();
+    );
   }
   if (errorText && !player.isFake()) {
-    server.runCommandSilent(
-      global.getEmbersTextAPICommand(
+    try {
+      messageSent = server.runCommandSilent(global.getEmbersTextAPICommand(
         player.username,
         global.animalMessageSettings,
         20,
-        errorText
-      )
-    );
+        errorText.toJson()
+      ));
+    } catch (err) {
+      console.error(`[SOCIETY] animal feedback command failed: ${err}`);
+    }
+    if (!messageSent) player.tell(errorText);
   }
 };
 
@@ -641,7 +646,8 @@ const handleMagicHarvest = (name, data, e) => {
   let affection = data.getInt("affection");
   let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
 
-  let errorText = "";
+  let errorText = null;
+  let messageSent = false;
   let droppedLoot = global.getMagicShearsOutput(level, target, player, undefined, player.stages);
   if (droppedLoot !== -1) {
     server.runCommandSilent(
@@ -662,22 +668,26 @@ const handleMagicHarvest = (name, data, e) => {
     errorText = Text.translatable(
       "society.husbandry.action.cooldown_2",
       name
-    ).toJson();
+    );
     if (hearts < 5) {
       errorText = Text.translatable(
         "society.husbandry.action.need_hearts",
         name
-      ).toJson();
+      );
     }
-    if (!player.isFake())
-      server.runCommandSilent(
-        global.getEmbersTextAPICommand(
+    if (!player.isFake()) {
+      try {
+        messageSent = server.runCommandSilent(global.getEmbersTextAPICommand(
           player.username,
           global.animalMessageSettings,
           40,
-          errorText
-        )
-      );
+          errorText.toJson()
+        ));
+      } catch (err) {
+        console.error(`[SOCIETY] Magic Shears feedback command failed: ${err}`);
+      }
+      if (!messageSent) player.tell(errorText);
+    }
     global.addItemCooldown(player, item, 10);
   }
 };
@@ -701,6 +711,8 @@ const handleSpecialItem = (
   let resolvedChance = chance;
   let resolvedHasQuality = hasQuality
   let dropAmount = mult * (plushieModifiers && plushieModifiers.doubleDrops ? 2 : 1);
+  let forageEligible = false;
+  let forageRoll = NaN;
   if (plushieModifiers) {
     affection = 1000;
     mood = 256;
@@ -716,14 +728,11 @@ const handleSpecialItem = (
     mood = global.getOrFetchMood(level, target, day, player);
   }
   let hearts = Math.floor(affection / 100);
-
   let quality = 0;
-
-  if (
-    (!hungry || plushieModifiers) &&
-    hearts >= minHearts &&
-    Math.random() <= resolvedChance
-  ) {
+  forageEligible = (!hungry || plushieModifiers) && hearts >= minHearts;
+  if (forageEligible) forageRoll = Math.random();
+  if (HUSBANDRY_OUTPUT_DEBUG && target.type === "minecraft:pig") console.info(`[pigForage] item=${resolvedItem} hearts=${hearts}/${minHearts} fed=${!hungry} chance=${resolvedChance} roll=${forageRoll} eligible=${forageEligible}`);
+  if (forageEligible && forageRoll <= resolvedChance) {
     if (item.includes("large")) {
       if (Math.random() > (mood + hearts * 10) / 256) {
         return;
@@ -740,9 +749,8 @@ const handleSpecialItem = (
     specialItem.x = player.x;
     specialItem.y = player.y;
     specialItem.z = player.z;
-    let specialStack = Item.of(`${dropAmount}x ${resolvedItem}`,
-      quality > 0 ? `{quality_food:{effects:[],quality:${quality}}}` : null
-    );
+    let specialStack = Item.of(`${dropAmount}x ${resolvedItem}`);
+    if (quality > 0) global.setQualityLevel(specialStack, quality);
     // Husbandry Specialty perks (rancher, fisher, winemaker, cook, farmer).
     if (player && !plushieModifiers) {
       try {
@@ -817,10 +825,10 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       let peckish = !pet && day - ageLastFed == 1;
       let hungry = !pet && day - ageLastFed > 1;
       let affection = data.getInt("affection");
-      let lostProduce = mood < 64 && Math.random() < mood / 64;
       let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
       player.swing();
       let mood = global.getOrFetchMood(level, target, day, player, false, true);
+      let lostProduce = mood < 64 && Math.random() < mood / 64;
       handlePet(name, data, mood, day, peckish, hungry, eventData);
       if (pet) {
         if (global.applyAffectionPerks) {
@@ -834,9 +842,10 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       }
       if (item.hasTag("society:animal_feed") && !pet)
         handleFeed(data, day, eventData);
+      if (HUSBANDRY_OUTPUT_DEBUG && String(target.type) === "minecraft:pig" && item.id === "society:magic_shears") console.info(`[pigForage] magic-shears click mood=${mood} lostProduce=${lostProduce} lastSpecial=${data.getInt("ageLastDroppedSpecial")}`);
       if (!lostProduce) {
         if (
-          item === "society:milk_pail" &&
+          item.id === "society:milk_pail" &&
           global.checkEntityTag(target, "society:milkable_animal")
         ) {
           handleMilk(name, data, day, hungry, eventData);
@@ -1029,7 +1038,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
         );
         global.addItemCooldown(player, item, 1);
       }
-      if (!lostProduce && item === "society:magic_shears") {
+      if (!lostProduce && item.id === "society:magic_shears") {
         handleMagicHarvest(name, data, eventData);
       }
       if (affection > 1075) {

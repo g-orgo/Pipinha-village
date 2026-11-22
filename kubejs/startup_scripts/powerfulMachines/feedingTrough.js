@@ -1,4 +1,5 @@
 console.info("[SOCIETY] feedingTrough.js loaded");
+const FEEDING_TROUGH_DEBUG = true;
 
 const feedFunction = (
   level,
@@ -10,34 +11,41 @@ const feedFunction = (
   hasManaFeed
 ) => {
   let data = animal.persistentData;
-  if (!data.getInt("ageLastFed") || day < data.getInt("ageLastFed")) {
+  let ageLastFed = data.getInt("ageLastFed");
+  let fed = false;
+  let didFeed = false;
+  let boost = 0;
+  if (!ageLastFed || day < ageLastFed) {
     data.ageLastFed = day;
+    ageLastFed = day;
   }
-  if (day > data.ageLastFed) {
-    let fed = false;
-    let boost = 0;
+  if (day > ageLastFed) {
+    didFeed = false;
+    boost = 0;
     // prefer candied > mana > normal
     if (
       hasCandiedFeed &&
       global.useInventoryItems(inventory, "society:candied_animal_feed", 1) == 1
     ) {
-      fed = true;
+      didFeed = true;
       boost = 100;
     } else if (hasManaFeed && global.useInventoryItems(inventory, "society:mana_feed", 1) == 1) {
-      fed = true;
+      didFeed = true;
       boost = 30;
     } else if (
       hasAnimalFeed &&
       global.useInventoryItems(inventory, "society:animal_feed", 1) == 1
     ) {
-      fed = true;
+      didFeed = true;
     }
 
-    if (fed) {
+    if (didFeed) {
       animal.heal(4);
       data.ageLastFed = day;
       if (boost > 0) data.affection = data.getInt("affection") + boost;
+      fed = true;
       level.spawnParticles(
+        "minecraft:heart",
         true,
         animal.x,
         animal.y + 1.5,
@@ -50,25 +58,32 @@ const feedFunction = (
       );
     }
   }
+  return fed;
 };
 global.runFeedingTrough = (be, inventory, block, level) => {
   let radius = 6;
   let hasAnimalFeed = global.inventoryHasItems(inventory, "society:animal_feed", 1) == 1;
   let hasCandiedFeed = global.inventoryHasItems(inventory, "society:candied_animal_feed", 1) == 1;
   let hasManaFeed = global.inventoryHasItems(inventory, "society:mana_feed", 1) == 1;
-  if (!(hasAnimalFeed || hasCandiedFeed || hasManaFeed)) return;
   let slots = inventory.getSlots();
   let feedCount = 0;
 
   let nearbyFarmAnimals;
   let day = global.getDay(level);
+  let fedCount = 0;
+  let dueCount = 0;
+  let initializedCount = 0;
   nearbyFarmAnimals = level
     .getEntitiesWithin(AABB.ofBlock(block).inflate(radius))
     .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));
 
   nearbyFarmAnimals.forEach((animal) => {
-    feedFunction(level, animal, day, inventory, hasAnimalFeed, hasCandiedFeed, hasManaFeed);
+    let lastFed = animal.persistentData.getInt("ageLastFed");
+    if (!lastFed || day < lastFed) initializedCount++;
+    else if (day > lastFed) dueCount++;
+    if (feedFunction(level, animal, day, inventory, hasAnimalFeed, hasCandiedFeed, hasManaFeed)) fedCount++;
   });
+  if (FEEDING_TROUGH_DEBUG) console.info(`[feedingTrough] pos=${block.x},${block.y},${block.z} day=${day} slots=${inventory.getSlots()} feed=${hasAnimalFeed} candied=${hasCandiedFeed} mana=${hasManaFeed} nearby=${nearbyFarmAnimals.length} due=${dueCount} initialized=${initializedCount} fed=${fedCount}`);
   // Handle visual
   for (let i = 0; i < slots; i++) {
     if (inventory.getStackInSlot(i).hasTag("society:animal_feed"))

@@ -4,32 +4,19 @@ const checkAnimal = global.animalBaseHelpers.checkAnimal;
 const upgradeAnimal = global.animalBaseHelpers.upgradeAnimal;
 const handleSpecialItem = global.animalBaseHelpers.handleSpecialItem;
 
-// Game time of the last pet-first click per animal UUID. The off-hand event of the
-// same click is cancelled too, so the vanilla/mod interaction never runs.
-const petFirstTicks = {};
-
 ItemEvents.entityInteracted((e) => {
   let { hand, player, item, target, level, server } = e;
-  if (item === 'moblassos:diamond_lasso') return;
+  if (item.id === 'moblassos:diamond_lasso') return;
   let uuid = String(target.uuid);
   let now = Number(level.getLevelData().getGameTime());
-  if (String(hand) === "OFF_HAND" && petFirstTicks[uuid] === now) {
-    e.cancel();
+  let petFirstTicks = global.runtime.petFirstInteractionTicks || {};
+  let husbandryToolTicks = global.runtime.nativeHusbandryToolTicks || {};
+  if (husbandryToolTicks[uuid] === now) {
+    if (String(hand) === "OFF_HAND") e.cancel();
     return;
   }
-  if (global.sunlitShouldPetFirst(hand, player, item, target, level)) {
-    // Keep only the entries of this tick, so the map never grows.
-    Object.keys(petFirstTicks).forEach((key) => {
-      if (petFirstTicks[key] !== now) delete petFirstTicks[key];
-    });
-    petFirstTicks[uuid] = now;
-    global.handleHusbandryBase(hand, player, item, target, level, server);
-    // Safety net: a petting click never leaves the player riding the animal.
-    server.scheduleInTicks(1, () => {
-      let vehicle = player.getVehicle();
-      if (vehicle && String(vehicle.uuid) === uuid) player.stopRiding();
-    });
-    e.cancel();
+  if (petFirstTicks[uuid] === now) {
+    if (String(hand) === "OFF_HAND") e.cancel();
     return;
   }
   global.handleHusbandryBase(hand, player, item, target, level, server);

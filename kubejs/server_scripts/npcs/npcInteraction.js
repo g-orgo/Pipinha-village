@@ -1,4 +1,8 @@
 console.info("[SOCIETY] npcInteraction.js loaded");
+const NPC_INTERACTION_DEBUG = true;
+const npcInteractionDebug = (message) => {
+    if (NPC_INTERACTION_DEBUG) console.info(`[npcInteraction] ${message}`);
+};
 // These lengths are formed from generateNpcDialog.js
 const dialogLengths = {
     banker: { chatterLengths: [15.0, 20.0, 13.0, 9.0, 11.0, 18.0], giftResponseLengths: { loved: 9.0, liked: 8.0, neutral: 8.0, disliked: 12.0, hated: 16.0 } },
@@ -46,8 +50,10 @@ const npcIds = ["easy_npc:humanoid", "easy_npc:humanoid_slim"];
 
 const handleNpc = (e, npcId, level, server, target, player, item) => {
     let day = global.getDay(level);
+    let interactionCommandResult = -1;
     if (!player.persistentData.npcData) player.persistentData.npcData = {}
     let npcData = player.persistentData.npcData[npcId];
+    npcInteractionDebug(`handle player=${player.username} npc=${npcId} day=${day} data=${!!npcData} friendship=${npcData ? global.nbtNum(npcData.friendship) : "new"} item=${item.id}`);
     if (!npcData) {
         if (!player.stages.has(`invited_${npcId}`)) {
             player.stages.add(`invited_${npcId}`)
@@ -168,9 +174,10 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
                 let hearts = Math.floor(global.nbtNum(npcData.friendship) / 100);
                 dialogNumber = Math.floor(Math.random() * (dialogLengths[npcId].chatterLengths[hearts]));
 
-                server.runCommandSilent(
+                interactionCommandResult = server.runCommandSilent(
                     `dialog ${player.getUuid()} show ${player.username} ${npcId}_chatter_friendship${hearts}_${dialogNumber}`
                 );
+                npcInteractionDebug(`chatter command player=${player.username} npc=${npcId} result=${interactionCommandResult}`);
                 npcData.dayLastChatted = day
                 if (global.nbtNum(npcData.friendship) + 5 > 500) {
                     npcData.friendship = 500
@@ -183,13 +190,17 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
                 if (npcId === "carpenter") {
                     server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} carpenter_choice_dialog_need_to_buy`);
                 } else if (npcId === "librarian" && global.isLateSeason(level)) {
-                    server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} librarian_choice_dialog_book_fair`);
+                    npcInteractionDebug(`book fair branch player=${player.username} day=${day}`);
+                    interactionCommandResult = server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} librarian_choice_dialog_book_fair`);
+                    npcInteractionDebug(`book fair dialog result=${interactionCommandResult}`);
                 } else if (npcId === "wise_oak") {
                     if (global.nbtNum(npcData.friendship) >= 500) {
                         server.runCommandSilent(`openshop ${player.username} wise_oak`)
                     }
                 } else {
-                    server.runCommandSilent(`openshop ${player.username} ${npcId}`)
+                    npcInteractionDebug(`shop branch player=${player.username} shop=${npcId} day=${day}`);
+                    interactionCommandResult = server.runCommandSilent(`openshop ${player.username} ${npcId}`)
+                    npcInteractionDebug(`shop command result=${interactionCommandResult}`);
                 }
             }
         }
@@ -218,8 +229,11 @@ ItemEvents.entityInteracted((e) => {
     if (item.id == 'easy_npc_config_ui:easy_npc_wand') return;
     if (!npcIds.includes(target.type)) return;
     if (hand == "MAIN_HAND") {
-        let npcId = getNpcKey(global.nbtStr(target.nbt.CustomName))
+        let customName = global.nbtStr(target.nbt.CustomName);
+        let npcId = getNpcKey(customName);
+        npcInteractionDebug(`click player=${player.username} type=${target.type} name=${customName} parsed=${npcId} hand=${hand}`);
         handleNpc(e, npcId, level, server, target, player, item)
+        npcInteractionDebug(`handled player=${player.username} npc=${npcId} cancelled=${e.canceled}`);
     }
 });
 

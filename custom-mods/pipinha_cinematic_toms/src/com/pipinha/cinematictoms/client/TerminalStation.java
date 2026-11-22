@@ -34,6 +34,7 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.Util;
 import org.joml.Matrix3f;
 import org.joml.Quaternionf;
 import org.joml.Vector3f;
@@ -72,6 +73,8 @@ public final class TerminalStation extends AddonMenuStation<StorageTerminalMenu>
     private int dragStart = -1;
     private final List<Integer> dragCells = new ArrayList<>();
     private ItemStack dragStack = ItemStack.EMPTY;
+    private long lastPickupAllClickAt = Long.MIN_VALUE;
+    private int lastPickupAllCell = -1;
 
     public TerminalStation(BlockPos pos, Direction side, Class<StorageTerminalMenu> menuType) {
         super(pos, side, menuType, 0);
@@ -308,6 +311,29 @@ public final class TerminalStation extends AddonMenuStation<StorageTerminalMenu>
     @Override
     public void click(int button, boolean shift) {
         StorageTerminalMenu menu = this.menu();
+        if (button == 0 && !shift && this.target == Target.CELL && this.hoverCell >= 0
+                && menu instanceof CraftingTerminalMenu crafting && !this.moving()) {
+            long now = Util.getMillis();
+            if (this.lastPickupAllCell == this.hoverCell && now - this.lastPickupAllClickAt <= 250L) {
+                this.lastPickupAllClickAt = Long.MIN_VALUE;
+                this.lastPickupAllCell = -1;
+                List<Slot> grid = TerminalGrid.grid(crafting);
+                if (this.hoverCell < grid.size()) {
+                    Minecraft mc = Minecraft.getInstance();
+                    if (mc.gameMode != null && mc.player != null) {
+                        mc.gameMode.handleInventoryMouseClick(crafting.containerId, grid.get(this.hoverCell).index,
+                                0, ClickType.PICKUP_ALL, mc.player);
+                        this.playPull();
+                    }
+                }
+                return;
+            }
+            this.lastPickupAllClickAt = now;
+            this.lastPickupAllCell = this.hoverCell;
+        } else {
+            this.lastPickupAllClickAt = Long.MIN_VALUE;
+            this.lastPickupAllCell = -1;
+        }
         if (!shift && (button == 0 || button == 1) && this.target == Target.CELL && this.hoverCell >= 0
                 && !this.moving() && menu instanceof CraftingTerminalMenu && !menu.getCarried().isEmpty()) {
             this.dragButton = button;

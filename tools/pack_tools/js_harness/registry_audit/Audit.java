@@ -1,4 +1,5 @@
 import dev.latvian.mods.rhino.Context;
+import dev.latvian.mods.rhino.ContextFactory;
 import dev.latvian.mods.rhino.Scriptable;
 import java.io.*;
 import java.nio.file.*;
@@ -6,7 +7,7 @@ import java.util.*;
 
 public class Audit {
     public static void main(String[] args) throws Exception {
-        Context cx = Context.enter();
+        Context cx = new ContextFactory().enter();
         Scriptable shared = cx.initStandardObjects();
         cx.evaluateString(shared, new String(Files.readAllBytes(Paths.get("/w/stubs.js"))), "stubs", 1, null);
         for (String f : Files.readAllLines(Paths.get("/w/order.txt"))) {

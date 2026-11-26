@@ -67,7 +67,7 @@
 					},
 					"target": "end",
 					"command": [
-						"openshop @p carpenter"
+						"dialogshop shop carpenter"
 					]
 				},
 				{
@@ -76,7 +76,7 @@
 					},
 					"target": "end",
 					"command": [
-						"openshop @p invitations"
+						"dialogshop shop invitations"
 					]
 				},
 				{
@@ -85,7 +85,7 @@
 					},
 					"target": "end",
 					"command": [
-						"openselector @p building_shop"
+						"dialogshop selector building_shop"
 					]
 				},
 				{
@@ -94,7 +94,7 @@
 					},
 					"target": "end",
 					"command": [
-						"openselector @p building_shop"
+						"dialogshop selector building_shop"
 					]
 				}
 			]

@@ -49,7 +49,7 @@ const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines, port
           },
           target: "end",
           command: [
-            "openshop @p carpenter"
+            "dialogshop shop carpenter"
           ]
         },
         {
@@ -58,7 +58,7 @@ const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines, port
           },
           target: "end",
           command: [
-            "openshop @p invitations"
+            "dialogshop shop invitations"
           ]
         },
         {
@@ -67,7 +67,7 @@ const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines, port
           },
           target: "end",
           command: [
-            "openselector @p building_shop"
+            "dialogshop selector building_shop"
           ]
         },
         {
@@ -76,7 +76,7 @@ const generateDialogEntries = (npcId, dialogType, dialogIndex, dialogLines, port
           },
           target: "end",
           command: [
-            "openselector @p building_shop"
+            "dialogshop selector building_shop"
           ]
         }]
       } else if (npcId !== "wise_oak") {

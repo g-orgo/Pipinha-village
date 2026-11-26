@@ -236,12 +236,19 @@ O pack passa a existir em 1.21.1 porque queremos o **Create Aeronautics**, que n
 
 #### 2026-11-11: Artesã vende as máquinas do Create (pedido do dono)
 - A Bibliotecária passou a se chamar Artesã. Os ids internos não mudaram, para não quebrar saves, quests e diálogos.
-- Preço de cada máquina = custo dos ingredientes pela receita ativa, x1,35 por etapa em cascata, arredondado para uma moeda. Script: `tools/artisan_shop/create_prices.py`. **A portar.**
+- Preço de cada máquina = custo dos ingredientes pela receita ativa, x1,35 por etapa em cascata, arredondado para uma moeda. Script: `tools/artisan_shop/create_prices.py`, portado em 2026-11-26 com a base nova (ver 2026-11-26).
 - Itens com Kinetic Blueprint só liberam com `boiler_room_complete`. Broca, serra e colheitadeira mecânicas custam 2 moedas ancestrais.
 - Ficam de fora: variantes de cor, blocos decorativos, itens criativos e ferramentas que outras lojas já vendem.
 
 #### 2026-11-22: Artesã vende componentes dos addons de Create
 O pedido de expansão da loja inclui os Portable Engines do Simulated em todas as 16 cores e componentes funcionais do Simulated, Create Aeronautics e Offroad. Esses motores são vendidos a 4 sóis cada; os demais componentes seguem os preços por categoria já usados na loja. Não incluir blocos decorativos nem itens criativos. Conferir o registro de item no jogo: uma chave de tradução do addon não garante que exista um Item com aquele id.
+
+#### 2026-11-26: preços do Create na Artesã pela venda (pedido do dono)
+- **Problema**: os preços vinham da cascata antiga, com insumo pelo preço de compra do Ferreiro (ferro 64, zinco 128), e das travas de netherite do pack. O deployer custava 11 sóis (45056) e o latão 3072, enquanto o zinco vende por 11.
+- **Decisão**: insumo bruto custa 2 vezes o valor de venda, x1,35 por etapa de receita em cascata, com piso de 2 vezes a venda para o item que tem valor de venda. A loja ignora a trava de netherite (latão no misturador com sucata, mão de latão com lingote): precifica pela receita original do Create, e no jogo as receitas continuam com a trava. Comprar na Artesã vira o atalho para quem não quer passar pelo Nether.
+- **Mantido**: broca, serra e colheitadeira mecânicas em 2 moedas ancestrais; `stage_required` igual; motores portáteis com o mesmo preço em todas as cores. O mecanismo de precisão segue caro (cerca de 7 coroas) porque a sequência do pack gasta uma coroa por volta.
+- **Resultado**: 167 trades recalculados (138 mais baratos, 5 mais caros por receita: respiro de vapor, conector de acoplamento, mesa de navegação, volante e esquema com pena). Deployer 1 coroa (512), latão 3 bevels (24), eixo 5 spurs.
+- **Script**: `tools/artisan_shop/create_prices.py` (`--out` para conferir, `--write` grava só `request` e `numismatics_cost`). Itens do Create em outras lojas (Ferreiro, Pescador, Bruxa, Carpinteiro, catálogo) não mudaram.
 
 #### 2026-11-11: regen só preserva claims; claim automático ao construir
 - **Problema**: no modo antigo, todo baú de loot aberto contava como armazenamento do jogador e segurava o chunk para sempre.

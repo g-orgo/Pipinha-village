@@ -28,7 +28,7 @@
 					},
 					"target": "end",
 					"command": [
-						"openshop @p librarian"
+						"dialogshop shop librarian"
 					]
 				},
 				{
@@ -37,7 +37,7 @@
 					},
 					"target": "end",
 					"command": [
-						"openshop @p book_fair"
+						"dialogshop shop book_fair"
 					]
 				}
 			]

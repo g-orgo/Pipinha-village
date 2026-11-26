@@ -104,6 +104,8 @@ sturdy_farmland = "terra arada -> farmland, aspersores -> ar"
 - Skills do Puffish (2026-11-21): nós espelho dos 25 livros na árvore própria e reaplicação dos comandos das skills no login e no desbloqueio (`skillPerkSync.js`); aguardando o dono testar no jogo.
 - Roupa de mod novo entra nos slots do Curios por regra automática em `harmonizeClothingCurios.js` (2026-11-21); armadura de verdade fica fora.
 - Mob hostil só nasce em caverna ou outra dimensão: `surfaceHostileSpawns.js` barra na superfície do overworld o que vier de patrulha, cerco, estrutura ou mod (2026-11-21).
+- Preços do Create na Artesã (2026-11-26): `tools/artisan_shop/create_prices.py` calcula pela receita sobre 2 vezes o valor de venda, ignorando a trava de netherite só na loja; ao mexer em receita do Create ou dos addons, rodar `--out`, conferir e depois `--write`.
+- Opção de diálogo que abre loja ou seletor usa `dialogshop shop|selector <id>` (2026-11-26), nunca `openshop` direto, porque o fade do `end` do SVDialog fecha a loja.
 
 ## Anotações
 

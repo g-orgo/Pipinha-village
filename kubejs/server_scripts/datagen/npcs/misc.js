@@ -26,8 +26,8 @@ if (global.runtime.datagenDialog) {
                 name: "prompt",
                 text: ["What buildings would you like to browse?"],
                 options: [
-                    { text: "Farm buildings", command: "openselector @p building_shop" },
-                    { text: "Village buildings", command: "openselector @p town_building_shop" }
+                    { text: "Farm buildings", command: "dialogshop selector building_shop" },
+                    { text: "Village buildings", command: "dialogshop selector town_building_shop" }
                 ]
             }
         ]

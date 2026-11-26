@@ -159,10 +159,10 @@ if (global.runtime.datagenDialog) {
         name: "need_to_buy",
         text: ["Need to pick up something from the shop?",],
         options: [
-          { text: "Purchase supplies", command: "openshop @p carpenter" },
-          { text: "Invite Villagers", command: "openshop @p invitations" },
-          { text: "Build Farm buildings", command: "openselector @p building_shop" },
-          { text: "Build Village buildings", command: "openselector @p town_building_shop" }
+          { text: "Purchase supplies", command: "dialogshop shop carpenter" },
+          { text: "Invite Villagers", command: "dialogshop shop invitations" },
+          { text: "Build Farm buildings", command: "dialogshop selector building_shop" },
+          { text: "Build Village buildings", command: "dialogshop selector town_building_shop" }
         ]
       }
     ]

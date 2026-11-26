@@ -17,7 +17,7 @@
 					},
 					"target": "end",
 					"command": [
-						"openselector @p building_shop"
+						"dialogshop selector building_shop"
 					]
 				},
 				{
@@ -26,7 +26,7 @@
 					},
 					"target": "end",
 					"command": [
-						"openselector @p town_building_shop"
+						"dialogshop selector town_building_shop"
 					]
 				}
 			]

@@ -124,8 +124,8 @@ if (global.runtime.datagenDialog) {
         name: "book_fair",
         text: ["I have a selection of special books available for the book fair this season, please take a look."],
         options: [
-          { text: "Purchase supplies", command: "openshop @p librarian" },
-          { text: "Shop at the Book Fair", command: "openshop @p book_fair" }
+          { text: "Purchase supplies", command: "dialogshop shop librarian" },
+          { text: "Shop at the Book Fair", command: "dialogshop shop book_fair" }
         ]
       }
     ]

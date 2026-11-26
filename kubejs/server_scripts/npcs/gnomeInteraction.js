@@ -17,7 +17,7 @@ ItemEvents.entityInteracted((e) => {
             reward.spawn();
             if (!player.isCreative()) item.shrink(1);
         } else {
-            server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} gnome_unique_chatter_${Math.floor(Math.random() * 3)}`);
+            global.showDialog(server, player, `gnome_unique_chatter_${Math.floor(Math.random() * 3)}`);
         }
         e.cancel()
     }

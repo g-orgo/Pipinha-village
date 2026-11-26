@@ -37,7 +37,7 @@
         "At &610 hearts&r it gives you a gift, only once.",
         "Companion spawn eggs are made at a crafting table: 4 coins, 3 Bone Blocks, 1 egg and a mineral of each animal.",
         "The boxes further down show the other animals you can tame. They do not get companion bonuses, but each one has its own use.",
-        "Every animal of the valley can be tamed. The ones with no way of their own accept the treat shown in their box: each try uses one and works 1 time in 3. Tamed, it follows you, never despawns and takes a &6Collar Tag&r with pet enchantments. Each box tells what the animal is good for. Sneak and right click with an empty hand to switch between follow, stay and wander. On valley companions, the first click of the day is the petting."
+        "Every animal of the valley can be tamed. Farm animals, dogs, cats and small critters are tamed by &6petting&r: right click with an empty hand, and once is enough. Mounts and big animals keep their own way, and the ones with no way of their own accept the treat shown in their box: each try uses one and works 1 time in 3. Tamed, it follows you, never despawns and takes a &6Collar Tag&r with pet enchantments. Each box tells what the animal is good for. Right click it with an empty hand to switch between follow, stay and wander; mounts and the orchestra musicians keep their own click. On valley companions, the first click of the day is the petting. While you ride, the animals that follow you wait out of sight and come back at your feet when you get off."
       ],
       "pt": [
         "Alguns animais do vale viram &6companheiros&r, e muitos outros podem ser domados ou virar amigos. Cada caixa deste capítulo apresenta um deles. Nada aqui dá recompensa: é só para você conhecer seus bichos.",
@@ -47,7 +47,7 @@
         "Aos &610 corações&r ele te dá um presente, uma vez só.",
         "Ovos de spawn de companheiro saem na bancada: 4 moedas, 3 Blocos de Osso, 1 ovo e um mineral próprio de cada animal.",
         "As caixas mais abaixo mostram os outros animais que dá para domar. Eles não ganham os bônus de companheiro, mas cada um tem sua utilidade.",
-        "Todo animal do vale pode ser domado. Quem não tem jeito próprio aceita o petisco da caixa dele: cada tentativa gasta um e dá certo 1 vez em 3. Domado, ele segue você, não some do mundo e aceita a &6Etiqueta de Coleira&r com encantamentos de pet. Cada caixa diz para que serve o animal. Agachado, botão direito com a mão vazia troca entre seguir, ficar e passear. Nos companheiros do vale, o primeiro clique do dia é o carinho."
+        "Todo animal do vale pode ser domado. Animais de fazenda, cães, gatos e bichos pequenos são domados com &6carinho&r: botão direito com a mão vazia, e uma vez basta. Montarias e bichos grandes mantêm o jeito próprio, e quem não tem jeito próprio aceita o petisco da caixa dele: cada tentativa gasta um e dá certo 1 vez em 3. Domado, ele segue você, não some do mundo e aceita a &6Etiqueta de Coleira&r com encantamentos de pet. Cada caixa diz para que serve o animal. Botão direito com a mão vazia troca entre seguir, ficar e passear; montarias e músicos da orquestra mantêm o clique próprio. Nos companheiros do vale, o primeiro clique do dia é o carinho. Enquanto você monta, os animais que te seguem esperam fora de vista e voltam aos seus pés quando você desce."
       ]
     }
   },
@@ -136,8 +136,8 @@
         "pt": "Lobo"
       },
       "intro": {
-        "en": "The classic companion. Tame it with &6bones&r.",
-        "pt": "O companheiro clássico. Dome com &6ossos&r."
+        "en": "The classic companion. Tame it by &6petting&r: right click with an empty hand.",
+        "pt": "O companheiro clássico. Dome com &6carinho&r: botão direito com a mão vazia."
       },
       "gift": {
         "en": "Gift at 10 hearts: a hat or a fossil. A wolf tamed by you also puts on &6Wolf Armor&r once, if it has none.",
@@ -159,8 +159,8 @@
         "pt": "Shiba"
       },
       "intro": {
-        "en": "A loyal little dog from Quark.",
-        "pt": "Um cãozinho fiel do Quark."
+        "en": "A loyal little dog from Quark. Tame it by &6petting&r: right click with an empty hand.",
+        "pt": "Um cãozinho fiel do Quark. Dome com &6carinho&r: botão direito com a mão vazia."
       },
       "gift": {
         "en": "Gift at 10 hearts: a hat.",
@@ -182,8 +182,8 @@
         "pt": "Foxhound"
       },
       "intro": {
-        "en": "A hound from the Nether, from Quark.",
-        "pt": "Um cão do Nether, do Quark."
+        "en": "A hound from the Nether, from Quark. Tame it by &6petting&r: right click with an empty hand.",
+        "pt": "Um cão do Nether, do Quark. Dome com &6carinho&r: botão direito com a mão vazia."
       },
       "gift": {
         "en": "Gift at 10 hearts: a hat.",
@@ -205,8 +205,8 @@
         "pt": "Cachorro"
       },
       "intro": {
-        "en": "A farm dog from Wildernature.",
-        "pt": "Um cão de fazenda do Wildernature."
+        "en": "A farm dog from Wildernature. Tame it by &6petting&r: right click with an empty hand.",
+        "pt": "Um cão de fazenda do Wildernature. Dome com &6carinho&r: botão direito com a mão vazia."
       },
       "gift": {
         "en": "Gift at 10 hearts: a fossil.",
@@ -228,8 +228,8 @@
         "pt": "Cavalo"
       },
       "intro": {
-        "en": "Your mount. Tame it by riding it until hearts appear.",
-        "pt": "Sua montaria. Dome montando nele até aparecerem corações."
+        "en": "Your mount. Tame it by riding it until hearts appear. While riding, hold &6Left Alt&r to look around without turning your mount (free look).",
+        "pt": "Sua montaria. Dome montando nele até aparecerem corações. Montado, segure &6Alt esquerdo&r para olhar em volta sem virar a montaria (câmera livre)."
       },
       "gift": {
         "en": "Gift at 10 hearts: a &6Saddle&r.",
@@ -251,8 +251,8 @@
         "pt": "Axolote"
       },
       "intro": {
-        "en": "Carry it in a &6Bucket of Water&r. Underwater it fights drowned and fish by your side. Tame it with a &6Bucket of Tropical Fish&r.",
-        "pt": "Leve num &6balde d'água&r. Debaixo d'água ele luta contra afogados e peixes ao seu lado. Dome com um &6Balde com Peixe Tropical&r."
+        "en": "Carry it in a &6Bucket of Water&r. Underwater it fights drowned and fish by your side. Tame it by &6petting&r: right click with an empty hand.",
+        "pt": "Leve num &6balde d'água&r. Debaixo d'água ele luta contra afogados e peixes ao seu lado. Dome com &6carinho&r: botão direito com a mão vazia."
       },
       "gift": {
         "en": "Gift at 10 hearts: a hat or a swim ring.",
@@ -321,8 +321,8 @@
         "pt": "Gato"
       },
       "intro": {
-        "en": "Tame it with raw &6cod&r or &6salmon&r. Phantoms keep away from cats, and a cat sleeping on your bed may bring you a present in the morning.",
-        "pt": "Dome com &6bacalhau&r ou &6salmão&r cru. Phantoms fogem de gatos, e um gato que dorme na sua cama pode trazer um presentinho de manhã."
+        "en": "Tame it by &6petting&r: right click with an empty hand. Phantoms keep away from cats, and a cat sleeping on your bed may bring you a present in the morning.",
+        "pt": "Dome com &6carinho&r: botão direito com a mão vazia. Phantoms fogem de gatos, e um gato que dorme na sua cama pode trazer um presentinho de manhã."
       },
       "gift": {
         "en": "Gift at 10 hearts: a hat or a fossil.",
@@ -344,8 +344,8 @@
         "pt": "Ouriço"
       },
       "intro": {
-        "en": "A small and shy hedgehog from Wildernature. Tame it with &6Sweet Berries&r.",
-        "pt": "Um ouriço pequeno e tímido do Wildernature. Dome com &6Bagas Doces&r."
+        "en": "A small and shy hedgehog from Wildernature. Tame it by &6petting&r: right click with an empty hand.",
+        "pt": "Um ouriço pequeno e tímido do Wildernature. Dome com &6carinho&r: botão direito com a mão vazia."
       },
       "gift": {
         "en": "Gift at 10 hearts: a hat.",
@@ -391,8 +391,8 @@
         "pt": "Furão"
       },
       "intro": {
-        "en": "A curious ferret from Critters and Companions.",
-        "pt": "Um furão curioso do Critters and Companions."
+        "en": "A curious ferret from Critters and Companions. Tame it by &6petting&r: right click with an empty hand.",
+        "pt": "Um furão curioso do Critters and Companions. Dome com &6carinho&r: botão direito com a mão vazia."
       },
       "gift": {
         "en": "Gift at 10 hearts: a Jumping Spider spawn egg.",
@@ -435,11 +435,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6seeds&r. Never give it a cookie!",
+          "Tame it by &6petting&r: right click with an empty hand. Never give it a cookie!",
           "A tamed parrot rides on your shoulder and imitates the sounds of nearby monsters, a free warning."
         ],
         "pt": [
-          "Dome com &6sementes&r. Nunca dê biscoito!",
+          "Dome com &6carinho&r: botão direito com a mão vazia. Nunca dê biscoito!",
           "Domado, ele vai no seu ombro e imita o som dos monstros por perto: um aviso de graça."
         ]
       }
@@ -463,11 +463,11 @@
       },
       "lines": {
         "en": [
-          "Stand still and feed it &6Raw Cod&r or &6Raw Salmon&r: each one has a 1 in 3 chance to tame it.",
+          "Tame it by &6petting&r: right click with an empty hand. It runs away: sneak up to it, no sprinting.",
           "A tamed ocelot stops running away from you and, like cats, scares creepers."
         ],
         "pt": [
-          "Fique parado e dê &6Bacalhau Cru&r ou &6Salmão Cru&r: cada um tem 1 chance em 3 de domar.",
+          "Dome com &6carinho&r: botão direito com a mão vazia. Ela foge: chegue agachado, sem correr.",
           "Domada, ela para de fugir de você e, como os gatos, assusta creepers."
         ]
       }
@@ -478,7 +478,7 @@
       "id": "7A4BC47465B34503",
       "task": "5EA7584019181379",
       "egg": "minecraft:fox_spawn_egg",
-      "complete": "interact",
+      "complete": "tame",
       "x": -2.0,
       "y": 6.0,
       "title": {
@@ -491,11 +491,11 @@
       },
       "lines": {
         "en": [
-          "Wild foxes run away. Breed two of them with &6sweet berries&r or &6glow berries&r: the baby is born trusting you.",
+          "Wild foxes run away: sneak up to one and tame it by &6petting&r, right click with an empty hand. The baby of two foxes bred with &6sweet berries&r is born trusting you.",
           "A trusting fox defends you and loves to carry items in its mouth."
         ],
         "pt": [
-          "Raposa selvagem foge. Cruze duas com &6Bagas Doces&r ou &6Bagas Brilhantes&r: o filhote já nasce confiando em você.",
+          "Raposa selvagem foge: chegue agachado e dome com &6carinho&r, botão direito com a mão vazia. O filhote de duas raposas cruzadas com &6Bagas Doces&r já nasce confiando em você.",
           "Uma raposa de confiança te defende e adora carregar itens na boca."
         ]
       }
@@ -519,11 +519,11 @@
       },
       "lines": {
         "en": [
-          "Tame it by riding it until hearts appear.",
+          "Tame it by riding it until hearts appear. While riding, hold &6Left Alt&r to look around without turning your mount (free look).",
           "Put a &6Chest&r on it to carry 15 stacks with you. Bred with a horse, it gives a mule."
         ],
         "pt": [
-          "Dome montando nele até aparecerem corações.",
+          "Dome montando nele até aparecerem corações. Montado, segure &6Alt esquerdo&r para olhar em volta sem virar a montaria (câmera livre).",
           "Coloque um &6Baú&r nele para levar 15 pilhas de itens. Cruzado com cavalo, nasce uma mula."
         ]
       }
@@ -547,11 +547,11 @@
       },
       "lines": {
         "en": [
-          "Born from a horse and a donkey. Tame it by riding it until hearts appear.",
+          "Born from a horse and a donkey. Tame it by riding it until hearts appear. While riding, hold &6Left Alt&r to look around without turning your mount (free look).",
           "Carries a &6Chest&r like the donkey, but it cannot have babies."
         ],
         "pt": [
-          "Nasce do cruzamento de cavalo com burro. Dome montando nela até aparecerem corações.",
+          "Nasce do cruzamento de cavalo com burro. Dome montando nela até aparecerem corações. Montado, segure &6Alt esquerdo&r para olhar em volta sem virar a montaria (câmera livre).",
           "Leva um &6Baú&r como o burro, mas não tem filhotes."
         ]
       }
@@ -609,11 +609,11 @@
       },
       "lines": {
         "en": [
-          "No taming needed: just put a &6Saddle&r on it. It carries two riders and dashes forward.",
+          "No taming needed: just put a &6Saddle&r on it. It carries two riders and dashes forward. While riding, hold &6Left Alt&r to look around without turning your mount (free look).",
           "The &6Camel Husk&r of the desert works the same way and eats &6Rabbit's Foot&r."
         ],
         "pt": [
-          "Não precisa domar: é só colocar a &6Sela&r. Leva duas pessoas e dá uma arrancada.",
+          "Não precisa domar: é só colocar a &6Sela&r. Leva duas pessoas e dá uma arrancada. Montado, segure &6Alt esquerdo&r para olhar em volta sem virar a montaria (câmera livre).",
           "O &6Camelo Mumificado&r do deserto funciona igual e come &6Pé de Coelho&r."
         ]
       }
@@ -641,11 +641,11 @@
       "lines": {
         "en": [
           "Tame it with a &6Pufferfish&r or a &6Bucket of Pufferfish&r.",
-          "Then put a &6Saddle&r on it to ride under the sea, with a dash. The zombie nautilus comes with a drowned on top."
+          "Then put a &6Saddle&r on it to ride under the sea, with a dash. The zombie nautilus comes with a drowned on top. While riding, hold &6Left Alt&r to look around without turning your mount (free look)."
         ],
         "pt": [
           "Dome com um &6Baiacu&r ou um &6Balde com Baiacu&r.",
-          "Depois coloque a &6Sela&r para andar debaixo d'água, com arrancada. O náutilo zumbi vem com um afogado montado."
+          "Depois coloque a &6Sela&r para andar debaixo d'água, com arrancada. O náutilo zumbi vem com um afogado montado. Montado, segure &6Alt esquerdo&r para olhar em volta sem virar a montaria (câmera livre)."
         ]
       }
     },
@@ -669,11 +669,11 @@
       "lines": {
         "en": [
           "Put a &6Dried Ghast&r block in water and wait: a little ghast is born and grows up friendly. It loves &6Snowballs&r.",
-          "Put a &6Harness&r on it to fly with your friends."
+          "Put a &6Harness&r on it to fly with your friends. While riding, hold &6Left Alt&r to look around without turning your mount (free look)."
         ],
         "pt": [
           "Coloque um bloco de &6Ghast Seco&r na água e espere: nasce um ghastinho que cresce amigo. Ele adora &6Bolas de Neve&r.",
-          "Coloque um &6Arreio&r nele para voar com os amigos."
+          "Coloque um &6Arreio&r nele para voar com os amigos. Montado, segure &6Alt esquerdo&r para olhar em volta sem virar a montaria (câmera livre)."
         ]
       }
     },
@@ -724,11 +724,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6fish&r, raw or cooked.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "A tamed duck fishes by itself. Carry it around in a &6Duck Sack&r."
         ],
         "pt": [
-          "Dome com &6peixe&r, cru ou assado.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Domado, ele pesca sozinho. Leve ele no &6Saco de Pato&r."
         ]
       }
@@ -752,11 +752,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Kelp&r or &6Seagrass&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "A tamed goose follows you and scares off the monsters around."
         ],
         "pt": [
-          "Dome com &6Alga&r ou &6Ervas Marinhas&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Domado, ele te segue e intimida os monstros por perto."
         ]
       }
@@ -781,11 +781,11 @@
       "lines": {
         "en": [
           "Feed it &6Holly Berries&r until it accepts you: it may take a few tries.",
-          "Saddle it and steer with &6Holly Berries on a Stick&r. It sheds its antlers and can be milked."
+          "Saddle it and steer with &6Holly Berries on a Stick&r. It sheds its antlers and can be milked. While riding, hold &6Left Alt&r to look around without turning your mount (free look)."
         ],
         "pt": [
           "Dê &6Azevinho&r até ele aceitar você: pode levar algumas tentativas.",
-          "Coloque a &6Sela&r e guie com &6Azevinho na Vara&r. Ele solta os chifres e dá leite."
+          "Coloque a &6Sela&r e guie com &6Azevinho na Vara&r. Ele solta os chifres e dá leite. Montado, segure &6Alt esquerdo&r para olhar em volta sem virar a montaria (câmera livre)."
         ]
       }
     },
@@ -808,11 +808,11 @@
       },
       "lines": {
         "en": [
-          "&6Sweet Berries&r lure it, and &6Bamboo&r tames it.",
+          "&6Sweet Berries&r lure it, and &6petting&r tames it: right click with an empty hand.",
           "A tamed red panda runs after you and naps when you stop."
         ],
         "pt": [
-          "&6Bagas Doces&r atraem e &6Bambu&r doma.",
+          "&6Bagas Doces&r atraem e o &6carinho&r doma: botão direito com a mão vazia.",
           "Domado, ele corre atrás de você e tira uma soneca quando você para."
         ]
       }
@@ -836,11 +836,11 @@
       },
       "lines": {
         "en": [
-          "A tiny snow bird. Tame it with &6seeds&r.",
+          "A tiny snow bird. Tame it by &6petting&r: right click with an empty hand.",
           "A tamed one flies after you wherever you go."
         ],
         "pt": [
-          "Um passarinho da neve. Dome com &6sementes&r.",
+          "Um passarinho da neve. Dome com &6carinho&r: botão direito com a mão vazia.",
           "Domado, ele voa atrás de você aonde for."
         ]
       }
@@ -864,11 +864,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6mushrooms&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "A tamed ladybug gives off a healing aura."
         ],
         "pt": [
-          "Dome com &6cogumelos&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Domada, ela solta uma aura que cura."
         ]
       }
@@ -892,11 +892,11 @@
       },
       "lines": {
         "en": [
-          "&6Mushrooms&r lure it, and a &6Dead Bush&r tames it.",
+          "&6Mushrooms&r lure it, and &6petting&r tames it: right click with an empty hand.",
           "Put a &6Chest&r on a tamed one and it carries items for you."
         ],
         "pt": [
-          "&6Cogumelos&r atraem e um &6Arbusto Morto&r doma.",
+          "&6Cogumelos&r atraem e o &6carinho&r doma: botão direito com a mão vazia.",
           "Coloque um &6Baú&r nele domado e ele carrega itens para você."
         ]
       }
@@ -920,11 +920,11 @@
       },
       "lines": {
         "en": [
-          "&6Leaves&r lure it, and a &6Carrot&r tames it.",
+          "&6Leaves&r lure it, and &6petting&r tames it: right click with an empty hand.",
           "Use a &6Glass Bottle&r on it to collect &6Snail Slime&r."
         ],
         "pt": [
-          "&6Folhas&r atraem e uma &6Cenoura&r doma.",
+          "&6Folhas&r atraem e o &6carinho&r doma: botão direito com a mão vazia.",
           "Use um &6Frasco de Vidro&r nele para pegar &6Gosma de Caracol&r."
         ]
       }
@@ -948,11 +948,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6berries&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "A tamed stag beetle fights by your side."
         ],
         "pt": [
-          "Dome com &6frutinhas&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Domado, ele luta ao seu lado."
         ]
       }
@@ -976,11 +976,11 @@
       },
       "lines": {
         "en": [
-          "Hard to spot among the twigs. Tame it with &6Leaves&r.",
+          "Hard to spot among the twigs. Tame it by &6petting&r: right click with an empty hand.",
           "A tamed one follows you around."
         ],
         "pt": [
-          "Difícil de achar no meio dos galhos. Dome com &6Folhas&r.",
+          "Difícil de achar no meio dos galhos. Dome com &6carinho&r: botão direito com a mão vazia.",
           "Domado, ele te segue por aí."
         ]
       }
@@ -1004,11 +1004,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with an &6Acorn&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "A tamed weevil attacks your enemies from a distance."
         ],
         "pt": [
-          "Dome com uma &6Bolota&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Domado, ele ataca seus inimigos de longe."
         ]
       }
@@ -1284,11 +1284,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with a &6Hay Bale&r. The carrot stays for breeding.",
+          "Tame it by &6petting&r: right click with an empty hand. Carrots are for breeding.",
           "With affection, it brings &6Rabbit's Foot&r and &6Fine Wool&r."
         ],
         "pt": [
-          "Dome com um &6Fardo de Feno&r. A cenoura continua sendo para cruzar.",
+          "Dome com &6carinho&r: botão direito com a mão vazia. A cenoura é para cruzar.",
           "Com afeição, traz &6Pé de Coelho&r e &6Lã Fina&r."
         ]
       }
@@ -1312,11 +1312,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with a &6Spider Eye&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "With affection, it brings &6Frog Legs&r and &6Sap&r. It eats small slimes and drops &6Slimeballs&r."
         ],
         "pt": [
-          "Dome com um &6Olho de Aranha&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Com afeição, traz &6Coxa de Rã&r e &6Seiva&r. Come slimes pequenos e solta &6Bola de Slime&r."
         ]
       }
@@ -1340,11 +1340,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Corn Kernels&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Tamed, it rides on your shoulder like a parrot and caws when danger comes close."
         ],
         "pt": [
-          "Dome com &6Grãos de Milho&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Domado, vai no seu ombro, como o papagaio, e grasna quando um perigo chega perto."
         ]
       }
@@ -1368,11 +1368,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with an &6Apple&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Gives &6Milk&r with the &6Milk Pail&r. Tamed, it follows you to the barn."
         ],
         "pt": [
-          "Dome com uma &6Maçã&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Dá &6Leite&r com o &6Balde de Leite&r. Domada, segue você até o celeiro."
         ]
       }
@@ -1396,11 +1396,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with an &6Apple&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Gives &6Milk&r and, with affection, finds &6Truffles&r. A &6Bowl&r gets mushroom stew."
         ],
         "pt": [
-          "Dome com uma &6Maçã&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Dá &6Leite&r e, com afeição, acha &6Trufas&r. Uma &6Tigela&r tira ensopado de cogumelo."
         ]
       }
@@ -1424,12 +1424,12 @@
       },
       "lines": {
         "en": [
-          "Tame it with an &6Apple&r.",
-          "With affection, it digs up &6Truffles&r. With a &6Saddle&r and a &6Carrot on a Stick&r, you can ride it."
+          "Tame it by &6petting&r: right click with an empty hand.",
+          "With affection, it digs up &6Truffles&r. With a &6Saddle&r and a &6Carrot on a Stick&r, you can ride it. While riding, hold &6Left Alt&r to look around without turning your mount (free look)."
         ],
         "pt": [
-          "Dome com uma &6Maçã&r.",
-          "Com afeição, fuça &6Trufas&r. Com &6Sela&r e &6Vara com Cenoura&r, vira montaria."
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
+          "Com afeição, fuça &6Trufas&r. Com &6Sela&r e &6Vara com Cenoura&r, vira montaria. Montado, segure &6Alt esquerdo&r para olhar em volta sem virar a montaria (câmera livre)."
         ]
       }
     },
@@ -1452,11 +1452,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with an &6Apple&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Gives wool with shears, &6Sheep Milk&r with the pail and, with affection, &6Fine Wool&r."
         ],
         "pt": [
-          "Dome com uma &6Maçã&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Dá lã na tesoura, &6Leite de Ovelha&r no balde e, com afeição, &6Lã Fina&r."
         ]
       }
@@ -1480,11 +1480,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Bread&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Lays eggs and, with affection, &6Large Eggs&r."
         ],
         "pt": [
-          "Dome com &6Pão&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Bota ovos e, com afeição, &6Ovos Grandes&r."
         ]
       }
@@ -1508,11 +1508,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with an &6Apple&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Gives &6Goat Milk&r with the &6Milk Pail&r. When it rams, it can drop a &6Goat Horn&r."
         ],
         "pt": [
-          "Dome com uma &6Maçã&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Dá &6Leite de Cabra&r com o &6Balde de Leite&r. Quando dá cabeçada, pode soltar um &6Chifre de Cabra&r."
         ]
       }
@@ -1536,11 +1536,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Sweet Berries&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "With affection, it brings &6Passion Fruit&r."
         ],
         "pt": [
-          "Dome com &6Bagas Doces&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Com afeição, traz &6Maracujá&r."
         ]
       }
@@ -1564,11 +1564,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with a &6Honey Bottle&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "It pollinates the crops it flies over and fills hives with honey."
         ],
         "pt": [
-          "Dome com um &6Frasco de Mel&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Poliniza as plantações por onde passa e enche colmeias de mel."
         ]
       }
@@ -1592,11 +1592,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Kelp&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "With affection, it brings &6Turtle Eggs&r and &6Dragonfly Wings&r. Babies drop a &6Turtle Scute&r as they grow."
         ],
         "pt": [
-          "Dome com &6Alga&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Com afeição, traz &6Ovo de Tartaruga&r e &6Asa de Libélula&r. O filhote solta &6Escama de Tartaruga&r ao crescer."
         ]
       }
@@ -1676,11 +1676,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Kelp&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "The &6Milk Pail&r gets &6Ink Sacs&r. With affection, it brings &6Antique Ink&r."
         ],
         "pt": [
-          "Dome com &6Alga&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "O &6Balde de Leite&r tira &6Bolsa de Tinta&r. Com afeição, traz &6Tinta Antiga&r."
         ]
       }
@@ -1704,11 +1704,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Glow Berries&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "The &6Milk Pail&r gets &6Glow Ink Sacs&r. With affection, it brings &6Legendary Ink&r."
         ],
         "pt": [
-          "Dome com &6Bagas Brilhantes&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "O &6Balde de Leite&r tira &6Bolsa de Tinta Brilhante&r. Com afeição, traz &6Tinta Lendária&r."
         ]
       }
@@ -1732,11 +1732,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with a &6Fermented Spider Eye&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Brush it to get &6Armadillo Scutes&r, used for wolf armor."
         ],
         "pt": [
-          "Dome com um &6Olho de Aranha Fermentado&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Escove com o &6Pincel&r para tirar &6Escama de Tatu&r, que faz a armadura de lobo."
         ]
       }
@@ -1789,11 +1789,11 @@
       "lines": {
         "en": [
           "Tame it with a &6Crimson Fungus&r.",
-          "With a &6Saddle&r and a &6Warped Fungus on a Stick&r, it carries you across lava."
+          "With a &6Saddle&r and a &6Warped Fungus on a Stick&r, it carries you across lava. While riding, hold &6Left Alt&r to look around without turning your mount (free look)."
         ],
         "pt": [
           "Dome com um &6Fungo Carmesim&r.",
-          "Com &6Sela&r e &6Vara com Fungo Distorcido&r, leva você por cima da lava."
+          "Com &6Sela&r e &6Vara com Fungo Distorcido&r, leva você por cima da lava. Montado, segure &6Alt esquerdo&r para olhar em volta sem virar a montaria (câmera livre)."
         ]
       }
     },
@@ -1816,11 +1816,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with an &6Apple&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Gives &6Amethyst Milk&r with the pail and, with affection, the &6Totem of Glowth&r."
         ],
         "pt": [
-          "Dome com uma &6Maçã&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Dá &6Leite de Ametista&r com o balde e, com afeição, o &6Totem do Brilho&r."
         ]
       }
@@ -1844,11 +1844,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with an &6Apple&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "With affection, it digs up &6Truffles&r, like a common pig."
         ],
         "pt": [
-          "Dome com uma &6Maçã&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Com afeição, fuça &6Trufas&r, como o porco comum."
         ]
       }
@@ -1872,11 +1872,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with an &6Apple&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Gives &6Buffalo Milk&r with the &6Milk Pail&r."
         ],
         "pt": [
-          "Dome com uma &6Maçã&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Dá &6Leite de Búfala&r com o &6Balde de Leite&r."
         ]
       }
@@ -1900,11 +1900,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with an &6Apple&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Gives &6Milk&r with the pail and wool with shears. The umbra and warped variants count too."
         ],
         "pt": [
-          "Dome com uma &6Maçã&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Dá &6Leite&r com o balde e lã na tesoura. As variantes sombria e distorcida contam junto."
         ]
       },
@@ -1933,11 +1933,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Bread&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "It lays &6Apples&r every so often and can be sheared."
         ],
         "pt": [
-          "Dome com &6Pão&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Bota &6Maçãs&r de tempos em tempos e pode ser tosquiada."
         ]
       }
@@ -1989,11 +1989,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with an &6Apple&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Gives &6Sheep Milk&r with the pail and, with affection, &6Fine Wool&r."
         ],
         "pt": [
-          "Dome com uma &6Maçã&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Dá &6Leite de Ovelha&r no balde e, com afeição, &6Lã Fina&r."
         ]
       }
@@ -2073,11 +2073,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Sugar Cane&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Give it logs: it gnaws the bark off and hands back &6Stripped Logs&r."
         ],
         "pt": [
-          "Dome com &6Cana-de-Açúcar&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Dê toras: ele rói a casca e devolve &6Troncos Descascados&r."
         ]
       }
@@ -2216,11 +2216,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with a &6Cookie&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "With affection, it finds &6Scavenged Food Bags&r, &6Trash Bags&r and even an &6Artifact Trove&r."
         ],
         "pt": [
-          "Dome com um &6Biscoito&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Com afeição, acha &6Saco de Comida&r, &6Saco de Lixo&r e até &6Tesouro de Artefatos&r."
         ]
       }
@@ -2244,11 +2244,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with an &6Acorn&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "With affection, it gathers wild berries (salmonberries and boysenberries) for you."
         ],
         "pt": [
-          "Dome com uma &6Bolota&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Com afeição, junta frutinhas silvestres (salmonberry e boysenberry) para você."
         ]
       }
@@ -2272,11 +2272,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Cooked Cod&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Whoever earns its trust gets a gift every now and then."
         ],
         "pt": [
-          "Dome com &6Bacalhau Assado&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Quem ganha a confiança dela recebe presentes de vez em quando."
         ]
       }
@@ -2300,11 +2300,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Kelp&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "It hunts fish in the river and cracks clams floating on its back."
         ],
         "pt": [
-          "Dome com &6Alga&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Caça peixes no rio e quebra mariscos boiando de barriga para cima."
         ]
       }
@@ -2328,11 +2328,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Kelp&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Near it, you get air bubbles underwater. It fits in a bucket."
         ],
         "pt": [
-          "Dome com &6Alga&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Perto dele, você ganha bolhas de ar debaixo d'água. Cabe num balde."
         ]
       }
@@ -2356,11 +2356,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Kelp&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "A &6Glass Bottle&r collects &6Sea Bunny Slime&r. It fits in a bucket."
         ],
         "pt": [
-          "Dome com &6Alga&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Um &6Frasco de Vidro&r tira a &6Gosma de Coelho-do-Mar&r. Cabe num balde."
         ]
       }
@@ -2384,11 +2384,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Sugar&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "A companion animal: tamed, it follows you and never despawns."
         ],
         "pt": [
-          "Dome com &6Açúcar&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Bicho de companhia: domado, segue você e nunca some do mundo."
         ]
       }
@@ -2412,11 +2412,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Sugar&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "A companion animal: tamed, it follows you and never despawns."
         ],
         "pt": [
-          "Dome com &6Açúcar&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Bicho de companhia: domado, segue você e nunca some do mundo."
         ]
       }
@@ -2468,11 +2468,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Kelp&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "It dances when music plays nearby. The &6Fiddler Crab Shell&r brews a Potion of Resilience."
         ],
         "pt": [
-          "Dome com &6Alga&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Dança quando toca música por perto. A &6Casca de Caranguejo Violinista&r vira Poção de Resiliência."
         ]
       }
@@ -2580,11 +2580,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Kelp&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "It digs in the sand and fits in a bucket."
         ],
         "pt": [
-          "Dome com &6Alga&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Cava na areia e cabe num balde."
         ]
       }
@@ -2608,11 +2608,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with a &6Brown Mushroom&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "With affection, it brings &6Snail Shell Pieces&r and &6Strawberries&r."
         ],
         "pt": [
-          "Dome com um &6Cogumelo Marrom&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Com afeição, traz &6Pedaço de Concha de Caracol&r e &6Morango&r."
         ]
       }
@@ -2636,11 +2636,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Corn Kernels&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "With affection, it brings &6Large Turkey Eggs&r and &6Elder Feathers&r."
         ],
         "pt": [
-          "Dome com &6Grãos de Milho&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Com afeição, traz &6Ovo Grande de Peru&r e &6Pena Antiga&r."
         ]
       }
@@ -2664,11 +2664,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Sugar&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "It fertilizes the plants it visits, like bone meal."
         ],
         "pt": [
-          "Dome com &6Açúcar&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Fertiliza as plantas por onde passa, como farinha de osso."
         ]
       }
@@ -2692,11 +2692,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Sugar&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "It flies toward lights at night: a calm little companion."
         ],
         "pt": [
-          "Dome com &6Açúcar&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Voa atrás da luz à noite: um bichinho calmo de companhia."
         ]
       }
@@ -2721,11 +2721,11 @@
       "lines": {
         "en": [
           "Tame it with &6Sugar&r.",
-          "With a &6Saddle&r, it becomes a mount that leaps far. With affection, it brings &6Carmine Husks&r."
+          "With a &6Saddle&r, it becomes a mount that leaps far. With affection, it brings &6Carmine Husks&r. While riding, hold &6Left Alt&r to look around without turning your mount (free look)."
         ],
         "pt": [
           "Dome com &6Açúcar&r.",
-          "Com &6Sela&r, vira montaria que salta longe. Com afeição, traz &6Casca de Carmim&r."
+          "Com &6Sela&r, vira montaria que salta longe. Com afeição, traz &6Casca de Carmim&r. Montado, segure &6Alt esquerdo&r para olhar em volta sem virar a montaria (câmera livre)."
         ]
       }
     },
@@ -2748,11 +2748,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with a &6Melon Slice&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "A companion animal: tamed, it follows you and never despawns."
         ],
         "pt": [
-          "Dome com uma &6Fatia de Melancia&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Bicho de companhia: domado, segue você e nunca some do mundo."
         ]
       }
@@ -2776,11 +2776,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with a &6Melon Slice&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "A companion animal: tamed, it follows you and never despawns."
         ],
         "pt": [
-          "Dome com uma &6Fatia de Melancia&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Bicho de companhia: domado, segue você e nunca some do mundo."
         ]
       }
@@ -2804,11 +2804,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with a &6Melon Slice&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "A companion animal: tamed, it follows you and never despawns."
         ],
         "pt": [
-          "Dome com uma &6Fatia de Melancia&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Bicho de companhia: domado, segue você e nunca some do mundo."
         ]
       }
@@ -2832,11 +2832,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with &6Raw Cod&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "A companion animal: tamed, it follows you and never despawns."
         ],
         "pt": [
-          "Dome com &6Bacalhau Cru&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Bicho de companhia: domado, segue você e nunca some do mundo."
         ]
       }
@@ -2860,11 +2860,11 @@
       },
       "lines": {
         "en": [
-          "Tame it with a &6Snowball&r.",
+          "Tame it by &6petting&r: right click with an empty hand.",
           "Shear it for its fluff; &6Slimeballs&r and &6Magma Cream&r change its hairstyle. With affection, it brings &6Fine Wool&r."
         ],
         "pt": [
-          "Dome com uma &6Bola de Neve&r.",
+          "Dome com &6carinho&r: botão direito com a mão vazia.",
           "Tosquie para tirar a pelagem; &6Bola de Slime&r e &6Creme de Magma&r mudam o penteado. Com afeição, traz &6Lã Fina&r."
         ]
       }
@@ -2876,20 +2876,7 @@
         "item": "minecraft:apple"
       },
       "entities": [
-        "minecraft:cow",
-        "minecraft:mooshroom",
-        "minecraft:pig",
-        "minecraft:sheep",
-        "minecraft:goat",
-        "buzzier_bees:moobloom",
-        "snowpig:snow_pig",
-        "meadow:water_buffalo",
-        "meadow:wooly_cow",
-        "meadow:umbra_cow",
-        "meadow:warped_cow",
-        "meadow:wooly_sheep",
         "wildernature:bison",
-        "wildernature:minisheep",
         "wildernature:deer",
         "youkaishomecoming:deer"
       ]
@@ -2899,41 +2886,8 @@
         "item": "minecraft:sweet_berries"
       },
       "entities": [
-        "minecraft:bat",
         "buzzier_bees:grizzly_bear",
-        "wildernature:cassowary",
-        "wildernature:hedgehog"
-      ]
-    },
-    "bread": {
-      "items": {
-        "item": "minecraft:bread"
-      },
-      "entities": [
-        "minecraft:chicken",
-        "etcetera:chapple"
-      ]
-    },
-    "corn_kernels": {
-      "items": {
-        "item": "hearthandharvest:corn_kernels"
-      },
-      "entities": [
-        "autumnity:turkey"
-      ]
-    },
-    "kelp": {
-      "items": {
-        "item": "minecraft:kelp"
-      },
-      "entities": [
-        "minecraft:turtle",
-        "minecraft:squid",
-        "crittersandcompanions:otter",
-        "crittersandcompanions:dumbo_octopus",
-        "crittersandcompanions:sea_bunny",
-        "quark:crab",
-        "youkaishomecoming:crab"
+        "wildernature:cassowary"
       ]
     },
     "dried_kelp": {
@@ -2944,29 +2898,12 @@
         "minecraft:dolphin"
       ]
     },
-    "glow_berries": {
-      "items": {
-        "item": "minecraft:glow_berries"
-      },
-      "entities": [
-        "minecraft:glow_squid"
-      ]
-    },
-    "honey_bottle": {
-      "items": {
-        "item": "minecraft:honey_bottle"
-      },
-      "entities": [
-        "minecraft:bee"
-      ]
-    },
     "sugar_cane": {
       "items": {
         "item": "minecraft:sugar_cane"
       },
       "entities": [
-        "minecraft:panda",
-        "wildernature:beaver"
+        "minecraft:panda"
       ]
     },
     "crimson_fungus": {
@@ -2985,21 +2922,12 @@
         "minecraft:sniffer"
       ]
     },
-    "fermented_spider_eye": {
-      "items": {
-        "item": "minecraft:fermented_spider_eye"
-      },
-      "entities": [
-        "minecraft:armadillo"
-      ]
-    },
     "cod": {
       "items": {
         "item": "minecraft:cod"
       },
       "entities": [
-        "minecraft:polar_bear",
-        "crabbersdelight:crab"
+        "minecraft:polar_bear"
       ]
     },
     "hay_block": {
@@ -3024,9 +2952,6 @@
       },
       "entities": [
         "wildernature:hippo",
-        "aquaculture:box_turtle",
-        "aquaculture:arrau_turtle",
-        "aquaculture:starshell_turtle",
         "quark:toretoise"
       ]
     },
@@ -3039,48 +2964,11 @@
         "wildernature:lioness"
       ]
     },
-    "cookie": {
-      "items": {
-        "item": "minecraft:cookie"
-      },
-      "entities": [
-        "wildernature:raccoon"
-      ]
-    },
-    "acorn": {
-      "items": {
-        "item": "crittersandcompanions:acorn"
-      },
-      "entities": [
-        "wildernature:squirrel"
-      ]
-    },
-    "cooked_cod": {
-      "items": {
-        "item": "minecraft:cooked_cod"
-      },
-      "entities": [
-        "wildernature:swift_fox"
-      ]
-    },
-    "sugar": {
-      "items": {
-        "item": "minecraft:sugar"
-      },
-      "entities": [
-        "crittersandcompanions:leaf_insect",
-        "faunaandorchestra:butterfly",
-        "longwings:butterfly",
-        "longwings:moth",
-        "atmospheric:cochineal"
-      ]
-    },
     "brown_mushroom": {
       "items": {
         "item": "minecraft:brown_mushroom"
       },
       "entities": [
-        "autumnity:snail",
         "youkaishomecoming:boar"
       ]
     },
@@ -3089,9 +2977,109 @@
         "item": "minecraft:snowball"
       },
       "entities": [
-        "snuffles:snuffle",
         "faunaandorchestra:emperor_penguin"
       ]
+    },
+    "sugar": {
+      "items": {
+        "item": "minecraft:sugar"
+      },
+      "entities": [
+        "atmospheric:cochineal"
+      ]
     }
-  }
+  },
+  "tame_by_petting": [
+    "minecraft:cow",
+    "minecraft:mooshroom",
+    "minecraft:pig",
+    "minecraft:sheep",
+    "minecraft:chicken",
+    "minecraft:goat",
+    "minecraft:rabbit",
+    "buzzier_bees:moobloom",
+    "snowpig:snow_pig",
+    "meadow:water_buffalo",
+    "meadow:wooly_cow",
+    "meadow:wooly_sheep",
+    "meadow:umbra_cow",
+    "meadow:warped_cow",
+    "etcetera:chapple",
+    "wildernature:minisheep",
+    "untitledduckmod:duck",
+    "untitledduckmod:goose",
+    "autumnity:turkey",
+    "snuffles:snuffle",
+    "minecraft:wolf",
+    "quark:shiba",
+    "quark:foxhound",
+    "wildernature:dog",
+    "minecraft:cat",
+    "minecraft:ocelot",
+    "minecraft:axolotl",
+    "minecraft:parrot",
+    "minecraft:fox",
+    "minecraft:frog",
+    "minecraft:bat",
+    "minecraft:bee",
+    "minecraft:turtle",
+    "minecraft:armadillo",
+    "minecraft:squid",
+    "minecraft:glow_squid",
+    "wildernature:hedgehog",
+    "wildernature:squirrel",
+    "wildernature:raccoon",
+    "wildernature:swift_fox",
+    "wildernature:beaver",
+    "crittersandcompanions:ferret",
+    "crittersandcompanions:red_panda",
+    "crittersandcompanions:shima_enaga",
+    "crittersandcompanions:ladybug",
+    "crittersandcompanions:roly_poly",
+    "crittersandcompanions:snail",
+    "crittersandcompanions:stag_beetle",
+    "crittersandcompanions:stick_bug",
+    "crittersandcompanions:weevil",
+    "crittersandcompanions:otter",
+    "crittersandcompanions:dumbo_octopus",
+    "crittersandcompanions:sea_bunny",
+    "crittersandcompanions:leaf_insect",
+    "hearthandharvest:crow",
+    "faunaandorchestra:butterfly",
+    "quark:crab",
+    "youkaishomecoming:crab",
+    "crabbersdelight:crab",
+    "autumnity:snail",
+    "longwings:butterfly",
+    "longwings:moth",
+    "aquaculture:box_turtle",
+    "aquaculture:arrau_turtle",
+    "aquaculture:starshell_turtle"
+  ],
+  "command_exclude": [
+    "minecraft:horse",
+    "minecraft:donkey",
+    "minecraft:mule",
+    "minecraft:llama",
+    "minecraft:camel",
+    "minecraft:pig",
+    "minecraft:strider",
+    "minecraft:nautilus",
+    "minecraft:happy_ghast",
+    "windswept:frostbiter",
+    "wildernature:elephant",
+    "wildernature:giraffe",
+    "atmospheric:cochineal",
+    "minecraft:allay",
+    "faunaandorchestra:penguin",
+    "faunaandorchestra:emperor_penguin",
+    "faunaandorchestra:mantis",
+    "faunaandorchestra:macaw",
+    "faunaandorchestra:beaver",
+    "faunaandorchestra:sea_lion",
+    "faunaandorchestra:lemur",
+    "faunaandorchestra:red_panda",
+    "faunaandorchestra:madame_butterfly",
+    "faunaandorchestra:quirky_frog"
+  ]
 }

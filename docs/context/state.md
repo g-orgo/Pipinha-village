@@ -96,7 +96,10 @@ sturdy_farmland = "terra arada -> farmland, aspersores -> ar"
 - Script de startup roda duas vezes por sessão, então preço e contador precisam de flag de idempotência.
 - Texto para o jogador é em pt-BR; código e comentário em inglês.
 - Roupa de mod novo ganha valor de temperatura do LSO na mesma entrega (ver [[conventions]], Harmonização).
-- Animal de mod novo ganha doma na mesma entrega: grupo em `taming` e caixa no `tools/pack_tools/pet_guide/content.json`, depois `build_pet_guide.py` (ver [[decisions]], 2026-11-20).
+- Animal de mod novo ganha doma na mesma entrega: caixa no `tools/pack_tools/pet_guide/content.json` e, se for de fazenda, cão, gato ou bicho pequeno, entrada em `tame_by_petting`; senão, grupo em `taming` (quando não tem doma própria). Depois `build_pet_guide.py` (ver [[decisions]], 2026-11-20 e 2026-11-25).
+- Doma por carinho (2026-11-25): 65 animais de fazenda, cães, gatos e bichos pequenos são domados com um clique de mão vazia (`petTaming.js`), sem a doma por item; montarias e bichos grandes mantêm a doma própria. Diagnóstico `[SOCIETY] pet-tame` ativo até o dono confirmar no jogo.
+- Carinho e corações para todo animal domado (2026-11-25): domado fora das tags de pet e husbandry passa a ganhar carinho diário e HUD de corações; o clique de mão vazia depois do carinho do dia mostra os corações. Falta o dono confirmar no jogo (besouro e lobo).
+- Comandos e montaria para todo domado (2026-11-26): clique de mão vazia do dono troca seguir/ficar/passear em 82 animais (montarias, allay e músicos do Fauna and Orchestra fora); quem segue some ao montar e volta aos pés ao descer ou teleportar. Falta o dono testar no jogo.
 - Todo texto novo (menu, quests, docs) sobre o pack de origem se resume à linha de crédito de rodapé, sem outras menções.
 - Skills do Puffish (2026-11-21): nós espelho dos 25 livros na árvore própria e reaplicação dos comandos das skills no login e no desbloqueio (`skillPerkSync.js`); aguardando o dono testar no jogo.
 - Roupa de mod novo entra nos slots do Curios por regra automática em `harmonizeClothingCurios.js` (2026-11-21); armadura de verdade fica fora.

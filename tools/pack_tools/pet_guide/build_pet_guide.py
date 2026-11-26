@@ -4,8 +4,13 @@
 Idempotent: rewrites the chapter file, replaces every lang entry of the chapter (stale ones are
 removed), regenerates the quest maps of kubejs/server_scripts/entities/petGuideQuests.js, writes the
 Redomesticate taming definitions of content.json "taming" (kubejs/data/society/redomesticate/taming
-and the entity tags they use) and sets the order of the Tutorial group so the chapter comes before
+and the entity tags they use), writes the tag of the mobs tamed by petting (content.json
+"tame_by_petting", read by kubejs/startup_scripts/petTaming.js) and turns off the Redomesticate built-in
+item taming of those mobs, writes the Redomesticate command whitelist (every tameable mob of the
+guide minus content.json "command_exclude": an empty-hand click of the owner cycles follow, stay and
+wander), and sets the order of the Tutorial group so the chapter comes before
 "I - Getting Started".
+Chapter texts live only in content.json: an edit made straight in the lang files is lost on the next run.
 Run from anywhere: python3 -I tools/pack_tools/pet_guide/build_pet_guide.py
 Print fresh ids for new boxes: python3 -I tools/pack_tools/pet_guide/build_pet_guide.py --new-ids 4
 """
@@ -30,6 +35,15 @@ EGG_LINE = {"en": "Spawn egg: crafting table with &6{m}&r, 4 &6{c}&r, 3 Bone Blo
 # FTB Quests reads ids as signed longs: an id starting with 8-F is replaced on load and the
 # lang keys lose their quest. Ids must start with 0-7.
 ID_RE = re.compile(r"^[0-7][0-9A-F]{15}$")
+# Item taming definitions shipped inside the Redomesticate jar (data/redomesticate/redomesticate/taming).
+# A mob of "tame_by_petting" listed here gets an override pointing to the empty #society:no_taming tag,
+# so the item no longer tames (nor is used up). Keep in sync with the jar when it updates.
+REDOMESTICATE_BUILTIN = {
+    "axolotl": {"entity": "minecraft:axolotl", "items": {"tag": "minecraft:axolotl_food"}},
+    "frog": {"entity": "minecraft:frog", "items": {"tag": "redomesticate:tame_frogs_with"}},
+    "ocelot": {"entity": "minecraft:ocelot", "items": {"tag": "minecraft:cat_food"}},
+    "rabbit": {"entity": "minecraft:rabbit", "items": {"item": "minecraft:hay_block"}},
+}
 
 
 def other_ids(filename):
@@ -197,6 +211,60 @@ def write_taming(content):
     return len(content["taming"]), len(seen)
 
 
+def write_petting(content):
+    """Tag #society:tame_by_petting (farm animals, dogs, cats and small critters: one petting tames
+    them, kubejs/startup_scripts/petTaming.js) and the overrides that turn off the Redomesticate
+    built-in item taming of those mobs. Mounts and big animals stay out and keep their own taming."""
+    tags = ROOT / "kubejs/data/society/tags/entity_type"
+    builtin = ROOT / "kubejs/data/redomesticate/redomesticate/taming"
+    petting = content["tame_by_petting"]
+    boxed = {e for m in content["pets"] + content["others"] for e in [m["entity"]] + m.get("also", [])}
+    missing = [e for e in petting if e not in boxed]
+    if missing:
+        sys.exit("petting entity without a guide box: %s" % missing)
+    by_item = {e for data in content["taming"].values() for e in data["entities"]} & set(petting)
+    if by_item:
+        sys.exit("petting entity also in a taming group: %s" % sorted(by_item))
+    if len(set(petting)) != len(petting):
+        sys.exit("duplicated petting entity")
+    tags.mkdir(parents=True, exist_ok=True)
+    tag = {"replace": False, "values": [{"id": e, "required": False} for e in petting]}
+    (tags / "tame_by_petting.json").write_text(json.dumps(tag, indent=2) + "\n", encoding="utf-8")
+    (tags / "no_taming.json").write_text(json.dumps({"replace": False, "values": []}, indent=2) + "\n", encoding="utf-8")
+    builtin.mkdir(parents=True, exist_ok=True)
+    for old in builtin.glob("*.json"):
+        old.unlink()
+    off = []
+    for name, data in REDOMESTICATE_BUILTIN.items():
+        if data["entity"] not in petting:
+            continue
+        definition = {"entities": "#society:no_taming", "items": data["items"], "chance": 0.33}
+        (builtin / (name + ".json")).write_text(json.dumps(definition, indent=2) + "\n", encoding="utf-8")
+        off.append(name)
+    return len(petting), off
+
+
+def write_commands(content):
+    """Tag #redomesticate:command_whitelist: the Redomesticate trinary commands (an empty-hand click
+    of the owner, not sneaking, cycles follow, stay and wander) for every tameable mob of the guide.
+    "command_exclude" keeps out the mobs whose empty-hand click is something else: mounts (riding a
+    saddled pig, strider, elephant...), the allay and the Fauna and Orchestra musicians (taking back
+    the instrument). Horses are skipped by the mod anyway (AbstractHorse)."""
+    tags = ROOT / "kubejs/data/redomesticate/tags/entity_type"
+    boxed = [e for m in content["pets"] + content["others"] for e in [m["entity"]] + m.get("also", [])]
+    exclude = set(content["command_exclude"])
+    unknown = sorted(exclude - set(boxed))
+    if unknown:
+        sys.exit("command_exclude entity without a guide box: %s" % unknown)
+    tameable = set(content["tame_by_petting"]) | {e for d in content["taming"].values() for e in d["entities"]}
+    tameable |= set(boxed)
+    ids = sorted(tameable - exclude)
+    tags.mkdir(parents=True, exist_ok=True)
+    tag = {"replace": False, "values": [{"id": e, "required": False} for e in ids]}
+    (tags / "command_whitelist.json").write_text(json.dumps(tag, indent=2) + "\n", encoding="utf-8")
+    return len(ids)
+
+
 def set_order():
     changed = []
     for index, name in enumerate(ORDER):
@@ -231,6 +299,8 @@ def main():
     print("pt_br.json keys:", merge_json_lang(LOCALIZER / "pt_br.json", loc["pt"], prefix))
     write_js(content)
     print("taming (definitions, mobs):", write_taming(content))
+    print("petting (mobs, built-in item taming off):", write_petting(content))
+    print("commands (whitelisted mobs):", write_commands(content))
     print("order changed:", set_order() or "none")
 
 

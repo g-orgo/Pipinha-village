@@ -66,26 +66,24 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
         }
     } else if (global.nbtNum(npcData.friendship) == -1) {
         npcData.friendship = 5
-        server.runCommandSilent(
-            `dialog ${player.getUuid()} show ${player.username} ${npcId}_intro`
-        );
+        global.showDialog(server, player, `${npcId}_intro`);
     } else if (!global.nbtBool(npcData.maxGifted) && global.nbtNum(npcData.friendship) >= 500) {
         if (npcId.equals("banker") && player.stages.has("slouching_towards_artistry")) {
             player.give(Item.of("2x waystones:waystone"))
-            server.runCommandSilent(`dialog ${player.username} show ${player.username} banker_unique_five_gift_read`);
+            global.showDialog(server, player, `banker_unique_five_gift_read`);
         } else if (npcId.equals("market") && player.stages.has("universal_methods_of_farming")) {
             player.give(Item.of("16x society:sparkpod_seed"))
-            server.runCommandSilent(`dialog ${player.username} show ${player.username} market_unique_five_gift_read`);
+            global.showDialog(server, player, `market_unique_five_gift_read`);
         } else if (npcId.equals("librarian") && player.stages.has("debt_caverns")) {
             player.give(Item.of('botania:diva_charm'))
             player.give(Item.of('botania:mana_ring[minecraft:custom_data={mana:500000}]'))
-            server.runCommandSilent(`dialog ${player.username} show ${player.username} librarian_unique_five_gift_read`);
+            global.showDialog(server, player, `librarian_unique_five_gift_read`);
         } else if (npcId.equals("trader")) {
             player.stages.add("trader_clothing")
-            server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} ${npcId}_unique_five_gift`);
+            global.showDialog(server, player, `${npcId}_unique_five_gift`);
         } else {
             player.give(getMaxGifts()[npcId])
-            server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} ${npcId}_unique_five_gift`);
+            global.showDialog(server, player, `${npcId}_unique_five_gift`);
         }
         npcData.maxGifted = true
     } else {
@@ -93,7 +91,7 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
         let dialogNumber;
         if (player.isCrouching() && item.hasTag("society:villager_gift")) {
             if (npcId === "wise_oak") {
-                server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} wise_oak_unique_no_gifting`);
+                global.showDialog(server, player, `wise_oak_unique_no_gifting`);
                 server.runCommandSilent(`playsound stardew_fishing:fish_escape block @a ${target.x} ${target.y} ${target.z}`);
                 server.runCommandSilent(`playsound species:item.wicked_swapper.teleport block @a ${target.x} ${target.y} ${target.z}`);
                 level.spawnParticles(
@@ -155,9 +153,7 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
                 if (item.get(Java.loadClass("net.minecraft.core.component.DataComponents").FOOD) != null) delay = 20
                 if (!player.isCreative()) item.shrink(1);
                 server.scheduleInTicks(delay, () => {
-                    server.runCommandSilent(
-                        `dialog ${player.getUuid()} show ${player.username} ${npcId}_gift_${giftValue}_${dialogNumber}`
-                    );
+                    global.showDialog(server, player, `${npcId}_gift_${giftValue}_${dialogNumber}`);
                 });
                 if (Math.random() < 0.01) {
                     let newGolem = level.createEntity(Math.random() < 0.5 ? "golemoverhaul:barrel_golem" : "golemoverhaul:hay_golem");
@@ -174,9 +170,7 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
                 let hearts = Math.floor(global.nbtNum(npcData.friendship) / 100);
                 dialogNumber = Math.floor(Math.random() * (dialogLengths[npcId].chatterLengths[hearts]));
 
-                interactionCommandResult = server.runCommandSilent(
-                    `dialog ${player.getUuid()} show ${player.username} ${npcId}_chatter_friendship${hearts}_${dialogNumber}`
-                );
+                interactionCommandResult = global.showDialog(server, player, `${npcId}_chatter_friendship${hearts}_${dialogNumber}`);
                 npcInteractionDebug(`chatter command player=${player.username} npc=${npcId} result=${interactionCommandResult}`);
                 npcData.dayLastChatted = day
                 if (global.nbtNum(npcData.friendship) + 5 > 500) {
@@ -188,10 +182,10 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
                 }
             } else {
                 if (npcId === "carpenter") {
-                    server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} carpenter_choice_dialog_need_to_buy`);
+                    global.showDialog(server, player, `carpenter_choice_dialog_need_to_buy`);
                 } else if (npcId === "librarian" && global.isLateSeason(level)) {
                     npcInteractionDebug(`book fair branch player=${player.username} day=${day}`);
-                    interactionCommandResult = server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} librarian_choice_dialog_book_fair`);
+                    interactionCommandResult = global.showDialog(server, player, `librarian_choice_dialog_book_fair`);
                     npcInteractionDebug(`book fair dialog result=${interactionCommandResult}`);
                 } else if (npcId === "wise_oak") {
                     if (global.nbtNum(npcData.friendship) >= 500) {

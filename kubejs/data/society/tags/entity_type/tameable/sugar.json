@@ -2,22 +2,6 @@
   "replace": false,
   "values": [
     {
-      "id": "crittersandcompanions:leaf_insect",
-      "required": false
-    },
-    {
-      "id": "faunaandorchestra:butterfly",
-      "required": false
-    },
-    {
-      "id": "longwings:butterfly",
-      "required": false
-    },
-    {
-      "id": "longwings:moth",
-      "required": false
-    },
-    {
       "id": "atmospheric:cochineal",
       "required": false
     }

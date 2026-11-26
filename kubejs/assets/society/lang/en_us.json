@@ -331,6 +331,8 @@
   "society.husbandry.breeding.infertile": "This animal cannot breed.",
   "society.husbandry.breeding.fail": "The Miracle Potion failed...",
   "society.husbandry.breeding.cooldown": "This animal needs time to rest after taking a Miracle Potion...",
+  "society.husbandry.tamed_by_petting": "%s is yours now!",
+  "society.husbandry.tame_by_petting_hint": "This animal is tamed by petting: right click it with an empty hand.",
   "society.husbandry.pet.max_affection": "%s really loves you!",
   "society.husbandry.sunlit_crystal.not_plushie": "Place a plushie in your offhand to house an animal in it.",
   "society.husbandry.sunlit_crystal.not_enough_animal_affection": "This animal needs 10 hearts of affection to go inside the plushie!",

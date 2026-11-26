@@ -501,7 +501,6 @@ ServerEvents.recipes((e) => {
     // Mechanic
     "rehooked:wood_hook",
     "rehooked:wood_chain",
-    "rehooked:red_hook",
     // Bard
     "zetter:easel",
     "zetter:paints",
@@ -961,6 +960,13 @@ ServerEvents.recipes((e) => {
     "create_central_kitchen:mixing/hot_cocoa",
     "vintagedelight:meat_pizza",
     "minecraft:beehive",
+    // Rehooked: hook upgrades moved to the smithing table (addToolRecipes.js, society:tools/rehooked_*).
+    // Removed by id, not by output, so the new smithing recipes are never caught by the filter.
+    "rehooked:iron_hook",
+    "rehooked:diamond_hook",
+    "rehooked:blaze_hook",
+    "rehooked:ender_hook",
+    "rehooked:red_hook",
   ];
   const removeByInput = [
     "decorative_blocks:rocky_dirt",

@@ -230,9 +230,13 @@ global.autoClaimChunk = (player, block) => {
     if (String(hand) !== "MAIN_HAND") return false;
     if (player.isFake()) return false;
     let empty = !item || (typeof item.isEmpty === "function" ? item.isEmpty() : String(item) === "minecraft:air");
-    let pet = global.checkEntityTag(target, "society:pet_animal");
+    // Any animal of the pack counts as a pet (petTaming.js), not only #society:pet_animal.
+    let pet = global.isSocietyPet(target);
     if (!pet && !global.checkEntityTag(target, "society:husbandry_animal")) return false;
-    if (!empty && (!pet || isPetUseItem(item, target))) return false;
+    // Only owned pets (and #society:pet_animal) are petted with an item in hand; a wild animal
+    // needs an empty hand, so items keep their normal use on it (bucket, lead, food).
+    let ownedPet = pet && (global.checkEntityTag(target, "society:pet_animal") || global.isTamedAnimal(target));
+    if (!empty && (!ownedPet || isPetUseItem(item, target))) return false;
     return Number(target.persistentData.getInt("ageLastPet")) !== Number(global.getDay(level));
   };
 })();
@@ -478,7 +482,8 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
     }
   }
   let petted = day > ageLastPet && !player.isFake();
-  if (petted || item === "minecraft:air" || item === 'society:mood_scanner') {
+  let emptyHand = !item || (typeof item.isEmpty === "function" && item.isEmpty());
+  if (petted || emptyHand || item === "minecraft:air" || item === 'society:mood_scanner') {
     // Petting always shows the status (name and hearts), not only on empty-hand clicks.
     let shownHearts = hearts;
     if (petted) {
@@ -802,7 +807,8 @@ const upgradeAnimal = (level, server, item, target, sound, particle) => {
 };
 
 global.handleHusbandryBase = (hand, player, item, target, level, server) => {
-  let pet = global.checkEntityTag(target, "society:pet_animal");
+  // Any animal of the pack counts as a pet (petTaming.js), not only #society:pet_animal.
+  let pet = global.isSocietyPet(target);
   let eventData = {
     player: player,
     item: item,
@@ -1067,7 +1073,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
   const PERSISTED_KEY = "PlayerPersisted";
   // Tag type id of a compound inside a ListTag.
   const TAG_COMPOUND = 10;
-  // Radius around the owner where following dogs are hidden on mount.
+  // Radius around the owner where following pets are hidden on mount.
   const MOUNT_SEARCH = 48;
 
   // Blocks moved between two ticks that count as a teleport.
@@ -1075,15 +1081,14 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
   // Search radius around the old position (teleport) or the owner (dismount).
   const TELEPORT_SEARCH = 48;
   const DISMOUNT_SEARCH = 96;
-  // Dog types that can be put in follow mode.
-  const DOG_TYPES = [
-    "minecraft:wolf",
-    "quark:shiba",
-    "quark:foxhound",
-    "wildernature:dog",
-    "wildernature:red_wolf",
-  ];
-  // Domestication Innovation command value for follow.
+  // Every tamed mob counts (vanilla TamableAnimal or the Redomesticate universal taming).
+  const $TamableAnimal = Java.loadClass("net.minecraft.world.entity.TamableAnimal");
+  const $AbstractHorse = Java.loadClass("net.minecraft.world.entity.animal.horse.AbstractHorse");
+  const $TameableUtils = Java.loadClass("com.evandev.redomesticate.util.TameableUtils");
+  // Mobs whose owner click cycles wander (0), sit (1) and follow (2); the tag is built by
+  // tools/pack_tools/pet_guide/build_pet_guide.py.
+  const COMMAND_WHITELIST = "redomesticate:command_whitelist";
+  // Redomesticate PetCommand id of follow.
   const COMMAND_FOLLOW = 2;
 
   // Per-player state keyed by UUID string: dimension, position, the Level object, riding flag.
@@ -1111,13 +1116,20 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
   const square = (v) => v * v;
   const distance3 = (a, b) => Math.sqrt(square(a.x - b.x) + square(a.y - b.y) + square(a.z - b.z));
 
-  const isFollowingDog = (dog, ownerUuid) => {
-    if (DOG_TYPES.indexOf(String(dog.type)) === -1) return false;
-    if (!dog.isAlive() || !dog.isTame()) return false;
-    if (String(dog.getOwnerUUID()) !== ownerUuid) return false;
-    if (dog.isOrderedToSit() || dog.isPassenger() || dog.isLeashed()) return false;
-    if (typeof dog.getCommand === "function" && Number(dog.getCommand()) !== COMMAND_FOLLOW) return false;
-    return true;
+  // A tamed mob of this owner set to follow. Whitelisted mobs follow only on the follow
+  // command (wandering ones stay behind); other TamableAnimals (orchestra musicians) follow
+  // whenever they are not sitting. Mounts, anything carrying a rider, passengers and leashed
+  // mobs never count, so the owner's own mount is never hidden or moved.
+  const isFollowingDog = (pet, ownerUuid) => {
+    if (typeof pet["redomesticate$getCommand"] !== "function") return false;
+    if (!pet.isAlive() || pet instanceof $AbstractHorse) return false;
+    if (!$TameableUtils.isTamed(pet)) return false;
+    if (String($TameableUtils.getOwnerUUIDOf(pet)) !== ownerUuid) return false;
+    if (pet.isPassenger() || pet.isVehicle() || pet.isLeashed()) return false;
+    if (global.checkEntityTag(pet, COMMAND_WHITELIST)) {
+      return Number(pet["redomesticate$getCommand"]()) === COMMAND_FOLLOW;
+    }
+    return pet instanceof $TamableAnimal && !pet.isOrderedToSit();
   };
 
   // Following dogs of one owner within a radius of a point, in the given level.

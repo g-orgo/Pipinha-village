@@ -1,0 +1,7 @@
+{
+  "entities": "#society:no_taming",
+  "items": {
+    "tag": "minecraft:cat_food"
+  },
+  "chance": 0.33
+}

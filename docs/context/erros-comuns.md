@@ -82,6 +82,12 @@ global_readonly = "'global' cannot be assigned to in client or server scripts"  
 fix_global = "global.runtime.x = ... (startup_scripts/000_port_runtime.js)"   # só startup grava no topo do global
 # casos já vistos: petGuideQuests.js (global.petGuideOnInteract), quest "Companheiros" não completava por carinho/doma (2026-11-21)
 
+pet_filter_by_tag = "carinho diário e corações só para #society:pet_animal e #society:husbandry_animal"   # bicho domado fora das duas tags (besouro, furão, mod novo) não recebia carinho
+fix_pet_filter = "global.isSocietyPet / global.isPettableAnimal (petTaming.js): tag, qualquer animal domado ou qualquer Animal/WaterAnimal/AmbientCreature (nunca lista fixa de animais)"
+tamed_click_consumed = "clique do dono em animal domado (sentar, seguir) é consumido antes do ItemEvents.entityInteracted"   # depois do carinho do dia o HUD de corações não aparecia
+fix_tamed_click = "petFirstInteraction.js manda o HUD no clique de mão vazia, sem cancelar o clique"
+# casos vistos: stag_beetle sem carinho e lobo sem corações após o carinho do dia (log de 22/11: wolf should=false sem [paintHud] sending; pato e ovelha não domados mostravam, 2026-11-25)
+
 removed_item_empty_tag = "Component 'ingredient' is not allowed to be empty! Falling back to vanilla"   # tag vazia: a receita carrega, mas fica impossível
 # causa: handleItemBlockFluidTags.js tira todas as tags dos global.removedItems; se o item canônico não está na tag, ela esvazia
 fix_removed_item_tag = "pôr o item canônico (global.canonicalItems) em kubejs/data/<ns>/tags/item/<tag>.json"
@@ -142,8 +148,9 @@ nested_const_check = "NODE_PATH=<acorn> node tools/kjsport/find_nested_const.js 
 
 ## Compatibilidade entre mods
 
+- **SVDialog 1.6 (1.21.1) mudou a sintaxe do comando**: a 0.6 da 1.20.1 aceitava `dialog <alvo> show <jogador> <id>`; a 1.21.1 só registra `dialog show <id>` e mostra o diálogo para a entidade que executa o comando. A forma antiga não faz parse e o `runCommandSilent` esconde a falha: conversa diária, intro e presentes dos NPCs não apareciam, e a Veronica (Artisan, `librarian`) no fim de estação abria a escolha da Feira do Livro, que nunca aparecia, então só dava para comprar pelo telefone (2026-11-25). Todo diálogo disparado por script usa `global.showDialog(server, player, id)` (`startup_scripts/globalDialog.js`), que roda `execute as <jogador> run dialog show <id>`. Os `command` dentro dos JSONs de diálogo rodam como o jogador com permissão 2 e não mudam.
 - **Tom's Storage 2.4.2: crafting terminal envia `null` para a saída**: ao alterar a matriz sem receita válida, `CraftingTerminalBlockEntity.onCraftingMatrixChanged` chama `ResultContainer.setItem` com `null`. No Minecraft 1.21.1, `NonNullList` rejeita esse valor com NPE e interrompe a atualização da matriz/saída. No `pipinha_cinematic_toms`, converter o argumento nulo em `ItemStack.EMPTY` com mixin; conferir no `latest.log` e recolher uma receita completa no jogo.
-- **`modifyResult` do KubeJS 6 não aceita callback na 1.21.1**: no KubeJS 7, `.modifyResult()` recebe a chave textual de `ServerEvents.modifyRecipeResult`, e a função antiga vira uma chave sem listener. O `KubeJSCraftingRecipe` pede o resultado desse listener e recebe `null`, causando NPE em `CraftingMenu.slotChangedCraftingGrid`; a receita deixa de aparecer na mesa e no terminal do Tom's. Migrar a receita para `.modifyResult("chave")` e registrar `ServerEvents.modifyRecipeResult("chave", event => { event.item = ... })` (2026-11-22).
+- **`modifyResult` do KubeJS 6 não aceita callback na 1.21.1**: no KubeJS 7, `.modifyResult()` recebe a chave textual de `ServerEvents.modifyRecipeResult`, e a função antiga vira uma chave sem listener. Todo listener de resultado também termina com `event.exit()`: alterar `event.item` sem chamar `exit` deixa o evento em `PASS`, cujo valor é `null`. O `KubeJSCraftingRecipe` usa esse valor e causa NPE em `CraftingMenu.slotChangedCraftingGrid`; a receita deixa de aparecer na mesa e no terminal do Tom's (2026-11-22).
 - **Harmonização ampla demais para receitas culinárias nomeadas**: algumas receitas de mod já usam tags genéricas como `c:foods/cooked_fish`, independentemente de `normalizeEquivalentItems.js`. Se o prato pede uma espécie ou ingrediente específico, sobrescrever a receita em `kubejs/data/<mod>/recipe/` com o ingrediente nominal; exemplo `crabbersdelight:stuffed_nautilus_shell` (2026-11-22).
 - **Crafting terminal no Cinematic: clique duplo não equivale ao vanilla**: o addon encaminha cada clique de forma individual. Para recolher itens iguais da grade até um stack, detectar o segundo clique no mesmo slot e enviar `ClickType.PICKUP_ALL`; o menu vanilla respeita o limite do stack e prioriza os slots iniciais da grade.
 

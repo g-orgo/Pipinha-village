@@ -24,16 +24,18 @@ const hasArtificialInput = (grid) => {
 };
 
 // KubeJS 7 requires recipe-result changes through ServerEvents.modifyRecipeResult.
-// The event begins with the normal result, so leaving event.item untouched preserves it.
+// The event begins with the normal result; event.exit() returns that result to the recipe.
 const propagateArtificial = (event) => {
   let result;
   try {
-    if (!hasArtificialInput(event.grid)) return;
-    result = Item.of(event.item.id + ARTIFICIAL_DATA, event.item.count);
-    if (!result.isEmpty()) event.item = result;
+    if (hasArtificialInput(event.grid)) {
+      result = Item.of(event.item.id + ARTIFICIAL_DATA, event.item.count);
+      if (!result.isEmpty()) event.item = result;
+    }
   } catch (err) {
     console.error("[SOCIETY] artificial metal result propagation failed; preserving normal recipe result:", err);
   }
+  event.exit();
 };
 
 const artificialRecipeIds = [

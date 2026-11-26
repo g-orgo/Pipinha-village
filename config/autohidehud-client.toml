@@ -12,7 +12,7 @@
 	#The final opacity of the hud elements
 	# Default: 0.0
 	# Range: 0.0 ~ 1.0
-	targetOpacity = 0.05
+	targetOpacity = 0.3
 
 [hide]
 	#Hides the hotbar
@@ -36,7 +36,7 @@
 	#Hides the player status effects
 	hideStatusEffects = true
 	#Hides the chat messages
-	hideChatMessages = true
+	hideChatMessages = false
 	#Hides the sleep overlay while in bed
 	hideSleepOverlay = true
 	#A list of custom GUI layer ids to hide

@@ -491,7 +491,7 @@ const getNearbyBlocks = (level, target, radius, tag) => {
  * @param {Internal.Player|null} player
  */
 global.getOrFetchMood = (level, target, day, player, debugMood, disregardPet) => {
-  if (global.checkEntityTag(target, "society:pet_animal")) return 256;
+  if (global.isSocietyPet(target)) return 256;
   const data = target.persistentData;
   let moodDebuffs = 0;
   let moodImpactModifier = getMoodImpactModifier(target);

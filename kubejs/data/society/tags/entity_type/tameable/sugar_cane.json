@@ -4,10 +4,6 @@
     {
       "id": "minecraft:panda",
       "required": false
-    },
-    {
-      "id": "wildernature:beaver",
-      "required": false
     }
   ]
 }

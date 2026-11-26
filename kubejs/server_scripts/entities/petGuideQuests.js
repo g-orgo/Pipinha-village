@@ -116,7 +116,6 @@ console.info("[SOCIETY] petGuideQuests.js loaded");
     "snuffles:snuffle": "210E28A3EDE9FE72",
   };
   const INTERACT_ONLY = {
-    "minecraft:fox": true,
     "minecraft:camel": true,
     "minecraft:camel_husk": true,
     "minecraft:happy_ghast": true,

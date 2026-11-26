@@ -13,9 +13,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			icon: {
-				id: "minecraft:lead"
-			}
+			icon: { id: "minecraft:lead" }
 			id: "6B4F994116C4DE02"
 			size: 2.0d
 			tasks: [{
@@ -669,7 +667,7 @@
 			id: "51CFED5AEFDECBC2"
 			tasks: [{
 				id: "1157ED5E7B4D1826"
-				item: { components: { "ftbquests:missing_item": "meadow:wooly_cow_spawn_egg" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "meadow:wooly_cow_spawn_egg" }
 				type: "item"
 			}]
 			x: -4.0d

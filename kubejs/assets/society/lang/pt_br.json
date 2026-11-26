@@ -331,6 +331,8 @@
   "society.husbandry.breeding.infertile": "Este animal não pode reproduzir.",
   "society.husbandry.breeding.fail": "A Poção Milagrosa falhou...",
   "society.husbandry.breeding.cooldown": "Este animal precisa descansar após consumir a Poção Milagrosa...",
+  "society.husbandry.tamed_by_petting": "%s agora é seu!",
+  "society.husbandry.tame_by_petting_hint": "Este animal é domado com carinho: botão direito nele com a mão vazia.",
   "society.husbandry.pet.max_affection": "%s ama muito você!",
   "society.husbandry.sunlit_crystal.not_plushie": "Coloque uma pelúcia na mão secundária para abrigar um animal nela.",
   "society.husbandry.sunlit_crystal.not_enough_animal_affection": "Este animal precisa de 10 corações de afeição para entrar na pelúcia!",

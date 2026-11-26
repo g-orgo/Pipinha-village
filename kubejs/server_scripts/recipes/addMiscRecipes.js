@@ -447,10 +447,6 @@ ServerEvents.recipes((e) => {
     "paraglider:goddess_statue",
     "society:prismatic_shard",
   ]);
-  e.shapeless("rehooked:red_hook", [
-    "rehooked:diamond_hook",
-    "society:prismatic_shard",
-  ]);
   e.shaped("society:ancient_cask", [" p ", "vav", " p "], {
     a: "society:aging_cask",
     p: "society:prismatic_shard",

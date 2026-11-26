@@ -2,10 +2,6 @@
   "replace": false,
   "values": [
     {
-      "id": "autumnity:snail",
-      "required": false
-    },
-    {
       "id": "youkaishomecoming:boar",
       "required": false
     }

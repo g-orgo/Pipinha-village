@@ -1,0 +1,7 @@
+{
+  "entities": "#society:no_taming",
+  "items": {
+    "tag": "redomesticate:tame_frogs_with"
+  },
+  "chance": 0.33
+}

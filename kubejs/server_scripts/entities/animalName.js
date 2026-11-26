@@ -7,7 +7,7 @@ ItemEvents.entityInteracted((e) => {
   const DataComponents = Java.loadClass("net.minecraft.core.component.DataComponents");
 
   if (hand == "OFF_HAND") return;
-  if (!global.checkEntityTag(target, "society:husbandry_animal") && !global.checkEntityTag(target, "society:pet_animal")) return;
+  if (!global.isPettableAnimal(target)) return;
   if (hand == "MAIN_HAND") {
     const data = target.persistentData;
     if (item === "minecraft:name_tag" && item.has(DataComponents.CUSTOM_NAME) && !target.customName) {

@@ -10,12 +10,13 @@ const copyManasteelDataToTerrasteel = (event) => {
       input = event.grid.getItem(i);
       if (String(input.id).indexOf("botania:manasteel_") === 0) {
         event.item = event.item.withNBT(input.nbt);
-        return;
+        break;
       }
     }
   } catch (err) {
     console.error("[SOCIETY] terrasteel data propagation failed; preserving normal recipe result:", err);
   }
+  event.exit();
 };
 
 ServerEvents.modifyRecipeResult(TERASTEEL_RESULT_EVENT, copyManasteelDataToTerrasteel);
@@ -247,4 +248,17 @@ ServerEvents.recipes((e) => {
     "minecraft:iron_ingot"
   );
   upgradeTool("watering_can", "dew_drop_watering_cans");
+  // Rehooked grappling hooks upgrade at the smithing table like the other tools.
+  // The mod's crafting recipes (and the old coin-gated overrides) are removed by id in removeRecipes.js.
+  [
+    ["iron_hook", "society:iron_upgrade_smithing_template", "wood_hook", "minecraft:iron_ingot"],
+    ["diamond_hook", "society:diamond_upgrade_smithing_template", "iron_hook", "minecraft:diamond"],
+    ["blaze_hook", "minecraft:netherite_upgrade_smithing_template", "diamond_hook", "minecraft:blaze_rod"],
+    ["ender_hook", "minecraft:netherite_upgrade_smithing_template", "diamond_hook", "minecraft:ender_eye"],
+    ["red_hook", "minecraft:netherite_upgrade_smithing_template", "diamond_hook", "society:prismatic_shard"],
+  ].forEach((hook) => {
+    e.smithing(`rehooked:${hook[0]}`, hook[1], `rehooked:${hook[2]}`, hook[3]).id(
+      `society:tools/rehooked_${hook[0]}_smithing`
+    );
+  });
 });

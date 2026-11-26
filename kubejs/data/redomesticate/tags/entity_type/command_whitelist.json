@@ -1,0 +1,333 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "aquaculture:arrau_turtle",
+      "required": false
+    },
+    {
+      "id": "aquaculture:box_turtle",
+      "required": false
+    },
+    {
+      "id": "aquaculture:starshell_turtle",
+      "required": false
+    },
+    {
+      "id": "autumnity:snail",
+      "required": false
+    },
+    {
+      "id": "autumnity:turkey",
+      "required": false
+    },
+    {
+      "id": "buzzier_bees:grizzly_bear",
+      "required": false
+    },
+    {
+      "id": "buzzier_bees:moobloom",
+      "required": false
+    },
+    {
+      "id": "crabbersdelight:crab",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:dumbo_octopus",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:ferret",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:ladybug",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:leaf_insect",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:otter",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:red_panda",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:roly_poly",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:sea_bunny",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:shima_enaga",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:snail",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:stag_beetle",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:stick_bug",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:weevil",
+      "required": false
+    },
+    {
+      "id": "etcetera:chapple",
+      "required": false
+    },
+    {
+      "id": "faunaandorchestra:butterfly",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:crow",
+      "required": false
+    },
+    {
+      "id": "longwings:butterfly",
+      "required": false
+    },
+    {
+      "id": "longwings:moth",
+      "required": false
+    },
+    {
+      "id": "meadow:umbra_cow",
+      "required": false
+    },
+    {
+      "id": "meadow:warped_cow",
+      "required": false
+    },
+    {
+      "id": "meadow:water_buffalo",
+      "required": false
+    },
+    {
+      "id": "meadow:wooly_cow",
+      "required": false
+    },
+    {
+      "id": "meadow:wooly_sheep",
+      "required": false
+    },
+    {
+      "id": "minecraft:armadillo",
+      "required": false
+    },
+    {
+      "id": "minecraft:axolotl",
+      "required": false
+    },
+    {
+      "id": "minecraft:bat",
+      "required": false
+    },
+    {
+      "id": "minecraft:bee",
+      "required": false
+    },
+    {
+      "id": "minecraft:camel_husk",
+      "required": false
+    },
+    {
+      "id": "minecraft:cat",
+      "required": false
+    },
+    {
+      "id": "minecraft:chicken",
+      "required": false
+    },
+    {
+      "id": "minecraft:cow",
+      "required": false
+    },
+    {
+      "id": "minecraft:dolphin",
+      "required": false
+    },
+    {
+      "id": "minecraft:fox",
+      "required": false
+    },
+    {
+      "id": "minecraft:frog",
+      "required": false
+    },
+    {
+      "id": "minecraft:glow_squid",
+      "required": false
+    },
+    {
+      "id": "minecraft:goat",
+      "required": false
+    },
+    {
+      "id": "minecraft:mooshroom",
+      "required": false
+    },
+    {
+      "id": "minecraft:ocelot",
+      "required": false
+    },
+    {
+      "id": "minecraft:panda",
+      "required": false
+    },
+    {
+      "id": "minecraft:parrot",
+      "required": false
+    },
+    {
+      "id": "minecraft:polar_bear",
+      "required": false
+    },
+    {
+      "id": "minecraft:rabbit",
+      "required": false
+    },
+    {
+      "id": "minecraft:sheep",
+      "required": false
+    },
+    {
+      "id": "minecraft:sniffer",
+      "required": false
+    },
+    {
+      "id": "minecraft:squid",
+      "required": false
+    },
+    {
+      "id": "minecraft:trader_llama",
+      "required": false
+    },
+    {
+      "id": "minecraft:turtle",
+      "required": false
+    },
+    {
+      "id": "minecraft:wolf",
+      "required": false
+    },
+    {
+      "id": "minecraft:zombie_nautilus",
+      "required": false
+    },
+    {
+      "id": "quark:crab",
+      "required": false
+    },
+    {
+      "id": "quark:foxhound",
+      "required": false
+    },
+    {
+      "id": "quark:shiba",
+      "required": false
+    },
+    {
+      "id": "quark:toretoise",
+      "required": false
+    },
+    {
+      "id": "snowpig:snow_pig",
+      "required": false
+    },
+    {
+      "id": "snuffles:snuffle",
+      "required": false
+    },
+    {
+      "id": "untitledduckmod:duck",
+      "required": false
+    },
+    {
+      "id": "untitledduckmod:goose",
+      "required": false
+    },
+    {
+      "id": "wildernature:beaver",
+      "required": false
+    },
+    {
+      "id": "wildernature:bison",
+      "required": false
+    },
+    {
+      "id": "wildernature:cassowary",
+      "required": false
+    },
+    {
+      "id": "wildernature:deer",
+      "required": false
+    },
+    {
+      "id": "wildernature:dog",
+      "required": false
+    },
+    {
+      "id": "wildernature:hedgehog",
+      "required": false
+    },
+    {
+      "id": "wildernature:hippo",
+      "required": false
+    },
+    {
+      "id": "wildernature:lion",
+      "required": false
+    },
+    {
+      "id": "wildernature:lioness",
+      "required": false
+    },
+    {
+      "id": "wildernature:minisheep",
+      "required": false
+    },
+    {
+      "id": "wildernature:raccoon",
+      "required": false
+    },
+    {
+      "id": "wildernature:scorpion",
+      "required": false
+    },
+    {
+      "id": "wildernature:squirrel",
+      "required": false
+    },
+    {
+      "id": "wildernature:swift_fox",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:boar",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:crab",
+      "required": false
+    },
+    {
+      "id": "youkaishomecoming:deer",
+      "required": false
+    }
+  ]
+}

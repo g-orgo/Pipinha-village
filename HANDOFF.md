@@ -33,7 +33,7 @@ O que já foi feito está em `docs/context/history.md` (uma linha por unidade) e
 - F4/F5: sobram cerca de 1400 referências a mods ausentes em tabelas e 221 texturas sem par (`tools/kjsport/IDSCAN.md`). Corrigir só o que aparecer no log (conferir).
 - F6: conferir se alguma quest ainda cita Splendid Slimes ou Splendid Cogs (já está em `state.md`).
 - Bugs de mods que não são nossos, a reportar aos autores (conferir se já foram reportados): erro do Small Ships 2.0.2 ao fechar o mundo; Sunrise Gardening 1.2 (jar patcheado: `culturaldelights` -> `culturaldelightx` em CommonModEvents; original em `backups/sunrisegardening-1.2.original.jar`; autor: github.com/Chakyl/sunrise-gardening); Iron's RPG Tweaks 2.2.3 e Tanuki Decor 21.1.0.2 (jars patcheados, originais em `backups/`).
-- Diagnósticos temporários a remover depois que o dono confirmar: `PAINT_DEBUG` e o log "sending" em `paintHud.js` e `checkAnimal`; `global.ARTISAN_DEBUG` (`[artisandebug]`); `[fovdebug]` em `parcoolFastRunFov.js`; `[harvestdebug]` em `harvestDebug.js`; `[parcooluse]` e `BREAKFALL_GUARD_DEBUG` do ParCool.
+- Diagnósticos temporários a remover depois que o dono confirmar: `PAINT_DEBUG` e o log "sending" em `paintHud.js` e `checkAnimal`; `global.ARTISAN_DEBUG` (`[artisandebug]`); `[fovdebug]` em `parcoolFastRunFov.js`; `[harvestdebug]` em `harvestDebug.js`; `[parcooluse]` e `BREAKFALL_GUARD_DEBUG` do ParCool; `[pricecheck]` em `kubejs/server_scripts/debug/priceCheck.js` (comida sem preço; usar a lista para fechar os 37 itens UNRESOLVED de `tools/priceaudit/REPORT.md`).
 - Scripts de startup novos (`petMobScare.js`, `petGuideInteract.js`) só entram depois de reiniciar o jogo.
 
 ### Testes no jogo sem retorno do dono (conferir se já foram vistos)

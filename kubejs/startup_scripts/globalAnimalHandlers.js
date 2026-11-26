@@ -40,7 +40,7 @@ global.getAnimalIsNotCramped = (target, scale, applyGlowing) => {
 };
 
 global.isWarpedCow = (target) => {
-  if (target.type === "meadow:wooly_cow") {
+  if (global.nbtStr(target.type) === "meadow:wooly_cow") {
     if (target.toString().includes("WoolyCowEntity")) {
       // 1.21.1: Entity has no NBT getter; read Variant through saveWithoutId (CompoundTag verified in javap).
       let woolyTag = target.saveWithoutId(new (Java.loadClass("net.minecraft.nbt.CompoundTag"))());
@@ -104,7 +104,7 @@ const resolveMilk = (hearts, mood, target, type) => {
 const canMilk = (data, target, day, plushieModifiers) => {
   const ageLastMilked = data.getInt("ageLastMilked");
   const dayHasPassed =
-    day > ageLastMilked + global.getMilkingTimeMult(target, target.type) - 1;
+    day > ageLastMilked + global.getMilkingTimeMult(target, global.nbtStr(target.type)) - 1;
   const freshAnimal = global.isFresh(day, ageLastMilked);
   if (plushieModifiers) return freshAnimal || dayHasPassed;
   const hungry = global.compareDay(day, data.getInt("ageLastFed"), 1)
@@ -126,7 +126,7 @@ global.getMilk = (
   plushieModifiers,
   stages
 ) => {
-  const crackerBonus = data.animalCracker ? 2 : 1;
+  const crackerBonus = global.nbtBool(data.animalCracker) ? 2 : 1;
   let affection;
   let mood;
   let affectionIncrease = 0;
@@ -136,7 +136,7 @@ global.getMilk = (
   } else {
     affection = data.getInt("affection") || 0;
     mood = global.getOrFetchMood(level, target, day, player);
-    affectionIncrease = stages.has("animal_whisperer") || data.bribed ? 10 : 5;
+    affectionIncrease = stages.has("animal_whisperer") || global.nbtBool(data.bribed) ? 10 : 5;
   }
   let hearts = Math.floor(affection / 100);
 
@@ -150,7 +150,7 @@ global.getMilk = (
     if (mood >= 160) {
       quality = global.getHusbandryQuality(hearts, mood, true);
     }
-    let milkId = resolveMilk(hearts, mood, target, target.type);
+    let milkId = resolveMilk(hearts, mood, target, global.nbtStr(target.type));
     if (milkId == "species:ichor_bottle" && hearts >= 5) quality = 3;
     if (plushieProcessItems) {
       let cheesePressOutput = global.cheesePressRecipes.get(milkId);
@@ -197,10 +197,10 @@ global.handleSpecialHarvest = (
   const data = plushieModifiers ? target : target.persistentData;
   const ageLastFed = plushieModifiers ? -1 : data.getInt("ageLastFed");
   const ageLastDroppedSpecial = data.getInt("ageLastDroppedSpecial") || 0;
-  const type = target.type;
+  const type = global.nbtStr(target.type);
   const freshAnimal = global.isFresh(day, ageLastDroppedSpecial);
   const hungry = global.compareDay(day, ageLastFed, 1)
-  const crackerBonus = data.animalCracker ? 2 : 1;
+  const crackerBonus = global.nbtBool(data.animalCracker) ? 2 : 1;
   if (HUSBANDRY_OUTPUT_DEBUG && type === "minecraft:pig") console.info(`[pigForage] day=${day} last=${ageLastDroppedSpecial} available=${freshAnimal || day > ageLastDroppedSpecial} fed=${!hungry} hearts=${Math.floor((data.getInt("affection") || 0) / 100)}`);
   if (freshAnimal || day > ageLastDroppedSpecial) {
     let resolvedCount;
@@ -245,7 +245,7 @@ global.handleSpecialHarvest = (
     if (
       stages.has("coopmaster") &&
       (plushieModifiers
-        ? global.coopMasterAnimals.includes(data.type)
+        ? global.coopMasterAnimals.includes(global.nbtStr(data.type))
         : global.checkEntityTag(target, "society:coopmaster_bird"))
     ) {
       harvestFunction(
@@ -268,7 +268,7 @@ global.handleSpecialHarvest = (
         }
       );
     }
-    if (data.bff && stages.has("bff")) {
+    if (global.nbtBool(data.bff) && stages.has("bff")) {
       harvestFunction(
         data,
         day,
@@ -384,9 +384,9 @@ global.getMagicShearsOutput = (level, target, player, plushieModifiers, stages) 
 
   let hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
   const targetId =
-    target.type === "meadow:wooly_cow"
+    global.nbtStr(target.type) === "meadow:wooly_cow"
       ? ["minecraft", "cow"]
-      : target.type.split(":");
+      : global.nbtStr(target.type).split(":");
   const lootTableId = $ResourceLocation.parse(`${targetId[0]}:entities/${targetId[1]}`);
   const lootTable = level.server.reloadableRegistries().getLootTable(lootTableId);
   const lootParams = new $LootParams.Builder(level)
@@ -464,8 +464,8 @@ global.getMagicShearsOutput = (level, target, player, plushieModifiers, stages) 
 };
 
 const getMoodImpactModifier = (target) => {
-  if (global.tierTwoHusbandryAnimals.includes(target.type)) return 1.25;
-  if (global.tierThreeHusbandryAnimals.includes(target.type)) return 1.5;
+  if (global.tierTwoHusbandryAnimals.includes(global.nbtStr(target.type))) return 1.25;
+  if (global.tierThreeHusbandryAnimals.includes(global.nbtStr(target.type))) return 1.5;
   return 1;
 };
 
@@ -509,7 +509,7 @@ global.getOrFetchMood = (level, target, day, player, debugMood, disregardPet) =>
     if (debugMood) player.tell(Text.translatable("society.husbandry.mood.not_fed").red());
   }
   let requiredBlocks = 0;
-  if (global.coldMobs.includes(target.type)) {
+  if (global.coldMobs.includes(global.nbtStr(target.type))) {
     requiredBlocks = getNearbyBlocks(level, target, 5, "society:cold_blocks");
     if (requiredBlocks < 5) {
       let coldDebuff = 32 - (32 * requiredBlocks) / 5
@@ -539,7 +539,7 @@ global.getOrFetchMood = (level, target, day, player, debugMood, disregardPet) =>
     moodDebuffs -= 24;
     if (debugMood) player.tell(Text.translatable("society.husbandry.mood.boosted_food").green());
   }
-  if (data.clockwork) {
+  if (global.nbtBool(data.clockwork)) {
     moodDebuffs -= 64;
     if (debugMood) player.tell(Text.translatable("society.husbandry.mood.clockwork").green());
   }
@@ -551,7 +551,8 @@ global.getOrFetchMood = (level, target, day, player, debugMood, disregardPet) =>
     data.lastMood = Math.max(0, 256 - moodDebuffs);
     data.ageLastSetMood = day;
   }
-  return data.lastMood;
+  // lastMood is read back as a DoubleTag: compare it only as a number.
+  return global.nbtNum(data.lastMood);
 };
 /**
  * Plushie Trait related drops and mechanics
@@ -560,11 +561,11 @@ global.getPlushieModifiers = (level, data, plushieBlock) => {
   let newDrops = [];
   let doubleDrops = false;
   let resetDay = false;
-  let qualityMult = data.quality + 1;
+  let qualityMult = global.nbtNum(data.quality) + 1;
   let probabilityIncrease = 0;
   let processItems = false;
   const roll = Math.random();
-  switch (data.type) {
+  switch (global.nbtNum(data.type)) {
     case 0:
       // Aquatic
       if (roll < 0.05 * qualityMult) {
@@ -703,7 +704,7 @@ global.executePlushieHusbandry = (
   const plushieMods = global.getPlushieModifiers(level, nbt.data, block);
   if (
     item === "society:milk_pail" &&
-    global.milkableAnimals.includes(animal.type)
+    global.milkableAnimals.includes(global.nbtStr(animal.type))
   ) {
     let milkItem = global.getMilk(
       level,
@@ -770,7 +771,7 @@ global.executePlushieHusbandry = (
         },
       },
     });
-  } else if (Number(animal.ageLastDroppedSpecial) < day) {
+  } else if (global.nbtNum(animal.ageLastDroppedSpecial) < day) {
     reset = true;
   }
   if (item === "society:magic_shears") {

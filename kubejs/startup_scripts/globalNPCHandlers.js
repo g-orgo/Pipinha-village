@@ -117,7 +117,7 @@ const villagerSpecificGifts = new Map([
     }],
     ["banker", {
         loved: ["society:legendary_ink", "wildernature:bison_horn", "candlelight:beef_wellington", "society:aged_goat_cheese_block", "meadow:goat_cheese_wheel"],
-        liked: ["society:truffle_oil", "meadow:piece_of_goat_cheese", "society:mystic_syrup", "windswept:goat_stew", "society:ancient_vespertine"],
+        liked: ["society:truffle_oil", "meadow:goat_cheese_slice", "society:mystic_syrup", "windswept:goat_stew", "society:ancient_vespertine"],
         neutral: ["#society:dish"],
         disliked: ["#society:farmer_product"],
         hated: ["society:energy_drink", "supplementaries:candy"],

@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "aquaculture:fish_bones",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "atmospheric:aloe_kernels",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "machine seedMaker.js",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "autumnity:pancake",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:crafting_shapeless",
+    "suggested": 132,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "autumnity:snail_goo",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "autumnity:snail_shell_piece",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "bakery:baked_sweet_dough",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:campfire_cooking",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "bakery:cornet_shell",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farm_and_charm:stove",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "bakery:sponge_sheet",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farm_and_charm:stove",
+    "suggested": 126,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "candlelight:potroast",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe farm_and_charm:pot_cooking",
+    "suggested": 150,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "crabbersdelight:coconut_milk",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:crafting_shapeless",
+    "suggested": 14,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "crabbersdelight:coconut_pudding",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farmersdelight:cooking",
+    "suggested": 44,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "crabbersdelight:deluxe_crab_trap_bait",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "crabbersdelight:fish_sandwich",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:crafting_shapeless",
+    "suggested": 53,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "crabbersdelight:fried_fish",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe farmersdelight:cooking",
+    "suggested": 20,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "crabbersdelight:turtle_stew",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farmersdelight:cooking",
+    "suggested": 148,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "create:crushed_raw_bismuth",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "machine recyclingMachine.js",
+    "suggested": 22,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "create:crushed_raw_lead",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "machine recyclingMachine.js",
+    "suggested": 32,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "create:crushed_raw_silver",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "machine recyclingMachine.js",
+    "suggested": 43,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "culturaldelights:apple_cider",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe culturaldelights:aging",
+    "suggested": 44,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:beans",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:crafting_shapeless",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:beer",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "alias of brewinandchewin:beer",
+    "suggested": 30,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "culturaldelights:bloody_mary",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe culturaldelights:aging",
+    "suggested": 256,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:brandy",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "alias of kaleidoscope_tavern:brandy",
+    "suggested": 8,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "culturaldelights:butterscotch_cinnamon_pie",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:crafting_shaped",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:cheese_wheel",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe culturaldelights:aging",
+    "suggested": 54,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:cinnamon_mint_curry",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farmersdelight:cooking",
+    "suggested": 100,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:cooked_sausage",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:campfire_cooking",
+    "suggested": 18,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "culturaldelights:corn_dog",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe farmersdelight:cooking",
+    "suggested": 82,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "culturaldelights:gin",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe culturaldelights:aging",
+    "suggested": 148,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:glow_wine",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe culturaldelights:aging",
+    "suggested": 64,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:ice_cream",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe culturaldelights:aging",
+    "suggested": 36,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:lemon_liqueur",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe culturaldelights:aging",
+    "suggested": 164,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:margarita",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe culturaldelights:aging",
+    "suggested": 434,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:marshmallow",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farmersdelight:cooking",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:mead",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe culturaldelights:aging",
+    "suggested": 40,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:mojito",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "alias of kaleidoscope_tavern:mojito",
+    "suggested": 44,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "culturaldelights:refried_beans",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farmersdelight:cooking",
+    "suggested": 34,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:rum",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "alias of kaleidoscope_tavern:rum",
+    "suggested": 12,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "culturaldelights:tequila",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe culturaldelights:aging",
+    "suggested": 32,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:vodka",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe culturaldelights:aging",
+    "suggested": 68,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "culturaldelights:whiskey",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "alias of kaleidoscope_tavern:whiskey",
+    "suggested": 46,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "culturaldelights:wine",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "alias of kaleidoscope_tavern:wine",
+    "suggested": 30,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "farm_and_charm:cooked_bacon",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:campfire_cooking",
+    "suggested": 75,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "farm_and_charm:cooked_chicken_parts",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:campfire_cooking",
+    "suggested": 75,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "farm_and_charm:cooked_lamb_ham",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:campfire_cooking",
+    "suggested": 96,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "farm_and_charm:cooked_minced_beef",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:campfire_cooking",
+    "suggested": 75,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "farmersdelight:gleaming_salad_block",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:crafting_shapeless",
+    "suggested": 406,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:apple_cider_with_milk",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:apple_cider_with_sugar",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:black_tea_with_milk",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:black_tea_with_sugar",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:coffee_with_milk",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:coffee_with_sugar",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:dandelion_tea_with_milk",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:dandelion_tea_with_sugar",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:gamblers_tea_with_milk",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:gamblers_tea_with_sugar",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:green_tea_with_milk",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:green_tea_with_sugar",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:hot_cocoa_with_milk",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:hot_cocoa_with_sugar",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:melon_juice_with_milk",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:melon_juice_with_sugar",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:purulent_tea_with_milk",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:purulent_tea_with_sugar",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:rose_hip_tea_with_milk",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:rose_hip_tea_with_sugar",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:yellow_tea_with_milk",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "farmersrespite:yellow_tea_with_sugar",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe create:filling",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "ftbstuff:cast_iron_ingot",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:campfire_cooking",
+    "suggested": 16,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "ftbstuff:tempered_glass",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:campfire_cooking",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:beer",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "alias of brewinandchewin:beer",
+    "suggested": 30,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:blueberry_pips",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "machine seedMaker.js",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:candy_corn",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "alias of hauntedharvest:candy_corn",
+    "suggested": 10,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:cheese_pizza",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:crafting_shaped",
+    "suggested": 143,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:cherry_pie",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:crafting_shaped",
+    "suggested": 102,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:chocolate_cake",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "alias of bakery:chocolate_cake",
+    "suggested": 142,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:chocolate_milk_bottle",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:crafting_shapeless",
+    "suggested": 28,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:cider_donut",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farmersdelight:cooking",
+    "suggested": 215,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:cooked_corn_on_the_cob",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:campfire_cooking",
+    "suggested": 10,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:corn",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "alias of farm_and_charm:corn x0.333 (globalPriceBalance list)",
+    "suggested": 9,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:corn_bread",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farmersdelight:cooking",
+    "suggested": 50,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:corn_stew",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farmersdelight:cooking",
+    "suggested": 88,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:croissant",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "alias of bakery:croissant",
+    "suggested": 2,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:glazed_carrots",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe farmersdelight:cooking",
+    "suggested": 106,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:glow_berry_juice",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe brewinandchewin:keg_pouring",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:glow_berry_wine",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe hearthandharvest:aging",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:goat_milk_bucket",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe brewinandchewin:keg_pouring",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:hard_cider",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe hearthandharvest:aging",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:hops",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "alias of brewery:hops x0.333 (globalPriceBalance list)",
+    "suggested": 7,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:hot_dog",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:crafting_shapeless",
+    "suggested": 39,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:maple_cookie",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:crafting_shapeless",
+    "suggested": 13,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:meat_pizza",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:crafting_shaped",
+    "suggested": 151,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:melon_wine",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe hearthandharvest:aging",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:moonshine",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe brewinandchewin:fermenting",
+    "suggested": 18,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:pancake",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farmersdelight:cooking",
+    "suggested": 64,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:pizza",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:crafting_shaped",
+    "suggested": 164,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:popcorn",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe farmersdelight:cooking",
+    "suggested": 19,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:raisin_cookie",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:crafting_shapeless",
+    "suggested": 10,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:raspberry_pips",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "machine seedMaker.js",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:raspberry_scone",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:crafting_shaped",
+    "suggested": 120,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:raw_skewered_sausage",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:crafting_shapeless",
+    "suggested": 20,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:root_beer",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe hearthandharvest:aging",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:street_corn",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farmersdelight:cooking",
+    "suggested": 84,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:sweet_berry_juice",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe brewinandchewin:keg_pouring",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:taco",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:crafting_shapeless",
+    "suggested": 141,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:tamale",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe farmersdelight:cooking",
+    "suggested": 74,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:tortilla",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe hearthandharvest:shapeless_remainder",
+    "suggested": 25,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:uncooked_corn_on_the_cob",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:crafting_shapeless",
+    "suggested": 7,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "hearthandharvest:unripe_cheese_wheel",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe brewinandchewin:fermenting",
+    "suggested": 63,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "hearthandharvest:veggie_pizza",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:crafting_shaped",
+    "suggested": 155,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "herbalbrews:flask",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe herbalbrews:cauldron_brewing",
+    "suggested": 15,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "herbalbrews:tea_blossom",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "machine seedMaker.js",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "meadow:firewood",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "meadow:rennet",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe meadow:cooking",
+    "suggested": 19,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "minecraft:bamboo",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "minecraft:bone",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "minecraft:bone_meal",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe farm_and_charm:drying",
+    "suggested": 36,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "minecraft:bowl",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "minecraft:glass_bottle",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "minecraft:glow_ink_sac",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "minecraft:green_dye",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:smoking",
+    "suggested": 30,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "minecraft:ink_sac",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "minecraft:milk_bucket",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe brewinandchewin:keg_pouring",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "minecraft:mycelium",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farm_and_charm:drying",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "minecraft:ochre_froglight",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "minecraft:pearlescent_froglight",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "minecraft:pitcher_pod",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "machine seedMaker.js",
+    "suggested": 14,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "minecraft:potion",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe brewinandchewin:keg_pouring",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "minecraft:rotten_flesh",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:campfire_cooking",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "minecraft:seagrass",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "minecraft:string",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "minecraft:verdant_froglight",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "minecraft:water_bucket",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe brewinandchewin:keg_pouring",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "oceansdelight:cooked_stuffed_squid",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "recipe minecraft:campfire_cooking",
+    "suggested": 116,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "oceansdelight:kelp_encrusted_cod",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farmersdelight:cooking",
+    "suggested": 32,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "pamhc2trees:roastedacornitem",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:campfire_cooking",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "pamhc2trees:roastedchestnutitem",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:campfire_cooking",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "pamhc2trees:roastedpecanitem",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:campfire_cooking",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "pamhc2trees:roastedpinenutitem",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:campfire_cooking",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "paraglider:enduring_elixir_1",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:campfire_cooking",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "paraglider:energizing_elixir_1",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:campfire_cooking",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "rehooked:diamond_hook",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "snowpig:music_disc_frosty_snig",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "snowyspirit:ginger_flower",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "machine seedMaker.js",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "society:artifact_trove",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "society:bouquet_bag",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "machine recyclingMachine.js",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "society:no_name_for_the_sheep",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "supplementaries:pancake",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:crafting_shapeless",
+    "suggested": 10,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "veggiesdelight:lasagna_pan",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farmersdelight:cooking",
+    "suggested": 402,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "vintagedelight:oatmeal",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe farmersdelight:cooking",
+    "suggested": 54,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  },
+  {
+    "id": "vintagedelight:organic_mash",
+    "class": "machine",
+    "classes": [
+      "machine"
+    ],
+    "source": "machine recyclingMachine.js",
+    "suggested": 43,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "wildernature:cooked_turkey_meat",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "alias of autumnity:cooked_turkey",
+    "suggested": 32,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": false
+  },
+  {
+    "id": "wildernature:hazelnut",
+    "class": "animal",
+    "classes": [
+      "animal"
+    ],
+    "source": "fallback: no usable recipe or 1.20.1 price",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "animalProducts",
+    "fallback": true
+  },
+  {
+    "id": "windswept:frozen_flesh",
+    "class": "food",
+    "classes": [
+      "food"
+    ],
+    "source": "fallback: recipe minecraft:crafting_shapeless",
+    "suggested": 5,
+    "attribute": "crop",
+    "list": "cooking",
+    "fallback": true
+  }
+]

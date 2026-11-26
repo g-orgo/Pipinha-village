@@ -115,7 +115,7 @@ global.autoGrabAnimal = (autoGrabber, player, animal, plushieModifiers) => {
   if (!hungry) {
     if (
       (plushieModifiers
-        ? global.milkableAnimals.includes(data.type)
+        ? global.milkableAnimals.includes(global.nbtStr(data.type))
         : global.checkEntityTag(animal, "society:milkable_animal")) &&
       global.inventoryHasItems(inventory, "society:sparkstone", 1) == 1
     ) {

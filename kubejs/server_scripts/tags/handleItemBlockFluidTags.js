@@ -302,7 +302,7 @@ ServerEvents.tags("item", (e) => {
   e.add("forge:salad_ingredients", "farm_and_charm:lettuce");
   e.add("c:grains/corn", "farm_and_charm:corn");
   e.add("candlelight:butter", "farm_and_charm:butter");
-  e.add("meadow:cheese_blocks", "meadow:amethyst_cheese_wheel");
+  e.add("meadow:cheese_wheels", "meadow:amethyst_cheese_wheel");
   e.add("netherdepthsupgrade:lava_fishing_rod", "c:tools/fishing_rods");
   e.add("c:ropes", "brewery:rope");
   e.add("c:cobblestones", "meadow:cobbled_limestone");

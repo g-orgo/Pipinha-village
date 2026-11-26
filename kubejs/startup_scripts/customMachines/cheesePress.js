@@ -2,13 +2,13 @@
 console.info("[SOCIETY] mayonnaiseMachine.js loaded");
 
 global.cheesePressRecipes = new Map([
-  ["society:sheep_milk", { output: ["1x meadow:piece_of_sheep_cheese"] }],
-  ["society:milk", { output: ["1x meadow:piece_of_cheese"] }],
-  ["society:buffalo_milk", { output: ["1x meadow:piece_of_buffalo_cheese"] }],
-  ["society:goat_milk", { output: ["1x meadow:piece_of_goat_cheese"] }],
-  ["society:warped_milk", { output: ["1x meadow:piece_of_warped_cheese"] }],
-  ["society:grain_milk", { output: ["1x meadow:piece_of_grain_cheese"] }],
-  ["society:amethyst_milk", { output: ["1x meadow:piece_of_amethyst_cheese"] }],
+  ["society:sheep_milk", { output: ["1x meadow:sheep_cheese_slice"] }],
+  ["society:milk", { output: ["1x meadow:cheese_slice"] }],
+  ["society:buffalo_milk", { output: ["1x meadow:buffalo_cheese_slice"] }],
+  ["society:goat_milk", { output: ["1x meadow:goat_cheese_slice"] }],
+  ["society:warped_milk", { output: ["1x meadow:warped_cheese_slice"] }],
+  ["society:grain_milk", { output: ["1x meadow:grain_cheese_slice"] }],
+  ["society:amethyst_milk", { output: ["1x meadow:amethyst_cheese_slice"] }],
   ["society:large_sheep_milk", { output: ["1x meadow:sheep_cheese_wheel"] }],
   ["society:large_milk", { output: ["1x meadow:cheese_wheel"] }],
   [

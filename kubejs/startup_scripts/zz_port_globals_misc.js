@@ -327,10 +327,10 @@ const checkAnimal = (
   let icons = [];
   if (mood < 64) icons.push("☹");
   if (mood > 160) icons.push("☺");
-  if (data.animalCracker) icons.push("🡅");
-  if (data.clockwork) icons.push("⚙");
-  if (data.bff) icons.push("❤");
-  if (data.bribed) icons.push("💰");
+  if (global.nbtBool(data.animalCracker)) icons.push("🡅");
+  if (global.nbtBool(data.clockwork)) icons.push("⚙");
+  if (global.nbtBool(data.bff)) icons.push("❤");
+  if (global.nbtBool(data.bribed)) icons.push("💰");
   let iconString = "";
   icons.forEach((icon, index) => {
     iconString += icon;
@@ -405,7 +405,7 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
   if (hearts > 10) hearts = 10;
   else if (hearts < 0) hearts = 0;
   let affectionIncreaseMult =
-    player.stages.has("animal_whisperer") || data.bribed ? 2 : 1;
+    player.stages.has("animal_whisperer") || global.nbtBool(data.bribed) ? 2 : 1;
   if (player.stages.has("animal_fancy")) affectionIncreaseMult += 1;
   let affectionIncrease = 10 * affectionIncreaseMult;
 
@@ -424,12 +424,12 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
         );
       data.affection = affection + affectionIncrease;
     }
-    if (hungry || (!data.clockwork && player.isFake()) || !livableArea) {
+    if (hungry || (!global.nbtBool(data.clockwork) && player.isFake()) || !livableArea) {
       data.affection = affection - (hungry ? 15 : 25);
     }
     data.ageLastPet = day;
     level.spawnParticles(
-      (!data.clockwork && player.isFake()) || hungry
+      (!global.nbtBool(data.clockwork) && player.isFake()) || hungry
         ? "minecraft:angry_villager"
         : "minecraft:heart",
       true,
@@ -443,7 +443,7 @@ const handlePet = (name, data, mood, day, peckish, hungry, e) => {
       0.01
     );
     global.giveExperience(server, player, "husbandry", Math.max(10, 20 * hearts));
-    if (!livableArea && !data.clockwork) {
+    if (!livableArea && !global.nbtBool(data.clockwork)) {
       errorText = Text.translatable(
         "society.husbandry.crowded",
         name
@@ -580,7 +580,7 @@ const handleFeed = (data, day, e) => {
     "society:mana_feed": 30,
   }[item.id];
   let affectionIncreaseMult =
-    player.stages.has("animal_whisperer") || data.bribed ? 2 : 1;
+    player.stages.has("animal_whisperer") || global.nbtBool(data.bribed) ? 2 : 1;
   if (player.stages.has("animal_fancy")) affectionIncreaseMult += 0.5;
   // Cap affection increase at 100
   let totalNewAffection = Math.min(
@@ -928,7 +928,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       if (
         player.stages.has("bribery") &&
         item === "numismatics:crown" &&
-        !data.bribed
+        !global.nbtBool(data.bribed)
       ) {
         if (player.cooldowns.isOnCooldown(item)) return;
         data.bribed = true;
@@ -953,7 +953,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       if (
         player.stages.has("clockwork") &&
         item === "create:precision_mechanism" &&
-        !data.clockwork
+        !global.nbtBool(data.clockwork)
       ) {
         data.clockwork = true;
         upgradeAnimal(
@@ -964,7 +964,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
           "minecraft:block.vault.activate",
           "supplementaries:bomb_explosion"
         );
-        if (data.bff) {
+        if (global.nbtBool(data.bff)) {
           data.bff = false;
           server.runCommandSilent(
             global.getEmbersTextAPICommand(
@@ -979,7 +979,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       if (
         player.stages.has("husbandry_mastery") &&
         item === "society:animal_cracker" &&
-        !data.animalCracker
+        !global.nbtBool(data.animalCracker)
       ) {
         data.animalCracker = true;
         server.runCommandSilent(
@@ -997,7 +997,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
       if (
         player.stages.has("bff") &&
         item === "society:friendship_necklace" &&
-        !data.bff
+        !global.nbtBool(data.bff)
       ) {
         data.bff = true;
         upgradeAnimal(
@@ -1007,7 +1007,7 @@ global.handleHusbandryBase = (hand, player, item, target, level, server) => {
           target,
           "buzzier_bees:buttercup_bloom"
         );
-        if (data.clockwork) {
+        if (global.nbtBool(data.clockwork)) {
           data.clockwork = false;
           server.runCommandSilent(
             global.getEmbersTextAPICommand(

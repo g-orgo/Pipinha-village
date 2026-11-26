@@ -55,7 +55,7 @@ ServerEvents.recipes((e) => {
         item: "farm_and_charm:corn",
       },
       {
-        item: "meadow:piece_of_cheese",
+        item: "meadow:cheese_slice",
       },
       { item: "farmersdelight:tomato_sauce" },
     ],
@@ -73,7 +73,7 @@ ServerEvents.recipes((e) => {
         item: "farm_and_charm:corn",
       },
       {
-        item: "meadow:piece_of_cheese",
+        item: "meadow:cheese_slice",
       },
       { item: "society:mayonnaise" },
     ],

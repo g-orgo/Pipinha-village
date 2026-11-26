@@ -136,7 +136,7 @@ const CANONICAL_TAG_CANDIDATES = [
   "kaleidoscope_cookery:cookery_mod_seeds",
   "kaleidoscope_cookery:meals",
   "letsdo_addon_compat:tools/knives",
-  "meadow:cheese_blocks",
+  "meadow:cheese_wheels",
   "meadow:water_bottles",
   "minecraft:beacon_base_blocks",
   "minecraft:crops",

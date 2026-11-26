@@ -24,7 +24,7 @@ global.runAutoPetter = (entity) => {
       if (day > ageLastPet) {
         let hungry = global.compareDay(day, ageLastFed, 1)
         let affection = data.getInt("affection");
-        let affectionIncreaseMult = data.bribed ? 2 : 1;
+        let affectionIncreaseMult = global.nbtBool(data.bribed) ? 2 : 1;
         let affectionIncrease = 5 * affectionIncreaseMult;
 
         if (animal.isBaby()) {

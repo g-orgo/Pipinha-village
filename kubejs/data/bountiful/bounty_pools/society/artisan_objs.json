@@ -387,7 +387,7 @@
     },
     "artisan_piece_of_sheep_cheese": {
       "type": "minecraft:item",
-      "content": "meadow:piece_of_sheep_cheese",
+      "content": "meadow:sheep_cheese_slice",
       "rarity": "COMMON",
       "weightMult": 1,
       "amount": {
@@ -409,7 +409,7 @@
     },
     "artisan_piece_of_cheese": {
       "type": "minecraft:item",
-      "content": "meadow:piece_of_cheese",
+      "content": "meadow:cheese_slice",
       "rarity": "COMMON",
       "weightMult": 1,
       "amount": {
@@ -431,7 +431,7 @@
     },
     "artisan_piece_of_grain_cheese": {
       "type": "minecraft:item",
-      "content": "meadow:piece_of_grain_cheese",
+      "content": "meadow:grain_cheese_slice",
       "rarity": "COMMON",
       "weightMult": 1,
       "amount": {
@@ -453,7 +453,7 @@
     },
     "artisan_piece_of_buffalo_cheese": {
       "type": "minecraft:item",
-      "content": "meadow:piece_of_buffalo_cheese",
+      "content": "meadow:buffalo_cheese_slice",
       "rarity": "COMMON",
       "weightMult": 1,
       "amount": {
@@ -475,7 +475,7 @@
     },
     "artisan_piece_of_goat_cheese": {
       "type": "minecraft:item",
-      "content": "meadow:piece_of_goat_cheese",
+      "content": "meadow:goat_cheese_slice",
       "rarity": "COMMON",
       "weightMult": 1,
       "amount": {
@@ -497,7 +497,7 @@
     },
     "artisan_piece_of_warped_cheese": {
       "type": "minecraft:item",
-      "content": "meadow:piece_of_warped_cheese",
+      "content": "meadow:warped_cheese_slice",
       "rarity": "COMMON",
       "weightMult": 1,
       "amount": {
@@ -519,7 +519,7 @@
     },
     "artisan_piece_of_amethyst_cheese": {
       "type": "minecraft:item",
-      "content": "meadow:piece_of_amethyst_cheese",
+      "content": "meadow:amethyst_cheese_slice",
       "rarity": "COMMON",
       "weightMult": 1,
       "amount": {

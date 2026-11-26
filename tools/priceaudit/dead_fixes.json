@@ -1,0 +1,17 @@
+[
+  {
+    "dead": "create_central_kitchen:cherry_pie_slice",
+    "sugg": "hearthandharvest:cherry_pie_slice",
+    "file": "globalRegistryFoodPrices.js"
+  },
+  {
+    "dead": "hearthandharvest:lemon",
+    "sugg": "culturaldelights:lemon",
+    "file": "globalRegistryFoodPrices.js"
+  },
+  {
+    "dead": "society:sea_biscuit",
+    "sugg": "society:sea_biscut",
+    "file": "globalRegistryFoodPrices.js"
+  }
+]

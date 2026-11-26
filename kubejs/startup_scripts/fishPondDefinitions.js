@@ -627,7 +627,7 @@ global.fishPondDefinitions = new Map([
           requestedItems: [
             { item: "society:aged_amethyst_cheese_block", count: 1 },
             { item: "society:large_amethyst_milk", count: 4 },
-            { item: "meadow:piece_of_amethyst_cheese", count: 1 },
+            { item: "meadow:amethyst_cheese_slice", count: 1 },
           ],
         },
       ],
@@ -1540,7 +1540,7 @@ global.fishPondDefinitions = new Map([
           population: 5,
           requestedItems: [
             { item: "society:earth_crystal", count: 4 },
-            { item: "meadow:piece_of_grain_cheese", count: 16 },
+            { item: "meadow:grain_cheese_slice", count: 16 },
             { item: "vinery:cherry", count: 4 },
           ],
         },

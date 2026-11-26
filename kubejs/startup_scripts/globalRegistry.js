@@ -792,19 +792,19 @@ global.artisanGoods = [
 // Formula: milk x 2
 const cheeses = [
   // Values shouldn't be multiplied for balance
-  { item: "meadow:piece_of_sheep_cheese", value: 12 },
+  { item: "meadow:sheep_cheese_slice", value: 12 },
   { item: "meadow:sheep_cheese_wheel", value: 48 },
-  { item: "meadow:piece_of_cheese", value: 24 },
+  { item: "meadow:cheese_slice", value: 24 },
   { item: "meadow:cheese_wheel", value: 96 },
-  { item: "meadow:piece_of_grain_cheese", value: 33 },
+  { item: "meadow:grain_cheese_slice", value: 33 },
   { item: "meadow:grain_cheese_wheel", value: 132 },
-  { item: "meadow:piece_of_buffalo_cheese", value: 96 },
+  { item: "meadow:buffalo_cheese_slice", value: 96 },
   { item: "meadow:buffalo_cheese_wheel", value: 384 },
-  { item: "meadow:piece_of_goat_cheese", value: 144 },
+  { item: "meadow:goat_cheese_slice", value: 144 },
   { item: "meadow:goat_cheese_wheel", value: 576 },
-  { item: "meadow:piece_of_warped_cheese", value: 144 },
+  { item: "meadow:warped_cheese_slice", value: 144 },
   { item: "meadow:warped_cheese_wheel", value: 576 },
-  { item: "meadow:piece_of_amethyst_cheese", value: 160 },
+  { item: "meadow:amethyst_cheese_slice", value: 160 },
   { item: "meadow:amethyst_cheese_wheel", value: 640 },
   { item: "hearthandharvest:cheddar_cheese_wheel", value: 1152 },
 ];
